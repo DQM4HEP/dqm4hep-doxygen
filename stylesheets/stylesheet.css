@@ -144,7 +144,6 @@ img {
 
   box-shadow: 0 0 5px #ebebeb;
   -webkit-box-shadow: 0 0 5px #ebebeb;
-  /*-moz-box-shadow: 0 0 5px #ebebeb;*/
   -o-box-shadow: 0 0 5px #ebebeb;
   -ms-box-shadow: 0 0 5px #ebebeb;
 }
@@ -167,7 +166,6 @@ pre, code {
   font-size: 14px;
 
   border-radius: 2px;
-  /*-moz-border-radius: 2px;*/
   -webkit-border-radius: 2px;
 }
 
@@ -406,9 +404,6 @@ Full-Width Styles
   background: #212121;
   background: -moz-linear-gradient(top, #373737, #212121);
   background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);
 }
 
 #header_wrap .inner {
