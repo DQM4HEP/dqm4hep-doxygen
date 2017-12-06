@@ -1,1 +1,6 @@
-theme: jekyll-theme-minimal
+title: DQM4HEP
+description: >-
+  Doxygen documentation
+
+email: dqm4hep@gmail.com
+theme: jekyll-theme-slate
