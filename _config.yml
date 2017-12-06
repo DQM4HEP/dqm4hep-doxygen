@@ -1,7 +1,9 @@
 title: DQM4HEP
 description: >-
   Doxygen documentation
-
 email: mailto:dqm4hep@gmail.com
 
 theme: jekyll-theme-slate
+
+# Needed when building with travis
+exclude: [vendor]
