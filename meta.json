@@ -1,1 +1,9 @@
-{}
+{
+  "packages": {
+    "dqm4hep-core": {
+      "versions": [
+        "master"
+      ]
+    }
+  }
+}
