@@ -41,7 +41,7 @@
             
             pkgElement = $("<li>");
             pkgAnchor = $("<a>");
-            pkgAnchor.attr("href", "dqm4hep-doxygen/doxygen/" + pkgName + "/" + pkgVersion + "/index.html");
+            pkgAnchor.attr("href", "doxygen/" + pkgName + "/" + pkgVersion + "/index.html");
             pkgAnchor.append(pkgName);
             pkgAnchor.appendTo(pkgElement); 
             pkgElement.append(" (" + pkgVersion + ")");
@@ -100,7 +100,7 @@
             }
 
             versionAnchor = $("<a>");
-            versionAnchor.attr("href", "dqm4hep-doxygen/doxygen/" + pkgName + "/" + version + "/index.html");
+            versionAnchor.attr("href", "doxygen/" + pkgName + "/" + version + "/index.html");
             versionAnchor.html(version);
             versionAnchor.appendTo(versionElement);
           }
