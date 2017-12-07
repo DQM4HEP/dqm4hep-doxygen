@@ -1,5 +1,10 @@
 {
   "packages": {
+    "dqm4hep-net": {
+      "versions": [
+        "master"
+      ]
+    }, 
     "dqm4hep-core": {
       "versions": [
         "master"
