@@ -221,6 +221,8 @@ std::chrono::system_clock::time_point&#160;</td><td class="memItemRight" valign=
 <tr class="separator:a71737b5d3e542e31d80c402f3d1befa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c72ff144e14a0f695d1c98c37eebd45"><td class="memItemLeft" align="right" valign="top">typedef std::queue&lt; <a class="el" href="namespacedqm4hep_1_1core.html#a71737b5d3e542e31d80c402f3d1befa7">EventPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a4c72ff144e14a0f695d1c98c37eebd45">EventQueue</a></td></tr>
 <tr class="separator:a4c72ff144e14a0f695d1c98c37eebd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6515955f5e346ab69d186122216d8ef"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr&lt; <a class="el" href="classdqm4hep_1_1core_1_1Plugin.html">Plugin</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#ac6515955f5e346ab69d186122216d8ef">PluginPtr</a></td></tr>
+<tr class="separator:ac6515955f5e346ab69d186122216d8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48f88cbf169c79b8d81574965738abed"><td class="memItemLeft" align="right" valign="top">typedef char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a48f88cbf169c79b8d81574965738abed">dqm_char</a></td></tr>
 <tr class="separator:a48f88cbf169c79b8d81574965738abed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50bb7005251cf419d695f13377dd99a5"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a50bb7005251cf419d695f13377dd99a5">dqm_uchar</a></td></tr>
@@ -270,14 +272,23 @@ std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <tr class="memitem:adc020c7501c1db5825e0b12ff30f118c"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <br class="typebreak"/>
 std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#adc020c7501c1db5825e0b12ff30f118c">StringMap</a></td></tr>
 <tr class="separator:adc020c7501c1db5825e0b12ff30f118c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4d34be0d3a00b21d4dbb42c0a10ea01"><td class="memItemLeft" align="right" valign="top">typedef std::vector<br class="typebreak"/>
-&lt; <a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#ab4d34be0d3a00b21d4dbb42c0a10ea01">MonitorElementList</a></td></tr>
-<tr class="separator:ab4d34be0d3a00b21d4dbb42c0a10ea01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abce091337e690036681199f548f0d0b6"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; const <br class="typebreak"/>
-std::string, <a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#abce091337e690036681199f548f0d0b6">MonitorElementMap</a></td></tr>
-<tr class="separator:abce091337e690036681199f548f0d0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be1589954581450dce5f94212cacd5e"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a5be1589954581450dce5f94212cacd5e">MonitorElementPtr</a></td></tr>
+<tr class="separator:a5be1589954581450dce5f94212cacd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3b5c8e92f8bd4effa0076df286261e3"><td class="memItemLeft" align="right" valign="top">typedef std::vector<br class="typebreak"/>
+&lt; <a class="el" href="namespacedqm4hep_1_1core.html#a5be1589954581450dce5f94212cacd5e">MonitorElementPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#ab3b5c8e92f8bd4effa0076df286261e3">MonitorElementList</a></td></tr>
+<tr class="separator:ab3b5c8e92f8bd4effa0076df286261e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade7630b85a892a48c041302d25cd19f0"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; const <br class="typebreak"/>
+std::string, <a class="el" href="namespacedqm4hep_1_1core.html#a5be1589954581450dce5f94212cacd5e">MonitorElementPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#ade7630b85a892a48c041302d25cd19f0">MonitorElementMap</a></td></tr>
+<tr class="separator:ade7630b85a892a48c041302d25cd19f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e5fe06f35aace0c904c8a621cc4e00"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classdqm4hep_1_1core_1_1Directory.html">Directory</a>&lt; <a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a66e5fe06f35aace0c904c8a621cc4e00">MonitorElementDir</a></td></tr>
+<tr class="separator:a66e5fe06f35aace0c904c8a621cc4e00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1548d516765b86accc97dd1c04e8391e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html">QualityTest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a1548d516765b86accc97dd1c04e8391e">QTest</a></td></tr>
 <tr class="separator:a1548d516765b86accc97dd1c04e8391e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d26132227570282ef346f8226ab464c"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html">QualityTest</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a0d26132227570282ef346f8226ab464c">QTestPtr</a></td></tr>
+<tr class="separator:a0d26132227570282ef346f8226ab464c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad59009dead0087cc5d64c1a16baeb1a1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classdqm4hep_1_1core_1_1QualityTestReport.html">QualityTestReport</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#ad59009dead0087cc5d64c1a16baeb1a1">QReport</a></td></tr>
 <tr class="separator:ad59009dead0087cc5d64c1a16baeb1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f5a5a45e798c95e7911360054c00aab"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <br class="typebreak"/>
@@ -286,9 +297,12 @@ std::string, <a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">Mo
 <tr class="memitem:a931d52106f0c35031df9e2b359598be3"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; <a class="el" href="namespacedqm4hep_1_1core.html#ae9869ca4dc0f5488ca8989cdea7dfc6b">StringPair</a>, <br class="typebreak"/>
 <a class="el" href="namespacedqm4hep_1_1core.html#a0f5a5a45e798c95e7911360054c00aab">QReportMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a931d52106f0c35031df9e2b359598be3">QReportContainer</a></td></tr>
 <tr class="separator:a931d52106f0c35031df9e2b359598be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3011f7983f0fb9988a5976d624eb885e"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <br class="typebreak"/>
-<a class="el" href="namespacedqm4hep_1_1core.html#a1548d516765b86accc97dd1c04e8391e">QTest</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a3011f7983f0fb9988a5976d624eb885e">QTestMap</a></td></tr>
-<tr class="separator:a3011f7983f0fb9988a5976d624eb885e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b9c76636f8241a2978eff2563c5b7cf"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <br class="typebreak"/>
+<a class="el" href="namespacedqm4hep_1_1core.html#a0d26132227570282ef346f8226ab464c">QTestPtr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a2b9c76636f8241a2978eff2563c5b7cf">QTestMap</a></td></tr>
+<tr class="separator:a2b9c76636f8241a2978eff2563c5b7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c193c65173949bd0cd88f2a3ca95716"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classdqm4hep_1_1core_1_1Storage.html">Storage</a>&lt; <a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a2c193c65173949bd0cd88f2a3ca95716">MeStoragePtr</a></td></tr>
+<tr class="separator:a2c193c65173949bd0cd88f2a3ca95716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5be6c8d13fe2786109ad5f07136a39be"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classdqm4hep_1_1core_1_1TScalarObject.html">TScalarObject</a>&lt; <a class="el" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a5be6c8d13fe2786109ad5f07136a39be">TScalarInt</a></td></tr>
 <tr class="separator:a5be6c8d13fe2786109ad5f07136a39be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b48d1924733f3321e2a849feaebfe01"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classdqm4hep_1_1core_1_1TScalarObject.html">TScalarObject</a>&lt; <a class="el" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a6b48d1924733f3321e2a849feaebfe01">TScalarReal</a></td></tr>
@@ -593,7 +607,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00144">144</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00152">152</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -607,7 +621,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00136">136</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00144">144</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -621,7 +635,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00125">125</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00133">133</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -635,7 +649,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00135">135</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00143">143</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -649,7 +663,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00134">134</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00142">142</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -663,7 +677,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00137">137</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00145">145</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -677,7 +691,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00131">131</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00139">139</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -691,7 +705,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00133">133</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00141">141</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -705,7 +719,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00127">127</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00135">135</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -719,7 +733,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00129">129</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00137">137</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -733,7 +747,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00126">126</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00134">134</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -747,7 +761,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00138">138</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00146">146</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -761,7 +775,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00132">132</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00140">140</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -775,7 +789,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00128">128</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00136">136</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -789,7 +803,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00130">130</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00138">138</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -803,7 +817,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00121">121</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00126">126</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -817,7 +831,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00122">122</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00127">127</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -831,7 +845,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00143">143</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00151">151</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -845,7 +859,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00141">141</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00149">149</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -863,31 +877,73 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab4d34be0d3a00b21d4dbb42c0a10ea01"></a>
+<a class="anchor" id="a2c193c65173949bd0cd88f2a3ca95716"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::vector&lt;<a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a>*&gt; <a class="el" href="namespacedqm4hep_1_1core.html#ab4d34be0d3a00b21d4dbb42c0a10ea01">dqm4hep::core::MonitorElementList</a></td>
+          <td class="memname">typedef std::shared_ptr&lt;<a class="el" href="classdqm4hep_1_1core_1_1Storage.html">Storage</a>&lt;<a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a>&gt; &gt; <a class="el" href="namespacedqm4hep_1_1core.html#a2c193c65173949bd0cd88f2a3ca95716">dqm4hep::core::MeStoragePtr</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00152">152</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00170">170</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="abce091337e690036681199f548f0d0b6"></a>
+<a class="anchor" id="a66e5fe06f35aace0c904c8a621cc4e00"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt;const std::string, <a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a>*&gt; <a class="el" href="namespacedqm4hep_1_1core.html#abce091337e690036681199f548f0d0b6">dqm4hep::core::MonitorElementMap</a></td>
+          <td class="memname">typedef std::shared_ptr&lt;<a class="el" href="classdqm4hep_1_1core_1_1Directory.html">Directory</a>&lt;<a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a>&gt; &gt; <a class="el" href="namespacedqm4hep_1_1core.html#a66e5fe06f35aace0c904c8a621cc4e00">dqm4hep::core::MonitorElementDir</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00153">153</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00163">163</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3b5c8e92f8bd4effa0076df286261e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::vector&lt;<a class="el" href="namespacedqm4hep_1_1core.html#a5be1589954581450dce5f94212cacd5e">MonitorElementPtr</a>&gt; <a class="el" href="namespacedqm4hep_1_1core.html#ab3b5c8e92f8bd4effa0076df286261e3">dqm4hep::core::MonitorElementList</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00161">161</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ade7630b85a892a48c041302d25cd19f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;const std::string, <a class="el" href="namespacedqm4hep_1_1core.html#a5be1589954581450dce5f94212cacd5e">MonitorElementPtr</a>&gt; <a class="el" href="namespacedqm4hep_1_1core.html#ade7630b85a892a48c041302d25cd19f0">dqm4hep::core::MonitorElementMap</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00162">162</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5be1589954581450dce5f94212cacd5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::shared_ptr&lt;<a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a>&gt; <a class="el" href="namespacedqm4hep_1_1core.html#a5be1589954581450dce5f94212cacd5e">dqm4hep::core::MonitorElementPtr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00160">160</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -901,7 +957,21 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00147">147</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00155">155</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6515955f5e346ab69d186122216d8ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::shared_ptr&lt;<a class="el" href="classdqm4hep_1_1core_1_1Plugin.html">Plugin</a>&gt; <a class="el" href="namespacedqm4hep_1_1core.html#ac6515955f5e346ab69d186122216d8ef">dqm4hep::core::PluginPtr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00130">130</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -915,7 +985,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00155">155</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00166">166</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -929,7 +999,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00157">157</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00168">168</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -943,7 +1013,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00156">156</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00167">167</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -957,21 +1027,35 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00154">154</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00164">164</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3011f7983f0fb9988a5976d624eb885e"></a>
+<a class="anchor" id="a2b9c76636f8241a2978eff2563c5b7cf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::map&lt;std::string, <a class="el" href="namespacedqm4hep_1_1core.html#a1548d516765b86accc97dd1c04e8391e">QTest</a>*&gt; <a class="el" href="namespacedqm4hep_1_1core.html#a3011f7983f0fb9988a5976d624eb885e">dqm4hep::core::QTestMap</a></td>
+          <td class="memname">typedef std::map&lt;std::string, <a class="el" href="namespacedqm4hep_1_1core.html#a0d26132227570282ef346f8226ab464c">QTestPtr</a>&gt; <a class="el" href="namespacedqm4hep_1_1core.html#a2b9c76636f8241a2978eff2563c5b7cf">dqm4hep::core::QTestMap</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00158">158</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00169">169</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0d26132227570282ef346f8226ab464c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::shared_ptr&lt;<a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html">QualityTest</a>&gt; <a class="el" href="namespacedqm4hep_1_1core.html#a0d26132227570282ef346f8226ab464c">dqm4hep::core::QTestPtr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00165">165</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -985,7 +1069,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00149">149</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00157">157</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -999,7 +1083,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00148">148</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00156">156</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -1013,7 +1097,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00146">146</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00154">154</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -1027,7 +1111,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00145">145</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00153">153</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -1265,7 +1349,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00118">118</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00123">123</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -1279,7 +1363,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00117">117</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00122">122</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -1335,7 +1419,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00258">258</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
+<p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00277">277</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
 
 </div>
 </div>
@@ -1349,7 +1433,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00257">257</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
+<p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00276">276</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
 
 </div>
 </div>
@@ -1377,7 +1461,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00255">255</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
+<p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00274">274</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
 
 </div>
 </div>
@@ -1405,7 +1489,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00260">260</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
+<p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00279">279</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
 
 </div>
 </div>
@@ -1419,7 +1503,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00261">261</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
+<p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00280">280</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
 
 </div>
 </div>
@@ -1433,7 +1517,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00256">256</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
+<p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00275">275</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
 
 </div>
 </div>
@@ -1447,7 +1531,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00259">259</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
+<p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00278">278</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
 
 </div>
 </div>
@@ -1475,7 +1559,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00262">262</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
+<p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00281">281</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
 
 </div>
 </div>
@@ -1503,7 +1587,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00142">142</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00150">150</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -1660,25 +1744,25 @@ Variables</h2></td></tr>
 
 <p>Whether the string contains a special character. </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00313">313</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00325">325</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
-<p>References <a class="el" href="Internal_8h_source.html#l00279">getSpecialCharacterList()</a>.</p>
+<p>References <a class="el" href="Internal_8h_source.html#l00291">getSpecialCharacterList()</a>.</p>
 
-<p>Referenced by <a class="el" href="Directory_8h_source.html#l00232">dqm4hep::core::Directory&lt; T &gt;::hasChild()</a>, <a class="el" href="Path_8cc_source.html#l00073">dqm4hep::core::Path::isValid()</a>, and <a class="el" href="Directory_8h_source.html#l00211">dqm4hep::core::Directory&lt; T &gt;::mkdir()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    {</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">StringVector</a> specialCharacterList = <a class="code" href="namespacedqm4hep_1_1core.html#a7a3d55f0924a4e79648a68d39292590d">dqm4hep::core::getSpecialCharacterList</a>();</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      <span class="keywordflow">for</span>(StringVector::iterator iter = specialCharacterList.begin(), endIter = specialCharacterList.end() ;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;          endIter != iter ; ++iter)</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      {</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordflow">if</span>(str.find(*iter) != std::string::npos)</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      }</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    }</div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00145">Internal.h:145</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a7a3d55f0924a4e79648a68d39292590d"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a7a3d55f0924a4e79648a68d39292590d">dqm4hep::core::getSpecialCharacterList</a></div><div class="ttdeci">StringVector getSpecialCharacterList()</div><div class="ttdoc">Get the special character list that are to be avoided in some strings. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00279">Internal.h:279</a></div></div>
+<p>Referenced by <a class="el" href="Directory_8h_source.html#l00260">dqm4hep::core::Directory&lt; T &gt;::hasChild()</a>, <a class="el" href="Path_8cc_source.html#l00073">dqm4hep::core::Path::isValid()</a>, and <a class="el" href="Directory_8h_source.html#l00239">dqm4hep::core::Directory&lt; T &gt;::mkdir()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    {</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">StringVector</a> specialCharacterList = <a class="code" href="namespacedqm4hep_1_1core.html#a7a3d55f0924a4e79648a68d39292590d">dqm4hep::core::getSpecialCharacterList</a>();</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      <span class="keywordflow">for</span>(StringVector::iterator iter = specialCharacterList.begin(), endIter = specialCharacterList.end() ;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;          endIter != iter ; ++iter)</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      {</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keywordflow">if</span>(str.find(*iter) != std::string::npos)</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      }</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    }</div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00153">Internal.h:153</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a7a3d55f0924a4e79648a68d39292590d"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a7a3d55f0924a4e79648a68d39292590d">dqm4hep::core::getSpecialCharacterList</a></div><div class="ttdeci">StringVector getSpecialCharacterList()</div><div class="ttdoc">Get the special character list that are to be avoided in some strings. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00291">Internal.h:291</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1759,23 +1843,23 @@ Variables</h2></td></tr>
 <p>Fill host info (uname result + host name). </p>
 <p>See Key for available keys </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00331">331</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    {</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      <span class="comment">// uname</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      <span class="keyword">struct </span>utsname unameStruct;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;      uname(&amp;unameStruct);</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      <span class="comment">// host name</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      <span class="keywordtype">char</span> host[256];</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      gethostname(host, 256);</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;      info[<span class="stringliteral">&quot;system&quot;</span>] = unameStruct.sysname;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;      info[<span class="stringliteral">&quot;node&quot;</span>] = unameStruct.nodename;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      info[<span class="stringliteral">&quot;release&quot;</span>] = unameStruct.release;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;      info[<span class="stringliteral">&quot;version&quot;</span>] = unameStruct.version;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      info[<span class="stringliteral">&quot;machine&quot;</span>] = unameStruct.machine;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      info[<span class="stringliteral">&quot;host&quot;</span>] = host;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00343">343</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    {</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      <span class="comment">// uname</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      <span class="keyword">struct </span>utsname unameStruct;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;      uname(&amp;unameStruct);</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;      <span class="comment">// host name</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;      <span class="keywordtype">char</span> host[256];</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;      gethostname(host, 256);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;      info[<span class="stringliteral">&quot;system&quot;</span>] = unameStruct.sysname;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;      info[<span class="stringliteral">&quot;node&quot;</span>] = unameStruct.nodename;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;      info[<span class="stringliteral">&quot;release&quot;</span>] = unameStruct.release;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      info[<span class="stringliteral">&quot;version&quot;</span>] = unameStruct.version;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;      info[<span class="stringliteral">&quot;machine&quot;</span>] = unameStruct.machine;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;      info[<span class="stringliteral">&quot;host&quot;</span>] = host;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1802,38 +1886,38 @@ Variables</h2></td></tr>
 
 <p>Get the special character list that are to be avoided in some strings. </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00279">279</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00291">291</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Internal_8h_source.html#l00313">containsSpecialCharacters()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    {</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">StringVector</a> specialCharacterList;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;|&quot;</span>);</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;&amp;&quot;</span>);</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;;&quot;</span>);</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;&lt;&quot;</span>);</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;&gt;&quot;</span>);</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;(&quot;</span>);</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;)&quot;</span>);</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;$&quot;</span>);</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\\&quot;</span>);</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\&#39;&quot;</span>);</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\t&quot;</span>);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;*&quot;</span>);</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;?&quot;</span>);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;,&quot;</span>);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;[&quot;</span>);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;]&quot;</span>);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;#&quot;</span>);</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;~&quot;</span>);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;=&quot;</span>);</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;%&quot;</span>);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      <span class="keywordflow">return</span> specialCharacterList;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    }</div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00145">Internal.h:145</a></div></div>
+<p>Referenced by <a class="el" href="Internal_8h_source.html#l00325">containsSpecialCharacters()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    {</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">StringVector</a> specialCharacterList;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;|&quot;</span>);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;&amp;&quot;</span>);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;;&quot;</span>);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;&lt;&quot;</span>);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;&gt;&quot;</span>);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;(&quot;</span>);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;)&quot;</span>);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;$&quot;</span>);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\\&quot;</span>);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\&#39;&quot;</span>);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\t&quot;</span>);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;*&quot;</span>);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;?&quot;</span>);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;,&quot;</span>);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;[&quot;</span>);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;]&quot;</span>);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;#&quot;</span>);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;~&quot;</span>);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;=&quot;</span>);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;%&quot;</span>);</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      <span class="keywordflow">return</span> specialCharacterList;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    }</div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00153">Internal.h:153</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1860,11 +1944,11 @@ Variables</h2></td></tr>
 
 <p>Get the current time (unit seconds) </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00261">261</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    {</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">std::chrono::system_clock::now</a>();</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    }</div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a63a2326a6a01e5ed790f2c4027038cb2"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">dqm4hep::core::now</a></div><div class="ttdeci">TimePoint now()</div><div class="ttdoc">Get the current time (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00261">Internal.h:261</a></div></div>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00273">273</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">std::chrono::system_clock::now</a>();</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    }</div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a63a2326a6a01e5ed790f2c4027038cb2"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">dqm4hep::core::now</a></div><div class="ttdeci">TimePoint now()</div><div class="ttdoc">Get the current time (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00273">Internal.h:273</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3210,25 +3294,25 @@ template&lt;typename S &gt; </div>
 
 <p>Screen splash of DQM4HEP. </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00190">190</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    {</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      time_t t;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      time(&amp;t);</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      <span class="keywordtype">char</span> timeStr[256];</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      ctime_r(&amp;t, &amp;timeStr[0]);</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#######################################################&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#                    DQM4HEP (DQMCore)&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#   (Data Quality Monitoring For High Energy Physics)&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#      Version    : &quot;</span> &lt;&lt; DQMCore_VERSION_STR &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#      Started at : &quot;</span> &lt;&lt; timeStr ;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#      Author     : R. Ete, A. Pingault&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#      Mail       : &lt;dqm4hep@gmail.com&gt; &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#######################################################&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00202">202</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      time_t t;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      time(&amp;t);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      <span class="keywordtype">char</span> timeStr[256];</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      ctime_r(&amp;t, &amp;timeStr[0]);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#######################################################&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#                    DQM4HEP (DQMCore)&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#   (Data Quality Monitoring For High Energy Physics)&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#      Version    : &quot;</span> &lt;&lt; DQMCore_VERSION_STR &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#      Started at : &quot;</span> &lt;&lt; timeStr ;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#      Author     : R. Ete, A. Pingault&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#      Mail       : &lt;dqm4hep@gmail.com&gt; &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;#######################################################&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3256,10 +3340,10 @@ template&lt;typename S &gt; </div>
 
 <p>Sleep for the specified time duration. </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00270">270</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    {</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      std::this_thread::sleep_for(duration);</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00282">282</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    {</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      std::this_thread::sleep_for(duration);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3338,13 +3422,13 @@ template&lt;class T &gt; </div>
 
 <p>Convert std::string to a type. </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00165">165</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00177">177</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="XmlHelper_8h_source.html#l00265">dqm4hep::core::XmlHelper::getAttribute()</a>, <a class="el" href="Run_8h_source.html#l00251">dqm4hep::core::Run::getParameter()</a>, <a class="el" href="DBInterface_8h_source.html#l00162">dqm4hep::core::DBInterface::query()</a>, <a class="el" href="DBInterface_8h_source.html#l00197">dqm4hep::core::DBInterface::queryVector()</a>, <a class="el" href="XmlHelper_8h_source.html#l00226">dqm4hep::core::XmlHelper::read2DVectorOfValues()</a>, <a class="el" href="XmlHelper_8h_source.html#l00317">dqm4hep::core::XmlHelper::readParameterValue()</a>, <a class="el" href="XmlHelper_8h_source.html#l00353">dqm4hep::core::XmlHelper::readParameterValues()</a>, <a class="el" href="XmlHelper_8h_source.html#l00156">dqm4hep::core::XmlHelper::readValue()</a>, <a class="el" href="XmlHelper_8h_source.html#l00200">dqm4hep::core::XmlHelper::readVectorOfValues()</a>, and <a class="el" href="XmlHelper_8cc_source.html#l00385">dqm4hep::core::XmlHelper::replaceAllXmlAttributes()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    {</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      <a class="code" href="Arg_8h.html#ab31d9646d48ca9d02918cc36b138e67b">std::istringstream</a> iss(s);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;      <span class="keywordflow">return</span> !(iss &gt;&gt; t).fail();</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <a class="code" href="Arg_8h.html#ab31d9646d48ca9d02918cc36b138e67b">std::istringstream</a> iss(s);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <span class="keywordflow">return</span> !(iss &gt;&gt; t).fail();</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
 <div class="ttc" id="Arg_8h_html_ab31d9646d48ca9d02918cc36b138e67b"><div class="ttname"><a href="Arg_8h.html#ab31d9646d48ca9d02918cc36b138e67b">istringstream</a></div><div class="ttdeci">std::istringstream istringstream</div><div class="ttdef"><b>Definition:</b> <a href="Arg_8h_source.html#l00043">Arg.h:43</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -3385,17 +3469,17 @@ template&lt;&gt; </div>
 
 <p>Specialization for booleans. </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00354">354</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    {</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      <span class="keywordflow">if</span>(s == <span class="stringliteral">&quot;on&quot;</span> || s == <span class="stringliteral">&quot;1&quot;</span> || s == <span class="stringliteral">&quot;true&quot;</span>)</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        t = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(s == <span class="stringliteral">&quot;off&quot;</span> || s == <span class="stringliteral">&quot;0&quot;</span> || s == <span class="stringliteral">&quot;false&quot;</span>)</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        t = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00366">366</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    {</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;      <span class="keywordflow">if</span>(s == <span class="stringliteral">&quot;on&quot;</span> || s == <span class="stringliteral">&quot;1&quot;</span> || s == <span class="stringliteral">&quot;true&quot;</span>)</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        t = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(s == <span class="stringliteral">&quot;off&quot;</span> || s == <span class="stringliteral">&quot;0&quot;</span> || s == <span class="stringliteral">&quot;false&quot;</span>)</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        t = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3445,17 +3529,17 @@ template&lt;&gt; </div>
 
 <p>Convert time_t to hour, minutes and seconds. </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00231">231</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00243">243</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Internal_8h_source.html#l00245">timeToHMS()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    {</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      <span class="keyword">struct </span>tm *pTmTime = <span class="keyword">new</span> tm();</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;      localtime_r(&amp;t, pTmTime);</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      hours = pTmTime-&gt;tm_hour;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      minutes = pTmTime-&gt;tm_min;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      seconds = pTmTime-&gt;tm_sec;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      <span class="keyword">delete</span> pTmTime;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    }</div>
+<p>Referenced by <a class="el" href="Internal_8h_source.html#l00257">timeToHMS()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      <span class="keyword">struct </span>tm *pTmTime = <span class="keyword">new</span> tm();</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      localtime_r(&amp;t, pTmTime);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      hours = pTmTime-&gt;tm_hour;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      minutes = pTmTime-&gt;tm_min;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      seconds = pTmTime-&gt;tm_sec;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      <span class="keyword">delete</span> pTmTime;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3493,20 +3577,20 @@ template&lt;&gt; </div>
 
 <p>Convert time_t to string format as "HOURSh MINUTESm SECONDSs". </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00245">245</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00257">257</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
-<p>References <a class="el" href="Internal_8h_source.html#l00231">timeToHMS()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      <span class="comment">// get h m and s</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      <span class="keywordtype">int</span> hours, minutes, seconds;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#aa8978df0290612ca94f6fb176783cb91">dqm4hep::core::timeToHMS</a>(t, hours, minutes, seconds);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      <span class="comment">// convert to str</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      std::stringstream ss;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      ss &lt;&lt; hours &lt;&lt; <span class="stringliteral">&quot;h &quot;</span> &lt;&lt; minutes &lt;&lt; <span class="stringliteral">&quot;m &quot;</span> &lt;&lt; seconds &lt;&lt; <span class="stringliteral">&quot;s&quot;</span>;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      timeStr = ss.str();</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_aa8978df0290612ca94f6fb176783cb91"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#aa8978df0290612ca94f6fb176783cb91">dqm4hep::core::timeToHMS</a></div><div class="ttdeci">void timeToHMS(time_t t, int &amp;hours, int &amp;minutes, int &amp;seconds)</div><div class="ttdoc">Convert time_t to hour, minutes and seconds. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00231">Internal.h:231</a></div></div>
+<p>References <a class="el" href="Internal_8h_source.html#l00243">timeToHMS()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      <span class="comment">// get h m and s</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      <span class="keywordtype">int</span> hours, minutes, seconds;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#aa8978df0290612ca94f6fb176783cb91">dqm4hep::core::timeToHMS</a>(t, hours, minutes, seconds);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <span class="comment">// convert to str</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;      std::stringstream ss;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      ss &lt;&lt; hours &lt;&lt; <span class="stringliteral">&quot;h &quot;</span> &lt;&lt; minutes &lt;&lt; <span class="stringliteral">&quot;m &quot;</span> &lt;&lt; seconds &lt;&lt; <span class="stringliteral">&quot;s&quot;</span>;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      timeStr = ss.str();</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    }</div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_aa8978df0290612ca94f6fb176783cb91"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#aa8978df0290612ca94f6fb176783cb91">dqm4hep::core::timeToHMS</a></div><div class="ttdeci">void timeToHMS(time_t t, int &amp;hours, int &amp;minutes, int &amp;seconds)</div><div class="ttdoc">Convert time_t to hour, minutes and seconds. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00243">Internal.h:243</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3591,20 +3675,20 @@ template&lt;&gt; </div>
 
 <p>Tokenize string with delimiter. </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00214">214</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00226">226</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
-<p>Referenced by <a class="el" href="MonitorElement_8h_source.html#l00446">dqm4hep::core::TScalarObject&lt; T &gt;::Draw()</a>, <a class="el" href="Path_8cc_source.html#l00053">dqm4hep::core::Path::getSplitPath()</a>, <a class="el" href="PluginManager_8cc_source.html#l00059">dqm4hep::core::PluginManager::loadLibraries()</a>, <a class="el" href="XmlHelper_8h_source.html#l00226">dqm4hep::core::XmlHelper::read2DVectorOfValues()</a>, <a class="el" href="XmlHelper_8h_source.html#l00353">dqm4hep::core::XmlHelper::readParameterValues()</a>, <a class="el" href="XmlHelper_8h_source.html#l00200">dqm4hep::core::XmlHelper::readVectorOfValues()</a>, and <a class="el" href="XmlHelper_8cc_source.html#l00385">dqm4hep::core::XmlHelper::replaceAllXmlAttributes()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    {</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;      std::string::size_type lastPos = inputString.find_first_not_of(delimiter, 0);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;      std::string::size_type pos     = inputString.find_first_of(delimiter, lastPos);</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;      <span class="keywordflow">while</span> ((std::string::npos != pos) || (std::string::npos != lastPos))</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;      {</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        tokens.push_back(inputString.substr(lastPos, pos - lastPos));</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        lastPos = inputString.find_first_not_of(delimiter, pos);</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        pos = inputString.find_first_of(delimiter, lastPos);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;      }</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    }</div>
+<p>Referenced by <a class="el" href="MonitorElement_8h_source.html#l00465">dqm4hep::core::TScalarObject&lt; T &gt;::Draw()</a>, <a class="el" href="Path_8cc_source.html#l00053">dqm4hep::core::Path::getSplitPath()</a>, <a class="el" href="PluginManager_8cc_source.html#l00059">dqm4hep::core::PluginManager::loadLibraries()</a>, <a class="el" href="XmlHelper_8h_source.html#l00226">dqm4hep::core::XmlHelper::read2DVectorOfValues()</a>, <a class="el" href="XmlHelper_8h_source.html#l00353">dqm4hep::core::XmlHelper::readParameterValues()</a>, <a class="el" href="XmlHelper_8h_source.html#l00200">dqm4hep::core::XmlHelper::readVectorOfValues()</a>, and <a class="el" href="XmlHelper_8cc_source.html#l00385">dqm4hep::core::XmlHelper::replaceAllXmlAttributes()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;      std::string::size_type lastPos = inputString.find_first_not_of(delimiter, 0);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;      std::string::size_type pos     = inputString.find_first_of(delimiter, lastPos);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;      <span class="keywordflow">while</span> ((std::string::npos != pos) || (std::string::npos != lastPos))</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        tokens.push_back(inputString.substr(lastPos, pos - lastPos));</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        lastPos = inputString.find_first_not_of(delimiter, pos);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        pos = inputString.find_first_of(delimiter, lastPos);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3634,17 +3718,17 @@ template&lt;class T &gt; </div>
 
 <p>Convert type to std::string. </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00176">176</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00188">188</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="MeanWithinExpectedTest_8cc_source.html#l00111">dqm4hep::core::MeanWithinExpectedTest::userRun()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    {</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      std::ostringstream oss;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <span class="keywordflow">if</span> ((oss &lt;&lt; t).fail())</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">throw</span>;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      <span class="keywordflow">return</span> oss.str();</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      std::ostringstream oss;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      <span class="keywordflow">if</span> ((oss &lt;&lt; t).fail())</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">throw</span>;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      <span class="keywordflow">return</span> oss.str();</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3756,7 +3840,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 9 2018 16:57:42 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 17 2018 12:43:35 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

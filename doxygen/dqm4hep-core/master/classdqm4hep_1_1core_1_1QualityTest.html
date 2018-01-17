@@ -91,9 +91,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:accc5395295a1234be354ad7b29021e50"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html#accc5395295a1234be354ad7b29021e50">description</a> () const </td></tr>
 <tr class="memdesc:accc5395295a1234be354ad7b29021e50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the quality test description.  <a href="#accc5395295a1234be354ad7b29021e50">More...</a><br/></td></tr>
 <tr class="separator:accc5395295a1234be354ad7b29021e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae84619d19e7cdd1a9cb58dac9b528b21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html#ae84619d19e7cdd1a9cb58dac9b528b21">run</a> (<a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a> *pMonitorElement, <a class="el" href="classdqm4hep_1_1core_1_1QualityTestReport.html">QualityTestReport</a> &amp;report)</td></tr>
-<tr class="memdesc:ae84619d19e7cdd1a9cb58dac9b528b21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the quality test result and fill the quality test report.  <a href="#ae84619d19e7cdd1a9cb58dac9b528b21">More...</a><br/></td></tr>
-<tr class="separator:ae84619d19e7cdd1a9cb58dac9b528b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d13f9356be51a7f2158e44fa0dc401b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html#a2d13f9356be51a7f2158e44fa0dc401b">run</a> (<a class="el" href="namespacedqm4hep_1_1core.html#a5be1589954581450dce5f94212cacd5e">MonitorElementPtr</a> monitorElement, <a class="el" href="classdqm4hep_1_1core_1_1QualityTestReport.html">QualityTestReport</a> &amp;report)</td></tr>
+<tr class="memdesc:a2d13f9356be51a7f2158e44fa0dc401b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform the quality test result and fill the quality test report.  <a href="#a2d13f9356be51a7f2158e44fa0dc401b">More...</a><br/></td></tr>
+<tr class="separator:a2d13f9356be51a7f2158e44fa0dc401b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a185f7031cd78aef088a6f2066b16dd41"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html#a185f7031cd78aef088a6f2066b16dd41">readSettings</a> (const <a class="el" href="classdqm4hep_1_1core_1_1TiXmlHandle.html">dqm4hep::core::TiXmlHandle</a> xmlHandle)=0</td></tr>
 <tr class="memdesc:a185f7031cd78aef088a6f2066b16dd41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the settings from the xml handle.  <a href="#a185f7031cd78aef088a6f2066b16dd41">More...</a><br/></td></tr>
 <tr class="separator:a185f7031cd78aef088a6f2066b16dd41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,15 +103,15 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2c90e9072dcf082b549bf196c7a112f6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html#a2c90e9072dcf082b549bf196c7a112f6">userRun</a> (<a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a> *pMonitorElement, <a class="el" href="classdqm4hep_1_1core_1_1QualityTestReport.html">QualityTestReport</a> &amp;report)=0</td></tr>
-<tr class="memdesc:a2c90e9072dcf082b549bf196c7a112f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a quality test on the given monitor element.  <a href="#a2c90e9072dcf082b549bf196c7a112f6">More...</a><br/></td></tr>
-<tr class="separator:a2c90e9072dcf082b549bf196c7a112f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a323e5389fa595fcbd334ba8df0307f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html#a5a323e5389fa595fcbd334ba8df0307f">canRun</a> (<a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a> *pMonitorElement) const =0</td></tr>
-<tr class="memdesc:a5a323e5389fa595fcbd334ba8df0307f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the quality test can be run on the monitor element.  <a href="#a5a323e5389fa595fcbd334ba8df0307f">More...</a><br/></td></tr>
-<tr class="separator:a5a323e5389fa595fcbd334ba8df0307f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea2daf2292916c909f2b28a4fdf2bae8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html#aea2daf2292916c909f2b28a4fdf2bae8">fillBasicInfo</a> (<a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a> *pMonitorElement, <a class="el" href="classdqm4hep_1_1core_1_1QualityTestReport.html">QualityTestReport</a> &amp;report) const </td></tr>
-<tr class="memdesc:aea2daf2292916c909f2b28a4fdf2bae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill basic info in the qtest report.  <a href="#aea2daf2292916c909f2b28a4fdf2bae8">More...</a><br/></td></tr>
-<tr class="separator:aea2daf2292916c909f2b28a4fdf2bae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24918b0e82914160177ae1492b7432f2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html#a24918b0e82914160177ae1492b7432f2">userRun</a> (<a class="el" href="namespacedqm4hep_1_1core.html#a5be1589954581450dce5f94212cacd5e">MonitorElementPtr</a> monitorElement, <a class="el" href="classdqm4hep_1_1core_1_1QualityTestReport.html">QualityTestReport</a> &amp;report)=0</td></tr>
+<tr class="memdesc:a24918b0e82914160177ae1492b7432f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a quality test on the given monitor element.  <a href="#a24918b0e82914160177ae1492b7432f2">More...</a><br/></td></tr>
+<tr class="separator:a24918b0e82914160177ae1492b7432f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48672e8f087c8b77d37e16d9b70fa751"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html#a48672e8f087c8b77d37e16d9b70fa751">canRun</a> (<a class="el" href="namespacedqm4hep_1_1core.html#a5be1589954581450dce5f94212cacd5e">MonitorElementPtr</a> monitorElement) const =0</td></tr>
+<tr class="memdesc:a48672e8f087c8b77d37e16d9b70fa751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the quality test can be run on the monitor element.  <a href="#a48672e8f087c8b77d37e16d9b70fa751">More...</a><br/></td></tr>
+<tr class="separator:a48672e8f087c8b77d37e16d9b70fa751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f3c216a6f8c743db33e22e0b8e5a75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html#a29f3c216a6f8c743db33e22e0b8e5a75">fillBasicInfo</a> (<a class="el" href="namespacedqm4hep_1_1core.html#a5be1589954581450dce5f94212cacd5e">MonitorElementPtr</a> monitorElement, <a class="el" href="classdqm4hep_1_1core_1_1QualityTestReport.html">QualityTestReport</a> &amp;report) const </td></tr>
+<tr class="memdesc:a29f3c216a6f8c743db33e22e0b8e5a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill basic info in the qtest report.  <a href="#a29f3c216a6f8c743db33e22e0b8e5a75">More...</a><br/></td></tr>
+<tr class="separator:a29f3c216a6f8c743db33e22e0b8e5a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -206,7 +206,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a5a323e5389fa595fcbd334ba8df0307f"></a>
+<a class="anchor" id="a48672e8f087c8b77d37e16d9b70fa751"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -216,8 +216,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual bool dqm4hep::core::QualityTest::canRun </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a> *&#160;</td>
-          <td class="paramname"><em>pMonitorElement</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespacedqm4hep_1_1core.html#a5be1589954581450dce5f94212cacd5e">MonitorElementPtr</a>&#160;</td>
+          <td class="paramname"><em>monitorElement</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -230,7 +230,7 @@ Private Attributes</h2></td></tr>
 
 <p>Whether the quality test can be run on the monitor element. </p>
 
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1MeanWithinExpectedTest.html#a5d31bee2b706d8f7c40f5d70a6f33621">dqm4hep::core::MeanWithinExpectedTest</a>.</p>
+<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1MeanWithinExpectedTest.html#ab9f757b66667a1c7a1c8859c3ffdb76d">dqm4hep::core::MeanWithinExpectedTest</a>.</p>
 
 <p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00352">run()</a>.</p>
 
@@ -263,7 +263,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="aea2daf2292916c909f2b28a4fdf2bae8"></a>
+<a class="anchor" id="a29f3c216a6f8c743db33e22e0b8e5a75"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -273,8 +273,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void dqm4hep::core::QualityTest::fillBasicInfo </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a> *&#160;</td>
-          <td class="paramname"><em>pMonitorElement</em>, </td>
+          <td class="paramtype"><a class="el" href="namespacedqm4hep_1_1core.html#a5be1589954581450dce5f94212cacd5e">MonitorElementPtr</a>&#160;</td>
+          <td class="paramname"><em>monitorElement</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -300,16 +300,16 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="QualityTest_8cc_source.html#l00396">396</a> of file <a class="el" href="QualityTest_8cc_source.html">QualityTest.cc</a>.</p>
 
-<p>References <a class="el" href="QualityTest_8cc_source.html#l00345">description()</a>, <a class="el" href="QualityTest_8h_source.html#l00087">dqm4hep::core::QualityTestReport::m_extraInfos</a>, <a class="el" href="QualityTest_8h_source.html#l00086">dqm4hep::core::QualityTestReport::m_isSuccessful</a>, <a class="el" href="QualityTest_8h_source.html#l00084">dqm4hep::core::QualityTestReport::m_message</a>, <a class="el" href="QualityTest_8h_source.html#l00081">dqm4hep::core::QualityTestReport::m_monitorElementName</a>, <a class="el" href="QualityTest_8h_source.html#l00083">dqm4hep::core::QualityTestReport::m_monitorElementPath</a>, <a class="el" href="QualityTest_8h_source.html#l00082">dqm4hep::core::QualityTestReport::m_monitorElementType</a>, <a class="el" href="QualityTest_8h_source.html#l00085">dqm4hep::core::QualityTestReport::m_quality</a>, <a class="el" href="QualityTest_8h_source.html#l00080">dqm4hep::core::QualityTestReport::m_qualityTestDescription</a>, <a class="el" href="QualityTest_8h_source.html#l00078">dqm4hep::core::QualityTestReport::m_qualityTestName</a>, <a class="el" href="QualityTest_8h_source.html#l00079">dqm4hep::core::QualityTestReport::m_qualityTestType</a>, <a class="el" href="MonitorElement_8cc_source.html#l00093">dqm4hep::core::MonitorElement::name()</a>, <a class="el" href="QualityTest_8cc_source.html#l00338">name()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00107">dqm4hep::core::MonitorElement::path()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00086">dqm4hep::core::MonitorElement::type()</a>, and <a class="el" href="QualityTest_8cc_source.html#l00331">type()</a>.</p>
+<p>References <a class="el" href="QualityTest_8cc_source.html#l00345">description()</a>, <a class="el" href="QualityTest_8h_source.html#l00087">dqm4hep::core::QualityTestReport::m_extraInfos</a>, <a class="el" href="QualityTest_8h_source.html#l00086">dqm4hep::core::QualityTestReport::m_isSuccessful</a>, <a class="el" href="QualityTest_8h_source.html#l00084">dqm4hep::core::QualityTestReport::m_message</a>, <a class="el" href="QualityTest_8h_source.html#l00081">dqm4hep::core::QualityTestReport::m_monitorElementName</a>, <a class="el" href="QualityTest_8h_source.html#l00083">dqm4hep::core::QualityTestReport::m_monitorElementPath</a>, <a class="el" href="QualityTest_8h_source.html#l00082">dqm4hep::core::QualityTestReport::m_monitorElementType</a>, <a class="el" href="QualityTest_8h_source.html#l00085">dqm4hep::core::QualityTestReport::m_quality</a>, <a class="el" href="QualityTest_8h_source.html#l00080">dqm4hep::core::QualityTestReport::m_qualityTestDescription</a>, <a class="el" href="QualityTest_8h_source.html#l00078">dqm4hep::core::QualityTestReport::m_qualityTestName</a>, <a class="el" href="QualityTest_8h_source.html#l00079">dqm4hep::core::QualityTestReport::m_qualityTestType</a>, <a class="el" href="QualityTest_8cc_source.html#l00338">name()</a>, and <a class="el" href="QualityTest_8cc_source.html#l00331">type()</a>.</p>
 
 <p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00352">run()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    {</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;      report.m_qualityTestName = this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#aaf7824a839e4cdc66cd5811f9552d1ed">name</a>();</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;      report.m_qualityTestType = this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a626de3072c96619e3a6fb58b047faf3b">type</a>();</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      report.m_qualityTestDescription = this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#accc5395295a1234be354ad7b29021e50">description</a>();</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;      report.m_monitorElementType = pMonitorElement-&gt;type();</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;      report.m_monitorElementName = pMonitorElement-&gt;name();</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;      report.m_monitorElementPath = pMonitorElement-&gt;path();</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;      report.m_monitorElementType = monitorElement-&gt;type();</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;      report.m_monitorElementName = monitorElement-&gt;name();</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;      report.m_monitorElementPath = monitorElement-&gt;path();</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      report.m_quality = 0.f;</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;      report.m_message = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;      report.m_isSuccessful = <span class="keyword">false</span>;</div>
@@ -345,8 +345,6 @@ Private Attributes</h2></td></tr>
 <p>Initialize the quality test. </p>
 
 <p>Definition at line <a class="el" href="QualityTest_8h_source.html#l00236">236</a> of file <a class="el" href="QualityTest_8h_source.html">QualityTest.h</a>.</p>
-
-<p>Referenced by <a class="el" href="MonitorElementManager_8cc_source.html#l00430">dqm4hep::core::MonitorElementManager::createQualityTest()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    {</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    }</div>
@@ -372,7 +370,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="QualityTest_8h_source.html#l00210">m_name</a>.</p>
 
-<p>Referenced by <a class="el" href="MonitorElement_8cc_source.html#l00215">dqm4hep::core::MonitorElement::addQualityTest()</a>, and <a class="el" href="QualityTest_8cc_source.html#l00396">fillBasicInfo()</a>.</p>
+<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00396">fillBasicInfo()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    {</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a5fe8117a696ff1530a28349186763c10">m_name</a>;</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    }</div>
@@ -406,19 +404,17 @@ Private Attributes</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1MeanWithinExpectedTest.html#a81ef8dc3e3df1e0f4bdcad1be7ce8b75">dqm4hep::core::MeanWithinExpectedTest</a>.</p>
 
-<p>Referenced by <a class="el" href="MonitorElementManager_8cc_source.html#l00430">dqm4hep::core::MonitorElementManager::createQualityTest()</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="ae84619d19e7cdd1a9cb58dac9b528b21"></a>
+<a class="anchor" id="a2d13f9356be51a7f2158e44fa0dc401b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void dqm4hep::core::QualityTest::run </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a> *&#160;</td>
-          <td class="paramname"><em>pMonitorElement</em>, </td>
+          <td class="paramtype"><a class="el" href="namespacedqm4hep_1_1core.html#a5be1589954581450dce5f94212cacd5e">MonitorElementPtr</a>&#160;</td>
+          <td class="paramname"><em>monitorElement</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -438,11 +434,11 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="QualityTest_8cc_source.html#l00352">352</a> of file <a class="el" href="QualityTest_8cc_source.html">QualityTest.cc</a>.</p>
 
-<p>References <a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html#a5a323e5389fa595fcbd334ba8df0307f">canRun()</a>, <a class="el" href="QualityTest_8cc_source.html#l00396">fillBasicInfo()</a>, <a class="el" href="QualityTest_8h_source.html#l00086">dqm4hep::core::QualityTestReport::m_isSuccessful</a>, <a class="el" href="QualityTest_8h_source.html#l00084">dqm4hep::core::QualityTestReport::m_message</a>, <a class="el" href="QualityTest_8h_source.html#l00085">dqm4hep::core::QualityTestReport::m_quality</a>, <a class="el" href="StatusCodes_8h_source.html#l00067">THROW_RESULT_IF</a>, <a class="el" href="StatusCodes_8h_source.html#l00228">dqm4hep::core::StatusCodeException::toString()</a>, and <a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html#a2c90e9072dcf082b549bf196c7a112f6">userRun()</a>.</p>
+<p>References <a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html#a48672e8f087c8b77d37e16d9b70fa751">canRun()</a>, <a class="el" href="QualityTest_8cc_source.html#l00396">fillBasicInfo()</a>, <a class="el" href="QualityTest_8h_source.html#l00086">dqm4hep::core::QualityTestReport::m_isSuccessful</a>, <a class="el" href="QualityTest_8h_source.html#l00084">dqm4hep::core::QualityTestReport::m_message</a>, <a class="el" href="QualityTest_8h_source.html#l00085">dqm4hep::core::QualityTestReport::m_quality</a>, <a class="el" href="StatusCodes_8h_source.html#l00067">THROW_RESULT_IF</a>, <a class="el" href="StatusCodes_8h_source.html#l00228">dqm4hep::core::StatusCodeException::toString()</a>, and <a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html#a24918b0e82914160177ae1492b7432f2">userRun()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    {</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#aea2daf2292916c909f2b28a4fdf2bae8">fillBasicInfo</a>(pMonitorElement, report);</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a29f3c216a6f8c743db33e22e0b8e5a75">fillBasicInfo</a>(monitorElement, report);</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      <span class="keywordflow">if</span>(!this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a5a323e5389fa595fcbd334ba8df0307f">canRun</a>(pMonitorElement))</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      <span class="keywordflow">if</span>(!this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a48672e8f087c8b77d37e16d9b70fa751">canRun</a>(monitorElement))</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;      {</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        report.m_message = <span class="stringliteral">&quot;Couldn&#39;t run quality test: canRun() failed&quot;</span>;</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        report.m_quality = 0.f;</div>
@@ -452,7 +448,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;      <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      {</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <a class="code" href="StatusCodes_8h.html#ab49c8013f48bd677d0e5e39cb506b8f9">THROW_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a2c90e9072dcf082b549bf196c7a112f6">userRun</a>(pMonitorElement, report));</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <a class="code" href="StatusCodes_8h.html#ab49c8013f48bd677d0e5e39cb506b8f9">THROW_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a24918b0e82914160177ae1492b7432f2">userRun</a>(monitorElement, report));</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      }</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;      <span class="keywordflow">catch</span>(StatusCodeException &amp;exception)</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;      {</div>
@@ -479,10 +475,10 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        report.m_isSuccessful = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;      }</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_a5a323e5389fa595fcbd334ba8df0307f"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#a5a323e5389fa595fcbd334ba8df0307f">dqm4hep::core::QualityTest::canRun</a></div><div class="ttdeci">virtual bool canRun(MonitorElement *pMonitorElement) const =0</div><div class="ttdoc">Whether the quality test can be run on the monitor element. </div></div>
 <div class="ttc" id="StatusCodes_8h_html_ab49c8013f48bd677d0e5e39cb506b8f9"><div class="ttname"><a href="StatusCodes_8h.html#ab49c8013f48bd677d0e5e39cb506b8f9">THROW_RESULT_IF</a></div><div class="ttdeci">#define THROW_RESULT_IF(StatusCode1, Operator, Command)</div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00067">StatusCodes.h:67</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_aea2daf2292916c909f2b28a4fdf2bae8"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#aea2daf2292916c909f2b28a4fdf2bae8">dqm4hep::core::QualityTest::fillBasicInfo</a></div><div class="ttdeci">void fillBasicInfo(MonitorElement *pMonitorElement, QualityTestReport &amp;report) const </div><div class="ttdoc">Fill basic info in the qtest report. </div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8cc_source.html#l00396">QualityTest.cc:396</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_a2c90e9072dcf082b549bf196c7a112f6"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#a2c90e9072dcf082b549bf196c7a112f6">dqm4hep::core::QualityTest::userRun</a></div><div class="ttdeci">virtual StatusCode userRun(MonitorElement *pMonitorElement, QualityTestReport &amp;report)=0</div><div class="ttdoc">Runs a quality test on the given monitor element. </div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_a48672e8f087c8b77d37e16d9b70fa751"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#a48672e8f087c8b77d37e16d9b70fa751">dqm4hep::core::QualityTest::canRun</a></div><div class="ttdeci">virtual bool canRun(MonitorElementPtr monitorElement) const =0</div><div class="ttdoc">Whether the quality test can be run on the monitor element. </div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_a24918b0e82914160177ae1492b7432f2"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#a24918b0e82914160177ae1492b7432f2">dqm4hep::core::QualityTest::userRun</a></div><div class="ttdeci">virtual StatusCode userRun(MonitorElementPtr monitorElement, QualityTestReport &amp;report)=0</div><div class="ttdoc">Runs a quality test on the given monitor element. </div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_a29f3c216a6f8c743db33e22e0b8e5a75"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#a29f3c216a6f8c743db33e22e0b8e5a75">dqm4hep::core::QualityTest::fillBasicInfo</a></div><div class="ttdeci">void fillBasicInfo(MonitorElementPtr monitorElement, QualityTestReport &amp;report) const </div><div class="ttdoc">Fill basic info in the qtest report. </div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8cc_source.html#l00396">QualityTest.cc:396</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -513,7 +509,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a2c90e9072dcf082b549bf196c7a112f6"></a>
+<a class="anchor" id="a24918b0e82914160177ae1492b7432f2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -523,8 +519,8 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> dqm4hep::core::QualityTest::userRun </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a> *&#160;</td>
-          <td class="paramname"><em>pMonitorElement</em>, </td>
+          <td class="paramtype"><a class="el" href="namespacedqm4hep_1_1core.html#a5be1589954581450dce5f94212cacd5e">MonitorElementPtr</a>&#160;</td>
+          <td class="paramname"><em>monitorElement</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -547,7 +543,7 @@ Private Attributes</h2></td></tr>
 
 <p>Runs a quality test on the given monitor element. </p>
 
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1MeanWithinExpectedTest.html#af9b93cb7bbb7d2fdf539f0b5b517cf8f">dqm4hep::core::MeanWithinExpectedTest</a>.</p>
+<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1MeanWithinExpectedTest.html#ab52299e171c0ac0bb72ab19e2da3ebc3">dqm4hep::core::MeanWithinExpectedTest</a>.</p>
 
 <p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00352">run()</a>.</p>
 
@@ -639,7 +635,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 9 2018 16:57:42 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 17 2018 12:43:36 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

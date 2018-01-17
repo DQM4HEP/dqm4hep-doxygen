@@ -279,7 +279,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a52a91490003e610a3eba1dec29e79f6d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">dqm4hep::core::Event::m_timeStamp</a></div><div class="ttdeci">TimePoint m_timeStamp</div><div class="ttdoc">The event time stamp. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00153">Event.h:153</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a4d99b8e79925b571c02d3d4376afe022"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">dqm4hep::core::Event::m_source</a></div><div class="ttdeci">std::string m_source</div><div class="ttdoc">The event source. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00152">Event.h:152</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a6750db8e23540ba8271bf5f1a8551c89"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a6750db8e23540ba8271bf5f1a8551c89">dqm4hep::core::TimePoint</a></div><div class="ttdeci">std::chrono::system_clock::time_point TimePoint</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00117">Internal.h:117</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a6750db8e23540ba8271bf5f1a8551c89"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a6750db8e23540ba8271bf5f1a8551c89">dqm4hep::core::TimePoint</a></div><div class="ttdeci">std::chrono::system_clock::time_point TimePoint</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00122">Internal.h:122</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_a22223e08d15c5cb3007165e0b19205c3a8605d534e908730f7e3ed8d418aece6a"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a22223e08d15c5cb3007165e0b19205c3a8605d534e908730f7e3ed8d418aece6a">dqm4hep::core::UNKNOWN_EVENT</a></div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00047">Event.h:47</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a8e19534d84bcce86fa9bad40b4c7eb41"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">dqm4hep::core::Event::m_eventSize</a></div><div class="ttdeci">uint64_t m_eventSize</div><div class="ttdoc">The serialized event size (unit bytes) </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00154">Event.h:154</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_af5968aec2e0a660292837b4ce1400843"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">dqm4hep::core::Event::m_type</a></div><div class="ttdeci">EventType m_type</div><div class="ttdoc">The event type. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00151">Event.h:151</a></div></div>
@@ -316,8 +316,6 @@ template&lt;typename T &gt; </div>
 <p>Definition at line <a class="el" href="Event_8h_source.html#l00206">206</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
 <p>References <a class="el" href="Event_8h_source.html#l00350">dqm4hep::core::EventBase&lt; T &gt;::getEvent()</a>.</p>
-
-<p>Referenced by <a class="el" href="GenericEvent_8cc_source.html#l00139">dqm4hep::core::GenericEventStreamer::write()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    {</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;      <span class="keyword">const</span> EventBase&lt;T&gt; *<span class="keyword">const</span> pEventBase(<span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>EventBase&lt;T&gt; *const<span class="keyword">&gt;</span>(<span class="keyword">this</span>));</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
@@ -546,8 +544,6 @@ template&lt;typename T &gt; </div>
 <p>Definition at line <a class="el" href="Event_8cc_source.html#l00083">83</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
 
 <p>References <a class="el" href="Event_8h_source.html#l00155">m_eventNumber</a>, <a class="el" href="Event_8h_source.html#l00154">m_eventSize</a>, <a class="el" href="Event_8h_source.html#l00156">m_runNumber</a>, <a class="el" href="Event_8h_source.html#l00152">m_source</a>, <a class="el" href="Event_8h_source.html#l00265">setTimeStamp()</a>, and <a class="el" href="Event_8h_source.html#l00237">setType()</a>.</p>
-
-<p>Referenced by <a class="el" href="GenericEvent_8cc_source.html#l00168">dqm4hep::core::GenericEventStreamer::read()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      uint8_t type(0);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      int64_t timeStamp(0);</div>
@@ -857,8 +853,6 @@ template&lt;typename T &gt; </div>
 <p>Definition at line <a class="el" href="Event_8cc_source.html#l00066">66</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
 
 <p>References <a class="el" href="Event_8h_source.html#l00155">m_eventNumber</a>, <a class="el" href="Event_8h_source.html#l00154">m_eventSize</a>, <a class="el" href="Event_8h_source.html#l00156">m_runNumber</a>, <a class="el" href="Event_8h_source.html#l00152">m_source</a>, <a class="el" href="Event_8h_source.html#l00153">m_timeStamp</a>, and <a class="el" href="Event_8h_source.html#l00151">m_type</a>.</p>
-
-<p>Referenced by <a class="el" href="GenericEvent_8cc_source.html#l00139">dqm4hep::core::GenericEventStreamer::write()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      uint8_t type(static_cast&lt;uint8_t&gt;(<a class="code" href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">m_type</a>));</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      int64_t timeStamp = std::chrono::system_clock::to_time_t(<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">m_timeStamp</a>);</div>
@@ -1045,7 +1039,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 9 2018 16:57:42 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 17 2018 12:43:35 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

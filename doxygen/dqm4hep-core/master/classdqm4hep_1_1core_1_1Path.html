@@ -193,7 +193,7 @@ Friends</h2></td></tr>
 
 <p>References <a class="el" href="Path_8h_source.html#l00098">m_path</a>.</p>
 
-<p>Referenced by <a class="el" href="MonitorElementManager_8cc_source.html#l00337">dqm4hep::core::MonitorElementManager::attachReference()</a>, <a class="el" href="MonitorElementManager_8cc_source.html#l00283">dqm4hep::core::MonitorElementManager::readMonitorElement()</a>, and <a class="el" href="Storage_8h_source.html#l00237">dqm4hep::core::Storage&lt; T &gt;::rmdir()</a>.</p>
+<p>Referenced by <a class="el" href="MonitorElementManager_8cc_source.html#l00294">dqm4hep::core::MonitorElementManager::attachReference()</a>, and <a class="el" href="MonitorElementManager_8cc_source.html#l00240">dqm4hep::core::MonitorElementManager::readMonitorElement()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Path.html#a300b6952397a9172d46c2fd60195d11f">m_path</a>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
@@ -218,9 +218,9 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Path_8cc_source.html#l00053">53</a> of file <a class="el" href="Path_8cc_source.html">Path.cc</a>.</p>
 
-<p>References <a class="el" href="Path_8cc_source.html#l00073">isValid()</a>, <a class="el" href="Path_8h_source.html#l00098">m_path</a>, and <a class="el" href="Internal_8h_source.html#l00214">dqm4hep::core::tokenize()</a>.</p>
+<p>References <a class="el" href="Path_8cc_source.html#l00073">isValid()</a>, <a class="el" href="Path_8h_source.html#l00098">m_path</a>, and <a class="el" href="Internal_8h_source.html#l00226">dqm4hep::core::tokenize()</a>.</p>
 
-<p>Referenced by <a class="el" href="Storage_8h_source.html#l00158">dqm4hep::core::Storage&lt; T &gt;::cd()</a>, <a class="el" href="Storage_8h_source.html#l00266">dqm4hep::core::Storage&lt; T &gt;::find()</a>, <a class="el" href="Storage_8h_source.html#l00106">dqm4hep::core::Storage&lt; T &gt;::mkdir()</a>, and <a class="el" href="Path_8h_source.html#l00123">dqm4hep::core::operator==()</a>.</p>
+<p>Referenced by <a class="el" href="Storage_8h_source.html#l00160">dqm4hep::core::Storage&lt; T &gt;::cd()</a>, <a class="el" href="Storage_8h_source.html#l00268">dqm4hep::core::Storage&lt; T &gt;::find()</a>, <a class="el" href="Storage_8h_source.html#l00108">dqm4hep::core::Storage&lt; T &gt;::mkdir()</a>, and <a class="el" href="Path_8h_source.html#l00123">dqm4hep::core::operator==()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">if</span>(!this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Path.html#a44d8f8e4a43aa9fa5b95cc4fba5e6137">isValid</a>())</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> std::vector&lt;std::string&gt;();</div>
@@ -231,7 +231,7 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">return</span> splitPath;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Path_html_a300b6952397a9172d46c2fd60195d11f"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Path.html#a300b6952397a9172d46c2fd60195d11f">dqm4hep::core::Path::m_path</a></div><div class="ttdeci">std::string m_path</div><div class="ttdef"><b>Definition:</b> <a href="Path_8h_source.html#l00098">Path.h:98</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a1721013d917707ef7c8218d13984e478"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1721013d917707ef7c8218d13984e478">dqm4hep::core::tokenize</a></div><div class="ttdeci">void tokenize(const std::string &amp;inputString, StringVector &amp;tokens, const std::string &amp;delimiter=&quot; &quot;)</div><div class="ttdoc">Tokenize string with delimiter. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00214">Internal.h:214</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a1721013d917707ef7c8218d13984e478"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1721013d917707ef7c8218d13984e478">dqm4hep::core::tokenize</a></div><div class="ttdeci">void tokenize(const std::string &amp;inputString, StringVector &amp;tokens, const std::string &amp;delimiter=&quot; &quot;)</div><div class="ttdoc">Tokenize string with delimiter. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00226">Internal.h:226</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Path_html_a44d8f8e4a43aa9fa5b95cc4fba5e6137"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Path.html#a44d8f8e4a43aa9fa5b95cc4fba5e6137">dqm4hep::core::Path::isValid</a></div><div class="ttdeci">bool isValid() const </div><div class="ttdoc">Whether the path is valid. </div><div class="ttdef"><b>Definition:</b> <a href="Path_8cc_source.html#l00073">Path.cc:73</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -255,7 +255,7 @@ Friends</h2></td></tr>
 
 <p>References <a class="el" href="Path_8cc_source.html#l00073">isValid()</a>, and <a class="el" href="Path_8h_source.html#l00098">m_path</a>.</p>
 
-<p>Referenced by <a class="el" href="Storage_8h_source.html#l00158">dqm4hep::core::Storage&lt; T &gt;::cd()</a>, <a class="el" href="Storage_8h_source.html#l00266">dqm4hep::core::Storage&lt; T &gt;::find()</a>, and <a class="el" href="Storage_8h_source.html#l00106">dqm4hep::core::Storage&lt; T &gt;::mkdir()</a>.</p>
+<p>Referenced by <a class="el" href="Storage_8h_source.html#l00160">dqm4hep::core::Storage&lt; T &gt;::cd()</a>, <a class="el" href="Storage_8h_source.html#l00268">dqm4hep::core::Storage&lt; T &gt;::find()</a>, and <a class="el" href="Storage_8h_source.html#l00108">dqm4hep::core::Storage&lt; T &gt;::mkdir()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordflow">if</span>(!this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Path.html#a44d8f8e4a43aa9fa5b95cc4fba5e6137">isValid</a>())</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -290,9 +290,9 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Path_8cc_source.html#l00073">73</a> of file <a class="el" href="Path_8cc_source.html">Path.cc</a>.</p>
 
-<p>References <a class="el" href="Internal_8h_source.html#l00313">dqm4hep::core::containsSpecialCharacters()</a>, and <a class="el" href="Path_8h_source.html#l00098">m_path</a>.</p>
+<p>References <a class="el" href="Internal_8h_source.html#l00325">dqm4hep::core::containsSpecialCharacters()</a>, and <a class="el" href="Path_8h_source.html#l00098">m_path</a>.</p>
 
-<p>Referenced by <a class="el" href="Storage_8h_source.html#l00158">dqm4hep::core::Storage&lt; T &gt;::cd()</a>, <a class="el" href="Storage_8h_source.html#l00266">dqm4hep::core::Storage&lt; T &gt;::find()</a>, <a class="el" href="Path_8cc_source.html#l00053">getSplitPath()</a>, <a class="el" href="Path_8cc_source.html#l00086">isRelative()</a>, and <a class="el" href="Storage_8h_source.html#l00106">dqm4hep::core::Storage&lt; T &gt;::mkdir()</a>.</p>
+<p>Referenced by <a class="el" href="Storage_8h_source.html#l00160">dqm4hep::core::Storage&lt; T &gt;::cd()</a>, <a class="el" href="Storage_8h_source.html#l00268">dqm4hep::core::Storage&lt; T &gt;::find()</a>, <a class="el" href="Path_8cc_source.html#l00053">getSplitPath()</a>, <a class="el" href="Path_8cc_source.html#l00086">isRelative()</a>, and <a class="el" href="Storage_8h_source.html#l00108">dqm4hep::core::Storage&lt; T &gt;::mkdir()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="namespacedqm4hep_1_1core.html#afc115aa7bf7d6c8941c49c145538cde2">dqm4hep::core::containsSpecialCharacters</a>(<a class="code" href="classdqm4hep_1_1core_1_1Path.html#a300b6952397a9172d46c2fd60195d11f">m_path</a>))</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -303,7 +303,7 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Path_html_a300b6952397a9172d46c2fd60195d11f"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Path.html#a300b6952397a9172d46c2fd60195d11f">dqm4hep::core::Path::m_path</a></div><div class="ttdeci">std::string m_path</div><div class="ttdef"><b>Definition:</b> <a href="Path_8h_source.html#l00098">Path.h:98</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_afc115aa7bf7d6c8941c49c145538cde2"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#afc115aa7bf7d6c8941c49c145538cde2">dqm4hep::core::containsSpecialCharacters</a></div><div class="ttdeci">bool containsSpecialCharacters(const std::string &amp;str)</div><div class="ttdoc">Whether the string contains a special character. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00313">Internal.h:313</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_afc115aa7bf7d6c8941c49c145538cde2"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#afc115aa7bf7d6c8941c49c145538cde2">dqm4hep::core::containsSpecialCharacters</a></div><div class="ttdeci">bool containsSpecialCharacters(const std::string &amp;str)</div><div class="ttdoc">Whether the string contains a special character. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00325">Internal.h:325</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -624,7 +624,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 9 2018 16:57:42 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 17 2018 12:43:35 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -171,7 +171,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="Logging_8h_source.html#l00045">dqm_warning</a>, <a class="el" href="QualityTest_8h_source.html#l00081">dqm4hep::core::QualityTestReport::m_monitorElementName</a>, <a class="el" href="QualityTest_8h_source.html#l00083">dqm4hep::core::QualityTestReport::m_monitorElementPath</a>, <a class="el" href="QualityTest_8h_source.html#l00078">dqm4hep::core::QualityTestReport::m_qualityTestName</a>, <a class="el" href="QualityTest_8h_source.html#l00151">m_reports</a>, and <a class="el" href="QualityTest_8cc_source.html#l00162">report()</a>.</p>
 
-<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00154">addReports()</a>, and <a class="el" href="MonitorElementManager_8cc_source.html#l00535">dqm4hep::core::MonitorElementManager::runQualityTest()</a>.</p>
+<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00154">addReports()</a>, and <a class="el" href="MonitorElementManager_8cc_source.html#l00484">dqm4hep::core::MonitorElementManager::runQualityTest()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    {</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="keyword">const</span> std::string &amp;path(<a class="code" href="classdqm4hep_1_1core_1_1QReportStorage.html#ad628859f5776152025dc5eba10174eb0">report</a>.m_monitorElementPath);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      <span class="keyword">const</span> std::string &amp;name(<a class="code" href="classdqm4hep_1_1core_1_1QReportStorage.html#ad628859f5776152025dc5eba10174eb0">report</a>.m_monitorElementName);</div>
@@ -206,7 +206,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="Logging_8h_html_a0bfc26706a9022c017dd03af3c7c91d7"><div class="ttname"><a href="Logging_8h.html#a0bfc26706a9022c017dd03af3c7c91d7">dqm_warning</a></div><div class="ttdeci">#define dqm_warning(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00045">Logging.h:45</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1QReportStorage_html_ad628859f5776152025dc5eba10174eb0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QReportStorage.html#ad628859f5776152025dc5eba10174eb0">dqm4hep::core::QReportStorage::report</a></div><div class="ttdeci">StatusCode report(const std::string &amp;path, const std::string &amp;name, const std::string &amp;qualityTestName, QReport &amp;report)</div><div class="ttdoc">Get a specific report. </div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8cc_source.html#l00162">QualityTest.cc:162</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1QReportStorage_html_a88fddd29d60baf4c14ab6cc192531207"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QReportStorage.html#a88fddd29d60baf4c14ab6cc192531207">dqm4hep::core::QReportStorage::m_reports</a></div><div class="ttdeci">QReportContainer m_reports</div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8h_source.html#l00151">QualityTest.h:151</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a0f5a5a45e798c95e7911360054c00aab"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a0f5a5a45e798c95e7911360054c00aab">dqm4hep::core::QReportMap</a></div><div class="ttdeci">std::map&lt; std::string, QReport &gt; QReportMap</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00156">Internal.h:156</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a0f5a5a45e798c95e7911360054c00aab"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a0f5a5a45e798c95e7911360054c00aab">dqm4hep::core::QReportMap</a></div><div class="ttdeci">std::map&lt; std::string, QReport &gt; QReportMap</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00167">Internal.h:167</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -246,7 +246,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="QualityTest_8cc_source.html#l00119">addReport()</a>.</p>
 
-<p>Referenced by <a class="el" href="MonitorElementManager_8cc_source.html#l00495">dqm4hep::core::MonitorElementManager::runQualityTests()</a>.</p>
+<p>Referenced by <a class="el" href="MonitorElementManager_8cc_source.html#l00444">dqm4hep::core::MonitorElementManager::runQualityTests()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    {</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> iter : <a class="code" href="classdqm4hep_1_1core_1_1QReportStorage.html#aa2c637405054864f8347a2488f52600e">reports</a>)</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1QReportStorage.html#a8261d67e5eb1a368249394e7f3bef003">addReport</a>(iter.second, warnOnReplace);</div>
@@ -539,7 +539,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1QReportStorage_html_a88fddd29d60baf4c14ab6cc192531207"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QReportStorage.html#a88fddd29d60baf4c14ab6cc192531207">dqm4hep::core::QReportStorage::m_reports</a></div><div class="ttdeci">QReportContainer m_reports</div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8h_source.html#l00151">QualityTest.h:151</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a0f5a5a45e798c95e7911360054c00aab"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a0f5a5a45e798c95e7911360054c00aab">dqm4hep::core::QReportMap</a></div><div class="ttdeci">std::map&lt; std::string, QReport &gt; QReportMap</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00156">Internal.h:156</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a0f5a5a45e798c95e7911360054c00aab"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a0f5a5a45e798c95e7911360054c00aab">dqm4hep::core::QReportMap</a></div><div class="ttdeci">std::map&lt; std::string, QReport &gt; QReportMap</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00167">Internal.h:167</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -663,7 +663,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1QReportStorage_html_a88fddd29d60baf4c14ab6cc192531207"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QReportStorage.html#a88fddd29d60baf4c14ab6cc192531207">dqm4hep::core::QReportStorage::m_reports</a></div><div class="ttdeci">QReportContainer m_reports</div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8h_source.html#l00151">QualityTest.h:151</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a0f5a5a45e798c95e7911360054c00aab"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a0f5a5a45e798c95e7911360054c00aab">dqm4hep::core::QReportMap</a></div><div class="ttdeci">std::map&lt; std::string, QReport &gt; QReportMap</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00156">Internal.h:156</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a0f5a5a45e798c95e7911360054c00aab"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a0f5a5a45e798c95e7911360054c00aab">dqm4hep::core::QReportMap</a></div><div class="ttdeci">std::map&lt; std::string, QReport &gt; QReportMap</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00167">Internal.h:167</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -699,7 +699,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 9 2018 16:57:42 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 17 2018 12:43:36 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
