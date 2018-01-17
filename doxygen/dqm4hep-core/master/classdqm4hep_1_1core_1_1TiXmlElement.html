@@ -716,7 +716,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="tinyxml_8h_source.html#l01156">attributeSet</a>, <a class="el" href="tinyxml_8cc_source.html#l01529">dqm4hep::core::TiXmlAttributeSet::Find()</a>, and <a class="el" href="tinyxml_8h_source.html#l00819">dqm4hep::core::TiXmlAttribute::Value()</a>.</p>
 
-<p>Referenced by <a class="el" href="XmlHelper_8h_source.html#l00265">dqm4hep::core::XmlHelper::getAttribute()</a>, <a class="el" href="XmlHelper_8cc_source.html#l00094">dqm4hep::core::XmlHelper::processConstant()</a>, and <a class="el" href="XmlHelper_8cc_source.html#l00217">dqm4hep::core::XmlHelper::processIncludeElement()</a>.</p>
+<p>Referenced by <a class="el" href="XmlHelper_8h_source.html#l00266">dqm4hep::core::XmlHelper::getAttribute()</a>, <a class="el" href="XMLParser_8cc_source.html#l00523">dqm4hep::core::XMLParser::readDatabases()</a>, and <a class="el" href="XMLParser_8cc_source.html#l00288">dqm4hep::core::XMLParser::resolveInclude()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    {</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;      <span class="keyword">const</span> TiXmlAttribute* node = <a class="code" href="classdqm4hep_1_1core_1_1TiXmlElement.html#af49d85253199830ce35fb8fa6cdd2ce0">attributeSet</a>.<a class="code" href="classdqm4hep_1_1core_1_1TiXmlAttributeSet.html#aaee9d46aa0520013e71a957ce4441f34">Find</a>( name );</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;      <span class="keywordflow">if</span> ( node )</div>
@@ -1061,7 +1061,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>References <a class="el" href="tinyxml_8h_source.html#l01156">attributeSet</a>, and <a class="el" href="tinyxml_8h_source.html#l00919">dqm4hep::core::TiXmlAttributeSet::First()</a>.</p>
 
-<p>Referenced by <a class="el" href="XmlHelper_8cc_source.html#l00266">dqm4hep::core::XmlHelper::replaceConstants()</a>.</p>
+<p>Referenced by <a class="el" href="XMLParser_8cc_source.html#l00484">dqm4hep::core::XMLParser::resolveConstantsInElement()</a>.</p>
 
 </div>
 </div>
@@ -1126,7 +1126,7 @@ const char* str = fooElement-&gt;GetText();
 
 <p>References <a class="el" href="tinyxml_8h_source.html#l00529">dqm4hep::core::TiXmlNode::FirstChild()</a>, <a class="el" href="tinyxml_8h_source.html#l00708">dqm4hep::core::TiXmlNode::ToText()</a>, and <a class="el" href="tinyxml_8h_source.html#l00494">dqm4hep::core::TiXmlNode::Value()</a>.</p>
 
-<p>Referenced by <a class="el" href="XmlHelper_8h_source.html#l00226">dqm4hep::core::XmlHelper::read2DVectorOfValues()</a>, <a class="el" href="XmlHelper_8h_source.html#l00156">dqm4hep::core::XmlHelper::readValue()</a>, and <a class="el" href="XmlHelper_8h_source.html#l00200">dqm4hep::core::XmlHelper::readVectorOfValues()</a>.</p>
+<p>Referenced by <a class="el" href="XmlHelper_8h_source.html#l00227">dqm4hep::core::XmlHelper::read2DVectorOfValues()</a>, <a class="el" href="XmlHelper_8h_source.html#l00157">dqm4hep::core::XmlHelper::readValue()</a>, and <a class="el" href="XmlHelper_8h_source.html#l00201">dqm4hep::core::XmlHelper::readVectorOfValues()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;    {</div>
 <div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;      <span class="keyword">const</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a2ae2804091b2b9d8f1f1f1b84abe46ff">TiXmlNode</a>* child = this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a3a1369f27c526fa583ebf9bc100fac44">FirstChild</a>();</div>
 <div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;      <span class="keywordflow">if</span> ( child ) {</div>
@@ -2097,7 +2097,7 @@ template&lt;typename T &gt; </div>
 
 <p>References <a class="el" href="tinyxml_8h_source.html#l01156">attributeSet</a>, <a class="el" href="tinyxml_8cc_source.html#l01540">dqm4hep::core::TiXmlAttributeSet::FindOrCreate()</a>, and <a class="el" href="tinyxml_8h_source.html#l00843">dqm4hep::core::TiXmlAttribute::SetValue()</a>.</p>
 
-<p>Referenced by <a class="el" href="tinyxml_8cc_source.html#l00813">CopyTo()</a>, and <a class="el" href="XmlHelper_8cc_source.html#l00385">dqm4hep::core::XmlHelper::replaceAllXmlAttributes()</a>.</p>
+<p>Referenced by <a class="el" href="tinyxml_8cc_source.html#l00813">CopyTo()</a>, and <a class="el" href="XMLParser_8cc_source.html#l00561">dqm4hep::core::XMLParser::resolveAllDbSelect()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    {</div>
 <div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;      TiXmlAttribute* attrib = <a class="code" href="classdqm4hep_1_1core_1_1TiXmlElement.html#af49d85253199830ce35fb8fa6cdd2ce0">attributeSet</a>.<a class="code" href="classdqm4hep_1_1core_1_1TiXmlAttributeSet.html#ad81ece570ea7b3e0bf35e29cddfa81da">FindOrCreate</a>( cname );</div>
 <div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;      <span class="keywordflow">if</span> ( attrib ) {</div>
@@ -2340,7 +2340,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01133">1133</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>Referenced by <a class="el" href="XmlHelper_8cc_source.html#l00266">dqm4hep::core::XmlHelper::replaceConstants()</a>.</p>
+<p>Referenced by <a class="el" href="XMLParser_8cc_source.html#l00484">dqm4hep::core::XMLParser::resolveConstantsInElement()</a>.</p>
 
 </div>
 </div>
@@ -2406,7 +2406,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 17 2018 13:33:02 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 17 2018 19:04:03 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
