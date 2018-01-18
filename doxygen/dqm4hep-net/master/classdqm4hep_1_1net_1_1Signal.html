@@ -519,7 +519,7 @@ template&lt;typename... Args&gt; </div>
 
 <p>Definition at line <a class="el" href="DQMNet_8h_source.html#l00435">435</a> of file <a class="el" href="DQMNet_8h_source.html">DQMNet.h</a>.</p>
 
-<p>Referenced by <a class="el" href="RequestHandler_8cc_source.html#l00193">dqm4hep::net::CommandHandler::handleCommand()</a>, <a class="el" href="RequestHandler_8cc_source.html#l00093">dqm4hep::net::RequestHandler::handleRequest()</a>, and <a class="el" href="ServiceHandler_8cc_source.html#l00064">dqm4hep::net::ServiceHandler::receiveServiceUpdated()</a>.</p>
+<p>Referenced by <a class="el" href="Server_8cc_source.html#l00509">dqm4hep::net::Server::clientExitHandler()</a>, <a class="el" href="RequestHandler_8cc_source.html#l00193">dqm4hep::net::CommandHandler::handleCommand()</a>, <a class="el" href="RequestHandler_8cc_source.html#l00093">dqm4hep::net::RequestHandler::handleRequest()</a>, and <a class="el" href="ServiceHandler_8cc_source.html#l00064">dqm4hep::net::ServiceHandler::receiveServiceUpdated()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    {</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> iter = <a class="code" href="classdqm4hep_1_1net_1_1Signal.html#a3b1822244e6c751ee7593fd71dc71648">m_callbacks</a>.begin(), endIter = <a class="code" href="classdqm4hep_1_1net_1_1Signal.html#a3b1822244e6c751ee7593fd71dc71648">m_callbacks</a>.end() ; endIter != iter ; ++iter)</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        (*iter)-&gt;process(args...);</div>
@@ -561,7 +561,7 @@ template&lt;typename... Args&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 7 2017 14:02:38 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 18 2018 11:14:32 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
