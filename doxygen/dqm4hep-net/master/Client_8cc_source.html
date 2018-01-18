@@ -125,12 +125,19 @@
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1net_1_1Client.html#a3d39bafdab10b01c5781336eee0fd2cb">m_serviceHandlerMap</a>.count(serviceName);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Client_html_a292bc066bcdb40e7578396f4362d5fed"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html#a292bc066bcdb40e7578396f4362d5fed">dqm4hep::net::Client::sendRequest</a></div><div class="ttdeci">void sendRequest(const std::string &amp;name, const Request &amp;request) const </div><div class="ttdoc">Send a command. </div><div class="ttdef"><b>Definition:</b> <a href="Client_8h_source.html#l00158">Client.h:158</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Client_html_a3d39bafdab10b01c5781336eee0fd2cb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html#a3d39bafdab10b01c5781336eee0fd2cb">dqm4hep::net::Client::m_serviceHandlerMap</a></div><div class="ttdeci">ServiceHandlerMap m_serviceHandlerMap</div><div class="ttdoc">The service map. </div><div class="ttdef"><b>Definition:</b> <a href="Client_8h_source.html#l00150">Client.h:150</a></div></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1Client.html#a546e7c38fbbc34d0d04b4fa5b2984086">   79</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdqm4hep_1_1net_1_1Client.html#a546e7c38fbbc34d0d04b4fa5b2984086">Client::notifyServerOnExit</a>(<span class="keyword">const</span> std::string &amp;serverName)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      DimClient::setExitHandler(serverName.c_str());</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Client_html_a292bc066bcdb40e7578396f4362d5fed"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html#a292bc066bcdb40e7578396f4362d5fed">dqm4hep::net::Client::sendRequest</a></div><div class="ttdeci">void sendRequest(const std::string &amp;name, const Request &amp;request) const </div><div class="ttdoc">Send a command. </div><div class="ttdef"><b>Definition:</b> <a href="Client_8h_source.html#l00165">Client.h:165</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Client_html_a3d39bafdab10b01c5781336eee0fd2cb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html#a3d39bafdab10b01c5781336eee0fd2cb">dqm4hep::net::Client::m_serviceHandlerMap</a></div><div class="ttdeci">ServiceHandlerMap m_serviceHandlerMap</div><div class="ttdoc">The service map. </div><div class="ttdef"><b>Definition:</b> <a href="Client_8h_source.html#l00157">Client.h:157</a></div></div>
 <div class="ttc" id="Client_8h_html"><div class="ttname"><a href="Client_8h.html">Client.h</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Client_html_a8806865bfd562fe1eb4af72467138938"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html#a8806865bfd562fe1eb4af72467138938">dqm4hep::net::Client::~Client</a></div><div class="ttdeci">~Client()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="Client_8cc_source.html#l00043">Client.cc:43</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Client_html_abd9365b97dd7b64f7db2cb56abb91b7e"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html#abd9365b97dd7b64f7db2cb56abb91b7e">dqm4hep::net::Client::Client</a></div><div class="ttdeci">Client()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="Client_8cc_source.html#l00036">Client.cc:36</a></div></div>
@@ -138,13 +145,14 @@
 <div class="ttc" id="RequestHandler_8h_html"><div class="ttname"><a href="RequestHandler_8h.html">RequestHandler.h</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Buffer_html_add952f8956786f7abe2ee3274a0e7659"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Buffer.html#add952f8956786f7abe2ee3274a0e7659">dqm4hep::net::Buffer::end</a></div><div class="ttdeci">const char * end() const </div><div class="ttdef"><b>Definition:</b> <a href="DQMNet_8h_source.html#l00150">DQMNet.h:150</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Client_html_a922cf81618b0a14840ff1c4df8ef96ea"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html#a922cf81618b0a14840ff1c4df8ef96ea">dqm4hep::net::Client::hasSubscribed</a></div><div class="ttdeci">bool hasSubscribed(const std::string &amp;serviceName) const </div><div class="ttdoc">Whether this client already registered a service subscription. </div><div class="ttdef"><b>Definition:</b> <a href="Client_8cc_source.html#l00065">Client.cc:65</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Client_html_a546e7c38fbbc34d0d04b4fa5b2984086"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html#a546e7c38fbbc34d0d04b4fa5b2984086">dqm4hep::net::Client::notifyServerOnExit</a></div><div class="ttdeci">void notifyServerOnExit(const std::string &amp;serverName)</div><div class="ttdoc"> . </div><div class="ttdef"><b>Definition:</b> <a href="Client_8cc_source.html#l00079">Client.cc:79</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Buffer_html"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Buffer.html">dqm4hep::net::Buffer</a></div><div class="ttdef"><b>Definition:</b> <a href="DQMNet_8h_source.html#l00117">DQMNet.h:117</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Buffer_html_a1772b88645838a62d371f424372deeb0"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Buffer.html#a1772b88645838a62d371f424372deeb0">dqm4hep::net::Buffer::begin</a></div><div class="ttdeci">const char * begin() const </div><div class="ttdef"><b>Definition:</b> <a href="DQMNet_8h_source.html#l00145">DQMNet.h:145</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Client_html_a1be16d5811891546f8be438518ad1046"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html#a1be16d5811891546f8be438518ad1046">dqm4hep::net::Client::numberOfSubscriptions</a></div><div class="ttdeci">unsigned int numberOfSubscriptions(const std::string &amp;serviceName) const </div><div class="ttdoc">[numberOfSubscriptions description] </div><div class="ttdef"><b>Definition:</b> <a href="Client_8cc_source.html#l00072">Client.cc:72</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 18 2018 11:14:32 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 18 2018 14:57:29 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
