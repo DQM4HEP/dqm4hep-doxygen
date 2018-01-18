@@ -94,22 +94,22 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a07e7d9ec7d1719297add08217732e970"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1XmlHelper.html#a07e7d9ec7d1719297add08217732e970">getAttribute</a> (const <a class="el" href="classdqm4hep_1_1core_1_1TiXmlElement.html">TiXmlElement</a> *const pXmlElement, const std::string &amp;attributeName, T &amp;attributeValue, Validator validator)</td></tr>
 <tr class="memdesc:a07e7d9ec7d1719297add08217732e970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the attribute of the xml element and use a predicate to validate the value.  <a href="#a07e7d9ec7d1719297add08217732e970">More...</a><br/></td></tr>
 <tr class="separator:a07e7d9ec7d1719297add08217732e970"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af963f3e053f148c1d2f6d89ca48380b5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af963f3e053f148c1d2f6d89ca48380b5"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1XmlHelper.html#af963f3e053f148c1d2f6d89ca48380b5">readParameterValue</a> (const <a class="el" href="classdqm4hep_1_1core_1_1TiXmlHandle.html">TiXmlHandle</a> &amp;xmlHandle, const std::string &amp;parameterName, T &amp;t)</td></tr>
-<tr class="memdesc:af963f3e053f148c1d2f6d89ca48380b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a parameter value from an xml element.  <a href="#af963f3e053f148c1d2f6d89ca48380b5">More...</a><br/></td></tr>
-<tr class="separator:af963f3e053f148c1d2f6d89ca48380b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2206154b30d2b5ead3cbc7b3566c6f9"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Validator &gt; </td></tr>
-<tr class="memitem:ae2206154b30d2b5ead3cbc7b3566c6f9"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1XmlHelper.html#ae2206154b30d2b5ead3cbc7b3566c6f9">readParameterValue</a> (const <a class="el" href="classdqm4hep_1_1core_1_1TiXmlHandle.html">TiXmlHandle</a> &amp;xmlHandle, const std::string &amp;parameterName, T &amp;t, Validator validator)</td></tr>
-<tr class="memdesc:ae2206154b30d2b5ead3cbc7b3566c6f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a parameter value from an xml element and use a predicate to validate the value Looks for a xml element &lt;parameter&gt; with the attributes 'name' (mandatory) and 'value'.  <a href="#ae2206154b30d2b5ead3cbc7b3566c6f9">More...</a><br/></td></tr>
-<tr class="separator:ae2206154b30d2b5ead3cbc7b3566c6f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e591c52db28800aa18deaf3e58c7396"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a8e591c52db28800aa18deaf3e58c7396"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1XmlHelper.html#a8e591c52db28800aa18deaf3e58c7396">readParameterValues</a> (const <a class="el" href="classdqm4hep_1_1core_1_1TiXmlHandle.html">TiXmlHandle</a> &amp;xmlHandle, const std::string &amp;parameterName, std::vector&lt; T &gt; &amp;vector)</td></tr>
-<tr class="memdesc:a8e591c52db28800aa18deaf3e58c7396"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a vector of values for a parameter from a (space separated) list in an xml element Looks for a xml element &lt;parameter&gt; with the attributes 'name' (mandatory) and 'value'.  <a href="#a8e591c52db28800aa18deaf3e58c7396">More...</a><br/></td></tr>
-<tr class="separator:a8e591c52db28800aa18deaf3e58c7396"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e201af5b0e6aab3545c4a8f71f7ba0c"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Validator &gt; </td></tr>
-<tr class="memitem:a2e201af5b0e6aab3545c4a8f71f7ba0c"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1XmlHelper.html#a2e201af5b0e6aab3545c4a8f71f7ba0c">readParameterValues</a> (const <a class="el" href="classdqm4hep_1_1core_1_1TiXmlHandle.html">TiXmlHandle</a> &amp;xmlHandle, const std::string &amp;parameterName, std::vector&lt; T &gt; &amp;vector, Validator validator)</td></tr>
-<tr class="memdesc:a2e201af5b0e6aab3545c4a8f71f7ba0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a vector of values for a parameter from a (space separated) list in an xml element Looks for a xml element &lt;parameter&gt; with the attributes 'name' (mandatory) and 'value'.  <a href="#a2e201af5b0e6aab3545c4a8f71f7ba0c">More...</a><br/></td></tr>
-<tr class="separator:a2e201af5b0e6aab3545c4a8f71f7ba0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1345efa08836b7aa6afbe8dee60a1920"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a1345efa08836b7aa6afbe8dee60a1920"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1XmlHelper.html#a1345efa08836b7aa6afbe8dee60a1920">readParameter</a> (const <a class="el" href="classdqm4hep_1_1core_1_1TiXmlHandle.html">TiXmlHandle</a> &amp;xmlHandle, const std::string &amp;parameterName, T &amp;t)</td></tr>
+<tr class="memdesc:a1345efa08836b7aa6afbe8dee60a1920"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a parameter value from an xml element.  <a href="#a1345efa08836b7aa6afbe8dee60a1920">More...</a><br/></td></tr>
+<tr class="separator:a1345efa08836b7aa6afbe8dee60a1920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2612ae9df821e6c6717e456812f6563"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Validator &gt; </td></tr>
+<tr class="memitem:ae2612ae9df821e6c6717e456812f6563"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1XmlHelper.html#ae2612ae9df821e6c6717e456812f6563">readParameter</a> (const <a class="el" href="classdqm4hep_1_1core_1_1TiXmlHandle.html">TiXmlHandle</a> &amp;xmlHandle, const std::string &amp;parameterName, T &amp;t, Validator validator)</td></tr>
+<tr class="memdesc:ae2612ae9df821e6c6717e456812f6563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a parameter value from an xml element and use a predicate to validate the value Looks for a xml element &lt;parameter&gt; with the attributes 'name' (mandatory) and 'value'.  <a href="#ae2612ae9df821e6c6717e456812f6563">More...</a><br/></td></tr>
+<tr class="separator:ae2612ae9df821e6c6717e456812f6563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af274061a5a7690f6c6588c9e53a1a672"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af274061a5a7690f6c6588c9e53a1a672"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1XmlHelper.html#af274061a5a7690f6c6588c9e53a1a672">readParameters</a> (const <a class="el" href="classdqm4hep_1_1core_1_1TiXmlHandle.html">TiXmlHandle</a> &amp;xmlHandle, const std::string &amp;parameterName, std::vector&lt; T &gt; &amp;vector)</td></tr>
+<tr class="memdesc:af274061a5a7690f6c6588c9e53a1a672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a vector of values for a parameter from a (space separated) list in an xml element Looks for a xml element &lt;parameter&gt; with the attributes 'name' (mandatory) and 'value'.  <a href="#af274061a5a7690f6c6588c9e53a1a672">More...</a><br/></td></tr>
+<tr class="separator:af274061a5a7690f6c6588c9e53a1a672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70aa2b2986b367b21b9aafed8efa0b6d"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Validator &gt; </td></tr>
+<tr class="memitem:a70aa2b2986b367b21b9aafed8efa0b6d"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1XmlHelper.html#a70aa2b2986b367b21b9aafed8efa0b6d">readParameters</a> (const <a class="el" href="classdqm4hep_1_1core_1_1TiXmlHandle.html">TiXmlHandle</a> &amp;xmlHandle, const std::string &amp;parameterName, std::vector&lt; T &gt; &amp;vector, Validator validator)</td></tr>
+<tr class="memdesc:a70aa2b2986b367b21b9aafed8efa0b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a vector of values for a parameter from a (space separated) list in an xml element Looks for a xml element &lt;parameter&gt; with the attributes 'name' (mandatory) and 'value'.  <a href="#a70aa2b2986b367b21b9aafed8efa0b6d">More...</a><br/></td></tr>
+<tr class="separator:a70aa2b2986b367b21b9aafed8efa0b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classdqm4hep_1_1core_1_1XmlHelper.html" title="XmlHelper class. ">XmlHelper</a> class. </p>
@@ -170,7 +170,7 @@ template&lt;typename T &gt; </div>
 
 <p>References <a class="el" href="tinyxml_8cc_source.html#l00576">dqm4hep::core::TiXmlElement::Attribute()</a>, and <a class="el" href="Internal_8h_source.html#l00177">dqm4hep::core::stringToType()</a>.</p>
 
-<p>Referenced by <a class="el" href="XmlHelper_8h_source.html#l00318">readParameterValue()</a>, and <a class="el" href="XmlHelper_8h_source.html#l00354">readParameterValues()</a>.</p>
+<p>Referenced by <a class="el" href="XmlHelper_8h_source.html#l00318">readParameter()</a>, and <a class="el" href="XmlHelper_8h_source.html#l00359">readParameters()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    {</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      <span class="keywordflow">if</span>(NULL == pXmlElement)</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_INVALID_PTR;</div>
@@ -422,7 +422,7 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="af963f3e053f148c1d2f6d89ca48380b5"></a>
+<a class="anchor" id="a1345efa08836b7aa6afbe8dee60a1920"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -432,7 +432,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> dqm4hep::core::XmlHelper::readParameterValue </td>
+          <td class="memname"><a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> dqm4hep::core::XmlHelper::readParameter </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classdqm4hep_1_1core_1_1TiXmlHandle.html">TiXmlHandle</a> &amp;&#160;</td>
           <td class="paramname"><em>xmlHandle</em>, </td>
@@ -477,7 +477,7 @@ template&lt;typename T &gt; </div>
 
 <p>References <a class="el" href="tinyxml_8h_source.html#l01703">dqm4hep::core::TiXmlHandle::Element()</a>, <a class="el" href="tinyxml_8cc_source.html#l01589">dqm4hep::core::TiXmlHandle::FirstChild()</a>, <a class="el" href="XmlHelper_8h_source.html#l00266">getAttribute()</a>, <a class="el" href="tinyxml_8cc_source.html#l00482">dqm4hep::core::TiXmlNode::NextSiblingElement()</a>, <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>, and <a class="el" href="Internal_8h_source.html#l00177">dqm4hep::core::stringToType()</a>.</p>
 
-<p>Referenced by <a class="el" href="XmlHelper_8h_source.html#l00341">readParameterValue()</a>.</p>
+<p>Referenced by <a class="el" href="XmlHelper_8h_source.html#l00346">readParameter()</a>, <a class="el" href="XmlHelper_8h_source.html#l00397">readParameters()</a>, and <a class="el" href="MeanWithinExpectedTest_8cc_source.html#l00091">dqm4hep::core::MeanWithinExpectedTest::readSettings()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    {</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      <span class="keywordflow">for</span> (TiXmlElement *pXmlElement = xmlHandle.FirstChild(<span class="stringliteral">&quot;parameter&quot;</span>).Element(); NULL != pXmlElement;</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;          pXmlElement = pXmlElement-&gt;NextSiblingElement(<span class="stringliteral">&quot;parameter&quot;</span>))</div>
@@ -487,22 +487,27 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordflow">if</span>(name != parameterName)</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;          <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="namespacedqm4hep_1_1core.html#a0ad890768de6de1b7b5ee321bd0c8fc3">dqm4hep::core::stringToType</a>(pXmlElement-&gt;GetText(), t))</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;          <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      }</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;          </div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        std::string value;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        </div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="keywordflow">if</span>(STATUS_CODE_SUCCESS != <a class="code" href="classdqm4hep_1_1core_1_1XmlHelper.html#a01046721298a2353e20c4057d2526ce3">XmlHelper::getAttribute</a>(pXmlElement, <span class="stringliteral">&quot;value&quot;</span>, value))</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;          value = pXmlElement-&gt;GetText() ? pXmlElement-&gt;GetText() : <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="namespacedqm4hep_1_1core.html#a0ad890768de6de1b7b5ee321bd0c8fc3">dqm4hep::core::stringToType</a>(value, t))</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;          <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      }</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    }</div>
 <div class="ttc" id="StatusCodes_8h_html_a25aeabada9910a1ce63f8eb0de4d8dda"><div class="ttname"><a href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a></div><div class="ttdeci">#define RETURN_RESULT_IF(StatusCode1, Operator, Command)</div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00039">StatusCodes.h:39</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_a0ad890768de6de1b7b5ee321bd0c8fc3"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a0ad890768de6de1b7b5ee321bd0c8fc3">dqm4hep::core::stringToType</a></div><div class="ttdeci">bool stringToType(const std::string &amp;s, T &amp;t)</div><div class="ttdoc">Convert std::string to a type. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00177">Internal.h:177</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1XmlHelper_html_a01046721298a2353e20c4057d2526ce3"><div class="ttname"><a href="classdqm4hep_1_1core_1_1XmlHelper.html#a01046721298a2353e20c4057d2526ce3">dqm4hep::core::XmlHelper::getAttribute</a></div><div class="ttdeci">static StatusCode getAttribute(const TiXmlElement *const pXmlElement, const std::string &amp;attributeName, T &amp;attributeValue)</div><div class="ttdoc">Get the attribute of the xml element. </div><div class="ttdef"><b>Definition:</b> <a href="XmlHelper_8h_source.html#l00266">XmlHelper.h:266</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="ae2206154b30d2b5ead3cbc7b3566c6f9"></a>
+<a class="anchor" id="ae2612ae9df821e6c6717e456812f6563"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -512,7 +517,7 @@ template&lt;typename T , typename Validator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> dqm4hep::core::XmlHelper::readParameterValue </td>
+          <td class="memname"><a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> dqm4hep::core::XmlHelper::readParameter </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classdqm4hep_1_1core_1_1TiXmlHandle.html">TiXmlHandle</a> &amp;&#160;</td>
           <td class="paramname"><em>xmlHandle</em>, </td>
@@ -560,23 +565,23 @@ template&lt;typename T , typename Validator &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="XmlHelper_8h_source.html#l00341">341</a> of file <a class="el" href="XmlHelper_8h_source.html">XmlHelper.h</a>.</p>
+<p>Definition at line <a class="el" href="XmlHelper_8h_source.html#l00346">346</a> of file <a class="el" href="XmlHelper_8h_source.html">XmlHelper.h</a>.</p>
 
-<p>References <a class="el" href="XmlHelper_8h_source.html#l00318">readParameterValue()</a>, and <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>.</p>
-<div class="fragment"><div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    {</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      <a class="code" href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, <a class="code" href="classdqm4hep_1_1core_1_1XmlHelper.html#af963f3e053f148c1d2f6d89ca48380b5">XmlHelper::readParameterValue</a>(xmlHandle, parameterName, t));</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      <span class="keywordflow">if</span>( ! validator(t) )</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_INVALID_PARAMETER;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    }</div>
+<p>References <a class="el" href="XmlHelper_8h_source.html#l00318">readParameter()</a>, and <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>.</p>
+<div class="fragment"><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    {</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;      <a class="code" href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, <a class="code" href="classdqm4hep_1_1core_1_1XmlHelper.html#a1345efa08836b7aa6afbe8dee60a1920">XmlHelper::readParameter</a>(xmlHandle, parameterName, t));</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;      <span class="keywordflow">if</span>( ! validator(t) )</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_INVALID_PARAMETER;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    }</div>
 <div class="ttc" id="StatusCodes_8h_html_a25aeabada9910a1ce63f8eb0de4d8dda"><div class="ttname"><a href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a></div><div class="ttdeci">#define RETURN_RESULT_IF(StatusCode1, Operator, Command)</div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00039">StatusCodes.h:39</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1XmlHelper_html_af963f3e053f148c1d2f6d89ca48380b5"><div class="ttname"><a href="classdqm4hep_1_1core_1_1XmlHelper.html#af963f3e053f148c1d2f6d89ca48380b5">dqm4hep::core::XmlHelper::readParameterValue</a></div><div class="ttdeci">static StatusCode readParameterValue(const TiXmlHandle &amp;xmlHandle, const std::string &amp;parameterName, T &amp;t)</div><div class="ttdoc">Read a parameter value from an xml element. </div><div class="ttdef"><b>Definition:</b> <a href="XmlHelper_8h_source.html#l00318">XmlHelper.h:318</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1XmlHelper_html_a1345efa08836b7aa6afbe8dee60a1920"><div class="ttname"><a href="classdqm4hep_1_1core_1_1XmlHelper.html#a1345efa08836b7aa6afbe8dee60a1920">dqm4hep::core::XmlHelper::readParameter</a></div><div class="ttdeci">static StatusCode readParameter(const TiXmlHandle &amp;xmlHandle, const std::string &amp;parameterName, T &amp;t)</div><div class="ttdoc">Read a parameter value from an xml element. </div><div class="ttdef"><b>Definition:</b> <a href="XmlHelper_8h_source.html#l00318">XmlHelper.h:318</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a8e591c52db28800aa18deaf3e58c7396"></a>
+<a class="anchor" id="af274061a5a7690f6c6588c9e53a1a672"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -586,7 +591,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> dqm4hep::core::XmlHelper::readParameterValues </td>
+          <td class="memname"><a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> dqm4hep::core::XmlHelper::readParameters </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classdqm4hep_1_1core_1_1TiXmlHandle.html">TiXmlHandle</a> &amp;&#160;</td>
           <td class="paramname"><em>xmlHandle</em>, </td>
@@ -627,39 +632,42 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="XmlHelper_8h_source.html#l00354">354</a> of file <a class="el" href="XmlHelper_8h_source.html">XmlHelper.h</a>.</p>
+<p>Definition at line <a class="el" href="XmlHelper_8h_source.html#l00359">359</a> of file <a class="el" href="XmlHelper_8h_source.html">XmlHelper.h</a>.</p>
 
 <p>References <a class="el" href="tinyxml_8h_source.html#l01703">dqm4hep::core::TiXmlHandle::Element()</a>, <a class="el" href="tinyxml_8cc_source.html#l01589">dqm4hep::core::TiXmlHandle::FirstChild()</a>, <a class="el" href="XmlHelper_8h_source.html#l00266">getAttribute()</a>, <a class="el" href="tinyxml_8cc_source.html#l00482">dqm4hep::core::TiXmlNode::NextSiblingElement()</a>, <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>, <a class="el" href="Internal_8h_source.html#l00177">dqm4hep::core::stringToType()</a>, and <a class="el" href="Internal_8h_source.html#l00226">dqm4hep::core::tokenize()</a>.</p>
-
-<p>Referenced by <a class="el" href="XmlHelper_8h_source.html#l00387">readParameterValues()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    {</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      <span class="keywordflow">for</span> (TiXmlElement *pXmlElement = xmlHandle.FirstChild(<span class="stringliteral">&quot;parameter&quot;</span>).Element(); NULL != pXmlElement;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;          pXmlElement = pXmlElement-&gt;NextSiblingElement(<span class="stringliteral">&quot;parameter&quot;</span>))</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;      {</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        std::string name;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <a class="code" href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, <a class="code" href="classdqm4hep_1_1core_1_1XmlHelper.html#a01046721298a2353e20c4057d2526ce3">XmlHelper::getAttribute</a>(pXmlElement, <span class="stringliteral">&quot;name&quot;</span>, name));</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        <span class="keywordflow">if</span>(name != parameterName)</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;          <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">StringVector</a> tokens;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <a class="code" href="namespacedqm4hep_1_1core.html#a1721013d917707ef7c8218d13984e478">dqm4hep::core::tokenize</a>(pXmlElement-&gt;GetText(), tokens);</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">for</span> (StringVector::const_iterator iter = tokens.begin(), iterEnd = tokens.end(); iter != iterEnd; ++iter)</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        {</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;          T t;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;          <span class="keywordflow">if</span> (!<a class="code" href="namespacedqm4hep_1_1core.html#a0ad890768de6de1b7b5ee321bd0c8fc3">dqm4hep::core::stringToType</a>(*iter, t))</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;            <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
+<div class="fragment"><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    {</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      <span class="keywordflow">for</span> (TiXmlElement *pXmlElement = xmlHandle.FirstChild(<span class="stringliteral">&quot;parameter&quot;</span>).Element(); NULL != pXmlElement;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;          pXmlElement = pXmlElement-&gt;NextSiblingElement(<span class="stringliteral">&quot;parameter&quot;</span>))</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      {</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        std::string name;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <a class="code" href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, <a class="code" href="classdqm4hep_1_1core_1_1XmlHelper.html#a01046721298a2353e20c4057d2526ce3">XmlHelper::getAttribute</a>(pXmlElement, <span class="stringliteral">&quot;name&quot;</span>, name));</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="keywordflow">if</span>(name != parameterName)</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;          <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;          </div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        std::string value;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        </div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        <span class="keywordflow">if</span>(STATUS_CODE_SUCCESS != <a class="code" href="classdqm4hep_1_1core_1_1XmlHelper.html#a01046721298a2353e20c4057d2526ce3">XmlHelper::getAttribute</a>(pXmlElement, <span class="stringliteral">&quot;value&quot;</span>, value))</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;          value = pXmlElement-&gt;GetText() ? pXmlElement-&gt;GetText() : <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;          vector.push_back(t);</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        }</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">StringVector</a> tokens;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <a class="code" href="namespacedqm4hep_1_1core.html#a1721013d917707ef7c8218d13984e478">dqm4hep::core::tokenize</a>(value, tokens);</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;      }</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    }</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keywordflow">for</span> (StringVector::const_iterator iter = tokens.begin(), iterEnd = tokens.end(); iter != iterEnd; ++iter)</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        {</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;          T t;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;          <span class="keywordflow">if</span> (!<a class="code" href="namespacedqm4hep_1_1core.html#a0ad890768de6de1b7b5ee321bd0c8fc3">dqm4hep::core::stringToType</a>(*iter, t))</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;          vector.push_back(t);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        }</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;      }</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    }</div>
 <div class="ttc" id="StatusCodes_8h_html_a25aeabada9910a1ce63f8eb0de4d8dda"><div class="ttname"><a href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a></div><div class="ttdeci">#define RETURN_RESULT_IF(StatusCode1, Operator, Command)</div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00039">StatusCodes.h:39</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_a0ad890768de6de1b7b5ee321bd0c8fc3"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a0ad890768de6de1b7b5ee321bd0c8fc3">dqm4hep::core::stringToType</a></div><div class="ttdeci">bool stringToType(const std::string &amp;s, T &amp;t)</div><div class="ttdoc">Convert std::string to a type. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00177">Internal.h:177</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00153">Internal.h:153</a></div></div>
@@ -668,7 +676,7 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a2e201af5b0e6aab3545c4a8f71f7ba0c"></a>
+<a class="anchor" id="a70aa2b2986b367b21b9aafed8efa0b6d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -678,7 +686,7 @@ template&lt;typename T , typename Validator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> dqm4hep::core::XmlHelper::readParameterValues </td>
+          <td class="memname"><a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> dqm4hep::core::XmlHelper::readParameters </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classdqm4hep_1_1core_1_1TiXmlHandle.html">TiXmlHandle</a> &amp;&#160;</td>
           <td class="paramname"><em>xmlHandle</em>, </td>
@@ -726,19 +734,19 @@ template&lt;typename T , typename Validator &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="XmlHelper_8h_source.html#l00387">387</a> of file <a class="el" href="XmlHelper_8h_source.html">XmlHelper.h</a>.</p>
+<p>Definition at line <a class="el" href="XmlHelper_8h_source.html#l00397">397</a> of file <a class="el" href="XmlHelper_8h_source.html">XmlHelper.h</a>.</p>
 
-<p>References <a class="el" href="XmlHelper_8h_source.html#l00354">readParameterValues()</a>, and <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>.</p>
-<div class="fragment"><div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    {</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;      <a class="code" href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, <a class="code" href="classdqm4hep_1_1core_1_1XmlHelper.html#a8e591c52db28800aa18deaf3e58c7396">XmlHelper::readParameterValues</a>(xmlHandle, parameterName, vector));</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;      <span class="keywordflow">if</span>( ! validator(vector) )</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_INVALID_PARAMETER;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    }</div>
+<p>References <a class="el" href="XmlHelper_8h_source.html#l00318">readParameter()</a>, and <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>.</p>
+<div class="fragment"><div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    {</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;      <a class="code" href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, <a class="code" href="classdqm4hep_1_1core_1_1XmlHelper.html#a1345efa08836b7aa6afbe8dee60a1920">XmlHelper::readParameter</a>(xmlHandle, parameterName, vector));</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;      <span class="keywordflow">if</span>( ! validator(vector) )</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_INVALID_PARAMETER;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    }</div>
 <div class="ttc" id="StatusCodes_8h_html_a25aeabada9910a1ce63f8eb0de4d8dda"><div class="ttname"><a href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a></div><div class="ttdeci">#define RETURN_RESULT_IF(StatusCode1, Operator, Command)</div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00039">StatusCodes.h:39</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1XmlHelper_html_a8e591c52db28800aa18deaf3e58c7396"><div class="ttname"><a href="classdqm4hep_1_1core_1_1XmlHelper.html#a8e591c52db28800aa18deaf3e58c7396">dqm4hep::core::XmlHelper::readParameterValues</a></div><div class="ttdeci">static StatusCode readParameterValues(const TiXmlHandle &amp;xmlHandle, const std::string &amp;parameterName, std::vector&lt; T &gt; &amp;vector)</div><div class="ttdoc">Read a vector of values for a parameter from a (space separated) list in an xml element Looks for a x...</div><div class="ttdef"><b>Definition:</b> <a href="XmlHelper_8h_source.html#l00354">XmlHelper.h:354</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1XmlHelper_html_a1345efa08836b7aa6afbe8dee60a1920"><div class="ttname"><a href="classdqm4hep_1_1core_1_1XmlHelper.html#a1345efa08836b7aa6afbe8dee60a1920">dqm4hep::core::XmlHelper::readParameter</a></div><div class="ttdeci">static StatusCode readParameter(const TiXmlHandle &amp;xmlHandle, const std::string &amp;parameterName, T &amp;t)</div><div class="ttdoc">Read a parameter value from an xml element. </div><div class="ttdef"><b>Definition:</b> <a href="XmlHelper_8h_source.html#l00318">XmlHelper.h:318</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -795,8 +803,6 @@ template&lt;typename T &gt; </div>
 <p>Definition at line <a class="el" href="XmlHelper_8h_source.html#l00157">157</a> of file <a class="el" href="XmlHelper_8h_source.html">XmlHelper.h</a>.</p>
 
 <p>References <a class="el" href="tinyxml_8h_source.html#l01703">dqm4hep::core::TiXmlHandle::Element()</a>, <a class="el" href="tinyxml_8cc_source.html#l01589">dqm4hep::core::TiXmlHandle::FirstChild()</a>, <a class="el" href="tinyxml_8cc_source.html#l00860">dqm4hep::core::TiXmlElement::GetText()</a>, and <a class="el" href="Internal_8h_source.html#l00177">dqm4hep::core::stringToType()</a>.</p>
-
-<p>Referenced by <a class="el" href="MeanWithinExpectedTest_8cc_source.html#l00092">dqm4hep::core::MeanWithinExpectedTest::readSettings()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    {</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keyword">const</span> TiXmlElement *<span class="keyword">const</span> pXmlElement = xmlHandle.FirstChild(xmlElementName).Element();</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
@@ -967,7 +973,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 17 2018 19:04:03 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 18 2018 08:29:48 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
