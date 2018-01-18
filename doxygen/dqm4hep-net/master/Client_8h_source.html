@@ -145,7 +145,7 @@
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      DimRpcInfo rpcInfo(const_cast&lt;char*&gt;(name.c_str()), (<span class="keywordtype">void</span>*)<span class="keyword">nullptr</span>, 0);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1Buffer.html">Buffer</a> contents;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <span class="keyword">auto</span> model = contents.<a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a118b06c854dd34a5c4454d0f92f990ea">createModel</a>&lt;Request&gt;();</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <span class="keyword">auto</span> model = contents.<a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#ad6eeaf39a9a3d3d5a718287fa533ba55">createModel</a>&lt;Request&gt;();</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      model-&gt;copy(request);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      contents.setModel(model);</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      rpcInfo.setData((<span class="keywordtype">void</span>*)contents.begin(), contents.size());</div>
@@ -217,7 +217,7 @@
 <div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1Client.html#af909a5f8ebc100e7249082b90c8eddb1">  238</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classdqm4hep_1_1net_1_1Client.html#af909a5f8ebc100e7249082b90c8eddb1">Client::sendCommand</a>(<span class="keyword">const</span> std::string &amp;name, <span class="keyword">const</span> Command &amp;command, <span class="keywordtype">bool</span> blocking)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1Buffer.html">Buffer</a> contents;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      <span class="keyword">auto</span> model = contents.<a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a118b06c854dd34a5c4454d0f92f990ea">createModel</a>&lt;Command&gt;();</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      <span class="keyword">auto</span> model = contents.<a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#ad6eeaf39a9a3d3d5a718287fa533ba55">createModel</a>&lt;Command&gt;();</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      model-&gt;copy(command);</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      contents.<a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a86b00f469de07018ef0d0a6d28f24757">setModel</a>(model);</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
@@ -305,14 +305,14 @@
 <div class="ttc" id="classdqm4hep_1_1net_1_1Client_html"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html">dqm4hep::net::Client</a></div><div class="ttdoc">Client class. </div><div class="ttdef"><b>Definition:</b> <a href="Client_8h_source.html#l00060">Client.h:60</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Client_html_a1be16d5811891546f8be438518ad1046"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html#a1be16d5811891546f8be438518ad1046">dqm4hep::net::Client::numberOfSubscriptions</a></div><div class="ttdeci">unsigned int numberOfSubscriptions(const std::string &amp;serviceName) const </div><div class="ttdoc">[numberOfSubscriptions description] </div><div class="ttdef"><b>Definition:</b> <a href="Client_8cc_source.html#l00072">Client.cc:72</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Client_html_a2a64bdbfab92f8708c01bce8cd865dd7"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html#a2a64bdbfab92f8708c01bce8cd865dd7">dqm4hep::net::Client::ServiceHandlerList</a></div><div class="ttdeci">std::vector&lt; ServiceHandler * &gt; ServiceHandlerList</div><div class="ttdef"><b>Definition:</b> <a href="Client_8h_source.html#l00156">Client.h:156</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Buffer_html_ad6eeaf39a9a3d3d5a718287fa533ba55"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Buffer.html#ad6eeaf39a9a3d3d5a718287fa533ba55">dqm4hep::net::Buffer::createModel</a></div><div class="ttdeci">std::shared_ptr&lt; BufferModelT&lt; T &gt; &gt; createModel() const </div><div class="ttdef"><b>Definition:</b> <a href="DQMNet_8h_source.html#l00127">DQMNet.h:127</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1ServiceHandler_html"><div class="ttname"><a href="classdqm4hep_1_1net_1_1ServiceHandler.html">dqm4hep::net::ServiceHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="ServiceHandler_8h_source.html#l00050">ServiceHandler.h:50</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Client_html_a93a5c61836ff0d042892d780e9e05db1"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html#a93a5c61836ff0d042892d780e9e05db1">dqm4hep::net::Client::ServiceHandlerMap</a></div><div class="ttdeci">std::map&lt; std::string, ServiceHandler * &gt; ServiceHandlerMap</div><div class="ttdef"><b>Definition:</b> <a href="Client_8h_source.html#l00155">Client.h:155</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Buffer_html_a118b06c854dd34a5c4454d0f92f990ea"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Buffer.html#a118b06c854dd34a5c4454d0f92f990ea">dqm4hep::net::Buffer::createModel</a></div><div class="ttdeci">std::shared_ptr&lt; BufferModelT&lt; T &gt; &gt; createModel()</div><div class="ttdef"><b>Definition:</b> <a href="DQMNet_8h_source.html#l00127">DQMNet.h:127</a></div></div>
 <div class="ttc" id="DQMNet_8h_html"><div class="ttname"><a href="DQMNet_8h.html">DQMNet.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 18 2018 14:57:29 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jan 18 2018 15:22:30 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
