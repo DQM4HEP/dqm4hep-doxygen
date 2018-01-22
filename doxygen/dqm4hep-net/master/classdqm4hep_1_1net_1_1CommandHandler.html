@@ -207,7 +207,7 @@ template&lt;typename Controller &gt; </div>
 
 <p>Definition at line <a class="el" href="RequestHandler_8h_source.html#l00262">262</a> of file <a class="el" href="RequestHandler_8h_source.html">RequestHandler.h</a>.</p>
 
-<p>References <a class="el" href="DQMNet_8h_source.html#l00450">dqm4hep::net::Signal&lt; Args &gt;::connect()</a>, and <a class="el" href="RequestHandler_8h_source.html#l00253">m_commandSignal</a>.</p>
+<p>References <a class="el" href="DQMNet_8h_source.html#l00454">dqm4hep::net::Signal&lt; Args &gt;::connect()</a>, and <a class="el" href="RequestHandler_8h_source.html#l00253">m_commandSignal</a>.</p>
 <div class="fragment"><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                                                                                                                                                            :</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1CommandHandler.html#aa35e72c554210351f5fd1f3673598315">m_name</a>(<a class="code" href="classdqm4hep_1_1net_1_1CommandHandler.html#aa73dc25d09a90a1206d528b37922e0e8">name</a>),</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1CommandHandler.html#ac959e4af4836f91c1517fe209c937546">m_pServer</a>(pServer),</div>
@@ -219,7 +219,7 @@ template&lt;typename Controller &gt; </div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1CommandHandler_html_aa73dc25d09a90a1206d528b37922e0e8"><div class="ttname"><a href="classdqm4hep_1_1net_1_1CommandHandler.html#aa73dc25d09a90a1206d528b37922e0e8">dqm4hep::net::CommandHandler::name</a></div><div class="ttdeci">const std::string &amp; name() const </div><div class="ttdoc">Get the request name. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8cc_source.html#l00144">RequestHandler.cc:144</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1CommandHandler_html_aeba03b93da92873fb3ac92e9017572c2"><div class="ttname"><a href="classdqm4hep_1_1net_1_1CommandHandler.html#aeba03b93da92873fb3ac92e9017572c2">dqm4hep::net::CommandHandler::m_commandSignal</a></div><div class="ttdeci">CommandSignal m_commandSignal</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00253">RequestHandler.h:253</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1CommandHandler_html_ac959e4af4836f91c1517fe209c937546"><div class="ttname"><a href="classdqm4hep_1_1net_1_1CommandHandler.html#ac959e4af4836f91c1517fe209c937546">dqm4hep::net::CommandHandler::m_pServer</a></div><div class="ttdeci">Server * m_pServer</div><div class="ttdoc">The server in which the command handler is declared. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00252">RequestHandler.h:252</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Signal_html_ae122e66a53303d6426d947faa72b5380"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Signal.html#ae122e66a53303d6426d947faa72b5380">dqm4hep::net::Signal::connect</a></div><div class="ttdeci">bool connect(T *pClass, S function)</div><div class="ttdoc">Connect a class method to this signal. </div><div class="ttdef"><b>Definition:</b> <a href="DQMNet_8h_source.html#l00450">DQMNet.h:450</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Signal_html_ae122e66a53303d6426d947faa72b5380"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Signal.html#ae122e66a53303d6426d947faa72b5380">dqm4hep::net::Signal::connect</a></div><div class="ttdeci">bool connect(T *pClass, S function)</div><div class="ttdoc">Connect a class method to this signal. </div><div class="ttdef"><b>Definition:</b> <a href="DQMNet_8h_source.html#l00454">DQMNet.h:454</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1CommandHandler_html_a2a9e71c90ed0bf9d32f6b603cc787077"><div class="ttname"><a href="classdqm4hep_1_1net_1_1CommandHandler.html#a2a9e71c90ed0bf9d32f6b603cc787077">dqm4hep::net::CommandHandler::m_pCommand</a></div><div class="ttdeci">Command * m_pCommand</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00254">RequestHandler.h:254</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -347,12 +347,12 @@ template&lt;typename Controller &gt; </div>
 
 <p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00193">193</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
 
-<p>References <a class="el" href="RequestHandler_8h_source.html#l00253">m_commandSignal</a>, and <a class="el" href="DQMNet_8h_source.html#l00440">dqm4hep::net::Signal&lt; Args &gt;::process()</a>.</p>
+<p>References <a class="el" href="RequestHandler_8h_source.html#l00253">m_commandSignal</a>, and <a class="el" href="DQMNet_8h_source.html#l00444">dqm4hep::net::Signal&lt; Args &gt;::process()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      {</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1CommandHandler.html#aeba03b93da92873fb3ac92e9017572c2">m_commandSignal</a>.<a class="code" href="classdqm4hep_1_1net_1_1Signal.html#a85afa9b64f511cc221e559c6c6cb4817">process</a>(command);</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      }</div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1CommandHandler_html_aeba03b93da92873fb3ac92e9017572c2"><div class="ttname"><a href="classdqm4hep_1_1net_1_1CommandHandler.html#aeba03b93da92873fb3ac92e9017572c2">dqm4hep::net::CommandHandler::m_commandSignal</a></div><div class="ttdeci">CommandSignal m_commandSignal</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00253">RequestHandler.h:253</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Signal_html_a85afa9b64f511cc221e559c6c6cb4817"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Signal.html#a85afa9b64f511cc221e559c6c6cb4817">dqm4hep::net::Signal::process</a></div><div class="ttdeci">void process(Args...args)</div><div class="ttdoc">Process the signal. </div><div class="ttdef"><b>Definition:</b> <a href="DQMNet_8h_source.html#l00440">DQMNet.h:440</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Signal_html_a85afa9b64f511cc221e559c6c6cb4817"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Signal.html#a85afa9b64f511cc221e559c6c6cb4817">dqm4hep::net::Signal::process</a></div><div class="ttdeci">void process(Args...args)</div><div class="ttdoc">Process the signal. </div><div class="ttdef"><b>Definition:</b> <a href="DQMNet_8h_source.html#l00444">DQMNet.h:444</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -383,7 +383,7 @@ template&lt;typename Controller &gt; </div>
 
 <p>References <a class="el" href="RequestHandler_8h_source.html#l00254">m_pCommand</a>.</p>
 
-<p>Referenced by <a class="el" href="Server_8cc_source.html#l00249">dqm4hep::net::Server::startCommandHandler()</a>, <a class="el" href="RequestHandler_8cc_source.html#l00158">startHandlingCommands()</a>, <a class="el" href="Server_8cc_source.html#l00259">dqm4hep::net::Server::stopCommandHandler()</a>, and <a class="el" href="RequestHandler_8cc_source.html#l00168">stopHandlingCommands()</a>.</p>
+<p>Referenced by <a class="el" href="Server_8cc_source.html#l00260">dqm4hep::net::Server::startCommandHandler()</a>, <a class="el" href="RequestHandler_8cc_source.html#l00158">startHandlingCommands()</a>, <a class="el" href="Server_8cc_source.html#l00270">dqm4hep::net::Server::stopCommandHandler()</a>, and <a class="el" href="RequestHandler_8cc_source.html#l00168">stopHandlingCommands()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      {</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="classdqm4hep_1_1net_1_1CommandHandler.html#a2a9e71c90ed0bf9d32f6b603cc787077">m_pCommand</a> != <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      }</div>
@@ -502,7 +502,7 @@ template&lt;typename Controller &gt; </div>
 
 <p>References <a class="el" href="RequestHandler_8h_source.html#l00240">Command</a>, <a class="el" href="RequestHandler_8cc_source.html#l00179">isHandlingCommands()</a>, and <a class="el" href="RequestHandler_8h_source.html#l00254">m_pCommand</a>.</p>
 
-<p>Referenced by <a class="el" href="Server_8h_source.html#l00321">dqm4hep::net::Server::createCommandHandler()</a>, and <a class="el" href="Server_8cc_source.html#l00249">dqm4hep::net::Server::startCommandHandler()</a>.</p>
+<p>Referenced by <a class="el" href="Server_8h_source.html#l00365">dqm4hep::net::Server::createCommandHandler()</a>, and <a class="el" href="Server_8cc_source.html#l00260">dqm4hep::net::Server::startCommandHandler()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      {</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">if</span>(!this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1CommandHandler.html#add5e682c1cc97e5ecdbc54d225f28c79">isHandlingCommands</a>())</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        {</div>
@@ -542,7 +542,7 @@ template&lt;typename Controller &gt; </div>
 
 <p>References <a class="el" href="RequestHandler_8cc_source.html#l00179">isHandlingCommands()</a>, and <a class="el" href="RequestHandler_8h_source.html#l00254">m_pCommand</a>.</p>
 
-<p>Referenced by <a class="el" href="Server_8cc_source.html#l00259">dqm4hep::net::Server::stopCommandHandler()</a>, and <a class="el" href="RequestHandler_8cc_source.html#l00137">~CommandHandler()</a>.</p>
+<p>Referenced by <a class="el" href="Server_8cc_source.html#l00270">dqm4hep::net::Server::stopCommandHandler()</a>, and <a class="el" href="RequestHandler_8cc_source.html#l00137">~CommandHandler()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      {</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">if</span>(this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1CommandHandler.html#add5e682c1cc97e5ecdbc54d225f28c79">isHandlingCommands</a>())</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        {</div>
@@ -710,7 +710,7 @@ template&lt;typename Controller &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 18 2018 15:22:30 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jan 22 2018 07:53:12 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
