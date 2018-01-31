@@ -126,8 +126,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7b8ddef88241aa37d895a8980e774f72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a7b8ddef88241aa37d895a8980e774f72">TiXmlBase</a> ()</td></tr>
 <tr class="separator:a7b8ddef88241aa37d895a8980e774f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8db3c5d4ab093092a9b796dd4edc6730"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a8db3c5d4ab093092a9b796dd4edc6730">~TiXmlBase</a> ()</td></tr>
-<tr class="separator:a8db3c5d4ab093092a9b796dd4edc6730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c1aacdb70075c80ae8cd67e0eb0e3b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a44c1aacdb70075c80ae8cd67e0eb0e3b">~TiXmlBase</a> ()=default</td></tr>
+<tr class="separator:a44c1aacdb70075c80ae8cd67e0eb0e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34012b45646afd1762c02bec881a7a37"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a34012b45646afd1762c02bec881a7a37">Print</a> (FILE *cfile, int depth) const =0</td></tr>
 <tr class="memdesc:a34012b45646afd1762c02bec881a7a37"><td class="mdescLeft">&#160;</td><td class="mdescRight">All TinyXml classes can print themselves to a filestream or the string class (<a class="el" href="classdqm4hep_1_1core_1_1TiXmlString.html">TiXmlString</a> in non-STL mode, std::string in STL mode.) Either or both cfile and str can be null.  <a href="#a34012b45646afd1762c02bec881a7a37">More...</a><br/></td></tr>
 <tr class="separator:a34012b45646afd1762c02bec881a7a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -404,12 +404,12 @@ A Decleration contains: Attributes (not on tree)
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="tinyxml_8h_source.html#l00208">208</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;: <a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#accd7885cb8ddd8a610bd55d77b394cda">userData</a>(0)   {}</div>
+<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;: <a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#accd7885cb8ddd8a610bd55d77b394cda">userData</a>(<span class="keyword">nullptr</span>)   {}</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlBase_html_accd7885cb8ddd8a610bd55d77b394cda"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlBase.html#accd7885cb8ddd8a610bd55d77b394cda">dqm4hep::core::TiXmlBase::userData</a></div><div class="ttdeci">void * userData</div><div class="ttdoc">Field containing a generic user pointer. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00383">tinyxml.h:383</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a8db3c5d4ab093092a9b796dd4edc6730"></a>
+<a class="anchor" id="a44c1aacdb70075c80ae8cd67e0eb0e3b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -425,14 +425,11 @@ A Decleration contains: Attributes (not on tree)
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l00209">209</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;{}</div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a29c5e5793d72e4048ee821dec0dbb6cd"></a>
@@ -777,7 +774,7 @@ A Decleration contains: Attributes (not on tree)
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        {</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;          <span class="comment">// Not valid text.</span></div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;          <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        }</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;      }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlBase_html_a4bd09642e8561d41679a30da4a63f536"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlBase.html#a4bd09642e8561d41679a30da4a63f536">dqm4hep::core::TiXmlBase::utf8ByteTable</a></div><div class="ttdeci">static const int utf8ByteTable[256]</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00260">tinyxml.h:260</a></div></div>
@@ -850,12 +847,12 @@ A Decleration contains: Attributes (not on tree)
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="keywordflow">if</span> ( *(p+2) == <span class="charliteral">&#39;x&#39;</span> )</div>
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        {</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;          <span class="comment">// Hexadecimal.</span></div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;          <span class="keywordflow">if</span> ( !*(p+3) ) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;          <span class="keywordflow">if</span> ( !*(p+3) ) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">char</span>* q = p+3;</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;          q = strchr( q, <span class="charliteral">&#39;;&#39;</span> );</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;          <span class="keywordflow">if</span> ( !q || !*q ) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;          <span class="keywordflow">if</span> ( !q || !*q ) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;          delta = q-p;</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;          --q;</div>
@@ -869,7 +866,7 @@ A Decleration contains: Attributes (not on tree)
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( *q &gt;= <span class="charliteral">&#39;A&#39;</span> &amp;&amp; *q &lt;= <span class="charliteral">&#39;F&#39;</span> )</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;              ucs += mult * (*q - <span class="charliteral">&#39;A&#39;</span> + 10 );</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;              <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;              <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;            mult *= 16;</div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;            --q;</div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;          }</div>
@@ -877,12 +874,12 @@ A Decleration contains: Attributes (not on tree)
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        {</div>
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;          <span class="comment">// Decimal.</span></div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;          <span class="keywordflow">if</span> ( !*(p+2) ) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;          <span class="keywordflow">if</span> ( !*(p+2) ) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">char</span>* q = p+2;</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;          q = strchr( q, <span class="charliteral">&#39;;&#39;</span> );</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;          <span class="keywordflow">if</span> ( !q || !*q ) <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;          <span class="keywordflow">if</span> ( !q || !*q ) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;          delta = q-p;</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;          --q;</div>
@@ -892,7 +889,7 @@ A Decleration contains: Attributes (not on tree)
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;            <span class="keywordflow">if</span> ( *q &gt;= <span class="charliteral">&#39;0&#39;</span> &amp;&amp; *q &lt;= <span class="charliteral">&#39;9&#39;</span> )</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;              ucs += mult * (*q - <span class="charliteral">&#39;0&#39;</span>);</div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;              <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;              <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;            mult *= 10;</div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;            --q;</div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;          }</div>
@@ -1267,7 +1264,7 @@ A Decleration contains: Attributes (not on tree)
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1TiXmlDocument.html#aa57ee413fdd13cdbc2687a833d299468">dqm4hep::core::TiXmlDocument</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlUnknown.html#a78b7e2f92c4b4b788f5d2c738c169daa">dqm4hep::core::TiXmlUnknown</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlDeclaration.html#a5dfbf2fecc4d94c890d855eb1d7a42bd">dqm4hep::core::TiXmlDeclaration</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlText.html#a280096f1cb17283d078d127eef6b62e6">dqm4hep::core::TiXmlText</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlComment.html#a5e447f331a228e31d268163a9c928094">dqm4hep::core::TiXmlComment</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlElement.html#aef5e51596fb073f4245d447a4487bce0">dqm4hep::core::TiXmlElement</a>, and <a class="el" href="classdqm4hep_1_1core_1_1TiXmlAttribute.html#aac35252a8b35691f27b042e5003be995">dqm4hep::core::TiXmlAttribute</a>.</p>
+<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1TiXmlDocument.html#a25adeba9c6a3a60b706e2d27a689e288">dqm4hep::core::TiXmlDocument</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlUnknown.html#ab2b9f23d3810e53521513fbdad5329d7">dqm4hep::core::TiXmlUnknown</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlDeclaration.html#a0c5a45a61c9316bb8590dfcd1c1f4e5d">dqm4hep::core::TiXmlDeclaration</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlText.html#a31c6dc5dfcbbd34e816784b99e4799b1">dqm4hep::core::TiXmlText</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlComment.html#a87dce9e5d7f761581738bbabf759361a">dqm4hep::core::TiXmlComment</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlElement.html#a909e3d625390d0d219b27c903abd4b2b">dqm4hep::core::TiXmlElement</a>, and <a class="el" href="classdqm4hep_1_1core_1_1TiXmlAttribute.html#a1b500b6deebb1cad56919a20057c634b">dqm4hep::core::TiXmlAttribute</a>.</p>
 
 <p>Referenced by <a class="el" href="tinyxmlparser_8cc_source.html#l00708">dqm4hep::core::TiXmlDocument::Parse()</a>, and <a class="el" href="tinyxmlparser_8cc_source.html#l01183">dqm4hep::core::TiXmlElement::ReadValue()</a>.</p>
 
@@ -1309,7 +1306,7 @@ A Decleration contains: Attributes (not on tree)
 <p>This is a formatted print, and will insert tabs and newlines.</p>
 <p>(For an unformatted stream, use the &lt;&lt; operator.) </p>
 
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1TiXmlDocument.html#a8a266ad1adc9a4d193d59ae1d9abf87d">dqm4hep::core::TiXmlDocument</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlUnknown.html#aa41d342747dd3e57c8e073f9543c95b0">dqm4hep::core::TiXmlUnknown</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlDeclaration.html#a93cd43ce675ca305d96f11704bea2684">dqm4hep::core::TiXmlDeclaration</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlText.html#aca5aa67247ac14199dce4349a96f46d3">dqm4hep::core::TiXmlText</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlComment.html#a7aff760bb1e3479710c435edfbcdfbe2">dqm4hep::core::TiXmlComment</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlElement.html#abe6ed252ad0beb7dfe5b8e7d9493121b">dqm4hep::core::TiXmlElement</a>, and <a class="el" href="classdqm4hep_1_1core_1_1TiXmlAttribute.html#aeba0def57ca222f994c4a93626ea9e69">dqm4hep::core::TiXmlAttribute</a>.</p>
+<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1TiXmlDocument.html#ac1ad1969e41ba025665451739550ae7f">dqm4hep::core::TiXmlDocument</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlUnknown.html#ad238ef39c9af701e3b4dc0a79e6e99e3">dqm4hep::core::TiXmlUnknown</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlDeclaration.html#a66558c55878850be62bce3def7c37235">dqm4hep::core::TiXmlDeclaration</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlText.html#a73e0038cec734a6e67b8b039268f0c70">dqm4hep::core::TiXmlText</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlComment.html#a5390c8699dd1fa217b267ef8a7136133">dqm4hep::core::TiXmlComment</a>, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlElement.html#a5aa118802a10df8989b74657a024bd62">dqm4hep::core::TiXmlElement</a>, and <a class="el" href="classdqm4hep_1_1core_1_1TiXmlAttribute.html#a7d4d9cf369aa0044472de390b876e1de">dqm4hep::core::TiXmlAttribute</a>.</p>
 
 <p>Referenced by <a class="el" href="tinyxml_8cc_source.html#l00760">dqm4hep::core::TiXmlElement::Print()</a>.</p>
 
@@ -1391,7 +1388,7 @@ A Decleration contains: Attributes (not on tree)
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        }</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="keywordflow">return</span> p;</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;      }</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlBase_html_ac1e6eb8afca61788266988dc4c966bd6"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlBase.html#ac1e6eb8afca61788266988dc4c966bd6">dqm4hep::core::TiXmlBase::IsAlpha</a></div><div class="ttdeci">static int IsAlpha(unsigned char anyByte, TiXmlEncoding encoding)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxmlparser_8cc_source.html#l00133">tinyxmlparser.cc:133</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlBase_html_aa61c1b983e93f8d521b36fba35ba159a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlBase.html#aa61c1b983e93f8d521b36fba35ba159a">dqm4hep::core::TiXmlBase::IsAlphaNum</a></div><div class="ttdeci">static int IsAlphaNum(unsigned char anyByte, TiXmlEncoding encoding)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxmlparser_8cc_source.html#l00154">tinyxmlparser.cc:154</a></div></div>
@@ -1665,7 +1662,7 @@ A Decleration contains: Attributes (not on tree)
 <div class="fragment"><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    {</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      <span class="keywordflow">if</span> ( !p || !*p )</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      {</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;      }</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      <span class="keywordflow">if</span> ( encoding == <a class="code" href="namespacedqm4hep_1_1core.html#a5b623ba899e22b5f5f8f15ff940984f7aba80fa730ae0ac52ed2774d8b3cfbc1a">TIXML_ENCODING_UTF8</a> )</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      {</div>
@@ -2202,7 +2199,7 @@ A Decleration contains: Attributes (not on tree)
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 30 2018 17:46:34 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 31 2018 09:54:06 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

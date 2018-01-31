@@ -1755,7 +1755,7 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    {</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">StringVector</a> specialCharacterList = <a class="code" href="namespacedqm4hep_1_1core.html#a7a3d55f0924a4e79648a68d39292590d">dqm4hep::core::getSpecialCharacterList</a>();</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      <span class="keywordflow">for</span>(StringVector::iterator iter = specialCharacterList.begin(), endIter = specialCharacterList.end() ;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> iter = specialCharacterList.begin(), endIter = specialCharacterList.end() ;</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;          endIter != iter ; ++iter)</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      {</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keywordflow">if</span>(str.find(*iter) != std::string::npos)</div>
@@ -3536,7 +3536,7 @@ template&lt;&gt; </div>
 
 <p>Referenced by <a class="el" href="Internal_8h_source.html#l00257">timeToHMS()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    {</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      <span class="keyword">struct </span>tm *pTmTime = <span class="keyword">new</span> tm();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      <span class="keyword">auto</span> pTmTime = <span class="keyword">new</span> tm();</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      localtime_r(&amp;t, pTmTime);</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      hours = pTmTime-&gt;tm_hour;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      minutes = pTmTime-&gt;tm_min;</div>
@@ -3843,7 +3843,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 30 2018 17:46:33 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 31 2018 09:54:05 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

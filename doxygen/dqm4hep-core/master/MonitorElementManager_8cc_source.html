@@ -443,12 +443,12 @@
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;      <a class="code" href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, XmlHelper::getAttribute(pXmlElement, <span class="stringliteral">&quot;name&quot;</span>, name));</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;      <a class="code" href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, XmlHelper::getAttribute(pXmlElement, <span class="stringliteral">&quot;type&quot;</span>, type));</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;      QualityTestMap::iterator findIter = m_qualityTestMap.find(name);</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;      <span class="keyword">auto</span> findIter = m_qualityTestMap.find(name);</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;      <span class="keywordflow">if</span>(m_qualityTestMap.end() != findIter)</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_ALREADY_PRESENT;</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;      QualityTestFactoryMap::iterator findFactoryIter = m_qualityTestFactoryMap.find(type);</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;      <span class="keyword">auto</span> findFactoryIter = m_qualityTestFactoryMap.find(type);</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      <span class="keywordflow">if</span>(m_qualityTestFactoryMap.end() == findFactoryIter)</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
@@ -469,7 +469,7 @@
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div>
 <div class="line"><a name="l00417"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1core_1_1MonitorElementManager.html#acc6d71b3a25d6dd8a9b08de213006074">  417</a></span>&#160;    <a class="code" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> MonitorElementManager::addQualityTest(<span class="keyword">const</span> std::string &amp;path, <span class="keyword">const</span> std::string &amp;name, <span class="keyword">const</span> std::string &amp;qualityTestName)</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    {</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;      QualityTestMap::iterator findIter = m_qualityTestMap.find(qualityTestName);</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;      <span class="keyword">auto</span> findIter = m_qualityTestMap.find(qualityTestName);</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;      <span class="keywordflow">if</span>(m_qualityTestMap.end() == findIter)</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
@@ -607,7 +607,7 @@
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 30 2018 17:46:33 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 31 2018 09:54:05 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

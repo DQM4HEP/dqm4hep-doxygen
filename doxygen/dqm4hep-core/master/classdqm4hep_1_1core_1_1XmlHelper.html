@@ -172,12 +172,12 @@ template&lt;typename T &gt; </div>
 
 <p>Referenced by <a class="el" href="XmlHelper_8h_source.html#l00318">readParameter()</a>, and <a class="el" href="XmlHelper_8h_source.html#l00359">readParameters()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      <span class="keywordflow">if</span>(NULL == pXmlElement)</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == pXmlElement)</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_INVALID_PTR;</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">char</span> *pAttributePtr(pXmlElement-&gt;Attribute(attributeName.c_str()));</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="keywordflow">if</span>(NULL == pAttributePtr)</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == pAttributePtr)</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      std::string attributeStr(pAttributePtr);</div>
@@ -307,12 +307,12 @@ template&lt;&gt; </div>
 
 <p>References <a class="el" href="tinyxml_8cc_source.html#l00576">dqm4hep::core::TiXmlElement::Attribute()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    {</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      <span class="keywordflow">if</span>(NULL == pXmlElement)</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == pXmlElement)</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_INVALID_PTR;</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">char</span> *pAttributePtr(pXmlElement-&gt;Attribute(attributeName.c_str()));</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      <span class="keywordflow">if</span>(NULL == pAttributePtr)</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == pAttributePtr)</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      attributeValue = pAttributePtr;</div>
@@ -386,15 +386,15 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    {</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      TiXmlElement *pXmlElement = xmlHandle.FirstChild(xmlElementName).Element();</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <span class="keywordflow">if</span> (NULL == pXmlElement)</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == pXmlElement)</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      TiXmlElement *pXmlRowElement = TiXmlHandle(pXmlElement).FirstChild(rowName).Element();</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <span class="keywordflow">if</span> (NULL == pXmlRowElement)</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == pXmlRowElement)</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <span class="keywordflow">for</span> ( ; NULL != pXmlRowElement; pXmlRowElement = pXmlRowElement-&gt;NextSiblingElement(rowName))</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <span class="keywordflow">for</span> ( ; <span class="keyword">nullptr</span> != pXmlRowElement; pXmlRowElement = pXmlRowElement-&gt;NextSiblingElement(rowName))</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      {</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        std::vector&lt;T&gt; rowVector;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
@@ -479,7 +479,7 @@ template&lt;typename T &gt; </div>
 
 <p>Referenced by <a class="el" href="XmlHelper_8h_source.html#l00346">readParameter()</a>, <a class="el" href="XmlHelper_8h_source.html#l00397">readParameters()</a>, and <a class="el" href="MeanWithinExpectedTest_8cc_source.html#l00091">dqm4hep::core::MeanWithinExpectedTest::readSettings()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    {</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      <span class="keywordflow">for</span> (TiXmlElement *pXmlElement = xmlHandle.FirstChild(<span class="stringliteral">&quot;parameter&quot;</span>).Element(); NULL != pXmlElement;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      <span class="keywordflow">for</span> (TiXmlElement *pXmlElement = xmlHandle.FirstChild(<span class="stringliteral">&quot;parameter&quot;</span>).Element(); <span class="keyword">nullptr</span> != pXmlElement;</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;          pXmlElement = pXmlElement-&gt;NextSiblingElement(<span class="stringliteral">&quot;parameter&quot;</span>))</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      {</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        std::string name;</div>
@@ -636,7 +636,7 @@ template&lt;typename T &gt; </div>
 
 <p>References <a class="el" href="tinyxml_8h_source.html#l01703">dqm4hep::core::TiXmlHandle::Element()</a>, <a class="el" href="tinyxml_8cc_source.html#l01589">dqm4hep::core::TiXmlHandle::FirstChild()</a>, <a class="el" href="XmlHelper_8h_source.html#l00266">getAttribute()</a>, <a class="el" href="tinyxml_8cc_source.html#l00482">dqm4hep::core::TiXmlNode::NextSiblingElement()</a>, <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>, <a class="el" href="Internal_8h_source.html#l00177">dqm4hep::core::stringToType()</a>, and <a class="el" href="Internal_8h_source.html#l00226">dqm4hep::core::tokenize()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    {</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      <span class="keywordflow">for</span> (TiXmlElement *pXmlElement = xmlHandle.FirstChild(<span class="stringliteral">&quot;parameter&quot;</span>).Element(); NULL != pXmlElement;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      <span class="keywordflow">for</span> (TiXmlElement *pXmlElement = xmlHandle.FirstChild(<span class="stringliteral">&quot;parameter&quot;</span>).Element(); <span class="keyword">nullptr</span> != pXmlElement;</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;          pXmlElement = pXmlElement-&gt;NextSiblingElement(<span class="stringliteral">&quot;parameter&quot;</span>))</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      {</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        std::string name;</div>
@@ -806,7 +806,7 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    {</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keyword">const</span> TiXmlElement *<span class="keyword">const</span> pXmlElement = xmlHandle.FirstChild(xmlElementName).Element();</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <span class="keywordflow">if</span> (NULL == pXmlElement)</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == pXmlElement)</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      <span class="keywordflow">if</span> (!<a class="code" href="namespacedqm4hep_1_1core.html#a0ad890768de6de1b7b5ee321bd0c8fc3">dqm4hep::core::stringToType</a>(pXmlElement-&gt;GetText(), t))</div>
@@ -864,7 +864,7 @@ template&lt;&gt; </div>
 <div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    {</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      <span class="keyword">const</span> TiXmlElement *<span class="keyword">const</span> pXmlElement = xmlHandle.FirstChild(xmlElementName).Element();</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      <span class="keywordflow">if</span> (NULL == pXmlElement)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == pXmlElement)</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <span class="keyword">const</span> std::string xmlElementString = pXmlElement-&gt;GetText();</div>
@@ -943,7 +943,7 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    {</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;      <span class="keyword">const</span> TiXmlElement *<span class="keyword">const</span> pXmlElement = xmlHandle.FirstChild(xmlElementName).Element();</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      <span class="keywordflow">if</span> (NULL == pXmlElement)</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == pXmlElement)</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">StringVector</a> tokens;</div>
@@ -973,7 +973,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 30 2018 17:46:34 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 31 2018 09:54:06 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

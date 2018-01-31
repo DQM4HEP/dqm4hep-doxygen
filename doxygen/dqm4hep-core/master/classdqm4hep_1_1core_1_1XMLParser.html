@@ -1146,7 +1146,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="XMLParser_8cc_source.html#l00561">561</a> of file <a class="el" href="XMLParser_8cc_source.html">XMLParser.cc</a>.</p>
 
-<p>References <a class="el" href="Logging_8h_source.html#l00046">dqm_error</a>, <a class="el" href="Logging_8h_source.html#l00048">dqm_info</a>, <a class="el" href="tinyxml_8cc_source.html#l00452">dqm4hep::core::TiXmlNode::FirstChildElement()</a>, <a class="el" href="XMLParser_8h_source.html#l00190">m_databases</a>, <a class="el" href="tinyxml_8cc_source.html#l00482">dqm4hep::core::TiXmlNode::NextSiblingElement()</a>, <a class="el" href="tinyxml_8cc_source.html#l00335">dqm4hep::core::TiXmlNode::RemoveChild()</a>, <a class="el" href="tinyxml_8cc_source.html#l00740">dqm4hep::core::TiXmlElement::SetAttribute()</a>, and <a class="el" href="StatusCodes_8h_source.html#l00067">THROW_RESULT_IF</a>.</p>
+<p>References <a class="el" href="Logging_8h_source.html#l00046">dqm_error</a>, <a class="el" href="Logging_8h_source.html#l00048">dqm_info</a>, <a class="el" href="tinyxml_8cc_source.html#l00452">dqm4hep::core::TiXmlNode::FirstChildElement()</a>, <a class="el" href="XMLParser_8h_source.html#l00190">m_databases</a>, <a class="el" href="tinyxml_8cc_source.html#l00482">dqm4hep::core::TiXmlNode::NextSiblingElement()</a>, and <a class="el" href="StatusCodes_8h_source.html#l00067">THROW_RESULT_IF</a>.</p>
 
 <p>Referenced by <a class="el" href="XMLParser_8cc_source.html#l00236">resolveDbParameters()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    {</div>
@@ -1184,7 +1184,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;          {</div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;            <a class="code" href="Logging_8h.html#af06e81e068fdce66fa6920f65a774d13">dqm_info</a>( <span class="stringliteral">&quot;Selected parameter &#39;{0}&#39; = &#39;{1}&#39;&quot;</span>, parameterIter.first, parameterIter.second );</div>
 <div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;            </div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;            TiXmlElement *pParameterElement = <span class="keyword">new</span> TiXmlElement(<span class="stringliteral">&quot;parameter&quot;</span>);</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;            <span class="keyword">auto</span> pParameterElement = <span class="keyword">new</span> TiXmlElement(<span class="stringliteral">&quot;parameter&quot;</span>);</div>
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;            pParameterElement-&gt;SetAttribute(<span class="stringliteral">&quot;name&quot;</span>, parameterIter.first);</div>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;            pParameterElement-&gt;SetAttribute(<span class="stringliteral">&quot;value&quot;</span>, parameterIter.second);</div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;            pInsertAfter = pParentElement-&gt;InsertAfterChild(pInsertAfter, *pParameterElement);</div>
@@ -1974,7 +1974,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 30 2018 17:46:34 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 31 2018 09:54:06 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

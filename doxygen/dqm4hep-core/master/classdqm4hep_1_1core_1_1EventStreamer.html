@@ -73,9 +73,9 @@ Inheritance diagram for dqm4hep::core::EventStreamer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af6493795935b7dc2ac7caf1379714e64"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1EventStreamer.html#af6493795935b7dc2ac7caf1379714e64">~EventStreamer</a> ()</td></tr>
-<tr class="memdesc:af6493795935b7dc2ac7caf1379714e64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#af6493795935b7dc2ac7caf1379714e64">More...</a><br/></td></tr>
-<tr class="separator:af6493795935b7dc2ac7caf1379714e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5002c2e973f8dd80ec9b1c336460848d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1EventStreamer.html#a5002c2e973f8dd80ec9b1c336460848d">~EventStreamer</a> ()=default</td></tr>
+<tr class="memdesc:a5002c2e973f8dd80ec9b1c336460848d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a5002c2e973f8dd80ec9b1c336460848d">More...</a><br/></td></tr>
+<tr class="separator:a5002c2e973f8dd80ec9b1c336460848d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32ac0fb0637b38e432d5beac40218c5f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedqm4hep_1_1core.html#a71737b5d3e542e31d80c402f3d1befa7">EventPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1EventStreamer.html#a32ac0fb0637b38e432d5beac40218c5f">createEvent</a> () const =0</td></tr>
 <tr class="memdesc:a32ac0fb0637b38e432d5beac40218c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method to create the corresponding event to this streamer.  <a href="#a32ac0fb0637b38e432d5beac40218c5f">More...</a><br/></td></tr>
 <tr class="separator:a32ac0fb0637b38e432d5beac40218c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -94,7 +94,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="EventStreamer_8h_source.html#l00048">48</a> of file <a class="el" href="EventStreamer_8h_source.html">EventStreamer.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af6493795935b7dc2ac7caf1379714e64"></a>
+<a class="anchor" id="a5002c2e973f8dd80ec9b1c336460848d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -110,16 +110,13 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Destructor. </p>
 
-<p>Definition at line <a class="el" href="EventStreamer_8h_source.html#l00053">53</a> of file <a class="el" href="EventStreamer_8h_source.html">EventStreamer.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{}</div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -147,7 +144,7 @@ Public Member Functions</h2></td></tr>
 <p>Factory method to create the corresponding event to this streamer. </p>
 <p>The event is expected to contains an allocated wrapped event </p>
 
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1GenericEventStreamer.html#ae04ec5f67d61bb225f869569f864c318">dqm4hep::core::GenericEventStreamer</a>.</p>
+<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1GenericEventStreamer.html#a8b72ccaeab8ca4ffe7fb327112a3cb0a">dqm4hep::core::GenericEventStreamer</a>.</p>
 
 </div>
 </div>
@@ -185,7 +182,7 @@ Public Member Functions</h2></td></tr>
 
 <p>De-serialize an event given from the data stream. </p>
 
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1GenericEventStreamer.html#ae7dfb6bc2923119dfc5dc9060d20996b">dqm4hep::core::GenericEventStreamer</a>.</p>
+<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1GenericEventStreamer.html#a55c2516be62fe2b058a2f4cdc3a58fc9">dqm4hep::core::GenericEventStreamer</a>.</p>
 
 </div>
 </div>
@@ -223,7 +220,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Serialize an event object and store it in the data stream. </p>
 
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1GenericEventStreamer.html#a5a9cb5803fbab8a653cafb10627a794c">dqm4hep::core::GenericEventStreamer</a>.</p>
+<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1GenericEventStreamer.html#abcda03709ff6491d6b6e90539d563447">dqm4hep::core::GenericEventStreamer</a>.</p>
 
 <p>Referenced by <a class="el" href="EventStreamer_8h_source.html#l00081">write()</a>.</p>
 
@@ -287,7 +284,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 30 2018 17:46:33 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 31 2018 09:54:05 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

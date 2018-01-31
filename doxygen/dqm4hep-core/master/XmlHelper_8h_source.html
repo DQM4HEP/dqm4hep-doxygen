@@ -132,7 +132,7 @@
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    {</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keyword">const</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlElement.html">TiXmlElement</a> *<span class="keyword">const</span> pXmlElement = xmlHandle.<a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html#ab67675950995aa245a44aa3b6cd90994">FirstChild</a>(xmlElementName).<a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html#af88a83a883bf79da09de56cbad0d652c">Element</a>();</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <span class="keywordflow">if</span> (NULL == pXmlElement)</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == pXmlElement)</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      <span class="keywordflow">if</span> (!<a class="code" href="namespacedqm4hep_1_1core.html#a0ad890768de6de1b7b5ee321bd0c8fc3">dqm4hep::core::stringToType</a>(pXmlElement-&gt;<a class="code" href="classdqm4hep_1_1core_1_1TiXmlElement.html#afe752e9c9ab511951c9d62c2e17ab586">GetText</a>(), t))</div>
@@ -148,7 +148,7 @@
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    {</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      <span class="keyword">const</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlElement.html">TiXmlElement</a> *<span class="keyword">const</span> pXmlElement = xmlHandle.<a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a3a1369f27c526fa583ebf9bc100fac44">FirstChild</a>(xmlElementName).Element();</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      <span class="keywordflow">if</span> (NULL == pXmlElement)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == pXmlElement)</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <span class="keyword">const</span> std::string xmlElementString = pXmlElement-&gt;<a class="code" href="classdqm4hep_1_1core_1_1TiXmlElement.html#afe752e9c9ab511951c9d62c2e17ab586">GetText</a>();</div>
@@ -176,7 +176,7 @@
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    {</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;      <span class="keyword">const</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlElement.html">TiXmlElement</a> *<span class="keyword">const</span> pXmlElement = xmlHandle.<a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html#ab67675950995aa245a44aa3b6cd90994">FirstChild</a>(xmlElementName).<a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html#af88a83a883bf79da09de56cbad0d652c">Element</a>();</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      <span class="keywordflow">if</span> (NULL == pXmlElement)</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == pXmlElement)</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">StringVector</a> tokens;</div>
@@ -203,15 +203,15 @@
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    {</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlElement.html">TiXmlElement</a> *pXmlElement = xmlHandle.<a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html#ab67675950995aa245a44aa3b6cd90994">FirstChild</a>(xmlElementName).<a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html#af88a83a883bf79da09de56cbad0d652c">Element</a>();</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <span class="keywordflow">if</span> (NULL == pXmlElement)</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == pXmlElement)</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlElement.html">TiXmlElement</a> *pXmlRowElement = <a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html">TiXmlHandle</a>(pXmlElement).<a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html#ab67675950995aa245a44aa3b6cd90994">FirstChild</a>(rowName).<a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html#af88a83a883bf79da09de56cbad0d652c">Element</a>();</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <span class="keywordflow">if</span> (NULL == pXmlRowElement)</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == pXmlRowElement)</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <span class="keywordflow">for</span> ( ; NULL != pXmlRowElement; pXmlRowElement = pXmlRowElement-&gt;<a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a149febd03a2434a6bdcd067276386efb">NextSiblingElement</a>(rowName))</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <span class="keywordflow">for</span> ( ; <span class="keyword">nullptr</span> != pXmlRowElement; pXmlRowElement = pXmlRowElement-&gt;<a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a149febd03a2434a6bdcd067276386efb">NextSiblingElement</a>(rowName))</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      {</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        std::vector&lt;T&gt; rowVector;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
@@ -239,12 +239,12 @@
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1core_1_1XmlHelper.html#a01046721298a2353e20c4057d2526ce3">  266</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> <a class="code" href="classdqm4hep_1_1core_1_1XmlHelper.html#a01046721298a2353e20c4057d2526ce3">XmlHelper::getAttribute</a>(<span class="keyword">const</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlElement.html">TiXmlElement</a> *<span class="keyword">const</span> pXmlElement, <span class="keyword">const</span> std::string &amp;attributeName, T &amp;attributeValue)</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      <span class="keywordflow">if</span>(NULL == pXmlElement)</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == pXmlElement)</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_INVALID_PTR;</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">char</span> *pAttributePtr(pXmlElement-&gt;<a class="code" href="classdqm4hep_1_1core_1_1TiXmlElement.html#a96d874c42454c34b7d77e4a942692b96">Attribute</a>(attributeName.c_str()));</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="keywordflow">if</span>(NULL == pAttributePtr)</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == pAttributePtr)</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      std::string attributeStr(pAttributePtr);</div>
@@ -273,12 +273,12 @@
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1core_1_1XmlHelper.html#a46fda10c6c9e8ad1bab97e42afa9485b">  300</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> <a class="code" href="classdqm4hep_1_1core_1_1XmlHelper.html#a01046721298a2353e20c4057d2526ce3">XmlHelper::getAttribute</a>(<span class="keyword">const</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlElement.html">TiXmlElement</a> *<span class="keyword">const</span> pXmlElement, <span class="keyword">const</span> std::string &amp;attributeName, std::string &amp;attributeValue)</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    {</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      <span class="keywordflow">if</span>(NULL == pXmlElement)</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == pXmlElement)</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_INVALID_PTR;</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">char</span> *pAttributePtr(pXmlElement-&gt;<a class="code" href="classdqm4hep_1_1core_1_1TiXmlElement.html#a96d874c42454c34b7d77e4a942692b96">Attribute</a>(attributeName.c_str()));</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      <span class="keywordflow">if</span>(NULL == pAttributePtr)</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == pAttributePtr)</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      attributeValue = pAttributePtr;</div>
@@ -291,7 +291,7 @@
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1core_1_1XmlHelper.html#a1345efa08836b7aa6afbe8dee60a1920">  318</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> <a class="code" href="classdqm4hep_1_1core_1_1XmlHelper.html#a1345efa08836b7aa6afbe8dee60a1920">XmlHelper::readParameter</a>(<span class="keyword">const</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html">TiXmlHandle</a> &amp;xmlHandle, <span class="keyword">const</span> std::string &amp;parameterName, T &amp;t)</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    {</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="classdqm4hep_1_1core_1_1TiXmlElement.html">TiXmlElement</a> *pXmlElement = xmlHandle.<a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html#ab67675950995aa245a44aa3b6cd90994">FirstChild</a>(<span class="stringliteral">&quot;parameter&quot;</span>).<a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html#af88a83a883bf79da09de56cbad0d652c">Element</a>(); NULL != pXmlElement;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="classdqm4hep_1_1core_1_1TiXmlElement.html">TiXmlElement</a> *pXmlElement = xmlHandle.<a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html#ab67675950995aa245a44aa3b6cd90994">FirstChild</a>(<span class="stringliteral">&quot;parameter&quot;</span>).<a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html#af88a83a883bf79da09de56cbad0d652c">Element</a>(); <span class="keyword">nullptr</span> != pXmlElement;</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;          pXmlElement = pXmlElement-&gt;<a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a149febd03a2434a6bdcd067276386efb">NextSiblingElement</a>(<span class="stringliteral">&quot;parameter&quot;</span>))</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      {</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        std::string name;</div>
@@ -332,7 +332,7 @@
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00359"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1core_1_1XmlHelper.html#af274061a5a7690f6c6588c9e53a1a672">  359</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> <a class="code" href="classdqm4hep_1_1core_1_1XmlHelper.html#af274061a5a7690f6c6588c9e53a1a672">XmlHelper::readParameters</a>(<span class="keyword">const</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html">TiXmlHandle</a> &amp;xmlHandle, <span class="keyword">const</span> std::string &amp;parameterName, std::vector&lt;T&gt; &amp;vector)</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    {</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="classdqm4hep_1_1core_1_1TiXmlElement.html">TiXmlElement</a> *pXmlElement = xmlHandle.<a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html#ab67675950995aa245a44aa3b6cd90994">FirstChild</a>(<span class="stringliteral">&quot;parameter&quot;</span>).<a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html#af88a83a883bf79da09de56cbad0d652c">Element</a>(); NULL != pXmlElement;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      <span class="keywordflow">for</span> (<a class="code" href="classdqm4hep_1_1core_1_1TiXmlElement.html">TiXmlElement</a> *pXmlElement = xmlHandle.<a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html#ab67675950995aa245a44aa3b6cd90994">FirstChild</a>(<span class="stringliteral">&quot;parameter&quot;</span>).<a class="code" href="classdqm4hep_1_1core_1_1TiXmlHandle.html#af88a83a883bf79da09de56cbad0d652c">Element</a>(); <span class="keyword">nullptr</span> != pXmlElement;</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;          pXmlElement = pXmlElement-&gt;<a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a149febd03a2434a6bdcd067276386efb">NextSiblingElement</a>(<span class="stringliteral">&quot;parameter&quot;</span>))</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      {</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        std::string name;</div>
@@ -410,7 +410,7 @@
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 30 2018 17:46:33 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 31 2018 09:54:05 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

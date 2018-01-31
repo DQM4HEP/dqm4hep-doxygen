@@ -98,65 +98,64 @@
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1core_1_1Event.html#ac0457d2add2f1a08886cfe8c59de621c">   48</a></span>&#160;    <a class="code" href="classdqm4hep_1_1core_1_1Event.html#ac0457d2add2f1a08886cfe8c59de621c">Event::~Event</a>()</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1core_1_1Event.html#a270043fc900457fdae05ebf3f18232cb">   54</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a270043fc900457fdae05ebf3f18232cb">Event::clear</a>()</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">m_type</a> = <a class="code" href="namespacedqm4hep_1_1core.html#a22223e08d15c5cb3007165e0b19205c3a8605d534e908730f7e3ed8d418aece6a">UNKNOWN_EVENT</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">m_source</a> = <span class="stringliteral">&quot;unknwon&quot;</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">m_timeStamp</a> = <a class="code" href="namespacedqm4hep_1_1core.html#a6750db8e23540ba8271bf5f1a8551c89">TimePoint</a>();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">m_eventSize</a> = 0;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">m_eventNumber</a> = 0;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">m_runNumber</a> = 0;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1core_1_1Event.html#a4cdb47f443a2a86fa3cee0a42f583a2a">   66</a></span>&#160;    xdrstream::Status <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a4cdb47f443a2a86fa3cee0a42f583a2a">Event::writeBase</a>(xdrstream::IODevice *pDevice)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      uint8_t type(static_cast&lt;uint8_t&gt;(<a class="code" href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">m_type</a>));</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      int64_t timeStamp = std::chrono::system_clock::to_time_t(<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">m_timeStamp</a>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      XDR_STREAM(pDevice-&gt;write(&amp;type));</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      XDR_STREAM(pDevice-&gt;write(&amp;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">m_source</a>));</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      XDR_STREAM(pDevice-&gt;write(&amp;timeStamp));</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      XDR_STREAM(pDevice-&gt;write(&amp;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">m_eventSize</a>));</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      XDR_STREAM(pDevice-&gt;write(&amp;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">m_eventNumber</a>));</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      XDR_STREAM(pDevice-&gt;write(&amp;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">m_runNumber</a>));</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keywordflow">return</span> xdrstream::XDR_SUCCESS;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1core_1_1Event.html#a5e904e2d2e2786f60616699e3f20ebd9">   83</a></span>&#160;    xdrstream::Status <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a5e904e2d2e2786f60616699e3f20ebd9">Event::readBase</a>(xdrstream::IODevice *pDevice)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      uint8_t type(0);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      int64_t timeStamp(0);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      XDR_STREAM(pDevice-&gt;read(&amp;type));</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      XDR_STREAM(pDevice-&gt;read(&amp;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">m_source</a>));</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      XDR_STREAM(pDevice-&gt;read(&amp;timeStamp));</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      XDR_STREAM(pDevice-&gt;read(&amp;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">m_eventSize</a>));</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      XDR_STREAM(pDevice-&gt;read(&amp;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">m_eventNumber</a>));</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      XDR_STREAM(pDevice-&gt;read(&amp;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">m_runNumber</a>));</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a3c3fc8ea94917fcadb20c6459d942696">setType</a>(static_cast&lt;EventType&gt;(type));</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a2b7a5d3ddef8d971f8a53e600201df2d">setTimeStamp</a>(std::chrono::system_clock::from_time_t(timeStamp));</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordflow">return</span> xdrstream::XDR_SUCCESS;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classdqm4hep_1_1core_1_1Event.html#ac0457d2add2f1a08886cfe8c59de621c">Event::~Event</a>()</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1core_1_1Event.html#a270043fc900457fdae05ebf3f18232cb">   53</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a270043fc900457fdae05ebf3f18232cb">Event::clear</a>()</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">m_type</a> = <a class="code" href="namespacedqm4hep_1_1core.html#a22223e08d15c5cb3007165e0b19205c3a8605d534e908730f7e3ed8d418aece6a">UNKNOWN_EVENT</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">m_source</a> = <span class="stringliteral">&quot;unknwon&quot;</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">m_timeStamp</a> = <a class="code" href="namespacedqm4hep_1_1core.html#a6750db8e23540ba8271bf5f1a8551c89">TimePoint</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">m_eventSize</a> = 0;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">m_eventNumber</a> = 0;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">m_runNumber</a> = 0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1core_1_1Event.html#a4cdb47f443a2a86fa3cee0a42f583a2a">   65</a></span>&#160;    xdrstream::Status <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a4cdb47f443a2a86fa3cee0a42f583a2a">Event::writeBase</a>(xdrstream::IODevice *pDevice)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      uint8_t type(static_cast&lt;uint8_t&gt;(<a class="code" href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">m_type</a>));</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      int64_t timeStamp = std::chrono::system_clock::to_time_t(<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">m_timeStamp</a>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      XDR_STREAM(pDevice-&gt;write(&amp;type));</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      XDR_STREAM(pDevice-&gt;write(&amp;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">m_source</a>));</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      XDR_STREAM(pDevice-&gt;write(&amp;timeStamp));</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      XDR_STREAM(pDevice-&gt;write(&amp;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">m_eventSize</a>));</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      XDR_STREAM(pDevice-&gt;write(&amp;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">m_eventNumber</a>));</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      XDR_STREAM(pDevice-&gt;write(&amp;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">m_runNumber</a>));</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">return</span> xdrstream::XDR_SUCCESS;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1core_1_1Event.html#a5e904e2d2e2786f60616699e3f20ebd9">   82</a></span>&#160;    xdrstream::Status <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a5e904e2d2e2786f60616699e3f20ebd9">Event::readBase</a>(xdrstream::IODevice *pDevice)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      uint8_t type(0);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      int64_t timeStamp(0);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      XDR_STREAM(pDevice-&gt;read(&amp;type));</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      XDR_STREAM(pDevice-&gt;read(&amp;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">m_source</a>));</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      XDR_STREAM(pDevice-&gt;read(&amp;timeStamp));</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      XDR_STREAM(pDevice-&gt;read(&amp;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">m_eventSize</a>));</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      XDR_STREAM(pDevice-&gt;read(&amp;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">m_eventNumber</a>));</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      XDR_STREAM(pDevice-&gt;read(&amp;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">m_runNumber</a>));</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a3c3fc8ea94917fcadb20c6459d942696">setType</a>(static_cast&lt;EventType&gt;(type));</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a2b7a5d3ddef8d971f8a53e600201df2d">setTimeStamp</a>(std::chrono::system_clock::from_time_t(timeStamp));</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keywordflow">return</span> xdrstream::XDR_SUCCESS;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a52a91490003e610a3eba1dec29e79f6d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">dqm4hep::core::Event::m_timeStamp</a></div><div class="ttdeci">TimePoint m_timeStamp</div><div class="ttdoc">The event time stamp. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00153">Event.h:153</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a4d99b8e79925b571c02d3d4376afe022"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">dqm4hep::core::Event::m_source</a></div><div class="ttdeci">std::string m_source</div><div class="ttdoc">The event source. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00152">Event.h:152</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a270043fc900457fdae05ebf3f18232cb"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a270043fc900457fdae05ebf3f18232cb">dqm4hep::core::Event::clear</a></div><div class="ttdeci">virtual void clear()</div><div class="ttdoc">Clear the event. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8cc_source.html#l00054">Event.cc:54</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a270043fc900457fdae05ebf3f18232cb"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a270043fc900457fdae05ebf3f18232cb">dqm4hep::core::Event::clear</a></div><div class="ttdeci">virtual void clear()</div><div class="ttdoc">Clear the event. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8cc_source.html#l00053">Event.cc:53</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_a6750db8e23540ba8271bf5f1a8551c89"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a6750db8e23540ba8271bf5f1a8551c89">dqm4hep::core::TimePoint</a></div><div class="ttdeci">std::chrono::system_clock::time_point TimePoint</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00122">Internal.h:122</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_a22223e08d15c5cb3007165e0b19205c3a8605d534e908730f7e3ed8d418aece6a"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a22223e08d15c5cb3007165e0b19205c3a8605d534e908730f7e3ed8d418aece6a">dqm4hep::core::UNKNOWN_EVENT</a></div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00047">Event.h:47</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a8e19534d84bcce86fa9bad40b4c7eb41"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">dqm4hep::core::Event::m_eventSize</a></div><div class="ttdeci">uint64_t m_eventSize</div><div class="ttdoc">The serialized event size (unit bytes) </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00154">Event.h:154</a></div></div>
@@ -165,16 +164,16 @@
 <div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_af5968aec2e0a660292837b4ce1400843"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">dqm4hep::core::Event::m_type</a></div><div class="ttdeci">EventType m_type</div><div class="ttdoc">The event type. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00151">Event.h:151</a></div></div>
 <div class="ttc" id="StreamingHelper_8h_html"><div class="ttname"><a href="StreamingHelper_8h.html">StreamingHelper.h</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a27d10fa652a245e13a4353c53766fdb2"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a27d10fa652a245e13a4353c53766fdb2">dqm4hep::core::Event::Event</a></div><div class="ttdeci">Event()</div><div class="ttdoc">Private constructor. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8cc_source.html#l00036">Event.cc:36</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a4cdb47f443a2a86fa3cee0a42f583a2a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a4cdb47f443a2a86fa3cee0a42f583a2a">dqm4hep::core::Event::writeBase</a></div><div class="ttdeci">xdrstream::Status writeBase(xdrstream::IODevice *pDevice) const </div><div class="ttdoc">Write the base event information in the xdrstream device. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8cc_source.html#l00066">Event.cc:66</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a4cdb47f443a2a86fa3cee0a42f583a2a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a4cdb47f443a2a86fa3cee0a42f583a2a">dqm4hep::core::Event::writeBase</a></div><div class="ttdeci">xdrstream::Status writeBase(xdrstream::IODevice *pDevice) const </div><div class="ttdoc">Write the base event information in the xdrstream device. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8cc_source.html#l00065">Event.cc:65</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a3a77f3c1ddd853987f74824d881bb3ef"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">dqm4hep::core::Event::m_eventNumber</a></div><div class="ttdeci">uint32_t m_eventNumber</div><div class="ttdoc">The event number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00155">Event.h:155</a></div></div>
 <div class="ttc" id="Event_8h_html"><div class="ttname"><a href="Event_8h.html">Event.h</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_ac0457d2add2f1a08886cfe8c59de621c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#ac0457d2add2f1a08886cfe8c59de621c">dqm4hep::core::Event::~Event</a></div><div class="ttdeci">virtual ~Event()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8cc_source.html#l00048">Event.cc:48</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a5e904e2d2e2786f60616699e3f20ebd9"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a5e904e2d2e2786f60616699e3f20ebd9">dqm4hep::core::Event::readBase</a></div><div class="ttdeci">xdrstream::Status readBase(xdrstream::IODevice *pDevice)</div><div class="ttdoc">Read the base event information from the xdrstream device. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8cc_source.html#l00083">Event.cc:83</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_ac0457d2add2f1a08886cfe8c59de621c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#ac0457d2add2f1a08886cfe8c59de621c">dqm4hep::core::Event::~Event</a></div><div class="ttdeci">virtual ~Event()</div><div class="ttdoc">Destructor. </div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a5e904e2d2e2786f60616699e3f20ebd9"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a5e904e2d2e2786f60616699e3f20ebd9">dqm4hep::core::Event::readBase</a></div><div class="ttdeci">xdrstream::Status readBase(xdrstream::IODevice *pDevice)</div><div class="ttdoc">Read the base event information from the xdrstream device. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8cc_source.html#l00082">Event.cc:82</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_ab29a4af2bf6fb951c2f38490d792b64a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">dqm4hep::core::Event::m_runNumber</a></div><div class="ttdeci">uint32_t m_runNumber</div><div class="ttdoc">The run number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00156">Event.h:156</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jan 30 2018 17:46:33 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 31 2018 09:54:05 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
