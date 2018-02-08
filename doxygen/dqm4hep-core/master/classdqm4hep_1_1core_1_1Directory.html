@@ -166,9 +166,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a1cbc1356c1d2005895518490299355f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Directory.html#a1cbc1356c1d2005895518490299355f0">Directory</a> ()</td></tr>
 <tr class="memdesc:a1cbc1356c1d2005895518490299355f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a1cbc1356c1d2005895518490299355f0">More...</a><br/></td></tr>
 <tr class="separator:a1cbc1356c1d2005895518490299355f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e1bfe1c0d3a9e81b528c5078633290b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Directory.html#a0e1bfe1c0d3a9e81b528c5078633290b">Directory</a> (const std::string &amp;<a class="el" href="classdqm4hep_1_1core_1_1Directory.html#a8451e26d515b49824133908304c75ad1">name</a>, <a class="el" href="classdqm4hep_1_1core_1_1Directory.html#af869cbf61892f7849f8ca5e4a3d22b7f">DirectoryPtr</a> parentDir=nullptr)</td></tr>
-<tr class="memdesc:a0e1bfe1c0d3a9e81b528c5078633290b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with name and parent dir.  <a href="#a0e1bfe1c0d3a9e81b528c5078633290b">More...</a><br/></td></tr>
-<tr class="separator:a0e1bfe1c0d3a9e81b528c5078633290b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad481d67719f74a65786166b53a3affc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Directory.html#ad481d67719f74a65786166b53a3affc2">Directory</a> (const std::string &amp;<a class="el" href="classdqm4hep_1_1core_1_1Directory.html#a8451e26d515b49824133908304c75ad1">name</a>, <a class="el" href="classdqm4hep_1_1core_1_1Directory.html#af869cbf61892f7849f8ca5e4a3d22b7f">DirectoryPtr</a> <a class="el" href="classdqm4hep_1_1core_1_1Directory.html#ab14f846acd4ef273e95733695c1528e8">parent</a>=nullptr)</td></tr>
+<tr class="memdesc:ad481d67719f74a65786166b53a3affc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with name and parent dir.  <a href="#ad481d67719f74a65786166b53a3affc2">More...</a><br/></td></tr>
+<tr class="separator:ad481d67719f74a65786166b53a3affc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -331,7 +331,7 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a0e1bfe1c0d3a9e81b528c5078633290b"></a>
+<a class="anchor" id="ad481d67719f74a65786166b53a3affc2"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -350,7 +350,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classdqm4hep_1_1core_1_1Directory.html#af869cbf61892f7849f8ca5e4a3d22b7f">DirectoryPtr</a>&#160;</td>
-          <td class="paramname"><em>parentDir</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -730,7 +730,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;      Path <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#ab87ba39c33ff9d949990e7c57c06e76a">fullPath</a> = this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Directory.html#a8451e26d515b49824133908304c75ad1">name</a>();</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#af869cbf61892f7849f8ca5e4a3d22b7f">DirectoryPtr</a> dir = <span class="keyword">const_cast&lt;</span>Directory&lt;T&gt;*<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;shared_from_this();</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;      <span class="keywordflow">while</span>(1)</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;      <span class="keywordflow">while</span>(<span class="keyword">true</span>)</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;      {</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#af869cbf61892f7849f8ca5e4a3d22b7f">DirectoryPtr</a> parentDir = dir-&gt;parent();</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
@@ -1341,7 +1341,7 @@ template&lt;typename T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 31 2018 09:54:05 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 8 2018 22:08:27 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

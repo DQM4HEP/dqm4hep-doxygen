@@ -590,7 +590,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      TObject::SetObjectStat(objectStat);</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      <span class="keywordflow">if</span>(!pTObject)</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      <span class="keywordflow">if</span>(pTObject == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      monitorElement-&gt;setReferenceObject(pTObject);</div>
@@ -662,7 +662,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      TObject *pTObject = (TObject*)pTClass-&gt;New();</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      TObject::SetObjectStat(objectStat);</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      <span class="keywordflow">if</span>(!pTObject)</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      <span class="keywordflow">if</span>(pTObject == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      {</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;MonitorElementManager::bookMonitorElement: Couldn&#39;t allocate ROOT class &#39;{0}&#39; from TClass facility&quot;</span>, className );</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
@@ -1306,7 +1306,7 @@ template&lt;typename ObjectType , typename... Args&gt; </div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      TObject *pTObject = pTFile-&gt;Get(fullName.getPath().c_str());</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      TObject::SetObjectStat(objectStat);</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      <span class="keywordflow">if</span>(!pTObject)</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      <span class="keywordflow">if</span>(pTObject == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_FOUND;</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      <span class="keywordflow">return</span> this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1MonitorElementManager.html#a35f23d331b78dc0a7e4c1af27e3bbec8">addMonitorElement</a>(path, pTObject, monitorElement);</div>
@@ -1699,7 +1699,7 @@ template&lt;typename ObjectType , typename... Args&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 31 2018 09:54:06 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 8 2018 22:08:27 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

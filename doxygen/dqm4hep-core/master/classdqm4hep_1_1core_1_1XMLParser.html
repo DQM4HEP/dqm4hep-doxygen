@@ -762,7 +762,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        <span class="keyword">const</span> std::string key( value.substr( pos+5 , pos2-pos-5 ));</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        <span class="keywordtype">char</span> *env = getenv(key.c_str());</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        </div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        <span class="keywordflow">if</span>(!env)</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        <span class="keywordflow">if</span>(env == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        {</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;          <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;XMLParser::performEnvVariableReplacement(): env variable \&quot;{0}\&quot; not found !&quot;</span>, key );</div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;          <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_FAILURE);</div>
@@ -889,7 +889,7 @@ template&lt;typename T &gt; </div>
 
 <p>Referenced by <a class="el" href="XMLParser_8cc_source.html#l00228">resolveConstants()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    {</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      <span class="keywordflow">for</span>( TiXmlElement* element = node-&gt;FirstChildElement() ; element ; element = element-&gt;NextSiblingElement() )</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      <span class="keywordflow">for</span>( TiXmlElement* element = node-&gt;FirstChildElement() ; element != nullptr ; element = element-&gt;NextSiblingElement() )</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;      {</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="keywordflow">if</span> ( element-&gt;Value() == std::string(<span class="stringliteral">&quot;constants&quot;</span>) )</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;          this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1XMLParser.html#a2928fc8b12304896cd6127af63e7fa00">readConstantsSection</a>(element);</div>
@@ -930,11 +930,11 @@ template&lt;typename T &gt; </div>
 
 <p>Referenced by <a class="el" href="XMLParser_8cc_source.html#l00344">readConstants()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    {</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;      <span class="keywordflow">for</span>( TiXmlElement* element = <a class="code" href="classdqm4hep_1_1core_1_1XMLParser.html#a5cbd3bb61869774a23370496e1f3f80e">constants</a>-&gt;FirstChildElement(<span class="stringliteral">&quot;constant&quot;</span>) ; element ; element = element-&gt;NextSiblingElement(<span class="stringliteral">&quot;constant&quot;</span>) )</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;      <span class="keywordflow">for</span>( TiXmlElement* element = <a class="code" href="classdqm4hep_1_1core_1_1XMLParser.html#a5cbd3bb61869774a23370496e1f3f80e">constants</a>-&gt;FirstChildElement(<span class="stringliteral">&quot;constant&quot;</span>) ; element != nullptr ; element = element-&gt;NextSiblingElement(<span class="stringliteral">&quot;constant&quot;</span>) )</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;      {</div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1XMLParser.html#abb1705bd318d26d807a8967e01842055">resolveConstantsInElement</a>(element);</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        </div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keywordflow">if</span>( ! element-&gt;Attribute(<span class="stringliteral">&quot;name&quot;</span>) )</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keywordflow">if</span>( element-&gt;Attribute(<span class="stringliteral">&quot;name&quot;</span>) == nullptr )</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        {</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;          <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;XMLParser::readConstantsSection(): constant element without name !&quot;</span> );</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;          <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_FAILURE);</div>
@@ -956,13 +956,13 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        std::string value;</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        <span class="keywordflow">if</span>( element-&gt;Attribute(<span class="stringliteral">&quot;value&quot;</span>) ) </div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        <span class="keywordflow">if</span>( element-&gt;Attribute(<span class="stringliteral">&quot;value&quot;</span>) != nullptr ) </div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        {</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;          value = element-&gt;Attribute(<span class="stringliteral">&quot;value&quot;</span>);</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        }</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        {</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;          <span class="keywordflow">if</span>( element-&gt;FirstChild() )</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;          <span class="keywordflow">if</span>( element-&gt;FirstChild() != nullptr )</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;            value = element-&gt;FirstChild()-&gt;Value();</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        }</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;</div>
@@ -1011,14 +1011,14 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;      </div>
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;      TiXmlElement *databases = <a class="code" href="classdqm4hep_1_1core_1_1XMLParser.html#a01c5bf6fb2f9bc2938c59c15fa73281e">document</a>.<a class="code" href="classdqm4hep_1_1core_1_1TiXmlDocument.html#ae51a7997c45ab563d9aec22ab7e14acc">RootElement</a>()-&gt;<a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a017a9c27aa67fe85df058d3a8956131a">FirstChildElement</a>(<span class="stringliteral">&quot;databases&quot;</span>);</div>
 <div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;      </div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;      <span class="keywordflow">if</span>(!databases)</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;      <span class="keywordflow">if</span>(databases == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;      </div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;      <span class="keywordflow">for</span>(TiXmlElement *db = databases-&gt;FirstChildElement(<span class="stringliteral">&quot;db&quot;</span>) ; db ; db = db-&gt;NextSiblingElement(<span class="stringliteral">&quot;db&quot;</span>))</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;      <span class="keywordflow">for</span>(TiXmlElement *db = databases-&gt;FirstChildElement(<span class="stringliteral">&quot;db&quot;</span>) ; db != nullptr ; db = db-&gt;NextSiblingElement(<span class="stringliteral">&quot;db&quot;</span>))</div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;      {</div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span> *dbID = db-&gt;<a class="code" href="classdqm4hep_1_1core_1_1TiXmlElement.html#a96d874c42454c34b7d77e4a942692b96">Attribute</a>(<span class="stringliteral">&quot;id&quot;</span>);</div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        </div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        <span class="keywordflow">if</span>(!dbID || std::string(dbID).empty())</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        <span class="keywordflow">if</span>((dbID == <span class="keyword">nullptr</span>) || std::string(dbID).empty())</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;        {</div>
 <div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;          <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;ERROR: &lt;db&gt; tag has no &#39;id&#39; attribute or is empty, line {0}&quot;</span>, db-&gt;Row() );</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;          <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_FOUND);</div>
@@ -1030,9 +1030,9 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;          <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_ALREADY_PRESENT);</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        }</div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;        </div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;        std::string dbHost = db-&gt;Attribute(<span class="stringliteral">&quot;host&quot;</span>) ? db-&gt;Attribute(<span class="stringliteral">&quot;host&quot;</span>) : <span class="stringliteral">&quot;localhost&quot;</span>;</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;        std::string dbHost = db-&gt;Attribute(<span class="stringliteral">&quot;host&quot;</span>) != <span class="keyword">nullptr</span> ? db-&gt;Attribute(<span class="stringliteral">&quot;host&quot;</span>) : <span class="stringliteral">&quot;localhost&quot;</span>;</div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;        std::string dbUser = <span class="stringliteral">&quot;DQM4HEP&quot;</span>; <span class="comment">// always has read access</span></div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        std::string dbDb = db-&gt;Attribute(<span class="stringliteral">&quot;db&quot;</span>) ? db-&gt;Attribute(<span class="stringliteral">&quot;db&quot;</span>) : <span class="stringliteral">&quot;DQM4HEP&quot;</span>;</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;        std::string dbDb = db-&gt;Attribute(<span class="stringliteral">&quot;db&quot;</span>) != <span class="keyword">nullptr</span> ? db-&gt;Attribute(<span class="stringliteral">&quot;db&quot;</span>) : <span class="stringliteral">&quot;DQM4HEP&quot;</span>;</div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;        </div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;        std::shared_ptr&lt;DBInterface&gt; dbInterface(std::make_shared&lt;DBInterface&gt;());</div>
 <div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        <a class="code" href="StatusCodes_8h.html#ab49c8013f48bd677d0e5e39cb506b8f9">THROW_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, dbInterface-&gt;connect(dbHost, dbUser, <span class="stringliteral">&quot;&quot;</span>, dbDb));</div>
@@ -1079,7 +1079,7 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    {</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;      TiXmlElement *root = <a class="code" href="classdqm4hep_1_1core_1_1XMLParser.html#a7ebbe5ac77bb066cb63fbda39b570939">m_document</a>.<a class="code" href="classdqm4hep_1_1core_1_1TiXmlDocument.html#ae51a7997c45ab563d9aec22ab7e14acc">RootElement</a>();</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;      </div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      <span class="keywordflow">for</span>( TiXmlElement* element = root-&gt;FirstChildElement() ; element ; element = element-&gt;NextSiblingElement() )</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      <span class="keywordflow">for</span>( TiXmlElement* element = root-&gt;FirstChildElement() ; element != nullptr ; element = element-&gt;NextSiblingElement() )</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1XMLParser.html#abb1705bd318d26d807a8967e01842055">resolveConstantsInElement</a>(element);</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1XMLParser_html_abb1705bd318d26d807a8967e01842055"><div class="ttname"><a href="classdqm4hep_1_1core_1_1XMLParser.html#abb1705bd318d26d807a8967e01842055">dqm4hep::core::XMLParser::resolveConstantsInElement</a></div><div class="ttdeci">void resolveConstantsInElement(TiXmlElement *element)</div><div class="ttdef"><b>Definition:</b> <a href="XMLParser_8cc_source.html#l00484">XMLParser.cc:484</a></div></div>
@@ -1153,12 +1153,12 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1core_1_1XMLParser.html#a2a0a7f584bc9e2ad96ab0a9cd3eebd6f">m_databases</a>.empty())</div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;      </div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;      <span class="keywordflow">for</span>( TiXmlElement* element = pXmlElement-&gt;FirstChildElement() ; element ; element = element-&gt;NextSiblingElement() )</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;      <span class="keywordflow">for</span>( TiXmlElement* element = pXmlElement-&gt;FirstChildElement() ; element != nullptr ; element = element-&gt;NextSiblingElement() )</div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;      {</div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;        <span class="keywordflow">if</span>(std::string(element-&gt;Value()) == <span class="stringliteral">&quot;select&quot;</span>)</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;        {</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;          std::string dbID = element-&gt;Attribute(<span class="stringliteral">&quot;db&quot;</span>) ? element-&gt;Attribute(<span class="stringliteral">&quot;db&quot;</span>) : <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;          std::string dbTable = element-&gt;Attribute(<span class="stringliteral">&quot;table&quot;</span>) ? element-&gt;Attribute(<span class="stringliteral">&quot;table&quot;</span>) : <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;          std::string dbID = element-&gt;Attribute(<span class="stringliteral">&quot;db&quot;</span>) != <span class="keyword">nullptr</span> ? element-&gt;Attribute(<span class="stringliteral">&quot;db&quot;</span>) : <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;          std::string dbTable = element-&gt;Attribute(<span class="stringliteral">&quot;table&quot;</span>) != <span class="keyword">nullptr</span> ? element-&gt;Attribute(<span class="stringliteral">&quot;table&quot;</span>) : <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;          </div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;          <span class="keywordflow">if</span>(dbID.empty() || dbTable.empty())</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;          {</div>
@@ -1274,7 +1274,7 @@ template&lt;typename T &gt; </div>
 <p>Referenced by <a class="el" href="XMLParser_8cc_source.html#l00367">readConstantsSection()</a>, and <a class="el" href="XMLParser_8cc_source.html#l00357">replaceAllConstants()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    {</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;      <span class="comment">// replace constants in all attributes</span></div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;      <span class="keywordflow">for</span>(TiXmlAttribute *attribute = element-&gt;FirstAttribute(); attribute ; attribute = attribute-&gt;Next())</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;      <span class="keywordflow">for</span>(TiXmlAttribute *attribute = element-&gt;FirstAttribute(); attribute != nullptr ; attribute = attribute-&gt;Next())</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;      {</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        std::string value(attribute-&gt;ValueStr());</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        </div>
@@ -1286,7 +1286,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        attribute-&gt;SetValue(value);</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;      }</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;      <span class="keywordflow">for</span>(TiXmlNode *node = element-&gt;FirstChild() ; node ; node = node-&gt;NextSibling())</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;      <span class="keywordflow">for</span>(TiXmlNode *node = element-&gt;FirstChild() ; node != nullptr ; node = node-&gt;NextSibling())</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;      {</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        <span class="keywordflow">if</span>(node-&gt;Type() == <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a56b199506d0fe4fcfca13c6550c6b30ba0264a19f3f4ca9088fe9e3c7152f9b6d">TiXmlNode::TINYXML_ELEMENT</a>)</div>
 <div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        {</div>
@@ -1396,7 +1396,7 @@ template&lt;typename T &gt; </div>
 
 <p>Referenced by <a class="el" href="XMLParser_8cc_source.html#l00244">resolveIncludes()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    {</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      <span class="keywordflow">if</span>( ! element-&gt;Attribute(<span class="stringliteral">&quot;ref&quot;</span>) ) {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      <span class="keywordflow">if</span>( element-&gt;Attribute(<span class="stringliteral">&quot;ref&quot;</span>) == nullptr ) {</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;XMLParser::resolveInclude(): missing attribute \&quot;ref\&quot; in element &lt;{0}/&gt;&quot;</span>, element-&gt;Value() );</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_FAILURE);</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      }</div>
@@ -1528,9 +1528,9 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    {</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      TiXmlElement* child = node-&gt;FirstChildElement();</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      <span class="keywordflow">while</span>( 1 )</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      <span class="keywordflow">while</span>( <span class="keyword">true</span> )</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      {</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordflow">if</span>( ! child )</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordflow">if</span>( child == <span class="keyword">nullptr</span> )</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;          <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordflow">if</span>( child-&gt;Value() != std::string(<span class="stringliteral">&quot;include&quot;</span>) ) </div>
@@ -1555,7 +1555,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="comment">// add them to the xml tree</span></div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        TiXmlNode *includeAfter(child);</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">for</span>(TiXmlElement *includeElement = rootInclude-&gt;FirstChildElement() ; includeElement ; includeElement =  includeElement-&gt;NextSiblingElement())</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">for</span>(TiXmlElement *includeElement = rootInclude-&gt;FirstChildElement() ; includeElement != nullptr ; includeElement =  includeElement-&gt;NextSiblingElement())</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;          includeAfter = node-&gt;InsertAfterChild( includeAfter, *includeElement );</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="comment">// tricky lines :</span></div>
@@ -1974,7 +1974,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 31 2018 09:54:06 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 8 2018 22:08:27 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

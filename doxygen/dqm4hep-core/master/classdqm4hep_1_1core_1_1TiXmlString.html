@@ -850,7 +850,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="tinystr_8h_source.html#l00230">dqm4hep::core::TiXmlString::Rep::capacity</a>, <a class="el" href="tinystr_8h_source.html#l00267">nullrep_</a>, <a class="el" href="tinystr_8h_source.html#l00266">rep_</a>, <a class="el" href="tinystr_8h_source.html#l00230">dqm4hep::core::TiXmlString::Rep::size</a>, and <a class="el" href="tinystr_8h_source.html#l00231">dqm4hep::core::TiXmlString::Rep::str</a>.</p>
 <div class="fragment"><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      {</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">if</span> (cap)</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">if</span> (cap != 0u)</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        {</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;          <span class="comment">// Lee: the original form:</span></div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;          <span class="comment">//  rep_ = static_cast&lt;Rep*&gt;(operator new(sizeof(Rep) + cap));</span></div>
@@ -1393,7 +1393,7 @@ Static Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 31 2018 09:54:06 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 8 2018 22:08:27 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

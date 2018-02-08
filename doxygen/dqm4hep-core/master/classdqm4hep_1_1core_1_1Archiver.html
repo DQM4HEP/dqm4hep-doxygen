@@ -281,7 +281,7 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      {</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        pDirectory = <a class="code" href="classdqm4hep_1_1core_1_1Archiver.html#a2e66b1fd54a3f3f4ac2e66660bc3cde8">m_pArchiveFile</a>-&gt;mkdir(dirName.c_str());</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">if</span>(!pDirectory)</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">if</span>(pDirectory == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;          <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      }</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <span class="keywordflow">else</span></div>
@@ -827,7 +827,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 31 2018 09:54:05 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 8 2018 22:08:27 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

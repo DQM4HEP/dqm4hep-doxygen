@@ -90,9 +90,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c216043f60dd48b13f390fb033b5982"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Event.html#a4c216043f60dd48b13f390fb033b5982">getSource</a> () const </td></tr>
 <tr class="memdesc:a4c216043f60dd48b13f390fb033b5982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the event source.  <a href="#a4c216043f60dd48b13f390fb033b5982">More...</a><br/></td></tr>
 <tr class="separator:a4c216043f60dd48b13f390fb033b5982"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b7a5d3ddef8d971f8a53e600201df2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Event.html#a2b7a5d3ddef8d971f8a53e600201df2d">setTimeStamp</a> (const <a class="el" href="namespacedqm4hep_1_1core.html#a6750db8e23540ba8271bf5f1a8551c89">TimePoint</a> &amp;timePoint)</td></tr>
-<tr class="memdesc:a2b7a5d3ddef8d971f8a53e600201df2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the event time stamp.  <a href="#a2b7a5d3ddef8d971f8a53e600201df2d">More...</a><br/></td></tr>
-<tr class="separator:a2b7a5d3ddef8d971f8a53e600201df2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c8ad2964e0e924f599dbb4630f48d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Event.html#a94c8ad2964e0e924f599dbb4630f48d4">setTimeStamp</a> (const <a class="el" href="namespacedqm4hep_1_1core.html#a6750db8e23540ba8271bf5f1a8551c89">TimePoint</a> &amp;timeStamp)</td></tr>
+<tr class="memdesc:a94c8ad2964e0e924f599dbb4630f48d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the event time stamp.  <a href="#a94c8ad2964e0e924f599dbb4630f48d4">More...</a><br/></td></tr>
+<tr class="separator:a94c8ad2964e0e924f599dbb4630f48d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fd49b99029cefdcebcd6c9f56496804"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacedqm4hep_1_1core.html#a6750db8e23540ba8271bf5f1a8551c89">TimePoint</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Event.html#a0fd49b99029cefdcebcd6c9f56496804">getTimeStamp</a> () const </td></tr>
 <tr class="memdesc:a0fd49b99029cefdcebcd6c9f56496804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the event time stamp.  <a href="#a0fd49b99029cefdcebcd6c9f56496804">More...</a><br/></td></tr>
 <tr class="separator:a0fd49b99029cefdcebcd6c9f56496804"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -552,15 +552,15 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      XDR_STREAM(pDevice-&gt;read(&amp;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">m_runNumber</a>));</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a3c3fc8ea94917fcadb20c6459d942696">setType</a>(static_cast&lt;EventType&gt;(type));</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a2b7a5d3ddef8d971f8a53e600201df2d">setTimeStamp</a>(std::chrono::system_clock::from_time_t(timeStamp));</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a94c8ad2964e0e924f599dbb4630f48d4">setTimeStamp</a>(std::chrono::system_clock::from_time_t(timeStamp));</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keywordflow">return</span> xdrstream::XDR_SUCCESS;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a4d99b8e79925b571c02d3d4376afe022"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">dqm4hep::core::Event::m_source</a></div><div class="ttdeci">std::string m_source</div><div class="ttdoc">The event source. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00152">Event.h:152</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a8e19534d84bcce86fa9bad40b4c7eb41"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">dqm4hep::core::Event::m_eventSize</a></div><div class="ttdeci">uint64_t m_eventSize</div><div class="ttdoc">The serialized event size (unit bytes) </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00154">Event.h:154</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a3c3fc8ea94917fcadb20c6459d942696"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a3c3fc8ea94917fcadb20c6459d942696">dqm4hep::core::Event::setType</a></div><div class="ttdeci">void setType(EventType type)</div><div class="ttdoc">Set the event type. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00237">Event.h:237</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a2b7a5d3ddef8d971f8a53e600201df2d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a2b7a5d3ddef8d971f8a53e600201df2d">dqm4hep::core::Event::setTimeStamp</a></div><div class="ttdeci">void setTimeStamp(const TimePoint &amp;timePoint)</div><div class="ttdoc">Set the event time stamp. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00265">Event.h:265</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a3a77f3c1ddd853987f74824d881bb3ef"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">dqm4hep::core::Event::m_eventNumber</a></div><div class="ttdeci">uint32_t m_eventNumber</div><div class="ttdoc">The event number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00155">Event.h:155</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a94c8ad2964e0e924f599dbb4630f48d4"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a94c8ad2964e0e924f599dbb4630f48d4">dqm4hep::core::Event::setTimeStamp</a></div><div class="ttdeci">void setTimeStamp(const TimePoint &amp;timeStamp)</div><div class="ttdoc">Set the event time stamp. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00265">Event.h:265</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_ab29a4af2bf6fb951c2f38490d792b64a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">dqm4hep::core::Event::m_runNumber</a></div><div class="ttdeci">uint32_t m_runNumber</div><div class="ttdoc">The run number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00156">Event.h:156</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -758,7 +758,7 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a2b7a5d3ddef8d971f8a53e600201df2d"></a>
+<a class="anchor" id="a94c8ad2964e0e924f599dbb4630f48d4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -769,7 +769,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">void dqm4hep::core::Event::setTimeStamp </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespacedqm4hep_1_1core.html#a6750db8e23540ba8271bf5f1a8551c89">TimePoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>timePoint</em></td><td>)</td>
+          <td class="paramname"><em>timeStamp</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1035,7 +1035,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 31 2018 09:54:05 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 8 2018 22:08:27 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -148,7 +148,7 @@
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#a1cbc1356c1d2005895518490299355f0">Directory</a>();</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#a1cbc1356c1d2005895518490299355f0">Directory</a>(<span class="keyword">const</span> std::string &amp;<a class="code" href="classdqm4hep_1_1core_1_1Directory.html#a8451e26d515b49824133908304c75ad1">name</a>, <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#af869cbf61892f7849f8ca5e4a3d22b7f">DirectoryPtr</a> parentDir = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#a1cbc1356c1d2005895518490299355f0">Directory</a>(<span class="keyword">const</span> std::string &amp;<a class="code" href="classdqm4hep_1_1core_1_1Directory.html#a8451e26d515b49824133908304c75ad1">name</a>, <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#af869cbf61892f7849f8ca5e4a3d22b7f">DirectoryPtr</a> <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#ab14f846acd4ef273e95733695c1528e8">parent</a> = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      </div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1core_1_1Directory.html#af960fce8e53bfb17516a9b54b2d40976">  157</a></span>&#160;      std::string                     <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#af960fce8e53bfb17516a9b54b2d40976">m_name</a>;</div>
@@ -189,7 +189,7 @@
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1core_1_1Directory.html#a0e1bfe1c0d3a9e81b528c5078633290b">  195</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#a1cbc1356c1d2005895518490299355f0">Directory&lt;T&gt;::Directory</a>(<span class="keyword">const</span> std::string &amp;name, <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#af869cbf61892f7849f8ca5e4a3d22b7f">DirectoryPtr</a> parent) :</div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1core_1_1Directory.html#ad481d67719f74a65786166b53a3affc2">  195</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#a1cbc1356c1d2005895518490299355f0">Directory&lt;T&gt;::Directory</a>(<span class="keyword">const</span> std::string &amp;name, <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#af869cbf61892f7849f8ca5e4a3d22b7f">DirectoryPtr</a> parent) :</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      m_name(name),</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      m_parent(parent),</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      m_subdirs(),</div>
@@ -433,7 +433,7 @@
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Path.html">Path</a> fullPath = this-&gt;name();</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#af869cbf61892f7849f8ca5e4a3d22b7f">DirectoryPtr</a> dir = <span class="keyword">const_cast&lt;</span><a class="code" href="classdqm4hep_1_1core_1_1Directory.html">Directory&lt;T&gt;</a>*<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;shared_from_this();</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;      <span class="keywordflow">while</span>(1)</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;      <span class="keywordflow">while</span>(<span class="keyword">true</span>)</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;      {</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#af869cbf61892f7849f8ca5e4a3d22b7f">DirectoryPtr</a> parentDir = dir-&gt;parent();</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
@@ -510,7 +510,7 @@
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 31 2018 09:54:05 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 8 2018 22:08:26 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

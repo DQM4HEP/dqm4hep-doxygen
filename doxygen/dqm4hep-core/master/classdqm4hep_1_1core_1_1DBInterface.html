@@ -369,7 +369,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">// create mysql instance</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">m_pMySQL</a> = mysql_init(<span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">m_pMySQL</a>)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">m_pMySQL</a> == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        {</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;          <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;Couldn&#39;t create mysql instance : {0}&quot;</span>, mysql_error(<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">m_pMySQL</a>) );</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;          <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_FAILURE);</div>
@@ -396,7 +396,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="keywordflow">catch</span>(<span class="keyword">const</span> StatusCodeException &amp;exception)</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">m_pMySQL</a>)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">m_pMySQL</a> != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;          mysql_close(<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">m_pMySQL</a>);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a8dec3f867828bac5d8b449335fa4f139">m_isConnected</a> = <span class="keyword">false</span>;</div>
@@ -588,7 +588,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="keywordflow">if</span>(this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a9a9eeab1afd370a2bc902c5b3fab4934">isConnected</a>())</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_UNCHANGED;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">m_pMySQL</a>)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">m_pMySQL</a> != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        mysql_close(<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">m_pMySQL</a>);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a8dec3f867828bac5d8b449335fa4f139">m_isConnected</a> = <span class="keyword">false</span>;</div>
@@ -644,7 +644,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="keywordtype">int</span> num_fields = mysql_num_fields(result);      </div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        MYSQL_ROW row;</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;      </div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="keywordflow">while</span> ((row = mysql_fetch_row(result)))</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <span class="keywordflow">while</span> ((row = mysql_fetch_row(result)) != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;          std::cout &lt;&lt; std::setw(50) &lt;&lt; std::left &lt;&lt; row[0] &lt;&lt; std::setw(50) &lt;&lt; std::left &lt;&lt; row[1] &lt;&lt; std::setw(20) &lt;&lt; std::left &lt;&lt; row[2] &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;      });</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    }</div>
@@ -724,7 +724,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      <span class="keywordflow">if</span>(!this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a9a9eeab1afd370a2bc902c5b3fab4934">isConnected</a>())</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_INITIALIZED;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;      <span class="keywordflow">if</span>(mysql_query(<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">m_pMySQL</a>, <a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#adf79b2fa8177508af40dd677b8a29bec">query</a>.c_str()))</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;      <span class="keywordflow">if</span>(mysql_query(<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">m_pMySQL</a>, <a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#adf79b2fa8177508af40dd677b8a29bec">query</a>.c_str()) != 0)</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;      {</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;MySQL query failed : {0}&quot;</span>, mysql_error(<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">m_pMySQL</a>) );</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
@@ -865,7 +865,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keywordtype">int</span> num_fields = mysql_num_fields(result);      </div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        MYSQL_ROW row;</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      </div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">while</span> ((row = mysql_fetch_row(result)))</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">while</span> ((row = mysql_fetch_row(result)) != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;          parameterValueMap[row[0]] = row[1];</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;      });</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    }</div>
@@ -1134,7 +1134,7 @@ template&lt;typename Handler &gt; </div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      <span class="keywordflow">if</span>(!this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a9a9eeab1afd370a2bc902c5b3fab4934">isConnected</a>())</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_INITIALIZED;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      <span class="keywordflow">if</span>(mysql_query(<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">m_pMySQL</a>, <a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#adf79b2fa8177508af40dd677b8a29bec">query</a>.c_str()))</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      <span class="keywordflow">if</span>(mysql_query(<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">m_pMySQL</a>, <a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#adf79b2fa8177508af40dd677b8a29bec">query</a>.c_str()) != 0)</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      {</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;MySQL query failed : {0}&quot;</span>, mysql_error(<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">m_pMySQL</a>) );</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
@@ -1142,7 +1142,7 @@ template&lt;typename Handler &gt; </div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      MYSQL_RES *pMySQLResult = mysql_store_result(<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">m_pMySQL</a>);</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      <span class="keywordflow">if</span>(!pMySQLResult)</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      <span class="keywordflow">if</span>(pMySQLResult == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      {</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;MySQL store result failed : {0}&quot;</span>, mysql_error(<a class="code" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">m_pMySQL</a>) );</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
@@ -1555,7 +1555,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jan 31 2018 09:54:05 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 8 2018 22:08:27 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
