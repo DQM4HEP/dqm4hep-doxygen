@@ -86,7 +86,7 @@ Public Member Functions</h2></td></tr>
 class dqm4hep::net::SocketServerBase&lt; socket_type &gt;::streambuffer</h3>
 
 
-<p>Definition at line <a class="el" href="WsServer_8h_source.html#l00382">382</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
+<p>Definition at line <a class="el" href="WsServer_8h_source.html#l00401">401</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aa5c78f4dcca2bc66563772be9ba227a5"></a>
 <div class="memitem">
@@ -111,8 +111,9 @@ template&lt;class socket_type&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="WsServer_8h_source.html#l00384">384</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;: boost::asio::streambuf() {<span class="comment">/* nop */</span>}</div>
+<p>Definition at line <a class="el" href="WsServer_8h_source.html#l00403">403</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                       : boost::asio::streambuf() { <span class="comment">/* nop */</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -140,10 +141,12 @@ template&lt;class socket_type&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="WsServer_8h_source.html#l00385">385</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
+<p>Definition at line <a class="el" href="WsServer_8h_source.html#l00405">405</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="WsServer_8h_source.html#l00389">dqm4hep::net::SocketServerBase&lt; socket_type &gt;::streambuffer::seek()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;{ <span class="keywordflow">return</span> this-&gt;eback(); }</div>
+<p>Referenced by <a class="el" href="WsServer_8h_source.html#l00417">dqm4hep::net::SocketServerBase&lt; socket_type &gt;::streambuffer::seek()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                           {</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;          <span class="keywordflow">return</span> this-&gt;eback();</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -171,8 +174,10 @@ template&lt;class socket_type&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="WsServer_8h_source.html#l00388">388</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;{ this-&gt;gbump(i); }</div>
+<p>Definition at line <a class="el" href="WsServer_8h_source.html#l00414">414</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                         {</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;          this-&gt;gbump(i);</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -199,8 +204,10 @@ template&lt;class socket_type&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="WsServer_8h_source.html#l00386">386</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;{ <span class="keywordflow">return</span> this-&gt;gptr(); }</div>
+<p>Definition at line <a class="el" href="WsServer_8h_source.html#l00408">408</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                             {</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;          <span class="keywordflow">return</span> this-&gt;gptr();</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -227,10 +234,12 @@ template&lt;class socket_type&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="WsServer_8h_source.html#l00387">387</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
+<p>Definition at line <a class="el" href="WsServer_8h_source.html#l00411">411</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="WsServer_8h_source.html#l00389">dqm4hep::net::SocketServerBase&lt; socket_type &gt;::streambuffer::seek()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;{ <span class="keywordflow">return</span> this-&gt;egptr(); }</div>
+<p>Referenced by <a class="el" href="WsServer_8h_source.html#l00417">dqm4hep::net::SocketServerBase&lt; socket_type &gt;::streambuffer::seek()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;                          {</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;          <span class="keywordflow">return</span> this-&gt;egptr();</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -258,15 +267,15 @@ template&lt;class socket_type&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="WsServer_8h_source.html#l00389">389</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
+<p>Definition at line <a class="el" href="WsServer_8h_source.html#l00417">417</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
 
-<p>References <a class="el" href="WsServer_8h_source.html#l00385">dqm4hep::net::SocketServerBase&lt; socket_type &gt;::streambuffer::begin_iptr()</a>, and <a class="el" href="WsServer_8h_source.html#l00387">dqm4hep::net::SocketServerBase&lt; socket_type &gt;::streambuffer::last_iptr()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                           {</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;          this-&gt;setg( this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase_1_1streambuffer.html#ac2a57853d999ad06c71c521e66a3c623">begin_iptr</a>(), this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase_1_1streambuffer.html#ac2a57853d999ad06c71c521e66a3c623">begin_iptr</a>()+pos, this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase_1_1streambuffer.html#a76271d9d8400c45e2cf30f9ddce3840b">last_iptr</a>());</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;          <span class="comment">// this-&gt;pubseekpos(pos);</span></div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1SocketServerBase_1_1streambuffer_html_a76271d9d8400c45e2cf30f9ddce3840b"><div class="ttname"><a href="classdqm4hep_1_1net_1_1SocketServerBase_1_1streambuffer.html#a76271d9d8400c45e2cf30f9ddce3840b">dqm4hep::net::SocketServerBase::streambuffer::last_iptr</a></div><div class="ttdeci">char * last_iptr()</div><div class="ttdef"><b>Definition:</b> <a href="WsServer_8h_source.html#l00387">WsServer.h:387</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1SocketServerBase_1_1streambuffer_html_ac2a57853d999ad06c71c521e66a3c623"><div class="ttname"><a href="classdqm4hep_1_1net_1_1SocketServerBase_1_1streambuffer.html#ac2a57853d999ad06c71c521e66a3c623">dqm4hep::net::SocketServerBase::streambuffer::begin_iptr</a></div><div class="ttdeci">char * begin_iptr()</div><div class="ttdef"><b>Definition:</b> <a href="WsServer_8h_source.html#l00385">WsServer.h:385</a></div></div>
+<p>References <a class="el" href="WsServer_8h_source.html#l00405">dqm4hep::net::SocketServerBase&lt; socket_type &gt;::streambuffer::begin_iptr()</a>, and <a class="el" href="WsServer_8h_source.html#l00411">dqm4hep::net::SocketServerBase&lt; socket_type &gt;::streambuffer::last_iptr()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;                           {</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;          this-&gt;setg(this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase_1_1streambuffer.html#ac2a57853d999ad06c71c521e66a3c623">begin_iptr</a>(), this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase_1_1streambuffer.html#ac2a57853d999ad06c71c521e66a3c623">begin_iptr</a>() + pos, this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase_1_1streambuffer.html#a76271d9d8400c45e2cf30f9ddce3840b">last_iptr</a>());</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;          <span class="comment">// this-&gt;pubseekpos(pos);</span></div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1SocketServerBase_1_1streambuffer_html_a76271d9d8400c45e2cf30f9ddce3840b"><div class="ttname"><a href="classdqm4hep_1_1net_1_1SocketServerBase_1_1streambuffer.html#a76271d9d8400c45e2cf30f9ddce3840b">dqm4hep::net::SocketServerBase::streambuffer::last_iptr</a></div><div class="ttdeci">char * last_iptr()</div><div class="ttdef"><b>Definition:</b> <a href="WsServer_8h_source.html#l00411">WsServer.h:411</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1SocketServerBase_1_1streambuffer_html_ac2a57853d999ad06c71c521e66a3c623"><div class="ttname"><a href="classdqm4hep_1_1net_1_1SocketServerBase_1_1streambuffer.html#ac2a57853d999ad06c71c521e66a3c623">dqm4hep::net::SocketServerBase::streambuffer::begin_iptr</a></div><div class="ttdeci">char * begin_iptr()</div><div class="ttdef"><b>Definition:</b> <a href="WsServer_8h_source.html#l00405">WsServer.h:405</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -276,7 +285,7 @@ template&lt;class socket_type&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 22 2018 07:53:12 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 14 2018 22:57:44 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

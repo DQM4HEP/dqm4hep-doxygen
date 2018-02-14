@@ -83,8 +83,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9c359458c531d453c9da57b313fcff4a inherit pub_methods_classdqm4hep_1_1net_1_1SocketServerBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe21ad77ce8a2da231ef7c8b57db179c inherit pub_methods_classdqm4hep_1_1net_1_1SocketServerBase"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; SendStream &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1SocketServerBase.html#abe21ad77ce8a2da231ef7c8b57db179c">prepareHeader</a> (const std::shared_ptr&lt; SendStream &gt; &amp;message_stream, unsigned char fin_rsv_opcode) const</td></tr>
 <tr class="separator:abe21ad77ce8a2da231ef7c8b57db179c inherit pub_methods_classdqm4hep_1_1net_1_1SocketServerBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a398ab4309d0838b7d103069e9691163b inherit pub_methods_classdqm4hep_1_1net_1_1SocketServerBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1SocketServerBase.html#a398ab4309d0838b7d103069e9691163b">forward</a> (const std::unordered_set&lt; std::shared_ptr&lt; Connection &gt; &gt; &amp;connections, const std::shared_ptr&lt; SendStream &gt; &amp;message_stream, const std::function&lt; void(const boost::system::error_code &amp;)&gt; &amp;callback=nullptr, unsigned char fin_rsv_opcode=129) const</td></tr>
-<tr class="separator:a398ab4309d0838b7d103069e9691163b inherit pub_methods_classdqm4hep_1_1net_1_1SocketServerBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b9bb31b0753f0f77fed9db6d499f370 inherit pub_methods_classdqm4hep_1_1net_1_1SocketServerBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1SocketServerBase.html#a4b9bb31b0753f0f77fed9db6d499f370">forward</a> (const std::unordered_set&lt; std::shared_ptr&lt; Connection &gt;&gt; &amp;connections, const std::shared_ptr&lt; SendStream &gt; &amp;message_stream, const std::function&lt; void(const boost::system::error_code &amp;)&gt; &amp;callback=nullptr, unsigned char fin_rsv_opcode=129) const</td></tr>
+<tr class="separator:a4b9bb31b0753f0f77fed9db6d499f370 inherit pub_methods_classdqm4hep_1_1net_1_1SocketServerBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c9557d5442d9d957c4923f824cb4dfc inherit pub_methods_classdqm4hep_1_1net_1_1SocketServerBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1SocketServerBase.html#a8c9557d5442d9d957c4923f824cb4dfc">send</a> (const std::shared_ptr&lt; Connection &gt; &amp;connection, const std::shared_ptr&lt; SendStream &gt; &amp;message_stream, const std::function&lt; void(const boost::system::error_code &amp;)&gt; &amp;callback=nullptr, unsigned char fin_rsv_opcode=129) const</td></tr>
 <tr class="memdesc:a8c9557d5442d9d957c4923f824cb4dfc inherit pub_methods_classdqm4hep_1_1net_1_1SocketServerBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">fin_rsv_opcode: 129=one fragment, text, 130=one fragment, binary, 136=close connection.  <a href="#a8c9557d5442d9d957c4923f824cb4dfc">More...</a><br/></td></tr>
 <tr class="separator:a8c9557d5442d9d957c4923f824cb4dfc inherit pub_methods_classdqm4hep_1_1net_1_1SocketServerBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,7 +162,7 @@ Endpoint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 class dqm4hep::net::SocketServer&lt; WS &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="WsServer_8h_source.html#l00983">983</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
+<p>Definition at line <a class="el" href="WsServer_8h_source.html#l01028">1028</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a43a972923b416332caaabdd03ac0e0fb"></a>
 <div class="memitem">
@@ -208,16 +208,15 @@ class dqm4hep::net::SocketServer&lt; WS &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="WsServer_8h_source.html#l00985">985</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;                                                                                                                               :</div>
-<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1SocketServer_3_01WS_01_4.html#a6403a1b976d24100c8143799de122470">SocketServer</a>() {</div>
-<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase.html#ad2a44585e5e5c778d75948651e798705">config</a>.port=port;</div>
-<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase.html#ad2a44585e5e5c778d75948651e798705">config</a>.thread_pool_size=thread_pool_size;</div>
-<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase.html#ad2a44585e5e5c778d75948651e798705">config</a>.timeout_request=timeout_request;</div>
-<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase.html#ad2a44585e5e5c778d75948651e798705">config</a>.timeout_idle=timeout_idle;</div>
-<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;      };</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1SocketServerBase_html_ad2a44585e5e5c778d75948651e798705"><div class="ttname"><a href="classdqm4hep_1_1net_1_1SocketServerBase.html#ad2a44585e5e5c778d75948651e798705">dqm4hep::net::SocketServerBase&lt; WS &gt;::config</a></div><div class="ttdeci">Config config</div><div class="ttdoc">Set before calling start(). </div><div class="ttdef"><b>Definition:</b> <a href="WsServer_8h_source.html#l00461">WsServer.h:461</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1SocketServer_3_01WS_01_4_html_a6403a1b976d24100c8143799de122470"><div class="ttname"><a href="classdqm4hep_1_1net_1_1SocketServer_3_01WS_01_4.html#a6403a1b976d24100c8143799de122470">dqm4hep::net::SocketServer&lt; WS &gt;::SocketServer</a></div><div class="ttdeci">SocketServer()</div><div class="ttdef"><b>Definition:</b> <a href="WsServer_8h_source.html#l00993">WsServer.h:993</a></div></div>
+<p>Definition at line <a class="el" href="WsServer_8h_source.html#l01030">1030</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;          : <a class="code" href="classdqm4hep_1_1net_1_1SocketServer_3_01WS_01_4.html#a6403a1b976d24100c8143799de122470">SocketServer</a>() {</div>
+<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase.html#ad2a44585e5e5c778d75948651e798705">config</a>.port = port;</div>
+<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase.html#ad2a44585e5e5c778d75948651e798705">config</a>.thread_pool_size = thread_pool_size;</div>
+<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase.html#ad2a44585e5e5c778d75948651e798705">config</a>.timeout_request = timeout_request;</div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase.html#ad2a44585e5e5c778d75948651e798705">config</a>.timeout_idle = timeout_idle;</div>
+<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;      };</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1SocketServerBase_html_ad2a44585e5e5c778d75948651e798705"><div class="ttname"><a href="classdqm4hep_1_1net_1_1SocketServerBase.html#ad2a44585e5e5c778d75948651e798705">dqm4hep::net::SocketServerBase&lt; WS &gt;::config</a></div><div class="ttdeci">Config config</div><div class="ttdoc">Set before calling start(). </div><div class="ttdef"><b>Definition:</b> <a href="WsServer_8h_source.html#l00495">WsServer.h:495</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1SocketServer_3_01WS_01_4_html_a6403a1b976d24100c8143799de122470"><div class="ttname"><a href="classdqm4hep_1_1net_1_1SocketServer_3_01WS_01_4.html#a6403a1b976d24100c8143799de122470">dqm4hep::net::SocketServer&lt; WS &gt;::SocketServer</a></div><div class="ttdeci">SocketServer()</div><div class="ttdef"><b>Definition:</b> <a href="WsServer_8h_source.html#l01039">WsServer.h:1039</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -242,8 +241,9 @@ class dqm4hep::net::SocketServer&lt; WS &gt;</h3>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="WsServer_8h_source.html#l00993">993</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160;: SocketServerBase&lt;WS&gt;(80) {}</div>
+<p>Definition at line <a class="el" href="WsServer_8h_source.html#l01039">1039</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;                     : SocketServerBase&lt;WS&gt;(80) {</div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;      }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -271,30 +271,30 @@ class dqm4hep::net::SocketServer&lt; WS &gt;</h3>
 
 <p>Implements <a class="el" href="classdqm4hep_1_1net_1_1SocketServerBase.html#aa488ddcfbdd6e525e30603933ff7db46">dqm4hep::net::SocketServerBase&lt; WS &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="WsServer_8h_source.html#l00996">996</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;                    {</div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;        <span class="comment">//Create new socket for this connection (stored in Connection::socket)</span></div>
-<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;        <span class="comment">//Shared_ptr is used to pass temporary objects to the asynchronous functions</span></div>
-<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;        std::shared_ptr&lt;Connection&gt; connection(<span class="keyword">new</span> Connection(<span class="keyword">new</span> <a class="code" href="namespacedqm4hep_1_1net.html#a5b0a29cc400b51fd3adec329d2dad5cb">WS</a>(*<a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase.html#ab9dac38e21b01d2867f44c9c845c15e7">io_service</a>)));</div>
-<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;</div>
-<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase.html#a91f4346e16c6c4b7e7fa30c8d8dac309">acceptor</a>-&gt;async_accept(*connection-&gt;socket, [<span class="keyword">this</span>, connection](<span class="keyword">const</span> boost::system::error_code&amp; ec) {</div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;          <span class="comment">//Immediately start accepting a new connection (if io_service hasn&#39;t been stopped)</span></div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;          if (ec != boost::asio::error::operation_aborted)</div>
-<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;          <a class="code" href="classdqm4hep_1_1net_1_1SocketServer_3_01WS_01_4.html#a76b67e972029048457cc69f2f7578e47">accept</a>();</div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;</div>
-<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;          <span class="keywordflow">if</span>(!ec) {</div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;            boost::asio::ip::tcp::no_delay option(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;            connection-&gt;socket-&gt;set_option(option);</div>
-<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;</div>
-<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;            <a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase.html#a6bf0f9a3697470c738b18c58993e1b65">read_handshake</a>(connection);</div>
-<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;          }</div>
-<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;        });</div>
-<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;      }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1SocketServerBase_html_ab9dac38e21b01d2867f44c9c845c15e7"><div class="ttname"><a href="classdqm4hep_1_1net_1_1SocketServerBase.html#ab9dac38e21b01d2867f44c9c845c15e7">dqm4hep::net::SocketServerBase&lt; WS &gt;::io_service</a></div><div class="ttdeci">std::shared_ptr&lt; boost::asio::io_service &gt; io_service</div><div class="ttdoc">If you have your own boost::asio::io_service, store its pointer here before running start()...</div><div class="ttdef"><b>Definition:</b> <a href="WsServer_8h_source.html#l00651">WsServer.h:651</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1SocketServerBase_html_a6bf0f9a3697470c738b18c58993e1b65"><div class="ttname"><a href="classdqm4hep_1_1net_1_1SocketServerBase.html#a6bf0f9a3697470c738b18c58993e1b65">dqm4hep::net::SocketServerBase&lt; WS &gt;::read_handshake</a></div><div class="ttdeci">void read_handshake(const std::shared_ptr&lt; Connection &gt; &amp;connection)</div><div class="ttdef"><b>Definition:</b> <a href="WsServer_8h_source.html#l00678">WsServer.h:678</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1SocketServer_3_01WS_01_4_html_a76b67e972029048457cc69f2f7578e47"><div class="ttname"><a href="classdqm4hep_1_1net_1_1SocketServer_3_01WS_01_4.html#a76b67e972029048457cc69f2f7578e47">dqm4hep::net::SocketServer&lt; WS &gt;::accept</a></div><div class="ttdeci">void accept()</div><div class="ttdef"><b>Definition:</b> <a href="WsServer_8h_source.html#l00996">WsServer.h:996</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1SocketServerBase_html_a91f4346e16c6c4b7e7fa30c8d8dac309"><div class="ttname"><a href="classdqm4hep_1_1net_1_1SocketServerBase.html#a91f4346e16c6c4b7e7fa30c8d8dac309">dqm4hep::net::SocketServerBase&lt; WS &gt;::acceptor</a></div><div class="ttdeci">std::unique_ptr&lt; boost::asio::ip::tcp::acceptor &gt; acceptor</div><div class="ttdef"><b>Definition:</b> <a href="WsServer_8h_source.html#l00655">WsServer.h:655</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1net_html_a5b0a29cc400b51fd3adec329d2dad5cb"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a5b0a29cc400b51fd3adec329d2dad5cb">dqm4hep::net::WS</a></div><div class="ttdeci">boost::asio::ip::tcp::socket WS</div><div class="ttdef"><b>Definition:</b> <a href="WsServer_8h_source.html#l00980">WsServer.h:980</a></div></div>
+<p>Definition at line <a class="el" href="WsServer_8h_source.html#l01043">1043</a> of file <a class="el" href="WsServer_8h_source.html">WsServer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;                    {</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;        <span class="comment">// Create new socket for this connection (stored in Connection::socket)</span></div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160;        <span class="comment">// Shared_ptr is used to pass temporary objects to the asynchronous functions</span></div>
+<div class="line"><a name="l01046"></a><span class="lineno"> 1046</span>&#160;        std::shared_ptr&lt;Connection&gt; connection(<span class="keyword">new</span> Connection(<span class="keyword">new</span> <a class="code" href="namespacedqm4hep_1_1net.html#a5b0a29cc400b51fd3adec329d2dad5cb">WS</a>(*<a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase.html#ab9dac38e21b01d2867f44c9c845c15e7">io_service</a>)));</div>
+<div class="line"><a name="l01047"></a><span class="lineno"> 1047</span>&#160;</div>
+<div class="line"><a name="l01048"></a><span class="lineno"> 1048</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase.html#a91f4346e16c6c4b7e7fa30c8d8dac309">acceptor</a>-&gt;async_accept(*connection-&gt;socket, [<span class="keyword">this</span>, connection](<span class="keyword">const</span> boost::system::error_code &amp;ec) {</div>
+<div class="line"><a name="l01049"></a><span class="lineno"> 1049</span>&#160;          <span class="comment">// Immediately start accepting a new connection (if io_service hasn&#39;t been stopped)</span></div>
+<div class="line"><a name="l01050"></a><span class="lineno"> 1050</span>&#160;          if (ec != boost::asio::error::operation_aborted)</div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;            <a class="code" href="classdqm4hep_1_1net_1_1SocketServer_3_01WS_01_4.html#a76b67e972029048457cc69f2f7578e47">accept</a>();</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;</div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;          <span class="keywordflow">if</span> (!ec) {</div>
+<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;            boost::asio::ip::tcp::no_delay option(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;            connection-&gt;socket-&gt;set_option(option);</div>
+<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160;</div>
+<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;            <a class="code" href="classdqm4hep_1_1net_1_1SocketServerBase.html#a6bf0f9a3697470c738b18c58993e1b65">read_handshake</a>(connection);</div>
+<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;          }</div>
+<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160;        });</div>
+<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;      }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1SocketServerBase_html_ab9dac38e21b01d2867f44c9c845c15e7"><div class="ttname"><a href="classdqm4hep_1_1net_1_1SocketServerBase.html#ab9dac38e21b01d2867f44c9c845c15e7">dqm4hep::net::SocketServerBase&lt; WS &gt;::io_service</a></div><div class="ttdeci">std::shared_ptr&lt; boost::asio::io_service &gt; io_service</div><div class="ttdoc">If you have your own boost::asio::io_service, store its pointer here before running start()...</div><div class="ttdef"><b>Definition:</b> <a href="WsServer_8h_source.html#l00688">WsServer.h:688</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1SocketServerBase_html_a6bf0f9a3697470c738b18c58993e1b65"><div class="ttname"><a href="classdqm4hep_1_1net_1_1SocketServerBase.html#a6bf0f9a3697470c738b18c58993e1b65">dqm4hep::net::SocketServerBase&lt; WS &gt;::read_handshake</a></div><div class="ttdeci">void read_handshake(const std::shared_ptr&lt; Connection &gt; &amp;connection)</div><div class="ttdef"><b>Definition:</b> <a href="WsServer_8h_source.html#l00718">WsServer.h:718</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1SocketServer_3_01WS_01_4_html_a76b67e972029048457cc69f2f7578e47"><div class="ttname"><a href="classdqm4hep_1_1net_1_1SocketServer_3_01WS_01_4.html#a76b67e972029048457cc69f2f7578e47">dqm4hep::net::SocketServer&lt; WS &gt;::accept</a></div><div class="ttdeci">void accept()</div><div class="ttdef"><b>Definition:</b> <a href="WsServer_8h_source.html#l01043">WsServer.h:1043</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1SocketServerBase_html_a91f4346e16c6c4b7e7fa30c8d8dac309"><div class="ttname"><a href="classdqm4hep_1_1net_1_1SocketServerBase.html#a91f4346e16c6c4b7e7fa30c8d8dac309">dqm4hep::net::SocketServerBase&lt; WS &gt;::acceptor</a></div><div class="ttdeci">std::unique_ptr&lt; boost::asio::ip::tcp::acceptor &gt; acceptor</div><div class="ttdef"><b>Definition:</b> <a href="WsServer_8h_source.html#l00693">WsServer.h:693</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1net_html_a5b0a29cc400b51fd3adec329d2dad5cb"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a5b0a29cc400b51fd3adec329d2dad5cb">dqm4hep::net::WS</a></div><div class="ttdeci">boost::asio::ip::tcp::socket WS</div><div class="ttdef"><b>Definition:</b> <a href="WsServer_8h_source.html#l01025">WsServer.h:1025</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -304,7 +304,7 @@ class dqm4hep::net::SocketServer&lt; WS &gt;</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jan 22 2018 07:53:12 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 14 2018 22:57:44 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
