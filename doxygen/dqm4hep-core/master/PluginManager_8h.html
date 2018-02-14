@@ -56,11 +56,11 @@
 <div class="title">PluginManager.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="StatusCodes_8h_source.html">dqm4hep/StatusCodes.h</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="Internal_8h_source.html">dqm4hep/Internal.h</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="Singleton_8h_source.html">dqm4hep/Singleton.h</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="Plugin_8h_source.html">dqm4hep/Plugin.h</a>&gt;</code><br/>
+<div class="textblock"><code>#include &lt;<a class="el" href="Internal_8h_source.html">dqm4hep/Internal.h</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="Logging_8h_source.html">dqm4hep/Logging.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="Plugin_8h_source.html">dqm4hep/Plugin.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="Singleton_8h_source.html">dqm4hep/Singleton.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="StatusCodes_8h_source.html">dqm4hep/StatusCodes.h</a>&gt;</code><br/>
 </div>
 <p><a href="PluginManager_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -106,28 +106,34 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">class </span>DQMPlugin_##ClassName : <span class="keyword">public</span> <a class="code" href="classdqm4hep_1_1core_1_1Plugin.html">dqm4hep::core::Plugin</a>, <span class="keyword">public</span> ClassName \</div>
-<div class="line">    { \</div>
-<div class="line">    public: \</div>
-<div class="line">    DQMPlugin_##ClassName (<span class="keywordtype">bool</span> reg) : dqm4hep::core::Plugin(ClassStr), ClassName() { \</div>
-<div class="line">      if(reg) <a class="code" href="StatusCodes_8h.html#ab49c8013f48bd677d0e5e39cb506b8f9">THROW_RESULT_IF</a>(dqm4hep::core::STATUS_CODE_SUCCESS, !=, this-&gt;registerMe()); \</div>
-<div class="line">    } \</div>
-<div class="line">    dqm4hep::core::Plugin *create()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> DQMPlugin_##ClassName (<span class="keyword">false</span>); } \</div>
-<div class="line">    std::string <a class="code" href="classdqm4hep_1_1core_1_1Plugin.html#a0e063a6eb2907e4ec4dfcceeb86eec4f">className</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> std::string(#ClassName); } \</div>
-<div class="line">    }; \</div>
-<div class="line">    static DQMPlugin_##ClassName instance_DQMPlugin_##ClassName(<span class="keyword">true</span>)</div>
-<div class="ttc" id="StatusCodes_8h_html_ab49c8013f48bd677d0e5e39cb506b8f9"><div class="ttname"><a href="StatusCodes_8h.html#ab49c8013f48bd677d0e5e39cb506b8f9">THROW_RESULT_IF</a></div><div class="ttdeci">#define THROW_RESULT_IF(StatusCode1, Operator, Command)</div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00067">StatusCodes.h:67</a></div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">class </span>DQMPlugin_##ClassName : <span class="keyword">public</span> <a class="code" href="classdqm4hep_1_1core_1_1Plugin.html">dqm4hep::core::Plugin</a>, <span class="keyword">public</span> ClassName {                                       \</div>
+<div class="line">  public:                                                                                                              \</div>
+<div class="line">    DQMPlugin_##ClassName(<span class="keywordtype">bool</span> reg) : dqm4hep::core::Plugin(ClassStr), ClassName() {                                   \</div>
+<div class="line">      if (reg)                                                                                                         <a class="code" href="StatusCodes_8h.html#ab49c8013f48bd677d0e5e39cb506b8f9">\</a></div>
+<div class="line"><a class="code" href="StatusCodes_8h.html#ab49c8013f48bd677d0e5e39cb506b8f9">        THROW_RESULT_IF</a>(dqm4hep::core::STATUS_CODE_SUCCESS, !=, this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Plugin.html#a8b0c51e1fe959fde98ab56755e66c5ec">registerMe</a>());                                   \</div>
+<div class="line">    }                                                                                                                  \</div>
+<div class="line">    dqm4hep::core::Plugin *<a class="code" href="classdqm4hep_1_1core_1_1Plugin.html#a0527880187b23eedd23dd863fdfbe6a2">create</a>()<span class="keyword"> const </span>{                                                                            \</div>
+<div class="line">      return <span class="keyword">new</span> DQMPlugin_##ClassName(<span class="keyword">false</span>);                                                                         \</div>
+<div class="line">    }                                                                                                                  \</div>
+<div class="line">    std::string <a class="code" href="classdqm4hep_1_1core_1_1Plugin.html#a0e063a6eb2907e4ec4dfcceeb86eec4f">className</a>()<span class="keyword"> const </span>{                                                                                    \</div>
+<div class="line">      return std::string(#ClassName);                                                                                  \</div>
+<div class="line">    }                                                                                                                  \</div>
+<div class="line">  };                                                                                                                   \</div>
+<div class="line">  static DQMPlugin_##ClassName instance_DQMPlugin_##ClassName(<span class="keyword">true</span>)</div>
+<div class="ttc" id="StatusCodes_8h_html_ab49c8013f48bd677d0e5e39cb506b8f9"><div class="ttname"><a href="StatusCodes_8h.html#ab49c8013f48bd677d0e5e39cb506b8f9">THROW_RESULT_IF</a></div><div class="ttdeci">#define THROW_RESULT_IF(StatusCode1, Operator, Command)</div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00065">StatusCodes.h:65</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Plugin_html_a0e063a6eb2907e4ec4dfcceeb86eec4f"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Plugin.html#a0e063a6eb2907e4ec4dfcceeb86eec4f">dqm4hep::core::Plugin::className</a></div><div class="ttdeci">virtual std::string className() const =0</div><div class="ttdoc">Returns the class name. </div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Plugin_html"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Plugin.html">dqm4hep::core::Plugin</a></div><div class="ttdoc">Plugin class. </div><div class="ttdef"><b>Definition:</b> <a href="Plugin_8h_source.html#l00043">Plugin.h:43</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Plugin_html_a0527880187b23eedd23dd863fdfbe6a2"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Plugin.html#a0527880187b23eedd23dd863fdfbe6a2">dqm4hep::core::Plugin::create</a></div><div class="ttdeci">virtual Plugin * create() const =0</div><div class="ttdoc">Create a new instance of the wrapped class. </div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Plugin_html_a8b0c51e1fe959fde98ab56755e66c5ec"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Plugin.html#a8b0c51e1fe959fde98ab56755e66c5ec">dqm4hep::core::Plugin::registerMe</a></div><div class="ttdeci">StatusCode registerMe()</div><div class="ttdef"><b>Definition:</b> <a href="Plugin_8cc_source.html#l00055">Plugin.cc:55</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Plugin_html"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Plugin.html">dqm4hep::core::Plugin</a></div><div class="ttdoc">Plugin class. </div><div class="ttdef"><b>Definition:</b> <a href="Plugin_8h_source.html#l00042">Plugin.h:42</a></div></div>
 </div><!-- fragment -->
-<p>Definition at line <a class="el" href="PluginManager_8h_source.html#l00040">40</a> of file <a class="el" href="PluginManager_8h_source.html">PluginManager.h</a>.</p>
+<p>Definition at line <a class="el" href="PluginManager_8h_source.html#l00039">39</a> of file <a class="el" href="PluginManager_8h_source.html">PluginManager.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 8 2018 22:08:27 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 14 2018 22:38:59 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

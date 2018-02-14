@@ -469,7 +469,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>XML text. </p>
 <p>A text node can have 2 ways to output the next. "normal" output and CDATA. It will default to the mode it was parsed from the XML file and you generally want to leave it alone, but you can change the output mode with <a class="el" href="classdqm4hep_1_1core_1_1TiXmlText.html#ad331cd07400587ea1734b8b084bf40bb" title="Turns on or off a CDATA representation of text. ">SetCDATA()</a> and query it with <a class="el" href="classdqm4hep_1_1core_1_1TiXmlText.html#a7ed2ae02c5d5d14aa63ee7b542967242" title="Queries whether this represents text using a CDATA section. ">CDATA()</a>. </p>
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01212">1212</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01331">1331</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a000c262f7d0f6b4fe700cc3faa7cd219"></a>
 <div class="memitem">
@@ -496,20 +496,19 @@ Additional Inherited Members</h2></td></tr>
 <p>Constructor for text element. </p>
 <p>By default, it is treated as normal, encoded text. If you want it be output as a CDATA text element, set the parameter _cdata to 'true' </p>
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01220">1220</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01339">1339</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l01268">cdata</a>, and <a class="el" href="tinyxml_8h_source.html#l00515">dqm4hep::core::TiXmlNode::SetValue()</a>.</p>
+<p>References <a class="el" href="tinyxml_8h_source.html#l01397">cdata</a>, and <a class="el" href="tinyxml_8h_source.html#l00517">dqm4hep::core::TiXmlNode::SetValue()</a>.</p>
 
-<p>Referenced by <a class="el" href="tinyxml_8cc_source.html#l01324">Clone()</a>.</p>
-<div class="fragment"><div class="line"><a name="l01220"></a><span class="lineno"> 1220</span>&#160;                                          : <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a2ae2804091b2b9d8f1f1f1b84abe46ff">TiXmlNode</a> (<a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a56b199506d0fe4fcfca13c6550c6b30bad73f412aeea8fe454cd5d15255be05ca">TiXmlNode::TINYXML_TEXT</a>)</div>
-<div class="line"><a name="l01221"></a><span class="lineno"> 1221</span>&#160;    {</div>
-<div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a85934397d08a68c75dc3a5ce5d294875">SetValue</a>( initValue );</div>
-<div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">cdata</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a85934397d08a68c75dc3a5ce5d294875"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a85934397d08a68c75dc3a5ce5d294875">dqm4hep::core::TiXmlNode::SetValue</a></div><div class="ttdeci">void SetValue(const char *_value)</div><div class="ttdoc">Changes the value of the node. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00515">tinyxml.h:515</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a56b199506d0fe4fcfca13c6550c6b30bad73f412aeea8fe454cd5d15255be05ca"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a56b199506d0fe4fcfca13c6550c6b30bad73f412aeea8fe454cd5d15255be05ca">dqm4hep::core::TiXmlNode::TINYXML_TEXT</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00475">tinyxml.h:475</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a2ae2804091b2b9d8f1f1f1b84abe46ff"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a2ae2804091b2b9d8f1f1f1b84abe46ff">dqm4hep::core::TiXmlNode::TiXmlNode</a></div><div class="ttdeci">TiXmlNode(NodeType _type)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cc_source.html#l00140">tinyxml.cc:140</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlText_html_ad84b9185f86852cb6d1a40763927236e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">dqm4hep::core::TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01268">tinyxml.h:1268</a></div></div>
+<p>Referenced by <a class="el" href="tinyxml_8cc_source.html#l01090">Clone()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;                                       : <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a2ae2804091b2b9d8f1f1f1b84abe46ff">TiXmlNode</a>(<a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a56b199506d0fe4fcfca13c6550c6b30bad73f412aeea8fe454cd5d15255be05ca">TiXmlNode::TINYXML_TEXT</a>) {</div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a85934397d08a68c75dc3a5ce5d294875">SetValue</a>(initValue);</div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">cdata</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;      }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a85934397d08a68c75dc3a5ce5d294875"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a85934397d08a68c75dc3a5ce5d294875">dqm4hep::core::TiXmlNode::SetValue</a></div><div class="ttdeci">void SetValue(const char *_value)</div><div class="ttdoc">Changes the value of the node. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00517">tinyxml.h:517</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a56b199506d0fe4fcfca13c6550c6b30bad73f412aeea8fe454cd5d15255be05ca"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a56b199506d0fe4fcfca13c6550c6b30bad73f412aeea8fe454cd5d15255be05ca">dqm4hep::core::TiXmlNode::TINYXML_TEXT</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00471">tinyxml.h:471</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a2ae2804091b2b9d8f1f1f1b84abe46ff"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a2ae2804091b2b9d8f1f1f1b84abe46ff">dqm4hep::core::TiXmlNode::TiXmlNode</a></div><div class="ttdeci">TiXmlNode(NodeType _type)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cc_source.html#l00117">tinyxml.cc:117</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlText_html_ad84b9185f86852cb6d1a40763927236e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">dqm4hep::core::TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01397">tinyxml.h:1397</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -560,16 +559,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01229">1229</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;                                              : <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a2ae2804091b2b9d8f1f1f1b84abe46ff">TiXmlNode</a> (<a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a56b199506d0fe4fcfca13c6550c6b30bad73f412aeea8fe454cd5d15255be05ca">TiXmlNode::TINYXML_TEXT</a>)</div>
-<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;      {</div>
-<div class="line"><a name="l01231"></a><span class="lineno"> 1231</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a85934397d08a68c75dc3a5ce5d294875">SetValue</a>( initValue );</div>
-<div class="line"><a name="l01232"></a><span class="lineno"> 1232</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">cdata</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01233"></a><span class="lineno"> 1233</span>&#160;      }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a85934397d08a68c75dc3a5ce5d294875"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a85934397d08a68c75dc3a5ce5d294875">dqm4hep::core::TiXmlNode::SetValue</a></div><div class="ttdeci">void SetValue(const char *_value)</div><div class="ttdoc">Changes the value of the node. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00515">tinyxml.h:515</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a56b199506d0fe4fcfca13c6550c6b30bad73f412aeea8fe454cd5d15255be05ca"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a56b199506d0fe4fcfca13c6550c6b30bad73f412aeea8fe454cd5d15255be05ca">dqm4hep::core::TiXmlNode::TINYXML_TEXT</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00475">tinyxml.h:475</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a2ae2804091b2b9d8f1f1f1b84abe46ff"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a2ae2804091b2b9d8f1f1f1b84abe46ff">dqm4hep::core::TiXmlNode::TiXmlNode</a></div><div class="ttdeci">TiXmlNode(NodeType _type)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cc_source.html#l00140">tinyxml.cc:140</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlText_html_ad84b9185f86852cb6d1a40763927236e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">dqm4hep::core::TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01268">tinyxml.h:1268</a></div></div>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01347">1347</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160;                                            : <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a2ae2804091b2b9d8f1f1f1b84abe46ff">TiXmlNode</a>(<a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a56b199506d0fe4fcfca13c6550c6b30bad73f412aeea8fe454cd5d15255be05ca">TiXmlNode::TINYXML_TEXT</a>) {</div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a85934397d08a68c75dc3a5ce5d294875">SetValue</a>(initValue);</div>
+<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">cdata</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01350"></a><span class="lineno"> 1350</span>&#160;      }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a85934397d08a68c75dc3a5ce5d294875"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a85934397d08a68c75dc3a5ce5d294875">dqm4hep::core::TiXmlNode::SetValue</a></div><div class="ttdeci">void SetValue(const char *_value)</div><div class="ttdoc">Changes the value of the node. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00517">tinyxml.h:517</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a56b199506d0fe4fcfca13c6550c6b30bad73f412aeea8fe454cd5d15255be05ca"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a56b199506d0fe4fcfca13c6550c6b30bad73f412aeea8fe454cd5d15255be05ca">dqm4hep::core::TiXmlNode::TINYXML_TEXT</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00471">tinyxml.h:471</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a2ae2804091b2b9d8f1f1f1b84abe46ff"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a2ae2804091b2b9d8f1f1f1b84abe46ff">dqm4hep::core::TiXmlNode::TiXmlNode</a></div><div class="ttdeci">TiXmlNode(NodeType _type)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cc_source.html#l00117">tinyxml.cc:117</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlText_html_ad84b9185f86852cb6d1a40763927236e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">dqm4hep::core::TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01397">tinyxml.h:1397</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -595,12 +593,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01236">1236</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01353">1353</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8cc_source.html#l01311">CopyTo()</a>.</p>
-<div class="fragment"><div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;: <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a2ae2804091b2b9d8f1f1f1b84abe46ff">TiXmlNode</a>( <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a56b199506d0fe4fcfca13c6550c6b30bad73f412aeea8fe454cd5d15255be05ca">TiXmlNode::TINYXML_TEXT</a> )  { copy.CopyTo( <span class="keyword">this</span> ); }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a56b199506d0fe4fcfca13c6550c6b30bad73f412aeea8fe454cd5d15255be05ca"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a56b199506d0fe4fcfca13c6550c6b30bad73f412aeea8fe454cd5d15255be05ca">dqm4hep::core::TiXmlNode::TINYXML_TEXT</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00475">tinyxml.h:475</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a2ae2804091b2b9d8f1f1f1b84abe46ff"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a2ae2804091b2b9d8f1f1f1b84abe46ff">dqm4hep::core::TiXmlNode::TiXmlNode</a></div><div class="ttdeci">TiXmlNode(NodeType _type)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cc_source.html#l00140">tinyxml.cc:140</a></div></div>
+<p>References <a class="el" href="tinyxml_8cc_source.html#l01081">CopyTo()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;                                       : <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a2ae2804091b2b9d8f1f1f1b84abe46ff">TiXmlNode</a>(<a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a56b199506d0fe4fcfca13c6550c6b30bad73f412aeea8fe454cd5d15255be05ca">TiXmlNode::TINYXML_TEXT</a>) {</div>
+<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;        copy.CopyTo(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;      }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a56b199506d0fe4fcfca13c6550c6b30bad73f412aeea8fe454cd5d15255be05ca"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a56b199506d0fe4fcfca13c6550c6b30bad73f412aeea8fe454cd5d15255be05ca">dqm4hep::core::TiXmlNode::TINYXML_TEXT</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00471">tinyxml.h:471</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a2ae2804091b2b9d8f1f1f1b84abe46ff"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a2ae2804091b2b9d8f1f1f1b84abe46ff">dqm4hep::core::TiXmlNode::TiXmlNode</a></div><div class="ttdeci">TiXmlNode(NodeType _type)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cc_source.html#l00117">tinyxml.cc:117</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -631,12 +631,12 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classdqm4hep_1_1core_1_1TiXmlNode.html#ac229e3955d36e036fc6f3be43efc16f2">dqm4hep::core::TiXmlNode</a>.</p>
 
-<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01318">1318</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01086">1086</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l00151">dqm4hep::core::TiXmlVisitor::Visit()</a>.</p>
-<div class="fragment"><div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;    {</div>
-<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;      <span class="keywordflow">return</span> visitor-&gt;Visit( *<span class="keyword">this</span> );</div>
-<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;    }</div>
+<p>References <a class="el" href="tinyxml_8h_source.html#l00160">dqm4hep::core::TiXmlVisitor::Visit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;                                                      {</div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;      <span class="keywordflow">return</span> visitor-&gt;Visit(*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -661,17 +661,17 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tinyxmlparser_8cc_source.html#l01632">1632</a> of file <a class="el" href="tinyxmlparser_8cc_source.html">tinyxmlparser.cc</a>.</p>
+<p>Definition at line <a class="el" href="tinyxmlparser_8cc_source.html#l01415">1415</a> of file <a class="el" href="tinyxmlparser_8cc_source.html">tinyxmlparser.cc</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l00297">dqm4hep::core::TiXmlBase::IsWhiteSpace()</a>, and <a class="el" href="tinyxml_8h_source.html#l00768">dqm4hep::core::TiXmlNode::value</a>.</p>
-<div class="fragment"><div class="line"><a name="l01633"></a><span class="lineno"> 1633</span>&#160;    {</div>
-<div class="line"><a name="l01634"></a><span class="lineno"> 1634</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">char</span> i : <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a176ed1b6f65745fa24f07e42505ee582">value</a>)</div>
-<div class="line"><a name="l01635"></a><span class="lineno"> 1635</span>&#160;        <span class="keywordflow">if</span> ( !<a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a024236aa7a0f28a01e7929b510cd0730">IsWhiteSpace</a>( i ) )</div>
-<div class="line"><a name="l01636"></a><span class="lineno"> 1636</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01637"></a><span class="lineno"> 1637</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01638"></a><span class="lineno"> 1638</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a176ed1b6f65745fa24f07e42505ee582"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a176ed1b6f65745fa24f07e42505ee582">dqm4hep::core::TiXmlNode::value</a></div><div class="ttdeci">TIXML_STRING value</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00768">tinyxml.h:768</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlBase_html_a024236aa7a0f28a01e7929b510cd0730"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlBase.html#a024236aa7a0f28a01e7929b510cd0730">dqm4hep::core::TiXmlBase::IsWhiteSpace</a></div><div class="ttdeci">static bool IsWhiteSpace(char c)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00297">tinyxml.h:297</a></div></div>
+<p>References <a class="el" href="tinyxml_8h_source.html#l00314">dqm4hep::core::TiXmlBase::IsWhiteSpace()</a>, and <a class="el" href="tinyxml_8h_source.html#l00852">dqm4hep::core::TiXmlNode::value</a>.</p>
+<div class="fragment"><div class="line"><a name="l01415"></a><span class="lineno"> 1415</span>&#160;                                {</div>
+<div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">char</span> i : <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a176ed1b6f65745fa24f07e42505ee582">value</a>)</div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a024236aa7a0f28a01e7929b510cd0730">IsWhiteSpace</a>(i))</div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a176ed1b6f65745fa24f07e42505ee582"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a176ed1b6f65745fa24f07e42505ee582">dqm4hep::core::TiXmlNode::value</a></div><div class="ttdeci">TIXML_STRING value</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00852">tinyxml.h:852</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlBase_html_a024236aa7a0f28a01e7929b510cd0730"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlBase.html#a024236aa7a0f28a01e7929b510cd0730">dqm4hep::core::TiXmlBase::IsWhiteSpace</a></div><div class="ttdeci">static bool IsWhiteSpace(char c)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00314">tinyxml.h:314</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -698,13 +698,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Queries whether this represents text using a CDATA section. </p>
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01243">1243</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01364">1364</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l01268">cdata</a>.</p>
+<p>References <a class="el" href="tinyxml_8h_source.html#l01397">cdata</a>.</p>
 
-<p>Referenced by <a class="el" href="tinyxml_8cc_source.html#l01786">dqm4hep::core::TiXmlPrinter::Visit()</a>, and <a class="el" href="tinyxml_8cc_source.html#l01723">dqm4hep::core::TiXmlPrinter::VisitEnter()</a>.</p>
-<div class="fragment"><div class="line"><a name="l01243"></a><span class="lineno"> 1243</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">cdata</a>; }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlText_html_ad84b9185f86852cb6d1a40763927236e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">dqm4hep::core::TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01268">tinyxml.h:1268</a></div></div>
+<p>Referenced by <a class="el" href="tinyxml_8cc_source.html#l01461">dqm4hep::core::TiXmlPrinter::Visit()</a>, and <a class="el" href="tinyxml_8cc_source.html#l01416">dqm4hep::core::TiXmlPrinter::VisitEnter()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;                         {</div>
+<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">cdata</a>;</div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;      }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlText_html_ad84b9185f86852cb6d1a40763927236e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">dqm4hep::core::TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01397">tinyxml.h:1397</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -733,21 +735,21 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a6ab10c1e374f7e7f490a71d9232cd3ca">dqm4hep::core::TiXmlNode</a>.</p>
 
-<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01324">1324</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01090">1090</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8cc_source.html#l01311">CopyTo()</a>, and <a class="el" href="tinyxml_8h_source.html#l01220">TiXmlText()</a>.</p>
-<div class="fragment"><div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;    {</div>
-<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#a000c262f7d0f6b4fe700cc3faa7cd219">TiXmlText</a>* clone = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;      clone = <span class="keyword">new</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#a000c262f7d0f6b4fe700cc3faa7cd219">TiXmlText</a>( <span class="stringliteral">&quot;&quot;</span> );</div>
-<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;</div>
-<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;      <span class="keywordflow">if</span> ( clone == <span class="keyword">nullptr</span> )</div>
-<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;</div>
-<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#a5ac3e1ac8376aa31d1a9e31bde2973fe">CopyTo</a>( clone );</div>
-<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;      <span class="keywordflow">return</span> clone;</div>
-<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlText_html_a5ac3e1ac8376aa31d1a9e31bde2973fe"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlText.html#a5ac3e1ac8376aa31d1a9e31bde2973fe">dqm4hep::core::TiXmlText::CopyTo</a></div><div class="ttdeci">void CopyTo(TiXmlText *target) const </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cc_source.html#l01311">tinyxml.cc:1311</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlText_html_a000c262f7d0f6b4fe700cc3faa7cd219"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlText.html#a000c262f7d0f6b4fe700cc3faa7cd219">dqm4hep::core::TiXmlText::TiXmlText</a></div><div class="ttdeci">TiXmlText(const char *initValue)</div><div class="ttdoc">Constructor for text element. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01220">tinyxml.h:1220</a></div></div>
+<p>References <a class="el" href="tinyxml_8cc_source.html#l01081">CopyTo()</a>, and <a class="el" href="tinyxml_8h_source.html#l01339">TiXmlText()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;                                      {</div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#a000c262f7d0f6b4fe700cc3faa7cd219">TiXmlText</a> *clone = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;      clone = <span class="keyword">new</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#a000c262f7d0f6b4fe700cc3faa7cd219">TiXmlText</a>(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;      <span class="keywordflow">if</span> (clone == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;</div>
+<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#a5ac3e1ac8376aa31d1a9e31bde2973fe">CopyTo</a>(clone);</div>
+<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;      <span class="keywordflow">return</span> clone;</div>
+<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlText_html_a5ac3e1ac8376aa31d1a9e31bde2973fe"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlText.html#a5ac3e1ac8376aa31d1a9e31bde2973fe">dqm4hep::core::TiXmlText::CopyTo</a></div><div class="ttdeci">void CopyTo(TiXmlText *target) const </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cc_source.html#l01081">tinyxml.cc:1081</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlText_html_a000c262f7d0f6b4fe700cc3faa7cd219"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlText.html#a000c262f7d0f6b4fe700cc3faa7cd219">dqm4hep::core::TiXmlText::TiXmlText</a></div><div class="ttdeci">TiXmlText(const char *initValue)</div><div class="ttdoc">Constructor for text element. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01339">tinyxml.h:1339</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -773,17 +775,17 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01311">1311</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01081">1081</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l01268">cdata</a>, and <a class="el" href="tinyxml_8cc_source.html#l00165">dqm4hep::core::TiXmlNode::CopyTo()</a>.</p>
+<p>References <a class="el" href="tinyxml_8h_source.html#l01397">cdata</a>, and <a class="el" href="tinyxml_8cc_source.html#l00137">dqm4hep::core::TiXmlNode::CopyTo()</a>.</p>
 
-<p>Referenced by <a class="el" href="tinyxml_8cc_source.html#l01324">Clone()</a>, <a class="el" href="tinyxml_8h_source.html#l01237">operator=()</a>, and <a class="el" href="tinyxml_8h_source.html#l01236">TiXmlText()</a>.</p>
-<div class="fragment"><div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;    {</div>
-<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a5135b6b3cf198a1a77a217cc097e75bf">TiXmlNode::CopyTo</a>( target );</div>
-<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;      target-&gt;cdata = <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">cdata</a>;</div>
-<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a5135b6b3cf198a1a77a217cc097e75bf"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a5135b6b3cf198a1a77a217cc097e75bf">dqm4hep::core::TiXmlNode::CopyTo</a></div><div class="ttdeci">void CopyTo(TiXmlNode *target) const </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cc_source.html#l00165">tinyxml.cc:165</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlText_html_ad84b9185f86852cb6d1a40763927236e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">dqm4hep::core::TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01268">tinyxml.h:1268</a></div></div>
+<p>Referenced by <a class="el" href="tinyxml_8cc_source.html#l01090">Clone()</a>, <a class="el" href="tinyxml_8h_source.html#l01356">operator=()</a>, and <a class="el" href="tinyxml_8h_source.html#l01353">TiXmlText()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;                                                  {</div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a5135b6b3cf198a1a77a217cc097e75bf">TiXmlNode::CopyTo</a>(target);</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;      target-&gt;cdata = <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">cdata</a>;</div>
+<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a5135b6b3cf198a1a77a217cc097e75bf"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a5135b6b3cf198a1a77a217cc097e75bf">dqm4hep::core::TiXmlNode::CopyTo</a></div><div class="ttdeci">void CopyTo(TiXmlNode *target) const </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cc_source.html#l00137">tinyxml.cc:137</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlText_html_ad84b9185f86852cb6d1a40763927236e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">dqm4hep::core::TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01397">tinyxml.h:1397</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -809,10 +811,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01237">1237</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01356">1356</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8cc_source.html#l01311">CopyTo()</a>.</p>
-<div class="fragment"><div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;{ base.CopyTo( <span class="keyword">this</span> ); }</div>
+<p>References <a class="el" href="tinyxml_8cc_source.html#l01081">CopyTo()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;                                            {</div>
+<div class="line"><a name="l01357"></a><span class="lineno"> 1357</span>&#160;        base.CopyTo(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l01358"></a><span class="lineno"> 1358</span>&#160;      }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -856,65 +860,57 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a22034865d1c7e488e6ebd64e4e520ede">dqm4hep::core::TiXmlBase</a>.</p>
 
-<p>Definition at line <a class="el" href="tinyxmlparser_8cc_source.html#l01499">1499</a> of file <a class="el" href="tinyxmlparser_8cc_source.html">tinyxmlparser.cc</a>.</p>
+<p>Definition at line <a class="el" href="tinyxmlparser_8cc_source.html#l01306">1306</a> of file <a class="el" href="tinyxmlparser_8cc_source.html">tinyxmlparser.cc</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l01268">cdata</a>, <a class="el" href="tinyxmlparser_8cc_source.html#l00181">dqm4hep::core::TiXmlParsingData::Cursor()</a>, <a class="el" href="tinyxml_8cc_source.html#l00512">dqm4hep::core::TiXmlNode::GetDocument()</a>, <a class="el" href="tinyxml_8h_source.html#l00380">dqm4hep::core::TiXmlBase::location</a>, <a class="el" href="tinyxmlparser_8cc_source.html#l00578">dqm4hep::core::TiXmlBase::ReadText()</a>, <a class="el" href="tinyxmlparser_8cc_source.html#l00802">dqm4hep::core::TiXmlDocument::SetError()</a>, <a class="el" href="tinyxmlparser_8cc_source.html#l00200">dqm4hep::core::TiXmlParsingData::Stamp()</a>, <a class="el" href="tinyxmlparser_8cc_source.html#l00538">dqm4hep::core::TiXmlBase::StringEqual()</a>, <a class="el" href="tinyxml_8h_source.html#l00287">dqm4hep::core::TiXmlBase::TIXML_ERROR_PARSING_CDATA</a>, <a class="el" href="tinyxml_8h_source.html#l00053">TIXML_STRING</a>, and <a class="el" href="tinyxml_8h_source.html#l00768">dqm4hep::core::TiXmlNode::value</a>.</p>
-<div class="fragment"><div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;    {</div>
-<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a176ed1b6f65745fa24f07e42505ee582">value</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a173617f6dfe902cf484ce5552b950475">TiXmlDocument</a>* document = <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#ac6be7fcd3ed4fdc435ee7e3120a24de9">GetDocument</a>();</div>
-<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;</div>
-<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;      <span class="keywordflow">if</span> ( data != <span class="keyword">nullptr</span> )</div>
-<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;      {</div>
-<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;        data-&gt;Stamp( p, encoding );</div>
-<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a2b29b7c68ea3e8a80f9d81f8128af8a4">location</a> = data-&gt;Cursor();</div>
-<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;      }</div>
-<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;</div>
-<div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> startTag = <span class="stringliteral">&quot;&lt;![CDATA[&quot;</span>;</div>
-<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">char</span>* <span class="keyword">const</span> endTag   = <span class="stringliteral">&quot;]]&gt;&quot;</span>;</div>
-<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;</div>
-<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;      <span class="keywordflow">if</span> ( <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">cdata</a> || <a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a4b15d3687fa2213c62fac2368bf69f28">StringEqual</a>( p, startTag, <span class="keyword">false</span>, encoding ) )</div>
-<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;      {</div>
-<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">cdata</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;</div>
-<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;        <span class="keywordflow">if</span> ( !<a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a4b15d3687fa2213c62fac2368bf69f28">StringEqual</a>( p, startTag, <span class="keyword">false</span>, encoding ) )</div>
-<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;        {</div>
-<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;          document-&gt;SetError( <a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#af0af7cc48ae01dbd95c3fef38fb35a99aa0c8f7803219783d9fbcf35f881380bf">TIXML_ERROR_PARSING_CDATA</a>, p, data, encoding );</div>
-<div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;        }</div>
-<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;        p += strlen( startTag );</div>
-<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;</div>
-<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;        <span class="comment">// Keep all the white space, ignore the encoding, etc.</span></div>
-<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;        <span class="keywordflow">while</span> (    (p != <span class="keyword">nullptr</span>) &amp;&amp; (*p != 0)</div>
-<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;            &amp;&amp; !<a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a4b15d3687fa2213c62fac2368bf69f28">StringEqual</a>( p, endTag, <span class="keyword">false</span>, encoding )</div>
-<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;        )</div>
-<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;        {</div>
-<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;          <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a176ed1b6f65745fa24f07e42505ee582">value</a> += *p;</div>
-<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;          ++p;</div>
-<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;        }</div>
-<div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;</div>
-<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;        <a class="code" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> dummy;</div>
-<div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;        p = <a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a40fad87b629cbcfadcd8eafe509348a2">ReadText</a>( p, &amp;dummy, <span class="keyword">false</span>, endTag, <span class="keyword">false</span>, encoding );</div>
-<div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;        <span class="keywordflow">return</span> p;</div>
-<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;      }</div>
-<div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160;      </div>
-<div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;      </div>
-<div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;        <span class="keywordtype">bool</span> ignoreWhite = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01540"></a><span class="lineno"> 1540</span>&#160;</div>
-<div class="line"><a name="l01541"></a><span class="lineno"> 1541</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* end = <span class="stringliteral">&quot;&lt;&quot;</span>;</div>
-<div class="line"><a name="l01542"></a><span class="lineno"> 1542</span>&#160;        p = <a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a40fad87b629cbcfadcd8eafe509348a2">ReadText</a>( p, &amp;<a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a176ed1b6f65745fa24f07e42505ee582">value</a>, ignoreWhite, end, <span class="keyword">false</span>, encoding );</div>
-<div class="line"><a name="l01543"></a><span class="lineno"> 1543</span>&#160;        <span class="keywordflow">if</span> ( p != <span class="keyword">nullptr</span> )</div>
-<div class="line"><a name="l01544"></a><span class="lineno"> 1544</span>&#160;          <span class="keywordflow">return</span> p-1; <span class="comment">// don&#39;t truncate the &#39;&lt;&#39;</span></div>
-<div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l01546"></a><span class="lineno"> 1546</span>&#160;      </div>
-<div class="line"><a name="l01547"></a><span class="lineno"> 1547</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlBase_html_a40fad87b629cbcfadcd8eafe509348a2"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlBase.html#a40fad87b629cbcfadcd8eafe509348a2">dqm4hep::core::TiXmlBase::ReadText</a></div><div class="ttdeci">static const char * ReadText(const char *p, TIXML_STRING *text, bool trimWhiteSpace, const char *endTag, bool caseInsensitive, TiXmlEncoding encoding)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxmlparser_8cc_source.html#l00578">tinyxmlparser.cc:578</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlBase_html_a2b29b7c68ea3e8a80f9d81f8128af8a4"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlBase.html#a2b29b7c68ea3e8a80f9d81f8128af8a4">dqm4hep::core::TiXmlBase::location</a></div><div class="ttdeci">TiXmlCursor location</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00380">tinyxml.h:380</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlBase_html_a4b15d3687fa2213c62fac2368bf69f28"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlBase.html#a4b15d3687fa2213c62fac2368bf69f28">dqm4hep::core::TiXmlBase::StringEqual</a></div><div class="ttdeci">static bool StringEqual(const char *p, const char *tag, bool ignoreCase, TiXmlEncoding encoding)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxmlparser_8cc_source.html#l00538">tinyxmlparser.cc:538</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_ac6be7fcd3ed4fdc435ee7e3120a24de9"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#ac6be7fcd3ed4fdc435ee7e3120a24de9">dqm4hep::core::TiXmlNode::GetDocument</a></div><div class="ttdeci">const TiXmlDocument * GetDocument() const </div><div class="ttdoc">Return a pointer to the Document this node lives in. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cc_source.html#l00512">tinyxml.cc:512</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a173617f6dfe902cf484ce5552b950475"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a173617f6dfe902cf484ce5552b950475">dqm4hep::core::TiXmlNode::TiXmlDocument</a></div><div class="ttdeci">friend class TiXmlDocument</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00432">tinyxml.h:432</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlBase_html_af0af7cc48ae01dbd95c3fef38fb35a99aa0c8f7803219783d9fbcf35f881380bf"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlBase.html#af0af7cc48ae01dbd95c3fef38fb35a99aa0c8f7803219783d9fbcf35f881380bf">dqm4hep::core::TiXmlBase::TIXML_ERROR_PARSING_CDATA</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00287">tinyxml.h:287</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a176ed1b6f65745fa24f07e42505ee582"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a176ed1b6f65745fa24f07e42505ee582">dqm4hep::core::TiXmlNode::value</a></div><div class="ttdeci">TIXML_STRING value</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00768">tinyxml.h:768</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlText_html_ad84b9185f86852cb6d1a40763927236e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">dqm4hep::core::TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01268">tinyxml.h:1268</a></div></div>
+<p>References <a class="el" href="tinyxml_8h_source.html#l01397">cdata</a>, <a class="el" href="tinyxmlparser_8cc_source.html#l00171">dqm4hep::core::TiXmlParsingData::Cursor()</a>, <a class="el" href="tinyxml_8cc_source.html#l00417">dqm4hep::core::TiXmlNode::GetDocument()</a>, <a class="el" href="tinyxml_8h_source.html#l00384">dqm4hep::core::TiXmlBase::location</a>, <a class="el" href="tinyxmlparser_8cc_source.html#l00512">dqm4hep::core::TiXmlBase::ReadText()</a>, <a class="el" href="tinyxmlparser_8cc_source.html#l00693">dqm4hep::core::TiXmlDocument::SetError()</a>, <a class="el" href="tinyxmlparser_8cc_source.html#l00190">dqm4hep::core::TiXmlParsingData::Stamp()</a>, <a class="el" href="tinyxmlparser_8cc_source.html#l00482">dqm4hep::core::TiXmlBase::StringEqual()</a>, <a class="el" href="tinyxml_8h_source.html#l00305">dqm4hep::core::TiXmlBase::TIXML_ERROR_PARSING_CDATA</a>, <a class="el" href="tinyxml_8h_source.html#l00053">TIXML_STRING</a>, and <a class="el" href="tinyxml_8h_source.html#l00852">dqm4hep::core::TiXmlNode::value</a>.</p>
+<div class="fragment"><div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;                                                                                              {</div>
+<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a176ed1b6f65745fa24f07e42505ee582">value</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a173617f6dfe902cf484ce5552b950475">TiXmlDocument</a> *document = <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#ac6be7fcd3ed4fdc435ee7e3120a24de9">GetDocument</a>();</div>
+<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;</div>
+<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;      <span class="keywordflow">if</span> (data != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;        data-&gt;Stamp(p, encoding);</div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a2b29b7c68ea3e8a80f9d81f8128af8a4">location</a> = data-&gt;Cursor();</div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;      }</div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;</div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">char</span> *<span class="keyword">const</span> startTag = <span class="stringliteral">&quot;&lt;![CDATA[&quot;</span>;</div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">char</span> *<span class="keyword">const</span> endTag = <span class="stringliteral">&quot;]]&gt;&quot;</span>;</div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;</div>
+<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">cdata</a> || <a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a4b15d3687fa2213c62fac2368bf69f28">StringEqual</a>(p, startTag, <span class="keyword">false</span>, encoding)) {</div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">cdata</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;</div>
+<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a4b15d3687fa2213c62fac2368bf69f28">StringEqual</a>(p, startTag, <span class="keyword">false</span>, encoding)) {</div>
+<div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;          document-&gt;SetError(<a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#af0af7cc48ae01dbd95c3fef38fb35a99aa0c8f7803219783d9fbcf35f881380bf">TIXML_ERROR_PARSING_CDATA</a>, p, data, encoding);</div>
+<div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;        }</div>
+<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;        p += strlen(startTag);</div>
+<div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160;</div>
+<div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;        <span class="comment">// Keep all the white space, ignore the encoding, etc.</span></div>
+<div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;        <span class="keywordflow">while</span> ((p != <span class="keyword">nullptr</span>) &amp;&amp; (*p != 0) &amp;&amp; !<a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a4b15d3687fa2213c62fac2368bf69f28">StringEqual</a>(p, endTag, <span class="keyword">false</span>, encoding)) {</div>
+<div class="line"><a name="l01329"></a><span class="lineno"> 1329</span>&#160;          <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a176ed1b6f65745fa24f07e42505ee582">value</a> += *p;</div>
+<div class="line"><a name="l01330"></a><span class="lineno"> 1330</span>&#160;          ++p;</div>
+<div class="line"><a name="l01331"></a><span class="lineno"> 1331</span>&#160;        }</div>
+<div class="line"><a name="l01332"></a><span class="lineno"> 1332</span>&#160;</div>
+<div class="line"><a name="l01333"></a><span class="lineno"> 1333</span>&#160;        <a class="code" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> dummy;</div>
+<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;        p = <a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a40fad87b629cbcfadcd8eafe509348a2">ReadText</a>(p, &amp;dummy, <span class="keyword">false</span>, endTag, <span class="keyword">false</span>, encoding);</div>
+<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;        <span class="keywordflow">return</span> p;</div>
+<div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;      }</div>
+<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;</div>
+<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;      <span class="keywordtype">bool</span> ignoreWhite = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;</div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">char</span> *end = <span class="stringliteral">&quot;&lt;&quot;</span>;</div>
+<div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;      p = <a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a40fad87b629cbcfadcd8eafe509348a2">ReadText</a>(p, &amp;<a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a176ed1b6f65745fa24f07e42505ee582">value</a>, ignoreWhite, end, <span class="keyword">false</span>, encoding);</div>
+<div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;      <span class="keywordflow">if</span> (p != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;        <span class="keywordflow">return</span> p - 1; <span class="comment">// don&#39;t truncate the &#39;&lt;&#39;</span></div>
+<div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlBase_html_a40fad87b629cbcfadcd8eafe509348a2"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlBase.html#a40fad87b629cbcfadcd8eafe509348a2">dqm4hep::core::TiXmlBase::ReadText</a></div><div class="ttdeci">static const char * ReadText(const char *p, TIXML_STRING *text, bool trimWhiteSpace, const char *endTag, bool caseInsensitive, TiXmlEncoding encoding)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxmlparser_8cc_source.html#l00512">tinyxmlparser.cc:512</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlBase_html_a2b29b7c68ea3e8a80f9d81f8128af8a4"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlBase.html#a2b29b7c68ea3e8a80f9d81f8128af8a4">dqm4hep::core::TiXmlBase::location</a></div><div class="ttdeci">TiXmlCursor location</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00384">tinyxml.h:384</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlBase_html_a4b15d3687fa2213c62fac2368bf69f28"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlBase.html#a4b15d3687fa2213c62fac2368bf69f28">dqm4hep::core::TiXmlBase::StringEqual</a></div><div class="ttdeci">static bool StringEqual(const char *p, const char *tag, bool ignoreCase, TiXmlEncoding encoding)</div><div class="ttdef"><b>Definition:</b> <a href="tinyxmlparser_8cc_source.html#l00482">tinyxmlparser.cc:482</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_ac6be7fcd3ed4fdc435ee7e3120a24de9"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#ac6be7fcd3ed4fdc435ee7e3120a24de9">dqm4hep::core::TiXmlNode::GetDocument</a></div><div class="ttdeci">const TiXmlDocument * GetDocument() const </div><div class="ttdoc">Return a pointer to the Document this node lives in. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cc_source.html#l00417">tinyxml.cc:417</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a173617f6dfe902cf484ce5552b950475"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a173617f6dfe902cf484ce5552b950475">dqm4hep::core::TiXmlNode::TiXmlDocument</a></div><div class="ttdeci">friend class TiXmlDocument</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00429">tinyxml.h:429</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlBase_html_af0af7cc48ae01dbd95c3fef38fb35a99aa0c8f7803219783d9fbcf35f881380bf"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlBase.html#af0af7cc48ae01dbd95c3fef38fb35a99aa0c8f7803219783d9fbcf35f881380bf">dqm4hep::core::TiXmlBase::TIXML_ERROR_PARSING_CDATA</a></div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00305">tinyxml.h:305</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a176ed1b6f65745fa24f07e42505ee582"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a176ed1b6f65745fa24f07e42505ee582">dqm4hep::core::TiXmlNode::value</a></div><div class="ttdeci">TIXML_STRING value</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00852">tinyxml.h:852</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlText_html_ad84b9185f86852cb6d1a40763927236e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">dqm4hep::core::TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01397">tinyxml.h:1397</a></div></div>
 <div class="ttc" id="tinyxml_8h_html_a92bada05fd84d9a0c9a5bbe53de26887"><div class="ttname"><a href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a></div><div class="ttdeci">#define TIXML_STRING</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00053">tinyxml.h:53</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -957,30 +953,27 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classdqm4hep_1_1core_1_1TiXmlBase.html#a34012b45646afd1762c02bec881a7a37">dqm4hep::core::TiXmlBase</a>.</p>
 
-<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01290">1290</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01065">1065</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l01268">cdata</a>, <a class="el" href="tinyxml_8cc_source.html#l00056">dqm4hep::core::TiXmlBase::EncodeString()</a>, <a class="el" href="tinyxml_8h_source.html#l00053">TIXML_STRING</a>, and <a class="el" href="tinyxml_8h_source.html#l00768">dqm4hep::core::TiXmlNode::value</a>.</p>
-<div class="fragment"><div class="line"><a name="l01291"></a><span class="lineno"> 1291</span>&#160;    {</div>
-<div class="line"><a name="l01292"></a><span class="lineno"> 1292</span>&#160;      assert( cfile );</div>
-<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;      <span class="keywordflow">if</span> ( <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">cdata</a> )</div>
-<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;      {</div>
-<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;        <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;        fprintf( cfile, <span class="stringliteral">&quot;\n&quot;</span> );</div>
-<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;        <span class="keywordflow">for</span> ( i=0; i&lt;depth; i++ ) {</div>
-<div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160;          fprintf( cfile, <span class="stringliteral">&quot;    &quot;</span> );</div>
-<div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;        }</div>
-<div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;        fprintf( cfile, <span class="stringliteral">&quot;&lt;![CDATA[%s]]&gt;\n&quot;</span>, <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a176ed1b6f65745fa24f07e42505ee582">value</a>.c_str() );  <span class="comment">// unformatted output</span></div>
-<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;      }</div>
-<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;      {</div>
-<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;        <a class="code" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> buffer;</div>
-<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#abfce33d690778eef9a06638f07ad42a7">EncodeString</a>( <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a176ed1b6f65745fa24f07e42505ee582">value</a>, &amp;buffer );</div>
-<div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;        fprintf( cfile, <span class="stringliteral">&quot;%s&quot;</span>, buffer.c_str() );</div>
-<div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;      }</div>
-<div class="line"><a name="l01308"></a><span class="lineno"> 1308</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlBase_html_abfce33d690778eef9a06638f07ad42a7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlBase.html#abfce33d690778eef9a06638f07ad42a7">dqm4hep::core::TiXmlBase::EncodeString</a></div><div class="ttdeci">static void EncodeString(const TIXML_STRING &amp;str, TIXML_STRING *outString)</div><div class="ttdoc">Expands entities in a string. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cc_source.html#l00056">tinyxml.cc:56</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a176ed1b6f65745fa24f07e42505ee582"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a176ed1b6f65745fa24f07e42505ee582">dqm4hep::core::TiXmlNode::value</a></div><div class="ttdeci">TIXML_STRING value</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00768">tinyxml.h:768</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlText_html_ad84b9185f86852cb6d1a40763927236e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">dqm4hep::core::TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01268">tinyxml.h:1268</a></div></div>
+<p>References <a class="el" href="tinyxml_8h_source.html#l01397">cdata</a>, <a class="el" href="tinyxml_8cc_source.html#l00055">dqm4hep::core::TiXmlBase::EncodeString()</a>, <a class="el" href="tinyxml_8h_source.html#l00053">TIXML_STRING</a>, and <a class="el" href="tinyxml_8h_source.html#l00852">dqm4hep::core::TiXmlNode::value</a>.</p>
+<div class="fragment"><div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;                                                      {</div>
+<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;      assert(cfile);</div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">cdata</a>) {</div>
+<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;        <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;        fprintf(cfile, <span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;        <span class="keywordflow">for</span> (i = 0; i &lt; depth; i++) {</div>
+<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;          fprintf(cfile, <span class="stringliteral">&quot;    &quot;</span>);</div>
+<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;        }</div>
+<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;        fprintf(cfile, <span class="stringliteral">&quot;&lt;![CDATA[%s]]&gt;\n&quot;</span>, <a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a176ed1b6f65745fa24f07e42505ee582">value</a>.c_str()); <span class="comment">// unformatted output</span></div>
+<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;        <a class="code" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> buffer;</div>
+<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#abfce33d690778eef9a06638f07ad42a7">EncodeString</a>(<a class="code" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a176ed1b6f65745fa24f07e42505ee582">value</a>, &amp;buffer);</div>
+<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;        fprintf(cfile, <span class="stringliteral">&quot;%s&quot;</span>, buffer.c_str());</div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;      }</div>
+<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlBase_html_abfce33d690778eef9a06638f07ad42a7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlBase.html#abfce33d690778eef9a06638f07ad42a7">dqm4hep::core::TiXmlBase::EncodeString</a></div><div class="ttdeci">static void EncodeString(const TIXML_STRING &amp;str, TIXML_STRING *outString)</div><div class="ttdoc">Expands entities in a string. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cc_source.html#l00055">tinyxml.cc:55</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlNode_html_a176ed1b6f65745fa24f07e42505ee582"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlNode.html#a176ed1b6f65745fa24f07e42505ee582">dqm4hep::core::TiXmlNode::value</a></div><div class="ttdeci">TIXML_STRING value</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00852">tinyxml.h:852</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlText_html_ad84b9185f86852cb6d1a40763927236e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">dqm4hep::core::TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01397">tinyxml.h:1397</a></div></div>
 <div class="ttc" id="tinyxml_8h_html_a92bada05fd84d9a0c9a5bbe53de26887"><div class="ttname"><a href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a></div><div class="ttdeci">#define TIXML_STRING</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00053">tinyxml.h:53</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1009,11 +1002,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Turns on or off a CDATA representation of text. </p>
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01245">1245</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01368">1368</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l01268">cdata</a>.</p>
-<div class="fragment"><div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;{ <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">cdata</a> = _cdata; }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlText_html_ad84b9185f86852cb6d1a40763927236e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">dqm4hep::core::TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01268">tinyxml.h:1268</a></div></div>
+<p>References <a class="el" href="tinyxml_8h_source.html#l01397">cdata</a>.</p>
+<div class="fragment"><div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;                                 {</div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">cdata</a> = _cdata;</div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;      }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlText_html_ad84b9185f86852cb6d1a40763927236e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlText.html#ad84b9185f86852cb6d1a40763927236e">dqm4hep::core::TiXmlText::cdata</a></div><div class="ttdeci">bool cdata</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01397">tinyxml.h:1397</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1078,9 +1073,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a7bbce2d281021d20bd7f04d7c4c46a51">dqm4hep::core::TiXmlNode</a>.</p>
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01249">1249</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01374">1374</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>Referenced by <a class="el" href="XMLParser_8cc_source.html#l00484">dqm4hep::core::XMLParser::resolveConstantsInElement()</a>.</p>
+<p>Referenced by <a class="el" href="XMLParser_8cc_source.html#l00430">dqm4hep::core::XMLParser::resolveConstantsInElement()</a>.</p>
 
 </div>
 </div>
@@ -1109,7 +1104,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a8ab193858c58402ecff93bbb81b122e6">dqm4hep::core::TiXmlNode</a>.</p>
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01250">1250</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01377">1377</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
 </div>
 </div>
@@ -1132,7 +1127,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01214">1214</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01332">1332</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
 </div>
 </div>
@@ -1155,9 +1150,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01268">1268</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01397">1397</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>Referenced by <a class="el" href="tinyxml_8h_source.html#l01243">CDATA()</a>, <a class="el" href="tinyxml_8cc_source.html#l01311">CopyTo()</a>, <a class="el" href="tinyxmlparser_8cc_source.html#l01499">Parse()</a>, <a class="el" href="tinyxml_8cc_source.html#l01290">Print()</a>, <a class="el" href="tinyxml_8h_source.html#l01245">SetCDATA()</a>, and <a class="el" href="tinyxml_8h_source.html#l01220">TiXmlText()</a>.</p>
+<p>Referenced by <a class="el" href="tinyxml_8h_source.html#l01364">CDATA()</a>, <a class="el" href="tinyxml_8cc_source.html#l01081">CopyTo()</a>, <a class="el" href="tinyxmlparser_8cc_source.html#l01306">Parse()</a>, <a class="el" href="tinyxml_8cc_source.html#l01065">Print()</a>, <a class="el" href="tinyxml_8h_source.html#l01368">SetCDATA()</a>, and <a class="el" href="tinyxml_8h_source.html#l01339">TiXmlText()</a>.</p>
 
 </div>
 </div>
@@ -1169,7 +1164,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 8 2018 22:08:27 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 14 2018 22:39:00 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

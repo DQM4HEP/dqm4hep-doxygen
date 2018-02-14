@@ -90,7 +90,7 @@ Private Attributes</h2></td></tr>
 class dqm4hep::core::Signal&lt; Args &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="Signal_8h_source.html#l00147">147</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
+<p>Definition at line <a class="el" href="Signal_8h_source.html#l00143">143</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9732ff68aaecf5b38815a6f47c2626db"></a>
 <div class="memitem">
@@ -115,11 +115,11 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Signal_8h_source.html#l00245">245</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Signal.html#a70a2ef6966c7eb62a8dfd3b19d83a24e">disconnectAll</a>();</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_a70a2ef6966c7eb62a8dfd3b19d83a24e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#a70a2ef6966c7eb62a8dfd3b19d83a24e">dqm4hep::core::Signal::disconnectAll</a></div><div class="ttdeci">void disconnectAll()</div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00302">Signal.h:302</a></div></div>
+<p>Definition at line <a class="el" href="Signal_8h_source.html#l00239">239</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                                    {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Signal.html#a70a2ef6966c7eb62a8dfd3b19d83a24e">disconnectAll</a>();</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_a70a2ef6966c7eb62a8dfd3b19d83a24e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#a70a2ef6966c7eb62a8dfd3b19d83a24e">dqm4hep::core::Signal::disconnectAll</a></div><div class="ttdeci">void disconnectAll()</div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00290">Signal.h:290</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -160,19 +160,19 @@ template&lt;typename T , typename S &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Signal_8h_source.html#l00263">263</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    {</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      <span class="comment">// check for existing connection</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      <span class="keywordflow">if</span>(this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab1fb8075548a21026ff4d8066fcc2c80">isConnected</a>(pClass))</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      <span class="comment">// add the callback</span></div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.push_back(<span class="keyword">new</span> SignalT&lt;T, Args...&gt;(pClass, <span class="keyword">function</span>));</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_ab1fb8075548a21026ff4d8066fcc2c80"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#ab1fb8075548a21026ff4d8066fcc2c80">dqm4hep::core::Signal::isConnected</a></div><div class="ttdeci">bool isConnected(T *pClass) const </div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00314">Signal.h:314</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_ab6882944b2b664a32f77b09c72fc4676"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">dqm4hep::core::Signal::m_callbacks</a></div><div class="ttdeci">SignalBase&lt; Args...&gt;::Vector m_callbacks</div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00189">Signal.h:189</a></div></div>
+<p>Definition at line <a class="el" href="Signal_8h_source.html#l00255">255</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                                                              {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      <span class="comment">// check for existing connection</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab1fb8075548a21026ff4d8066fcc2c80">isConnected</a>(pClass))</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      <span class="comment">// add the callback</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.push_back(<span class="keyword">new</span> SignalT&lt;T, Args...&gt;(pClass, <span class="keyword">function</span>));</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_ab1fb8075548a21026ff4d8066fcc2c80"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#ab1fb8075548a21026ff4d8066fcc2c80">dqm4hep::core::Signal::isConnected</a></div><div class="ttdeci">bool isConnected(T *pClass) const </div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00301">Signal.h:301</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_ab6882944b2b664a32f77b09c72fc4676"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">dqm4hep::core::Signal::m_callbacks</a></div><div class="ttdeci">SignalBase&lt; Args...&gt;::Vector m_callbacks</div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00184">Signal.h:184</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -202,26 +202,24 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Signal_8h_source.html#l00279">279</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    {</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> iter = <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.begin(), endIter = <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.end() ; endIter != iter ; ++iter)</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;      {</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        SignalT&lt;T, Args...&gt; *pCallBackT(<span class="keyword">dynamic_cast&lt;</span>SignalT&lt;T, Args...<span class="keyword">&gt;</span> *&gt;(*iter));</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="keywordflow">if</span>(!pCallBackT)</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;          <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">if</span>(pCallBackT-&gt;getClass() == pClass)</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        {</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;          <span class="keyword">delete</span> pCallBackT;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;          <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.erase(iter);</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        }</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      }</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_ab6882944b2b664a32f77b09c72fc4676"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">dqm4hep::core::Signal::m_callbacks</a></div><div class="ttdeci">SignalBase&lt; Args...&gt;::Vector m_callbacks</div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00189">Signal.h:189</a></div></div>
+<p>Definition at line <a class="el" href="Signal_8h_source.html#l00270">270</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                                                     {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> iter = <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.begin(), endIter = <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.end(); endIter != iter; ++iter) {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        SignalT&lt;T, Args...&gt; *pCallBackT(<span class="keyword">dynamic_cast&lt;</span>SignalT&lt;T, Args...<span class="keyword">&gt;</span> *&gt;(*iter));</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordflow">if</span> (!pCallBackT)</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;          <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="keywordflow">if</span> (pCallBackT-&gt;getClass() == pClass) {</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;          <span class="keyword">delete</span> pCallBackT;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;          <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.erase(iter);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        }</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;      }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_ab6882944b2b664a32f77b09c72fc4676"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">dqm4hep::core::Signal::m_callbacks</a></div><div class="ttdeci">SignalBase&lt; Args...&gt;::Vector m_callbacks</div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00184">Signal.h:184</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -248,16 +246,16 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Signal_8h_source.html#l00302">302</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
+<p>Definition at line <a class="el" href="Signal_8h_source.html#l00290">290</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Signal_8h_source.html#l00341">dqm4hep::core::Signal&lt; void &gt;::~Signal()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    {</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> iter = <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.begin(), endIter = <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.end() ; endIter != iter ; ++iter)</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keyword">delete</span> *iter;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.clear();</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_ab6882944b2b664a32f77b09c72fc4676"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">dqm4hep::core::Signal::m_callbacks</a></div><div class="ttdeci">SignalBase&lt; Args...&gt;::Vector m_callbacks</div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00189">Signal.h:189</a></div></div>
+<p>Referenced by <a class="el" href="Signal_8h_source.html#l00325">dqm4hep::core::Signal&lt; void &gt;::~Signal()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                                               {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> iter = <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.begin(), endIter = <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.end(); endIter != iter; ++iter)</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="keyword">delete</span> *iter;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.clear();</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_ab6882944b2b664a32f77b09c72fc4676"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">dqm4hep::core::Signal::m_callbacks</a></div><div class="ttdeci">SignalBase&lt; Args...&gt;::Vector m_callbacks</div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00184">Signal.h:184</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -284,11 +282,11 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Signal_8h_source.html#l00333">333</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    {</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;      <span class="keywordflow">return</span> (!<a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.empty());</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_ab6882944b2b664a32f77b09c72fc4676"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">dqm4hep::core::Signal::m_callbacks</a></div><div class="ttdeci">SignalBase&lt; Args...&gt;::Vector m_callbacks</div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00189">Signal.h:189</a></div></div>
+<p>Definition at line <a class="el" href="Signal_8h_source.html#l00318">318</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                                                     {</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      <span class="keywordflow">return</span> (!<a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.empty());</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_ab6882944b2b664a32f77b09c72fc4676"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">dqm4hep::core::Signal::m_callbacks</a></div><div class="ttdeci">SignalBase&lt; Args...&gt;::Vector m_callbacks</div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00184">Signal.h:184</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -318,24 +316,23 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Signal_8h_source.html#l00314">314</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
+<p>Definition at line <a class="el" href="Signal_8h_source.html#l00301">301</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Signal_8h_source.html#l00357">dqm4hep::core::Signal&lt; void &gt;::connect()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    {</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> iter = <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.begin(), endIter = <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.end() ; endIter != iter ; ++iter)</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      {</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keyword">const</span> SignalT&lt;T, Args...&gt; *pCallBackT(<span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>SignalT&lt;T, Args...<span class="keyword">&gt;</span> *&gt;(*iter));</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordflow">if</span>(!pCallBackT)</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;          <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keywordflow">if</span>(pCallBackT-&gt;getClass() == pClass)</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      }</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_ab6882944b2b664a32f77b09c72fc4676"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">dqm4hep::core::Signal::m_callbacks</a></div><div class="ttdeci">SignalBase&lt; Args...&gt;::Vector m_callbacks</div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00189">Signal.h:189</a></div></div>
+<p>Referenced by <a class="el" href="Signal_8h_source.html#l00339">dqm4hep::core::Signal&lt; void &gt;::connect()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                                                            {</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> iter = <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.begin(), endIter = <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.end(); endIter != iter; ++iter) {</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="keyword">const</span> SignalT&lt;T, Args...&gt; *pCallBackT(<span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>SignalT&lt;T, Args...<span class="keyword">&gt;</span> *&gt;(*iter));</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordflow">if</span> (!pCallBackT)</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;          <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordflow">if</span> (pCallBackT-&gt;getClass() == pClass)</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_ab6882944b2b664a32f77b09c72fc4676"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">dqm4hep::core::Signal::m_callbacks</a></div><div class="ttdeci">SignalBase&lt; Args...&gt;::Vector m_callbacks</div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00184">Signal.h:184</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -363,12 +360,12 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Signal_8h_source.html#l00253">253</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    {</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> iter = <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.begin(), endIter = <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.end() ; endIter != iter ; ++iter)</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        (*iter)-&gt;process(args...);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_ab6882944b2b664a32f77b09c72fc4676"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">dqm4hep::core::Signal::m_callbacks</a></div><div class="ttdeci">SignalBase&lt; Args...&gt;::Vector m_callbacks</div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00189">Signal.h:189</a></div></div>
+<p>Definition at line <a class="el" href="Signal_8h_source.html#l00246">246</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                                                     {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> iter = <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.begin(), endIter = <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">m_callbacks</a>.end(); endIter != iter; ++iter)</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        (*iter)-&gt;process(args...);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_ab6882944b2b664a32f77b09c72fc4676"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#ab6882944b2b664a32f77b09c72fc4676">dqm4hep::core::Signal::m_callbacks</a></div><div class="ttdeci">SignalBase&lt; Args...&gt;::Vector m_callbacks</div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00184">Signal.h:184</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -393,9 +390,9 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Signal_8h_source.html#l00189">189</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
+<p>Definition at line <a class="el" href="Signal_8h_source.html#l00184">184</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Signal_8h_source.html#l00357">dqm4hep::core::Signal&lt; void &gt;::connect()</a>, <a class="el" href="Signal_8h_source.html#l00372">dqm4hep::core::Signal&lt; void &gt;::disconnect()</a>, <a class="el" href="Signal_8h_source.html#l00394">dqm4hep::core::Signal&lt; void &gt;::disconnectAll()</a>, <a class="el" href="Signal_8h_source.html#l00423">dqm4hep::core::Signal&lt; void &gt;::hasConnection()</a>, <a class="el" href="Signal_8h_source.html#l00405">dqm4hep::core::Signal&lt; void &gt;::isConnected()</a>, and <a class="el" href="Signal_8h_source.html#l00348">dqm4hep::core::Signal&lt; void &gt;::process()</a>.</p>
+<p>Referenced by <a class="el" href="Signal_8h_source.html#l00339">dqm4hep::core::Signal&lt; void &gt;::connect()</a>, <a class="el" href="Signal_8h_source.html#l00353">dqm4hep::core::Signal&lt; void &gt;::disconnect()</a>, <a class="el" href="Signal_8h_source.html#l00372">dqm4hep::core::Signal&lt; void &gt;::disconnectAll()</a>, <a class="el" href="Signal_8h_source.html#l00398">dqm4hep::core::Signal&lt; void &gt;::hasConnection()</a>, <a class="el" href="Signal_8h_source.html#l00382">dqm4hep::core::Signal&lt; void &gt;::isConnected()</a>, and <a class="el" href="Signal_8h_source.html#l00331">dqm4hep::core::Signal&lt; void &gt;::process()</a>.</p>
 
 </div>
 </div>
@@ -405,7 +402,7 @@ template&lt;typename... Args&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 8 2018 22:08:27 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 14 2018 22:38:59 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

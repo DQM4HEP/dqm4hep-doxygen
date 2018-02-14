@@ -66,6 +66,7 @@
       <li><a href="functions_func_g.html#index_g"><span>g</span></a></li>
       <li><a href="functions_func_h.html#index_h"><span>h</span></a></li>
       <li><a href="functions_func_i.html#index_i"><span>i</span></a></li>
+      <li><a href="functions_func_j.html#index_j"><span>j</span></a></li>
       <li><a href="functions_func_k.html#index_k"><span>k</span></a></li>
       <li><a href="functions_func_l.html#index_l"><span>l</span></a></li>
       <li><a href="functions_func_m.html#index_m"><span>m</span></a></li>
@@ -91,6 +92,7 @@
 <h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
 <li>object()
 : <a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html#a194f84db50eb6754b374516e8f2fd379">dqm4hep::core::MonitorElement</a>
+, <a class="el" href="classnlohmann_1_1basic__json.html#aa13f7c0615867542ce80337cbcf13ada">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
 </li>
 <li>objectTo()
 : <a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html#a832851665dc65cae235055cb99b17b14">dqm4hep::core::MonitorElement</a>
@@ -101,21 +103,83 @@
 <li>operator bool()
 : <a class="el" href="classdqm4hep_1_1core_1_1PtrHandler.html#a47ef7548d17ba658e144f4622e66fa39">dqm4hep::core::PtrHandler&lt; T &gt;</a>
 </li>
+<li>operator input_adapter_t()
+: <a class="el" href="classnlohmann_1_1detail_1_1input__adapter.html#a4ef04b9490247fc38f3d1c2a9e18789b">nlohmann::detail::input_adapter</a>
+</li>
+<li>operator output_adapter_t&lt; CharType &gt;()
+: <a class="el" href="classnlohmann_1_1detail_1_1output__adapter.html#adee7a0e124f483d9945b8b85c73d7957">nlohmann::detail::output_adapter&lt; CharType &gt;</a>
+</li>
+<li>operator std::string()
+: <a class="el" href="classnlohmann_1_1json__pointer.html#a1c4a7d93216a5de8966e757b34bab64d">nlohmann::json_pointer&lt; BasicJsonType &gt;</a>
+</li>
+<li>operator value_t()
+: <a class="el" href="classnlohmann_1_1basic__json.html#a26ef3058e249f82a04f8ec18f7419027">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>operator ValueType()
+: <a class="el" href="classnlohmann_1_1basic__json.html#a9cbcce20b78708de25c7ccb60c4ca7c5">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+</li>
+<li>operator!=()
+: <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a66af27bbbf9743bc000264a0f89c5d0d">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html#ad96488c5cb13952a183324f9f34598d1">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::iteration_proxy_internal</a>
+</li>
+<li>operator()()
+: <a class="el" href="structnlohmann_1_1detail_1_1from__json__fn.html#a40459b61e3df80076963f37055348a86">nlohmann::detail::from_json_fn</a>
+, <a class="el" href="structnlohmann_1_1detail_1_1to__json__fn.html#a29dfa4bfda3ac49ea22a76aaf2af6e0c">nlohmann::detail::to_json_fn</a>
+, <a class="el" href="structstd_1_1hash_3_01nlohmann_1_1json_01_4.html#afd03f6ad53db22868ca4163a8200b2f9">std::hash&lt; nlohmann::json &gt;</a>
+, <a class="el" href="structstd_1_1less_3_1_1nlohmann_1_1detail_1_1value__t_01_4.html#a10d3fea50edf7b15ead8f4ceeb006000">std::less&lt;::nlohmann::detail::value_t &gt;</a>
+</li>
 <li>operator*()
 : <a class="el" href="classdqm4hep_1_1core_1_1PtrHandler.html#ac661f9b4d4182881873003b6734f14ad">dqm4hep::core::PtrHandler&lt; T &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#adafa65198cad0cc7295d21cfa7678e6e">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html#a008e69c6ba945489720a946619dcc620">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::iteration_proxy_internal</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1json__ref.html#adec75260903212a3bf1235fced3f2e51">nlohmann::detail::json_ref&lt; BasicJsonType &gt;</a>
+</li>
+<li>operator+()
+: <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#afc5629527a820583cd009c411e30ac64">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#a400e366bf323c7bffc1b279b00c73e93">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#a00ce828d0fe58046c10e0445504df7bf">nlohmann::detail::primitive_iterator_t</a>
+</li>
+<li>operator++()
+: <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a7d2397773b2dce42f30f0375a6a1d850">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iteration__proxy_1_1iteration__proxy__internal.html#a54a98e7cb1f015cc38dd69205f4651c0">nlohmann::detail::iteration_proxy&lt; IteratorType &gt;::iteration_proxy_internal</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#a26caf0069a50ce4ecb010a1453e883fc">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#ad26511012fc88f3ec5d9e1cb708732fd">nlohmann::detail::primitive_iterator_t</a>
 </li>
 <li>operator+=()
 : <a class="el" href="classdqm4hep_1_1core_1_1Path.html#a0103fd3f9970c09806055064692e71d2">dqm4hep::core::Path</a>
 , <a class="el" href="classdqm4hep_1_1core_1_1TiXmlString.html#a49f662573275d93938416003ca5920cb">dqm4hep::core::TiXmlString</a>
+, <a class="el" href="classnlohmann_1_1basic__json.html#aea1085f2d35cc0e1ce119cf0110119e6">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a3eef94f9d167046e7f773aeb6b78090c">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#a4e5d0a3bee433104ef87366e00536e01">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#aee01535df0b3b40137d9241029a9a203">nlohmann::detail::primitive_iterator_t</a>
+</li>
+<li>operator-()
+: <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#aa719903e6d509db51744cfca9c95fd8e">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#a9c9404de5f78134575e5f0aead10676f">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
+</li>
+<li>operator--()
+: <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a1fc43e764467b8ea4a4cdd01f629d757">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#a2c170f51371538da2c8f4094305da3d3">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#abecbf0c73c7fe963a699738065177bc3">nlohmann::detail::primitive_iterator_t</a>
+</li>
+<li>operator-=()
+: <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abcc9d51bc52f2e8483bbe4018f05e978">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1primitive__iterator__t.html#a0bf83ab08abe1ae4b51c790c85cdf151">nlohmann::detail::primitive_iterator_t</a>
 </li>
 <li>operator-&gt;()
 : <a class="el" href="classdqm4hep_1_1core_1_1PtrHandler.html#a17bbe0c1910698e98e858c4e65150861">dqm4hep::core::PtrHandler&lt; T &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a28a0c92903edd8f86825c8c7784b0913">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1json__ref.html#ae4492a0e856ba9bb8739e9bba988a8c6">nlohmann::detail::json_ref&lt; BasicJsonType &gt;</a>
 </li>
 <li>operator&lt;()
 : <a class="el" href="classdqm4hep_1_1core_1_1TiXmlAttribute.html#a8f255b6f0e6b96b3799eaf8e96103ac1">dqm4hep::core::TiXmlAttribute</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a3a5123a4cfe72a9d674c9ff65c4ec08c">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
 </li>
 <li>operator&lt;&lt;()
-: <a class="el" href="classdqm4hep_1_1core_1_1TiXmlOutStream.html#a5b74e63237ee181a07f97b82119df27b">dqm4hep::core::TiXmlOutStream</a>
+: <a class="el" href="classdqm4hep_1_1core_1_1TiXmlOutStream.html#ab2815bd438aa6a7349788c909537f921">dqm4hep::core::TiXmlOutStream</a>
+</li>
+<li>operator&lt;=()
+: <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#aa90b4d1da290b5073778e295dc2985f3">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
 </li>
 <li>operator=()
 : <a class="el" href="classdqm4hep_1_1core_1_1Path.html#a5b73aed84725a84df038cabe443020b5">dqm4hep::core::Path</a>
@@ -129,10 +193,17 @@
 , <a class="el" href="classdqm4hep_1_1core_1_1TiXmlElement.html#a7912774cd38f4fa889dddec6fcc0c251">dqm4hep::core::TiXmlElement</a>
 , <a class="el" href="classdqm4hep_1_1core_1_1TiXmlHandle.html#a6c71af3afbcb5e29d74a7d124c93f94b">dqm4hep::core::TiXmlHandle</a>
 , <a class="el" href="classdqm4hep_1_1core_1_1TiXmlNode.html#a74c860fcf92fc167a79d4455fe3ce3a3">dqm4hep::core::TiXmlNode</a>
-, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlString.html#a33d10a325d0a7f23e35dff16751164ca">dqm4hep::core::TiXmlString</a>
+, <a class="el" href="classdqm4hep_1_1core_1_1TiXmlString.html#a6fa533b2800d4dc7a68f6906f065a33d">dqm4hep::core::TiXmlString</a>
 , <a class="el" href="classdqm4hep_1_1core_1_1TiXmlText.html#af0ab2f99f1915b190445584bcf93d9cd">dqm4hep::core::TiXmlText</a>
 , <a class="el" href="classdqm4hep_1_1core_1_1TiXmlUnknown.html#a51e17fe414cb3368cb5d6962a58cafd4">dqm4hep::core::TiXmlUnknown</a>
 , <a class="el" href="classdqm4hep_1_1core_1_1Version.html#a3d6d41fa3c99f55ba8e3c03517fd7ffa">dqm4hep::core::Version</a>
+, <a class="el" href="classnlohmann_1_1basic__json.html#ae14d05459ad74602142c989a4191b959">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1input__buffer__adapter.html#a0871125057d993684ba8e45fb2b8a76b">nlohmann::detail::input_buffer_adapter</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1input__stream__adapter.html#aeac5048221929b8f7558d1698dd0fb3a">nlohmann::detail::input_stream_adapter</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#a7159ed1cfe7c423a2baef8bea0c94509">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1json__ref.html#a98956ba676b1ae16b62346f9c4fb752e">nlohmann::detail::json_ref&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1lexer.html#a33e97dee7c5faf1b36aff5b74a6c8f55">nlohmann::detail::lexer&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1serializer.html#a5f14c33012477b9f9876dc54d97009a0">nlohmann::detail::serializer&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classTCLAP_1_1Arg.html#a580ebe03ce3af1f85db2b2e5d19fb6bc">TCLAP::Arg</a>
 , <a class="el" href="classTCLAP_1_1CmdLine.html#a46fd7d72c7a5cfeeacf5e9d0ff2cacf7">TCLAP::CmdLine</a>
 , <a class="el" href="classTCLAP_1_1HelpVisitor.html#a04059ef68cc42eda0f786a892a853dd0">TCLAP::HelpVisitor</a>
@@ -142,15 +213,41 @@
 </li>
 <li>operator==()
 : <a class="el" href="classdqm4hep_1_1core_1_1TiXmlAttribute.html#a8f2ca5b1b449bf10bb8038b99facb906">dqm4hep::core::TiXmlAttribute</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#abe91c77d1be747fadcbfaf6f685e3ee7">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
 , <a class="el" href="classTCLAP_1_1Arg.html#a657a8d2842b7de9ced5a5a55db01d367">TCLAP::Arg</a>
 , <a class="el" href="classTCLAP_1_1UnlabeledMultiArg.html#a059fa00203a9f643a10334fedbd43e39">TCLAP::UnlabeledMultiArg&lt; T &gt;</a>
 , <a class="el" href="classTCLAP_1_1UnlabeledValueArg.html#a74632cd4d169481518cb1a871f97b412">TCLAP::UnlabeledValueArg&lt; T &gt;</a>
 </li>
 <li>operator&gt;()
 : <a class="el" href="classdqm4hep_1_1core_1_1TiXmlAttribute.html#afaaa668d3b9b85483f53546c218efaee">dqm4hep::core::TiXmlAttribute</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#afe8894bea0a0b616d9d5975ca04e8b39">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+</li>
+<li>operator&gt;=()
+: <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ae87ea99999c169722b388c69871295e3">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
 </li>
 <li>operator[]()
 : <a class="el" href="classdqm4hep_1_1core_1_1TiXmlString.html#acf969c6467c2c3e7706bae3a48b96cbe">dqm4hep::core::TiXmlString</a>
+, <a class="el" href="classnlohmann_1_1basic__json.html#adfb5fc9a586cfafd52c91416c1bb5f7a">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1iter__impl.html#ade15572ccb7c5b9c2541ecfd65252e99">nlohmann::detail::iter_impl&lt; BasicJsonType &gt;</a>
+, <a class="el" href="classnlohmann_1_1detail_1_1json__reverse__iterator.html#ad01fd54e148e36d9e24cf9ad0fe31d00">nlohmann::detail::json_reverse_iterator&lt; Base &gt;</a>
+</li>
+<li>other_error()
+: <a class="el" href="classnlohmann_1_1detail_1_1other__error.html#adf9227d6ca5161508f6a598a0dc6e7cd">nlohmann::detail::other_error</a>
+</li>
+<li>out_of_range()
+: <a class="el" href="classnlohmann_1_1detail_1_1out__of__range.html#ab5fe402019dba957558499502f0fd731">nlohmann::detail::out_of_range</a>
+</li>
+<li>output_adapter()
+: <a class="el" href="classnlohmann_1_1detail_1_1output__adapter.html#a117bda35bc3de85fd2f5f2153d9705b4">nlohmann::detail::output_adapter&lt; CharType &gt;</a>
+</li>
+<li>output_stream_adapter()
+: <a class="el" href="classnlohmann_1_1detail_1_1output__stream__adapter.html#a4e78a9bd19cbf3a4191adc62d14f0055">nlohmann::detail::output_stream_adapter&lt; CharType &gt;</a>
+</li>
+<li>output_string_adapter()
+: <a class="el" href="classnlohmann_1_1detail_1_1output__string__adapter.html#a2086c9bd140c2ef28775fe190684fd68">nlohmann::detail::output_string_adapter&lt; CharType &gt;</a>
+</li>
+<li>output_vector_adapter()
+: <a class="el" href="classnlohmann_1_1detail_1_1output__vector__adapter.html#abc6695e8c0274afad31bd581c8acf24f">nlohmann::detail::output_vector_adapter&lt; CharType &gt;</a>
 </li>
 <li>owner()
 : <a class="el" href="classdqm4hep_1_1core_1_1PtrHandler.html#a9dc213e5f54fae1d2246ca1eec204851">dqm4hep::core::PtrHandler&lt; T &gt;</a>
@@ -159,7 +256,7 @@
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 8 2018 22:08:28 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 14 2018 22:39:02 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
