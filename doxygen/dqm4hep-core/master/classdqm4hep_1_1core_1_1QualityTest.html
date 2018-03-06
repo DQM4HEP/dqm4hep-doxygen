@@ -72,7 +72,8 @@ Inheritance diagram for dqm4hep::core::QualityTest:</div>
  <div class="center">
   <img src="classdqm4hep_1_1core_1_1QualityTest.png" usemap="#dqm4hep::core::QualityTest_map" alt=""/>
   <map id="dqm4hep::core::QualityTest_map" name="dqm4hep::core::QualityTest_map">
-<area href="classdqm4hep_1_1core_1_1MeanWithinExpectedTest.html" title="MeanWithinExpectedTest class. " alt="dqm4hep::core::MeanWithinExpectedTest" shape="rect" coords="0,56,241,80"/>
+<area href="classdqm4hep_1_1core_1_1ExactRefCompareTest.html" title="ExactRefCompareTest class Compare the monitor element to its reference. " alt="dqm4hep::core::ExactRefCompareTest" shape="rect" coords="0,56,241,80"/>
+<area href="classdqm4hep_1_1core_1_1MeanWithinExpectedTest.html" title="MeanWithinExpectedTest class. " alt="dqm4hep::core::MeanWithinExpectedTest" shape="rect" coords="251,56,492,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -266,12 +267,12 @@ Private Attributes</h2></td></tr>
 
 <p>Get the default error limit. </p>
 
-<p>Definition at line <a class="el" href="QualityTest_8cc_source.html#l00434">434</a> of file <a class="el" href="QualityTest_8cc_source.html">QualityTest.cc</a>.</p>
+<p>Definition at line <a class="el" href="QualityTest_8cc_source.html#l00440">440</a> of file <a class="el" href="QualityTest_8cc_source.html">QualityTest.cc</a>.</p>
 
 <p>References <a class="el" href="QualityTest_8h_source.html#l00262">m_defaultErrorLimit</a>.</p>
-<div class="fragment"><div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                                         {</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a6265f52f732b9f78786b53ca46fcb95d">m_defaultErrorLimit</a>;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                                         {</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a6265f52f732b9f78786b53ca46fcb95d">m_defaultErrorLimit</a>;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_a6265f52f732b9f78786b53ca46fcb95d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#a6265f52f732b9f78786b53ca46fcb95d">dqm4hep::core::QualityTest::m_defaultErrorLimit</a></div><div class="ttdeci">static float m_defaultErrorLimit</div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8h_source.html#l00262">QualityTest.h:262</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -299,12 +300,12 @@ Private Attributes</h2></td></tr>
 
 <p>Get the default warning limit. </p>
 
-<p>Definition at line <a class="el" href="QualityTest_8cc_source.html#l00428">428</a> of file <a class="el" href="QualityTest_8cc_source.html">QualityTest.cc</a>.</p>
+<p>Definition at line <a class="el" href="QualityTest_8cc_source.html#l00434">434</a> of file <a class="el" href="QualityTest_8cc_source.html">QualityTest.cc</a>.</p>
 
 <p>References <a class="el" href="QualityTest_8h_source.html#l00261">m_defaultWarningLimit</a>.</p>
-<div class="fragment"><div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;                                           {</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a9b4c8c8a391daa924590be09ce558fac">m_defaultWarningLimit</a>;</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                                           {</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a9b4c8c8a391daa924590be09ce558fac">m_defaultWarningLimit</a>;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_a9b4c8c8a391daa924590be09ce558fac"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#a9b4c8c8a391daa924590be09ce558fac">dqm4hep::core::QualityTest::m_defaultWarningLimit</a></div><div class="ttdeci">static float m_defaultWarningLimit</div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8h_source.html#l00261">QualityTest.h:261</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -328,7 +329,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="QualityTest_8h_source.html#l00260">m_description</a>.</p>
 
-<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00440">fillBasicInfo()</a>.</p>
+<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00446">fillBasicInfo()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                                                    {</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a898695e8cf946b3bd2f0feea08fc5393">m_description</a>;</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    }</div>
@@ -390,12 +391,14 @@ Private Attributes</h2></td></tr>
 
 <p>Get the error limit. </p>
 
-<p>Definition at line <a class="el" href="QualityTest_8cc_source.html#l00422">422</a> of file <a class="el" href="QualityTest_8cc_source.html">QualityTest.cc</a>.</p>
+<p>Definition at line <a class="el" href="QualityTest_8cc_source.html#l00428">428</a> of file <a class="el" href="QualityTest_8cc_source.html">QualityTest.cc</a>.</p>
 
 <p>References <a class="el" href="QualityTest_8h_source.html#l00257">m_errorLimit</a>.</p>
-<div class="fragment"><div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                        {</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a8cb2529f77ff9f065661dfc2b36388bb">m_errorLimit</a>;</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    }</div>
+
+<p>Referenced by <a class="el" href="ExactRefCompareTest_8cc_source.html#l00232">dqm4hep::core::ExactRefCompareTest::doGraph1DTest()</a>, <a class="el" href="ExactRefCompareTest_8cc_source.html#l00274">dqm4hep::core::ExactRefCompareTest::doGraph2DTest()</a>, and <a class="el" href="ExactRefCompareTest_8cc_source.html#l00171">dqm4hep::core::ExactRefCompareTest::doHistogramTest()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;                                        {</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a8cb2529f77ff9f065661dfc2b36388bb">m_errorLimit</a>;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_a8cb2529f77ff9f065661dfc2b36388bb"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#a8cb2529f77ff9f065661dfc2b36388bb">dqm4hep::core::QualityTest::m_errorLimit</a></div><div class="ttdeci">float m_errorLimit</div><div class="ttdoc">The quality test error threshold. </div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8h_source.html#l00257">QualityTest.h:257</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -435,23 +438,23 @@ Private Attributes</h2></td></tr>
 <p>Fill basic info in the qtest report. </p>
 <p>Must be called at start of qtest run </p>
 
-<p>Definition at line <a class="el" href="QualityTest_8cc_source.html#l00440">440</a> of file <a class="el" href="QualityTest_8cc_source.html">QualityTest.cc</a>.</p>
+<p>Definition at line <a class="el" href="QualityTest_8cc_source.html#l00446">446</a> of file <a class="el" href="QualityTest_8cc_source.html">QualityTest.cc</a>.</p>
 
 <p>References <a class="el" href="json_8h_source.html#l12690">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::clear()</a>, <a class="el" href="QualityTest_8cc_source.html#l00332">description()</a>, <a class="el" href="QualityTest_8h_source.html#l00092">dqm4hep::core::QualityTestReport::m_extraInfos</a>, <a class="el" href="QualityTest_8h_source.html#l00089">dqm4hep::core::QualityTestReport::m_message</a>, <a class="el" href="QualityTest_8h_source.html#l00086">dqm4hep::core::QualityTestReport::m_monitorElementName</a>, <a class="el" href="QualityTest_8h_source.html#l00088">dqm4hep::core::QualityTestReport::m_monitorElementPath</a>, <a class="el" href="QualityTest_8h_source.html#l00087">dqm4hep::core::QualityTestReport::m_monitorElementType</a>, <a class="el" href="QualityTest_8h_source.html#l00091">dqm4hep::core::QualityTestReport::m_quality</a>, <a class="el" href="QualityTest_8h_source.html#l00090">dqm4hep::core::QualityTestReport::m_qualityFlag</a>, <a class="el" href="QualityTest_8h_source.html#l00085">dqm4hep::core::QualityTestReport::m_qualityTestDescription</a>, <a class="el" href="QualityTest_8h_source.html#l00083">dqm4hep::core::QualityTestReport::m_qualityTestName</a>, <a class="el" href="QualityTest_8h_source.html#l00084">dqm4hep::core::QualityTestReport::m_qualityTestType</a>, <a class="el" href="QualityTest_8cc_source.html#l00326">name()</a>, <a class="el" href="QualityTest_8cc_source.html#l00320">type()</a>, and <a class="el" href="QualityTest_8h_source.html#l00045">dqm4hep::core::UNDEFINED</a>.</p>
 
 <p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00338">run()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;                                                                                                     {</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;      report.m_qualityTestName = this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#aaf7824a839e4cdc66cd5811f9552d1ed">name</a>();</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;      report.m_qualityTestType = this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a626de3072c96619e3a6fb58b047faf3b">type</a>();</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;      report.m_qualityTestDescription = this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#accc5395295a1234be354ad7b29021e50">description</a>();</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;      report.m_monitorElementType = monitorElement ? monitorElement-&gt;type() : <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;      report.m_monitorElementName = monitorElement ? monitorElement-&gt;name() : <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;      report.m_monitorElementPath = monitorElement ? monitorElement-&gt;path() : <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;      report.m_quality = 0.f;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;      report.m_message = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;      report.m_qualityFlag = <a class="code" href="namespacedqm4hep_1_1core.html#ad16eaa618e716893246d6cab786359b1a5e55421e1bac6bbddd4e3a70e779b098">UNDEFINED</a>;</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;      report.m_extraInfos.clear();</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                                                                                                     {</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;      report.m_qualityTestName = this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#aaf7824a839e4cdc66cd5811f9552d1ed">name</a>();</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;      report.m_qualityTestType = this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a626de3072c96619e3a6fb58b047faf3b">type</a>();</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;      report.m_qualityTestDescription = this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#accc5395295a1234be354ad7b29021e50">description</a>();</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;      report.m_monitorElementType = monitorElement ? monitorElement-&gt;type() : <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;      report.m_monitorElementName = monitorElement ? monitorElement-&gt;name() : <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;      report.m_monitorElementPath = monitorElement ? monitorElement-&gt;path() : <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;      report.m_quality = 0.f;</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;      report.m_message = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;      report.m_qualityFlag = <a class="code" href="namespacedqm4hep_1_1core.html#ad16eaa618e716893246d6cab786359b1a5e55421e1bac6bbddd4e3a70e779b098">UNDEFINED</a>;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;      report.m_extraInfos.clear();</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_accc5395295a1234be354ad7b29021e50"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#accc5395295a1234be354ad7b29021e50">dqm4hep::core::QualityTest::description</a></div><div class="ttdeci">const std::string &amp; description() const </div><div class="ttdoc">Get the quality test description. </div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8cc_source.html#l00332">QualityTest.cc:332</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_ad16eaa618e716893246d6cab786359b1a5e55421e1bac6bbddd4e3a70e779b098"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#ad16eaa618e716893246d6cab786359b1a5e55421e1bac6bbddd4e3a70e779b098">dqm4hep::core::UNDEFINED</a></div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8h_source.html#l00045">QualityTest.h:45</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_a626de3072c96619e3a6fb58b047faf3b"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#a626de3072c96619e3a6fb58b047faf3b">dqm4hep::core::QualityTest::type</a></div><div class="ttdeci">const std::string &amp; type() const </div><div class="ttdoc">Get the quality test type. </div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8cc_source.html#l00320">QualityTest.cc:320</a></div></div>
@@ -508,7 +511,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="QualityTest_8h_source.html#l00255">m_name</a>.</p>
 
-<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00440">fillBasicInfo()</a>.</p>
+<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00446">fillBasicInfo()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                                             {</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a5fe8117a696ff1530a28349186763c10">m_name</a>;</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    }</div>
@@ -540,7 +543,7 @@ Private Attributes</h2></td></tr>
 
 <p>Read the settings from the xml handle. </p>
 
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1MeanWithinExpectedTest.html#a29c496844da496cb86816b6780af72de">dqm4hep::core::MeanWithinExpectedTest</a>.</p>
+<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1ExactRefCompareTest.html#ac157c4c2c7ea0c59c21b66446beeac4b">dqm4hep::core::ExactRefCompareTest</a>, and <a class="el" href="classdqm4hep_1_1core_1_1MeanWithinExpectedTest.html#a29c496844da496cb86816b6780af72de">dqm4hep::core::MeanWithinExpectedTest</a>.</p>
 
 </div>
 </div>
@@ -572,7 +575,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="QualityTest_8cc_source.html#l00338">338</a> of file <a class="el" href="QualityTest_8cc_source.html">QualityTest.cc</a>.</p>
 
-<p>References <a class="el" href="QualityTest_8h_source.html#l00290">enoughStatistics()</a>, <a class="el" href="QualityTest_8h_source.html#l00050">dqm4hep::core::ERROR</a>, <a class="el" href="QualityTest_8cc_source.html#l00440">fillBasicInfo()</a>, <a class="el" href="QualityTest_8h_source.html#l00047">dqm4hep::core::INSUFFICENT_STAT</a>, <a class="el" href="QualityTest_8h_source.html#l00046">dqm4hep::core::INVALID</a>, <a class="el" href="QualityTest_8h_source.html#l00089">dqm4hep::core::QualityTestReport::m_message</a>, <a class="el" href="QualityTest_8h_source.html#l00091">dqm4hep::core::QualityTestReport::m_quality</a>, <a class="el" href="QualityTest_8h_source.html#l00090">dqm4hep::core::QualityTestReport::m_qualityFlag</a>, <a class="el" href="QualityTest_8h_source.html#l00048">dqm4hep::core::SUCCESS</a>, <a class="el" href="StatusCodes_8h_source.html#l00208">dqm4hep::core::StatusCodeException::toString()</a>, <a class="el" href="Internal_8h_source.html#l00187">dqm4hep::core::typeToString()</a>, <a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html#aab2effcb7be1d1210ac09ffc45fbbbd1">userRun()</a>, <a class="el" href="QualityTest_8h_source.html#l00049">dqm4hep::core::WARNING</a>, and <a class="el" href="QualityTest_8cc_source.html#l00416">warningLimit()</a>.</p>
+<p>References <a class="el" href="QualityTest_8h_source.html#l00290">enoughStatistics()</a>, <a class="el" href="QualityTest_8h_source.html#l00050">dqm4hep::core::ERROR</a>, <a class="el" href="QualityTest_8cc_source.html#l00446">fillBasicInfo()</a>, <a class="el" href="QualityTest_8h_source.html#l00047">dqm4hep::core::INSUFFICENT_STAT</a>, <a class="el" href="QualityTest_8h_source.html#l00046">dqm4hep::core::INVALID</a>, <a class="el" href="QualityTest_8h_source.html#l00089">dqm4hep::core::QualityTestReport::m_message</a>, <a class="el" href="QualityTest_8h_source.html#l00091">dqm4hep::core::QualityTestReport::m_quality</a>, <a class="el" href="QualityTest_8h_source.html#l00090">dqm4hep::core::QualityTestReport::m_qualityFlag</a>, <a class="el" href="QualityTest_8h_source.html#l00048">dqm4hep::core::SUCCESS</a>, <a class="el" href="StatusCodes_8h_source.html#l00208">dqm4hep::core::StatusCodeException::toString()</a>, <a class="el" href="Internal_8h_source.html#l00187">dqm4hep::core::typeToString()</a>, <a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html#aab2effcb7be1d1210ac09ffc45fbbbd1">userRun()</a>, <a class="el" href="QualityTest_8h_source.html#l00049">dqm4hep::core::WARNING</a>, and <a class="el" href="QualityTest_8cc_source.html#l00422">warningLimit()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                                                                                     {</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a29f3c216a6f8c743db33e22e0b8e5a75">fillBasicInfo</a>(monitorElement, report);</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
@@ -610,31 +613,37 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;          report.m_qualityFlag = <a class="code" href="namespacedqm4hep_1_1core.html#ad16eaa618e716893246d6cab786359b1a009f502821889856e79670a83e7d63fb">SUCCESS</a>;</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        }</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;          report.m_message = <span class="stringliteral">&quot;Quality value (&quot;</span> + <a class="code" href="namespacedqm4hep_1_1core.html#abfe1172b1c358d7df33d7f1bdc311e32">typeToString</a>(report.m_quality) + <span class="stringliteral">&quot;) is out range !&quot;</span>;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;          <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_OUT_OF_RANGE);</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        }</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;      } <span class="keywordflow">catch</span> (StatusCodeException &amp;exception) {</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keyword">const</span> std::string message(<span class="stringliteral">&quot;Caught StatusCodeException while run QTest: &quot;</span> + exception.toString());</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keywordflow">if</span> (!report.m_message.empty())</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;          report.m_message + <span class="stringliteral">&quot; &quot;</span> + message;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;          report.m_message = message;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        report.m_quality = 0.f;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        report.m_qualityFlag = <a class="code" href="namespacedqm4hep_1_1core.html#ad16eaa618e716893246d6cab786359b1a14571860516fd14e2c96b2af653aaf29">INVALID</a>;</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;      } <span class="keywordflow">catch</span> (...) {</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="keyword">const</span> std::string message(<span class="stringliteral">&quot;Caught unknown exception while run QTest&quot;</span>);</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keywordflow">if</span> (!report.m_message.empty())</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;          report.m_message + <span class="stringliteral">&quot; &quot;</span> + message;</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;          report.m_message = message;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        report.m_quality = 0.f;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        report.m_qualityFlag = <a class="code" href="namespacedqm4hep_1_1core.html#ad16eaa618e716893246d6cab786359b1a14571860516fd14e2c96b2af653aaf29">INVALID</a>;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;      }</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    }</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;          <span class="keyword">const</span> std::string message(<span class="stringliteral">&quot;Quality value (&quot;</span> + <a class="code" href="namespacedqm4hep_1_1core.html#abfe1172b1c358d7df33d7f1bdc311e32">typeToString</a>(report.m_quality) + <span class="stringliteral">&quot;) is out range !&quot;</span>);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;          </div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;          <span class="keywordflow">if</span> (!report.m_message.empty())</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            report.m_message + <span class="stringliteral">&quot; &quot;</span> + message;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;          <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            report.m_message = message;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            </div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;          <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_OUT_OF_RANGE);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        }</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      } <span class="keywordflow">catch</span> (StatusCodeException &amp;exception) {</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <span class="keyword">const</span> std::string message(<span class="stringliteral">&quot;Caught StatusCodeException while run QTest: &quot;</span> + exception.toString());</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        <span class="keywordflow">if</span> (!report.m_message.empty())</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;          report.m_message + <span class="stringliteral">&quot; &quot;</span> + message;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;          report.m_message = message;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        report.m_quality = 0.f;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        report.m_qualityFlag = <a class="code" href="namespacedqm4hep_1_1core.html#ad16eaa618e716893246d6cab786359b1a14571860516fd14e2c96b2af653aaf29">INVALID</a>;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;      } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        <span class="keyword">const</span> std::string message(<span class="stringliteral">&quot;Caught unknown exception while run QTest&quot;</span>);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        <span class="keywordflow">if</span> (!report.m_message.empty())</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;          report.m_message + <span class="stringliteral">&quot; &quot;</span> + message;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;          report.m_message = message;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        report.m_quality = 0.f;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        report.m_qualityFlag = <a class="code" href="namespacedqm4hep_1_1core.html#ad16eaa618e716893246d6cab786359b1a14571860516fd14e2c96b2af653aaf29">INVALID</a>;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      }</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    }</div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_ad16eaa618e716893246d6cab786359b1a14571860516fd14e2c96b2af653aaf29"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#ad16eaa618e716893246d6cab786359b1a14571860516fd14e2c96b2af653aaf29">dqm4hep::core::INVALID</a></div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8h_source.html#l00046">QualityTest.h:46</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_a920e4a503515eb745c4378064600a8cb"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#a920e4a503515eb745c4378064600a8cb">dqm4hep::core::QualityTest::enoughStatistics</a></div><div class="ttdeci">virtual bool enoughStatistics(MonitorElementPtr monitorElement) const </div><div class="ttdoc">Whether the monitor element has enough statistics to perform the qtest. </div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8h_source.html#l00290">QualityTest.h:290</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_ad16eaa618e716893246d6cab786359b1a8d940064ecd5c8cc8b75c7ea3824636c"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#ad16eaa618e716893246d6cab786359b1a8d940064ecd5c8cc8b75c7ea3824636c">dqm4hep::core::WARNING</a></div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8h_source.html#l00049">QualityTest.h:49</a></div></div>
@@ -642,9 +651,9 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_aab2effcb7be1d1210ac09ffc45fbbbd1"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#aab2effcb7be1d1210ac09ffc45fbbbd1">dqm4hep::core::QualityTest::userRun</a></div><div class="ttdeci">virtual void userRun(MonitorElementPtr monitorElement, QualityTestReport &amp;report)=0</div><div class="ttdoc">Runs a quality test on the given monitor element and return a quality estimate. </div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_ad16eaa618e716893246d6cab786359b1a1bd2ee73b8980e716ee16f6f52a60a9d"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#ad16eaa618e716893246d6cab786359b1a1bd2ee73b8980e716ee16f6f52a60a9d">dqm4hep::core::INSUFFICENT_STAT</a></div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8h_source.html#l00047">QualityTest.h:47</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_ad16eaa618e716893246d6cab786359b1a009f502821889856e79670a83e7d63fb"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#ad16eaa618e716893246d6cab786359b1a009f502821889856e79670a83e7d63fb">dqm4hep::core::SUCCESS</a></div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8h_source.html#l00048">QualityTest.h:48</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_ada5be05a73f5a218ca8281316f068170"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#ada5be05a73f5a218ca8281316f068170">dqm4hep::core::QualityTest::warningLimit</a></div><div class="ttdeci">float warningLimit() const </div><div class="ttdoc">Get the warning limit. </div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8cc_source.html#l00416">QualityTest.cc:416</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_ada5be05a73f5a218ca8281316f068170"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#ada5be05a73f5a218ca8281316f068170">dqm4hep::core::QualityTest::warningLimit</a></div><div class="ttdeci">float warningLimit() const </div><div class="ttdoc">Get the warning limit. </div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8cc_source.html#l00422">QualityTest.cc:422</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_abfe1172b1c358d7df33d7f1bdc311e32"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#abfe1172b1c358d7df33d7f1bdc311e32">dqm4hep::core::typeToString</a></div><div class="ttdeci">std::string typeToString(const T &amp;t)</div><div class="ttdoc">Convert type to std::string. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00187">Internal.h:187</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_a29f3c216a6f8c743db33e22e0b8e5a75"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#a29f3c216a6f8c743db33e22e0b8e5a75">dqm4hep::core::QualityTest::fillBasicInfo</a></div><div class="ttdeci">void fillBasicInfo(MonitorElementPtr monitorElement, QualityTestReport &amp;report) const </div><div class="ttdoc">Fill basic info in the qtest report. </div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8cc_source.html#l00440">QualityTest.cc:440</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_a29f3c216a6f8c743db33e22e0b8e5a75"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#a29f3c216a6f8c743db33e22e0b8e5a75">dqm4hep::core::QualityTest::fillBasicInfo</a></div><div class="ttdeci">void fillBasicInfo(MonitorElementPtr monitorElement, QualityTestReport &amp;report) const </div><div class="ttdoc">Fill basic info in the qtest report. </div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8cc_source.html#l00446">QualityTest.cc:446</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -682,19 +691,19 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="QualityTest_8cc_source.html#l00403">403</a> of file <a class="el" href="QualityTest_8cc_source.html">QualityTest.cc</a>.</p>
+<p>Definition at line <a class="el" href="QualityTest_8cc_source.html#l00409">409</a> of file <a class="el" href="QualityTest_8cc_source.html">QualityTest.cc</a>.</p>
 
 <p>References <a class="el" href="Logging_8h_source.html#l00045">dqm_error</a>, <a class="el" href="QualityTest_8h_source.html#l00257">m_errorLimit</a>, and <a class="el" href="QualityTest_8h_source.html#l00256">m_warningLimit</a>.</p>
-<div class="fragment"><div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                                                          {</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      </div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;      <span class="keywordflow">if</span> (warning &lt; 0.f || error &gt; 1.f || warning &lt; error) {</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>(<span class="stringliteral">&quot;QualityTest::setLimits: Wrong limits provided (warning = {0}, error = {1})!&quot;</span>, warning, error);</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_INVALID_PARAMETER);</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;      }</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a6c8cdc1ac22ca04ef6d4d06f897a1efd">m_warningLimit</a> = warning;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a8cb2529f77ff9f065661dfc2b36388bb">m_errorLimit</a> = error;</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;                                                          {</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;      </div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      <span class="keywordflow">if</span> (warning &lt; 0.f || error &gt; 1.f || warning &lt; error) {</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>(<span class="stringliteral">&quot;QualityTest::setLimits: Wrong limits provided (warning = {0}, error = {1})!&quot;</span>, warning, error);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_INVALID_PARAMETER);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;      }</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a6c8cdc1ac22ca04ef6d4d06f897a1efd">m_warningLimit</a> = warning;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a8cb2529f77ff9f065661dfc2b36388bb">m_errorLimit</a> = error;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_a6c8cdc1ac22ca04ef6d4d06f897a1efd"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#a6c8cdc1ac22ca04ef6d4d06f897a1efd">dqm4hep::core::QualityTest::m_warningLimit</a></div><div class="ttdeci">float m_warningLimit</div><div class="ttdoc">The quality test warning threshold. </div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8h_source.html#l00256">QualityTest.h:256</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_a8cb2529f77ff9f065661dfc2b36388bb"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#a8cb2529f77ff9f065661dfc2b36388bb">dqm4hep::core::QualityTest::m_errorLimit</a></div><div class="ttdeci">float m_errorLimit</div><div class="ttdoc">The quality test error threshold. </div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8h_source.html#l00257">QualityTest.h:257</a></div></div>
 <div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00045">Logging.h:45</a></div></div>
@@ -720,7 +729,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="QualityTest_8h_source.html#l00254">m_type</a>.</p>
 
-<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00440">fillBasicInfo()</a>.</p>
+<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00446">fillBasicInfo()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                                             {</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a70a7186c7a371938f9e48faccc9e17fc">m_type</a>;</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    }</div>
@@ -762,7 +771,7 @@ Private Attributes</h2></td></tr>
 
 <p>Runs a quality test on the given monitor element and return a quality estimate. </p>
 
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1MeanWithinExpectedTest.html#aa33034752c888ccf0f4ff03b7fd5e452">dqm4hep::core::MeanWithinExpectedTest</a>.</p>
+<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1ExactRefCompareTest.html#a9505a08f0307e343045a0b593acb31b6">dqm4hep::core::ExactRefCompareTest</a>, and <a class="el" href="classdqm4hep_1_1core_1_1MeanWithinExpectedTest.html#aa33034752c888ccf0f4ff03b7fd5e452">dqm4hep::core::MeanWithinExpectedTest</a>.</p>
 
 <p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00338">run()</a>.</p>
 
@@ -783,14 +792,14 @@ Private Attributes</h2></td></tr>
 
 <p>Get the warning limit. </p>
 
-<p>Definition at line <a class="el" href="QualityTest_8cc_source.html#l00416">416</a> of file <a class="el" href="QualityTest_8cc_source.html">QualityTest.cc</a>.</p>
+<p>Definition at line <a class="el" href="QualityTest_8cc_source.html#l00422">422</a> of file <a class="el" href="QualityTest_8cc_source.html">QualityTest.cc</a>.</p>
 
 <p>References <a class="el" href="QualityTest_8h_source.html#l00256">m_warningLimit</a>.</p>
 
 <p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00338">run()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;                                          {</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a6c8cdc1ac22ca04ef6d4d06f897a1efd">m_warningLimit</a>;</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                          {</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1QualityTest.html#a6c8cdc1ac22ca04ef6d4d06f897a1efd">m_warningLimit</a>;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1QualityTest_html_a6c8cdc1ac22ca04ef6d4d06f897a1efd"><div class="ttname"><a href="classdqm4hep_1_1core_1_1QualityTest.html#a6c8cdc1ac22ca04ef6d4d06f897a1efd">dqm4hep::core::QualityTest::m_warningLimit</a></div><div class="ttdeci">float m_warningLimit</div><div class="ttdoc">The quality test warning threshold. </div><div class="ttdef"><b>Definition:</b> <a href="QualityTest_8h_source.html#l00256">QualityTest.h:256</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -816,7 +825,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="QualityTest_8h_source.html#l00262">262</a> of file <a class="el" href="QualityTest_8h_source.html">QualityTest.h</a>.</p>
 
-<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00434">defaultErrorLimit()</a>.</p>
+<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00440">defaultErrorLimit()</a>.</p>
 
 </div>
 </div>
@@ -840,7 +849,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="QualityTest_8h_source.html#l00261">261</a> of file <a class="el" href="QualityTest_8h_source.html">QualityTest.h</a>.</p>
 
-<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00428">defaultWarningLimit()</a>.</p>
+<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00434">defaultWarningLimit()</a>.</p>
 
 </div>
 </div>
@@ -866,7 +875,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="QualityTest_8h_source.html#l00260">260</a> of file <a class="el" href="QualityTest_8h_source.html">QualityTest.h</a>.</p>
 
-<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00332">description()</a>, and <a class="el" href="MeanWithinExpectedTest_8cc_source.html#l00077">dqm4hep::core::MeanWithinExpectedTest::MeanWithinExpectedTest()</a>.</p>
+<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00332">description()</a>, <a class="el" href="ExactRefCompareTest_8cc_source.html#l00096">dqm4hep::core::ExactRefCompareTest::ExactRefCompareTest()</a>, and <a class="el" href="MeanWithinExpectedTest_8cc_source.html#l00077">dqm4hep::core::MeanWithinExpectedTest::MeanWithinExpectedTest()</a>.</p>
 
 </div>
 </div>
@@ -892,7 +901,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="QualityTest_8h_source.html#l00257">257</a> of file <a class="el" href="QualityTest_8h_source.html">QualityTest.h</a>.</p>
 
-<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00422">errorLimit()</a>, and <a class="el" href="QualityTest_8cc_source.html#l00403">setLimits()</a>.</p>
+<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00428">errorLimit()</a>, and <a class="el" href="QualityTest_8cc_source.html#l00409">setLimits()</a>.</p>
 
 </div>
 </div>
@@ -970,7 +979,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="QualityTest_8h_source.html#l00256">256</a> of file <a class="el" href="QualityTest_8h_source.html">QualityTest.h</a>.</p>
 
-<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00403">setLimits()</a>, and <a class="el" href="QualityTest_8cc_source.html#l00416">warningLimit()</a>.</p>
+<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00409">setLimits()</a>, and <a class="el" href="QualityTest_8cc_source.html#l00422">warningLimit()</a>.</p>
 
 </div>
 </div>
@@ -981,7 +990,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 14 2018 22:40:02 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 6 2018 21:39:41 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
