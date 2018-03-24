@@ -420,7 +420,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="PluginManager_8cc_source.html#l00057">57</a> of file <a class="el" href="PluginManager_8cc_source.html">PluginManager.cc</a>.</p>
 
-<p>References <a class="el" href="Logging_8h_source.html#l00043">dqm_debug</a>, <a class="el" href="PluginManager_8cc_source.html#l00057">loadLibraries()</a>, and <a class="el" href="Internal_8h_source.html#l00227">dqm4hep::core::tokenize()</a>.</p>
+<p>References <a class="el" href="Logging_8h_source.html#l00043">dqm_debug</a>, <a class="el" href="PluginManager_8cc_source.html#l00057">loadLibraries()</a>, and <a class="el" href="Internal_8h_source.html#l00230">dqm4hep::core::tokenize()</a>.</p>
 
 <p>Referenced by <a class="el" href="PluginManager_8cc_source.html#l00057">loadLibraries()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                            {</div>
@@ -446,8 +446,8 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
 <div class="ttc" id="Logging_8h_html_afeed011feb4159b13c3ae4873e1d0fcf"><div class="ttname"><a href="Logging_8h.html#afeed011feb4159b13c3ae4873e1d0fcf">dqm_debug</a></div><div class="ttdeci">#define dqm_debug(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00043">Logging.h:43</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1PluginManager_html_a5b10a8a00ca4a7b6ab21dc2bc2c05db1"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PluginManager.html#a5b10a8a00ca4a7b6ab21dc2bc2c05db1">dqm4hep::core::PluginManager::loadLibraries</a></div><div class="ttdeci">StatusCode loadLibraries()</div><div class="ttdoc">Load shared libraries from the environment variable 4HEP_PLUGIN_DLL. </div><div class="ttdef"><b>Definition:</b> <a href="PluginManager_8cc_source.html#l00057">PluginManager.cc:57</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00157">Internal.h:157</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a1721013d917707ef7c8218d13984e478"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1721013d917707ef7c8218d13984e478">dqm4hep::core::tokenize</a></div><div class="ttdeci">void tokenize(const std::string &amp;inputString, StringVector &amp;tokens, const std::string &amp;delimiter=&quot; &quot;)</div><div class="ttdoc">Tokenize string with delimiter. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00227">Internal.h:227</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00160">Internal.h:160</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a1721013d917707ef7c8218d13984e478"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1721013d917707ef7c8218d13984e478">dqm4hep::core::tokenize</a></div><div class="ttdeci">void tokenize(const std::string &amp;inputString, StringVector &amp;tokens, const std::string &amp;delimiter=&quot; &quot;)</div><div class="ttdoc">Tokenize string with delimiter. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00230">Internal.h:230</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -567,7 +567,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <span class="keywordflow">return</span> pluginNameList;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1PluginManager_html_a86e7bb8657d3717a8efd66563cfd6133"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PluginManager.html#a86e7bb8657d3717a8efd66563cfd6133">dqm4hep::core::PluginManager::m_pluginMap</a></div><div class="ttdeci">PluginMap m_pluginMap</div><div class="ttdoc">The map of registered plugins. </div><div class="ttdef"><b>Definition:</b> <a href="PluginManager_8h_source.html#l00127">PluginManager.h:127</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00157">Internal.h:157</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00160">Internal.h:160</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -616,7 +616,7 @@ template&lt;typename T &gt; </div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1PluginManager_html_a86e7bb8657d3717a8efd66563cfd6133"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PluginManager.html#a86e7bb8657d3717a8efd66563cfd6133">dqm4hep::core::PluginManager::m_pluginMap</a></div><div class="ttdeci">PluginMap m_pluginMap</div><div class="ttdoc">The map of registered plugins. </div><div class="ttdef"><b>Definition:</b> <a href="PluginManager_8h_source.html#l00127">PluginManager.h:127</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1PluginManager_html_a6a6c1cc25d50ed6f67a2dc0fc546c5a3"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PluginManager.html#a6a6c1cc25d50ed6f67a2dc0fc546c5a3">dqm4hep::core::PluginManager::Plugin</a></div><div class="ttdeci">friend class Plugin</div><div class="ttdef"><b>Definition:</b> <a href="PluginManager_8h_source.html#l00069">PluginManager.h:69</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1PluginManager_html_a2874bf00d8f768cfbf9869c53489785b"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PluginManager.html#a2874bf00d8f768cfbf9869c53489785b">dqm4hep::core::PluginManager::pluginNames</a></div><div class="ttdeci">StringVector pluginNames() const </div><div class="ttdoc">Get the plug-in name list. </div><div class="ttdef"><b>Definition:</b> <a href="PluginManager_8cc_source.html#l00137">PluginManager.cc:137</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00157">Internal.h:157</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00160">Internal.h:160</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -782,7 +782,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 23 2018 10:36:26 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 24 2018 12:07:55 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
