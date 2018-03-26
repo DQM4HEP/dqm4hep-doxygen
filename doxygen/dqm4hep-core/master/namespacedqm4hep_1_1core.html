@@ -91,7 +91,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdqm4hep_1_1core_1_1allocator__helper.html" title="allocator_helper class ">allocator_helper</a> class  <a href="classdqm4hep_1_1core_1_1allocator__helper.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdqm4hep_1_1core_1_1MemoryStats.html">MemoryStats</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdqm4hep_1_1core_1_1MemoryStats.html" title="MemoryStats struct Alll units in Mb. ">MemoryStats</a> struct Alll units in Mb.  <a href="structdqm4hep_1_1core_1_1MemoryStats.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdqm4hep_1_1core_1_1MemoryStats.html" title="MemoryStats struct All units in Mb. ">MemoryStats</a> struct All units in Mb.  <a href="structdqm4hep_1_1core_1_1MemoryStats.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdqm4hep_1_1core_1_1INetworkStats.html">INetworkStats</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdqm4hep_1_1core_1_1INetworkStats.html" title="INetworkStats struct. ">INetworkStats</a> struct.  <a href="structdqm4hep_1_1core_1_1INetworkStats.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Logger.html">Logger</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -312,6 +315,9 @@ std::string, <a class="el" href="namespacedqm4hep_1_1core.html#a5be1589954581450
 <tr class="memitem:a2c193c65173949bd0cd88f2a3ca95716"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr<br class="typebreak"/>
 &lt; <a class="el" href="classdqm4hep_1_1core_1_1Storage.html">Storage</a>&lt; <a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html">MonitorElement</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a2c193c65173949bd0cd88f2a3ca95716">MeStoragePtr</a></td></tr>
 <tr class="separator:a2c193c65173949bd0cd88f2a3ca95716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40520bcf4a3586a8b48ed0c438e2576d"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <br class="typebreak"/>
+<a class="el" href="structdqm4hep_1_1core_1_1INetworkStats.html">INetworkStats</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">NetworkStats</a></td></tr>
+<tr class="separator:a40520bcf4a3586a8b48ed0c438e2576d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbf7ece0bddde655770fc3623b8e9445"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#adbf7ece0bddde655770fc3623b8e9445">json</a> = <a class="el" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a></td></tr>
 <tr class="separator:adbf7ece0bddde655770fc3623b8e9445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b2dd6ae74d9b391a64d4e2dac01dc71"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classdqm4hep_1_1core_1_1TScalarObject.html">TScalarObject</a>&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a3b2dd6ae74d9b391a64d4e2dac01dc71">TScalarInt</a></td></tr>
@@ -524,6 +530,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a989a35e91c85d37dc3c674255b13d6d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a989a35e91c85d37dc3c674255b13d6d9">memStats</a> (<a class="el" href="structdqm4hep_1_1core_1_1MemoryStats.html">MemoryStats</a> &amp;stats)</td></tr>
 <tr class="memdesc:a989a35e91c85d37dc3c674255b13d6d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get some memory stats.  <a href="#a989a35e91c85d37dc3c674255b13d6d9">More...</a><br/></td></tr>
 <tr class="separator:a989a35e91c85d37dc3c674255b13d6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1800cf29b183fa8f88404d19670ff88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#ad1800cf29b183fa8f88404d19670ff88">netStats</a> (<a class="el" href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">NetworkStats</a> &amp;stats)</td></tr>
+<tr class="memdesc:ad1800cf29b183fa8f88404d19670ff88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get some network stats.  <a href="#ad1800cf29b183fa8f88404d19670ff88">More...</a><br/></td></tr>
+<tr class="separator:ad1800cf29b183fa8f88404d19670ff88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc48b8fbdebade011b1cd1d7aa1aa301"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdqm4hep_1_1core_1_1Path.html">Path</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#afc48b8fbdebade011b1cd1d7aa1aa301">operator+</a> (const <a class="el" href="classdqm4hep_1_1core_1_1Path.html">Path</a> &amp;lhs, const <a class="el" href="classdqm4hep_1_1core_1_1Path.html">Path</a> &amp;rhs)</td></tr>
 <tr class="separator:afc48b8fbdebade011b1cd1d7aa1aa301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9718a649da42e85ffe5d38d97a7656b8"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a9718a649da42e85ffe5d38d97a7656b8">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classdqm4hep_1_1core_1_1Path.html">Path</a> &amp;path)</td></tr>
@@ -1005,6 +1014,20 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="Internal_8h_source.html#l00167">167</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a40520bcf4a3586a8b48ed0c438e2576d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;std::string, <a class="el" href="structdqm4hep_1_1core_1_1INetworkStats.html">INetworkStats</a>&gt; <a class="el" href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">dqm4hep::core::NetworkStats</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00421">421</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -2053,16 +2076,35 @@ Variables</h2></td></tr>
 <p>Get some memory stats. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">object</td><td>the <a class="el" href="structdqm4hep_1_1core_1_1MemoryStats.html" title="MemoryStats struct Alll units in Mb. ">MemoryStats</a> object to receive </td></tr>
+    <tr><td class="paramname">object</td><td>the <a class="el" href="structdqm4hep_1_1core_1_1MemoryStats.html" title="MemoryStats struct All units in Mb. ">MemoryStats</a> object to receive </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00177">177</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                 {</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      <span class="comment">/* nop */</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    }</div>
-</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ad1800cf29b183fa8f88404d19670ff88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dqm4hep::core::netStats </td>
+          <td>(</td>
+          <td class="paramtype">NetworkStats &amp;&#160;</td>
+          <td class="paramname"><em>stats</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get some network stats. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>the NetworkStats object to receive </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a63a2326a6a01e5ed790f2c4027038cb2"></a>
@@ -4033,7 +4075,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 26 2018 09:54:01 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 26 2018 16:34:43 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
