@@ -202,59 +202,40 @@
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
 <div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1RunControlServer.html#a0705dc73673cd0311ccfd33d4b973f27">  152</a></span>&#160;    <span class="keywordtype">void</span> RunControlServer::sor(dqm4hep::core::Run &amp;run)</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    {</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      Json::Value jsonRun;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      core::json jsonRun;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      run.toJson(jsonRun);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      Json::StreamWriterBuilder builder;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      builder[<span class="stringliteral">&quot;indentation&quot;</span>] = <span class="stringliteral">&quot;  &quot;</span>;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      std::unique_ptr&lt;Json::StreamWriter&gt; writer(builder.newStreamWriter());</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      std::ostringstream jsonRunStr;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      writer-&gt;write(jsonRun, &amp;jsonRunStr);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      m_pSorService-&gt;send(jsonRunStr.str());</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      m_pSorService-&gt;send(jsonRun.dump());</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1RunControlServer.html#a2a27b9363eca303c58cee4a1d874378d">  161</a></span>&#160;    <span class="keywordtype">void</span> RunControlServer::eor(<span class="keyword">const</span> dqm4hep::core::Run &amp;run)</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      core::json jsonRun;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      run.toJson(jsonRun);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      m_pEorService-&gt;send(jsonRun.dump());</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1RunControlServer.html#a2a27b9363eca303c58cee4a1d874378d">  168</a></span>&#160;    <span class="keywordtype">void</span> RunControlServer::eor(<span class="keyword">const</span> dqm4hep::core::Run &amp;run)</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    {</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      Json::Value jsonRun;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      run.toJson(jsonRun);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      Json::StreamWriterBuilder builder;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      builder[<span class="stringliteral">&quot;indentation&quot;</span>] = <span class="stringliteral">&quot;  &quot;</span>;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      std::unique_ptr&lt;Json::StreamWriter&gt; writer(builder.newStreamWriter());</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      std::ostringstream jsonRunStr;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      writer-&gt;write(jsonRun, &amp;jsonRunStr);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      m_pEorService-&gt;send(jsonRunStr.str());</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
-<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1RunControlServer.html#a223cf7d1a49c1f0a862ff66f564d168a">  184</a></span>&#160;    <span class="keywordtype">void</span> RunControlServer::sendCurrentRun(<span class="keyword">const</span> Buffer &amp;request, Buffer &amp;response)</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      Json::Value jsonStatus, jsonRun;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      m_runControl.currentRun().toJson(jsonRun);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      jsonStatus[<span class="stringliteral">&quot;running&quot;</span>] = m_runControl.isRunning();</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      jsonStatus[<span class="stringliteral">&quot;run&quot;</span>] = jsonRun;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      Json::StreamWriterBuilder builder;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      builder[<span class="stringliteral">&quot;indentation&quot;</span>] = <span class="stringliteral">&quot;  &quot;</span>;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      std::unique_ptr&lt;Json::StreamWriter&gt; writer(builder.newStreamWriter());</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      std::ostringstream jsonStatusStr;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      writer-&gt;write(jsonStatus, &amp;jsonStatusStr);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      <span class="keyword">auto</span> model = response.createModel&lt;std::string&gt;();</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      std::string jsonStatusStr2(jsonStatusStr.str());</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      model-&gt;move(std::move(jsonStatusStr2));</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      response.setModel(model);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  }</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1RunControlServer.html#a223cf7d1a49c1f0a862ff66f564d168a">  170</a></span>&#160;    <span class="keywordtype">void</span> RunControlServer::sendCurrentRun(<span class="keyword">const</span> Buffer &amp;request, Buffer &amp;response)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      core::json jsonStatus, jsonRun;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      m_runControl.currentRun().toJson(jsonRun);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      jsonStatus = {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        {<span class="stringliteral">&quot;running&quot;</span>, m_runControl.isRunning()},</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        {<span class="stringliteral">&quot;run&quot;</span>, jsonRun}</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      };</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <span class="keyword">auto</span> model = response.createModel&lt;std::string&gt;();</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      model-&gt;move(std::move(jsonStatus.dump()));</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      response.setModel(model);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}</div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlInterface_html"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlInterface.html">dqm4hep::online::RunControlInterface</a></div><div class="ttdoc">RunControlInterface class. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlInterface_8h_source.html#l00052">RunControlInterface.h:52</a></div></div>
 <div class="ttc" id="OnlineRoutes_8h_html"><div class="ttname"><a href="OnlineRoutes_8h.html">OnlineRoutes.h</a></div></div>
 <div class="ttc" id="RunControlServer_8h_html"><div class="ttname"><a href="RunControlServer_8h.html">RunControlServer.h</a></div></div>
@@ -263,7 +244,7 @@
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 18 2018 11:10:18 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 31 2018 22:56:03 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

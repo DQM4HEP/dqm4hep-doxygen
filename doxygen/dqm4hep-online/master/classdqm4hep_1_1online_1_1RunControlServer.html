@@ -256,19 +256,12 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="RunControlServer_8cc_source.html#l00168">168</a> of file <a class="el" href="RunControlServer_8cc_source.html">RunControlServer.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    {</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      Json::Value jsonRun;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#a576ec5a71ac4bcac5d92e984ffc08a9d">run</a>.toJson(jsonRun);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      Json::StreamWriterBuilder builder;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      builder[<span class="stringliteral">&quot;indentation&quot;</span>] = <span class="stringliteral">&quot;  &quot;</span>;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      std::unique_ptr&lt;Json::StreamWriter&gt; writer(builder.newStreamWriter());</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      std::ostringstream jsonRunStr;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      writer-&gt;write(jsonRun, &amp;jsonRunStr);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#a9070011feec2862ef5b41cb1128163aa">m_pEorService</a>-&gt;send(jsonRunStr.str());</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="RunControlServer_8cc_source.html#l00161">161</a> of file <a class="el" href="RunControlServer_8cc_source.html">RunControlServer.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      core::json jsonRun;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#a576ec5a71ac4bcac5d92e984ffc08a9d">run</a>.toJson(jsonRun);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#a9070011feec2862ef5b41cb1128163aa">m_pEorService</a>-&gt;send(jsonRun.dump());</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_a576ec5a71ac4bcac5d92e984ffc08a9d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#a576ec5a71ac4bcac5d92e984ffc08a9d">dqm4hep::online::RunControlServer::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">Run the server. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8cc_source.html#l00090">RunControlServer.cc:90</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_a9070011feec2862ef5b41cb1128163aa"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#a9070011feec2862ef5b41cb1128163aa">dqm4hep::online::RunControlServer::m_pEorService</a></div><div class="ttdeci">dqm4hep::net::Service * m_pEorService</div><div class="ttdoc">The &quot;end of run&quot; service. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8h_source.html#l00122">RunControlServer.h:122</a></div></div>
 </div><!-- fragment -->
@@ -340,7 +333,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1RunControl_html_a9a309ca468532631f412c103d85c6b96"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1RunControl.html#a9a309ca468532631f412c103d85c6b96">dqm4hep::online::OnlineRoutes::RunControl::status</a></div><div class="ttdeci">static const std::string status(const std::string &amp;runControlName)</div><div class="ttdoc">Definition of the status RPC service name. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00035">OnlineRoutes.cc:35</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1RunControl_html_a1d7332374fafeebeeaaeb1c428383666"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1RunControl.html#a1d7332374fafeebeeaaeb1c428383666">dqm4hep::online::OnlineRoutes::RunControl::sor</a></div><div class="ttdeci">static const std::string sor(const std::string &amp;runControlName)</div><div class="ttdoc">Definition of the SOR service name. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00042">OnlineRoutes.cc:42</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_a2a27b9363eca303c58cee4a1d874378d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#a2a27b9363eca303c58cee4a1d874378d">dqm4hep::online::RunControlServer::eor</a></div><div class="ttdeci">void eor(const dqm4hep::core::Run &amp;run)</div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8cc_source.html#l00168">RunControlServer.cc:168</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_a2a27b9363eca303c58cee4a1d874378d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#a2a27b9363eca303c58cee4a1d874378d">dqm4hep::online::RunControlServer::eor</a></div><div class="ttdeci">void eor(const dqm4hep::core::Run &amp;run)</div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8cc_source.html#l00161">RunControlServer.cc:161</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1RunControl_html_afdae41eee29b6ba0d1661193769adb43"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1RunControl.html#afdae41eee29b6ba0d1661193769adb43">dqm4hep::online::OnlineRoutes::RunControl::eor</a></div><div class="ttdeci">static const std::string eor(const std::string &amp;runControlName)</div><div class="ttdoc">Definition of the EOR service name. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00049">OnlineRoutes.cc:49</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_ad9fa3708747f3b480155acf4b831adfb"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#ad9fa3708747f3b480155acf4b831adfb">dqm4hep::online::RunControlServer::m_server</a></div><div class="ttdeci">ServerPtr m_server</div><div class="ttdoc">The server to run. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8h_source.html#l00120">RunControlServer.h:120</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_a71a523e5facafece1533ab2d414b73bf"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#a71a523e5facafece1533ab2d414b73bf">dqm4hep::online::RunControlServer::m_userParameters</a></div><div class="ttdeci">dqm4hep::core::StringMap m_userParameters</div><div class="ttdoc">The user parameters. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8h_source.html#l00124">RunControlServer.h:124</a></div></div>
@@ -348,7 +341,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControl_html_a0fc1e39d64ff7da96dad29d287acbd8d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControl.html#a0fc1e39d64ff7da96dad29d287acbd8d">dqm4hep::online::RunControl::onStartOfRun</a></div><div class="ttdeci">StartOfRunSignal &amp; onStartOfRun()</div><div class="ttdoc">Get the start of run signal. </div><div class="ttdef"><b>Definition:</b> <a href="RunControl_8cc_source.html#l00186">RunControl.cc:186</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_a685b7dc71bdbd66b8c8e55ad054ae46f"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#a685b7dc71bdbd66b8c8e55ad054ae46f">dqm4hep::online::RunControlServer::m_pSorService</a></div><div class="ttdeci">dqm4hep::net::Service * m_pSorService</div><div class="ttdoc">The &quot;start of run&quot; service. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8h_source.html#l00121">RunControlServer.h:121</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_a46593b454d4ee7eb3d840e13a5bd4ba7"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#a46593b454d4ee7eb3d840e13a5bd4ba7">dqm4hep::online::RunControlServer::m_stopFlag</a></div><div class="ttdeci">std::atomic&lt; bool &gt; m_stopFlag</div><div class="ttdoc">The stop flag to run the server. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8h_source.html#l00125">RunControlServer.h:125</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_a223cf7d1a49c1f0a862ff66f564d168a"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#a223cf7d1a49c1f0a862ff66f564d168a">dqm4hep::online::RunControlServer::sendCurrentRun</a></div><div class="ttdeci">void sendCurrentRun(const dqm4hep::net::Buffer &amp;request, dqm4hep::net::Buffer &amp;response)</div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8cc_source.html#l00184">RunControlServer.cc:184</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_a223cf7d1a49c1f0a862ff66f564d168a"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#a223cf7d1a49c1f0a862ff66f564d168a">dqm4hep::online::RunControlServer::sendCurrentRun</a></div><div class="ttdeci">void sendCurrentRun(const dqm4hep::net::Buffer &amp;request, dqm4hep::net::Buffer &amp;response)</div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8cc_source.html#l00170">RunControlServer.cc:170</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_ae65cbd4f08a021eaeba5e3e8f1a0b5a5"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#ae65cbd4f08a021eaeba5e3e8f1a0b5a5">dqm4hep::online::RunControlServer::m_interfaceName</a></div><div class="ttdeci">std::string m_interfaceName</div><div class="ttdoc">The external user interface plugin name. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8h_source.html#l00126">RunControlServer.h:126</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControl_html_acc42cf1fcf04a915bccae988d2528ba5"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControl.html#acc42cf1fcf04a915bccae988d2528ba5">dqm4hep::online::RunControl::onEndOfRun</a></div><div class="ttdeci">EndOfRunSignal &amp; onEndOfRun()</div><div class="ttdoc">Get the end of run signal. </div><div class="ttdef"><b>Definition:</b> <a href="RunControl_8cc_source.html#l00193">RunControl.cc:193</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_aac8916b7b26a61fe5eef322c26ade999"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#aac8916b7b26a61fe5eef322c26ade999">dqm4hep::online::RunControlServer::m_interface</a></div><div class="ttdeci">RunControlInterfacePtr m_interface</div><div class="ttdoc">The external user plugin interface. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8h_source.html#l00123">RunControlServer.h:123</a></div></div>
@@ -413,25 +406,20 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="RunControlServer_8cc_source.html#l00184">184</a> of file <a class="el" href="RunControlServer_8cc_source.html">RunControlServer.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      Json::Value jsonStatus, jsonRun;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#a37c80e536c97b97d161b523c44a31b84">m_runControl</a>.<a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#a4dac2c97f784a0702881373fa8ffc269">currentRun</a>().toJson(jsonRun);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      jsonStatus[<span class="stringliteral">&quot;running&quot;</span>] = <a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#a37c80e536c97b97d161b523c44a31b84">m_runControl</a>.<a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#a9be6e10493a4a5995fb88ecd9fb7d9a0">isRunning</a>();</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      jsonStatus[<span class="stringliteral">&quot;run&quot;</span>] = jsonRun;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      Json::StreamWriterBuilder builder;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      builder[<span class="stringliteral">&quot;indentation&quot;</span>] = <span class="stringliteral">&quot;  &quot;</span>;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      std::unique_ptr&lt;Json::StreamWriter&gt; writer(builder.newStreamWriter());</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      std::ostringstream jsonStatusStr;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      writer-&gt;write(jsonStatus, &amp;jsonStatusStr);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      <span class="keyword">auto</span> model = response.createModel&lt;std::string&gt;();</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      std::string jsonStatusStr2(jsonStatusStr.str());</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      model-&gt;move(std::move(jsonStatusStr2));</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      response.setModel(model);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="RunControlServer_8cc_source.html#l00170">170</a> of file <a class="el" href="RunControlServer_8cc_source.html">RunControlServer.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      core::json jsonStatus, jsonRun;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#a37c80e536c97b97d161b523c44a31b84">m_runControl</a>.<a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#a4dac2c97f784a0702881373fa8ffc269">currentRun</a>().toJson(jsonRun);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      jsonStatus = {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        {<span class="stringliteral">&quot;running&quot;</span>, <a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#a37c80e536c97b97d161b523c44a31b84">m_runControl</a>.<a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#a9be6e10493a4a5995fb88ecd9fb7d9a0">isRunning</a>()},</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        {<span class="stringliteral">&quot;run&quot;</span>, jsonRun}</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      };</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <span class="keyword">auto</span> model = response.createModel&lt;std::string&gt;();</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      model-&gt;move(std::move(jsonStatus.dump()));</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      response.setModel(model);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControl_html_a9be6e10493a4a5995fb88ecd9fb7d9a0"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControl.html#a9be6e10493a4a5995fb88ecd9fb7d9a0">dqm4hep::online::RunControl::isRunning</a></div><div class="ttdeci">bool isRunning() const </div><div class="ttdoc">Whether a run has been started. </div><div class="ttdef"><b>Definition:</b> <a href="RunControl_8cc_source.html#l00159">RunControl.cc:159</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_a37c80e536c97b97d161b523c44a31b84"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#a37c80e536c97b97d161b523c44a31b84">dqm4hep::online::RunControlServer::m_runControl</a></div><div class="ttdeci">RunControl m_runControl</div><div class="ttdoc">The main run control. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8h_source.html#l00119">RunControlServer.h:119</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControl_html_a4dac2c97f784a0702881373fa8ffc269"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControl.html#a4dac2c97f784a0702881373fa8ffc269">dqm4hep::online::RunControl::currentRun</a></div><div class="ttdeci">const dqm4hep::core::Run &amp; currentRun() const </div><div class="ttdoc">Get the current run. </div><div class="ttdef"><b>Definition:</b> <a href="RunControl_8cc_source.html#l00145">RunControl.cc:145</a></div></div>
@@ -584,17 +572,10 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="RunControlServer_8cc_source.html#l00152">152</a> of file <a class="el" href="RunControlServer_8cc_source.html">RunControlServer.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    {</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      Json::Value jsonRun;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      core::json jsonRun;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#a576ec5a71ac4bcac5d92e984ffc08a9d">run</a>.toJson(jsonRun);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      Json::StreamWriterBuilder builder;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      builder[<span class="stringliteral">&quot;indentation&quot;</span>] = <span class="stringliteral">&quot;  &quot;</span>;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      std::unique_ptr&lt;Json::StreamWriter&gt; writer(builder.newStreamWriter());</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      std::ostringstream jsonRunStr;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      writer-&gt;write(jsonRun, &amp;jsonRunStr);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#a685b7dc71bdbd66b8c8e55ad054ae46f">m_pSorService</a>-&gt;send(jsonRunStr.str());</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#a685b7dc71bdbd66b8c8e55ad054ae46f">m_pSorService</a>-&gt;send(jsonRun.dump());</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_a576ec5a71ac4bcac5d92e984ffc08a9d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#a576ec5a71ac4bcac5d92e984ffc08a9d">dqm4hep::online::RunControlServer::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">Run the server. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8cc_source.html#l00090">RunControlServer.cc:90</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_a685b7dc71bdbd66b8c8e55ad054ae46f"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#a685b7dc71bdbd66b8c8e55ad054ae46f">dqm4hep::online::RunControlServer::m_pSorService</a></div><div class="ttdeci">dqm4hep::net::Service * m_pSorService</div><div class="ttdoc">The &quot;start of run&quot; service. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8h_source.html#l00121">RunControlServer.h:121</a></div></div>
 </div><!-- fragment -->
@@ -827,7 +808,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 18 2018 11:10:19 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 31 2018 22:56:04 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
