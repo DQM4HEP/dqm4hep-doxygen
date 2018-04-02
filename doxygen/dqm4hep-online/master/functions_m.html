@@ -91,6 +91,9 @@
 <li>m_applicationType
 : <a class="el" href="classdqm4hep_1_1core_1_1AnalysisModuleApplication.html#adcc0d7cde62f354958d281ecf4ff4e0b">dqm4hep::core::AnalysisModuleApplication</a>
 </li>
+<li>m_appStatsService
+: <a class="el" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a2a2e68cf25784d640988ecab343a2070">dqm4hep::online::OnlineManagerServer</a>
+</li>
 <li>m_archiveDirectory
 : <a class="el" href="classdqm4hep_1_1core_1_1AnalysisModuleApplication_1_1Settings.html#a25db4b09242e6b43d3369e4c1c815a6a">dqm4hep::core::AnalysisModuleApplication::Settings</a>
 , <a class="el" href="classdqm4hep_1_1core_1_1StandaloneModuleApplication_1_1Settings.html#a8b1b796cc83a457b89bab547afa2997f">dqm4hep::core::StandaloneModuleApplication::Settings</a>
@@ -250,8 +253,21 @@
 <li>m_logEntries
 : <a class="el" href="classdqm4hep_1_1core_1_1LogCollector.html#a1cb6d31eac76bc7ba48653c57843d5a5">dqm4hep::core::LogCollector</a>
 </li>
+<li>m_logFileBaseName
+: <a class="el" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a7d17c259028e3e781d00de27ca778712">dqm4hep::online::OnlineManagerServer</a>
+</li>
+<li>m_logFileMaxSize
+: <a class="el" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#af12773e7c322f144331e5b356b88ff44">dqm4hep::online::OnlineManagerServer</a>
+</li>
+<li>m_logFileNFiles
+: <a class="el" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#ac708e506a18bc5b280bf46f33ad8cdc4">dqm4hep::online::OnlineManagerServer</a>
+</li>
 <li>m_logger
 : <a class="el" href="classdqm4hep_1_1core_1_1LogCollector.html#ac577e831cf00b4c2db6f8bc7be97979d">dqm4hep::core::LogCollector</a>
+, <a class="el" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#ad98680e5fb1c111021ff8886317373aa">dqm4hep::online::OnlineManagerServer</a>
+</li>
+<li>m_logsService
+: <a class="el" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a4c68a29da011beb95129a89f9f8cd580">dqm4hep::online::OnlineManagerServer</a>
 </li>
 <li>m_maximumQueueSize
 : <a class="el" href="classdqm4hep_1_1core_1_1EventClient.html#a2868ccafcf777c083548630768b0dd9e">dqm4hep::core::EventClient</a>
@@ -640,7 +656,8 @@
 : <a class="el" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#acd9cca633c2b4911a928e6230aa98391">dqm4hep::core::MonitorElementSender</a>
 </li>
 <li>m_server
-: <a class="el" href="classdqm4hep_1_1online_1_1RunControlServer.html#ad9fa3708747f3b480155acf4b831adfb">dqm4hep::online::RunControlServer</a>
+: <a class="el" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#af0eb17a475b4eea0a8e0f2d702ea1157">dqm4hep::online::OnlineManagerServer</a>
+, <a class="el" href="classdqm4hep_1_1online_1_1RunControlServer.html#ad9fa3708747f3b480155acf4b831adfb">dqm4hep::online::RunControlServer</a>
 </li>
 <li>m_serverClientId
 : <a class="el" href="classdqm4hep_1_1core_1_1DimEventClient.html#a8edcde0ee408b670ca5217ce825944d5">dqm4hep::core::DimEventClient</a>
@@ -691,6 +708,7 @@
 <li>m_stopFlag
 : <a class="el" href="classdqm4hep_1_1core_1_1StandaloneModuleApplication.html#a7be4e1f94b7c7c21b338e3def864206a">dqm4hep::core::StandaloneModuleApplication</a>
 , <a class="el" href="classdqm4hep_1_1online_1_1HttpRunControl.html#a27f0cb3d97dc57712999f98c3571083d">dqm4hep::online::HttpRunControl</a>
+, <a class="el" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a783499755807f631bdcf87514b0bdcec">dqm4hep::online::OnlineManagerServer</a>
 , <a class="el" href="classdqm4hep_1_1online_1_1RunControlServer.html#a46593b454d4ee7eb3d840e13a5bd4ba7">dqm4hep::online::RunControlServer</a>
 </li>
 <li>m_streamerName
@@ -726,6 +744,7 @@
 </li>
 <li>make_shared()
 : <a class="el" href="classdqm4hep_1_1online_1_1EventSource.html#a06989071e1e556bfd4534a18b7277a76">dqm4hep::online::EventSource</a>
+, <a class="el" href="classdqm4hep_1_1online_1_1RemoteLogger.html#a0ba9a0750acaf761785e38b8cb08a3e8">dqm4hep::online::RemoteLogger</a>
 </li>
 <li>MeCollectorInfoRpcInfo()
 : <a class="el" href="classdqm4hep_1_1core_1_1MeCollectorInfoRpcInfo.html#aeda9d3e0f6ec56cd5a55632912e363ad">dqm4hep::core::MeCollectorInfoRpcInfo</a>
@@ -801,7 +820,7 @@
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 2 2018 11:52:25 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 2 2018 15:14:13 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
