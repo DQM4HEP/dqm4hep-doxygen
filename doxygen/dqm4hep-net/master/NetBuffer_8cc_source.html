@@ -114,9 +114,9 @@
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1RawBuffer.html#afbe8d8f297564897f781d641527e3df0">   65</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#afbe8d8f297564897f781d641527e3df0">RawBuffer::adopt</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> size) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1RawBuffer.html#afbe8d8f297564897f781d641527e3df0">   65</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#afbe8d8f297564897f781d641527e3df0">RawBuffer::adopt</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> s) {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#a6506c3a2037d978d3fe94039a3ba718e">m_pBuffer</a> = buffer;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#a50dd03af31f82bc70b689a649b6dd065">m_size</a> = <a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#adda91e0c982c2cb2a70f9ce5673cf850">size</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#a50dd03af31f82bc70b689a649b6dd065">m_size</a> = s;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
@@ -128,8 +128,8 @@
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1BufferModel.html#a0d978c01d80746a76de9499893935513">   79</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdqm4hep_1_1net_1_1BufferModel.html#a0d978c01d80746a76de9499893935513">BufferModel::handle</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> size) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1BufferModel.html#a888932f51fd39ef6b9ae2e5f52e353b8">m_rawBuffer</a>.<a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#afbe8d8f297564897f781d641527e3df0">adopt</a>(buffer, size);</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1BufferModel.html#a0d978c01d80746a76de9499893935513">   79</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdqm4hep_1_1net_1_1BufferModel.html#a0d978c01d80746a76de9499893935513">BufferModel::handle</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> s) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1BufferModel.html#a888932f51fd39ef6b9ae2e5f52e353b8">m_rawBuffer</a>.<a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#afbe8d8f297564897f781d641527e3df0">adopt</a>(buffer, s);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
@@ -153,10 +153,10 @@
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1Buffer.html#a86b00f469de07018ef0d0a6d28f24757">  104</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a86b00f469de07018ef0d0a6d28f24757">Buffer::setModel</a>(std::shared_ptr&lt;BufferModel&gt; model) {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keywordflow">if</span> (!model)</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1Buffer.html#a86b00f469de07018ef0d0a6d28f24757">  104</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a86b00f469de07018ef0d0a6d28f24757">Buffer::setModel</a>(std::shared_ptr&lt;BufferModel&gt; m) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keywordflow">if</span> (!m)</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a1aaab8780668c162f020572128a4b129">m_model</a> = <a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a238729b857bda25abcba470186ca93dd">model</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a1aaab8780668c162f020572128a4b129">m_model</a> = m;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
@@ -179,10 +179,10 @@
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1Buffer.html#a01fbd455a86b80f8ac4206e4be661856">  130</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a01fbd455a86b80f8ac4206e4be661856">Buffer::adopt</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> size) {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keyword">auto</span> <a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a238729b857bda25abcba470186ca93dd">model</a> = this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a3e6a019eddf910e5e306d0cef3059f91">createModel</a>();</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a238729b857bda25abcba470186ca93dd">model</a>-&gt;handle(buffer, size);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a86b00f469de07018ef0d0a6d28f24757">setModel</a>(<a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a238729b857bda25abcba470186ca93dd">model</a>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1Buffer.html#a01fbd455a86b80f8ac4206e4be661856">  130</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a01fbd455a86b80f8ac4206e4be661856">Buffer::adopt</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> s) {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keyword">auto</span> m = this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a3e6a019eddf910e5e306d0cef3059f91">createModel</a>();</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      m-&gt;handle(buffer, s);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a86b00f469de07018ef0d0a6d28f24757">setModel</a>(m);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
@@ -220,7 +220,7 @@
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 11 2018 13:45:39 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 22 2018 03:22:37 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

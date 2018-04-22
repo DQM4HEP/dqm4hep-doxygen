@@ -135,7 +135,7 @@
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classdqm4hep_1_1net_1_1BufferModel.html#a0d978c01d80746a76de9499893935513">handle</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *buffer, <span class="keywordtype">size_t</span> size);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1BufferModel.html#a888932f51fd39ef6b9ae2e5f52e353b8">  125</a></span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html">RawBuffer</a> <a class="code" href="classdqm4hep_1_1net_1_1BufferModel.html#a888932f51fd39ef6b9ae2e5f52e353b8">m_rawBuffer</a>; </div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1BufferModel.html#a888932f51fd39ef6b9ae2e5f52e353b8">  125</a></span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html">RawBuffer</a> <a class="code" href="classdqm4hep_1_1net_1_1BufferModel.html#a888932f51fd39ef6b9ae2e5f52e353b8">m_rawBuffer</a> = {}; </div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    };</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
@@ -151,7 +151,7 @@
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#a5f90e9e8622a1e4161e547f5956ba4e4">move</a>(T &amp;&amp;value);</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">  157</a></span>&#160;      T <a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a>; </div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">  157</a></span>&#160;      T <a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a> = {}; </div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    };</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
@@ -176,7 +176,7 @@
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      }</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1BufferModelT_3_01std_1_1string_01_4.html#ae97e17badf0f6e0d007f6dab5d327c73">  185</a></span>&#160;      std::string <a class="code" href="classdqm4hep_1_1net_1_1BufferModelT_3_01std_1_1string_01_4.html#ae97e17badf0f6e0d007f6dab5d327c73">m_value</a>; </div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1BufferModelT_3_01std_1_1string_01_4.html#ae97e17badf0f6e0d007f6dab5d327c73">  185</a></span>&#160;      std::string <a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a> = {<span class="stringliteral">&quot;&quot;</span>}; </div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    };</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
 <div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="namespacedqm4hep_1_1net.html#ae4459ef89fb4eef786b527d6ad4bcad5">  188</a></span>&#160;    <span class="keyword">typedef</span> std::shared_ptr&lt;BufferModel&gt; <a class="code" href="namespacedqm4hep_1_1net.html#ae4459ef89fb4eef786b527d6ad4bcad5">BufferModelPtr</a>;</div>
@@ -212,7 +212,7 @@
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      <a class="code" href="namespacedqm4hep_1_1net.html#ae4459ef89fb4eef786b527d6ad4bcad5">BufferModelPtr</a> <a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a238729b857bda25abcba470186ca93dd">model</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1Buffer.html#a1aaab8780668c162f020572128a4b129">  260</a></span>&#160;      <a class="code" href="namespacedqm4hep_1_1net.html#ae4459ef89fb4eef786b527d6ad4bcad5">BufferModelPtr</a> <a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a1aaab8780668c162f020572128a4b129">m_model</a>; </div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1Buffer.html#a1aaab8780668c162f020572128a4b129">  260</a></span>&#160;      <a class="code" href="namespacedqm4hep_1_1net.html#ae4459ef89fb4eef786b527d6ad4bcad5">BufferModelPtr</a> <a class="code" href="classdqm4hep_1_1net_1_1Buffer.html#a1aaab8780668c162f020572128a4b129">m_model</a> = {<span class="keyword">nullptr</span>}; </div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    };</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
@@ -264,7 +264,6 @@
 <div class="ttc" id="classdqm4hep_1_1net_1_1RawBuffer_html_a6506c3a2037d978d3fe94039a3ba718e"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RawBuffer.html#a6506c3a2037d978d3fe94039a3ba718e">dqm4hep::net::RawBuffer::m_pBuffer</a></div><div class="ttdeci">const char * m_pBuffer</div><div class="ttdoc">The buffer. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00094">NetBuffer.h:94</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Buffer_html_a5c30a65e805b210532b34efa5baa920a"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Buffer.html#a5c30a65e805b210532b34efa5baa920a">dqm4hep::net::Buffer::Buffer</a></div><div class="ttdeci">Buffer()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8cc_source.html#l00086">NetBuffer.cc:86</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1BufferModelT_html_a67d60d482ade7d61559e1768df6a0b2d"><div class="ttname"><a href="classdqm4hep_1_1net_1_1BufferModelT.html#a67d60d482ade7d61559e1768df6a0b2d">dqm4hep::net::BufferModelT::BufferModelT</a></div><div class="ttdeci">BufferModelT()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00267">NetBuffer.h:267</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1BufferModelT_3_01std_1_1string_01_4_html_ae97e17badf0f6e0d007f6dab5d327c73"><div class="ttname"><a href="classdqm4hep_1_1net_1_1BufferModelT_3_01std_1_1string_01_4.html#ae97e17badf0f6e0d007f6dab5d327c73">dqm4hep::net::BufferModelT&lt; std::string &gt;::m_value</a></div><div class="ttdeci">std::string m_value</div><div class="ttdoc">An internal copy of the stored value as std::string. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00185">NetBuffer.h:185</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1BufferModelT_html_af7ba861ee52df4d47045fd5963b3cf0b"><div class="ttname"><a href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">dqm4hep::net::BufferModelT::m_value</a></div><div class="ttdeci">T m_value</div><div class="ttdoc">An internal copy of the stored value. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00157">NetBuffer.h:157</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Buffer_html_a3e6a019eddf910e5e306d0cef3059f91"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Buffer.html#a3e6a019eddf910e5e306d0cef3059f91">dqm4hep::net::Buffer::createModel</a></div><div class="ttdeci">std::shared_ptr&lt; BufferModelT&lt; T &gt; &gt; createModel() const </div><div class="ttdoc">Factory method to create a new model. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00291">NetBuffer.h:291</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1RawBuffer_html"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RawBuffer.html">dqm4hep::net::RawBuffer</a></div><div class="ttdoc">RawBuffer class. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00058">NetBuffer.h:58</a></div></div>
@@ -291,7 +290,7 @@
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 11 2018 13:45:39 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 22 2018 03:22:37 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

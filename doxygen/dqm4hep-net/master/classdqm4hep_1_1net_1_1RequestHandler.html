@@ -90,6 +90,10 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:adaacb63cb647bc9af5f6ca9e79df705a"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html#adaacb63cb647bc9af5f6ca9e79df705a">RequestHandler</a> (<a class="el" href="classdqm4hep_1_1net_1_1Server.html">Server</a> *pServer, const std::string &amp;<a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html#a24a5097513d85abbe315b8c0ab2787fa">name</a>, Controller *pController, void(Controller::*function)(const <a class="el" href="classdqm4hep_1_1net_1_1Buffer.html">Buffer</a> &amp;request, <a class="el" href="classdqm4hep_1_1net_1_1Buffer.html">Buffer</a> &amp;response))</td></tr>
 <tr class="memdesc:adaacb63cb647bc9af5f6ca9e79df705a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#adaacb63cb647bc9af5f6ca9e79df705a">More...</a><br/></td></tr>
 <tr class="separator:adaacb63cb647bc9af5f6ca9e79df705a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a078db6f0bf3c7697de3f84ef057114aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html#a078db6f0bf3c7697de3f84ef057114aa">RequestHandler</a> (const <a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html">RequestHandler</a> &amp;)=delete</td></tr>
+<tr class="separator:a078db6f0bf3c7697de3f84ef057114aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac595e6112579754e6b679fa09c55c4a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html">RequestHandler</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html#ac595e6112579754e6b679fa09c55c4a7">operator=</a> (const <a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html">RequestHandler</a> &amp;)=delete</td></tr>
+<tr class="separator:ac595e6112579754e6b679fa09c55c4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae606db2676309ec347c2483a83b1ad23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html#ae606db2676309ec347c2483a83b1ad23">~RequestHandler</a> ()</td></tr>
 <tr class="memdesc:ae606db2676309ec347c2483a83b1ad23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ae606db2676309ec347c2483a83b1ad23">More...</a><br/></td></tr>
 <tr class="separator:ae606db2676309ec347c2483a83b1ad23"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,15 +115,15 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a2b4d8ec7507b96ade8c82203dfbf70fa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html#a2b4d8ec7507b96ade8c82203dfbf70fa">m_name</a></td></tr>
+<tr class="memitem:a2b4d8ec7507b96ade8c82203dfbf70fa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html#a2b4d8ec7507b96ade8c82203dfbf70fa">m_name</a> = {&quot;&quot;}</td></tr>
 <tr class="memdesc:a2b4d8ec7507b96ade8c82203dfbf70fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The request handler name.  <a href="#a2b4d8ec7507b96ade8c82203dfbf70fa">More...</a><br/></td></tr>
 <tr class="separator:a2b4d8ec7507b96ade8c82203dfbf70fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a977375ab8320e2e5d81ef61d4fbef219"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdqm4hep_1_1net_1_1Server.html">Server</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html#a977375ab8320e2e5d81ef61d4fbef219">m_pServer</a></td></tr>
+<tr class="memitem:a977375ab8320e2e5d81ef61d4fbef219"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdqm4hep_1_1net_1_1Server.html">Server</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html#a977375ab8320e2e5d81ef61d4fbef219">m_pServer</a> = {nullptr}</td></tr>
 <tr class="memdesc:a977375ab8320e2e5d81ef61d4fbef219"><td class="mdescLeft">&#160;</td><td class="mdescRight">The server in which the request handler is declared.  <a href="#a977375ab8320e2e5d81ef61d4fbef219">More...</a><br/></td></tr>
 <tr class="separator:a977375ab8320e2e5d81ef61d4fbef219"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae508c6dfd3cfcdf859a113f8e471f47c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html#a7b99fc1e542ee3ff16323ff377fef4a5">RequestSignal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html#ae508c6dfd3cfcdf859a113f8e471f47c">m_requestSignal</a></td></tr>
+<tr class="memitem:ae508c6dfd3cfcdf859a113f8e471f47c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html#a7b99fc1e542ee3ff16323ff377fef4a5">RequestSignal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html#ae508c6dfd3cfcdf859a113f8e471f47c">m_requestSignal</a> = {}</td></tr>
 <tr class="separator:ae508c6dfd3cfcdf859a113f8e471f47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7451b65c6e06bda8be3e9c6987817aa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler_1_1Rpc.html">Rpc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">m_pRpc</a></td></tr>
+<tr class="memitem:a7451b65c6e06bda8be3e9c6987817aa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler_1_1Rpc.html">Rpc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">m_pRpc</a> = {nullptr}</td></tr>
 <tr class="separator:a7451b65c6e06bda8be3e9c6987817aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -203,18 +207,41 @@ template&lt;typename Controller &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="RequestHandler_8h_source.html#l00144">144</a> of file <a class="el" href="RequestHandler_8h_source.html">RequestHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="RequestHandler_8h_source.html#l00149">149</a> of file <a class="el" href="RequestHandler_8h_source.html">RequestHandler.h</a>.</p>
 
-<p>References <a class="el" href="RequestHandler_8h_source.html#l00135">m_requestSignal</a>.</p>
-<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        : <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a2b4d8ec7507b96ade8c82203dfbf70fa">m_name</a>(<a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a24a5097513d85abbe315b8c0ab2787fa">name</a>), <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a977375ab8320e2e5d81ef61d4fbef219">m_pServer</a>(pServer), <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">m_pRpc</a>(<span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#ae508c6dfd3cfcdf859a113f8e471f47c">m_requestSignal</a>.connect(pController, <span class="keyword">function</span>);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a24a5097513d85abbe315b8c0ab2787fa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a24a5097513d85abbe315b8c0ab2787fa">dqm4hep::net::RequestHandler::name</a></div><div class="ttdeci">const std::string &amp; name() const </div><div class="ttdoc">Get the request name. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8cc_source.html#l00042">RequestHandler.cc:42</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a7451b65c6e06bda8be3e9c6987817aa2"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">dqm4hep::net::RequestHandler::m_pRpc</a></div><div class="ttdeci">Rpc * m_pRpc</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00136">RequestHandler.h:136</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_ae508c6dfd3cfcdf859a113f8e471f47c"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#ae508c6dfd3cfcdf859a113f8e471f47c">dqm4hep::net::RequestHandler::m_requestSignal</a></div><div class="ttdeci">RequestSignal m_requestSignal</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00135">RequestHandler.h:135</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a977375ab8320e2e5d81ef61d4fbef219"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a977375ab8320e2e5d81ef61d4fbef219">dqm4hep::net::RequestHandler::m_pServer</a></div><div class="ttdeci">Server * m_pServer</div><div class="ttdoc">The server in which the request handler is declared. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00134">RequestHandler.h:134</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a2b4d8ec7507b96ade8c82203dfbf70fa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a2b4d8ec7507b96ade8c82203dfbf70fa">dqm4hep::net::RequestHandler::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdoc">The request handler name. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00133">RequestHandler.h:133</a></div></div>
+<p>References <a class="el" href="RequestHandler_8h_source.html#l00140">m_requestSignal</a>.</p>
+<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        : <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a2b4d8ec7507b96ade8c82203dfbf70fa">m_name</a>(rname), <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a977375ab8320e2e5d81ef61d4fbef219">m_pServer</a>(pServer), <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">m_pRpc</a>(<span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#ae508c6dfd3cfcdf859a113f8e471f47c">m_requestSignal</a>.connect(pController, <span class="keyword">function</span>);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a7451b65c6e06bda8be3e9c6987817aa2"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">dqm4hep::net::RequestHandler::m_pRpc</a></div><div class="ttdeci">Rpc * m_pRpc</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00141">RequestHandler.h:141</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_ae508c6dfd3cfcdf859a113f8e471f47c"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#ae508c6dfd3cfcdf859a113f8e471f47c">dqm4hep::net::RequestHandler::m_requestSignal</a></div><div class="ttdeci">RequestSignal m_requestSignal</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00140">RequestHandler.h:140</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a977375ab8320e2e5d81ef61d4fbef219"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a977375ab8320e2e5d81ef61d4fbef219">dqm4hep::net::RequestHandler::m_pServer</a></div><div class="ttdeci">Server * m_pServer</div><div class="ttdoc">The server in which the request handler is declared. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00139">RequestHandler.h:139</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a2b4d8ec7507b96ade8c82203dfbf70fa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a2b4d8ec7507b96ade8c82203dfbf70fa">dqm4hep::net::RequestHandler::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdoc">The request handler name. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00138">RequestHandler.h:138</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a078db6f0bf3c7697de3f84ef057114aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dqm4hep::net::RequestHandler::RequestHandler </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html">RequestHandler</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a class="anchor" id="ae606db2676309ec347c2483a83b1ad23"></a>
@@ -240,13 +267,13 @@ template&lt;typename Controller &gt; </div>
 
 <p>Destructor. </p>
 
-<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00036">36</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
+<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00034">34</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
 
-<p>References <a class="el" href="RequestHandler_8cc_source.html#l00062">stopHandlingRequest()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                    {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a5269f7498ac03a39c94abd695f667a63">stopHandlingRequest</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a5269f7498ac03a39c94abd695f667a63"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a5269f7498ac03a39c94abd695f667a63">dqm4hep::net::RequestHandler::stopHandlingRequest</a></div><div class="ttdeci">void stopHandlingRequest()</div><div class="ttdoc">Remove the actual request handler connection. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8cc_source.html#l00062">RequestHandler.cc:62</a></div></div>
+<p>References <a class="el" href="RequestHandler_8cc_source.html#l00060">stopHandlingRequest()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a5269f7498ac03a39c94abd695f667a63">stopHandlingRequest</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a5269f7498ac03a39c94abd695f667a63"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a5269f7498ac03a39c94abd695f667a63">dqm4hep::net::RequestHandler::stopHandlingRequest</a></div><div class="ttdeci">void stopHandlingRequest()</div><div class="ttdoc">Remove the actual request handler connection. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8cc_source.html#l00060">RequestHandler.cc:60</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -292,13 +319,13 @@ template&lt;typename Controller &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00083">83</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
+<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00081">81</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
 
-<p>References <a class="el" href="RequestHandler_8h_source.html#l00135">m_requestSignal</a>.</p>
-<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                                                              {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#ae508c6dfd3cfcdf859a113f8e471f47c">m_requestSignal</a>.process(request, response);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_ae508c6dfd3cfcdf859a113f8e471f47c"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#ae508c6dfd3cfcdf859a113f8e471f47c">dqm4hep::net::RequestHandler::m_requestSignal</a></div><div class="ttdeci">RequestSignal m_requestSignal</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00135">RequestHandler.h:135</a></div></div>
+<p>References <a class="el" href="RequestHandler_8h_source.html#l00140">m_requestSignal</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                                                              {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#ae508c6dfd3cfcdf859a113f8e471f47c">m_requestSignal</a>.process(request, response);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_ae508c6dfd3cfcdf859a113f8e471f47c"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#ae508c6dfd3cfcdf859a113f8e471f47c">dqm4hep::net::RequestHandler::m_requestSignal</a></div><div class="ttdeci">RequestSignal m_requestSignal</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00140">RequestHandler.h:140</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -325,15 +352,15 @@ template&lt;typename Controller &gt; </div>
 
 <p>Whether the request handler is connected. </p>
 
-<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00071">71</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
+<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00069">69</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
 
-<p>References <a class="el" href="RequestHandler_8h_source.html#l00136">m_pRpc</a>.</p>
+<p>References <a class="el" href="RequestHandler_8h_source.html#l00141">m_pRpc</a>.</p>
 
-<p>Referenced by <a class="el" href="Server_8cc_source.html#l00065">dqm4hep::net::Server::start()</a>, <a class="el" href="RequestHandler_8cc_source.html#l00054">startHandlingRequest()</a>, <a class="el" href="Server_8cc_source.html#l00220">dqm4hep::net::Server::startRequestHandler()</a>, <a class="el" href="Server_8cc_source.html#l00097">dqm4hep::net::Server::stop()</a>, <a class="el" href="RequestHandler_8cc_source.html#l00062">stopHandlingRequest()</a>, and <a class="el" href="Server_8cc_source.html#l00229">dqm4hep::net::Server::stopRequestHandler()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                 {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">return</span> (<a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">m_pRpc</a> != <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a7451b65c6e06bda8be3e9c6987817aa2"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">dqm4hep::net::RequestHandler::m_pRpc</a></div><div class="ttdeci">Rpc * m_pRpc</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00136">RequestHandler.h:136</a></div></div>
+<p>Referenced by <a class="el" href="Server_8cc_source.html#l00067">dqm4hep::net::Server::start()</a>, <a class="el" href="RequestHandler_8cc_source.html#l00052">startHandlingRequest()</a>, <a class="el" href="Server_8cc_source.html#l00214">dqm4hep::net::Server::startRequestHandler()</a>, <a class="el" href="Server_8cc_source.html#l00096">dqm4hep::net::Server::stop()</a>, <a class="el" href="RequestHandler_8cc_source.html#l00060">stopHandlingRequest()</a>, and <a class="el" href="Server_8cc_source.html#l00223">dqm4hep::net::Server::stopRequestHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                 {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">return</span> (<a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">m_pRpc</a> != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a7451b65c6e06bda8be3e9c6987817aa2"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">dqm4hep::net::RequestHandler::m_pRpc</a></div><div class="ttdeci">Rpc * m_pRpc</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00141">RequestHandler.h:141</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -352,13 +379,13 @@ template&lt;typename Controller &gt; </div>
 
 <p>Get the request name. </p>
 
-<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00042">42</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
+<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00040">40</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
 
-<p>References <a class="el" href="RequestHandler_8h_source.html#l00133">m_name</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a2b4d8ec7507b96ade8c82203dfbf70fa">m_name</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a2b4d8ec7507b96ade8c82203dfbf70fa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a2b4d8ec7507b96ade8c82203dfbf70fa">dqm4hep::net::RequestHandler::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdoc">The request handler name. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00133">RequestHandler.h:133</a></div></div>
+<p>References <a class="el" href="RequestHandler_8h_source.html#l00138">m_name</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                                {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a2b4d8ec7507b96ade8c82203dfbf70fa">m_name</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a2b4d8ec7507b96ade8c82203dfbf70fa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a2b4d8ec7507b96ade8c82203dfbf70fa">dqm4hep::net::RequestHandler::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdoc">The request handler name. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00138">RequestHandler.h:138</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -386,14 +413,38 @@ template&lt;typename Controller &gt; </div>
 <p>[onRequest description] </p>
 <dl class="section return"><dt>Returns</dt><dd>[description] </dd></dl>
 
-<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00077">77</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
+<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00075">75</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
 
-<p>References <a class="el" href="RequestHandler_8h_source.html#l00135">m_requestSignal</a>.</p>
-<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                                           {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#ae508c6dfd3cfcdf859a113f8e471f47c">m_requestSignal</a>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_ae508c6dfd3cfcdf859a113f8e471f47c"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#ae508c6dfd3cfcdf859a113f8e471f47c">dqm4hep::net::RequestHandler::m_requestSignal</a></div><div class="ttdeci">RequestSignal m_requestSignal</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00135">RequestHandler.h:135</a></div></div>
+<p>References <a class="el" href="RequestHandler_8h_source.html#l00140">m_requestSignal</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                           {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#ae508c6dfd3cfcdf859a113f8e471f47c">m_requestSignal</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_ae508c6dfd3cfcdf859a113f8e471f47c"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#ae508c6dfd3cfcdf859a113f8e471f47c">dqm4hep::net::RequestHandler::m_requestSignal</a></div><div class="ttdeci">RequestSignal m_requestSignal</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00140">RequestHandler.h:140</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac595e6112579754e6b679fa09c55c4a7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html">RequestHandler</a>&amp; dqm4hep::net::RequestHandler::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html">RequestHandler</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a class="anchor" id="a45f043632d488cd9bd6eefdda8fa9489"></a>
@@ -411,13 +462,13 @@ template&lt;typename Controller &gt; </div>
 
 <p>Get the server in which the request handler is declared. </p>
 
-<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00048">48</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
+<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00046">46</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
 
-<p>References <a class="el" href="RequestHandler_8h_source.html#l00134">m_pServer</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                         {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a977375ab8320e2e5d81ef61d4fbef219">m_pServer</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a977375ab8320e2e5d81ef61d4fbef219"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a977375ab8320e2e5d81ef61d4fbef219">dqm4hep::net::RequestHandler::m_pServer</a></div><div class="ttdeci">Server * m_pServer</div><div class="ttdoc">The server in which the request handler is declared. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00134">RequestHandler.h:134</a></div></div>
+<p>References <a class="el" href="RequestHandler_8h_source.html#l00139">m_pServer</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                         {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a977375ab8320e2e5d81ef61d4fbef219">m_pServer</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a977375ab8320e2e5d81ef61d4fbef219"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a977375ab8320e2e5d81ef61d4fbef219">dqm4hep::net::RequestHandler::m_pServer</a></div><div class="ttdeci">Server * m_pServer</div><div class="ttdoc">The server in which the request handler is declared. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00139">RequestHandler.h:139</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -444,19 +495,19 @@ template&lt;typename Controller &gt; </div>
 
 <p>Create the actual request handler connection. </p>
 
-<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00054">54</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
+<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00052">52</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
 
-<p>References <a class="el" href="RequestHandler_8cc_source.html#l00071">isHandlingRequest()</a>, <a class="el" href="RequestHandler_8h_source.html#l00136">m_pRpc</a>, and <a class="el" href="RequestHandler_8h_source.html#l00122">Rpc</a>.</p>
+<p>References <a class="el" href="RequestHandler_8cc_source.html#l00069">isHandlingRequest()</a>, <a class="el" href="RequestHandler_8h_source.html#l00141">m_pRpc</a>, and <a class="el" href="RequestHandler_8h_source.html#l00127">Rpc</a>.</p>
 
-<p>Referenced by <a class="el" href="Server_8h_source.html#l00337">dqm4hep::net::Server::createRequestHandler()</a>, <a class="el" href="Server_8cc_source.html#l00065">dqm4hep::net::Server::start()</a>, and <a class="el" href="Server_8cc_source.html#l00220">dqm4hep::net::Server::startRequestHandler()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                              {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#ac4cea97614a957b3e5fa98bb8f7bebae">isHandlingRequest</a>()) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">m_pRpc</a> = <span class="keyword">new</span> <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#aa215980343539585be43df316a3b45a2">Rpc</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_aa215980343539585be43df316a3b45a2"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#aa215980343539585be43df316a3b45a2">dqm4hep::net::RequestHandler::Rpc</a></div><div class="ttdeci">friend class Rpc</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00122">RequestHandler.h:122</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a7451b65c6e06bda8be3e9c6987817aa2"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">dqm4hep::net::RequestHandler::m_pRpc</a></div><div class="ttdeci">Rpc * m_pRpc</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00136">RequestHandler.h:136</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_ac4cea97614a957b3e5fa98bb8f7bebae"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#ac4cea97614a957b3e5fa98bb8f7bebae">dqm4hep::net::RequestHandler::isHandlingRequest</a></div><div class="ttdeci">bool isHandlingRequest() const </div><div class="ttdoc">Whether the request handler is connected. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8cc_source.html#l00071">RequestHandler.cc:71</a></div></div>
+<p>Referenced by <a class="el" href="Server_8h_source.html#l00299">dqm4hep::net::Server::createRequestHandler()</a>, <a class="el" href="Server_8cc_source.html#l00067">dqm4hep::net::Server::start()</a>, and <a class="el" href="Server_8cc_source.html#l00214">dqm4hep::net::Server::startRequestHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                              {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#ac4cea97614a957b3e5fa98bb8f7bebae">isHandlingRequest</a>()) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">m_pRpc</a> = <span class="keyword">new</span> <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#aa215980343539585be43df316a3b45a2">Rpc</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_aa215980343539585be43df316a3b45a2"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#aa215980343539585be43df316a3b45a2">dqm4hep::net::RequestHandler::Rpc</a></div><div class="ttdeci">friend class Rpc</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00127">RequestHandler.h:127</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a7451b65c6e06bda8be3e9c6987817aa2"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">dqm4hep::net::RequestHandler::m_pRpc</a></div><div class="ttdeci">Rpc * m_pRpc</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00141">RequestHandler.h:141</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_ac4cea97614a957b3e5fa98bb8f7bebae"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#ac4cea97614a957b3e5fa98bb8f7bebae">dqm4hep::net::RequestHandler::isHandlingRequest</a></div><div class="ttdeci">bool isHandlingRequest() const </div><div class="ttdoc">Whether the request handler is connected. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8cc_source.html#l00069">RequestHandler.cc:69</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -483,19 +534,19 @@ template&lt;typename Controller &gt; </div>
 
 <p>Remove the actual request handler connection. </p>
 
-<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00062">62</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
+<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00060">60</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
 
-<p>References <a class="el" href="RequestHandler_8cc_source.html#l00071">isHandlingRequest()</a>, and <a class="el" href="RequestHandler_8h_source.html#l00136">m_pRpc</a>.</p>
+<p>References <a class="el" href="RequestHandler_8cc_source.html#l00069">isHandlingRequest()</a>, and <a class="el" href="RequestHandler_8h_source.html#l00141">m_pRpc</a>.</p>
 
-<p>Referenced by <a class="el" href="Server_8cc_source.html#l00097">dqm4hep::net::Server::stop()</a>, <a class="el" href="Server_8cc_source.html#l00229">dqm4hep::net::Server::stopRequestHandler()</a>, and <a class="el" href="RequestHandler_8cc_source.html#l00036">~RequestHandler()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                             {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#ac4cea97614a957b3e5fa98bb8f7bebae">isHandlingRequest</a>()) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">delete</span> <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">m_pRpc</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">m_pRpc</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a7451b65c6e06bda8be3e9c6987817aa2"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">dqm4hep::net::RequestHandler::m_pRpc</a></div><div class="ttdeci">Rpc * m_pRpc</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00136">RequestHandler.h:136</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_ac4cea97614a957b3e5fa98bb8f7bebae"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#ac4cea97614a957b3e5fa98bb8f7bebae">dqm4hep::net::RequestHandler::isHandlingRequest</a></div><div class="ttdeci">bool isHandlingRequest() const </div><div class="ttdoc">Whether the request handler is connected. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8cc_source.html#l00071">RequestHandler.cc:71</a></div></div>
+<p>Referenced by <a class="el" href="Server_8cc_source.html#l00096">dqm4hep::net::Server::stop()</a>, <a class="el" href="Server_8cc_source.html#l00223">dqm4hep::net::Server::stopRequestHandler()</a>, and <a class="el" href="RequestHandler_8cc_source.html#l00034">~RequestHandler()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                             {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#ac4cea97614a957b3e5fa98bb8f7bebae">isHandlingRequest</a>()) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">delete</span> <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">m_pRpc</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">m_pRpc</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_a7451b65c6e06bda8be3e9c6987817aa2"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#a7451b65c6e06bda8be3e9c6987817aa2">dqm4hep::net::RequestHandler::m_pRpc</a></div><div class="ttdeci">Rpc * m_pRpc</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00141">RequestHandler.h:141</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_ac4cea97614a957b3e5fa98bb8f7bebae"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#ac4cea97614a957b3e5fa98bb8f7bebae">dqm4hep::net::RequestHandler::isHandlingRequest</a></div><div class="ttdeci">bool isHandlingRequest() const </div><div class="ttdoc">Whether the request handler is connected. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8cc_source.html#l00069">RequestHandler.cc:69</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -518,9 +569,9 @@ template&lt;typename Controller &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="RequestHandler_8h_source.html#l00122">122</a> of file <a class="el" href="RequestHandler_8h_source.html">RequestHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="RequestHandler_8h_source.html#l00127">127</a> of file <a class="el" href="RequestHandler_8h_source.html">RequestHandler.h</a>.</p>
 
-<p>Referenced by <a class="el" href="RequestHandler_8cc_source.html#l00054">startHandlingRequest()</a>.</p>
+<p>Referenced by <a class="el" href="RequestHandler_8cc_source.html#l00052">startHandlingRequest()</a>.</p>
 
 </div>
 </div>
@@ -555,7 +606,7 @@ template&lt;typename Controller &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string dqm4hep::net::RequestHandler::m_name</td>
+          <td class="memname">std::string dqm4hep::net::RequestHandler::m_name = {&quot;&quot;}</td>
         </tr>
       </table>
   </td>
@@ -567,9 +618,9 @@ template&lt;typename Controller &gt; </div>
 
 <p>The request handler name. </p>
 
-<p>Definition at line <a class="el" href="RequestHandler_8h_source.html#l00133">133</a> of file <a class="el" href="RequestHandler_8h_source.html">RequestHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="RequestHandler_8h_source.html#l00138">138</a> of file <a class="el" href="RequestHandler_8h_source.html">RequestHandler.h</a>.</p>
 
-<p>Referenced by <a class="el" href="RequestHandler_8cc_source.html#l00042">name()</a>.</p>
+<p>Referenced by <a class="el" href="RequestHandler_8cc_source.html#l00040">name()</a>.</p>
 
 </div>
 </div>
@@ -581,7 +632,7 @@ template&lt;typename Controller &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler_1_1Rpc.html">Rpc</a>* dqm4hep::net::RequestHandler::m_pRpc</td>
+          <td class="memname"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler_1_1Rpc.html">Rpc</a>* dqm4hep::net::RequestHandler::m_pRpc = {nullptr}</td>
         </tr>
       </table>
   </td>
@@ -591,9 +642,9 @@ template&lt;typename Controller &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="RequestHandler_8h_source.html#l00136">136</a> of file <a class="el" href="RequestHandler_8h_source.html">RequestHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="RequestHandler_8h_source.html#l00141">141</a> of file <a class="el" href="RequestHandler_8h_source.html">RequestHandler.h</a>.</p>
 
-<p>Referenced by <a class="el" href="RequestHandler_8cc_source.html#l00071">isHandlingRequest()</a>, <a class="el" href="RequestHandler_8cc_source.html#l00054">startHandlingRequest()</a>, and <a class="el" href="RequestHandler_8cc_source.html#l00062">stopHandlingRequest()</a>.</p>
+<p>Referenced by <a class="el" href="RequestHandler_8cc_source.html#l00069">isHandlingRequest()</a>, <a class="el" href="RequestHandler_8cc_source.html#l00052">startHandlingRequest()</a>, and <a class="el" href="RequestHandler_8cc_source.html#l00060">stopHandlingRequest()</a>.</p>
 
 </div>
 </div>
@@ -605,7 +656,7 @@ template&lt;typename Controller &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdqm4hep_1_1net_1_1Server.html">Server</a>* dqm4hep::net::RequestHandler::m_pServer</td>
+          <td class="memname"><a class="el" href="classdqm4hep_1_1net_1_1Server.html">Server</a>* dqm4hep::net::RequestHandler::m_pServer = {nullptr}</td>
         </tr>
       </table>
   </td>
@@ -617,9 +668,9 @@ template&lt;typename Controller &gt; </div>
 
 <p>The server in which the request handler is declared. </p>
 
-<p>Definition at line <a class="el" href="RequestHandler_8h_source.html#l00134">134</a> of file <a class="el" href="RequestHandler_8h_source.html">RequestHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="RequestHandler_8h_source.html#l00139">139</a> of file <a class="el" href="RequestHandler_8h_source.html">RequestHandler.h</a>.</p>
 
-<p>Referenced by <a class="el" href="RequestHandler_8cc_source.html#l00048">server()</a>.</p>
+<p>Referenced by <a class="el" href="RequestHandler_8cc_source.html#l00046">server()</a>.</p>
 
 </div>
 </div>
@@ -631,7 +682,7 @@ template&lt;typename Controller &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html#a7b99fc1e542ee3ff16323ff377fef4a5">RequestSignal</a> dqm4hep::net::RequestHandler::m_requestSignal</td>
+          <td class="memname"><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html#a7b99fc1e542ee3ff16323ff377fef4a5">RequestSignal</a> dqm4hep::net::RequestHandler::m_requestSignal = {}</td>
         </tr>
       </table>
   </td>
@@ -641,9 +692,9 @@ template&lt;typename Controller &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="RequestHandler_8h_source.html#l00135">135</a> of file <a class="el" href="RequestHandler_8h_source.html">RequestHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="RequestHandler_8h_source.html#l00140">140</a> of file <a class="el" href="RequestHandler_8h_source.html">RequestHandler.h</a>.</p>
 
-<p>Referenced by <a class="el" href="RequestHandler_8cc_source.html#l00083">handleRequest()</a>, <a class="el" href="RequestHandler_8cc_source.html#l00077">onRequest()</a>, and <a class="el" href="RequestHandler_8h_source.html#l00144">RequestHandler()</a>.</p>
+<p>Referenced by <a class="el" href="RequestHandler_8cc_source.html#l00081">handleRequest()</a>, <a class="el" href="RequestHandler_8cc_source.html#l00075">onRequest()</a>, and <a class="el" href="RequestHandler_8h_source.html#l00149">RequestHandler()</a>.</p>
 
 </div>
 </div>
@@ -654,7 +705,7 @@ template&lt;typename Controller &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 11 2018 13:45:39 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 22 2018 03:22:38 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -213,14 +213,13 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="NetBuffer_8cc_source.html#l00065">65</a> of file <a class="el" href="NetBuffer_8cc_source.html">NetBuffer.cc</a>.</p>
 
-<p>References <a class="el" href="NetBuffer_8h_source.html#l00094">m_pBuffer</a>, <a class="el" href="NetBuffer_8h_source.html#l00095">m_size</a>, and <a class="el" href="NetBuffer_8cc_source.html#l00059">size()</a>.</p>
+<p>References <a class="el" href="NetBuffer_8h_source.html#l00094">m_pBuffer</a>, and <a class="el" href="NetBuffer_8h_source.html#l00095">m_size</a>.</p>
 
 <p>Referenced by <a class="el" href="NetBuffer_8h_source.html#l00169">dqm4hep::net::BufferModelT&lt; std::string &gt;::BufferModelT()</a>, <a class="el" href="NetBuffer_8h_source.html#l00174">dqm4hep::net::BufferModelT&lt; std::string &gt;::copy()</a>, <a class="el" href="NetBuffer_8cc_source.html#l00079">dqm4hep::net::BufferModel::handle()</a>, <a class="el" href="NetBuffer_8h_source.html#l00179">dqm4hep::net::BufferModelT&lt; std::string &gt;::move()</a>, and <a class="el" href="NetBuffer_8cc_source.html#l00041">RawBuffer()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                         {</div>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                      {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#a6506c3a2037d978d3fe94039a3ba718e">m_pBuffer</a> = buffer;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#a50dd03af31f82bc70b689a649b6dd065">m_size</a> = <a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#adda91e0c982c2cb2a70f9ce5673cf850">size</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#a50dd03af31f82bc70b689a649b6dd065">m_size</a> = s;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RawBuffer_html_adda91e0c982c2cb2a70f9ce5673cf850"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RawBuffer.html#adda91e0c982c2cb2a70f9ce5673cf850">dqm4hep::net::RawBuffer::size</a></div><div class="ttdeci">size_t size() const </div><div class="ttdoc">Get the buffer size. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8cc_source.html#l00059">NetBuffer.cc:59</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1RawBuffer_html_a6506c3a2037d978d3fe94039a3ba718e"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RawBuffer.html#a6506c3a2037d978d3fe94039a3ba718e">dqm4hep::net::RawBuffer::m_pBuffer</a></div><div class="ttdeci">const char * m_pBuffer</div><div class="ttdoc">The buffer. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00094">NetBuffer.h:94</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1RawBuffer_html_a50dd03af31f82bc70b689a649b6dd065"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RawBuffer.html#a50dd03af31f82bc70b689a649b6dd065">dqm4hep::net::RawBuffer::m_size</a></div><div class="ttdeci">size_t m_size</div><div class="ttdoc">The buffer size. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00095">NetBuffer.h:95</a></div></div>
 </div><!-- fragment -->
@@ -343,8 +342,6 @@ Private Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="NetBuffer_8cc_source.html#l00059">59</a> of file <a class="el" href="NetBuffer_8cc_source.html">NetBuffer.cc</a>.</p>
 
 <p>References <a class="el" href="NetBuffer_8h_source.html#l00095">m_size</a>.</p>
-
-<p>Referenced by <a class="el" href="NetBuffer_8cc_source.html#l00065">adopt()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                 {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#a50dd03af31f82bc70b689a649b6dd065">m_size</a>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
@@ -412,7 +409,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 11 2018 13:45:39 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 22 2018 03:22:37 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

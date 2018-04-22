@@ -108,6 +108,10 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a855a76ac2d4493f23b0ca3f3324d3d99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1Service.html#a855a76ac2d4493f23b0ca3f3324d3d99">Service</a> (<a class="el" href="classdqm4hep_1_1net_1_1Server.html">Server</a> *pServer, const std::string &amp;<a class="el" href="classdqm4hep_1_1net_1_1Service.html#aa4113de41c2ddeb03f29030e858c06bf">name</a>)</td></tr>
 <tr class="memdesc:a855a76ac2d4493f23b0ca3f3324d3d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with service name.  <a href="#a855a76ac2d4493f23b0ca3f3324d3d99">More...</a><br/></td></tr>
 <tr class="separator:a855a76ac2d4493f23b0ca3f3324d3d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab53b6abc49510a6b275f1ac20749494a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1Service.html#ab53b6abc49510a6b275f1ac20749494a">Service</a> (const <a class="el" href="classdqm4hep_1_1net_1_1Service.html">Service</a> &amp;)=delete</td></tr>
+<tr class="separator:ab53b6abc49510a6b275f1ac20749494a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bbd3c13aa1c8196a55db141b29264a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdqm4hep_1_1net_1_1Service.html">Service</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1Service.html#a4bbd3c13aa1c8196a55db141b29264a2">operator=</a> (const <a class="el" href="classdqm4hep_1_1net_1_1Service.html">Service</a> &amp;)=delete</td></tr>
+<tr class="separator:a4bbd3c13aa1c8196a55db141b29264a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e3f61c88d370d08dfabd030e485566e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1Service.html#a3e3f61c88d370d08dfabd030e485566e">~Service</a> ()</td></tr>
 <tr class="memdesc:a3e3f61c88d370d08dfabd030e485566e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a3e3f61c88d370d08dfabd030e485566e">More...</a><br/></td></tr>
 <tr class="separator:a3e3f61c88d370d08dfabd030e485566e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,13 +129,13 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a1611bd74ea95b8e89aa5096d7710d942"><td class="memItemLeft" align="right" valign="top">DimService *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a></td></tr>
+<tr class="memitem:a1611bd74ea95b8e89aa5096d7710d942"><td class="memItemLeft" align="right" valign="top">DimService *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a> = {nullptr}</td></tr>
 <tr class="memdesc:a1611bd74ea95b8e89aa5096d7710d942"><td class="mdescLeft">&#160;</td><td class="mdescRight">The service implementation.  <a href="#a1611bd74ea95b8e89aa5096d7710d942">More...</a><br/></td></tr>
 <tr class="separator:a1611bd74ea95b8e89aa5096d7710d942"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a053f2c10cfe8e53b6e1247d478027dcb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1Service.html#a053f2c10cfe8e53b6e1247d478027dcb">m_name</a></td></tr>
+<tr class="memitem:a053f2c10cfe8e53b6e1247d478027dcb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1Service.html#a053f2c10cfe8e53b6e1247d478027dcb">m_name</a> = {&quot;&quot;}</td></tr>
 <tr class="memdesc:a053f2c10cfe8e53b6e1247d478027dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The service name.  <a href="#a053f2c10cfe8e53b6e1247d478027dcb">More...</a><br/></td></tr>
 <tr class="separator:a053f2c10cfe8e53b6e1247d478027dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89bf937ba2ff436f4a109e1b9b4780d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdqm4hep_1_1net_1_1Server.html">Server</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1Service.html#a89bf937ba2ff436f4a109e1b9b4780d6">m_pServer</a></td></tr>
+<tr class="memitem:a89bf937ba2ff436f4a109e1b9b4780d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdqm4hep_1_1net_1_1Server.html">Server</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1net_1_1Service.html#a89bf937ba2ff436f4a109e1b9b4780d6">m_pServer</a> = {nullptr}</td></tr>
 <tr class="memdesc:a89bf937ba2ff436f4a109e1b9b4780d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The server in which the service is declared.  <a href="#a89bf937ba2ff436f4a109e1b9b4780d6">More...</a><br/></td></tr>
 <tr class="separator:a89bf937ba2ff436f4a109e1b9b4780d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -186,14 +190,38 @@ Friends</h2></td></tr>
 </dl>
 
 <p>Definition at line <a class="el" href="Service_8cc_source.html#l00035">35</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                           : <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a>(<span class="keyword">nullptr</span>), <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a053f2c10cfe8e53b6e1247d478027dcb">m_name</a>(<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aa4113de41c2ddeb03f29030e858c06bf">name</a>), <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a89bf937ba2ff436f4a109e1b9b4780d6">m_pServer</a>(pServer) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="comment">/* nop */</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a89bf937ba2ff436f4a109e1b9b4780d6"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a89bf937ba2ff436f4a109e1b9b4780d6">dqm4hep::net::Service::m_pServer</a></div><div class="ttdeci">Server * m_pServer</div><div class="ttdoc">The server in which the service is declared. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00149">Service.h:149</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aa4113de41c2ddeb03f29030e858c06bf"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aa4113de41c2ddeb03f29030e858c06bf">dqm4hep::net::Service::name</a></div><div class="ttdeci">const std::string &amp; name() const </div><div class="ttdoc">Get the service name. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00047">Service.cc:47</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a053f2c10cfe8e53b6e1247d478027dcb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a053f2c10cfe8e53b6e1247d478027dcb">dqm4hep::net::Service::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdoc">The service name. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00148">Service.h:148</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a1611bd74ea95b8e89aa5096d7710d942"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">dqm4hep::net::Service::m_pService</a></div><div class="ttdeci">DimService * m_pService</div><div class="ttdoc">The service implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00147">Service.h:147</a></div></div>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                            : </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a053f2c10cfe8e53b6e1247d478027dcb">m_name</a>(sname), </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a89bf937ba2ff436f4a109e1b9b4780d6">m_pServer</a>(pServer) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="comment">/* nop */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a89bf937ba2ff436f4a109e1b9b4780d6"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a89bf937ba2ff436f4a109e1b9b4780d6">dqm4hep::net::Service::m_pServer</a></div><div class="ttdeci">Server * m_pServer</div><div class="ttdoc">The server in which the service is declared. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00151">Service.h:151</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a053f2c10cfe8e53b6e1247d478027dcb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a053f2c10cfe8e53b6e1247d478027dcb">dqm4hep::net::Service::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdoc">The service name. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00150">Service.h:150</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab53b6abc49510a6b275f1ac20749494a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dqm4hep::net::Service::Service </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdqm4hep_1_1net_1_1Service.html">Service</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a class="anchor" id="a3e3f61c88d370d08dfabd030e485566e"></a>
@@ -219,13 +247,13 @@ Friends</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p>Definition at line <a class="el" href="Service_8cc_source.html#l00041">41</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
+<p>Definition at line <a class="el" href="Service_8cc_source.html#l00043">43</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
 
-<p>References <a class="el" href="Service_8cc_source.html#l00067">disconnectService()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                      {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#a060c9cc7d81ac56f75afa9475b3f7811">disconnectService</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a060c9cc7d81ac56f75afa9475b3f7811"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a060c9cc7d81ac56f75afa9475b3f7811">dqm4hep::net::Service::disconnectService</a></div><div class="ttdeci">void disconnectService()</div><div class="ttdoc">Remove the actual service connection. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00067">Service.cc:67</a></div></div>
+<p>References <a class="el" href="Service_8cc_source.html#l00069">disconnectService()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                      {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#a060c9cc7d81ac56f75afa9475b3f7811">disconnectService</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a060c9cc7d81ac56f75afa9475b3f7811"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a060c9cc7d81ac56f75afa9475b3f7811">dqm4hep::net::Service::disconnectService</a></div><div class="ttdeci">void disconnectService()</div><div class="ttdoc">Remove the actual service connection. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00069">Service.cc:69</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -253,21 +281,21 @@ Friends</h2></td></tr>
 
 <p>Create the actual service connection. </p>
 
-<p>Definition at line <a class="el" href="Service_8cc_source.html#l00059">59</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
+<p>Definition at line <a class="el" href="Service_8cc_source.html#l00061">61</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
 
-<p>References <a class="el" href="NetBuffer_8h_source.html#l00048">dqm4hep::net::NullBuffer::buffer</a>, <a class="el" href="Service_8cc_source.html#l00076">isServiceConnected()</a>, <a class="el" href="Service_8h_source.html#l00148">m_name</a>, <a class="el" href="Service_8h_source.html#l00147">m_pService</a>, and <a class="el" href="NetBuffer_8h_source.html#l00049">dqm4hep::net::NullBuffer::size</a>.</p>
+<p>References <a class="el" href="NetBuffer_8h_source.html#l00048">dqm4hep::net::NullBuffer::buffer</a>, <a class="el" href="Service_8cc_source.html#l00078">isServiceConnected()</a>, <a class="el" href="Service_8h_source.html#l00150">m_name</a>, <a class="el" href="Service_8h_source.html#l00149">m_pService</a>, and <a class="el" href="NetBuffer_8h_source.html#l00049">dqm4hep::net::NullBuffer::size</a>.</p>
 
-<p>Referenced by <a class="el" href="Server_8cc_source.html#l00155">dqm4hep::net::Server::createService()</a>, and <a class="el" href="Server_8cc_source.html#l00202">dqm4hep::net::Server::startService()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                 {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#a918edb605ce41ee4a3db467f95688806">isServiceConnected</a>()) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a> = <span class="keyword">new</span> DimService((<span class="keywordtype">char</span> *)<a class="code" href="classdqm4hep_1_1net_1_1Service.html#a053f2c10cfe8e53b6e1247d478027dcb">m_name</a>.c_str(), <span class="stringliteral">&quot;C&quot;</span>, (<span class="keywordtype">char</span> *)<a class="code" href="structdqm4hep_1_1net_1_1NullBuffer.html#a0b906f72a1134abcbef30ecdf149a989">NullBuffer::buffer</a>, <a class="code" href="structdqm4hep_1_1net_1_1NullBuffer.html#a1921398637c5ed55ffe5f0978ba1ea60">NullBuffer::size</a>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<p>Referenced by <a class="el" href="Server_8cc_source.html#l00149">dqm4hep::net::Server::createService()</a>, and <a class="el" href="Server_8cc_source.html#l00196">dqm4hep::net::Server::startService()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                 {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#a918edb605ce41ee4a3db467f95688806">isServiceConnected</a>()) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a> = <span class="keyword">new</span> DimService((<span class="keywordtype">char</span> *)<a class="code" href="classdqm4hep_1_1net_1_1Service.html#a053f2c10cfe8e53b6e1247d478027dcb">m_name</a>.c_str(), <span class="stringliteral">&quot;C&quot;</span>, (<span class="keywordtype">char</span> *)<a class="code" href="structdqm4hep_1_1net_1_1NullBuffer.html#a0b906f72a1134abcbef30ecdf149a989">NullBuffer::buffer</a>, <a class="code" href="structdqm4hep_1_1net_1_1NullBuffer.html#a1921398637c5ed55ffe5f0978ba1ea60">NullBuffer::size</a>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
 <div class="ttc" id="structdqm4hep_1_1net_1_1NullBuffer_html_a0b906f72a1134abcbef30ecdf149a989"><div class="ttname"><a href="structdqm4hep_1_1net_1_1NullBuffer.html#a0b906f72a1134abcbef30ecdf149a989">dqm4hep::net::NullBuffer::buffer</a></div><div class="ttdeci">static const char buffer[2]</div><div class="ttdoc">The buffer. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00048">NetBuffer.h:48</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a053f2c10cfe8e53b6e1247d478027dcb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a053f2c10cfe8e53b6e1247d478027dcb">dqm4hep::net::Service::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdoc">The service name. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00148">Service.h:148</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a053f2c10cfe8e53b6e1247d478027dcb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a053f2c10cfe8e53b6e1247d478027dcb">dqm4hep::net::Service::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdoc">The service name. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00150">Service.h:150</a></div></div>
 <div class="ttc" id="structdqm4hep_1_1net_1_1NullBuffer_html_a1921398637c5ed55ffe5f0978ba1ea60"><div class="ttname"><a href="structdqm4hep_1_1net_1_1NullBuffer.html#a1921398637c5ed55ffe5f0978ba1ea60">dqm4hep::net::NullBuffer::size</a></div><div class="ttdeci">static const size_t size</div><div class="ttdoc">The buffer size. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00049">NetBuffer.h:49</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a1611bd74ea95b8e89aa5096d7710d942"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">dqm4hep::net::Service::m_pService</a></div><div class="ttdeci">DimService * m_pService</div><div class="ttdoc">The service implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00147">Service.h:147</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a918edb605ce41ee4a3db467f95688806"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a918edb605ce41ee4a3db467f95688806">dqm4hep::net::Service::isServiceConnected</a></div><div class="ttdeci">bool isServiceConnected() const </div><div class="ttdoc">Whether the service is connected. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00076">Service.cc:76</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a1611bd74ea95b8e89aa5096d7710d942"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">dqm4hep::net::Service::m_pService</a></div><div class="ttdeci">DimService * m_pService</div><div class="ttdoc">The service implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00149">Service.h:149</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a918edb605ce41ee4a3db467f95688806"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a918edb605ce41ee4a3db467f95688806">dqm4hep::net::Service::isServiceConnected</a></div><div class="ttdeci">bool isServiceConnected() const </div><div class="ttdoc">Whether the service is connected. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00078">Service.cc:78</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -294,19 +322,19 @@ Friends</h2></td></tr>
 
 <p>Remove the actual service connection. </p>
 
-<p>Definition at line <a class="el" href="Service_8cc_source.html#l00067">67</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
+<p>Definition at line <a class="el" href="Service_8cc_source.html#l00069">69</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
 
-<p>References <a class="el" href="Service_8cc_source.html#l00076">isServiceConnected()</a>, and <a class="el" href="Service_8h_source.html#l00147">m_pService</a>.</p>
+<p>References <a class="el" href="Service_8cc_source.html#l00078">isServiceConnected()</a>, and <a class="el" href="Service_8h_source.html#l00149">m_pService</a>.</p>
 
-<p>Referenced by <a class="el" href="Server_8cc_source.html#l00211">dqm4hep::net::Server::stopService()</a>, and <a class="el" href="Service_8cc_source.html#l00041">~Service()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                    {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#a918edb605ce41ee4a3db467f95688806">isServiceConnected</a>()) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">delete</span> <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a1611bd74ea95b8e89aa5096d7710d942"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">dqm4hep::net::Service::m_pService</a></div><div class="ttdeci">DimService * m_pService</div><div class="ttdoc">The service implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00147">Service.h:147</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a918edb605ce41ee4a3db467f95688806"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a918edb605ce41ee4a3db467f95688806">dqm4hep::net::Service::isServiceConnected</a></div><div class="ttdeci">bool isServiceConnected() const </div><div class="ttdoc">Whether the service is connected. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00076">Service.cc:76</a></div></div>
+<p>Referenced by <a class="el" href="Server_8cc_source.html#l00205">dqm4hep::net::Server::stopService()</a>, and <a class="el" href="Service_8cc_source.html#l00043">~Service()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                    {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#a918edb605ce41ee4a3db467f95688806">isServiceConnected</a>()) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">delete</span> <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a1611bd74ea95b8e89aa5096d7710d942"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">dqm4hep::net::Service::m_pService</a></div><div class="ttdeci">DimService * m_pService</div><div class="ttdoc">The service implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00149">Service.h:149</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a918edb605ce41ee4a3db467f95688806"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a918edb605ce41ee4a3db467f95688806">dqm4hep::net::Service::isServiceConnected</a></div><div class="ttdeci">bool isServiceConnected() const </div><div class="ttdoc">Whether the service is connected. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00078">Service.cc:78</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -333,15 +361,15 @@ Friends</h2></td></tr>
 
 <p>Whether the service is connected. </p>
 
-<p>Definition at line <a class="el" href="Service_8cc_source.html#l00076">76</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
+<p>Definition at line <a class="el" href="Service_8cc_source.html#l00078">78</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
 
-<p>References <a class="el" href="Service_8h_source.html#l00147">m_pService</a>.</p>
+<p>References <a class="el" href="Service_8h_source.html#l00149">m_pService</a>.</p>
 
-<p>Referenced by <a class="el" href="Service_8cc_source.html#l00059">connectService()</a>, <a class="el" href="Service_8cc_source.html#l00067">disconnectService()</a>, <a class="el" href="Service_8cc_source.html#l00106">sendData()</a>, <a class="el" href="Server_8cc_source.html#l00202">dqm4hep::net::Server::startService()</a>, and <a class="el" href="Server_8cc_source.html#l00211">dqm4hep::net::Server::stopService()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                           {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">return</span> (<a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a> != <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a1611bd74ea95b8e89aa5096d7710d942"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">dqm4hep::net::Service::m_pService</a></div><div class="ttdeci">DimService * m_pService</div><div class="ttdoc">The service implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00147">Service.h:147</a></div></div>
+<p>Referenced by <a class="el" href="Service_8cc_source.html#l00061">connectService()</a>, <a class="el" href="Service_8cc_source.html#l00069">disconnectService()</a>, <a class="el" href="Service_8cc_source.html#l00108">sendData()</a>, <a class="el" href="Server_8cc_source.html#l00196">dqm4hep::net::Server::startService()</a>, and <a class="el" href="Server_8cc_source.html#l00205">dqm4hep::net::Server::stopService()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                           {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">return</span> (<a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a> != <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a1611bd74ea95b8e89aa5096d7710d942"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">dqm4hep::net::Service::m_pService</a></div><div class="ttdeci">DimService * m_pService</div><div class="ttdoc">The service implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00149">Service.h:149</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -360,16 +388,38 @@ Friends</h2></td></tr>
 
 <p>Get the service name. </p>
 
-<p>Definition at line <a class="el" href="Service_8cc_source.html#l00047">47</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
+<p>Definition at line <a class="el" href="Service_8cc_source.html#l00049">49</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
 
-<p>References <a class="el" href="Service_8h_source.html#l00148">m_name</a>.</p>
-
-<p>Referenced by <a class="el" href="Server_8cc_source.html#l00341">dqm4hep::net::Server::handleServerInfoRequest()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                         {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a053f2c10cfe8e53b6e1247d478027dcb">m_name</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a053f2c10cfe8e53b6e1247d478027dcb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a053f2c10cfe8e53b6e1247d478027dcb">dqm4hep::net::Service::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdoc">The service name. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00148">Service.h:148</a></div></div>
+<p>References <a class="el" href="Service_8h_source.html#l00150">m_name</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                         {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a053f2c10cfe8e53b6e1247d478027dcb">m_name</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a053f2c10cfe8e53b6e1247d478027dcb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a053f2c10cfe8e53b6e1247d478027dcb">dqm4hep::net::Service::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdoc">The service name. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00150">Service.h:150</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4bbd3c13aa1c8196a55db141b29264a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdqm4hep_1_1net_1_1Service.html">Service</a>&amp; dqm4hep::net::Service::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdqm4hep_1_1net_1_1Service.html">Service</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a class="anchor" id="a636cd685d3d9cd76e20f21e7acedae31"></a>
@@ -398,17 +448,17 @@ template&lt;typename T &gt; </div>
 
 <p>Send a simple value. </p>
 
-<p>Definition at line <a class="el" href="Service_8h_source.html#l00156">156</a> of file <a class="el" href="Service_8h_source.html">Service.h</a>.</p>
+<p>Definition at line <a class="el" href="Service_8h_source.html#l00158">158</a> of file <a class="el" href="Service_8h_source.html">Service.h</a>.</p>
 
-<p>References <a class="el" href="NetBuffer_8h_source.html#l00291">dqm4hep::net::Buffer::createModel()</a>, <a class="el" href="Service_8cc_source.html#l00106">sendData()</a>, and <a class="el" href="NetBuffer_8cc_source.html#l00104">dqm4hep::net::Buffer::setModel()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                                            {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      Buffer buffer;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <span class="keyword">auto</span> model = buffer.createModel&lt;T&gt;();</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      model-&gt;copy(value);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      buffer.setModel(model);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">sendData</a>(buffer, std::vector&lt;int&gt;());</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aad4038bbf01ae5452b474d1a30d14022"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">dqm4hep::net::Service::sendData</a></div><div class="ttdeci">void sendData(const Buffer &amp;buffer, const std::vector&lt; int &gt; &amp;clientIds)</div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00106">Service.cc:106</a></div></div>
+<p>References <a class="el" href="NetBuffer_8h_source.html#l00291">dqm4hep::net::Buffer::createModel()</a>, <a class="el" href="Service_8cc_source.html#l00108">sendData()</a>, and <a class="el" href="NetBuffer_8cc_source.html#l00104">dqm4hep::net::Buffer::setModel()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                                            {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      Buffer buffer;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      <span class="keyword">auto</span> model = buffer.createModel&lt;T&gt;();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      model-&gt;copy(value);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      buffer.setModel(model);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">sendData</a>(buffer, std::vector&lt;int&gt;());</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aad4038bbf01ae5452b474d1a30d14022"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">dqm4hep::net::Service::sendData</a></div><div class="ttdeci">void sendData(const Buffer &amp;buffer, const std::vector&lt; int &gt; &amp;clientIds)</div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00108">Service.cc:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -448,14 +498,14 @@ template&lt;typename T &gt; </div>
 
 <p>Send a simple value to a specific client. </p>
 
-<p>Definition at line <a class="el" href="Service_8h_source.html#l00175">175</a> of file <a class="el" href="Service_8h_source.html">Service.h</a>.</p>
+<p>Definition at line <a class="el" href="Service_8h_source.html#l00177">177</a> of file <a class="el" href="Service_8h_source.html">Service.h</a>.</p>
 
-<p>References <a class="el" href="Service_8cc_source.html#l00106">sendData()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                                                          {</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      Buffer buffer(value);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">sendData</a>(buffer, std::vector&lt;int&gt;(1, clientId));</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aad4038bbf01ae5452b474d1a30d14022"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">dqm4hep::net::Service::sendData</a></div><div class="ttdeci">void sendData(const Buffer &amp;buffer, const std::vector&lt; int &gt; &amp;clientIds)</div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00106">Service.cc:106</a></div></div>
+<p>References <a class="el" href="Service_8cc_source.html#l00108">sendData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                                          {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      Buffer buffer(value);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">sendData</a>(buffer, std::vector&lt;int&gt;(1, clientId));</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aad4038bbf01ae5452b474d1a30d14022"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">dqm4hep::net::Service::sendData</a></div><div class="ttdeci">void sendData(const Buffer &amp;buffer, const std::vector&lt; int &gt; &amp;clientIds)</div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00108">Service.cc:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -495,14 +545,14 @@ template&lt;typename T &gt; </div>
 
 <p>Send a simple value to a specific list of clients. </p>
 
-<p>Definition at line <a class="el" href="Service_8h_source.html#l00191">191</a> of file <a class="el" href="Service_8h_source.html">Service.h</a>.</p>
+<p>Definition at line <a class="el" href="Service_8h_source.html#l00193">193</a> of file <a class="el" href="Service_8h_source.html">Service.h</a>.</p>
 
-<p>References <a class="el" href="Service_8cc_source.html#l00106">sendData()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                                                                             {</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      Buffer buffer(value);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">sendData</a>(buffer, clientIds);</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aad4038bbf01ae5452b474d1a30d14022"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">dqm4hep::net::Service::sendData</a></div><div class="ttdeci">void sendData(const Buffer &amp;buffer, const std::vector&lt; int &gt; &amp;clientIds)</div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00106">Service.cc:106</a></div></div>
+<p>References <a class="el" href="Service_8cc_source.html#l00108">sendData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                                                                             {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      Buffer buffer(value);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">sendData</a>(buffer, clientIds);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aad4038bbf01ae5452b474d1a30d14022"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">dqm4hep::net::Service::sendData</a></div><div class="ttdeci">void sendData(const Buffer &amp;buffer, const std::vector&lt; int &gt; &amp;clientIds)</div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00108">Service.cc:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -542,14 +592,14 @@ template&lt;typename T &gt; </div>
 
 <p>Send an array of simple values. </p>
 
-<p>Definition at line <a class="el" href="Service_8h_source.html#l00167">167</a> of file <a class="el" href="Service_8h_source.html">Service.h</a>.</p>
+<p>Definition at line <a class="el" href="Service_8h_source.html#l00169">169</a> of file <a class="el" href="Service_8h_source.html">Service.h</a>.</p>
 
-<p>References <a class="el" href="Service_8cc_source.html#l00106">sendData()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                                                                   {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;      Buffer buffer(value, nElements);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">sendData</a>(buffer, std::vector&lt;int&gt;());</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aad4038bbf01ae5452b474d1a30d14022"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">dqm4hep::net::Service::sendData</a></div><div class="ttdeci">void sendData(const Buffer &amp;buffer, const std::vector&lt; int &gt; &amp;clientIds)</div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00106">Service.cc:106</a></div></div>
+<p>References <a class="el" href="Service_8cc_source.html#l00108">sendData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                                                                   {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      Buffer buffer(value, nElements);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">sendData</a>(buffer, std::vector&lt;int&gt;());</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aad4038bbf01ae5452b474d1a30d14022"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">dqm4hep::net::Service::sendData</a></div><div class="ttdeci">void sendData(const Buffer &amp;buffer, const std::vector&lt; int &gt; &amp;clientIds)</div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00108">Service.cc:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -595,14 +645,14 @@ template&lt;typename T &gt; </div>
 
 <p>Send an array of simple values to a specific client. </p>
 
-<p>Definition at line <a class="el" href="Service_8h_source.html#l00183">183</a> of file <a class="el" href="Service_8h_source.html">Service.h</a>.</p>
+<p>Definition at line <a class="el" href="Service_8h_source.html#l00185">185</a> of file <a class="el" href="Service_8h_source.html">Service.h</a>.</p>
 
-<p>References <a class="el" href="Service_8cc_source.html#l00106">sendData()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                                                                                 {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;      Buffer buffer(value, nElements);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">sendData</a>(buffer, std::vector&lt;int&gt;(1, clientId));</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aad4038bbf01ae5452b474d1a30d14022"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">dqm4hep::net::Service::sendData</a></div><div class="ttdeci">void sendData(const Buffer &amp;buffer, const std::vector&lt; int &gt; &amp;clientIds)</div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00106">Service.cc:106</a></div></div>
+<p>References <a class="el" href="Service_8cc_source.html#l00108">sendData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                                                                                 {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      Buffer buffer(value, nElements);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">sendData</a>(buffer, std::vector&lt;int&gt;(1, clientId));</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aad4038bbf01ae5452b474d1a30d14022"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">dqm4hep::net::Service::sendData</a></div><div class="ttdeci">void sendData(const Buffer &amp;buffer, const std::vector&lt; int &gt; &amp;clientIds)</div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00108">Service.cc:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -648,14 +698,14 @@ template&lt;typename T &gt; </div>
 
 <p>Send an array of simple values to a specific list of clients. </p>
 
-<p>Definition at line <a class="el" href="Service_8h_source.html#l00199">199</a> of file <a class="el" href="Service_8h_source.html">Service.h</a>.</p>
+<p>Definition at line <a class="el" href="Service_8h_source.html#l00201">201</a> of file <a class="el" href="Service_8h_source.html">Service.h</a>.</p>
 
-<p>References <a class="el" href="Service_8cc_source.html#l00106">sendData()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                                                                                                    {</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      Buffer buffer(value, nElements);</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">sendData</a>(buffer, clientIds);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aad4038bbf01ae5452b474d1a30d14022"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">dqm4hep::net::Service::sendData</a></div><div class="ttdeci">void sendData(const Buffer &amp;buffer, const std::vector&lt; int &gt; &amp;clientIds)</div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00106">Service.cc:106</a></div></div>
+<p>References <a class="el" href="Service_8cc_source.html#l00108">sendData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                                                                                                    {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      Buffer buffer(value, nElements);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">sendData</a>(buffer, clientIds);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aad4038bbf01ae5452b474d1a30d14022"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">dqm4hep::net::Service::sendData</a></div><div class="ttdeci">void sendData(const Buffer &amp;buffer, const std::vector&lt; int &gt; &amp;clientIds)</div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00108">Service.cc:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -686,15 +736,15 @@ template&lt;typename T &gt; </div>
 <p>Send a raw buffer. </p>
 <p>The buffer is owned by the caller </p>
 
-<p>Definition at line <a class="el" href="Service_8cc_source.html#l00082">82</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
+<p>Definition at line <a class="el" href="Service_8cc_source.html#l00084">84</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
 
-<p>References <a class="el" href="NetBuffer_8cc_source.html#l00130">dqm4hep::net::Buffer::adopt()</a>, and <a class="el" href="Service_8cc_source.html#l00106">sendData()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                                         {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      Buffer buffer;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      buffer.adopt((<span class="keyword">const</span> <span class="keywordtype">char</span> *)ptr, size);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">sendData</a>(buffer, std::vector&lt;int&gt;());</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aad4038bbf01ae5452b474d1a30d14022"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">dqm4hep::net::Service::sendData</a></div><div class="ttdeci">void sendData(const Buffer &amp;buffer, const std::vector&lt; int &gt; &amp;clientIds)</div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00106">Service.cc:106</a></div></div>
+<p>References <a class="el" href="NetBuffer_8cc_source.html#l00130">dqm4hep::net::Buffer::adopt()</a>, and <a class="el" href="Service_8cc_source.html#l00108">sendData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                                         {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      Buffer buffer;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      buffer.adopt((<span class="keyword">const</span> <span class="keywordtype">char</span> *)ptr, size);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">sendData</a>(buffer, std::vector&lt;int&gt;());</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aad4038bbf01ae5452b474d1a30d14022"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">dqm4hep::net::Service::sendData</a></div><div class="ttdeci">void sendData(const Buffer &amp;buffer, const std::vector&lt; int &gt; &amp;clientIds)</div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00108">Service.cc:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -731,15 +781,15 @@ template&lt;typename T &gt; </div>
 <p>Send a raw buffer to a specific client. </p>
 <p>The buffer is owned by the caller </p>
 
-<p>Definition at line <a class="el" href="Service_8cc_source.html#l00090">90</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
+<p>Definition at line <a class="el" href="Service_8cc_source.html#l00092">92</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
 
-<p>References <a class="el" href="NetBuffer_8cc_source.html#l00130">dqm4hep::net::Buffer::adopt()</a>, and <a class="el" href="Service_8cc_source.html#l00106">sendData()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                                                       {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      Buffer buffer;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      buffer.adopt((<span class="keyword">const</span> <span class="keywordtype">char</span> *)ptr, size);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">sendData</a>(buffer, std::vector&lt;int&gt;(1, clientId));</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aad4038bbf01ae5452b474d1a30d14022"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">dqm4hep::net::Service::sendData</a></div><div class="ttdeci">void sendData(const Buffer &amp;buffer, const std::vector&lt; int &gt; &amp;clientIds)</div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00106">Service.cc:106</a></div></div>
+<p>References <a class="el" href="NetBuffer_8cc_source.html#l00130">dqm4hep::net::Buffer::adopt()</a>, and <a class="el" href="Service_8cc_source.html#l00108">sendData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                                                       {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      Buffer buffer;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      buffer.adopt((<span class="keyword">const</span> <span class="keywordtype">char</span> *)ptr, size);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">sendData</a>(buffer, std::vector&lt;int&gt;(1, clientId));</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aad4038bbf01ae5452b474d1a30d14022"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">dqm4hep::net::Service::sendData</a></div><div class="ttdeci">void sendData(const Buffer &amp;buffer, const std::vector&lt; int &gt; &amp;clientIds)</div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00108">Service.cc:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -776,15 +826,15 @@ template&lt;typename T &gt; </div>
 <p>Send a raw buffer to a specific list of clients. </p>
 <p>The buffer is owned by the caller </p>
 
-<p>Definition at line <a class="el" href="Service_8cc_source.html#l00098">98</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
+<p>Definition at line <a class="el" href="Service_8cc_source.html#l00100">100</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
 
-<p>References <a class="el" href="NetBuffer_8cc_source.html#l00130">dqm4hep::net::Buffer::adopt()</a>, and <a class="el" href="Service_8cc_source.html#l00106">sendData()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                                                                          {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      Buffer buffer;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      buffer.adopt((<span class="keyword">const</span> <span class="keywordtype">char</span> *)ptr, size);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">sendData</a>(buffer, clientIds);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aad4038bbf01ae5452b474d1a30d14022"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">dqm4hep::net::Service::sendData</a></div><div class="ttdeci">void sendData(const Buffer &amp;buffer, const std::vector&lt; int &gt; &amp;clientIds)</div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00106">Service.cc:106</a></div></div>
+<p>References <a class="el" href="NetBuffer_8cc_source.html#l00130">dqm4hep::net::Buffer::adopt()</a>, and <a class="el" href="Service_8cc_source.html#l00108">sendData()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                                                                          {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      Buffer buffer;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      buffer.adopt((<span class="keyword">const</span> <span class="keywordtype">char</span> *)ptr, size);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">sendData</a>(buffer, clientIds);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_aad4038bbf01ae5452b474d1a30d14022"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#aad4038bbf01ae5452b474d1a30d14022">dqm4hep::net::Service::sendData</a></div><div class="ttdeci">void sendData(const Buffer &amp;buffer, const std::vector&lt; int &gt; &amp;clientIds)</div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00108">Service.cc:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -820,35 +870,35 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Service_8cc_source.html#l00106">106</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
+<p>Definition at line <a class="el" href="Service_8cc_source.html#l00108">108</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
 
-<p>References <a class="el" href="NetBuffer_8cc_source.html#l00112">dqm4hep::net::Buffer::begin()</a>, <a class="el" href="NetBuffer_8h_source.html#l00048">dqm4hep::net::NullBuffer::buffer</a>, <a class="el" href="Service_8cc_source.html#l00076">isServiceConnected()</a>, <a class="el" href="Service_8h_source.html#l00147">m_pService</a>, <a class="el" href="NetBuffer_8h_source.html#l00049">dqm4hep::net::NullBuffer::size</a>, and <a class="el" href="NetBuffer_8cc_source.html#l00124">dqm4hep::net::Buffer::size()</a>.</p>
+<p>References <a class="el" href="NetBuffer_8cc_source.html#l00112">dqm4hep::net::Buffer::begin()</a>, <a class="el" href="NetBuffer_8h_source.html#l00048">dqm4hep::net::NullBuffer::buffer</a>, <a class="el" href="Service_8cc_source.html#l00078">isServiceConnected()</a>, <a class="el" href="Service_8h_source.html#l00149">m_pService</a>, <a class="el" href="NetBuffer_8h_source.html#l00049">dqm4hep::net::NullBuffer::size</a>, and <a class="el" href="NetBuffer_8cc_source.html#l00124">dqm4hep::net::Buffer::size()</a>.</p>
 
-<p>Referenced by <a class="el" href="Service_8h_source.html#l00156">send()</a>, <a class="el" href="Service_8h_source.html#l00167">sendArray()</a>, and <a class="el" href="Service_8cc_source.html#l00082">sendBuffer()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                                                                {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#a918edb605ce41ee4a3db467f95688806">isServiceConnected</a>())</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">throw</span>; <span class="comment">// TODO implement exceptions</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <span class="keywordflow">if</span> (clientIds.empty()) {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a>-&gt;updateService((<span class="keywordtype">void</span> *)buffer.begin(), buffer.size());</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a>-&gt;itsData = (<span class="keywordtype">void</span> *)<a class="code" href="structdqm4hep_1_1net_1_1NullBuffer.html#a0b906f72a1134abcbef30ecdf149a989">NullBuffer::buffer</a>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a>-&gt;itsSize = <a class="code" href="structdqm4hep_1_1net_1_1NullBuffer.html#a1921398637c5ed55ffe5f0978ba1ea60">NullBuffer::size</a>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        std::vector&lt;int&gt; clientIdList(clientIds);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">if</span> (clientIdList.back() != 0)</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;          clientIdList.push_back(0);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordtype">int</span> *clientIdsArray = &amp;clientIdList[0];</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a>-&gt;selectiveUpdateService((<span class="keywordtype">void</span> *)buffer.begin(), buffer.size(), clientIdsArray);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a>-&gt;itsData = (<span class="keywordtype">void</span> *)<a class="code" href="structdqm4hep_1_1net_1_1NullBuffer.html#a0b906f72a1134abcbef30ecdf149a989">NullBuffer::buffer</a>;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a>-&gt;itsSize = <a class="code" href="structdqm4hep_1_1net_1_1NullBuffer.html#a1921398637c5ed55ffe5f0978ba1ea60">NullBuffer::size</a>;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      }</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
+<p>Referenced by <a class="el" href="Service_8h_source.html#l00158">send()</a>, <a class="el" href="Service_8h_source.html#l00169">sendArray()</a>, and <a class="el" href="Service_8cc_source.html#l00084">sendBuffer()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                                                                {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="classdqm4hep_1_1net_1_1Service.html#a918edb605ce41ee4a3db467f95688806">isServiceConnected</a>())</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">throw</span>; <span class="comment">// TODO implement exceptions</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="keywordflow">if</span> (clientIds.empty()) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a>-&gt;updateService((<span class="keywordtype">void</span> *)buffer.begin(), buffer.size());</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a>-&gt;itsData = (<span class="keywordtype">void</span> *)<a class="code" href="structdqm4hep_1_1net_1_1NullBuffer.html#a0b906f72a1134abcbef30ecdf149a989">NullBuffer::buffer</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a>-&gt;itsSize = <a class="code" href="structdqm4hep_1_1net_1_1NullBuffer.html#a1921398637c5ed55ffe5f0978ba1ea60">NullBuffer::size</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        std::vector&lt;int&gt; clientIdList(clientIds);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">if</span> (clientIdList.back() != 0)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;          clientIdList.push_back(0);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordtype">int</span> *clientIdsArray = &amp;clientIdList[0];</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a>-&gt;selectiveUpdateService((<span class="keywordtype">void</span> *)buffer.begin(), buffer.size(), clientIdsArray);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a>-&gt;itsData = (<span class="keywordtype">void</span> *)<a class="code" href="structdqm4hep_1_1net_1_1NullBuffer.html#a0b906f72a1134abcbef30ecdf149a989">NullBuffer::buffer</a>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">m_pService</a>-&gt;itsSize = <a class="code" href="structdqm4hep_1_1net_1_1NullBuffer.html#a1921398637c5ed55ffe5f0978ba1ea60">NullBuffer::size</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
 <div class="ttc" id="structdqm4hep_1_1net_1_1NullBuffer_html_a0b906f72a1134abcbef30ecdf149a989"><div class="ttname"><a href="structdqm4hep_1_1net_1_1NullBuffer.html#a0b906f72a1134abcbef30ecdf149a989">dqm4hep::net::NullBuffer::buffer</a></div><div class="ttdeci">static const char buffer[2]</div><div class="ttdoc">The buffer. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00048">NetBuffer.h:48</a></div></div>
 <div class="ttc" id="structdqm4hep_1_1net_1_1NullBuffer_html_a1921398637c5ed55ffe5f0978ba1ea60"><div class="ttname"><a href="structdqm4hep_1_1net_1_1NullBuffer.html#a1921398637c5ed55ffe5f0978ba1ea60">dqm4hep::net::NullBuffer::size</a></div><div class="ttdeci">static const size_t size</div><div class="ttdoc">The buffer size. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00049">NetBuffer.h:49</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a1611bd74ea95b8e89aa5096d7710d942"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">dqm4hep::net::Service::m_pService</a></div><div class="ttdeci">DimService * m_pService</div><div class="ttdoc">The service implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00147">Service.h:147</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a918edb605ce41ee4a3db467f95688806"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a918edb605ce41ee4a3db467f95688806">dqm4hep::net::Service::isServiceConnected</a></div><div class="ttdeci">bool isServiceConnected() const </div><div class="ttdoc">Whether the service is connected. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00076">Service.cc:76</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a1611bd74ea95b8e89aa5096d7710d942"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a1611bd74ea95b8e89aa5096d7710d942">dqm4hep::net::Service::m_pService</a></div><div class="ttdeci">DimService * m_pService</div><div class="ttdoc">The service implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00149">Service.h:149</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a918edb605ce41ee4a3db467f95688806"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a918edb605ce41ee4a3db467f95688806">dqm4hep::net::Service::isServiceConnected</a></div><div class="ttdeci">bool isServiceConnected() const </div><div class="ttdoc">Whether the service is connected. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8cc_source.html#l00078">Service.cc:78</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -867,13 +917,13 @@ template&lt;typename T &gt; </div>
 
 <p>Get the server in which the service is declared. </p>
 
-<p>Definition at line <a class="el" href="Service_8cc_source.html#l00053">53</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
+<p>Definition at line <a class="el" href="Service_8cc_source.html#l00055">55</a> of file <a class="el" href="Service_8cc_source.html">Service.cc</a>.</p>
 
-<p>References <a class="el" href="Service_8h_source.html#l00149">m_pServer</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                  {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a89bf937ba2ff436f4a109e1b9b4780d6">m_pServer</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a89bf937ba2ff436f4a109e1b9b4780d6"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a89bf937ba2ff436f4a109e1b9b4780d6">dqm4hep::net::Service::m_pServer</a></div><div class="ttdeci">Server * m_pServer</div><div class="ttdoc">The server in which the service is declared. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00149">Service.h:149</a></div></div>
+<p>References <a class="el" href="Service_8h_source.html#l00151">m_pServer</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                  {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1net_1_1Service.html#a89bf937ba2ff436f4a109e1b9b4780d6">m_pServer</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Service_html_a89bf937ba2ff436f4a109e1b9b4780d6"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Service.html#a89bf937ba2ff436f4a109e1b9b4780d6">dqm4hep::net::Service::m_pServer</a></div><div class="ttdeci">Server * m_pServer</div><div class="ttdoc">The server in which the service is declared. </div><div class="ttdef"><b>Definition:</b> <a href="Service_8h_source.html#l00151">Service.h:151</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -909,7 +959,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string dqm4hep::net::Service::m_name</td>
+          <td class="memname">std::string dqm4hep::net::Service::m_name = {&quot;&quot;}</td>
         </tr>
       </table>
   </td>
@@ -921,9 +971,9 @@ template&lt;typename T &gt; </div>
 
 <p>The service name. </p>
 
-<p>Definition at line <a class="el" href="Service_8h_source.html#l00148">148</a> of file <a class="el" href="Service_8h_source.html">Service.h</a>.</p>
+<p>Definition at line <a class="el" href="Service_8h_source.html#l00150">150</a> of file <a class="el" href="Service_8h_source.html">Service.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Service_8cc_source.html#l00059">connectService()</a>, and <a class="el" href="Service_8cc_source.html#l00047">name()</a>.</p>
+<p>Referenced by <a class="el" href="Service_8cc_source.html#l00061">connectService()</a>, and <a class="el" href="Service_8cc_source.html#l00049">name()</a>.</p>
 
 </div>
 </div>
@@ -935,7 +985,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdqm4hep_1_1net_1_1Server.html">Server</a>* dqm4hep::net::Service::m_pServer</td>
+          <td class="memname"><a class="el" href="classdqm4hep_1_1net_1_1Server.html">Server</a>* dqm4hep::net::Service::m_pServer = {nullptr}</td>
         </tr>
       </table>
   </td>
@@ -947,9 +997,9 @@ template&lt;typename T &gt; </div>
 
 <p>The server in which the service is declared. </p>
 
-<p>Definition at line <a class="el" href="Service_8h_source.html#l00149">149</a> of file <a class="el" href="Service_8h_source.html">Service.h</a>.</p>
+<p>Definition at line <a class="el" href="Service_8h_source.html#l00151">151</a> of file <a class="el" href="Service_8h_source.html">Service.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Service_8cc_source.html#l00053">server()</a>.</p>
+<p>Referenced by <a class="el" href="Service_8cc_source.html#l00055">server()</a>.</p>
 
 </div>
 </div>
@@ -961,7 +1011,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">DimService* dqm4hep::net::Service::m_pService</td>
+          <td class="memname">DimService* dqm4hep::net::Service::m_pService = {nullptr}</td>
         </tr>
       </table>
   </td>
@@ -973,9 +1023,9 @@ template&lt;typename T &gt; </div>
 
 <p>The service implementation. </p>
 
-<p>Definition at line <a class="el" href="Service_8h_source.html#l00147">147</a> of file <a class="el" href="Service_8h_source.html">Service.h</a>.</p>
+<p>Definition at line <a class="el" href="Service_8h_source.html#l00149">149</a> of file <a class="el" href="Service_8h_source.html">Service.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Service_8cc_source.html#l00059">connectService()</a>, <a class="el" href="Service_8cc_source.html#l00067">disconnectService()</a>, <a class="el" href="Service_8cc_source.html#l00076">isServiceConnected()</a>, and <a class="el" href="Service_8cc_source.html#l00106">sendData()</a>.</p>
+<p>Referenced by <a class="el" href="Service_8cc_source.html#l00061">connectService()</a>, <a class="el" href="Service_8cc_source.html#l00069">disconnectService()</a>, <a class="el" href="Service_8cc_source.html#l00078">isServiceConnected()</a>, and <a class="el" href="Service_8cc_source.html#l00108">sendData()</a>.</p>
 
 </div>
 </div>
@@ -986,7 +1036,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 11 2018 13:45:40 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 22 2018 03:22:38 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
