@@ -51,50 +51,44 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classdqm4hep_1_1core_1_1EventStreamer-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dqm4hep::core::EventStreamer Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">dqm4hep::core::EventStreamer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classdqm4hep_1_1core_1_1EventStreamer.html" title="EventStreamer class. ">EventStreamer</a> class.  
- <a href="classdqm4hep_1_1core_1_1EventStreamer.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="EventStreamer_8h_source.html">EventStreamer.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for dqm4hep::core::EventStreamer:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classdqm4hep_1_1core_1_1EventStreamer.png" usemap="#dqm4hep::core::EventStreamer_map" alt=""/>
-  <map id="dqm4hep::core::EventStreamer_map" name="dqm4hep::core::EventStreamer_map">
-<area href="classdqm4hep_1_1core_1_1GenericEventStreamer.html" title="GenericEventStreamer class. " alt="dqm4hep::core::GenericEventStreamer" shape="rect" coords="0,56,228,80"/>
-</map>
- </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5002c2e973f8dd80ec9b1c336460848d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1EventStreamer.html#a5002c2e973f8dd80ec9b1c336460848d">~EventStreamer</a> ()=default</td></tr>
-<tr class="memdesc:a5002c2e973f8dd80ec9b1c336460848d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a5002c2e973f8dd80ec9b1c336460848d">More...</a><br/></td></tr>
-<tr class="separator:a5002c2e973f8dd80ec9b1c336460848d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32ac0fb0637b38e432d5beac40218c5f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedqm4hep_1_1core.html#a71737b5d3e542e31d80c402f3d1befa7">EventPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1EventStreamer.html#a32ac0fb0637b38e432d5beac40218c5f">createEvent</a> () const =0</td></tr>
-<tr class="memdesc:a32ac0fb0637b38e432d5beac40218c5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method to create the corresponding event to this streamer.  <a href="#a32ac0fb0637b38e432d5beac40218c5f">More...</a><br/></td></tr>
-<tr class="separator:a32ac0fb0637b38e432d5beac40218c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38a29156cb28f32509f97da98d08f7c2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1EventStreamer.html#a38a29156cb28f32509f97da98d08f7c2">write</a> (const <a class="el" href="namespacedqm4hep_1_1core.html#a71737b5d3e542e31d80c402f3d1befa7">EventPtr</a> &amp;event, xdrstream::IODevice *pDevice)=0</td></tr>
-<tr class="memdesc:a38a29156cb28f32509f97da98d08f7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize an event object and store it in the data stream.  <a href="#a38a29156cb28f32509f97da98d08f7c2">More...</a><br/></td></tr>
-<tr class="separator:a38a29156cb28f32509f97da98d08f7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62b95af9a22c1b227c6637a40aacfac0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1EventStreamer.html#a62b95af9a22c1b227c6637a40aacfac0">read</a> (<a class="el" href="namespacedqm4hep_1_1core.html#a71737b5d3e542e31d80c402f3d1befa7">EventPtr</a> &amp;event, xdrstream::IODevice *pDevice)=0</td></tr>
-<tr class="memdesc:a62b95af9a22c1b227c6637a40aacfac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-serialize an event given from the data stream.  <a href="#a62b95af9a22c1b227c6637a40aacfac0">More...</a><br/></td></tr>
-<tr class="separator:a62b95af9a22c1b227c6637a40aacfac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae58bf9bb465bc0b6ab74ec07d1ca4e21"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1EventStreamer.html#ae58bf9bb465bc0b6ab74ec07d1ca4e21">write</a> (const <a class="el" href="namespacedqm4hep_1_1core.html#a71737b5d3e542e31d80c402f3d1befa7">EventPtr</a> &amp;event, const std::string &amp;subEventIdentifier, xdrstream::IODevice *pDevice)</td></tr>
-<tr class="memdesc:ae58bf9bb465bc0b6ab74ec07d1ca4e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize a part of a <a class="el" href="classdqm4hep_1_1core_1_1Event.html" title="Event class. ">Event</a> object identified by the reg exp 'subEventIdentifier' and store it in the data stream.  <a href="#ae58bf9bb465bc0b6ab74ec07d1ca4e21">More...</a><br/></td></tr>
-<tr class="separator:ae58bf9bb465bc0b6ab74ec07d1ca4e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c5d3adc2cd08330682b5eecc13fef40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1EventStreamer.html#a1c5d3adc2cd08330682b5eecc13fef40">EventStreamer</a> ()=default</td></tr>
+<tr class="memdesc:a1c5d3adc2cd08330682b5eecc13fef40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a1c5d3adc2cd08330682b5eecc13fef40">More...</a><br/></td></tr>
+<tr class="separator:a1c5d3adc2cd08330682b5eecc13fef40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae87932970fd0476255b0758e7527891d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1EventStreamer.html#ae87932970fd0476255b0758e7527891d">~EventStreamer</a> ()=default</td></tr>
+<tr class="memdesc:ae87932970fd0476255b0758e7527891d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <a href="#ae87932970fd0476255b0758e7527891d">More...</a><br/></td></tr>
+<tr class="separator:ae87932970fd0476255b0758e7527891d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410c80530be38baf5590b985749c04d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1EventStreamer.html#a410c80530be38baf5590b985749c04d7">writeEvent</a> (<a class="el" href="namespacedqm4hep_1_1core.html#a71737b5d3e542e31d80c402f3d1befa7">EventPtr</a> event, xdrstream::IODevice *device)</td></tr>
+<tr class="memdesc:a410c80530be38baf5590b985749c04d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write an event using an xdrstream device.  <a href="#a410c80530be38baf5590b985749c04d7">More...</a><br/></td></tr>
+<tr class="separator:a410c80530be38baf5590b985749c04d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ce3a0c1ba8734adfb547b7a00f7598"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1EventStreamer.html#ad9ce3a0c1ba8734adfb547b7a00f7598">readEvent</a> (<a class="el" href="namespacedqm4hep_1_1core.html#a71737b5d3e542e31d80c402f3d1befa7">EventPtr</a> &amp;event, xdrstream::IODevice *pDevice)</td></tr>
+<tr class="memdesc:ad9ce3a0c1ba8734adfb547b7a00f7598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read an event using an xdrstream device.  <a href="#ad9ce3a0c1ba8734adfb547b7a00f7598">More...</a><br/></td></tr>
+<tr class="separator:ad9ce3a0c1ba8734adfb547b7a00f7598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab1e22d96f77fbf01e2c4a45a45a378bd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a> = {&quot;&quot;}</td></tr>
+<tr class="memdesc:ab1e22d96f77fbf01e2c4a45a45a378bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current event streamer name in use.  <a href="#ab1e22d96f77fbf01e2c4a45a45a378bd">More...</a><br/></td></tr>
+<tr class="separator:ab1e22d96f77fbf01e2c4a45a45a378bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add34cd8a036703310045ef7e0104f464"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedqm4hep_1_1core.html#a46d720513ee225a7afea15b280abfe30">EventStreamerPluginPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> = {nullptr}</td></tr>
+<tr class="memdesc:add34cd8a036703310045ef7e0104f464"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current event streamer in use.  <a href="#add34cd8a036703310045ef7e0104f464">More...</a><br/></td></tr>
+<tr class="separator:add34cd8a036703310045ef7e0104f464"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classdqm4hep_1_1core_1_1EventStreamer.html" title="EventStreamer class. ">EventStreamer</a> class. </p>
-
-<p>Definition at line <a class="el" href="EventStreamer_8h_source.html#l00047">47</a> of file <a class="el" href="EventStreamer_8h_source.html">EventStreamer.h</a>.</p>
+<div class="textblock">
+<p>Definition at line <a class="el" href="EventStreamer_8h_source.html#l00045">45</a> of file <a class="el" href="EventStreamer_8h_source.html">EventStreamer.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a5002c2e973f8dd80ec9b1c336460848d"></a>
+<a class="anchor" id="a1c5d3adc2cd08330682b5eecc13fef40"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -102,7 +96,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual dqm4hep::core::EventStreamer::~EventStreamer </td>
+          <td class="memname">dqm4hep::core::EventStreamer::EventStreamer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -110,17 +104,16 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Destructor. </p>
+<p>Default constructor. </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a32ac0fb0637b38e432d5beac40218c5f"></a>
+<a class="anchor" id="ae87932970fd0476255b0758e7527891d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -128,35 +121,30 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespacedqm4hep_1_1core.html#a71737b5d3e542e31d80c402f3d1befa7">EventPtr</a> dqm4hep::core::EventStreamer::createEvent </td>
+          <td class="memname">dqm4hep::core::EventStreamer::~EventStreamer </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Factory method to create the corresponding event to this streamer. </p>
-<p>The event is expected to contains an allocated wrapped event </p>
-
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1GenericEventStreamer.html#a8b72ccaeab8ca4ffe7fb327112a3cb0a">dqm4hep::core::GenericEventStreamer</a>.</p>
+<p>Default destructor. </p>
 
 </div>
 </div>
-<a class="anchor" id="a62b95af9a22c1b227c6637a40aacfac0"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad9ce3a0c1ba8734adfb547b7a00f7598"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> dqm4hep::core::EventStreamer::read </td>
+          <td class="memname"><a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> dqm4hep::core::EventStreamer::readEvent </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacedqm4hep_1_1core.html#a71737b5d3e542e31d80c402f3d1befa7">EventPtr</a> &amp;&#160;</td>
           <td class="paramname"><em>event</em>, </td>
@@ -173,118 +161,192 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>De-serialize an event given from the data stream. </p>
+<p>Read an event using an xdrstream device. </p>
+<p>The streamer info is read from the buffer and the streamer if allocated from the plugin manager.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>the event to read </td></tr>
+    <tr><td class="paramname">device</td><td>the xdrstream device to read with </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1GenericEventStreamer.html#a55c2516be62fe2b058a2f4cdc3a58fc9">dqm4hep::core::GenericEventStreamer</a>.</p>
+<p>Definition at line <a class="el" href="EventStreamer_8cc_source.html#l00065">65</a> of file <a class="el" href="EventStreamer_8cc_source.html">EventStreamer.cc</a>.</p>
 
-</div>
-</div>
-<a class="anchor" id="a38a29156cb28f32509f97da98d08f7c2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> dqm4hep::core::EventStreamer::write </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacedqm4hep_1_1core.html#a71737b5d3e542e31d80c402f3d1befa7">EventPtr</a> &amp;&#160;</td>
-          <td class="paramname"><em>event</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">xdrstream::IODevice *&#160;</td>
-          <td class="paramname"><em>pDevice</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Serialize an event object and store it in the data stream. </p>
-
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1GenericEventStreamer.html#abcda03709ff6491d6b6e90539d563447">dqm4hep::core::GenericEventStreamer</a>.</p>
-
-<p>Referenced by <a class="el" href="EventStreamer_8h_source.html#l00081">write()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ae58bf9bb465bc0b6ab74ec07d1ca4e21"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> dqm4hep::core::EventStreamer::write </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacedqm4hep_1_1core.html#a71737b5d3e542e31d80c402f3d1befa7">EventPtr</a> &amp;&#160;</td>
-          <td class="paramname"><em>event</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>subEventIdentifier</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">xdrstream::IODevice *&#160;</td>
-          <td class="paramname"><em>pDevice</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Serialize a part of a <a class="el" href="classdqm4hep_1_1core_1_1Event.html" title="Event class. ">Event</a> object identified by the reg exp 'subEventIdentifier' and store it in the data stream. </p>
-<p>Example : subEventIdentifier = "MyCollection1:MyCollection2" subEventIdentifier = "*TpcCollection"</p>
-<p>The identifier decoding has to be performed by the user, based on the event contents itself </p>
-
-<p>Definition at line <a class="el" href="EventStreamer_8h_source.html#l00081">81</a> of file <a class="el" href="EventStreamer_8h_source.html">EventStreamer.h</a>.</p>
-
-<p>References <a class="el" href="classdqm4hep_1_1core_1_1EventStreamer.html#a38a29156cb28f32509f97da98d08f7c2">write()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                                                {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">return</span> this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#a38a29156cb28f32509f97da98d08f7c2">write</a>(event, pDevice);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventStreamer_html_a38a29156cb28f32509f97da98d08f7c2"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventStreamer.html#a38a29156cb28f32509f97da98d08f7c2">dqm4hep::core::EventStreamer::write</a></div><div class="ttdeci">virtual StatusCode write(const EventPtr &amp;event, xdrstream::IODevice *pDevice)=0</div><div class="ttdoc">Serialize an event object and store it in the data stream. </div></div>
+<p>References <a class="el" href="PluginManager_8h_source.html#l00136">dqm4hep::core::PluginManager::create()</a>, <a class="el" href="Logging_8h_source.html#l00045">dqm_error</a>, <a class="el" href="classdqm4hep_1_1core_1_1Singleton.html#a1ecf1990f4849ac5b63ac8ef3ff6522d">dqm4hep::core::Singleton&lt; PluginManager &gt;::instance()</a>, <a class="el" href="EventStreamer_8h_source.html#l00079">m_streamer</a>, <a class="el" href="EventStreamer_8h_source.html#l00078">m_streamerName</a>, and <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                                                  {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="comment">// consistency check</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == device)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_INVALID_PARAMETER;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="comment">// read streamer name</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      std::string streamerName;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">if</span> (!XDR_TESTBIT(device-&gt;read(&amp;streamerName), xdrstream::XDR_SUCCESS))</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="comment">// setup event streamer</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> or <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a> != streamerName) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> = <a class="code" href="classdqm4hep_1_1core_1_1Singleton.html#a1ecf1990f4849ac5b63ac8ef3ff6522d">PluginManager::instance</a>()-&gt;<a class="code" href="classdqm4hep_1_1core_1_1PluginManager.html#aa898d83f16b1a263e7bd604673044d3c">create</a>&lt;EventStreamerPlugin&gt;(streamerName);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a>) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;          <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;EventStreamer::readEvent: streamer &#39;{0}&#39; not registered in plugin manager !&quot;</span>, streamerName );</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;          <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a> = streamerName;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="comment">// read user event data</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keyword">event</span> = <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a>-&gt;createEvent();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keyword">event</span>-&gt;setStreamerName(<a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="comment">// write base event data</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordflow">if</span> (!XDR_TESTBIT(event-&gt;readBase(device), xdrstream::XDR_SUCCESS))</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <a class="code" href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a>-&gt;read(event, device));</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keyword">event</span>-&gt;setEventSize(device-&gt;getPosition());</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="ttc" id="StatusCodes_8h_html_a25aeabada9910a1ce63f8eb0de4d8dda"><div class="ttname"><a href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a></div><div class="ttdeci">#define RETURN_RESULT_IF(StatusCode1, Operator, Command)</div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00039">StatusCodes.h:39</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Singleton_html_a1ecf1990f4849ac5b63ac8ef3ff6522d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Singleton.html#a1ecf1990f4849ac5b63ac8ef3ff6522d">dqm4hep::core::Singleton&lt; PluginManager &gt;::instance</a></div><div class="ttdeci">static PluginManager * instance()</div><div class="ttdoc">Return a unique instance of the class. </div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventStreamer_html_add34cd8a036703310045ef7e0104f464"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">dqm4hep::core::EventStreamer::m_streamer</a></div><div class="ttdeci">EventStreamerPluginPtr m_streamer</div><div class="ttdoc">The current event streamer in use. </div><div class="ttdef"><b>Definition:</b> <a href="EventStreamer_8h_source.html#l00079">EventStreamer.h:79</a></div></div>
+<div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00045">Logging.h:45</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PluginManager_html_aa898d83f16b1a263e7bd604673044d3c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PluginManager.html#aa898d83f16b1a263e7bd604673044d3c">dqm4hep::core::PluginManager::create</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; create(const std::string &amp;pluginName) const </div><div class="ttdoc">Get the plug-in clone. </div><div class="ttdef"><b>Definition:</b> <a href="PluginManager_8h_source.html#l00136">PluginManager.h:136</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventStreamer_html_ab1e22d96f77fbf01e2c4a45a45a378bd"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">dqm4hep::core::EventStreamer::m_streamerName</a></div><div class="ttdeci">std::string m_streamerName</div><div class="ttdoc">The current event streamer name in use. </div><div class="ttdef"><b>Definition:</b> <a href="EventStreamer_8h_source.html#l00078">EventStreamer.h:78</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a class="anchor" id="a410c80530be38baf5590b985749c04d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> dqm4hep::core::EventStreamer::writeEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedqm4hep_1_1core.html#a71737b5d3e542e31d80c402f3d1befa7">EventPtr</a>&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xdrstream::IODevice *&#160;</td>
+          <td class="paramname"><em>device</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write an event using an xdrstream device. </p>
+<p>The streamer info is taken from <a class="el" href="classdqm4hep_1_1core_1_1Event.html#ab3535da77473febc2c8b2cff284df9e7" title="Get the streamer name. ">Event::getStreamerName()</a> and from the plugin manager.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>the event to write </td></tr>
+    <tr><td class="paramname">device</td><td>the xdrstream device to write with </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="EventStreamer_8cc_source.html#l00037">37</a> of file <a class="el" href="EventStreamer_8cc_source.html">EventStreamer.cc</a>.</p>
+
+<p>References <a class="el" href="PluginManager_8h_source.html#l00136">dqm4hep::core::PluginManager::create()</a>, <a class="el" href="Logging_8h_source.html#l00045">dqm_error</a>, <a class="el" href="classdqm4hep_1_1core_1_1Singleton.html#a1ecf1990f4849ac5b63ac8ef3ff6522d">dqm4hep::core::Singleton&lt; PluginManager &gt;::instance()</a>, <a class="el" href="EventStreamer_8h_source.html#l00079">m_streamer</a>, <a class="el" href="EventStreamer_8h_source.html#l00078">m_streamerName</a>, and <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                                                  {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="comment">// consistency check</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == event or <span class="keyword">nullptr</span> == device)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_INVALID_PARAMETER;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="comment">// setup event streamer</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      std::string streamerName = <span class="keyword">event</span>-&gt;getStreamerName();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> or <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a> != streamerName) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> = <a class="code" href="classdqm4hep_1_1core_1_1Singleton.html#a1ecf1990f4849ac5b63ac8ef3ff6522d">PluginManager::instance</a>()-&gt;<a class="code" href="classdqm4hep_1_1core_1_1PluginManager.html#aa898d83f16b1a263e7bd604673044d3c">create</a>&lt;EventStreamerPlugin&gt;(streamerName);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a>) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;          <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;EventStreamer::writeEvent: streamer &#39;{0}&#39; not registered in plugin manager !&quot;</span>, streamerName );</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;          <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a> = streamerName;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="comment">// write streamer name</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordflow">if</span> (!XDR_TESTBIT(device-&gt;write(&amp;<a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a>), xdrstream::XDR_SUCCESS))</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="comment">// write base event data</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">if</span> (!XDR_TESTBIT(event-&gt;writeBase(device), xdrstream::XDR_SUCCESS))</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_FAILURE;  </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="comment">// write user event data</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <a class="code" href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a>-&gt;write(event, device));</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="ttc" id="StatusCodes_8h_html_a25aeabada9910a1ce63f8eb0de4d8dda"><div class="ttname"><a href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a></div><div class="ttdeci">#define RETURN_RESULT_IF(StatusCode1, Operator, Command)</div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00039">StatusCodes.h:39</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Singleton_html_a1ecf1990f4849ac5b63ac8ef3ff6522d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Singleton.html#a1ecf1990f4849ac5b63ac8ef3ff6522d">dqm4hep::core::Singleton&lt; PluginManager &gt;::instance</a></div><div class="ttdeci">static PluginManager * instance()</div><div class="ttdoc">Return a unique instance of the class. </div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventStreamer_html_add34cd8a036703310045ef7e0104f464"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">dqm4hep::core::EventStreamer::m_streamer</a></div><div class="ttdeci">EventStreamerPluginPtr m_streamer</div><div class="ttdoc">The current event streamer in use. </div><div class="ttdef"><b>Definition:</b> <a href="EventStreamer_8h_source.html#l00079">EventStreamer.h:79</a></div></div>
+<div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00045">Logging.h:45</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PluginManager_html_aa898d83f16b1a263e7bd604673044d3c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PluginManager.html#aa898d83f16b1a263e7bd604673044d3c">dqm4hep::core::PluginManager::create</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; create(const std::string &amp;pluginName) const </div><div class="ttdoc">Get the plug-in clone. </div><div class="ttdef"><b>Definition:</b> <a href="PluginManager_8h_source.html#l00136">PluginManager.h:136</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventStreamer_html_ab1e22d96f77fbf01e2c4a45a45a378bd"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">dqm4hep::core::EventStreamer::m_streamerName</a></div><div class="ttdeci">std::string m_streamerName</div><div class="ttdoc">The current event streamer name in use. </div><div class="ttdef"><b>Definition:</b> <a href="EventStreamer_8h_source.html#l00078">EventStreamer.h:78</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="add34cd8a036703310045ef7e0104f464"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedqm4hep_1_1core.html#a46d720513ee225a7afea15b280abfe30">EventStreamerPluginPtr</a> dqm4hep::core::EventStreamer::m_streamer = {nullptr}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The current event streamer in use. </p>
+
+<p>Definition at line <a class="el" href="EventStreamer_8h_source.html#l00079">79</a> of file <a class="el" href="EventStreamer_8h_source.html">EventStreamer.h</a>.</p>
+
+<p>Referenced by <a class="el" href="EventStreamer_8cc_source.html#l00065">readEvent()</a>, and <a class="el" href="EventStreamer_8cc_source.html#l00037">writeEvent()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab1e22d96f77fbf01e2c4a45a45a378bd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dqm4hep::core::EventStreamer::m_streamerName = {&quot;&quot;}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The current event streamer name in use. </p>
+
+<p>Definition at line <a class="el" href="EventStreamer_8h_source.html#l00078">78</a> of file <a class="el" href="EventStreamer_8h_source.html">EventStreamer.h</a>.</p>
+
+<p>Referenced by <a class="el" href="EventStreamer_8cc_source.html#l00065">readEvent()</a>, and <a class="el" href="EventStreamer_8cc_source.html#l00037">writeEvent()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="EventStreamer_8h_source.html">EventStreamer.h</a></li>
+<li><a class="el" href="EventStreamer_8cc_source.html">EventStreamer.cc</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 11 2018 15:30:51 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 22 2018 02:55:03 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

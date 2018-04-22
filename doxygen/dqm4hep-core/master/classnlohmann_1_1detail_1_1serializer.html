@@ -1116,7 +1116,7 @@ template&lt;typename NumberType , detail::enable_if_t&lt; std::is_same&lt; Numbe
 <div class="line"><a name="l07658"></a><span class="lineno"> 7658</span>&#160;          <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l07659"></a><span class="lineno"> 7659</span>&#160;        }</div>
 <div class="line"><a name="l07660"></a><span class="lineno"> 7660</span>&#160;</div>
-<div class="line"><a name="l07661"></a><span class="lineno"> 7661</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> is_negative = (x &lt;= 0) and (x != 0); <span class="comment">// see issue #755</span></div>
+<div class="line"><a name="l07661"></a><span class="lineno"> 7661</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> is_negative = (x &lt; 0); <span class="comment">// see issue #755</span></div>
 <div class="line"><a name="l07662"></a><span class="lineno"> 7662</span>&#160;        std::size_t i = 0;</div>
 <div class="line"><a name="l07663"></a><span class="lineno"> 7663</span>&#160;</div>
 <div class="line"><a name="l07664"></a><span class="lineno"> 7664</span>&#160;        <span class="keywordflow">while</span> (x != 0) {</div>
@@ -1447,7 +1447,7 @@ template&lt;typename BasicJsonType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 11 2018 15:30:55 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 22 2018 02:55:06 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

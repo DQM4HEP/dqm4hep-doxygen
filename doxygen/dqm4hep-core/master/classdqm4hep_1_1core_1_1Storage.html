@@ -417,7 +417,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="Storage_8h_source.html#l00148">148</a> of file <a class="el" href="Storage_8h_source.html">Storage.h</a>.</p>
 
-<p>References <a class="el" href="Path_8cc_source.html#l00049">dqm4hep::core::Path::getSplitPath()</a>, <a class="el" href="Path_8cc_source.html#l00079">dqm4hep::core::Path::isRelative()</a>, <a class="el" href="Path_8cc_source.html#l00067">dqm4hep::core::Path::isValid()</a>, and <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>.</p>
+<p>References <a class="el" href="Path_8cc_source.html#l00045">dqm4hep::core::Path::getSplitPath()</a>, <a class="el" href="Path_8cc_source.html#l00075">dqm4hep::core::Path::isRelative()</a>, <a class="el" href="Path_8cc_source.html#l00063">dqm4hep::core::Path::isValid()</a>, and <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>.</p>
 <div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                                                             {</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <span class="comment">// go back to sub dir</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      <span class="keywordflow">if</span> (dirName.empty()) {</div>
@@ -434,12 +434,12 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">StringVector</a> directoryList = path.getSplitPath();</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> iter = directoryList.begin(), endIter = directoryList.end(); endIter != iter; ++iter) {</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        std::string dirName = *iter;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        std::string dname = *iter;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">if</span> (dirName == <span class="stringliteral">&quot;.&quot;</span>)</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">if</span> (dname == <span class="stringliteral">&quot;.&quot;</span>)</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;          <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">if</span> (dirName == <span class="stringliteral">&quot;..&quot;</span>) {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">if</span> (dname == <span class="stringliteral">&quot;..&quot;</span>) {</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;          <span class="keywordflow">if</span> (directory == <a class="code" href="classdqm4hep_1_1core_1_1Storage.html#a53af7d7406d6ea4aff72a19d891495e4">m_rootDirectory</a>)</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
@@ -448,7 +448,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        }</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="comment">// navigate forward</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <a class="code" href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, directory-&gt;find(dirName, directory));</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <a class="code" href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, directory-&gt;find(dname, directory));</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      }</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == directory)</div>
@@ -462,7 +462,7 @@ template&lt;typename T &gt; </div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Storage_html_a53af7d7406d6ea4aff72a19d891495e4"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Storage.html#a53af7d7406d6ea4aff72a19d891495e4">dqm4hep::core::Storage::m_rootDirectory</a></div><div class="ttdeci">DirectoryPtr m_rootDirectory</div><div class="ttdef"><b>Definition:</b> <a href="Storage_8h_source.html#l00082">Storage.h:82</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Storage_html_a7271148107c2d89e24c0af836ecd03c0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Storage.html#a7271148107c2d89e24c0af836ecd03c0">dqm4hep::core::Storage::cd</a></div><div class="ttdeci">void cd()</div><div class="ttdef"><b>Definition:</b> <a href="Storage_8h_source.html#l00141">Storage.h:141</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Storage_html_a81d99f3a9ca512d2c5080c1ea7603275"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Storage.html#a81d99f3a9ca512d2c5080c1ea7603275">dqm4hep::core::Storage::DirectoryPtr</a></div><div class="ttdeci">Directory&lt; T &gt;::DirectoryPtr DirectoryPtr</div><div class="ttdef"><b>Definition:</b> <a href="Storage_8h_source.html#l00043">Storage.h:43</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00160">Internal.h:160</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00163">Internal.h:163</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Storage_html_a08676dfaa2f71d49569f9de79a465f36"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Storage.html#a08676dfaa2f71d49569f9de79a465f36">dqm4hep::core::Storage::m_currentDirectory</a></div><div class="ttdeci">DirectoryPtr m_currentDirectory</div><div class="ttdef"><b>Definition:</b> <a href="Storage_8h_source.html#l00083">Storage.h:83</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -681,7 +681,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="Storage_8h_source.html#l00246">246</a> of file <a class="el" href="Storage_8h_source.html">Storage.h</a>.</p>
 
-<p>References <a class="el" href="Path_8cc_source.html#l00049">dqm4hep::core::Path::getSplitPath()</a>, <a class="el" href="Path_8cc_source.html#l00079">dqm4hep::core::Path::isRelative()</a>, and <a class="el" href="Path_8cc_source.html#l00067">dqm4hep::core::Path::isValid()</a>.</p>
+<p>References <a class="el" href="Path_8cc_source.html#l00045">dqm4hep::core::Path::getSplitPath()</a>, <a class="el" href="Path_8cc_source.html#l00075">dqm4hep::core::Path::isRelative()</a>, and <a class="el" href="Path_8cc_source.html#l00063">dqm4hep::core::Path::isValid()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                                                                                              {</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      directory = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
@@ -700,12 +700,12 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">StringVector</a> directoryList = path.getSplitPath();</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> iter = directoryList.begin(), endIter = directoryList.end(); endIter != iter; ++iter) {</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        std::string dirName = *iter;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        std::string dname = *iter;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">if</span> (dirName == <span class="stringliteral">&quot;.&quot;</span>)</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">if</span> (dname == <span class="stringliteral">&quot;.&quot;</span>)</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;          <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordflow">if</span> (dirName == <span class="stringliteral">&quot;..&quot;</span>) {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordflow">if</span> (dname == <span class="stringliteral">&quot;..&quot;</span>) {</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;          <span class="keywordflow">if</span> (directory == <a class="code" href="classdqm4hep_1_1core_1_1Storage.html#a53af7d7406d6ea4aff72a19d891495e4">m_rootDirectory</a>)</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
@@ -714,7 +714,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        }</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="comment">// navigate forward</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <a class="code" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> statusCode = directory-&gt;find(dirName, directory);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <a class="code" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> statusCode = directory-&gt;find(dname, directory);</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keywordflow">if</span> (statusCode != STATUS_CODE_SUCCESS)</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;          <span class="keywordflow">return</span> statusCode;</div>
@@ -723,8 +723,8 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Storage_html_a53af7d7406d6ea4aff72a19d891495e4"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Storage.html#a53af7d7406d6ea4aff72a19d891495e4">dqm4hep::core::Storage::m_rootDirectory</a></div><div class="ttdeci">DirectoryPtr m_rootDirectory</div><div class="ttdef"><b>Definition:</b> <a href="Storage_8h_source.html#l00082">Storage.h:82</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00160">Internal.h:160</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_af0b0a4c04ab15f7bb082f3b9943a6fbd"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">dqm4hep::core::StatusCode</a></div><div class="ttdeci">StatusCode</div><div class="ttdoc">StatusCode enumerator. </div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00137">StatusCodes.h:137</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00163">Internal.h:163</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_af0b0a4c04ab15f7bb082f3b9943a6fbd"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">dqm4hep::core::StatusCode</a></div><div class="ttdeci">StatusCode</div><div class="ttdoc">StatusCode enumerator. </div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00139">StatusCodes.h:139</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Storage_html_a08676dfaa2f71d49569f9de79a465f36"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Storage.html#a08676dfaa2f71d49569f9de79a465f36">dqm4hep::core::Storage::m_currentDirectory</a></div><div class="ttdeci">DirectoryPtr m_currentDirectory</div><div class="ttdef"><b>Definition:</b> <a href="Storage_8h_source.html#l00083">Storage.h:83</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -889,7 +889,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="Storage_8h_source.html#l00407">407</a> of file <a class="el" href="Storage_8h_source.html">Storage.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                                                                   {</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Storage.html#a845e6f0e79cb4a44934e8bf95277d39d">iterate</a>([&amp;](<span class="keyword">const</span> <a class="code" href="classdqm4hep_1_1core_1_1Storage.html#a81d99f3a9ca512d2c5080c1ea7603275">DirectoryPtr</a> &amp;directory, <a class="code" href="classdqm4hep_1_1core_1_1Storage.html#a6042f9b108da721f04479b05cbaef0fe">ObjectPtr</a> <span class="keywordtype">object</span>) {</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Storage.html#a845e6f0e79cb4a44934e8bf95277d39d">iterate</a>([&amp;](<span class="keyword">const</span> <a class="code" href="classdqm4hep_1_1core_1_1Storage.html#a81d99f3a9ca512d2c5080c1ea7603275">DirectoryPtr</a> &amp;<span class="comment">/*directory*/</span>, <a class="code" href="classdqm4hep_1_1core_1_1Storage.html#a6042f9b108da721f04479b05cbaef0fe">ObjectPtr</a> <span class="keywordtype">object</span>) {</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        objectList.push_back(<span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;      });</div>
@@ -1053,7 +1053,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="Storage_8h_source.html#l00101">101</a> of file <a class="el" href="Storage_8h_source.html">Storage.h</a>.</p>
 
-<p>References <a class="el" href="Path_8cc_source.html#l00049">dqm4hep::core::Path::getSplitPath()</a>, <a class="el" href="Path_8cc_source.html#l00079">dqm4hep::core::Path::isRelative()</a>, <a class="el" href="Path_8cc_source.html#l00067">dqm4hep::core::Path::isValid()</a>, and <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>.</p>
+<p>References <a class="el" href="Path_8cc_source.html#l00045">dqm4hep::core::Path::getSplitPath()</a>, <a class="el" href="Path_8cc_source.html#l00075">dqm4hep::core::Path::isRelative()</a>, <a class="el" href="Path_8cc_source.html#l00063">dqm4hep::core::Path::isValid()</a>, and <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>.</p>
 <div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                                                {</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <span class="keywordflow">if</span> (dirName.empty())</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_INVALID_PARAMETER;</div>
@@ -1067,12 +1067,12 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">StringVector</a> directoryList = path.getSplitPath();</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> iter = directoryList.begin(), endIter = directoryList.end(); endIter != iter; ++iter) {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        std::string dirName = *iter;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        std::string dname = *iter;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">if</span> (dirName == <span class="stringliteral">&quot;.&quot;</span>)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">if</span> (dname == <span class="stringliteral">&quot;.&quot;</span>)</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;          <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">if</span> (dirName == <span class="stringliteral">&quot;..&quot;</span>) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordflow">if</span> (dname == <span class="stringliteral">&quot;..&quot;</span>) {</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;          <span class="keywordflow">if</span> (directory == <a class="code" href="classdqm4hep_1_1core_1_1Storage.html#a53af7d7406d6ea4aff72a19d891495e4">m_rootDirectory</a>)</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
@@ -1081,11 +1081,11 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="comment">// if sub dir doesn&#39;t exists, create it</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">if</span> (!directory-&gt;hasChild(dirName))</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;          directory-&gt;mkdir(dirName);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">if</span> (!directory-&gt;hasChild(dname))</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;          directory-&gt;mkdir(dname);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="comment">// navigate forward</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <a class="code" href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, directory-&gt;find(dirName, directory));</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <a class="code" href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, directory-&gt;find(dname, directory));</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      }</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
@@ -1093,7 +1093,7 @@ template&lt;typename T &gt; </div>
 <div class="ttc" id="StatusCodes_8h_html_a25aeabada9910a1ce63f8eb0de4d8dda"><div class="ttname"><a href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a></div><div class="ttdeci">#define RETURN_RESULT_IF(StatusCode1, Operator, Command)</div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00039">StatusCodes.h:39</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Storage_html_a53af7d7406d6ea4aff72a19d891495e4"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Storage.html#a53af7d7406d6ea4aff72a19d891495e4">dqm4hep::core::Storage::m_rootDirectory</a></div><div class="ttdeci">DirectoryPtr m_rootDirectory</div><div class="ttdef"><b>Definition:</b> <a href="Storage_8h_source.html#l00082">Storage.h:82</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Storage_html_a81d99f3a9ca512d2c5080c1ea7603275"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Storage.html#a81d99f3a9ca512d2c5080c1ea7603275">dqm4hep::core::Storage::DirectoryPtr</a></div><div class="ttdeci">Directory&lt; T &gt;::DirectoryPtr DirectoryPtr</div><div class="ttdef"><b>Definition:</b> <a href="Storage_8h_source.html#l00043">Storage.h:43</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00160">Internal.h:160</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00163">Internal.h:163</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Storage_html_a08676dfaa2f71d49569f9de79a465f36"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Storage.html#a08676dfaa2f71d49569f9de79a465f36">dqm4hep::core::Storage::m_currentDirectory</a></div><div class="ttdeci">DirectoryPtr m_currentDirectory</div><div class="ttdef"><b>Definition:</b> <a href="Storage_8h_source.html#l00083">Storage.h:83</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1358,7 +1358,7 @@ template&lt;typename T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 11 2018 15:30:51 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 22 2018 02:55:02 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

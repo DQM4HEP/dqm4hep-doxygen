@@ -138,15 +138,15 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:acd06519f6c1a2aa92efc53cb26e677c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#acd06519f6c1a2aa92efc53cb26e677c0">depth</a></td></tr>
+<tr class="memitem:acd06519f6c1a2aa92efc53cb26e677c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#acd06519f6c1a2aa92efc53cb26e677c0">depth</a> = {0}</td></tr>
 <tr class="separator:acd06519f6c1a2aa92efc53cb26e677c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52b58bd8bf404ee5f3ab451a8cef1def"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">simpleTextPrint</a></td></tr>
+<tr class="memitem:a52b58bd8bf404ee5f3ab451a8cef1def"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">simpleTextPrint</a> = {false}</td></tr>
 <tr class="separator:a52b58bd8bf404ee5f3ab451a8cef1def"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d3130a7433c89d7e0b9147ba473ef6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a></td></tr>
+<tr class="memitem:a6d3130a7433c89d7e0b9147ba473ef6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> = {}</td></tr>
 <tr class="separator:a6d3130a7433c89d7e0b9147ba473ef6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a203b29e09aca0267cb0e33cef945b6ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">indent</a></td></tr>
+<tr class="memitem:a203b29e09aca0267cb0e33cef945b6ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">indent</a> = {&quot; &quot;}</td></tr>
 <tr class="separator:a203b29e09aca0267cb0e33cef945b6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ef021b84f344991494a572407c61c7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">lineBreak</a></td></tr>
+<tr class="memitem:a7ef021b84f344991494a572407c61c7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">lineBreak</a> = {&quot;\n&quot;}</td></tr>
 <tr class="separator:a7ef021b84f344991494a572407c61c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -164,7 +164,7 @@ printer.SetIndent( "\t" );
 doc.Accept( &amp;printer );
 fprintf( stdout, "%s", printer.CStr() );
 </pre> 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01932">1932</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01934">1934</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9bf8df7d6e564a8040e12634842a23be"></a>
 <div class="memitem">
@@ -187,14 +187,14 @@ fprintf( stdout, "%s", printer.CStr() );
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01934">1934</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160;                     : <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#acd06519f6c1a2aa92efc53cb26e677c0">depth</a>(0), <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">simpleTextPrint</a>(<span class="keyword">false</span>), <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a>(), <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">indent</a>(<span class="stringliteral">&quot;    &quot;</span>), <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">lineBreak</a>(<span class="stringliteral">&quot;\n&quot;</span>) {</div>
-<div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;      }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a7ef021b84f344991494a572407c61c7c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">dqm4hep::core::TiXmlPrinter::lineBreak</a></div><div class="ttdeci">TIXML_STRING lineBreak</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02006">tinyxml.h:2006</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a52b58bd8bf404ee5f3ab451a8cef1def"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">dqm4hep::core::TiXmlPrinter::simpleTextPrint</a></div><div class="ttdeci">bool simpleTextPrint</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02003">tinyxml.h:2003</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a203b29e09aca0267cb0e33cef945b6ab"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">dqm4hep::core::TiXmlPrinter::indent</a></div><div class="ttdeci">TIXML_STRING indent</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02005">tinyxml.h:2005</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02004">tinyxml.h:2004</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_acd06519f6c1a2aa92efc53cb26e677c0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#acd06519f6c1a2aa92efc53cb26e677c0">dqm4hep::core::TiXmlPrinter::depth</a></div><div class="ttdeci">int depth</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02002">tinyxml.h:2002</a></div></div>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01936">1936</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;                     : <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#acd06519f6c1a2aa92efc53cb26e677c0">depth</a>(0), <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">simpleTextPrint</a>(<span class="keyword">false</span>), <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a>(), <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">indent</a>(<span class="stringliteral">&quot;    &quot;</span>), <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">lineBreak</a>(<span class="stringliteral">&quot;\n&quot;</span>) {</div>
+<div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;      }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a7ef021b84f344991494a572407c61c7c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">dqm4hep::core::TiXmlPrinter::lineBreak</a></div><div class="ttdeci">TIXML_STRING lineBreak</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02008">tinyxml.h:2008</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a52b58bd8bf404ee5f3ab451a8cef1def"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">dqm4hep::core::TiXmlPrinter::simpleTextPrint</a></div><div class="ttdeci">bool simpleTextPrint</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02005">tinyxml.h:2005</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a203b29e09aca0267cb0e33cef945b6ab"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">dqm4hep::core::TiXmlPrinter::indent</a></div><div class="ttdeci">TIXML_STRING indent</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02007">tinyxml.h:2007</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02006">tinyxml.h:2006</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_acd06519f6c1a2aa92efc53cb26e677c0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#acd06519f6c1a2aa92efc53cb26e677c0">dqm4hep::core::TiXmlPrinter::depth</a></div><div class="ttdeci">int depth</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02004">tinyxml.h:2004</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -222,13 +222,13 @@ fprintf( stdout, "%s", printer.CStr() );
 
 <p>Return the result. </p>
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01978">1978</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01980">1980</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l02004">buffer</a>.</p>
-<div class="fragment"><div class="line"><a name="l01978"></a><span class="lineno"> 1978</span>&#160;                         {</div>
-<div class="line"><a name="l01979"></a><span class="lineno"> 1979</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a>.c_str();</div>
-<div class="line"><a name="l01980"></a><span class="lineno"> 1980</span>&#160;      }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02004">tinyxml.h:2004</a></div></div>
+<p>References <a class="el" href="tinyxml_8h_source.html#l02006">buffer</a>.</p>
+<div class="fragment"><div class="line"><a name="l01980"></a><span class="lineno"> 1980</span>&#160;                         {</div>
+<div class="line"><a name="l01981"></a><span class="lineno"> 1981</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a>.c_str();</div>
+<div class="line"><a name="l01982"></a><span class="lineno"> 1982</span>&#160;      }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02006">tinyxml.h:2006</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -253,18 +253,18 @@ fprintf( stdout, "%s", printer.CStr() );
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01994">1994</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01996">1996</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l02004">buffer</a>, <a class="el" href="tinyxml_8h_source.html#l02002">depth</a>, and <a class="el" href="tinyxml_8h_source.html#l02005">indent</a>.</p>
+<p>References <a class="el" href="tinyxml_8h_source.html#l02006">buffer</a>, <a class="el" href="tinyxml_8h_source.html#l02004">depth</a>, and <a class="el" href="tinyxml_8h_source.html#l02007">indent</a>.</p>
 
-<p>Referenced by <a class="el" href="tinyxml_8cc_source.html#l01461">Visit()</a>, <a class="el" href="tinyxml_8cc_source.html#l01416">VisitEnter()</a>, and <a class="el" href="tinyxml_8cc_source.html#l01443">VisitExit()</a>.</p>
-<div class="fragment"><div class="line"><a name="l01994"></a><span class="lineno"> 1994</span>&#160;                      {</div>
-<div class="line"><a name="l01995"></a><span class="lineno"> 1995</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#acd06519f6c1a2aa92efc53cb26e677c0">depth</a>; ++i)</div>
-<div class="line"><a name="l01996"></a><span class="lineno"> 1996</span>&#160;          <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">indent</a>;</div>
-<div class="line"><a name="l01997"></a><span class="lineno"> 1997</span>&#160;      }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a203b29e09aca0267cb0e33cef945b6ab"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">dqm4hep::core::TiXmlPrinter::indent</a></div><div class="ttdeci">TIXML_STRING indent</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02005">tinyxml.h:2005</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02004">tinyxml.h:2004</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_acd06519f6c1a2aa92efc53cb26e677c0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#acd06519f6c1a2aa92efc53cb26e677c0">dqm4hep::core::TiXmlPrinter::depth</a></div><div class="ttdeci">int depth</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02002">tinyxml.h:2002</a></div></div>
+<p>Referenced by <a class="el" href="tinyxml_8cc_source.html#l01465">Visit()</a>, <a class="el" href="tinyxml_8cc_source.html#l01420">VisitEnter()</a>, and <a class="el" href="tinyxml_8cc_source.html#l01447">VisitExit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01996"></a><span class="lineno"> 1996</span>&#160;                      {</div>
+<div class="line"><a name="l01997"></a><span class="lineno"> 1997</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#acd06519f6c1a2aa92efc53cb26e677c0">depth</a>; ++i)</div>
+<div class="line"><a name="l01998"></a><span class="lineno"> 1998</span>&#160;          <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">indent</a>;</div>
+<div class="line"><a name="l01999"></a><span class="lineno"> 1999</span>&#160;      }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a203b29e09aca0267cb0e33cef945b6ab"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">dqm4hep::core::TiXmlPrinter::indent</a></div><div class="ttdeci">TIXML_STRING indent</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02007">tinyxml.h:2007</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02006">tinyxml.h:2006</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_acd06519f6c1a2aa92efc53cb26e677c0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#acd06519f6c1a2aa92efc53cb26e677c0">dqm4hep::core::TiXmlPrinter::depth</a></div><div class="ttdeci">int depth</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02004">tinyxml.h:2004</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -289,16 +289,16 @@ fprintf( stdout, "%s", printer.CStr() );
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01998">1998</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l02000">2000</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l02004">buffer</a>, and <a class="el" href="tinyxml_8h_source.html#l02006">lineBreak</a>.</p>
+<p>References <a class="el" href="tinyxml_8h_source.html#l02006">buffer</a>, and <a class="el" href="tinyxml_8h_source.html#l02008">lineBreak</a>.</p>
 
-<p>Referenced by <a class="el" href="tinyxml_8cc_source.html#l01461">Visit()</a>, <a class="el" href="tinyxml_8cc_source.html#l01416">VisitEnter()</a>, and <a class="el" href="tinyxml_8cc_source.html#l01443">VisitExit()</a>.</p>
-<div class="fragment"><div class="line"><a name="l01998"></a><span class="lineno"> 1998</span>&#160;                         {</div>
-<div class="line"><a name="l01999"></a><span class="lineno"> 1999</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">lineBreak</a>;</div>
-<div class="line"><a name="l02000"></a><span class="lineno"> 2000</span>&#160;      }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a7ef021b84f344991494a572407c61c7c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">dqm4hep::core::TiXmlPrinter::lineBreak</a></div><div class="ttdeci">TIXML_STRING lineBreak</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02006">tinyxml.h:2006</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02004">tinyxml.h:2004</a></div></div>
+<p>Referenced by <a class="el" href="tinyxml_8cc_source.html#l01465">Visit()</a>, <a class="el" href="tinyxml_8cc_source.html#l01420">VisitEnter()</a>, and <a class="el" href="tinyxml_8cc_source.html#l01447">VisitExit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l02000"></a><span class="lineno"> 2000</span>&#160;                         {</div>
+<div class="line"><a name="l02001"></a><span class="lineno"> 2001</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">lineBreak</a>;</div>
+<div class="line"><a name="l02002"></a><span class="lineno"> 2002</span>&#160;      }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a7ef021b84f344991494a572407c61c7c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">dqm4hep::core::TiXmlPrinter::lineBreak</a></div><div class="ttdeci">TIXML_STRING lineBreak</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02008">tinyxml.h:2008</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02006">tinyxml.h:2006</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -325,13 +325,13 @@ fprintf( stdout, "%s", printer.CStr() );
 
 <p>Query the indention string. </p>
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01955">1955</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01957">1957</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l02005">indent</a>.</p>
-<div class="fragment"><div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;                           {</div>
-<div class="line"><a name="l01956"></a><span class="lineno"> 1956</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">indent</a>.c_str();</div>
-<div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;      }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a203b29e09aca0267cb0e33cef945b6ab"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">dqm4hep::core::TiXmlPrinter::indent</a></div><div class="ttdeci">TIXML_STRING indent</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02005">tinyxml.h:2005</a></div></div>
+<p>References <a class="el" href="tinyxml_8h_source.html#l02007">indent</a>.</p>
+<div class="fragment"><div class="line"><a name="l01957"></a><span class="lineno"> 1957</span>&#160;                           {</div>
+<div class="line"><a name="l01958"></a><span class="lineno"> 1958</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">indent</a>.c_str();</div>
+<div class="line"><a name="l01959"></a><span class="lineno"> 1959</span>&#160;      }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a203b29e09aca0267cb0e33cef945b6ab"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">dqm4hep::core::TiXmlPrinter::indent</a></div><div class="ttdeci">TIXML_STRING indent</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02007">tinyxml.h:2007</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -358,13 +358,13 @@ fprintf( stdout, "%s", printer.CStr() );
 
 <p>Query the current line breaking string. </p>
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01966">1966</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01968">1968</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l02006">lineBreak</a>.</p>
-<div class="fragment"><div class="line"><a name="l01966"></a><span class="lineno"> 1966</span>&#160;                              {</div>
-<div class="line"><a name="l01967"></a><span class="lineno"> 1967</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">lineBreak</a>.c_str();</div>
-<div class="line"><a name="l01968"></a><span class="lineno"> 1968</span>&#160;      }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a7ef021b84f344991494a572407c61c7c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">dqm4hep::core::TiXmlPrinter::lineBreak</a></div><div class="ttdeci">TIXML_STRING lineBreak</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02006">tinyxml.h:2006</a></div></div>
+<p>References <a class="el" href="tinyxml_8h_source.html#l02008">lineBreak</a>.</p>
+<div class="fragment"><div class="line"><a name="l01968"></a><span class="lineno"> 1968</span>&#160;                              {</div>
+<div class="line"><a name="l01969"></a><span class="lineno"> 1969</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">lineBreak</a>.c_str();</div>
+<div class="line"><a name="l01970"></a><span class="lineno"> 1970</span>&#160;      }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a7ef021b84f344991494a572407c61c7c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">dqm4hep::core::TiXmlPrinter::lineBreak</a></div><div class="ttdeci">TIXML_STRING lineBreak</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02008">tinyxml.h:2008</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -393,13 +393,13 @@ fprintf( stdout, "%s", printer.CStr() );
 <p>Set the indent characters for printing. </p>
 <p>By default 4 spaces but tab () is also useful, or null/empty string for no indentation. </p>
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01951">1951</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01953">1953</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l02005">indent</a>.</p>
-<div class="fragment"><div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;                                          {</div>
-<div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">indent</a> = _indent != <span class="keyword">nullptr</span> ? _indent : <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;      }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a203b29e09aca0267cb0e33cef945b6ab"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">dqm4hep::core::TiXmlPrinter::indent</a></div><div class="ttdeci">TIXML_STRING indent</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02005">tinyxml.h:2005</a></div></div>
+<p>References <a class="el" href="tinyxml_8h_source.html#l02007">indent</a>.</p>
+<div class="fragment"><div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;                                          {</div>
+<div class="line"><a name="l01954"></a><span class="lineno"> 1954</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">indent</a> = _indent != <span class="keyword">nullptr</span> ? _indent : <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l01955"></a><span class="lineno"> 1955</span>&#160;      }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a203b29e09aca0267cb0e33cef945b6ab"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">dqm4hep::core::TiXmlPrinter::indent</a></div><div class="ttdeci">TIXML_STRING indent</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02007">tinyxml.h:2007</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -429,13 +429,13 @@ fprintf( stdout, "%s", printer.CStr() );
 <p>By default set to newline (<br/>
 ). Some operating systems prefer other characters, or can be set to the null/empty string for no indenation. </p>
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01962">1962</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01964">1964</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l02006">lineBreak</a>.</p>
-<div class="fragment"><div class="line"><a name="l01962"></a><span class="lineno"> 1962</span>&#160;                                                {</div>
-<div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">lineBreak</a> = _lineBreak != <span class="keyword">nullptr</span> ? _lineBreak : <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;      }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a7ef021b84f344991494a572407c61c7c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">dqm4hep::core::TiXmlPrinter::lineBreak</a></div><div class="ttdeci">TIXML_STRING lineBreak</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02006">tinyxml.h:2006</a></div></div>
+<p>References <a class="el" href="tinyxml_8h_source.html#l02008">lineBreak</a>.</p>
+<div class="fragment"><div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;                                                {</div>
+<div class="line"><a name="l01965"></a><span class="lineno"> 1965</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">lineBreak</a> = _lineBreak != <span class="keyword">nullptr</span> ? _lineBreak : <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l01966"></a><span class="lineno"> 1966</span>&#160;      }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a7ef021b84f344991494a572407c61c7c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">dqm4hep::core::TiXmlPrinter::lineBreak</a></div><div class="ttdeci">TIXML_STRING lineBreak</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02008">tinyxml.h:2008</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -463,15 +463,15 @@ fprintf( stdout, "%s", printer.CStr() );
 <p>Switch over to "stream printing" which is the most dense formatting without linebreaks. </p>
 <p>Common when the XML is needed for network transmission. </p>
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01973">1973</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01975">1975</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l02005">indent</a>, and <a class="el" href="tinyxml_8h_source.html#l02006">lineBreak</a>.</p>
-<div class="fragment"><div class="line"><a name="l01973"></a><span class="lineno"> 1973</span>&#160;                               {</div>
-<div class="line"><a name="l01974"></a><span class="lineno"> 1974</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">indent</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l01975"></a><span class="lineno"> 1975</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">lineBreak</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l01976"></a><span class="lineno"> 1976</span>&#160;      }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a7ef021b84f344991494a572407c61c7c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">dqm4hep::core::TiXmlPrinter::lineBreak</a></div><div class="ttdeci">TIXML_STRING lineBreak</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02006">tinyxml.h:2006</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a203b29e09aca0267cb0e33cef945b6ab"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">dqm4hep::core::TiXmlPrinter::indent</a></div><div class="ttdeci">TIXML_STRING indent</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02005">tinyxml.h:2005</a></div></div>
+<p>References <a class="el" href="tinyxml_8h_source.html#l02007">indent</a>, and <a class="el" href="tinyxml_8h_source.html#l02008">lineBreak</a>.</p>
+<div class="fragment"><div class="line"><a name="l01975"></a><span class="lineno"> 1975</span>&#160;                               {</div>
+<div class="line"><a name="l01976"></a><span class="lineno"> 1976</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">indent</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l01977"></a><span class="lineno"> 1977</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">lineBreak</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l01978"></a><span class="lineno"> 1978</span>&#160;      }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a7ef021b84f344991494a572407c61c7c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a7ef021b84f344991494a572407c61c7c">dqm4hep::core::TiXmlPrinter::lineBreak</a></div><div class="ttdeci">TIXML_STRING lineBreak</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02008">tinyxml.h:2008</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a203b29e09aca0267cb0e33cef945b6ab"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a203b29e09aca0267cb0e33cef945b6ab">dqm4hep::core::TiXmlPrinter::indent</a></div><div class="ttdeci">TIXML_STRING indent</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02007">tinyxml.h:2007</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -498,13 +498,13 @@ fprintf( stdout, "%s", printer.CStr() );
 
 <p>Return the length of the result string. </p>
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01982">1982</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01984">1984</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l02004">buffer</a>.</p>
-<div class="fragment"><div class="line"><a name="l01982"></a><span class="lineno"> 1982</span>&#160;                    {</div>
-<div class="line"><a name="l01983"></a><span class="lineno"> 1983</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a>.size();</div>
-<div class="line"><a name="l01984"></a><span class="lineno"> 1984</span>&#160;      }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02004">tinyxml.h:2004</a></div></div>
+<p>References <a class="el" href="tinyxml_8h_source.html#l02006">buffer</a>.</p>
+<div class="fragment"><div class="line"><a name="l01984"></a><span class="lineno"> 1984</span>&#160;                    {</div>
+<div class="line"><a name="l01985"></a><span class="lineno"> 1985</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a>.size();</div>
+<div class="line"><a name="l01986"></a><span class="lineno"> 1986</span>&#160;      }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02006">tinyxml.h:2006</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -531,11 +531,11 @@ fprintf( stdout, "%s", printer.CStr() );
 
 <p>Return the result. </p>
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01988">1988</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l01988"></a><span class="lineno"> 1988</span>&#160;                             {</div>
-<div class="line"><a name="l01989"></a><span class="lineno"> 1989</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a>;</div>
-<div class="line"><a name="l01990"></a><span class="lineno"> 1990</span>&#160;      }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02004">tinyxml.h:2004</a></div></div>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l01990">1990</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l01990"></a><span class="lineno"> 1990</span>&#160;                             {</div>
+<div class="line"><a name="l01991"></a><span class="lineno"> 1991</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a>;</div>
+<div class="line"><a name="l01992"></a><span class="lineno"> 1992</span>&#160;      }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02006">tinyxml.h:2006</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -565,18 +565,18 @@ fprintf( stdout, "%s", printer.CStr() );
 
 <p>Reimplemented from <a class="el" href="classdqm4hep_1_1core_1_1TiXmlVisitor.html#aaf139936eb5647ea8fb90af4fda449d9">dqm4hep::core::TiXmlVisitor</a>.</p>
 
-<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01482">1482</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01486">1486</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l02004">buffer</a>, <a class="el" href="tinyxml_8h_source.html#l01994">DoIndent()</a>, <a class="el" href="tinyxml_8h_source.html#l01998">DoLineBreak()</a>, and <a class="el" href="tinyxml_8cc_source.html#l01127">dqm4hep::core::TiXmlDeclaration::Print()</a>.</p>
-<div class="fragment"><div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;                                                                {</div>
-<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">DoIndent</a>();</div>
-<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;      declaration.Print(<span class="keyword">nullptr</span>, 0, &amp;<a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a>);</div>
-<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">DoLineBreak</a>();</div>
-<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a796bf99d0005dc4ccb89a241d9b3cbaf"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">dqm4hep::core::TiXmlPrinter::DoIndent</a></div><div class="ttdeci">void DoIndent()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01994">tinyxml.h:1994</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a89d4956984ec61858d8c858aecc3b61c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">dqm4hep::core::TiXmlPrinter::DoLineBreak</a></div><div class="ttdeci">void DoLineBreak()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01998">tinyxml.h:1998</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02004">tinyxml.h:2004</a></div></div>
+<p>References <a class="el" href="tinyxml_8h_source.html#l02006">buffer</a>, <a class="el" href="tinyxml_8h_source.html#l01996">DoIndent()</a>, <a class="el" href="tinyxml_8h_source.html#l02000">DoLineBreak()</a>, and <a class="el" href="tinyxml_8cc_source.html#l01131">dqm4hep::core::TiXmlDeclaration::Print()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;                                                                {</div>
+<div class="line"><a name="l01487"></a><span class="lineno"> 1487</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">DoIndent</a>();</div>
+<div class="line"><a name="l01488"></a><span class="lineno"> 1488</span>&#160;      declaration.Print(<span class="keyword">nullptr</span>, 0, &amp;<a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a>);</div>
+<div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">DoLineBreak</a>();</div>
+<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a796bf99d0005dc4ccb89a241d9b3cbaf"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">dqm4hep::core::TiXmlPrinter::DoIndent</a></div><div class="ttdeci">void DoIndent()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01996">tinyxml.h:1996</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a89d4956984ec61858d8c858aecc3b61c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">dqm4hep::core::TiXmlPrinter::DoLineBreak</a></div><div class="ttdeci">void DoLineBreak()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02000">tinyxml.h:2000</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02006">tinyxml.h:2006</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -606,34 +606,34 @@ fprintf( stdout, "%s", printer.CStr() );
 
 <p>Reimplemented from <a class="el" href="classdqm4hep_1_1core_1_1TiXmlVisitor.html#a76485f8fbfdb71374cd3229d3b9daf0f">dqm4hep::core::TiXmlVisitor</a>.</p>
 
-<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01461">1461</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01465">1465</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l02004">buffer</a>, <a class="el" href="tinyxml_8h_source.html#l01364">dqm4hep::core::TiXmlText::CDATA()</a>, <a class="el" href="tinyxml_8h_source.html#l01994">DoIndent()</a>, <a class="el" href="tinyxml_8h_source.html#l01998">DoLineBreak()</a>, <a class="el" href="tinyxml_8cc_source.html#l00055">dqm4hep::core::TiXmlBase::EncodeString()</a>, <a class="el" href="tinyxml_8h_source.html#l02003">simpleTextPrint</a>, <a class="el" href="tinyxml_8h_source.html#l00053">TIXML_STRING</a>, <a class="el" href="tinyxml_8h_source.html#l00490">dqm4hep::core::TiXmlNode::Value()</a>, and <a class="el" href="tinyxml_8h_source.html#l00504">dqm4hep::core::TiXmlNode::ValueTStr()</a>.</p>
-<div class="fragment"><div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;                                                  {</div>
-<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;      <span class="keywordflow">if</span> (text.CDATA()) {</div>
-<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">DoIndent</a>();</div>
-<div class="line"><a name="l01464"></a><span class="lineno"> 1464</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;&lt;![CDATA[&quot;</span>;</div>
-<div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += text.Value();</div>
-<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;]]&gt;&quot;</span>;</div>
-<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">DoLineBreak</a>();</div>
-<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">simpleTextPrint</a>) {</div>
-<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;        <a class="code" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> str;</div>
-<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#abfce33d690778eef9a06638f07ad42a7">TiXmlBase::EncodeString</a>(text.ValueTStr(), &amp;str);</div>
-<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += str;</div>
-<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">DoIndent</a>();</div>
-<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;        <a class="code" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> str;</div>
-<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#abfce33d690778eef9a06638f07ad42a7">TiXmlBase::EncodeString</a>(text.ValueTStr(), &amp;str);</div>
-<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += str;</div>
-<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">DoLineBreak</a>();</div>
-<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;      }</div>
-<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;    }</div>
+<p>References <a class="el" href="tinyxml_8h_source.html#l02006">buffer</a>, <a class="el" href="tinyxml_8h_source.html#l01365">dqm4hep::core::TiXmlText::CDATA()</a>, <a class="el" href="tinyxml_8h_source.html#l01996">DoIndent()</a>, <a class="el" href="tinyxml_8h_source.html#l02000">DoLineBreak()</a>, <a class="el" href="tinyxml_8cc_source.html#l00055">dqm4hep::core::TiXmlBase::EncodeString()</a>, <a class="el" href="tinyxml_8h_source.html#l02005">simpleTextPrint</a>, <a class="el" href="tinyxml_8h_source.html#l00053">TIXML_STRING</a>, <a class="el" href="tinyxml_8h_source.html#l00490">dqm4hep::core::TiXmlNode::Value()</a>, and <a class="el" href="tinyxml_8h_source.html#l00504">dqm4hep::core::TiXmlNode::ValueTStr()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01465"></a><span class="lineno"> 1465</span>&#160;                                                  {</div>
+<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;      <span class="keywordflow">if</span> (text.CDATA()) {</div>
+<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">DoIndent</a>();</div>
+<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;&lt;![CDATA[&quot;</span>;</div>
+<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += text.Value();</div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;]]&gt;&quot;</span>;</div>
+<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">DoLineBreak</a>();</div>
+<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">simpleTextPrint</a>) {</div>
+<div class="line"><a name="l01473"></a><span class="lineno"> 1473</span>&#160;        <a class="code" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> str;</div>
+<div class="line"><a name="l01474"></a><span class="lineno"> 1474</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#abfce33d690778eef9a06638f07ad42a7">TiXmlBase::EncodeString</a>(text.ValueTStr(), &amp;str);</div>
+<div class="line"><a name="l01475"></a><span class="lineno"> 1475</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += str;</div>
+<div class="line"><a name="l01476"></a><span class="lineno"> 1476</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01477"></a><span class="lineno"> 1477</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">DoIndent</a>();</div>
+<div class="line"><a name="l01478"></a><span class="lineno"> 1478</span>&#160;        <a class="code" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> str;</div>
+<div class="line"><a name="l01479"></a><span class="lineno"> 1479</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlBase.html#abfce33d690778eef9a06638f07ad42a7">TiXmlBase::EncodeString</a>(text.ValueTStr(), &amp;str);</div>
+<div class="line"><a name="l01480"></a><span class="lineno"> 1480</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += str;</div>
+<div class="line"><a name="l01481"></a><span class="lineno"> 1481</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">DoLineBreak</a>();</div>
+<div class="line"><a name="l01482"></a><span class="lineno"> 1482</span>&#160;      }</div>
+<div class="line"><a name="l01483"></a><span class="lineno"> 1483</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01484"></a><span class="lineno"> 1484</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlBase_html_abfce33d690778eef9a06638f07ad42a7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlBase.html#abfce33d690778eef9a06638f07ad42a7">dqm4hep::core::TiXmlBase::EncodeString</a></div><div class="ttdeci">static void EncodeString(const TIXML_STRING &amp;str, TIXML_STRING *outString)</div><div class="ttdoc">Expands entities in a string. </div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8cc_source.html#l00055">tinyxml.cc:55</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a52b58bd8bf404ee5f3ab451a8cef1def"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">dqm4hep::core::TiXmlPrinter::simpleTextPrint</a></div><div class="ttdeci">bool simpleTextPrint</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02003">tinyxml.h:2003</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a796bf99d0005dc4ccb89a241d9b3cbaf"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">dqm4hep::core::TiXmlPrinter::DoIndent</a></div><div class="ttdeci">void DoIndent()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01994">tinyxml.h:1994</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a89d4956984ec61858d8c858aecc3b61c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">dqm4hep::core::TiXmlPrinter::DoLineBreak</a></div><div class="ttdeci">void DoLineBreak()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01998">tinyxml.h:1998</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02004">tinyxml.h:2004</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a52b58bd8bf404ee5f3ab451a8cef1def"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">dqm4hep::core::TiXmlPrinter::simpleTextPrint</a></div><div class="ttdeci">bool simpleTextPrint</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02005">tinyxml.h:2005</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a796bf99d0005dc4ccb89a241d9b3cbaf"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">dqm4hep::core::TiXmlPrinter::DoIndent</a></div><div class="ttdeci">void DoIndent()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01996">tinyxml.h:1996</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a89d4956984ec61858d8c858aecc3b61c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">dqm4hep::core::TiXmlPrinter::DoLineBreak</a></div><div class="ttdeci">void DoLineBreak()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02000">tinyxml.h:2000</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02006">tinyxml.h:2006</a></div></div>
 <div class="ttc" id="tinyxml_8h_html_a92bada05fd84d9a0c9a5bbe53de26887"><div class="ttname"><a href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a></div><div class="ttdeci">#define TIXML_STRING</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l00053">tinyxml.h:53</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -664,20 +664,20 @@ fprintf( stdout, "%s", printer.CStr() );
 
 <p>Reimplemented from <a class="el" href="classdqm4hep_1_1core_1_1TiXmlVisitor.html#a76a733b03e2ce091fe4356d8f92e296b">dqm4hep::core::TiXmlVisitor</a>.</p>
 
-<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01489">1489</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01493">1493</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l02004">buffer</a>, <a class="el" href="tinyxml_8h_source.html#l01994">DoIndent()</a>, <a class="el" href="tinyxml_8h_source.html#l01998">DoLineBreak()</a>, and <a class="el" href="tinyxml_8h_source.html#l00490">dqm4hep::core::TiXmlNode::Value()</a>.</p>
-<div class="fragment"><div class="line"><a name="l01489"></a><span class="lineno"> 1489</span>&#160;                                                        {</div>
-<div class="line"><a name="l01490"></a><span class="lineno"> 1490</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">DoIndent</a>();</div>
-<div class="line"><a name="l01491"></a><span class="lineno"> 1491</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;&lt;!--&quot;</span>;</div>
-<div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += comment.Value();</div>
-<div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;--&gt;&quot;</span>;</div>
-<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">DoLineBreak</a>();</div>
-<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a796bf99d0005dc4ccb89a241d9b3cbaf"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">dqm4hep::core::TiXmlPrinter::DoIndent</a></div><div class="ttdeci">void DoIndent()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01994">tinyxml.h:1994</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a89d4956984ec61858d8c858aecc3b61c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">dqm4hep::core::TiXmlPrinter::DoLineBreak</a></div><div class="ttdeci">void DoLineBreak()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01998">tinyxml.h:1998</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02004">tinyxml.h:2004</a></div></div>
+<p>References <a class="el" href="tinyxml_8h_source.html#l02006">buffer</a>, <a class="el" href="tinyxml_8h_source.html#l01996">DoIndent()</a>, <a class="el" href="tinyxml_8h_source.html#l02000">DoLineBreak()</a>, and <a class="el" href="tinyxml_8h_source.html#l00490">dqm4hep::core::TiXmlNode::Value()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;                                                        {</div>
+<div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">DoIndent</a>();</div>
+<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;&lt;!--&quot;</span>;</div>
+<div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += comment.Value();</div>
+<div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;--&gt;&quot;</span>;</div>
+<div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">DoLineBreak</a>();</div>
+<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a796bf99d0005dc4ccb89a241d9b3cbaf"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">dqm4hep::core::TiXmlPrinter::DoIndent</a></div><div class="ttdeci">void DoIndent()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01996">tinyxml.h:1996</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a89d4956984ec61858d8c858aecc3b61c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">dqm4hep::core::TiXmlPrinter::DoLineBreak</a></div><div class="ttdeci">void DoLineBreak()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02000">tinyxml.h:2000</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02006">tinyxml.h:2006</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -707,20 +707,20 @@ fprintf( stdout, "%s", printer.CStr() );
 
 <p>Reimplemented from <a class="el" href="classdqm4hep_1_1core_1_1TiXmlVisitor.html#a22734b7f7ebcf29cbd290e386417d5d0">dqm4hep::core::TiXmlVisitor</a>.</p>
 
-<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01498">1498</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01502">1502</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l02004">buffer</a>, <a class="el" href="tinyxml_8h_source.html#l01994">DoIndent()</a>, <a class="el" href="tinyxml_8h_source.html#l01998">DoLineBreak()</a>, and <a class="el" href="tinyxml_8h_source.html#l00490">dqm4hep::core::TiXmlNode::Value()</a>.</p>
-<div class="fragment"><div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;                                                        {</div>
-<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">DoIndent</a>();</div>
-<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;&lt;&quot;</span>;</div>
-<div class="line"><a name="l01501"></a><span class="lineno"> 1501</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += unknown.Value();</div>
-<div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;&gt;&quot;</span>;</div>
-<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">DoLineBreak</a>();</div>
-<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a796bf99d0005dc4ccb89a241d9b3cbaf"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">dqm4hep::core::TiXmlPrinter::DoIndent</a></div><div class="ttdeci">void DoIndent()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01994">tinyxml.h:1994</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a89d4956984ec61858d8c858aecc3b61c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">dqm4hep::core::TiXmlPrinter::DoLineBreak</a></div><div class="ttdeci">void DoLineBreak()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01998">tinyxml.h:1998</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02004">tinyxml.h:2004</a></div></div>
+<p>References <a class="el" href="tinyxml_8h_source.html#l02006">buffer</a>, <a class="el" href="tinyxml_8h_source.html#l01996">DoIndent()</a>, <a class="el" href="tinyxml_8h_source.html#l02000">DoLineBreak()</a>, and <a class="el" href="tinyxml_8h_source.html#l00490">dqm4hep::core::TiXmlNode::Value()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;                                                        {</div>
+<div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">DoIndent</a>();</div>
+<div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;&lt;&quot;</span>;</div>
+<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += unknown.Value();</div>
+<div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;&gt;&quot;</span>;</div>
+<div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">DoLineBreak</a>();</div>
+<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a796bf99d0005dc4ccb89a241d9b3cbaf"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">dqm4hep::core::TiXmlPrinter::DoIndent</a></div><div class="ttdeci">void DoIndent()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01996">tinyxml.h:1996</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a89d4956984ec61858d8c858aecc3b61c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">dqm4hep::core::TiXmlPrinter::DoLineBreak</a></div><div class="ttdeci">void DoLineBreak()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02000">tinyxml.h:2000</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02006">tinyxml.h:2006</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -750,10 +750,10 @@ fprintf( stdout, "%s", printer.CStr() );
 
 <p>Reimplemented from <a class="el" href="classdqm4hep_1_1core_1_1TiXmlVisitor.html#ab724e7f44227ecc7e050845f563da23f">dqm4hep::core::TiXmlVisitor</a>.</p>
 
-<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01408">1408</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l01408"></a><span class="lineno"> 1408</span>&#160;                                                         {</div>
-<div class="line"><a name="l01409"></a><span class="lineno"> 1409</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01410"></a><span class="lineno"> 1410</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01412">1412</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;                                                         {</div>
+<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -793,40 +793,40 @@ fprintf( stdout, "%s", printer.CStr() );
 
 <p>Reimplemented from <a class="el" href="classdqm4hep_1_1core_1_1TiXmlVisitor.html#a91bbd93972337d3513a8aca3e365cdc0">dqm4hep::core::TiXmlVisitor</a>.</p>
 
-<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01416">1416</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01420">1420</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l02004">buffer</a>, <a class="el" href="tinyxml_8h_source.html#l01364">dqm4hep::core::TiXmlText::CDATA()</a>, <a class="el" href="tinyxml_8h_source.html#l02002">depth</a>, <a class="el" href="tinyxml_8h_source.html#l01994">DoIndent()</a>, <a class="el" href="tinyxml_8h_source.html#l01998">DoLineBreak()</a>, <a class="el" href="tinyxml_8h_source.html#l00539">dqm4hep::core::TiXmlNode::FirstChild()</a>, <a class="el" href="tinyxml_8h_source.html#l00554">dqm4hep::core::TiXmlNode::LastChild()</a>, <a class="el" href="tinyxml_8cc_source.html#l00923">dqm4hep::core::TiXmlAttribute::Next()</a>, <a class="el" href="tinyxml_8h_source.html#l02003">simpleTextPrint</a>, <a class="el" href="tinyxml_8h_source.html#l00776">dqm4hep::core::TiXmlNode::ToText()</a>, and <a class="el" href="tinyxml_8h_source.html#l00490">dqm4hep::core::TiXmlNode::Value()</a>.</p>
-<div class="fragment"><div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;                                                                                                   {</div>
-<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">DoIndent</a>();</div>
-<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;&lt;&quot;</span>;</div>
-<div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += element.Value();</div>
-<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;</div>
-<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> TiXmlAttribute *attrib = firstAttribute; attrib != <span class="keyword">nullptr</span>; attrib = attrib-&gt;Next()) {</div>
-<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;        attrib-&gt;Print(<span class="keyword">nullptr</span>, 0, &amp;<a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a>);</div>
-<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;      }</div>
-<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;</div>
-<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;      <span class="keywordflow">if</span> (element.FirstChild() == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot; /&gt;&quot;</span>;</div>
-<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">DoLineBreak</a>();</div>
-<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;&gt;&quot;</span>;</div>
-<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;        <span class="keywordflow">if</span> ((element.FirstChild()-&gt;ToText() != <span class="keyword">nullptr</span>) &amp;&amp; element.LastChild() == element.FirstChild() &amp;&amp;</div>
-<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;            !element.FirstChild()-&gt;ToText()-&gt;CDATA()) {</div>
-<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;          <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">simpleTextPrint</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;          <span class="comment">// no DoLineBreak()!</span></div>
-<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;          <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">DoLineBreak</a>();</div>
-<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;        }</div>
-<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;      }</div>
-<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;      ++<a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#acd06519f6c1a2aa92efc53cb26e677c0">depth</a>;</div>
-<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a52b58bd8bf404ee5f3ab451a8cef1def"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">dqm4hep::core::TiXmlPrinter::simpleTextPrint</a></div><div class="ttdeci">bool simpleTextPrint</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02003">tinyxml.h:2003</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a796bf99d0005dc4ccb89a241d9b3cbaf"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">dqm4hep::core::TiXmlPrinter::DoIndent</a></div><div class="ttdeci">void DoIndent()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01994">tinyxml.h:1994</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a89d4956984ec61858d8c858aecc3b61c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">dqm4hep::core::TiXmlPrinter::DoLineBreak</a></div><div class="ttdeci">void DoLineBreak()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01998">tinyxml.h:1998</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02004">tinyxml.h:2004</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_acd06519f6c1a2aa92efc53cb26e677c0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#acd06519f6c1a2aa92efc53cb26e677c0">dqm4hep::core::TiXmlPrinter::depth</a></div><div class="ttdeci">int depth</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02002">tinyxml.h:2002</a></div></div>
+<p>References <a class="el" href="tinyxml_8h_source.html#l02006">buffer</a>, <a class="el" href="tinyxml_8h_source.html#l01365">dqm4hep::core::TiXmlText::CDATA()</a>, <a class="el" href="tinyxml_8h_source.html#l02004">depth</a>, <a class="el" href="tinyxml_8h_source.html#l01996">DoIndent()</a>, <a class="el" href="tinyxml_8h_source.html#l02000">DoLineBreak()</a>, <a class="el" href="tinyxml_8h_source.html#l00539">dqm4hep::core::TiXmlNode::FirstChild()</a>, <a class="el" href="tinyxml_8h_source.html#l00554">dqm4hep::core::TiXmlNode::LastChild()</a>, <a class="el" href="tinyxml_8cc_source.html#l00925">dqm4hep::core::TiXmlAttribute::Next()</a>, <a class="el" href="tinyxml_8h_source.html#l02005">simpleTextPrint</a>, <a class="el" href="tinyxml_8h_source.html#l00776">dqm4hep::core::TiXmlNode::ToText()</a>, and <a class="el" href="tinyxml_8h_source.html#l00490">dqm4hep::core::TiXmlNode::Value()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;                                                                                                   {</div>
+<div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">DoIndent</a>();</div>
+<div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;&lt;&quot;</span>;</div>
+<div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += element.Value();</div>
+<div class="line"><a name="l01424"></a><span class="lineno"> 1424</span>&#160;</div>
+<div class="line"><a name="l01425"></a><span class="lineno"> 1425</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> TiXmlAttribute *attrib = firstAttribute; attrib != <span class="keyword">nullptr</span>; attrib = attrib-&gt;Next()) {</div>
+<div class="line"><a name="l01426"></a><span class="lineno"> 1426</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;        attrib-&gt;Print(<span class="keyword">nullptr</span>, 0, &amp;<a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a>);</div>
+<div class="line"><a name="l01428"></a><span class="lineno"> 1428</span>&#160;      }</div>
+<div class="line"><a name="l01429"></a><span class="lineno"> 1429</span>&#160;</div>
+<div class="line"><a name="l01430"></a><span class="lineno"> 1430</span>&#160;      <span class="keywordflow">if</span> (element.FirstChild() == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l01431"></a><span class="lineno"> 1431</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot; /&gt;&quot;</span>;</div>
+<div class="line"><a name="l01432"></a><span class="lineno"> 1432</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">DoLineBreak</a>();</div>
+<div class="line"><a name="l01433"></a><span class="lineno"> 1433</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01434"></a><span class="lineno"> 1434</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;&gt;&quot;</span>;</div>
+<div class="line"><a name="l01435"></a><span class="lineno"> 1435</span>&#160;        <span class="keywordflow">if</span> ((element.FirstChild()-&gt;ToText() != <span class="keyword">nullptr</span>) &amp;&amp; element.LastChild() == element.FirstChild() &amp;&amp;</div>
+<div class="line"><a name="l01436"></a><span class="lineno"> 1436</span>&#160;            !element.FirstChild()-&gt;ToText()-&gt;CDATA()) {</div>
+<div class="line"><a name="l01437"></a><span class="lineno"> 1437</span>&#160;          <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">simpleTextPrint</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;          <span class="comment">// no DoLineBreak()!</span></div>
+<div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;          <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">DoLineBreak</a>();</div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;        }</div>
+<div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;      }</div>
+<div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;      ++<a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#acd06519f6c1a2aa92efc53cb26e677c0">depth</a>;</div>
+<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a52b58bd8bf404ee5f3ab451a8cef1def"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">dqm4hep::core::TiXmlPrinter::simpleTextPrint</a></div><div class="ttdeci">bool simpleTextPrint</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02005">tinyxml.h:2005</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a796bf99d0005dc4ccb89a241d9b3cbaf"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">dqm4hep::core::TiXmlPrinter::DoIndent</a></div><div class="ttdeci">void DoIndent()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01996">tinyxml.h:1996</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a89d4956984ec61858d8c858aecc3b61c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">dqm4hep::core::TiXmlPrinter::DoLineBreak</a></div><div class="ttdeci">void DoLineBreak()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02000">tinyxml.h:2000</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02006">tinyxml.h:2006</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_acd06519f6c1a2aa92efc53cb26e677c0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#acd06519f6c1a2aa92efc53cb26e677c0">dqm4hep::core::TiXmlPrinter::depth</a></div><div class="ttdeci">int depth</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02004">tinyxml.h:2004</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -856,10 +856,10 @@ fprintf( stdout, "%s", printer.CStr() );
 
 <p>Reimplemented from <a class="el" href="classdqm4hep_1_1core_1_1TiXmlVisitor.html#a73d66cefb193cfd5498d048025d7ac41">dqm4hep::core::TiXmlVisitor</a>.</p>
 
-<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01412">1412</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l01412"></a><span class="lineno"> 1412</span>&#160;                                                        {</div>
-<div class="line"><a name="l01413"></a><span class="lineno"> 1413</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01416">1416</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l01416"></a><span class="lineno"> 1416</span>&#160;                                                        {</div>
+<div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -889,31 +889,31 @@ fprintf( stdout, "%s", printer.CStr() );
 
 <p>Reimplemented from <a class="el" href="classdqm4hep_1_1core_1_1TiXmlVisitor.html#ae5588c3edbe423db7ca64fd47f009158">dqm4hep::core::TiXmlVisitor</a>.</p>
 
-<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01443">1443</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8cc_source.html#l01447">1447</a> of file <a class="el" href="tinyxml_8cc_source.html">tinyxml.cc</a>.</p>
 
-<p>References <a class="el" href="tinyxml_8h_source.html#l02004">buffer</a>, <a class="el" href="tinyxml_8h_source.html#l02002">depth</a>, <a class="el" href="tinyxml_8h_source.html#l01994">DoIndent()</a>, <a class="el" href="tinyxml_8h_source.html#l01998">DoLineBreak()</a>, <a class="el" href="tinyxml_8h_source.html#l00539">dqm4hep::core::TiXmlNode::FirstChild()</a>, <a class="el" href="tinyxml_8h_source.html#l02003">simpleTextPrint</a>, and <a class="el" href="tinyxml_8h_source.html#l00490">dqm4hep::core::TiXmlNode::Value()</a>.</p>
-<div class="fragment"><div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160;                                                            {</div>
-<div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;      --<a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#acd06519f6c1a2aa92efc53cb26e677c0">depth</a>;</div>
-<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;      <span class="keywordflow">if</span> (element.FirstChild() == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;        <span class="comment">// nothing.</span></div>
-<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">simpleTextPrint</a>) {</div>
-<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;          <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">simpleTextPrint</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;          <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">DoIndent</a>();</div>
-<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;        }</div>
-<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;&lt;/&quot;</span>;</div>
-<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += element.Value();</div>
-<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;&gt;&quot;</span>;</div>
-<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">DoLineBreak</a>();</div>
-<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;      }</div>
-<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a52b58bd8bf404ee5f3ab451a8cef1def"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">dqm4hep::core::TiXmlPrinter::simpleTextPrint</a></div><div class="ttdeci">bool simpleTextPrint</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02003">tinyxml.h:2003</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a796bf99d0005dc4ccb89a241d9b3cbaf"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">dqm4hep::core::TiXmlPrinter::DoIndent</a></div><div class="ttdeci">void DoIndent()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01994">tinyxml.h:1994</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a89d4956984ec61858d8c858aecc3b61c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">dqm4hep::core::TiXmlPrinter::DoLineBreak</a></div><div class="ttdeci">void DoLineBreak()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01998">tinyxml.h:1998</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02004">tinyxml.h:2004</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_acd06519f6c1a2aa92efc53cb26e677c0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#acd06519f6c1a2aa92efc53cb26e677c0">dqm4hep::core::TiXmlPrinter::depth</a></div><div class="ttdeci">int depth</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02002">tinyxml.h:2002</a></div></div>
+<p>References <a class="el" href="tinyxml_8h_source.html#l02006">buffer</a>, <a class="el" href="tinyxml_8h_source.html#l02004">depth</a>, <a class="el" href="tinyxml_8h_source.html#l01996">DoIndent()</a>, <a class="el" href="tinyxml_8h_source.html#l02000">DoLineBreak()</a>, <a class="el" href="tinyxml_8h_source.html#l00539">dqm4hep::core::TiXmlNode::FirstChild()</a>, <a class="el" href="tinyxml_8h_source.html#l02005">simpleTextPrint</a>, and <a class="el" href="tinyxml_8h_source.html#l00490">dqm4hep::core::TiXmlNode::Value()</a>.</p>
+<div class="fragment"><div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;                                                            {</div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;      --<a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#acd06519f6c1a2aa92efc53cb26e677c0">depth</a>;</div>
+<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;      <span class="keywordflow">if</span> (element.FirstChild() == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l01450"></a><span class="lineno"> 1450</span>&#160;        <span class="comment">// nothing.</span></div>
+<div class="line"><a name="l01451"></a><span class="lineno"> 1451</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01452"></a><span class="lineno"> 1452</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">simpleTextPrint</a>) {</div>
+<div class="line"><a name="l01453"></a><span class="lineno"> 1453</span>&#160;          <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">simpleTextPrint</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;          <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">DoIndent</a>();</div>
+<div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;        }</div>
+<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;&lt;/&quot;</span>;</div>
+<div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += element.Value();</div>
+<div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">buffer</a> += <span class="stringliteral">&quot;&gt;&quot;</span>;</div>
+<div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">DoLineBreak</a>();</div>
+<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;      }</div>
+<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01463"></a><span class="lineno"> 1463</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a52b58bd8bf404ee5f3ab451a8cef1def"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a52b58bd8bf404ee5f3ab451a8cef1def">dqm4hep::core::TiXmlPrinter::simpleTextPrint</a></div><div class="ttdeci">bool simpleTextPrint</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02005">tinyxml.h:2005</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a796bf99d0005dc4ccb89a241d9b3cbaf"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a796bf99d0005dc4ccb89a241d9b3cbaf">dqm4hep::core::TiXmlPrinter::DoIndent</a></div><div class="ttdeci">void DoIndent()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l01996">tinyxml.h:1996</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a89d4956984ec61858d8c858aecc3b61c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a89d4956984ec61858d8c858aecc3b61c">dqm4hep::core::TiXmlPrinter::DoLineBreak</a></div><div class="ttdeci">void DoLineBreak()</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02000">tinyxml.h:2000</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_a6d3130a7433c89d7e0b9147ba473ef6a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#a6d3130a7433c89d7e0b9147ba473ef6a">dqm4hep::core::TiXmlPrinter::buffer</a></div><div class="ttdeci">TIXML_STRING buffer</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02006">tinyxml.h:2006</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlPrinter_html_acd06519f6c1a2aa92efc53cb26e677c0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlPrinter.html#acd06519f6c1a2aa92efc53cb26e677c0">dqm4hep::core::TiXmlPrinter::depth</a></div><div class="ttdeci">int depth</div><div class="ttdef"><b>Definition:</b> <a href="tinyxml_8h_source.html#l02004">tinyxml.h:2004</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -926,79 +926,7 @@ fprintf( stdout, "%s", printer.CStr() );
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> dqm4hep::core::TiXmlPrinter::buffer</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l02004">2004</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
-
-<p>Referenced by <a class="el" href="tinyxml_8h_source.html#l01978">CStr()</a>, <a class="el" href="tinyxml_8h_source.html#l01994">DoIndent()</a>, <a class="el" href="tinyxml_8h_source.html#l01998">DoLineBreak()</a>, <a class="el" href="tinyxml_8h_source.html#l01982">Size()</a>, <a class="el" href="tinyxml_8cc_source.html#l01461">Visit()</a>, <a class="el" href="tinyxml_8cc_source.html#l01416">VisitEnter()</a>, and <a class="el" href="tinyxml_8cc_source.html#l01443">VisitExit()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="acd06519f6c1a2aa92efc53cb26e677c0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int dqm4hep::core::TiXmlPrinter::depth</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l02002">2002</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
-
-<p>Referenced by <a class="el" href="tinyxml_8h_source.html#l01994">DoIndent()</a>, <a class="el" href="tinyxml_8cc_source.html#l01416">VisitEnter()</a>, and <a class="el" href="tinyxml_8cc_source.html#l01443">VisitExit()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a203b29e09aca0267cb0e33cef945b6ab"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> dqm4hep::core::TiXmlPrinter::indent</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l02005">2005</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
-
-<p>Referenced by <a class="el" href="tinyxml_8h_source.html#l01994">DoIndent()</a>, <a class="el" href="tinyxml_8h_source.html#l01955">Indent()</a>, <a class="el" href="tinyxml_8h_source.html#l01951">SetIndent()</a>, and <a class="el" href="tinyxml_8h_source.html#l01973">SetStreamPrinting()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a7ef021b84f344991494a572407c61c7c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> dqm4hep::core::TiXmlPrinter::lineBreak</td>
+          <td class="memname"><a class="el" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> dqm4hep::core::TiXmlPrinter::buffer = {}</td>
         </tr>
       </table>
   </td>
@@ -1010,7 +938,79 @@ fprintf( stdout, "%s", printer.CStr() );
 
 <p>Definition at line <a class="el" href="tinyxml_8h_source.html#l02006">2006</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>Referenced by <a class="el" href="tinyxml_8h_source.html#l01998">DoLineBreak()</a>, <a class="el" href="tinyxml_8h_source.html#l01966">LineBreak()</a>, <a class="el" href="tinyxml_8h_source.html#l01962">SetLineBreak()</a>, and <a class="el" href="tinyxml_8h_source.html#l01973">SetStreamPrinting()</a>.</p>
+<p>Referenced by <a class="el" href="tinyxml_8h_source.html#l01980">CStr()</a>, <a class="el" href="tinyxml_8h_source.html#l01996">DoIndent()</a>, <a class="el" href="tinyxml_8h_source.html#l02000">DoLineBreak()</a>, <a class="el" href="tinyxml_8h_source.html#l01984">Size()</a>, <a class="el" href="tinyxml_8cc_source.html#l01465">Visit()</a>, <a class="el" href="tinyxml_8cc_source.html#l01420">VisitEnter()</a>, and <a class="el" href="tinyxml_8cc_source.html#l01447">VisitExit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd06519f6c1a2aa92efc53cb26e677c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dqm4hep::core::TiXmlPrinter::depth = {0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l02004">2004</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+
+<p>Referenced by <a class="el" href="tinyxml_8h_source.html#l01996">DoIndent()</a>, <a class="el" href="tinyxml_8cc_source.html#l01420">VisitEnter()</a>, and <a class="el" href="tinyxml_8cc_source.html#l01447">VisitExit()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a203b29e09aca0267cb0e33cef945b6ab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> dqm4hep::core::TiXmlPrinter::indent = {&quot; &quot;}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l02007">2007</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+
+<p>Referenced by <a class="el" href="tinyxml_8h_source.html#l01996">DoIndent()</a>, <a class="el" href="tinyxml_8h_source.html#l01957">Indent()</a>, <a class="el" href="tinyxml_8h_source.html#l01953">SetIndent()</a>, and <a class="el" href="tinyxml_8h_source.html#l01975">SetStreamPrinting()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ef021b84f344991494a572407c61c7c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tinyxml_8h.html#a92bada05fd84d9a0c9a5bbe53de26887">TIXML_STRING</a> dqm4hep::core::TiXmlPrinter::lineBreak = {&quot;\n&quot;}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l02008">2008</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+
+<p>Referenced by <a class="el" href="tinyxml_8h_source.html#l02000">DoLineBreak()</a>, <a class="el" href="tinyxml_8h_source.html#l01968">LineBreak()</a>, <a class="el" href="tinyxml_8h_source.html#l01964">SetLineBreak()</a>, and <a class="el" href="tinyxml_8h_source.html#l01975">SetStreamPrinting()</a>.</p>
 
 </div>
 </div>
@@ -1022,7 +1022,7 @@ fprintf( stdout, "%s", printer.CStr() );
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool dqm4hep::core::TiXmlPrinter::simpleTextPrint</td>
+          <td class="memname">bool dqm4hep::core::TiXmlPrinter::simpleTextPrint = {false}</td>
         </tr>
       </table>
   </td>
@@ -1032,9 +1032,9 @@ fprintf( stdout, "%s", printer.CStr() );
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l02003">2003</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
+<p>Definition at line <a class="el" href="tinyxml_8h_source.html#l02005">2005</a> of file <a class="el" href="tinyxml_8h_source.html">tinyxml.h</a>.</p>
 
-<p>Referenced by <a class="el" href="tinyxml_8cc_source.html#l01461">Visit()</a>, <a class="el" href="tinyxml_8cc_source.html#l01416">VisitEnter()</a>, and <a class="el" href="tinyxml_8cc_source.html#l01443">VisitExit()</a>.</p>
+<p>Referenced by <a class="el" href="tinyxml_8cc_source.html#l01465">Visit()</a>, <a class="el" href="tinyxml_8cc_source.html#l01420">VisitEnter()</a>, and <a class="el" href="tinyxml_8cc_source.html#l01447">VisitExit()</a>.</p>
 
 </div>
 </div>
@@ -1045,7 +1045,7 @@ fprintf( stdout, "%s", printer.CStr() );
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 11 2018 15:30:52 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 22 2018 02:55:03 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

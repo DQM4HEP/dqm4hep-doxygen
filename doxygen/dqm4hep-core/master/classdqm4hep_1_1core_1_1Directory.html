@@ -363,13 +363,11 @@ template&lt;typename T &gt; </div>
 <p>Constructor with name and parent dir. </p>
 
 <p>Definition at line <a class="el" href="Directory_8h_source.html#l00186">186</a> of file <a class="el" href="Directory_8h_source.html">Directory.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        : <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#af960fce8e53bfb17516a9b54b2d40976">m_name</a>(<a class="code" href="classdqm4hep_1_1core_1_1Directory.html#a8451e26d515b49824133908304c75ad1">name</a>), <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#a38769e54ba394cceb65c3853bc6c9311">m_parent</a>(<a class="code" href="classdqm4hep_1_1core_1_1Directory.html#ab14f846acd4ef273e95733695c1528e8">parent</a>), <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#acf84e91cc9368d5724f9a5db35855015">m_subdirs</a>(), <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#a9bf4abf94629d4dbd90c64cf02f1a48b">m_contents</a>() {</div>
+<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        : <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#af960fce8e53bfb17516a9b54b2d40976">m_name</a>(dname), <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#a38769e54ba394cceb65c3853bc6c9311">m_parent</a>(dparent), <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#acf84e91cc9368d5724f9a5db35855015">m_subdirs</a>(), <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#a9bf4abf94629d4dbd90c64cf02f1a48b">m_contents</a>() {</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      <span class="comment">/* nop */</span></div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Directory_html_ab14f846acd4ef273e95733695c1528e8"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Directory.html#ab14f846acd4ef273e95733695c1528e8">dqm4hep::core::Directory::parent</a></div><div class="ttdeci">DirectoryPtr parent() const </div><div class="ttdoc">Returns the parent directory. </div><div class="ttdef"><b>Definition:</b> <a href="Directory_8h_source.html#l00208">Directory.h:208</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Directory_html_a9bf4abf94629d4dbd90c64cf02f1a48b"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Directory.html#a9bf4abf94629d4dbd90c64cf02f1a48b">dqm4hep::core::Directory::m_contents</a></div><div class="ttdeci">ObjectList m_contents</div><div class="ttdef"><b>Definition:</b> <a href="Directory_8h_source.html#l00158">Directory.h:158</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Directory_html_acf84e91cc9368d5724f9a5db35855015"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Directory.html#acf84e91cc9368d5724f9a5db35855015">dqm4hep::core::Directory::m_subdirs</a></div><div class="ttdeci">DirectoryList m_subdirs</div><div class="ttdef"><b>Definition:</b> <a href="Directory_8h_source.html#l00157">Directory.h:157</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Directory_html_a8451e26d515b49824133908304c75ad1"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Directory.html#a8451e26d515b49824133908304c75ad1">dqm4hep::core::Directory::name</a></div><div class="ttdeci">const std::string &amp; name() const </div><div class="ttdoc">Returns the directory name. </div><div class="ttdef"><b>Definition:</b> <a href="Directory_8h_source.html#l00201">Directory.h:201</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Directory_html_af960fce8e53bfb17516a9b54b2d40976"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Directory.html#af960fce8e53bfb17516a9b54b2d40976">dqm4hep::core::Directory::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdef"><b>Definition:</b> <a href="Directory_8h_source.html#l00155">Directory.h:155</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Directory_html_a38769e54ba394cceb65c3853bc6c9311"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Directory.html#a38769e54ba394cceb65c3853bc6c9311">dqm4hep::core::Directory::m_parent</a></div><div class="ttdeci">DirectoryPtr m_parent</div><div class="ttdef"><b>Definition:</b> <a href="Directory_8h_source.html#l00156">Directory.h:156</a></div></div>
 </div><!-- fragment -->
@@ -715,26 +713,25 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="Directory_8h_source.html#l00398">398</a> of file <a class="el" href="Directory_8h_source.html">Directory.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                                             {</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;      Path <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#ab87ba39c33ff9d949990e7c57c06e76a">fullPath</a> = this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Directory.html#a8451e26d515b49824133908304c75ad1">name</a>();</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;      Path fPath = this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Directory.html#a8451e26d515b49824133908304c75ad1">name</a>();</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#af869cbf61892f7849f8ca5e4a3d22b7f">DirectoryPtr</a> dir = <span class="keyword">const_cast&lt;</span>Directory&lt;T&gt; *<span class="keyword">&gt;</span>(<span class="keyword">this</span>)-&gt;shared_from_this();</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;      <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#af869cbf61892f7849f8ca5e4a3d22b7f">DirectoryPtr</a> parentDir = dir-&gt;parent();</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> != parentDir) {</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;          fullPath = parentDir-&gt;name() + <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#ab87ba39c33ff9d949990e7c57c06e76a">fullPath</a>;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;          fPath = parentDir-&gt;name() + fPath;</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;          dir = parentDir;</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;          fullPath = Path(<span class="stringliteral">&quot;/&quot;</span>) + <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#ab87ba39c33ff9d949990e7c57c06e76a">fullPath</a>;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;          fPath = Path(<span class="stringliteral">&quot;/&quot;</span>) + fPath;</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;          <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        }</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;      }</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#ab87ba39c33ff9d949990e7c57c06e76a">fullPath</a>;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;      <span class="keywordflow">return</span> fPath;</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Directory_html_af869cbf61892f7849f8ca5e4a3d22b7f"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Directory.html#af869cbf61892f7849f8ca5e4a3d22b7f">dqm4hep::core::Directory::DirectoryPtr</a></div><div class="ttdeci">std::shared_ptr&lt; Directory&lt; T &gt; &gt; DirectoryPtr</div><div class="ttdef"><b>Definition:</b> <a href="Directory_8h_source.html#l00053">Directory.h:53</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Directory_html_a8451e26d515b49824133908304c75ad1"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Directory.html#a8451e26d515b49824133908304c75ad1">dqm4hep::core::Directory::name</a></div><div class="ttdeci">const std::string &amp; name() const </div><div class="ttdoc">Returns the directory name. </div><div class="ttdef"><b>Definition:</b> <a href="Directory_8h_source.html#l00201">Directory.h:201</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Directory_html_ab87ba39c33ff9d949990e7c57c06e76a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Directory.html#ab87ba39c33ff9d949990e7c57c06e76a">dqm4hep::core::Directory::fullPath</a></div><div class="ttdeci">Path fullPath() const </div><div class="ttdoc">Get the full path name of the directory. </div><div class="ttdef"><b>Definition:</b> <a href="Directory_8h_source.html#l00398">Directory.h:398</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -766,7 +763,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="Directory_8h_source.html#l00243">243</a> of file <a class="el" href="Directory_8h_source.html">Directory.h</a>.</p>
 
-<p>References <a class="el" href="Internal_8h_source.html#l00322">dqm4hep::core::containsSpecialCharacters()</a>.</p>
+<p>References <a class="el" href="Internal_8h_source.html#l00325">dqm4hep::core::containsSpecialCharacters()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                                                                     {</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      <span class="keywordflow">if</span> (dirName.find(<span class="stringliteral">&quot;/&quot;</span>) != std::string::npos || <a class="code" href="namespacedqm4hep_1_1core.html#afc115aa7bf7d6c8941c49c145538cde2">dqm4hep::core::containsSpecialCharacters</a>(dirName) ||</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;          dirName.empty())</div>
@@ -781,7 +778,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_afc115aa7bf7d6c8941c49c145538cde2"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#afc115aa7bf7d6c8941c49c145538cde2">dqm4hep::core::containsSpecialCharacters</a></div><div class="ttdeci">bool containsSpecialCharacters(const std::string &amp;str)</div><div class="ttdoc">Whether the string contains a special character. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00322">Internal.h:322</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_afc115aa7bf7d6c8941c49c145538cde2"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#afc115aa7bf7d6c8941c49c145538cde2">dqm4hep::core::containsSpecialCharacters</a></div><div class="ttdeci">bool containsSpecialCharacters(const std::string &amp;str)</div><div class="ttdoc">Whether the string contains a special character. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00325">Internal.h:325</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Directory_html_acf84e91cc9368d5724f9a5db35855015"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Directory.html#acf84e91cc9368d5724f9a5db35855015">dqm4hep::core::Directory::m_subdirs</a></div><div class="ttdeci">DirectoryList m_subdirs</div><div class="ttdef"><b>Definition:</b> <a href="Directory_8h_source.html#l00157">Directory.h:157</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -960,7 +957,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="Directory_8h_source.html#l00222">222</a> of file <a class="el" href="Directory_8h_source.html">Directory.h</a>.</p>
 
-<p>References <a class="el" href="Internal_8h_source.html#l00322">dqm4hep::core::containsSpecialCharacters()</a>, and <a class="el" href="Directory_8h_source.html#l00165">dqm4hep::core::Directory&lt; T &gt;::make_shared()</a>.</p>
+<p>References <a class="el" href="Internal_8h_source.html#l00325">dqm4hep::core::containsSpecialCharacters()</a>, and <a class="el" href="Directory_8h_source.html#l00165">dqm4hep::core::Directory&lt; T &gt;::make_shared()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                                                                                         {</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Directory.html#af869cbf61892f7849f8ca5e4a3d22b7f">DirectoryPtr</a> directory;</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
@@ -978,7 +975,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <span class="keywordflow">return</span> newDirectory;</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_afc115aa7bf7d6c8941c49c145538cde2"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#afc115aa7bf7d6c8941c49c145538cde2">dqm4hep::core::containsSpecialCharacters</a></div><div class="ttdeci">bool containsSpecialCharacters(const std::string &amp;str)</div><div class="ttdoc">Whether the string contains a special character. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00322">Internal.h:322</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_afc115aa7bf7d6c8941c49c145538cde2"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#afc115aa7bf7d6c8941c49c145538cde2">dqm4hep::core::containsSpecialCharacters</a></div><div class="ttdeci">bool containsSpecialCharacters(const std::string &amp;str)</div><div class="ttdoc">Whether the string contains a special character. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00325">Internal.h:325</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Directory_html_af869cbf61892f7849f8ca5e4a3d22b7f"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Directory.html#af869cbf61892f7849f8ca5e4a3d22b7f">dqm4hep::core::Directory::DirectoryPtr</a></div><div class="ttdeci">std::shared_ptr&lt; Directory&lt; T &gt; &gt; DirectoryPtr</div><div class="ttdef"><b>Definition:</b> <a href="Directory_8h_source.html#l00053">Directory.h:53</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Directory_html_acf84e91cc9368d5724f9a5db35855015"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Directory.html#acf84e91cc9368d5724f9a5db35855015">dqm4hep::core::Directory::m_subdirs</a></div><div class="ttdeci">DirectoryList m_subdirs</div><div class="ttdef"><b>Definition:</b> <a href="Directory_8h_source.html#l00157">Directory.h:157</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Directory_html_ad0e852a75a3d06576c0361b63923d120"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Directory.html#ad0e852a75a3d06576c0361b63923d120">dqm4hep::core::Directory::make_shared</a></div><div class="ttdeci">static DirectoryPtr make_shared()</div><div class="ttdoc">Factory method for simple constructor. </div><div class="ttdef"><b>Definition:</b> <a href="Directory_8h_source.html#l00165">Directory.h:165</a></div></div>
@@ -1320,7 +1317,7 @@ template&lt;typename T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 11 2018 15:30:51 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 22 2018 02:55:02 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

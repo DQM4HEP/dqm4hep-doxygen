@@ -144,7 +144,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="StreamingHelper_8h_source.html#l00126">126</a> of file <a class="el" href="StreamingHelper_8h_source.html">StreamingHelper.h</a>.</p>
 
-<p>Referenced by <a class="el" href="StreamingHelper_8h_source.html#l00192">read()</a>, and <a class="el" href="GenericEvent_8cc_source.html#l00200">dqm4hep::core::GenericEventStreamer::read()</a>.</p>
+<p>Referenced by <a class="el" href="GenericEventStreamer_8cc_source.html#l00113">dqm4hep::core::GenericEventStreamer::read()</a>, and <a class="el" href="StreamingHelper_8h_source.html#l00192">read()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                                                                            {</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      uint32_t nRead = 0;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      XDR_STREAM(pDevice-&gt;read(&amp;nRead))</div>
@@ -522,7 +522,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="StreamingHelper_8h_source.html#l00142">142</a> of file <a class="el" href="StreamingHelper_8h_source.html">StreamingHelper.h</a>.</p>
 
-<p>Referenced by <a class="el" href="StreamingHelper_8h_source.html#l00214">write()</a>, and <a class="el" href="GenericEvent_8cc_source.html#l00172">dqm4hep::core::GenericEventStreamer::write()</a>.</p>
+<p>Referenced by <a class="el" href="GenericEventStreamer_8cc_source.html#l00088">dqm4hep::core::GenericEventStreamer::write()</a>, and <a class="el" href="StreamingHelper_8h_source.html#l00214">write()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                                                                                                   {</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;      uint32_t nWrite = stlContainer.size();</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      XDR_STREAM(pDevice-&gt;write(&amp;nWrite))</div>
@@ -843,7 +843,7 @@ template&lt;typename KeyType , typename ValueType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 11 2018 15:30:51 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 22 2018 02:55:03 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

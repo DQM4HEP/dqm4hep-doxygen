@@ -70,6 +70,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adc8ebdb7923ca32c7e3327f76d5e3ec5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Archiver.html#adc8ebdb7923ca32c7e3327f76d5e3ec5">Archiver</a> ()=default</td></tr>
 <tr class="memdesc:adc8ebdb7923ca32c7e3327f76d5e3ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#adc8ebdb7923ca32c7e3327f76d5e3ec5">More...</a><br/></td></tr>
 <tr class="separator:adc8ebdb7923ca32c7e3327f76d5e3ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba90140fe1cdd6df73fbdcb7910a068e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Archiver.html#aba90140fe1cdd6df73fbdcb7910a068e">Archiver</a> (const <a class="el" href="classdqm4hep_1_1core_1_1Archiver.html">Archiver</a> &amp;)=delete</td></tr>
+<tr class="separator:aba90140fe1cdd6df73fbdcb7910a068e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb3c36bbc2b8fcc65d3f49e0c6364b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdqm4hep_1_1core_1_1Archiver.html">Archiver</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Archiver.html#a0cb3c36bbc2b8fcc65d3f49e0c6364b6">operator=</a> (const <a class="el" href="classdqm4hep_1_1core_1_1Archiver.html">Archiver</a> &amp;)=delete</td></tr>
+<tr class="separator:a0cb3c36bbc2b8fcc65d3f49e0c6364b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acffd0a9b02dc4691010b13bb749d4a8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Archiver.html#acffd0a9b02dc4691010b13bb749d4a8b">Archiver</a> (const std::string &amp;archiveFileName, const std::string &amp;openingMode=&quot;RECREATE&quot;, bool allowSuffix=true)</td></tr>
 <tr class="memdesc:acffd0a9b02dc4691010b13bb749d4a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with file name and opening mode.  <a href="#acffd0a9b02dc4691010b13bb749d4a8b">More...</a><br/></td></tr>
 <tr class="separator:acffd0a9b02dc4691010b13bb749d4a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,6 +161,30 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aba90140fe1cdd6df73fbdcb7910a068e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dqm4hep::core::Archiver::Archiver </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdqm4hep_1_1core_1_1Archiver.html">Archiver</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="acffd0a9b02dc4691010b13bb749d4a8b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -217,13 +245,13 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Archiver_8cc_source.html#l00050">50</a> of file <a class="el" href="Archiver_8cc_source.html">Archiver.cc</a>.</p>
 
-<p>References <a class="el" href="Archiver_8cc_source.html#l00109">close()</a>, and <a class="el" href="Archiver_8h_source.html#l00109">m_isOpened</a>.</p>
+<p>References <a class="el" href="Archiver_8cc_source.html#l00109">close()</a>, and <a class="el" href="Archiver_8h_source.html#l00111">m_isOpened</a>.</p>
 <div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                        {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="classdqm4hep_1_1core_1_1Archiver.html#a9adffe73065c778afc5da4437a2d002e">m_isOpened</a>)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1Archiver.html#a860bfab6fb5561a717c8d2329fc158f7">close</a>();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_a860bfab6fb5561a717c8d2329fc158f7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#a860bfab6fb5561a717c8d2329fc158f7">dqm4hep::core::Archiver::close</a></div><div class="ttdeci">StatusCode close()</div><div class="ttdoc">Close the current archive. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8cc_source.html#l00109">Archiver.cc:109</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_a9adffe73065c778afc5da4437a2d002e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#a9adffe73065c778afc5da4437a2d002e">dqm4hep::core::Archiver::m_isOpened</a></div><div class="ttdeci">bool m_isOpened</div><div class="ttdoc">Whether the archive is opened. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00109">Archiver.h:109</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_a9adffe73065c778afc5da4437a2d002e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#a9adffe73065c778afc5da4437a2d002e">dqm4hep::core::Archiver::m_isOpened</a></div><div class="ttdeci">bool m_isOpened</div><div class="ttdoc">Whether the archive is opened. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00111">Archiver.h:111</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -256,7 +284,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Archiver_8cc_source.html#l00126">126</a> of file <a class="el" href="Archiver_8cc_source.html">Archiver.cc</a>.</p>
 
-<p>References <a class="el" href="Archiver_8cc_source.html#l00158">isOpened()</a>, <a class="el" href="Archiver_8h_source.html#l00110">m_pArchiveFile</a>, <a class="el" href="Archiver_8cc_source.html#l00170">recursiveFill()</a>, and <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>.</p>
+<p>References <a class="el" href="Archiver_8cc_source.html#l00158">isOpened()</a>, <a class="el" href="Archiver_8h_source.html#l00112">m_pArchiveFile</a>, <a class="el" href="Archiver_8cc_source.html#l00170">recursiveFill()</a>, and <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>.</p>
 <div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                                                               {</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <span class="keywordflow">if</span> (!this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Archiver.html#a822bb8b77f5f8327eb355c7000c63cbe">isOpened</a>())</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_ALLOWED;</div>
@@ -283,7 +311,7 @@ Friends</h2></td></tr>
 <div class="ttc" id="StatusCodes_8h_html_a25aeabada9910a1ce63f8eb0de4d8dda"><div class="ttname"><a href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a></div><div class="ttdeci">#define RETURN_RESULT_IF(StatusCode1, Operator, Command)</div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00039">StatusCodes.h:39</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_ae93abcd6197267935618831d7d491be8"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#ae93abcd6197267935618831d7d491be8">dqm4hep::core::Archiver::recursiveFill</a></div><div class="ttdeci">static StatusCode recursiveFill(MonitorElementDir directory, TDirectory *pROOTDir)</div><div class="ttdoc">Fill recursively the TDirectory with the Directory. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8cc_source.html#l00170">Archiver.cc:170</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_a822bb8b77f5f8327eb355c7000c63cbe"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#a822bb8b77f5f8327eb355c7000c63cbe">dqm4hep::core::Archiver::isOpened</a></div><div class="ttdeci">bool isOpened() const </div><div class="ttdoc">Whether the archive is opened. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8cc_source.html#l00158">Archiver.cc:158</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_a2e66b1fd54a3f3f4ac2e66660bc3cde8"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#a2e66b1fd54a3f3f4ac2e66660bc3cde8">dqm4hep::core::Archiver::m_pArchiveFile</a></div><div class="ttdeci">TFile * m_pArchiveFile</div><div class="ttdoc">The actual archive implementation (root file) </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00110">Archiver.h:110</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_a2e66b1fd54a3f3f4ac2e66660bc3cde8"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#a2e66b1fd54a3f3f4ac2e66660bc3cde8">dqm4hep::core::Archiver::m_pArchiveFile</a></div><div class="ttdeci">TFile * m_pArchiveFile</div><div class="ttdoc">The actual archive implementation (root file) </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00112">Archiver.h:112</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -304,7 +332,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Archiver_8cc_source.html#l00109">109</a> of file <a class="el" href="Archiver_8cc_source.html">Archiver.cc</a>.</p>
 
-<p>References <a class="el" href="Archiver_8h_source.html#l00109">m_isOpened</a>, <a class="el" href="Archiver_8h_source.html#l00108">m_openingMode</a>, and <a class="el" href="Archiver_8h_source.html#l00110">m_pArchiveFile</a>.</p>
+<p>References <a class="el" href="Archiver_8h_source.html#l00111">m_isOpened</a>, <a class="el" href="Archiver_8h_source.html#l00110">m_openingMode</a>, and <a class="el" href="Archiver_8h_source.html#l00112">m_pArchiveFile</a>.</p>
 
 <p>Referenced by <a class="el" href="Archiver_8cc_source.html#l00057">open()</a>, and <a class="el" href="Archiver_8cc_source.html#l00050">~Archiver()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                               {</div>
@@ -321,9 +349,9 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_a9adffe73065c778afc5da4437a2d002e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#a9adffe73065c778afc5da4437a2d002e">dqm4hep::core::Archiver::m_isOpened</a></div><div class="ttdeci">bool m_isOpened</div><div class="ttdoc">Whether the archive is opened. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00109">Archiver.h:109</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_a2e66b1fd54a3f3f4ac2e66660bc3cde8"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#a2e66b1fd54a3f3f4ac2e66660bc3cde8">dqm4hep::core::Archiver::m_pArchiveFile</a></div><div class="ttdeci">TFile * m_pArchiveFile</div><div class="ttdoc">The actual archive implementation (root file) </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00110">Archiver.h:110</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_acaea9288891f6aba89e9025c7267b3b8"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#acaea9288891f6aba89e9025c7267b3b8">dqm4hep::core::Archiver::m_openingMode</a></div><div class="ttdeci">std::string m_openingMode</div><div class="ttdoc">The root file opening mode. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00108">Archiver.h:108</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_a9adffe73065c778afc5da4437a2d002e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#a9adffe73065c778afc5da4437a2d002e">dqm4hep::core::Archiver::m_isOpened</a></div><div class="ttdeci">bool m_isOpened</div><div class="ttdoc">Whether the archive is opened. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00111">Archiver.h:111</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_a2e66b1fd54a3f3f4ac2e66660bc3cde8"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#a2e66b1fd54a3f3f4ac2e66660bc3cde8">dqm4hep::core::Archiver::m_pArchiveFile</a></div><div class="ttdeci">TFile * m_pArchiveFile</div><div class="ttdoc">The actual archive implementation (root file) </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00112">Archiver.h:112</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_acaea9288891f6aba89e9025c7267b3b8"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#acaea9288891f6aba89e9025c7267b3b8">dqm4hep::core::Archiver::m_openingMode</a></div><div class="ttdeci">std::string m_openingMode</div><div class="ttdoc">The root file opening mode. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00110">Archiver.h:110</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -380,11 +408,11 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Archiver_8cc_source.html#l00152">152</a> of file <a class="el" href="Archiver_8cc_source.html">Archiver.cc</a>.</p>
 
-<p>References <a class="el" href="Archiver_8h_source.html#l00107">m_fileName</a>.</p>
+<p>References <a class="el" href="Archiver_8h_source.html#l00109">m_fileName</a>.</p>
 <div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                                                 {</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Archiver.html#acce8d6d20b5a171d7251c0fd1859505d">m_fileName</a>;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_acce8d6d20b5a171d7251c0fd1859505d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#acce8d6d20b5a171d7251c0fd1859505d">dqm4hep::core::Archiver::m_fileName</a></div><div class="ttdeci">std::string m_fileName</div><div class="ttdoc">The root file name. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00107">Archiver.h:107</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_acce8d6d20b5a171d7251c0fd1859505d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#acce8d6d20b5a171d7251c0fd1859505d">dqm4hep::core::Archiver::m_fileName</a></div><div class="ttdeci">std::string m_fileName</div><div class="ttdoc">The root file name. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00109">Archiver.h:109</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -405,11 +433,11 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Archiver_8cc_source.html#l00164">164</a> of file <a class="el" href="Archiver_8cc_source.html">Archiver.cc</a>.</p>
 
-<p>References <a class="el" href="Archiver_8h_source.html#l00108">m_openingMode</a>.</p>
+<p>References <a class="el" href="Archiver_8h_source.html#l00110">m_openingMode</a>.</p>
 <div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                                                    {</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Archiver.html#acaea9288891f6aba89e9025c7267b3b8">m_openingMode</a>;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_acaea9288891f6aba89e9025c7267b3b8"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#acaea9288891f6aba89e9025c7267b3b8">dqm4hep::core::Archiver::m_openingMode</a></div><div class="ttdeci">std::string m_openingMode</div><div class="ttdoc">The root file opening mode. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00108">Archiver.h:108</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_acaea9288891f6aba89e9025c7267b3b8"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#acaea9288891f6aba89e9025c7267b3b8">dqm4hep::core::Archiver::m_openingMode</a></div><div class="ttdeci">std::string m_openingMode</div><div class="ttdoc">The root file opening mode. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00110">Archiver.h:110</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -430,13 +458,13 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Archiver_8cc_source.html#l00158">158</a> of file <a class="el" href="Archiver_8cc_source.html">Archiver.cc</a>.</p>
 
-<p>References <a class="el" href="Archiver_8h_source.html#l00109">m_isOpened</a>.</p>
+<p>References <a class="el" href="Archiver_8h_source.html#l00111">m_isOpened</a>.</p>
 
 <p>Referenced by <a class="el" href="Archiver_8cc_source.html#l00126">archive()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                                  {</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Archiver.html#a9adffe73065c778afc5da4437a2d002e">m_isOpened</a>;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_a9adffe73065c778afc5da4437a2d002e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#a9adffe73065c778afc5da4437a2d002e">dqm4hep::core::Archiver::m_isOpened</a></div><div class="ttdeci">bool m_isOpened</div><div class="ttdoc">Whether the archive is opened. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00109">Archiver.h:109</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_a9adffe73065c778afc5da4437a2d002e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#a9adffe73065c778afc5da4437a2d002e">dqm4hep::core::Archiver::m_isOpened</a></div><div class="ttdeci">bool m_isOpened</div><div class="ttdoc">Whether the archive is opened. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00111">Archiver.h:111</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -475,7 +503,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Archiver_8cc_source.html#l00057">57</a> of file <a class="el" href="Archiver_8cc_source.html">Archiver.cc</a>.</p>
 
-<p>References <a class="el" href="Archiver_8cc_source.html#l00109">close()</a>, <a class="el" href="Logging_8h_source.html#l00045">dqm_error</a>, <a class="el" href="Logging_8h_source.html#l00047">dqm_info</a>, <a class="el" href="Archiver_8h_source.html#l00107">m_fileName</a>, <a class="el" href="Archiver_8h_source.html#l00109">m_isOpened</a>, <a class="el" href="Archiver_8h_source.html#l00108">m_openingMode</a>, <a class="el" href="Archiver_8h_source.html#l00110">m_pArchiveFile</a>, and <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>.</p>
+<p>References <a class="el" href="Archiver_8cc_source.html#l00109">close()</a>, <a class="el" href="Logging_8h_source.html#l00045">dqm_error</a>, <a class="el" href="Logging_8h_source.html#l00047">dqm_info</a>, <a class="el" href="Archiver_8h_source.html#l00109">m_fileName</a>, <a class="el" href="Archiver_8h_source.html#l00111">m_isOpened</a>, <a class="el" href="Archiver_8h_source.html#l00110">m_openingMode</a>, <a class="el" href="Archiver_8h_source.html#l00112">m_pArchiveFile</a>, and <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>.</p>
 
 <p>Referenced by <a class="el" href="Archiver_8cc_source.html#l00044">Archiver()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                                                                                              {</div>
@@ -530,12 +558,36 @@ Friends</h2></td></tr>
 <div class="ttc" id="StatusCodes_8h_html_a25aeabada9910a1ce63f8eb0de4d8dda"><div class="ttname"><a href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a></div><div class="ttdeci">#define RETURN_RESULT_IF(StatusCode1, Operator, Command)</div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00039">StatusCodes.h:39</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_a860bfab6fb5561a717c8d2329fc158f7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#a860bfab6fb5561a717c8d2329fc158f7">dqm4hep::core::Archiver::close</a></div><div class="ttdeci">StatusCode close()</div><div class="ttdoc">Close the current archive. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8cc_source.html#l00109">Archiver.cc:109</a></div></div>
 <div class="ttc" id="Logging_8h_html_af06e81e068fdce66fa6920f65a774d13"><div class="ttname"><a href="Logging_8h.html#af06e81e068fdce66fa6920f65a774d13">dqm_info</a></div><div class="ttdeci">#define dqm_info(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00047">Logging.h:47</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_acce8d6d20b5a171d7251c0fd1859505d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#acce8d6d20b5a171d7251c0fd1859505d">dqm4hep::core::Archiver::m_fileName</a></div><div class="ttdeci">std::string m_fileName</div><div class="ttdoc">The root file name. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00107">Archiver.h:107</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_a9adffe73065c778afc5da4437a2d002e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#a9adffe73065c778afc5da4437a2d002e">dqm4hep::core::Archiver::m_isOpened</a></div><div class="ttdeci">bool m_isOpened</div><div class="ttdoc">Whether the archive is opened. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00109">Archiver.h:109</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_a2e66b1fd54a3f3f4ac2e66660bc3cde8"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#a2e66b1fd54a3f3f4ac2e66660bc3cde8">dqm4hep::core::Archiver::m_pArchiveFile</a></div><div class="ttdeci">TFile * m_pArchiveFile</div><div class="ttdoc">The actual archive implementation (root file) </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00110">Archiver.h:110</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_acce8d6d20b5a171d7251c0fd1859505d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#acce8d6d20b5a171d7251c0fd1859505d">dqm4hep::core::Archiver::m_fileName</a></div><div class="ttdeci">std::string m_fileName</div><div class="ttdoc">The root file name. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00109">Archiver.h:109</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_a9adffe73065c778afc5da4437a2d002e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#a9adffe73065c778afc5da4437a2d002e">dqm4hep::core::Archiver::m_isOpened</a></div><div class="ttdeci">bool m_isOpened</div><div class="ttdoc">Whether the archive is opened. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00111">Archiver.h:111</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_a2e66b1fd54a3f3f4ac2e66660bc3cde8"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#a2e66b1fd54a3f3f4ac2e66660bc3cde8">dqm4hep::core::Archiver::m_pArchiveFile</a></div><div class="ttdeci">TFile * m_pArchiveFile</div><div class="ttdoc">The actual archive implementation (root file) </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00112">Archiver.h:112</a></div></div>
 <div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00045">Logging.h:45</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_acaea9288891f6aba89e9025c7267b3b8"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#acaea9288891f6aba89e9025c7267b3b8">dqm4hep::core::Archiver::m_openingMode</a></div><div class="ttdeci">std::string m_openingMode</div><div class="ttdoc">The root file opening mode. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00108">Archiver.h:108</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Archiver_html_acaea9288891f6aba89e9025c7267b3b8"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Archiver.html#acaea9288891f6aba89e9025c7267b3b8">dqm4hep::core::Archiver::m_openingMode</a></div><div class="ttdeci">std::string m_openingMode</div><div class="ttdoc">The root file opening mode. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00110">Archiver.h:110</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a0cb3c36bbc2b8fcc65d3f49e0c6364b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdqm4hep_1_1core_1_1Archiver.html">Archiver</a>&amp; dqm4hep::core::Archiver::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdqm4hep_1_1core_1_1Archiver.html">Archiver</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a class="anchor" id="ae93abcd6197267935618831d7d491be8"></a>
@@ -708,7 +760,7 @@ Friends</h2></td></tr>
 
 <p>The root file name. </p>
 
-<p>Definition at line <a class="el" href="Archiver_8h_source.html#l00107">107</a> of file <a class="el" href="Archiver_8h_source.html">Archiver.h</a>.</p>
+<p>Definition at line <a class="el" href="Archiver_8h_source.html#l00109">109</a> of file <a class="el" href="Archiver_8h_source.html">Archiver.h</a>.</p>
 
 <p>Referenced by <a class="el" href="Archiver_8cc_source.html#l00152">getFileName()</a>, and <a class="el" href="Archiver_8cc_source.html#l00057">open()</a>.</p>
 
@@ -734,7 +786,7 @@ Friends</h2></td></tr>
 
 <p>Whether the archive is opened. </p>
 
-<p>Definition at line <a class="el" href="Archiver_8h_source.html#l00109">109</a> of file <a class="el" href="Archiver_8h_source.html">Archiver.h</a>.</p>
+<p>Definition at line <a class="el" href="Archiver_8h_source.html#l00111">111</a> of file <a class="el" href="Archiver_8h_source.html">Archiver.h</a>.</p>
 
 <p>Referenced by <a class="el" href="Archiver_8cc_source.html#l00109">close()</a>, <a class="el" href="Archiver_8cc_source.html#l00158">isOpened()</a>, <a class="el" href="Archiver_8cc_source.html#l00057">open()</a>, and <a class="el" href="Archiver_8cc_source.html#l00050">~Archiver()</a>.</p>
 
@@ -760,7 +812,7 @@ Friends</h2></td></tr>
 
 <p>The root file opening mode. </p>
 
-<p>Definition at line <a class="el" href="Archiver_8h_source.html#l00108">108</a> of file <a class="el" href="Archiver_8h_source.html">Archiver.h</a>.</p>
+<p>Definition at line <a class="el" href="Archiver_8h_source.html#l00110">110</a> of file <a class="el" href="Archiver_8h_source.html">Archiver.h</a>.</p>
 
 <p>Referenced by <a class="el" href="Archiver_8cc_source.html#l00109">close()</a>, <a class="el" href="Archiver_8cc_source.html#l00164">getOpeningMode()</a>, and <a class="el" href="Archiver_8cc_source.html#l00057">open()</a>.</p>
 
@@ -786,7 +838,7 @@ Friends</h2></td></tr>
 
 <p>The actual archive implementation (root file) </p>
 
-<p>Definition at line <a class="el" href="Archiver_8h_source.html#l00110">110</a> of file <a class="el" href="Archiver_8h_source.html">Archiver.h</a>.</p>
+<p>Definition at line <a class="el" href="Archiver_8h_source.html#l00112">112</a> of file <a class="el" href="Archiver_8h_source.html">Archiver.h</a>.</p>
 
 <p>Referenced by <a class="el" href="Archiver_8cc_source.html#l00126">archive()</a>, <a class="el" href="Archiver_8cc_source.html#l00109">close()</a>, and <a class="el" href="Archiver_8cc_source.html#l00057">open()</a>.</p>
 
@@ -799,7 +851,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 11 2018 15:30:51 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 22 2018 02:55:02 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

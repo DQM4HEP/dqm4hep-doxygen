@@ -105,13 +105,13 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:adca4c49c638758ee4f6ea7573c070bb4"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Version.html#adca4c49c638758ee4f6ea7573c070bb4">m_major</a></td></tr>
+<tr class="memitem:adca4c49c638758ee4f6ea7573c070bb4"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Version.html#adca4c49c638758ee4f6ea7573c070bb4">m_major</a> = {0}</td></tr>
 <tr class="separator:adca4c49c638758ee4f6ea7573c070bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32f7a840445fcbd7b8d1dd6ff5159454"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Version.html#a32f7a840445fcbd7b8d1dd6ff5159454">m_minor</a></td></tr>
+<tr class="memitem:a32f7a840445fcbd7b8d1dd6ff5159454"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Version.html#a32f7a840445fcbd7b8d1dd6ff5159454">m_minor</a> = {0}</td></tr>
 <tr class="separator:a32f7a840445fcbd7b8d1dd6ff5159454"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf5a9b9fd0c3c68bc9284c3c4156b645"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Version.html#adf5a9b9fd0c3c68bc9284c3c4156b645">m_patch</a></td></tr>
+<tr class="memitem:adf5a9b9fd0c3c68bc9284c3c4156b645"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Version.html#adf5a9b9fd0c3c68bc9284c3c4156b645">m_patch</a> = {0}</td></tr>
 <tr class="separator:adf5a9b9fd0c3c68bc9284c3c4156b645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac16041c19cdb4f3a847948e2882f967"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Version.html#aac16041c19cdb4f3a847948e2882f967">m_versionString</a></td></tr>
+<tr class="memitem:aac16041c19cdb4f3a847948e2882f967"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Version.html#aac16041c19cdb4f3a847948e2882f967">m_versionString</a> = {&quot;&quot;}</td></tr>
 <tr class="separator:aac16041c19cdb4f3a847948e2882f967"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -178,13 +178,10 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Version_8cc_source.html#l00041">41</a> of file <a class="el" href="Version_8cc_source.html">Version.cc</a>.</p>
 
-<p>References <a class="el" href="Version_8h_source.html#l00087">m_major</a>, <a class="el" href="Version_8h_source.html#l00088">m_minor</a>, <a class="el" href="Version_8h_source.html#l00089">m_patch</a>, and <a class="el" href="Version_8cc_source.html#l00071">set()</a>.</p>
+<p>References <a class="el" href="Version_8cc_source.html#l00071">set()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                                                               {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Version.html#af7b238f1f1437a6214316e9615c3e2a8">set</a>(<a class="code" href="classdqm4hep_1_1core_1_1Version.html#adca4c49c638758ee4f6ea7573c070bb4">m_major</a>, <a class="code" href="classdqm4hep_1_1core_1_1Version.html#a32f7a840445fcbd7b8d1dd6ff5159454">m_minor</a>, <a class="code" href="classdqm4hep_1_1core_1_1Version.html#adf5a9b9fd0c3c68bc9284c3c4156b645">m_patch</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Version.html#af7b238f1f1437a6214316e9615c3e2a8">set</a>(major, minor, patch);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Version_html_adca4c49c638758ee4f6ea7573c070bb4"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Version.html#adca4c49c638758ee4f6ea7573c070bb4">dqm4hep::core::Version::m_major</a></div><div class="ttdeci">unsigned int m_major</div><div class="ttdef"><b>Definition:</b> <a href="Version_8h_source.html#l00087">Version.h:87</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Version_html_a32f7a840445fcbd7b8d1dd6ff5159454"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Version.html#a32f7a840445fcbd7b8d1dd6ff5159454">dqm4hep::core::Version::m_minor</a></div><div class="ttdeci">unsigned int m_minor</div><div class="ttdef"><b>Definition:</b> <a href="Version_8h_source.html#l00088">Version.h:88</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Version_html_adf5a9b9fd0c3c68bc9284c3c4156b645"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Version.html#adf5a9b9fd0c3c68bc9284c3c4156b645">dqm4hep::core::Version::m_patch</a></div><div class="ttdeci">unsigned int m_patch</div><div class="ttdef"><b>Definition:</b> <a href="Version_8h_source.html#l00089">Version.h:89</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Version_html_af7b238f1f1437a6214316e9615c3e2a8"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Version.html#af7b238f1f1437a6214316e9615c3e2a8">dqm4hep::core::Version::set</a></div><div class="ttdeci">void set(unsigned int major, unsigned int minor, unsigned int patch)</div><div class="ttdoc">Set the complete version numbers. </div><div class="ttdef"><b>Definition:</b> <a href="Version_8cc_source.html#l00071">Version.cc:71</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -428,7 +425,7 @@ Private Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="Version_8cc_source.html#l00150">150</a> of file <a class="el" href="Version_8cc_source.html">Version.cc</a>.</p>
 
 <p>References <a class="el" href="Version_8h_source.html#l00087">m_major</a>, <a class="el" href="Version_8h_source.html#l00088">m_minor</a>, <a class="el" href="Version_8h_source.html#l00089">m_patch</a>, and <a class="el" href="Version_8cc_source.html#l00071">set()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                                                                      {</div>
+<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                                                                {</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      <span class="keywordflow">if</span> (xdrstream::XDR_READ_STREAM == mode) {</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        uint32_t major, minor, patch;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        XDR_STREAM(pDevice-&gt;read(&amp;major));</div>
@@ -487,7 +484,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int dqm4hep::core::Version::m_major</td>
+          <td class="memname">unsigned int dqm4hep::core::Version::m_major = {0}</td>
         </tr>
       </table>
   </td>
@@ -499,7 +496,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Version_8h_source.html#l00087">87</a> of file <a class="el" href="Version_8h_source.html">Version.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Version_8cc_source.html#l00053">getMajor()</a>, <a class="el" href="Version_8cc_source.html#l00088">operator=()</a>, <a class="el" href="Version_8cc_source.html#l00071">set()</a>, <a class="el" href="Version_8cc_source.html#l00150">stream()</a>, and <a class="el" href="Version_8cc_source.html#l00041">Version()</a>.</p>
+<p>Referenced by <a class="el" href="Version_8cc_source.html#l00053">getMajor()</a>, <a class="el" href="Version_8cc_source.html#l00088">operator=()</a>, <a class="el" href="Version_8cc_source.html#l00071">set()</a>, and <a class="el" href="Version_8cc_source.html#l00150">stream()</a>.</p>
 
 </div>
 </div>
@@ -511,7 +508,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int dqm4hep::core::Version::m_minor</td>
+          <td class="memname">unsigned int dqm4hep::core::Version::m_minor = {0}</td>
         </tr>
       </table>
   </td>
@@ -523,7 +520,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Version_8h_source.html#l00088">88</a> of file <a class="el" href="Version_8h_source.html">Version.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Version_8cc_source.html#l00059">getMinor()</a>, <a class="el" href="Version_8cc_source.html#l00088">operator=()</a>, <a class="el" href="Version_8cc_source.html#l00071">set()</a>, <a class="el" href="Version_8cc_source.html#l00150">stream()</a>, and <a class="el" href="Version_8cc_source.html#l00041">Version()</a>.</p>
+<p>Referenced by <a class="el" href="Version_8cc_source.html#l00059">getMinor()</a>, <a class="el" href="Version_8cc_source.html#l00088">operator=()</a>, <a class="el" href="Version_8cc_source.html#l00071">set()</a>, and <a class="el" href="Version_8cc_source.html#l00150">stream()</a>.</p>
 
 </div>
 </div>
@@ -535,7 +532,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int dqm4hep::core::Version::m_patch</td>
+          <td class="memname">unsigned int dqm4hep::core::Version::m_patch = {0}</td>
         </tr>
       </table>
   </td>
@@ -547,7 +544,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Version_8h_source.html#l00089">89</a> of file <a class="el" href="Version_8h_source.html">Version.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Version_8cc_source.html#l00065">getPatch()</a>, <a class="el" href="Version_8cc_source.html#l00088">operator=()</a>, <a class="el" href="Version_8cc_source.html#l00071">set()</a>, <a class="el" href="Version_8cc_source.html#l00150">stream()</a>, and <a class="el" href="Version_8cc_source.html#l00041">Version()</a>.</p>
+<p>Referenced by <a class="el" href="Version_8cc_source.html#l00065">getPatch()</a>, <a class="el" href="Version_8cc_source.html#l00088">operator=()</a>, <a class="el" href="Version_8cc_source.html#l00071">set()</a>, and <a class="el" href="Version_8cc_source.html#l00150">stream()</a>.</p>
 
 </div>
 </div>
@@ -559,7 +556,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string dqm4hep::core::Version::m_versionString</td>
+          <td class="memname">std::string dqm4hep::core::Version::m_versionString = {&quot;&quot;}</td>
         </tr>
       </table>
   </td>
@@ -582,7 +579,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 11 2018 15:30:52 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 22 2018 02:55:03 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

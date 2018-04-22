@@ -277,7 +277,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="tinystr_8h_source.html#l00214">init()</a>, <a class="el" href="tinystr_8h_source.html#l00141">length()</a>, and <a class="el" href="tinystr_8h_source.html#l00220">start()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                                   : <a class="code" href="classdqm4hep_1_1core_1_1TiXmlString.html#aee5d62eab413afe1cc5e610eec174e36">rep_</a>(<span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlString.html#aeaa679399b36fda8a7c1078d882630c5">init</a>(static_cast&lt;size_type&gt;(strlen(copy)));</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1TiXmlString.html#aeaa679399b36fda8a7c1078d882630c5">init</a>(strlen(copy));</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        memcpy(<a class="code" href="classdqm4hep_1_1core_1_1TiXmlString.html#a55dc2431411b99a88d5c2a2c0253b4a4">start</a>(), copy, <a class="code" href="classdqm4hep_1_1core_1_1TiXmlString.html#a4b2cb8413d096ee97fc2773053bb1c47">length</a>());</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlString_html_a4b2cb8413d096ee97fc2773053bb1c47"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlString.html#a4b2cb8413d096ee97fc2773053bb1c47">dqm4hep::core::TiXmlString::length</a></div><div class="ttdeci">size_type length() const </div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00141">tinystr.h:141</a></div></div>
@@ -938,7 +938,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="tinystr_8cc_source.html#l00066">append()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                                  {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlString.html#af81f04d56fa6113f4360d3c5e34a2227">append</a>(suffix, static_cast&lt;size_type&gt;(strlen(suffix)));</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlString.html#af81f04d56fa6113f4360d3c5e34a2227">append</a>(suffix, strlen(suffix));</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlString_html_af81f04d56fa6113f4360d3c5e34a2227"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlString.html#af81f04d56fa6113f4360d3c5e34a2227">dqm4hep::core::TiXmlString::append</a></div><div class="ttdeci">TiXmlString &amp; append(const char *str, size_type len)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8cc_source.html#l00066">tinystr.cc:66</a></div></div>
 </div><!-- fragment -->
@@ -1034,10 +1034,9 @@ Static Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="tinystr_8cc_source.html#l00052">assign()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                               {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlString.html#ae211ea1c6495652ba63a4ce2302f7ecf">assign</a>(copy, (<a class="code" href="classdqm4hep_1_1core_1_1TiXmlString.html#a3685b7253e5d07daa484699308e6a52d">size_type</a>)strlen(copy));</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1TiXmlString.html#ae211ea1c6495652ba63a4ce2302f7ecf">assign</a>(copy, strlen(copy));</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlString_html_ae211ea1c6495652ba63a4ce2302f7ecf"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlString.html#ae211ea1c6495652ba63a4ce2302f7ecf">dqm4hep::core::TiXmlString::assign</a></div><div class="ttdeci">TiXmlString &amp; assign(const char *str, size_type len)</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8cc_source.html#l00052">tinystr.cc:52</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1TiXmlString_html_a3685b7253e5d07daa484699308e6a52d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1TiXmlString.html#a3685b7253e5d07daa484699308e6a52d">dqm4hep::core::TiXmlString::size_type</a></div><div class="ttdeci">size_t size_type</div><div class="ttdef"><b>Definition:</b> <a href="tinystr_8h_source.html#l00073">tinystr.h:73</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1399,7 +1398,7 @@ Static Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 11 2018 15:30:51 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Apr 22 2018 02:55:03 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
