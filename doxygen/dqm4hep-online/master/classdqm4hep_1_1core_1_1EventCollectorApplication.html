@@ -68,7 +68,6 @@ Inheritance diagram for dqm4hep::core::EventCollectorApplication:</div>
  <div class="center">
   <img src="classdqm4hep_1_1core_1_1EventCollectorApplication.png" usemap="#dqm4hep::core::EventCollectorApplication_map" alt=""/>
   <map id="dqm4hep::core::EventCollectorApplication_map" name="dqm4hep::core::EventCollectorApplication_map">
-<area href="classdqm4hep_1_1core_1_1Application.html" title="Application class. " alt="dqm4hep::core::Application" shape="rect" coords="0,0,246,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -104,10 +103,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7382bad8f70d52374b9f0682654a17ce"><td class="memItemLeft" align="right" valign="top">EventStreamer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a7382bad8f70d52374b9f0682654a17ce">getEventStreamer</a> () const </td></tr>
 <tr class="memdesc:a7382bad8f70d52374b9f0682654a17ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the event streamer.  <a href="#a7382bad8f70d52374b9f0682654a17ce">More...</a><br/></td></tr>
 <tr class="separator:a7382bad8f70d52374b9f0682654a17ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classdqm4hep_1_1core_1_1Application"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdqm4hep_1_1core_1_1Application')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdqm4hep_1_1core_1_1Application.html">dqm4hep::core::Application</a></td></tr>
-<tr class="memitem:adc6fe1bd467aea9c8ff0125d80db92ff inherit pub_methods_classdqm4hep_1_1core_1_1Application"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Application.html#adc6fe1bd467aea9c8ff0125d80db92ff">~Application</a> ()</td></tr>
-<tr class="memdesc:adc6fe1bd467aea9c8ff0125d80db92ff inherit pub_methods_classdqm4hep_1_1core_1_1Application"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#adc6fe1bd467aea9c8ff0125d80db92ff">More...</a><br/></td></tr>
-<tr class="separator:adc6fe1bd467aea9c8ff0125d80db92ff inherit pub_methods_classdqm4hep_1_1core_1_1Application"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -125,7 +120,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ad35f807208753ea539820c016179b5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2789fac6efdbfc50b64c914a875ebad4"><td class="memItemLeft" align="right" valign="top">State&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a2789fac6efdbfc50b64c914a875ebad4">m_applicationState</a></td></tr>
 <tr class="separator:a2789fac6efdbfc50b64c914a875ebad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9152d62f36c9dec1ede10b98cda6a74b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdqm4hep_1_1core_1_1EventCollector.html">EventCollector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a></td></tr>
+<tr class="memitem:a9152d62f36c9dec1ede10b98cda6a74b"><td class="memItemLeft" align="right" valign="top">EventCollector *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a></td></tr>
 <tr class="separator:a9152d62f36c9dec1ede10b98cda6a74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -183,15 +178,13 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="EventCollectorApplication_8cc_source.html#l00050">50</a> of file <a class="el" href="EventCollectorApplication_8cc_source.html">EventCollectorApplication.cc</a>.</p>
 
-<p>References <a class="el" href="EventCollector_8cc_source.html#l00072">dqm4hep::core::EventCollector::isRunning()</a>, <a class="el" href="EventCollectorApplication_8h_source.html#l00097">m_pEventCollector</a>, and <a class="el" href="EventCollector_8cc_source.html#l00086">dqm4hep::core::EventCollector::stopCollector()</a>.</p>
+<p>References <a class="el" href="EventCollectorApplication_8h_source.html#l00097">m_pEventCollector</a>.</p>
 <div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventCollector.html#a2678e7ca9fc2158f7d6b026452141b28">isRunning</a>())</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventCollector.html#a3801ae0e7b0c0334ac1e3733e031d492">stopCollector</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>-&gt;isRunning())</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>-&gt;stopCollector();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keyword">delete</span> <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventCollector_html_a2678e7ca9fc2158f7d6b026452141b28"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollector.html#a2678e7ca9fc2158f7d6b026452141b28">dqm4hep::core::EventCollector::isRunning</a></div><div class="ttdeci">bool isRunning() const </div><div class="ttdoc">Whether the collector server is running. </div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8cc_source.html#l00072">EventCollector.cc:72</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventCollector_html_a3801ae0e7b0c0334ac1e3733e031d492"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollector.html#a3801ae0e7b0c0334ac1e3733e031d492">dqm4hep::core::EventCollector::stopCollector</a></div><div class="ttdeci">StatusCode stopCollector()</div><div class="ttdoc">Stop the collector server. </div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8cc_source.html#l00086">EventCollector.cc:86</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1EventCollectorApplication_html_a9152d62f36c9dec1ede10b98cda6a74b"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">dqm4hep::core::EventCollectorApplication::m_pEventCollector</a></div><div class="ttdeci">EventCollector * m_pEventCollector</div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorApplication_8h_source.html#l00097">EventCollectorApplication.h:97</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -200,9 +193,6 @@ Protected Attributes</h2></td></tr>
 <a class="anchor" id="a8af058a962e8ff3b7f3ebea8878a0727"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">StatusCode dqm4hep::core::EventCollectorApplication::exit </td>
@@ -212,25 +202,18 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Stop the application. </p>
 
-<p>Implements <a class="el" href="classdqm4hep_1_1core_1_1Application.html#abb01367b66c77a1f56255e3340935834">dqm4hep::core::Application</a>.</p>
-
 <p>Definition at line <a class="el" href="EventCollectorApplication_8cc_source.html#l00077">77</a> of file <a class="el" href="EventCollectorApplication_8cc_source.html">EventCollectorApplication.cc</a>.</p>
 
-<p>References <a class="el" href="EventCollectorApplication_8h_source.html#l00096">m_applicationState</a>, <a class="el" href="EventCollectorApplication_8h_source.html#l00097">m_pEventCollector</a>, <a class="el" href="EventCollectorApplication_8h_source.html#l00093">m_shouldExit</a>, and <a class="el" href="EventCollector_8cc_source.html#l00086">dqm4hep::core::EventCollector::stopCollector()</a>.</p>
+<p>References <a class="el" href="EventCollectorApplication_8h_source.html#l00096">m_applicationState</a>, <a class="el" href="EventCollectorApplication_8h_source.html#l00097">m_pEventCollector</a>, and <a class="el" href="EventCollectorApplication_8h_source.html#l00093">m_shouldExit</a>.</p>
 <div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a2789fac6efdbfc50b64c914a875ebad4">m_applicationState</a> == STOPPED_STATE)</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      RETURN_RESULT_IF(STATUS_CODE_SUCCESS, !=, <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventCollector.html#a3801ae0e7b0c0334ac1e3733e031d492">stopCollector</a>());</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      RETURN_RESULT_IF(STATUS_CODE_SUCCESS, !=, <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>-&gt;stopCollector());</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a3346373f33d77c5e2f59e86c9e2a9397">m_shouldExit</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a2789fac6efdbfc50b64c914a875ebad4">m_applicationState</a> = STOPPED_STATE;</div>
@@ -246,7 +229,6 @@ Protected Attributes</h2></td></tr>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1EventCollectorApplication_html_a2789fac6efdbfc50b64c914a875ebad4"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a2789fac6efdbfc50b64c914a875ebad4">dqm4hep::core::EventCollectorApplication::m_applicationState</a></div><div class="ttdeci">State m_applicationState</div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorApplication_8h_source.html#l00096">EventCollectorApplication.h:96</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1EventCollectorApplication_html_a3346373f33d77c5e2f59e86c9e2a9397"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a3346373f33d77c5e2f59e86c9e2a9397">dqm4hep::core::EventCollectorApplication::m_shouldExit</a></div><div class="ttdeci">bool m_shouldExit</div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorApplication_8h_source.html#l00093">EventCollectorApplication.h:93</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventCollector_html_a3801ae0e7b0c0334ac1e3733e031d492"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollector.html#a3801ae0e7b0c0334ac1e3733e031d492">dqm4hep::core::EventCollector::stopCollector</a></div><div class="ttdeci">StatusCode stopCollector()</div><div class="ttdoc">Stop the collector server. </div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8cc_source.html#l00086">EventCollector.cc:86</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1EventCollectorApplication_html_a9152d62f36c9dec1ede10b98cda6a74b"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">dqm4hep::core::EventCollectorApplication::m_pEventCollector</a></div><div class="ttdeci">EventCollector * m_pEventCollector</div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorApplication_8h_source.html#l00097">EventCollectorApplication.h:97</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -268,11 +250,10 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="EventCollectorApplication_8cc_source.html#l00137">137</a> of file <a class="el" href="EventCollectorApplication_8cc_source.html">EventCollectorApplication.cc</a>.</p>
 
-<p>References <a class="el" href="EventCollector_8cc_source.html#l00111">dqm4hep::core::EventCollector::getEventStreamer()</a>, and <a class="el" href="EventCollectorApplication_8h_source.html#l00097">m_pEventCollector</a>.</p>
+<p>References <a class="el" href="EventCollectorApplication_8h_source.html#l00097">m_pEventCollector</a>.</p>
 <div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    {</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventCollector.html#ac1aa682c3a14bcc423a5c70e2f5a367e">getEventStreamer</a>();</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>-&gt;getEventStreamer();</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventCollector_html_ac1aa682c3a14bcc423a5c70e2f5a367e"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollector.html#ac1aa682c3a14bcc423a5c70e2f5a367e">dqm4hep::core::EventCollector::getEventStreamer</a></div><div class="ttdeci">EventStreamer * getEventStreamer() const </div><div class="ttdoc">Get the event streamer. </div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8cc_source.html#l00111">EventCollector.cc:111</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1EventCollectorApplication_html_a9152d62f36c9dec1ede10b98cda6a74b"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">dqm4hep::core::EventCollectorApplication::m_pEventCollector</a></div><div class="ttdeci">EventCollector * m_pEventCollector</div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorApplication_8h_source.html#l00097">EventCollectorApplication.h:97</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -280,9 +261,6 @@ Protected Attributes</h2></td></tr>
 <a class="anchor" id="afc41446e40765634a6e5a69e63035e7e"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const std::string &amp; dqm4hep::core::EventCollectorApplication::getName </td>
@@ -291,24 +269,16 @@ Protected Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the application name. </p>
 
-<p>Implements <a class="el" href="classdqm4hep_1_1core_1_1Application.html#a31df3aa26b18d9d516008e7cf7d0ea1b">dqm4hep::core::Application</a>.</p>
-
 <p>Definition at line <a class="el" href="EventCollectorApplication_8cc_source.html#l00099">99</a> of file <a class="el" href="EventCollectorApplication_8cc_source.html">EventCollectorApplication.cc</a>.</p>
 
-<p>References <a class="el" href="EventCollector_8cc_source.html#l00065">dqm4hep::core::EventCollector::getCollectorName()</a>, and <a class="el" href="EventCollectorApplication_8h_source.html#l00097">m_pEventCollector</a>.</p>
+<p>References <a class="el" href="EventCollectorApplication_8h_source.html#l00097">m_pEventCollector</a>.</p>
 <div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventCollector.html#a07f96e88e87882f6a8de2313d33cd3d7">getCollectorName</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>-&gt;getCollectorName();</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventCollector_html_a07f96e88e87882f6a8de2313d33cd3d7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollector.html#a07f96e88e87882f6a8de2313d33cd3d7">dqm4hep::core::EventCollector::getCollectorName</a></div><div class="ttdeci">const std::string &amp; getCollectorName() const </div><div class="ttdoc">Get the collector name. </div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8cc_source.html#l00065">EventCollector.cc:65</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1EventCollectorApplication_html_a9152d62f36c9dec1ede10b98cda6a74b"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">dqm4hep::core::EventCollectorApplication::m_pEventCollector</a></div><div class="ttdeci">EventCollector * m_pEventCollector</div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorApplication_8h_source.html#l00097">EventCollectorApplication.h:97</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -316,9 +286,6 @@ Protected Attributes</h2></td></tr>
 <a class="anchor" id="ab0240421b203c90b8199419b72ca1084"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const std::string &amp; dqm4hep::core::EventCollectorApplication::getType </td>
@@ -327,16 +294,9 @@ Protected Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the application type. </p>
-
-<p>Implements <a class="el" href="classdqm4hep_1_1core_1_1Application.html#a7fae43a2c2145ba0e96cf86b1ca0af94">dqm4hep::core::Application</a>.</p>
 
 <p>Definition at line <a class="el" href="EventCollectorApplication_8cc_source.html#l00106">106</a> of file <a class="el" href="EventCollectorApplication_8cc_source.html">EventCollectorApplication.cc</a>.</p>
 
@@ -365,14 +325,12 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>No settings to read. </p>
-
-<p>Implements <a class="el" href="classdqm4hep_1_1core_1_1Application.html#ae570755b0e2abee7a830d90e94d4cfcc">dqm4hep::core::Application</a>.</p>
 
 <p>Definition at line <a class="el" href="EventCollectorApplication_8h_source.html#l00091">91</a> of file <a class="el" href="EventCollectorApplication_8h_source.html">EventCollectorApplication.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{ <span class="keywordflow">return</span> STATUS_CODE_SUCCESS; }</div>
@@ -382,9 +340,6 @@ Protected Attributes</h2></td></tr>
 <a class="anchor" id="aa597bff79abccefcc0e5e3caa3a6ef7b"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">StatusCode dqm4hep::core::EventCollectorApplication::run </td>
@@ -393,25 +348,18 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Run the application. </p>
 
-<p>Implements <a class="el" href="classdqm4hep_1_1core_1_1Application.html#afb8be901c6b2423e23973f59cbc5cca0">dqm4hep::core::Application</a>.</p>
-
 <p>Definition at line <a class="el" href="EventCollectorApplication_8cc_source.html#l00060">60</a> of file <a class="el" href="EventCollectorApplication_8cc_source.html">EventCollectorApplication.cc</a>.</p>
 
-<p>References <a class="el" href="EventCollectorApplication_8h_source.html#l00096">m_applicationState</a>, <a class="el" href="EventCollectorApplication_8h_source.html#l00097">m_pEventCollector</a>, <a class="el" href="EventCollectorApplication_8h_source.html#l00093">m_shouldExit</a>, and <a class="el" href="EventCollector_8cc_source.html#l00079">dqm4hep::core::EventCollector::startCollector()</a>.</p>
+<p>References <a class="el" href="EventCollectorApplication_8h_source.html#l00096">m_applicationState</a>, <a class="el" href="EventCollectorApplication_8h_source.html#l00097">m_pEventCollector</a>, and <a class="el" href="EventCollectorApplication_8h_source.html#l00093">m_shouldExit</a>.</p>
 <div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a2789fac6efdbfc50b64c914a875ebad4">m_applicationState</a> == RUNNING_STATE)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      RETURN_RESULT_IF(STATUS_CODE_SUCCESS, !=, <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventCollector.html#acc6bf3aebc326f668213c371c227fd82">startCollector</a>());</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      RETURN_RESULT_IF(STATUS_CODE_SUCCESS, !=, <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>-&gt;startCollector());</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a2789fac6efdbfc50b64c914a875ebad4">m_applicationState</a> = RUNNING_STATE;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
@@ -420,7 +368,6 @@ Protected Attributes</h2></td></tr>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventCollector_html_acc6bf3aebc326f668213c371c227fd82"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollector.html#acc6bf3aebc326f668213c371c227fd82">dqm4hep::core::EventCollector::startCollector</a></div><div class="ttdeci">StatusCode startCollector()</div><div class="ttdoc">Start the collector server. </div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8cc_source.html#l00079">EventCollector.cc:79</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1EventCollectorApplication_html_a2789fac6efdbfc50b64c914a875ebad4"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a2789fac6efdbfc50b64c914a875ebad4">dqm4hep::core::EventCollectorApplication::m_applicationState</a></div><div class="ttdeci">State m_applicationState</div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorApplication_8h_source.html#l00096">EventCollectorApplication.h:96</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1EventCollectorApplication_html_a3346373f33d77c5e2f59e86c9e2a9397"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a3346373f33d77c5e2f59e86c9e2a9397">dqm4hep::core::EventCollectorApplication::m_shouldExit</a></div><div class="ttdeci">bool m_shouldExit</div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorApplication_8h_source.html#l00093">EventCollectorApplication.h:93</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1EventCollectorApplication_html_a9152d62f36c9dec1ede10b98cda6a74b"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">dqm4hep::core::EventCollectorApplication::m_pEventCollector</a></div><div class="ttdeci">EventCollector * m_pEventCollector</div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorApplication_8h_source.html#l00097">EventCollectorApplication.h:97</a></div></div>
@@ -445,11 +392,10 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="EventCollectorApplication_8cc_source.html#l00113">113</a> of file <a class="el" href="EventCollectorApplication_8cc_source.html">EventCollectorApplication.cc</a>.</p>
 
-<p>References <a class="el" href="EventCollectorApplication_8h_source.html#l00097">m_pEventCollector</a>, and <a class="el" href="EventCollector_8cc_source.html#l00058">dqm4hep::core::EventCollector::setCollectorName()</a>.</p>
+<p>References <a class="el" href="EventCollectorApplication_8h_source.html#l00097">m_pEventCollector</a>.</p>
 <div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventCollector.html#a569f0ec6675896ea7a37c5cc3dcfd8ee">setCollectorName</a>(collectorName);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>-&gt;setCollectorName(collectorName);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventCollector_html_a569f0ec6675896ea7a37c5cc3dcfd8ee"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollector.html#a569f0ec6675896ea7a37c5cc3dcfd8ee">dqm4hep::core::EventCollector::setCollectorName</a></div><div class="ttdeci">StatusCode setCollectorName(const std::string &amp;collectorName)</div><div class="ttdoc">Set the collctor name. </div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8cc_source.html#l00058">EventCollector.cc:58</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1EventCollectorApplication_html_a9152d62f36c9dec1ede10b98cda6a74b"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">dqm4hep::core::EventCollectorApplication::m_pEventCollector</a></div><div class="ttdeci">EventCollector * m_pEventCollector</div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorApplication_8h_source.html#l00097">EventCollectorApplication.h:97</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -472,14 +418,13 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="EventCollectorApplication_8cc_source.html#l00120">120</a> of file <a class="el" href="EventCollectorApplication_8cc_source.html">EventCollectorApplication.cc</a>.</p>
 
-<p>References <a class="el" href="EventCollectorApplication_8h_source.html#l00097">m_pEventCollector</a>, and <a class="el" href="EventCollector_8cc_source.html#l00093">dqm4hep::core::EventCollector::setEventCollectorImp()</a>.</p>
+<p>References <a class="el" href="EventCollectorApplication_8h_source.html#l00097">m_pEventCollector</a>.</p>
 <div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      <span class="keywordflow">if</span>(NULL == pCollectorImp)</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventCollector.html#af4c39479e620225accb5fdfbdb48efda">setEventCollectorImp</a>(pCollectorImp);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>-&gt;setEventCollectorImp(pCollectorImp);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventCollector_html_af4c39479e620225accb5fdfbdb48efda"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollector.html#af4c39479e620225accb5fdfbdb48efda">dqm4hep::core::EventCollector::setEventCollectorImp</a></div><div class="ttdeci">void setEventCollectorImp(EventCollectorImp *pCollectorImp)</div><div class="ttdoc">Set the event collector implementation. </div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8cc_source.html#l00093">EventCollector.cc:93</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1EventCollectorApplication_html_a9152d62f36c9dec1ede10b98cda6a74b"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">dqm4hep::core::EventCollectorApplication::m_pEventCollector</a></div><div class="ttdeci">EventCollector * m_pEventCollector</div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorApplication_8h_source.html#l00097">EventCollectorApplication.h:97</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -502,11 +447,10 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="EventCollectorApplication_8cc_source.html#l00130">130</a> of file <a class="el" href="EventCollectorApplication_8cc_source.html">EventCollectorApplication.cc</a>.</p>
 
-<p>References <a class="el" href="EventCollectorApplication_8h_source.html#l00097">m_pEventCollector</a>, and <a class="el" href="EventCollector_8cc_source.html#l00104">dqm4hep::core::EventCollector::setEventStreamer()</a>.</p>
+<p>References <a class="el" href="EventCollectorApplication_8h_source.html#l00097">m_pEventCollector</a>.</p>
 <div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventCollector.html#a9a5b4c380003a28fb6bc38e1499ef325">setEventStreamer</a>(pEventStreamer);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">m_pEventCollector</a>-&gt;setEventStreamer(pEventStreamer);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventCollector_html_a9a5b4c380003a28fb6bc38e1499ef325"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollector.html#a9a5b4c380003a28fb6bc38e1499ef325">dqm4hep::core::EventCollector::setEventStreamer</a></div><div class="ttdeci">void setEventStreamer(EventStreamer *pEventStreamer)</div><div class="ttdoc">Set the event streamer to serialize/deserialize the in/out-coming events. </div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8cc_source.html#l00104">EventCollector.cc:104</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1EventCollectorApplication_html_a9152d62f36c9dec1ede10b98cda6a74b"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventCollectorApplication.html#a9152d62f36c9dec1ede10b98cda6a74b">dqm4hep::core::EventCollectorApplication::m_pEventCollector</a></div><div class="ttdeci">EventCollector * m_pEventCollector</div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorApplication_8h_source.html#l00097">EventCollectorApplication.h:97</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -566,7 +510,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdqm4hep_1_1core_1_1EventCollector.html">EventCollector</a>* dqm4hep::core::EventCollectorApplication::m_pEventCollector</td>
+          <td class="memname">EventCollector* dqm4hep::core::EventCollectorApplication::m_pEventCollector</td>
         </tr>
       </table>
   </td>
@@ -637,7 +581,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 23 2018 12:03:47 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 23 2018 23:41:20 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -38,6 +38,7 @@
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <div id="nav-path" class="navpath">
@@ -88,70 +89,58 @@
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">namespace </span>online {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1RunControlInterface.html#adb397b2a29f50ea73b346e20f72e6453">   40</a></span>&#160;    RunControlInterface::~RunControlInterface()</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="comment">/* nop */</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1RunControlInterface.html#a3a0ecabad62b150997f6625d32fa8c1e">   47</a></span>&#160;    <span class="keywordtype">void</span> RunControlInterface::startNewRun(<span class="keyword">const</span> dqm4hep::core::Run &amp;run, <span class="keyword">const</span> std::string &amp;password)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordflow">if</span>(!m_pServer)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_INITIALIZED);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      m_pServer-&gt;runControl().startNewRun(run, password);        </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1RunControlInterface.html#a9cb0ddaa203f9f0d0ff088f85ae2a8bf">   57</a></span>&#160;    <span class="keywordtype">void</span> RunControlInterface::endCurrentRun(<span class="keyword">const</span> dqm4hep::core::StringMap &amp;parameters, <span class="keyword">const</span> std::string &amp;password)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">if</span>(!m_pServer)</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1RunControlInterface.html#a3a0ecabad62b150997f6625d32fa8c1e">   40</a></span>&#160;    <span class="keywordtype">void</span> RunControlInterface::startNewRun(<span class="keyword">const</span> dqm4hep::core::Run &amp;r, <span class="keyword">const</span> std::string &amp;password) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordflow">if</span>(!m_pServer) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_INITIALIZED);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      m_pServer-&gt;runControl().startNewRun(r, password);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1RunControlInterface.html#a9cb0ddaa203f9f0d0ff088f85ae2a8bf">   49</a></span>&#160;    <span class="keywordtype">void</span> RunControlInterface::endCurrentRun(<span class="keyword">const</span> dqm4hep::core::StringMap &amp;parameters, <span class="keyword">const</span> std::string &amp;password) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">if</span>(!m_pServer) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_INITIALIZED);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      m_pServer-&gt;runControl().endCurrentRun(parameters, password);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1RunControlInterface.html#a29530fbf6a6fa4bcda0c52d01e2fab42">   58</a></span>&#160;    <a class="code" href="namespacedqm4hep_1_1online.html#aed14a07ce6b5fb0e117c8062b268278d">StartOfRunSignal</a> &amp;RunControlInterface::onStartOfRun() {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">if</span>(!m_pServer) {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_INITIALIZED);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      m_pServer-&gt;runControl().endCurrentRun(parameters, password);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">return</span> m_pServer-&gt;runControl().onStartOfRun();</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    </div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1RunControlInterface.html#a29530fbf6a6fa4bcda0c52d01e2fab42">   67</a></span>&#160;    <a class="code" href="namespacedqm4hep_1_1online.html#aed14a07ce6b5fb0e117c8062b268278d">StartOfRunSignal</a> &amp;RunControlInterface::onStartOfRun()</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keywordflow">if</span>(!m_pServer)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_INITIALIZED);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">return</span> m_pServer-&gt;runControl().onStartOfRun();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1RunControlInterface.html#a83c84c60ba55039a16b6ad41f5832455">   77</a></span>&#160;    <a class="code" href="namespacedqm4hep_1_1online.html#a359f64dff4901a3e89e6883efd892377">EndOfRunSignal</a> &amp;RunControlInterface::onEndOfRun()</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">return</span> m_pServer-&gt;runControl().onEndOfRun();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1RunControlInterface.html#a7231911d2126db3949ea134875c44ea1">   86</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classdqm4hep_1_1online_1_1RunControl.html">RunControl</a>&amp; RunControlInterface::runControl()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordflow">if</span>(!m_pServer)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_INITIALIZED);</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1RunControlInterface.html#a83c84c60ba55039a16b6ad41f5832455">   67</a></span>&#160;    <a class="code" href="namespacedqm4hep_1_1online.html#a359f64dff4901a3e89e6883efd892377">EndOfRunSignal</a> &amp;RunControlInterface::onEndOfRun() {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">if</span>(!m_pServer) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_INITIALIZED);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">return</span> m_pServer-&gt;runControl().onEndOfRun();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1RunControlInterface.html#a7231911d2126db3949ea134875c44ea1">   76</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classdqm4hep_1_1online_1_1RunControl.html">RunControl</a>&amp; RunControlInterface::runControl()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">if</span>(!m_pServer) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_INITIALIZED);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">return</span> m_pServer-&gt;runControl();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1RunControlInterface.html#a0e7bbeced558b8c2234a8c20b623f28a">   85</a></span>&#160;    <span class="keywordtype">void</span> RunControlInterface::setServer(<a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html">RunControlServer</a> *srv) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      m_pServer = srv;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keywordflow">return</span> m_pServer-&gt;runControl();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    </div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1RunControlInterface.html#a0e7bbeced558b8c2234a8c20b623f28a">   96</a></span>&#160;    <span class="keywordtype">void</span> RunControlInterface::setServer(<a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html">RunControlServer</a> *srv)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      m_pServer = srv;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html">dqm4hep::online::RunControlServer</a></div><div class="ttdoc">RunControlServer class The main run control server runner class. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8h_source.html#l00052">RunControlServer.h:52</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1online_html_a359f64dff4901a3e89e6883efd892377"><div class="ttname"><a href="namespacedqm4hep_1_1online.html#a359f64dff4901a3e89e6883efd892377">dqm4hep::online::EndOfRunSignal</a></div><div class="ttdeci">dqm4hep::core::Signal&lt; const dqm4hep::core::Run &amp; &gt; EndOfRunSignal</div><div class="ttdef"><b>Definition:</b> <a href="RunControl_8h_source.html#l00043">RunControl.h:43</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1online_html_aed14a07ce6b5fb0e117c8062b268278d"><div class="ttname"><a href="namespacedqm4hep_1_1online.html#aed14a07ce6b5fb0e117c8062b268278d">dqm4hep::online::StartOfRunSignal</a></div><div class="ttdeci">dqm4hep::core::Signal&lt; dqm4hep::core::Run &amp; &gt; StartOfRunSignal</div><div class="ttdef"><b>Definition:</b> <a href="RunControl_8h_source.html#l00042">RunControl.h:42</a></div></div>
@@ -161,7 +150,7 @@
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 23 2018 12:03:46 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 23 2018 23:41:20 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

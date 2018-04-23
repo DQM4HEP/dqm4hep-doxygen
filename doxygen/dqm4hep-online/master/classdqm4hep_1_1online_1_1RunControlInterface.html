@@ -76,9 +76,9 @@ Inheritance diagram for dqm4hep::online::RunControlInterface:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adb397b2a29f50ea73b346e20f72e6453"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1RunControlInterface.html#adb397b2a29f50ea73b346e20f72e6453">~RunControlInterface</a> ()</td></tr>
-<tr class="memdesc:adb397b2a29f50ea73b346e20f72e6453"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#adb397b2a29f50ea73b346e20f72e6453">More...</a><br/></td></tr>
-<tr class="separator:adb397b2a29f50ea73b346e20f72e6453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a702f0073186081b22dd8b3dc2e2e8535"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1RunControlInterface.html#a702f0073186081b22dd8b3dc2e2e8535">~RunControlInterface</a> ()</td></tr>
+<tr class="memdesc:a702f0073186081b22dd8b3dc2e2e8535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a702f0073186081b22dd8b3dc2e2e8535">More...</a><br/></td></tr>
+<tr class="separator:a702f0073186081b22dd8b3dc2e2e8535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a5c771191777fb7d8d20681e1b42d22"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1RunControlInterface.html#a7a5c771191777fb7d8d20681e1b42d22">readSettings</a> (const dqm4hep::core::StringMap &amp;parameters)=0</td></tr>
 <tr class="memdesc:a7a5c771191777fb7d8d20681e1b42d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read settings from map.  <a href="#a7a5c771191777fb7d8d20681e1b42d22">More...</a><br/></td></tr>
 <tr class="separator:a7a5c771191777fb7d8d20681e1b42d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,7 +133,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="RunControlInterface_8h_source.html#l00052">52</a> of file <a class="el" href="RunControlInterface_8h_source.html">RunControlInterface.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="adb397b2a29f50ea73b346e20f72e6453"></a>
+<a class="anchor" id="a702f0073186081b22dd8b3dc2e2e8535"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -141,7 +141,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">dqm4hep::online::RunControlInterface::~RunControlInterface </td>
+          <td class="memname">virtual dqm4hep::online::RunControlInterface::~RunControlInterface </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -149,17 +149,15 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Destructor. </p>
 
-<p>Definition at line <a class="el" href="RunControlInterface_8cc_source.html#l00040">40</a> of file <a class="el" href="RunControlInterface_8cc_source.html">RunControlInterface.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="comment">/* nop */</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="RunControlInterface_8h_source.html#l00059">59</a> of file <a class="el" href="RunControlInterface_8h_source.html">RunControlInterface.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -205,17 +203,17 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="RunControlInterface_8cc_source.html#l00057">57</a> of file <a class="el" href="RunControlInterface_8cc_source.html">RunControlInterface.cc</a>.</p>
+<p>Definition at line <a class="el" href="RunControlInterface_8cc_source.html#l00049">49</a> of file <a class="el" href="RunControlInterface_8cc_source.html">RunControlInterface.cc</a>.</p>
 
 <p>Referenced by <a class="el" href="HttpRunControlPlugin_8cc_source.html#l00204">dqm4hep::online::HttpRunControl::receiveEndOfRunPost()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">if</span>(!<a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_INITIALIZED);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>-&gt;<a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">runControl</a>().<a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#ad99b78556d0cab980be9a26c2d27c2f2">endCurrentRun</a>(parameters, password);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_ac7beb469f78a1cd886f6fdfc11df6cee"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">dqm4hep::online::RunControlServer::runControl</a></div><div class="ttdeci">RunControl &amp; runControl()</div><div class="ttdoc">Get the run control. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8cc_source.html#l00083">RunControlServer.cc:83</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1RunControl_html_ad99b78556d0cab980be9a26c2d27c2f2"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControl.html#ad99b78556d0cab980be9a26c2d27c2f2">dqm4hep::online::RunControl::endCurrentRun</a></div><div class="ttdeci">dqm4hep::core::StatusCode endCurrentRun(const dqm4hep::core::StringMap &amp;parameters=dqm4hep::core::StringMap(), const std::string &amp;password=&quot;&quot;)</div><div class="ttdoc">End the current run. </div><div class="ttdef"><b>Definition:</b> <a href="RunControl_8cc_source.html#l00125">RunControl.cc:125</a></div></div>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                                                                                             {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">if</span>(!<a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_INITIALIZED);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>-&gt;<a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">runControl</a>().<a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#ad99b78556d0cab980be9a26c2d27c2f2">endCurrentRun</a>(parameters, password);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_ac7beb469f78a1cd886f6fdfc11df6cee"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">dqm4hep::online::RunControlServer::runControl</a></div><div class="ttdeci">RunControl &amp; runControl()</div><div class="ttdoc">Get the run control. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8cc_source.html#l00066">RunControlServer.cc:66</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1RunControl_html_ad99b78556d0cab980be9a26c2d27c2f2"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControl.html#ad99b78556d0cab980be9a26c2d27c2f2">dqm4hep::online::RunControl::endCurrentRun</a></div><div class="ttdeci">dqm4hep::core::StatusCode endCurrentRun(const dqm4hep::core::StringMap &amp;parameters=dqm4hep::core::StringMap(), const std::string &amp;password=&quot;&quot;)</div><div class="ttdoc">End the current run. </div><div class="ttdef"><b>Definition:</b> <a href="RunControl_8cc_source.html#l00109">RunControl.cc:109</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlInterface_html_aea8733fb70b2ba4a0582a9ac2dcd3eca"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">dqm4hep::online::RunControlInterface::m_pServer</a></div><div class="ttdeci">RunControlServer * m_pServer</div><div class="ttdoc">The run control server owning the interface. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlInterface_8h_source.html#l00130">RunControlInterface.h:130</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -243,17 +241,18 @@ Friends</h2></td></tr>
 
 <p>Get the run control end of run signal. </p>
 
-<p>Definition at line <a class="el" href="RunControlInterface_8cc_source.html#l00077">77</a> of file <a class="el" href="RunControlInterface_8cc_source.html">RunControlInterface.cc</a>.</p>
+<p>Definition at line <a class="el" href="RunControlInterface_8cc_source.html#l00067">67</a> of file <a class="el" href="RunControlInterface_8cc_source.html">RunControlInterface.cc</a>.</p>
 
 <p>Referenced by <a class="el" href="HttpRunControlPlugin_8cc_source.html#l00090">dqm4hep::online::HttpRunControl::readSettings()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>-&gt;<a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">runControl</a>().<a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#acc42cf1fcf04a915bccae988d2528ba5">onEndOfRun</a>();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_ac7beb469f78a1cd886f6fdfc11df6cee"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">dqm4hep::online::RunControlServer::runControl</a></div><div class="ttdeci">RunControl &amp; runControl()</div><div class="ttdoc">Get the run control. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8cc_source.html#l00083">RunControlServer.cc:83</a></div></div>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                    {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">if</span>(!<a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_INITIALIZED);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>-&gt;<a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">runControl</a>().<a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#acc42cf1fcf04a915bccae988d2528ba5">onEndOfRun</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_ac7beb469f78a1cd886f6fdfc11df6cee"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">dqm4hep::online::RunControlServer::runControl</a></div><div class="ttdeci">RunControl &amp; runControl()</div><div class="ttdoc">Get the run control. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8cc_source.html#l00066">RunControlServer.cc:66</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlInterface_html_aea8733fb70b2ba4a0582a9ac2dcd3eca"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">dqm4hep::online::RunControlInterface::m_pServer</a></div><div class="ttdeci">RunControlServer * m_pServer</div><div class="ttdoc">The run control server owning the interface. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlInterface_8h_source.html#l00130">RunControlInterface.h:130</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1RunControl_html_acc42cf1fcf04a915bccae988d2528ba5"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControl.html#acc42cf1fcf04a915bccae988d2528ba5">dqm4hep::online::RunControl::onEndOfRun</a></div><div class="ttdeci">EndOfRunSignal &amp; onEndOfRun()</div><div class="ttdoc">Get the end of run signal. </div><div class="ttdef"><b>Definition:</b> <a href="RunControl_8cc_source.html#l00193">RunControl.cc:193</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1RunControl_html_acc42cf1fcf04a915bccae988d2528ba5"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControl.html#acc42cf1fcf04a915bccae988d2528ba5">dqm4hep::online::RunControl::onEndOfRun</a></div><div class="ttdeci">EndOfRunSignal &amp; onEndOfRun()</div><div class="ttdoc">Get the end of run signal. </div><div class="ttdef"><b>Definition:</b> <a href="RunControl_8cc_source.html#l00169">RunControl.cc:169</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -280,15 +279,15 @@ Friends</h2></td></tr>
 
 <p>Get the run control start of run signal. </p>
 
-<p>Definition at line <a class="el" href="RunControlInterface_8cc_source.html#l00067">67</a> of file <a class="el" href="RunControlInterface_8cc_source.html">RunControlInterface.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keywordflow">if</span>(!<a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_INITIALIZED);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>-&gt;<a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">runControl</a>().<a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#a0fc1e39d64ff7da96dad29d287acbd8d">onStartOfRun</a>();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_ac7beb469f78a1cd886f6fdfc11df6cee"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">dqm4hep::online::RunControlServer::runControl</a></div><div class="ttdeci">RunControl &amp; runControl()</div><div class="ttdoc">Get the run control. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8cc_source.html#l00083">RunControlServer.cc:83</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1RunControl_html_a0fc1e39d64ff7da96dad29d287acbd8d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControl.html#a0fc1e39d64ff7da96dad29d287acbd8d">dqm4hep::online::RunControl::onStartOfRun</a></div><div class="ttdeci">StartOfRunSignal &amp; onStartOfRun()</div><div class="ttdoc">Get the start of run signal. </div><div class="ttdef"><b>Definition:</b> <a href="RunControl_8cc_source.html#l00186">RunControl.cc:186</a></div></div>
+<p>Definition at line <a class="el" href="RunControlInterface_8cc_source.html#l00058">58</a> of file <a class="el" href="RunControlInterface_8cc_source.html">RunControlInterface.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                        {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">if</span>(!<a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_INITIALIZED);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>-&gt;<a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">runControl</a>().<a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#a0fc1e39d64ff7da96dad29d287acbd8d">onStartOfRun</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_ac7beb469f78a1cd886f6fdfc11df6cee"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">dqm4hep::online::RunControlServer::runControl</a></div><div class="ttdeci">RunControl &amp; runControl()</div><div class="ttdoc">Get the run control. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8cc_source.html#l00066">RunControlServer.cc:66</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1RunControl_html_a0fc1e39d64ff7da96dad29d287acbd8d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControl.html#a0fc1e39d64ff7da96dad29d287acbd8d">dqm4hep::online::RunControl::onStartOfRun</a></div><div class="ttdeci">StartOfRunSignal &amp; onStartOfRun()</div><div class="ttdoc">Get the start of run signal. </div><div class="ttdef"><b>Definition:</b> <a href="RunControl_8cc_source.html#l00163">RunControl.cc:163</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlInterface_html_aea8733fb70b2ba4a0582a9ac2dcd3eca"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">dqm4hep::online::RunControlInterface::m_pServer</a></div><div class="ttdeci">RunControlServer * m_pServer</div><div class="ttdoc">The run control server owning the interface. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlInterface_8h_source.html#l00130">RunControlInterface.h:130</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -405,16 +404,16 @@ Friends</h2></td></tr>
 
 <p>Get the run control. </p>
 
-<p>Definition at line <a class="el" href="RunControlInterface_8cc_source.html#l00086">86</a> of file <a class="el" href="RunControlInterface_8cc_source.html">RunControlInterface.cc</a>.</p>
+<p>Definition at line <a class="el" href="RunControlInterface_8cc_source.html#l00076">76</a> of file <a class="el" href="RunControlInterface_8cc_source.html">RunControlInterface.cc</a>.</p>
 
 <p>Referenced by <a class="el" href="HttpRunControlPlugin_8cc_source.html#l00255">dqm4hep::online::HttpRunControl::getRunStatus()</a>, <a class="el" href="HttpRunControlPlugin_8cc_source.html#l00204">dqm4hep::online::HttpRunControl::receiveEndOfRunPost()</a>, <a class="el" href="HttpRunControlPlugin_8cc_source.html#l00135">dqm4hep::online::HttpRunControl::receiveStartOfRunPost()</a>, and <a class="el" href="HttpRunControlPlugin_8cc_source.html#l00104">dqm4hep::online::HttpRunControl::setup()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordflow">if</span>(!<a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_INITIALIZED);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>-&gt;<a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">runControl</a>();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_ac7beb469f78a1cd886f6fdfc11df6cee"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">dqm4hep::online::RunControlServer::runControl</a></div><div class="ttdeci">RunControl &amp; runControl()</div><div class="ttdoc">Get the run control. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8cc_source.html#l00083">RunControlServer.cc:83</a></div></div>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                                            {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">if</span>(!<a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_INITIALIZED);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>-&gt;<a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">runControl</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_ac7beb469f78a1cd886f6fdfc11df6cee"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">dqm4hep::online::RunControlServer::runControl</a></div><div class="ttdeci">RunControl &amp; runControl()</div><div class="ttdoc">Get the run control. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8cc_source.html#l00066">RunControlServer.cc:66</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlInterface_html_aea8733fb70b2ba4a0582a9ac2dcd3eca"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">dqm4hep::online::RunControlInterface::m_pServer</a></div><div class="ttdeci">RunControlServer * m_pServer</div><div class="ttdoc">The run control server owning the interface. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlInterface_8h_source.html#l00130">RunControlInterface.h:130</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -449,10 +448,10 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="RunControlInterface_8cc_source.html#l00096">96</a> of file <a class="el" href="RunControlInterface_8cc_source.html">RunControlInterface.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a> = srv;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="RunControlInterface_8cc_source.html#l00085">85</a> of file <a class="el" href="RunControlInterface_8cc_source.html">RunControlInterface.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                             {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a> = srv;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlInterface_html_aea8733fb70b2ba4a0582a9ac2dcd3eca"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">dqm4hep::online::RunControlInterface::m_pServer</a></div><div class="ttdeci">RunControlServer * m_pServer</div><div class="ttdoc">The run control server owning the interface. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlInterface_8h_source.html#l00130">RunControlInterface.h:130</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -499,18 +498,17 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="RunControlInterface_8cc_source.html#l00047">47</a> of file <a class="el" href="RunControlInterface_8cc_source.html">RunControlInterface.cc</a>.</p>
+<p>Definition at line <a class="el" href="RunControlInterface_8cc_source.html#l00040">40</a> of file <a class="el" href="RunControlInterface_8cc_source.html">RunControlInterface.cc</a>.</p>
 
 <p>Referenced by <a class="el" href="HttpRunControlPlugin_8cc_source.html#l00135">dqm4hep::online::HttpRunControl::receiveStartOfRunPost()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordflow">if</span>(!<a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_INITIALIZED);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>-&gt;<a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">runControl</a>().<a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#aa5bee8ba55334c68ec0de081f2f73544">startNewRun</a>(<a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#a4f9baf3f2e3195fd7ddf6a5aa069aaff">run</a>, password);        </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_ac7beb469f78a1cd886f6fdfc11df6cee"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">dqm4hep::online::RunControlServer::runControl</a></div><div class="ttdeci">RunControl &amp; runControl()</div><div class="ttdoc">Get the run control. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8cc_source.html#l00083">RunControlServer.cc:83</a></div></div>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                                                                            {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordflow">if</span>(!<a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">throw</span> StatusCodeException(STATUS_CODE_NOT_INITIALIZED);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">m_pServer</a>-&gt;<a class="code" href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">runControl</a>().<a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#aa5bee8ba55334c68ec0de081f2f73544">startNewRun</a>(r, password);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1RunControlServer_html_ac7beb469f78a1cd886f6fdfc11df6cee"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlServer.html#ac7beb469f78a1cd886f6fdfc11df6cee">dqm4hep::online::RunControlServer::runControl</a></div><div class="ttdeci">RunControl &amp; runControl()</div><div class="ttdoc">Get the run control. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlServer_8cc_source.html#l00066">RunControlServer.cc:66</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlInterface_html_aea8733fb70b2ba4a0582a9ac2dcd3eca"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlInterface.html#aea8733fb70b2ba4a0582a9ac2dcd3eca">dqm4hep::online::RunControlInterface::m_pServer</a></div><div class="ttdeci">RunControlServer * m_pServer</div><div class="ttdoc">The run control server owning the interface. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlInterface_8h_source.html#l00130">RunControlInterface.h:130</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1RunControlInterface_html_a4f9baf3f2e3195fd7ddf6a5aa069aaff"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlInterface.html#a4f9baf3f2e3195fd7ddf6a5aa069aaff">dqm4hep::online::RunControlInterface::run</a></div><div class="ttdeci">virtual void run()=0</div><div class="ttdoc">Run the user run control. </div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControl_html_aa5bee8ba55334c68ec0de081f2f73544"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControl.html#aa5bee8ba55334c68ec0de081f2f73544">dqm4hep::online::RunControl::startNewRun</a></div><div class="ttdeci">dqm4hep::core::StatusCode startNewRun(const dqm4hep::core::Run &amp;run, const std::string &amp;password=&quot;&quot;)</div><div class="ttdoc">Start a new run. </div></div>
 </div><!-- fragment -->
 </div>
@@ -597,7 +595,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 23 2018 12:03:47 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 23 2018 23:41:21 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -91,13 +91,13 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:af4ae5b3675368418d11dc6c10e966eec"><td class="memItemLeft" align="right" valign="top">core::json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1RemoteLogger.html#af4ae5b3675368418d11dc6c10e966eec">m_message</a></td></tr>
+<tr class="memitem:af4ae5b3675368418d11dc6c10e966eec"><td class="memItemLeft" align="right" valign="top">core::json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1RemoteLogger.html#af4ae5b3675368418d11dc6c10e966eec">m_message</a> = {}</td></tr>
 <tr class="memdesc:af4ae5b3675368418d11dc6c10e966eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The log message to send as json.  <a href="#af4ae5b3675368418d11dc6c10e966eec">More...</a><br/></td></tr>
 <tr class="separator:af4ae5b3675368418d11dc6c10e966eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8069c39eaa1ebf0549df184c801248e0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1RemoteLogger.html#a8069c39eaa1ebf0549df184c801248e0">m_hostname</a></td></tr>
+<tr class="memitem:a8069c39eaa1ebf0549df184c801248e0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1RemoteLogger.html#a8069c39eaa1ebf0549df184c801248e0">m_hostname</a> = {&quot;&quot;}</td></tr>
 <tr class="memdesc:a8069c39eaa1ebf0549df184c801248e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current host name.  <a href="#a8069c39eaa1ebf0549df184c801248e0">More...</a><br/></td></tr>
 <tr class="separator:a8069c39eaa1ebf0549df184c801248e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa58540d34d0a3aeaa455a2b1f31ed736"><td class="memItemLeft" align="right" valign="top">net::Client&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1RemoteLogger.html#aa58540d34d0a3aeaa455a2b1f31ed736">m_client</a></td></tr>
+<tr class="memitem:aa58540d34d0a3aeaa455a2b1f31ed736"><td class="memItemLeft" align="right" valign="top">net::Client&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1RemoteLogger.html#aa58540d34d0a3aeaa455a2b1f31ed736">m_client</a> = {}</td></tr>
 <tr class="memdesc:aa58540d34d0a3aeaa455a2b1f31ed736"><td class="mdescLeft">&#160;</td><td class="mdescRight">The net client interface.  <a href="#aa58540d34d0a3aeaa455a2b1f31ed736">More...</a><br/></td></tr>
 <tr class="separator:aa58540d34d0a3aeaa455a2b1f31ed736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -195,7 +195,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="RemoteLogger_8cc_source.html#l00050">50</a> of file <a class="el" href="RemoteLogger_8cc_source.html">RemoteLogger.cc</a>.</p>
 
-<p>References <a class="el" href="OnlineRoutes_8cc_source.html#l00072">dqm4hep::online::OnlineRoutes::OnlineManager::collectLog()</a>, <a class="el" href="RemoteLogger_8h_source.html#l00073">m_client</a>, <a class="el" href="RemoteLogger_8h_source.html#l00072">m_hostname</a>, and <a class="el" href="RemoteLogger_8h_source.html#l00071">m_message</a>.</p>
+<p>References <a class="el" href="OnlineRoutes_8cc_source.html#l00110">dqm4hep::online::OnlineRoutes::OnlineManager::collectLog()</a>, <a class="el" href="RemoteLogger_8h_source.html#l00073">m_client</a>, <a class="el" href="RemoteLogger_8h_source.html#l00072">m_hostname</a>, and <a class="el" href="RemoteLogger_8h_source.html#l00071">m_message</a>.</p>
 <div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                          {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RemoteLogger.html#af4ae5b3675368418d11dc6c10e966eec">m_message</a> = {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {<span class="stringliteral">&quot;logger&quot;</span>,   *msg.logger_name},</div>
@@ -206,7 +206,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      };</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RemoteLogger.html#aa58540d34d0a3aeaa455a2b1f31ed736">m_client</a>.sendCommand(<a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager.html#ae9d518a92bc7b7f437eb4f0fccc08ff4">OnlineRoutes::OnlineManager::collectLog</a>(), <a class="code" href="classdqm4hep_1_1online_1_1RemoteLogger.html#af4ae5b3675368418d11dc6c10e966eec">m_message</a>.dump());</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager_html_ae9d518a92bc7b7f437eb4f0fccc08ff4"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager.html#ae9d518a92bc7b7f437eb4f0fccc08ff4">dqm4hep::online::OnlineRoutes::OnlineManager::collectLog</a></div><div class="ttdeci">static const std::string collectLog()</div><div class="ttdoc">Get the name of the commmand to send (client) or collect (server) a log message. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00072">OnlineRoutes.cc:72</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager_html_ae9d518a92bc7b7f437eb4f0fccc08ff4"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager.html#ae9d518a92bc7b7f437eb4f0fccc08ff4">dqm4hep::online::OnlineRoutes::OnlineManager::collectLog</a></div><div class="ttdeci">static const std::string collectLog()</div><div class="ttdoc">Get the name of the commmand to send (client) or collect (server) a log message. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00110">OnlineRoutes.cc:110</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RemoteLogger_html_a8069c39eaa1ebf0549df184c801248e0"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RemoteLogger.html#a8069c39eaa1ebf0549df184c801248e0">dqm4hep::online::RemoteLogger::m_hostname</a></div><div class="ttdeci">std::string m_hostname</div><div class="ttdoc">The current host name. </div><div class="ttdef"><b>Definition:</b> <a href="RemoteLogger_8h_source.html#l00072">RemoteLogger.h:72</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RemoteLogger_html_aa58540d34d0a3aeaa455a2b1f31ed736"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RemoteLogger.html#aa58540d34d0a3aeaa455a2b1f31ed736">dqm4hep::online::RemoteLogger::m_client</a></div><div class="ttdeci">net::Client m_client</div><div class="ttdoc">The net client interface. </div><div class="ttdef"><b>Definition:</b> <a href="RemoteLogger_8h_source.html#l00073">RemoteLogger.h:73</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RemoteLogger_html_af4ae5b3675368418d11dc6c10e966eec"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RemoteLogger.html#af4ae5b3675368418d11dc6c10e966eec">dqm4hep::online::RemoteLogger::m_message</a></div><div class="ttdeci">core::json m_message</div><div class="ttdoc">The log message to send as json. </div><div class="ttdef"><b>Definition:</b> <a href="RemoteLogger_8h_source.html#l00071">RemoteLogger.h:71</a></div></div>
@@ -237,6 +237,8 @@ Private Attributes</h2></td></tr>
 <p>Create a shared pointer of <a class="el" href="classdqm4hep_1_1online_1_1RemoteLogger.html" title="RemoteLogger class. ">RemoteLogger</a>. </p>
 
 <p>Definition at line <a class="el" href="RemoteLogger_8cc_source.html#l00044">44</a> of file <a class="el" href="RemoteLogger_8cc_source.html">RemoteLogger.cc</a>.</p>
+
+<p>Referenced by <a class="el" href="Application_8cc_source.html#l00158">dqm4hep::online::Application::init()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                    {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordflow">return</span> std::make_shared&lt;RemoteLogger&gt;();</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
@@ -252,7 +254,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">net::Client dqm4hep::online::RemoteLogger::m_client</td>
+          <td class="memname">net::Client dqm4hep::online::RemoteLogger::m_client = {}</td>
         </tr>
       </table>
   </td>
@@ -278,7 +280,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string dqm4hep::online::RemoteLogger::m_hostname</td>
+          <td class="memname">std::string dqm4hep::online::RemoteLogger::m_hostname = {&quot;&quot;}</td>
         </tr>
       </table>
   </td>
@@ -304,7 +306,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">core::json dqm4hep::online::RemoteLogger::m_message</td>
+          <td class="memname">core::json dqm4hep::online::RemoteLogger::m_message = {}</td>
         </tr>
       </table>
   </td>
@@ -329,7 +331,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 23 2018 12:03:47 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 23 2018 23:41:21 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

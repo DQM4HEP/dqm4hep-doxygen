@@ -68,6 +68,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1495ca87beb5ed462402ca9d57d33f13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a1495ca87beb5ed462402ca9d57d33f13">OnlineManagerServer</a> ()=default</td></tr>
 <tr class="memdesc:a1495ca87beb5ed462402ca9d57d33f13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a1495ca87beb5ed462402ca9d57d33f13">More...</a><br/></td></tr>
 <tr class="separator:a1495ca87beb5ed462402ca9d57d33f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a55a1ae5bc7c2afd46296f66dd5ade7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a9a55a1ae5bc7c2afd46296f66dd5ade7">OnlineManagerServer</a> (const <a class="el" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html">OnlineManagerServer</a> &amp;)=delete</td></tr>
+<tr class="separator:a9a55a1ae5bc7c2afd46296f66dd5ade7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e7c175becf4ac4123f5808e4d6c118"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html">OnlineManagerServer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a84e7c175becf4ac4123f5808e4d6c118">operator=</a> (const <a class="el" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html">OnlineManagerServer</a> &amp;)=delete</td></tr>
+<tr class="separator:a84e7c175becf4ac4123f5808e4d6c118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb3d89cc8149b449317b98998ab5a105"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#adb3d89cc8149b449317b98998ab5a105">run</a> ()</td></tr>
 <tr class="memdesc:adb3d89cc8149b449317b98998ab5a105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the server.  <a href="#adb3d89cc8149b449317b98998ab5a105">More...</a><br/></td></tr>
 <tr class="separator:adb3d89cc8149b449317b98998ab5a105"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +149,30 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9a55a1ae5bc7c2afd46296f66dd5ade7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dqm4hep::online::OnlineManagerServer::OnlineManagerServer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html">OnlineManagerServer</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ad79ba93544bbfcc2d1d9a9a0720055a1"></a>
 <div class="memitem">
@@ -178,7 +206,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="OnlineManagerServer_8cc_source.html#l00109">109</a> of file <a class="el" href="OnlineManagerServer_8cc_source.html">OnlineManagerServer.cc</a>.</p>
 
-<p>References <a class="el" href="OnlineManagerServer_8h_source.html#l00102">m_appStatsService</a>.</p>
+<p>References <a class="el" href="OnlineManagerServer_8h_source.html#l00104">m_appStatsService</a>.</p>
 
 <p>Referenced by <a class="el" href="OnlineManagerServer_8cc_source.html#l00037">run()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                                                    {</div>
@@ -204,7 +232,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <span class="comment">// send the log message to listeners</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a2a2e68cf25784d640988ecab343a2070">m_appStatsService</a>-&gt;sendBuffer(buffer.begin(), buffer.size());</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_a2a2e68cf25784d640988ecab343a2070"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a2a2e68cf25784d640988ecab343a2070">dqm4hep::online::OnlineManagerServer::m_appStatsService</a></div><div class="ttdeci">net::Service * m_appStatsService</div><div class="ttdoc">The application stats service. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00102">OnlineManagerServer.h:102</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_a2a2e68cf25784d640988ecab343a2070"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a2a2e68cf25784d640988ecab343a2070">dqm4hep::online::OnlineManagerServer::m_appStatsService</a></div><div class="ttdeci">net::Service * m_appStatsService</div><div class="ttdoc">The application stats service. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00104">OnlineManagerServer.h:104</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -240,7 +268,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="OnlineManagerServer_8cc_source.html#l00080">80</a> of file <a class="el" href="OnlineManagerServer_8cc_source.html">OnlineManagerServer.cc</a>.</p>
 
-<p>References <a class="el" href="OnlineManagerServer_8cc_source.html#l00135">logMessage()</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00107">m_logger</a>, and <a class="el" href="OnlineManagerServer_8h_source.html#l00101">m_logsService</a>.</p>
+<p>References <a class="el" href="OnlineManagerServer_8cc_source.html#l00135">logMessage()</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00109">m_logger</a>, and <a class="el" href="OnlineManagerServer_8h_source.html#l00103">m_logsService</a>.</p>
 
 <p>Referenced by <a class="el" href="OnlineManagerServer_8cc_source.html#l00037">run()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                                                {</div>
@@ -270,8 +298,8 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a4c68a29da011beb95129a89f9f8cd580">m_logsService</a>-&gt;sendBuffer(buffer.begin(), buffer.size());</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_a2b6aad3ae00692c25fbf7fe381df7929"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a2b6aad3ae00692c25fbf7fe381df7929">dqm4hep::online::OnlineManagerServer::logMessage</a></div><div class="ttdeci">void logMessage(const core::json &amp;message)</div><div class="ttdoc">Log message in log file. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8cc_source.html#l00135">OnlineManagerServer.cc:135</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_ad98680e5fb1c111021ff8886317373aa"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#ad98680e5fb1c111021ff8886317373aa">dqm4hep::online::OnlineManagerServer::m_logger</a></div><div class="ttdeci">core::Logger::LoggerPtr m_logger</div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00107">OnlineManagerServer.h:107</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_a4c68a29da011beb95129a89f9f8cd580"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a4c68a29da011beb95129a89f9f8cd580">dqm4hep::online::OnlineManagerServer::m_logsService</a></div><div class="ttdeci">net::Service * m_logsService</div><div class="ttdoc">The logs service. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00101">OnlineManagerServer.h:101</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_ad98680e5fb1c111021ff8886317373aa"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#ad98680e5fb1c111021ff8886317373aa">dqm4hep::online::OnlineManagerServer::m_logger</a></div><div class="ttdeci">core::Logger::LoggerPtr m_logger</div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00109">OnlineManagerServer.h:109</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_a4c68a29da011beb95129a89f9f8cd580"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a4c68a29da011beb95129a89f9f8cd580">dqm4hep::online::OnlineManagerServer::m_logsService</a></div><div class="ttdeci">net::Service * m_logsService</div><div class="ttdoc">The logs service. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00103">OnlineManagerServer.h:103</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -341,7 +369,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="OnlineManagerServer_8cc_source.html#l00135">135</a> of file <a class="el" href="OnlineManagerServer_8cc_source.html">OnlineManagerServer.cc</a>.</p>
 
-<p>References <a class="el" href="OnlineManagerServer_8cc_source.html#l00156">currentTimeToString()</a>, and <a class="el" href="OnlineManagerServer_8h_source.html#l00107">m_logger</a>.</p>
+<p>References <a class="el" href="OnlineManagerServer_8cc_source.html#l00156">currentTimeToString()</a>, and <a class="el" href="OnlineManagerServer_8h_source.html#l00109">m_logger</a>.</p>
 
 <p>Referenced by <a class="el" href="OnlineManagerServer_8cc_source.html#l00080">collectLog()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                                                                {</div>
@@ -362,9 +390,33 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        logLevelStr, </div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        msg);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_ad98680e5fb1c111021ff8886317373aa"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#ad98680e5fb1c111021ff8886317373aa">dqm4hep::online::OnlineManagerServer::m_logger</a></div><div class="ttdeci">core::Logger::LoggerPtr m_logger</div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00107">OnlineManagerServer.h:107</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_ad98680e5fb1c111021ff8886317373aa"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#ad98680e5fb1c111021ff8886317373aa">dqm4hep::online::OnlineManagerServer::m_logger</a></div><div class="ttdeci">core::Logger::LoggerPtr m_logger</div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00109">OnlineManagerServer.h:109</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_a55f40c2f2a0d9bae862d32833eeab84d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a55f40c2f2a0d9bae862d32833eeab84d">dqm4hep::online::OnlineManagerServer::currentTimeToString</a></div><div class="ttdeci">std::string currentTimeToString() const </div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8cc_source.html#l00156">OnlineManagerServer.cc:156</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a84e7c175becf4ac4123f5808e4d6c118"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html">OnlineManagerServer</a>&amp; dqm4hep::online::OnlineManagerServer::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html">OnlineManagerServer</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a class="anchor" id="adb3d89cc8149b449317b98998ab5a105"></a>
@@ -384,7 +436,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="OnlineManagerServer_8cc_source.html#l00037">37</a> of file <a class="el" href="OnlineManagerServer_8cc_source.html">OnlineManagerServer.cc</a>.</p>
 
-<p>References <a class="el" href="OnlineRoutes_8cc_source.html#l00066">dqm4hep::online::OnlineRoutes::OnlineManager::appStats()</a>, <a class="el" href="OnlineManagerServer_8cc_source.html#l00109">collectAppStat()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00078">dqm4hep::online::OnlineRoutes::OnlineManager::collectAppStat()</a>, <a class="el" href="OnlineManagerServer_8cc_source.html#l00080">collectLog()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00072">dqm4hep::online::OnlineRoutes::OnlineManager::collectLog()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00060">dqm4hep::online::OnlineRoutes::OnlineManager::logs()</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00102">m_appStatsService</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00104">m_logFileBaseName</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00105">m_logFileMaxSize</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00106">m_logFileNFiles</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00107">m_logger</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00101">m_logsService</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00100">m_server</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00103">m_stopFlag</a>, and <a class="el" href="OnlineRoutes_8cc_source.html#l00054">dqm4hep::online::OnlineRoutes::OnlineManager::serverName()</a>.</p>
+<p>References <a class="el" href="OnlineRoutes_8cc_source.html#l00104">dqm4hep::online::OnlineRoutes::OnlineManager::appStats()</a>, <a class="el" href="OnlineManagerServer_8cc_source.html#l00109">collectAppStat()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00116">dqm4hep::online::OnlineRoutes::OnlineManager::collectAppStat()</a>, <a class="el" href="OnlineManagerServer_8cc_source.html#l00080">collectLog()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00110">dqm4hep::online::OnlineRoutes::OnlineManager::collectLog()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00098">dqm4hep::online::OnlineRoutes::OnlineManager::logs()</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00104">m_appStatsService</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00106">m_logFileBaseName</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00107">m_logFileMaxSize</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00108">m_logFileNFiles</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00109">m_logger</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00103">m_logsService</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00102">m_server</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00105">m_stopFlag</a>, and <a class="el" href="OnlineRoutes_8cc_source.html#l00092">dqm4hep::online::OnlineRoutes::OnlineManager::serverName()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                  {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a7d17c259028e3e781d00de27ca778712">m_logFileBaseName</a>.empty()) {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#ad98680e5fb1c111021ff8886317373aa">m_logger</a> = core::Logger::createLogger(<span class="stringliteral">&quot;online-logger&quot;</span>, {</div>
@@ -411,21 +463,21 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">while</span>(not <a class="code" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a783499755807f631bdcf87514b0bdcec">m_stopFlag</a>.load())</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        core::sleep(std::chrono::seconds(1));</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager_html_a0a6c6445d606c5b33d3165b236495fdd"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager.html#a0a6c6445d606c5b33d3165b236495fdd">dqm4hep::online::OnlineRoutes::OnlineManager::collectAppStat</a></div><div class="ttdeci">static const std::string collectAppStat()</div><div class="ttdoc">Get the name of the commmand to send (client) or collect (server) an app statistics. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00078">OnlineRoutes.cc:78</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager_html_a502899e69d24f49ce259f8a80699037e"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager.html#a502899e69d24f49ce259f8a80699037e">dqm4hep::online::OnlineRoutes::OnlineManager::appStats</a></div><div class="ttdeci">static const std::string appStats()</div><div class="ttdoc">Get the name of the service that sends (server) or receive (client) app statistics. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00066">OnlineRoutes.cc:66</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager_html_ab5bcf54d24245deb7e9444ee7f610c44"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager.html#ab5bcf54d24245deb7e9444ee7f610c44">dqm4hep::online::OnlineRoutes::OnlineManager::serverName</a></div><div class="ttdeci">static const std::string serverName()</div><div class="ttdoc">Get the online manager server name. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00054">OnlineRoutes.cc:54</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager_html_a0a6c6445d606c5b33d3165b236495fdd"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager.html#a0a6c6445d606c5b33d3165b236495fdd">dqm4hep::online::OnlineRoutes::OnlineManager::collectAppStat</a></div><div class="ttdeci">static const std::string collectAppStat()</div><div class="ttdoc">Get the name of the commmand to send (client) or collect (server) an app statistics. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00116">OnlineRoutes.cc:116</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager_html_a502899e69d24f49ce259f8a80699037e"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager.html#a502899e69d24f49ce259f8a80699037e">dqm4hep::online::OnlineRoutes::OnlineManager::appStats</a></div><div class="ttdeci">static const std::string appStats()</div><div class="ttdoc">Get the name of the service that sends (server) or receive (client) app statistics. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00104">OnlineRoutes.cc:104</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager_html_ab5bcf54d24245deb7e9444ee7f610c44"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager.html#ab5bcf54d24245deb7e9444ee7f610c44">dqm4hep::online::OnlineRoutes::OnlineManager::serverName</a></div><div class="ttdeci">static const std::string serverName()</div><div class="ttdoc">Get the online manager server name. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00092">OnlineRoutes.cc:92</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_ad79ba93544bbfcc2d1d9a9a0720055a1"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#ad79ba93544bbfcc2d1d9a9a0720055a1">dqm4hep::online::OnlineManagerServer::collectAppStat</a></div><div class="ttdeci">void collectAppStat(const net::Buffer &amp;buffer)</div><div class="ttdoc">Collect an app stat (server command) </div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8cc_source.html#l00109">OnlineManagerServer.cc:109</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager_html_ae9d518a92bc7b7f437eb4f0fccc08ff4"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager.html#ae9d518a92bc7b7f437eb4f0fccc08ff4">dqm4hep::online::OnlineRoutes::OnlineManager::collectLog</a></div><div class="ttdeci">static const std::string collectLog()</div><div class="ttdoc">Get the name of the commmand to send (client) or collect (server) a log message. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00072">OnlineRoutes.cc:72</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_ad98680e5fb1c111021ff8886317373aa"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#ad98680e5fb1c111021ff8886317373aa">dqm4hep::online::OnlineManagerServer::m_logger</a></div><div class="ttdeci">core::Logger::LoggerPtr m_logger</div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00107">OnlineManagerServer.h:107</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_a7d17c259028e3e781d00de27ca778712"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a7d17c259028e3e781d00de27ca778712">dqm4hep::online::OnlineManagerServer::m_logFileBaseName</a></div><div class="ttdeci">std::string m_logFileBaseName</div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00104">OnlineManagerServer.h:104</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_af12773e7c322f144331e5b356b88ff44"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#af12773e7c322f144331e5b356b88ff44">dqm4hep::online::OnlineManagerServer::m_logFileMaxSize</a></div><div class="ttdeci">std::size_t m_logFileMaxSize</div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00105">OnlineManagerServer.h:105</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_af0eb17a475b4eea0a8e0f2d702ea1157"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#af0eb17a475b4eea0a8e0f2d702ea1157">dqm4hep::online::OnlineManagerServer::m_server</a></div><div class="ttdeci">std::shared_ptr&lt; net::Server &gt; m_server</div><div class="ttdoc">The main server. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00100">OnlineManagerServer.h:100</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_a2a2e68cf25784d640988ecab343a2070"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a2a2e68cf25784d640988ecab343a2070">dqm4hep::online::OnlineManagerServer::m_appStatsService</a></div><div class="ttdeci">net::Service * m_appStatsService</div><div class="ttdoc">The application stats service. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00102">OnlineManagerServer.h:102</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_a783499755807f631bdcf87514b0bdcec"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a783499755807f631bdcf87514b0bdcec">dqm4hep::online::OnlineManagerServer::m_stopFlag</a></div><div class="ttdeci">std::atomic&lt; bool &gt; m_stopFlag</div><div class="ttdoc">The main loop stop flag. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00103">OnlineManagerServer.h:103</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager_html_ae9d518a92bc7b7f437eb4f0fccc08ff4"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager.html#ae9d518a92bc7b7f437eb4f0fccc08ff4">dqm4hep::online::OnlineRoutes::OnlineManager::collectLog</a></div><div class="ttdeci">static const std::string collectLog()</div><div class="ttdoc">Get the name of the commmand to send (client) or collect (server) a log message. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00110">OnlineRoutes.cc:110</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_ad98680e5fb1c111021ff8886317373aa"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#ad98680e5fb1c111021ff8886317373aa">dqm4hep::online::OnlineManagerServer::m_logger</a></div><div class="ttdeci">core::Logger::LoggerPtr m_logger</div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00109">OnlineManagerServer.h:109</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_a7d17c259028e3e781d00de27ca778712"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a7d17c259028e3e781d00de27ca778712">dqm4hep::online::OnlineManagerServer::m_logFileBaseName</a></div><div class="ttdeci">std::string m_logFileBaseName</div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00106">OnlineManagerServer.h:106</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_af12773e7c322f144331e5b356b88ff44"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#af12773e7c322f144331e5b356b88ff44">dqm4hep::online::OnlineManagerServer::m_logFileMaxSize</a></div><div class="ttdeci">std::size_t m_logFileMaxSize</div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00107">OnlineManagerServer.h:107</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_af0eb17a475b4eea0a8e0f2d702ea1157"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#af0eb17a475b4eea0a8e0f2d702ea1157">dqm4hep::online::OnlineManagerServer::m_server</a></div><div class="ttdeci">std::shared_ptr&lt; net::Server &gt; m_server</div><div class="ttdoc">The main server. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00102">OnlineManagerServer.h:102</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_a2a2e68cf25784d640988ecab343a2070"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a2a2e68cf25784d640988ecab343a2070">dqm4hep::online::OnlineManagerServer::m_appStatsService</a></div><div class="ttdeci">net::Service * m_appStatsService</div><div class="ttdoc">The application stats service. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00104">OnlineManagerServer.h:104</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_a783499755807f631bdcf87514b0bdcec"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a783499755807f631bdcf87514b0bdcec">dqm4hep::online::OnlineManagerServer::m_stopFlag</a></div><div class="ttdeci">std::atomic&lt; bool &gt; m_stopFlag</div><div class="ttdoc">The main loop stop flag. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00105">OnlineManagerServer.h:105</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_ae06651a90935bfefa388e63231e22451"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#ae06651a90935bfefa388e63231e22451">dqm4hep::online::OnlineManagerServer::collectLog</a></div><div class="ttdeci">void collectLog(const net::Buffer &amp;buffer)</div><div class="ttdoc">Collect a log message (server command) </div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8cc_source.html#l00080">OnlineManagerServer.cc:80</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager_html_a6fd172d90329fd86dd6301cb0434794a"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager.html#a6fd172d90329fd86dd6301cb0434794a">dqm4hep::online::OnlineRoutes::OnlineManager::logs</a></div><div class="ttdeci">static const std::string logs()</div><div class="ttdoc">Get the name of the service that sends (server) or receives (client) logs. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00060">OnlineRoutes.cc:60</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_ac708e506a18bc5b280bf46f33ad8cdc4"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#ac708e506a18bc5b280bf46f33ad8cdc4">dqm4hep::online::OnlineManagerServer::m_logFileNFiles</a></div><div class="ttdeci">std::size_t m_logFileNFiles</div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00106">OnlineManagerServer.h:106</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_a4c68a29da011beb95129a89f9f8cd580"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a4c68a29da011beb95129a89f9f8cd580">dqm4hep::online::OnlineManagerServer::m_logsService</a></div><div class="ttdeci">net::Service * m_logsService</div><div class="ttdoc">The logs service. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00101">OnlineManagerServer.h:101</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager_html_a6fd172d90329fd86dd6301cb0434794a"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager.html#a6fd172d90329fd86dd6301cb0434794a">dqm4hep::online::OnlineRoutes::OnlineManager::logs</a></div><div class="ttdeci">static const std::string logs()</div><div class="ttdoc">Get the name of the service that sends (server) or receives (client) logs. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00098">OnlineRoutes.cc:98</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_ac708e506a18bc5b280bf46f33ad8cdc4"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#ac708e506a18bc5b280bf46f33ad8cdc4">dqm4hep::online::OnlineManagerServer::m_logFileNFiles</a></div><div class="ttdeci">std::size_t m_logFileNFiles</div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00108">OnlineManagerServer.h:108</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_a4c68a29da011beb95129a89f9f8cd580"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a4c68a29da011beb95129a89f9f8cd580">dqm4hep::online::OnlineManagerServer::m_logsService</a></div><div class="ttdeci">net::Service * m_logsService</div><div class="ttdoc">The logs service. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00103">OnlineManagerServer.h:103</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -472,15 +524,15 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="OnlineManagerServer_8cc_source.html#l00072">72</a> of file <a class="el" href="OnlineManagerServer_8cc_source.html">OnlineManagerServer.cc</a>.</p>
 
-<p>References <a class="el" href="OnlineManagerServer_8h_source.html#l00104">m_logFileBaseName</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00105">m_logFileMaxSize</a>, and <a class="el" href="OnlineManagerServer_8h_source.html#l00106">m_logFileNFiles</a>.</p>
+<p>References <a class="el" href="OnlineManagerServer_8h_source.html#l00106">m_logFileBaseName</a>, <a class="el" href="OnlineManagerServer_8h_source.html#l00107">m_logFileMaxSize</a>, and <a class="el" href="OnlineManagerServer_8h_source.html#l00108">m_logFileNFiles</a>.</p>
 <div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                                                                                  {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a7d17c259028e3e781d00de27ca778712">m_logFileBaseName</a> = fileBaseName;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#af12773e7c322f144331e5b356b88ff44">m_logFileMaxSize</a> = maxFileSize;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#ac708e506a18bc5b280bf46f33ad8cdc4">m_logFileNFiles</a> = maxNFiles;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_a7d17c259028e3e781d00de27ca778712"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a7d17c259028e3e781d00de27ca778712">dqm4hep::online::OnlineManagerServer::m_logFileBaseName</a></div><div class="ttdeci">std::string m_logFileBaseName</div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00104">OnlineManagerServer.h:104</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_af12773e7c322f144331e5b356b88ff44"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#af12773e7c322f144331e5b356b88ff44">dqm4hep::online::OnlineManagerServer::m_logFileMaxSize</a></div><div class="ttdeci">std::size_t m_logFileMaxSize</div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00105">OnlineManagerServer.h:105</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_ac708e506a18bc5b280bf46f33ad8cdc4"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#ac708e506a18bc5b280bf46f33ad8cdc4">dqm4hep::online::OnlineManagerServer::m_logFileNFiles</a></div><div class="ttdeci">std::size_t m_logFileNFiles</div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00106">OnlineManagerServer.h:106</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_a7d17c259028e3e781d00de27ca778712"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a7d17c259028e3e781d00de27ca778712">dqm4hep::online::OnlineManagerServer::m_logFileBaseName</a></div><div class="ttdeci">std::string m_logFileBaseName</div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00106">OnlineManagerServer.h:106</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_af12773e7c322f144331e5b356b88ff44"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#af12773e7c322f144331e5b356b88ff44">dqm4hep::online::OnlineManagerServer::m_logFileMaxSize</a></div><div class="ttdeci">std::size_t m_logFileMaxSize</div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00107">OnlineManagerServer.h:107</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_ac708e506a18bc5b280bf46f33ad8cdc4"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#ac708e506a18bc5b280bf46f33ad8cdc4">dqm4hep::online::OnlineManagerServer::m_logFileNFiles</a></div><div class="ttdeci">std::size_t m_logFileNFiles</div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00108">OnlineManagerServer.h:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -501,11 +553,11 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="OnlineManagerServer_8cc_source.html#l00066">66</a> of file <a class="el" href="OnlineManagerServer_8cc_source.html">OnlineManagerServer.cc</a>.</p>
 
-<p>References <a class="el" href="OnlineManagerServer_8h_source.html#l00103">m_stopFlag</a>.</p>
+<p>References <a class="el" href="OnlineManagerServer_8h_source.html#l00105">m_stopFlag</a>.</p>
 <div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                   {</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a783499755807f631bdcf87514b0bdcec">m_stopFlag</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_a783499755807f631bdcf87514b0bdcec"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a783499755807f631bdcf87514b0bdcec">dqm4hep::online::OnlineManagerServer::m_stopFlag</a></div><div class="ttdeci">std::atomic&lt; bool &gt; m_stopFlag</div><div class="ttdoc">The main loop stop flag. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00103">OnlineManagerServer.h:103</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineManagerServer_html_a783499755807f631bdcf87514b0bdcec"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineManagerServer.html#a783499755807f631bdcf87514b0bdcec">dqm4hep::online::OnlineManagerServer::m_stopFlag</a></div><div class="ttdeci">std::atomic&lt; bool &gt; m_stopFlag</div><div class="ttdoc">The main loop stop flag. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineManagerServer_8h_source.html#l00105">OnlineManagerServer.h:105</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -530,7 +582,7 @@ Private Attributes</h2></td></tr>
 
 <p>The application stats service. </p>
 
-<p>Definition at line <a class="el" href="OnlineManagerServer_8h_source.html#l00102">102</a> of file <a class="el" href="OnlineManagerServer_8h_source.html">OnlineManagerServer.h</a>.</p>
+<p>Definition at line <a class="el" href="OnlineManagerServer_8h_source.html#l00104">104</a> of file <a class="el" href="OnlineManagerServer_8h_source.html">OnlineManagerServer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="OnlineManagerServer_8cc_source.html#l00109">collectAppStat()</a>, and <a class="el" href="OnlineManagerServer_8cc_source.html#l00037">run()</a>.</p>
 
@@ -554,7 +606,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="OnlineManagerServer_8h_source.html#l00104">104</a> of file <a class="el" href="OnlineManagerServer_8h_source.html">OnlineManagerServer.h</a>.</p>
+<p>Definition at line <a class="el" href="OnlineManagerServer_8h_source.html#l00106">106</a> of file <a class="el" href="OnlineManagerServer_8h_source.html">OnlineManagerServer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="OnlineManagerServer_8cc_source.html#l00037">run()</a>, and <a class="el" href="OnlineManagerServer_8cc_source.html#l00072">setLogProperties()</a>.</p>
 
@@ -578,7 +630,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="OnlineManagerServer_8h_source.html#l00105">105</a> of file <a class="el" href="OnlineManagerServer_8h_source.html">OnlineManagerServer.h</a>.</p>
+<p>Definition at line <a class="el" href="OnlineManagerServer_8h_source.html#l00107">107</a> of file <a class="el" href="OnlineManagerServer_8h_source.html">OnlineManagerServer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="OnlineManagerServer_8cc_source.html#l00037">run()</a>, and <a class="el" href="OnlineManagerServer_8cc_source.html#l00072">setLogProperties()</a>.</p>
 
@@ -602,7 +654,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="OnlineManagerServer_8h_source.html#l00106">106</a> of file <a class="el" href="OnlineManagerServer_8h_source.html">OnlineManagerServer.h</a>.</p>
+<p>Definition at line <a class="el" href="OnlineManagerServer_8h_source.html#l00108">108</a> of file <a class="el" href="OnlineManagerServer_8h_source.html">OnlineManagerServer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="OnlineManagerServer_8cc_source.html#l00037">run()</a>, and <a class="el" href="OnlineManagerServer_8cc_source.html#l00072">setLogProperties()</a>.</p>
 
@@ -626,7 +678,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="OnlineManagerServer_8h_source.html#l00107">107</a> of file <a class="el" href="OnlineManagerServer_8h_source.html">OnlineManagerServer.h</a>.</p>
+<p>Definition at line <a class="el" href="OnlineManagerServer_8h_source.html#l00109">109</a> of file <a class="el" href="OnlineManagerServer_8h_source.html">OnlineManagerServer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="OnlineManagerServer_8cc_source.html#l00080">collectLog()</a>, <a class="el" href="OnlineManagerServer_8cc_source.html#l00135">logMessage()</a>, and <a class="el" href="OnlineManagerServer_8cc_source.html#l00037">run()</a>.</p>
 
@@ -652,7 +704,7 @@ Private Attributes</h2></td></tr>
 
 <p>The logs service. </p>
 
-<p>Definition at line <a class="el" href="OnlineManagerServer_8h_source.html#l00101">101</a> of file <a class="el" href="OnlineManagerServer_8h_source.html">OnlineManagerServer.h</a>.</p>
+<p>Definition at line <a class="el" href="OnlineManagerServer_8h_source.html#l00103">103</a> of file <a class="el" href="OnlineManagerServer_8h_source.html">OnlineManagerServer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="OnlineManagerServer_8cc_source.html#l00080">collectLog()</a>, and <a class="el" href="OnlineManagerServer_8cc_source.html#l00037">run()</a>.</p>
 
@@ -678,7 +730,7 @@ Private Attributes</h2></td></tr>
 
 <p>The main server. </p>
 
-<p>Definition at line <a class="el" href="OnlineManagerServer_8h_source.html#l00100">100</a> of file <a class="el" href="OnlineManagerServer_8h_source.html">OnlineManagerServer.h</a>.</p>
+<p>Definition at line <a class="el" href="OnlineManagerServer_8h_source.html#l00102">102</a> of file <a class="el" href="OnlineManagerServer_8h_source.html">OnlineManagerServer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="OnlineManagerServer_8cc_source.html#l00037">run()</a>.</p>
 
@@ -704,7 +756,7 @@ Private Attributes</h2></td></tr>
 
 <p>The main loop stop flag. </p>
 
-<p>Definition at line <a class="el" href="OnlineManagerServer_8h_source.html#l00103">103</a> of file <a class="el" href="OnlineManagerServer_8h_source.html">OnlineManagerServer.h</a>.</p>
+<p>Definition at line <a class="el" href="OnlineManagerServer_8h_source.html#l00105">105</a> of file <a class="el" href="OnlineManagerServer_8h_source.html">OnlineManagerServer.h</a>.</p>
 
 <p>Referenced by <a class="el" href="OnlineManagerServer_8cc_source.html#l00037">run()</a>, and <a class="el" href="OnlineManagerServer_8cc_source.html#l00066">stop()</a>.</p>
 
@@ -717,7 +769,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 23 2018 12:03:47 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 23 2018 23:41:21 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
