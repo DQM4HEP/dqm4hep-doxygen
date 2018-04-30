@@ -4492,7 +4492,7 @@ template&lt;template&lt; typename U, typename V, typename...Args &gt; class Obje
 
 <p>References <a class="el" href="json_8h_source.html#l07342">nlohmann::detail::serializer&lt; BasicJsonType &gt;::dump()</a>.</p>
 
-<p>Referenced by <a class="el" href="json_8h_source.html#l15405">std::hash&lt; nlohmann::json &gt;::operator()()</a>.</p>
+<p>Referenced by <a class="el" href="json_8h_source.html#l15405">std::hash&lt; nlohmann::json &gt;::operator()()</a>, and <a class="el" href="Run_8cc_source.html#l00099">dqm4hep::core::operator&lt;&lt;()</a>.</p>
 <div class="fragment"><div class="line"><a name="l10234"></a><span class="lineno">10234</span>&#160;                                                                                                              {</div>
 <div class="line"><a name="l10235"></a><span class="lineno">10235</span>&#160;      <a class="code" href="classnlohmann_1_1basic__json.html#a61f8566a1a85a424c7266fb531dca005">string_t</a> result;</div>
 <div class="line"><a name="l10236"></a><span class="lineno">10236</span>&#160;      <a class="code" href="classnlohmann_1_1basic__json.html#a68557c31b3bdf31c12e148baecec0d23">serializer</a> s(detail::output_adapter&lt;char&gt;(result), indent_char);</div>
@@ -12652,7 +12652,7 @@ Unlike <a class="el" href="classnlohmann_1_1basic__json.html#a233b02b0839ef79894
 
 <p>References <a class="el" href="json_8h_source.html#l00750">nlohmann::detail::type_error::create()</a>, <a class="el" href="json_8h_source.html#l12143">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::end()</a>, <a class="el" href="json_8h_source.html#l11990">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::find()</a>, <a class="el" href="json_8h_source.html#l10508">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::is_object()</a>, <a class="el" href="json_8h_source.html#l00175">JSON_LIKELY</a>, <a class="el" href="json_8h_source.html#l00151">JSON_THROW</a>, and <a class="el" href="json_8h_source.html#l14110">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::type_name()</a>.</p>
 
-<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00073">dqm4hep::core::QualityTestReport::fromJson()</a>, <a class="el" href="Run_8cc_source.html#l00079">dqm4hep::core::Run::fromJson()</a>, <a class="el" href="json_8h_source.html#l09379">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::json_value::json_value()</a>, and <a class="el" href="json_8h_source.html#l11537">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::value()</a>.</p>
+<p>Referenced by <a class="el" href="QualityTest_8cc_source.html#l00073">dqm4hep::core::QualityTestReport::fromJson()</a>, <a class="el" href="Run_8cc_source.html#l00086">dqm4hep::core::Run::fromJson()</a>, <a class="el" href="json_8h_source.html#l09379">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::json_value::json_value()</a>, and <a class="el" href="json_8h_source.html#l11537">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::value()</a>.</p>
 <div class="fragment"><div class="line"><a name="l11518"></a><span class="lineno">11518</span>&#160;                                                                                                {</div>
 <div class="line"><a name="l11519"></a><span class="lineno">11519</span>&#160;      <span class="comment">// at only works for objects</span></div>
 <div class="line"><a name="l11520"></a><span class="lineno">11520</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="json_8h.html#a41ecd1c4cf7c3d56477b9b685b5daa72">JSON_LIKELY</a>(<a class="code" href="classnlohmann_1_1basic__json.html#af8f511af124e82e4579f444b4175787c">is_object</a>())) {</div>
@@ -14480,7 +14480,7 @@ template&lt;template&lt; typename U, typename V, typename...Args &gt; class Obje
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 23 2018 21:45:47 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 30 2018 15:39:50 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

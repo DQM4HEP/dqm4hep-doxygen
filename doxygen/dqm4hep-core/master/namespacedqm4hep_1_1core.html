@@ -579,9 +579,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ad1c3533153e2bdd966694fb486e5bd87"><td class="memTemplParams" colspan="2">template&lt;typename S &gt; </td></tr>
 <tr class="memitem:ad1c3533153e2bdd966694fb486e5bd87"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#ad1c3533153e2bdd966694fb486e5bd87">operator!=</a> (const <a class="el" href="classdqm4hep_1_1core_1_1PtrHandler.html">PtrHandler</a>&lt; S &gt; &amp;lhs, std::nullptr_t rhs)</td></tr>
 <tr class="separator:ad1c3533153e2bdd966694fb486e5bd87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9735e347c5557ae96f330ec9d6d10a87"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a9735e347c5557ae96f330ec9d6d10a87"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a9735e347c5557ae96f330ec9d6d10a87">operator&lt;&lt;</a> (T &amp;out, const <a class="el" href="classdqm4hep_1_1core_1_1Run.html">Run</a> &amp;run)</td></tr>
-<tr class="separator:a9735e347c5557ae96f330ec9d6d10a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1982d737b2cb1ad0ac4f67c819b93e15"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a1982d737b2cb1ad0ac4f67c819b93e15">operator&lt;&lt;</a> (std::ostream &amp;out, const <a class="el" href="classdqm4hep_1_1core_1_1Run.html">Run</a> &amp;run)</td></tr>
+<tr class="separator:a1982d737b2cb1ad0ac4f67c819b93e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf201afda6c6fe8ab579594762f9ed45"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#abf201afda6c6fe8ab579594762f9ed45">statusCodeToString</a> (const <a class="el" href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">StatusCode</a> statusCode)</td></tr>
 <tr class="separator:abf201afda6c6fe8ab579594762f9ed45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14a8a456a0d7cb289265f26065429b2e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a14a8a456a0d7cb289265f26065429b2e">operator==</a> (const <a class="el" href="classdqm4hep_1_1core_1_1TiXmlString.html">TiXmlString</a> &amp;a, const <a class="el" href="classdqm4hep_1_1core_1_1TiXmlString.html">TiXmlString</a> &amp;b)</td></tr>
@@ -2859,19 +2858,14 @@ template&lt;typename S &gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a9735e347c5557ae96f330ec9d6d10a87"></a>
+<a class="anchor" id="a1982d737b2cb1ad0ac4f67c819b93e15"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T&amp; dqm4hep::core::operator&lt;&lt; </td>
+          <td class="memname">std::ostream &amp; dqm4hep::core::operator&lt;&lt; </td>
           <td>(</td>
-          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>out</em>, </td>
         </tr>
         <tr>
@@ -2886,31 +2880,18 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Run_8h_source.html#l00145">145</a> of file <a class="el" href="Run_8h_source.html">Run.h</a>.</p>
+<p>Definition at line <a class="el" href="Run_8cc_source.html#l00099">99</a> of file <a class="el" href="Run_8cc_source.html">Run.cc</a>.</p>
 
-<p>References <a class="el" href="Run_8h_source.html#l00181">dqm4hep::core::Run::getDescription()</a>, <a class="el" href="Run_8h_source.html#l00187">dqm4hep::core::Run::getDetectorName()</a>, <a class="el" href="Run_8h_source.html#l00163">dqm4hep::core::Run::getRunNumber()</a>, and <a class="el" href="Run_8h_source.html#l00135">dqm4hep::core::Run::m_parametersMap</a>.</p>
-<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                                                 {</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      out &lt;&lt; <span class="stringliteral">&quot;Run :\n&quot;</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;             <span class="stringliteral">&quot;  -&gt; run number : &quot;</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;          &lt;&lt; run.getRunNumber() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                                   <span class="stringliteral">&quot;  -&gt; detector : &quot;</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;          &lt;&lt; run.getDetectorName() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                                      <span class="stringliteral">&quot;  -&gt; description : &quot;</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;          &lt;&lt; run.getDescription() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                                     <span class="stringliteral">&quot;  -&gt; parameters : \n&quot;</span>;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> iter = run.m_parametersMap.begin(), endIter = run.m_parametersMap.end(); endIter != iter; ++iter)</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        out &lt;&lt; <span class="stringliteral">&quot;   * &quot;</span> &lt;&lt; iter-&gt;first &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> &lt;&lt; iter-&gt;second &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <span class="keywordflow">return</span> out;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
+<p>References <a class="el" href="json_8h_source.html#l10234">nlohmann::basic_json&lt; ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer &gt;::dump()</a>, and <a class="el" href="Run_8cc_source.html#l00071">dqm4hep::core::Run::toJson()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                                            {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <a class="code" href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">core::json</a> jrun;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      run.toJson(jrun);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      out &lt;&lt; jrun.dump(2);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="keywordflow">return</span> out;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="ttc" id="namespacenlohmann_html_a2bfd99e845a2e5cd90aeaf1b1431f474"><div class="ttname"><a href="namespacenlohmann.html#a2bfd99e845a2e5cd90aeaf1b1431f474">nlohmann::json</a></div><div class="ttdeci">basic_json&lt;&gt; json</div><div class="ttdoc">default JSON class </div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00103">json.h:103</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3733,7 +3714,7 @@ template&lt;class T &gt; </div>
 
 <p>Definition at line <a class="el" href="Internal_8h_source.html#l00187">187</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
-<p>Referenced by <a class="el" href="XMLParser_8h_source.html#l00196">dqm4hep::core::XMLParser::constantAs()</a>, <a class="el" href="XmlHelper_8h_source.html#l00260">dqm4hep::core::XmlHelper::getAttribute()</a>, <a class="el" href="Run_8h_source.html#l00231">dqm4hep::core::Run::getParameter()</a>, <a class="el" href="DBInterface_8h_source.html#l00241">dqm4hep::core::DBInterface::query()</a>, <a class="el" href="DBInterface_8h_source.html#l00272">dqm4hep::core::DBInterface::queryVector()</a>, <a class="el" href="XmlHelper_8h_source.html#l00224">dqm4hep::core::XmlHelper::read2DVectorOfValues()</a>, <a class="el" href="XmlHelper_8h_source.html#l00315">dqm4hep::core::XmlHelper::readParameter()</a>, <a class="el" href="XmlHelper_8h_source.html#l00357">dqm4hep::core::XmlHelper::readParameters()</a>, <a class="el" href="XmlHelper_8h_source.html#l00161">dqm4hep::core::XmlHelper::readValue()</a>, and <a class="el" href="XmlHelper_8h_source.html#l00199">dqm4hep::core::XmlHelper::readVectorOfValues()</a>.</p>
+<p>Referenced by <a class="el" href="XMLParser_8h_source.html#l00196">dqm4hep::core::XMLParser::constantAs()</a>, <a class="el" href="XmlHelper_8h_source.html#l00260">dqm4hep::core::XmlHelper::getAttribute()</a>, <a class="el" href="Run_8h_source.html#l00280">dqm4hep::core::Run::parameter()</a>, <a class="el" href="DBInterface_8h_source.html#l00241">dqm4hep::core::DBInterface::query()</a>, <a class="el" href="DBInterface_8h_source.html#l00272">dqm4hep::core::DBInterface::queryVector()</a>, <a class="el" href="XmlHelper_8h_source.html#l00224">dqm4hep::core::XmlHelper::read2DVectorOfValues()</a>, <a class="el" href="XmlHelper_8h_source.html#l00315">dqm4hep::core::XmlHelper::readParameter()</a>, <a class="el" href="XmlHelper_8h_source.html#l00357">dqm4hep::core::XmlHelper::readParameters()</a>, <a class="el" href="XmlHelper_8h_source.html#l00161">dqm4hep::core::XmlHelper::readValue()</a>, and <a class="el" href="XmlHelper_8h_source.html#l00199">dqm4hep::core::XmlHelper::readVectorOfValues()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                                                       {</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      std::istringstream iss(s);</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <span class="keywordflow">return</span> !(iss &gt;&gt; t).fail();</div>
@@ -4147,7 +4128,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 23 2018 21:45:45 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Apr 30 2018 15:39:47 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
