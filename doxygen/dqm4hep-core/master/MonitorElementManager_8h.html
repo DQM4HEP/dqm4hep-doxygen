@@ -50,23 +50,22 @@
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">MonitorElementManager.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="Directory_8h_source.html">dqm4hep/Directory.h</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="Internal_8h_source.html">dqm4hep/Internal.h</a>&gt;</code><br/>
+<div class="textblock"><code>#include &lt;<a class="el" href="Internal_8h_source.html">dqm4hep/Internal.h</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="Logging_8h_source.html">dqm4hep/Logging.h</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="MonitorElement_8h_source.html">dqm4hep/MonitorElement.h</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="QualityTest_8h_source.html">dqm4hep/QualityTest.h</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="StatusCodes_8h_source.html">dqm4hep/StatusCodes.h</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="Storage_8h_source.html">dqm4hep/Storage.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="Path_8h_source.html">dqm4hep/Path.h</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="XmlHelper_8h_source.html">dqm4hep/XmlHelper.h</a>&gt;</code><br/>
-<code>#include &lt;TFile.h&gt;</code><br/>
-<code>#include &lt;TObject.h&gt;</code><br/>
-<code>#include &lt;TClass.h&gt;</code><br/>
+<code>#include &lt;<a class="el" href="AllocatorHelper_8h_source.html">dqm4hep/AllocatorHelper.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="RootHeaders_8h_source.html">dqm4hep/RootHeaders.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="el" href="Directory_8h_source.html">dqm4hep/Directory.h</a>&gt;</code><br/>
 </div>
 <p><a href="MonitorElementManager_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -82,114 +81,11 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacedqm4hep_1_1core"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html">dqm4hep::core</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ad77b1320fa2ecf86a953a5abc6691f4b"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TH1F, const char <br class="typebreak"/>
-*, const char *, int, float, <br class="typebreak"/>
-float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#ad77b1320fa2ecf86a953a5abc6691f4b">dqm4hep::core::TH1FAllocator</a></td></tr>
-<tr class="separator:ad77b1320fa2ecf86a953a5abc6691f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac60d83e13cfee31b945088d69e46ec49"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TH1I, const char <br class="typebreak"/>
-*, const char *, int, float, <br class="typebreak"/>
-float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#ac60d83e13cfee31b945088d69e46ec49">dqm4hep::core::TH1IAllocator</a></td></tr>
-<tr class="separator:ac60d83e13cfee31b945088d69e46ec49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad084402609dbdb4262e0d2b42d45a6c5"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TH1C, const char <br class="typebreak"/>
-*, const char *, int, float, <br class="typebreak"/>
-float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#ad084402609dbdb4262e0d2b42d45a6c5">dqm4hep::core::TH1CAllocator</a></td></tr>
-<tr class="separator:ad084402609dbdb4262e0d2b42d45a6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af06e619debe7a6bbccbd2b3245ba2a6b"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TH1S, const char <br class="typebreak"/>
-*, const char *, int, float, <br class="typebreak"/>
-float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#af06e619debe7a6bbccbd2b3245ba2a6b">dqm4hep::core::TH1SAllocator</a></td></tr>
-<tr class="separator:af06e619debe7a6bbccbd2b3245ba2a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa215098517f5f9fcb39b69813263e5b1"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TH2F, const char <br class="typebreak"/>
-*, const char *, int, float, <br class="typebreak"/>
-float, int, float, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#aa215098517f5f9fcb39b69813263e5b1">dqm4hep::core::TH2FAllocator</a></td></tr>
-<tr class="separator:aa215098517f5f9fcb39b69813263e5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a429e0dcba80182fc719916967f3c2821"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TH2I, const char <br class="typebreak"/>
-*, const char *, int, float, <br class="typebreak"/>
-float, int, float, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a429e0dcba80182fc719916967f3c2821">dqm4hep::core::TH2IAllocator</a></td></tr>
-<tr class="separator:a429e0dcba80182fc719916967f3c2821"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6aa1722d468e237cf0d1d5cbc986e4ef"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TH2C, const char <br class="typebreak"/>
-*, const char *, int, float, <br class="typebreak"/>
-float, int, float, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a6aa1722d468e237cf0d1d5cbc986e4ef">dqm4hep::core::TH2CAllocator</a></td></tr>
-<tr class="separator:a6aa1722d468e237cf0d1d5cbc986e4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae875d98c6ecc73ebde7241604937313a"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TH2S, const char <br class="typebreak"/>
-*, const char *, int, float, <br class="typebreak"/>
-float, int, float, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#ae875d98c6ecc73ebde7241604937313a">dqm4hep::core::TH2SAllocator</a></td></tr>
-<tr class="separator:ae875d98c6ecc73ebde7241604937313a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0439ff58975dca1d19d96fd4d31b9f3"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TH3F, const char <br class="typebreak"/>
-*, const char *, int, float, <br class="typebreak"/>
-float, int, float, float, int, <br class="typebreak"/>
-float, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#af0439ff58975dca1d19d96fd4d31b9f3">dqm4hep::core::TH3FAllocator</a></td></tr>
-<tr class="separator:af0439ff58975dca1d19d96fd4d31b9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4f63ce933c2adf48fc67c40e1089cef"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TH3I, const char <br class="typebreak"/>
-*, const char *, int, float, <br class="typebreak"/>
-float, int, float, float, int, <br class="typebreak"/>
-float, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#ae4f63ce933c2adf48fc67c40e1089cef">dqm4hep::core::TH3IAllocator</a></td></tr>
-<tr class="separator:ae4f63ce933c2adf48fc67c40e1089cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5eca5cb89ddeaae7b6b76995c2c9f495"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, THStack, const char <br class="typebreak"/>
-*, const char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a5eca5cb89ddeaae7b6b76995c2c9f495">dqm4hep::core::THStackAllocator</a></td></tr>
-<tr class="separator:a5eca5cb89ddeaae7b6b76995c2c9f495"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6d2c60fa1761429e6c09084c055aa45"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TH2Poly, const char <br class="typebreak"/>
-*, const char *, double, <br class="typebreak"/>
-double, double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#ad6d2c60fa1761429e6c09084c055aa45">dqm4hep::core::TH2PolyAllocator</a></td></tr>
-<tr class="separator:ad6d2c60fa1761429e6c09084c055aa45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a363aaec779fc36cd3ebe37694e06ab05"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TProfile, const <br class="typebreak"/>
-char *, const char *, int, <br class="typebreak"/>
-float, float, float, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a363aaec779fc36cd3ebe37694e06ab05">dqm4hep::core::TProfileAllocator</a></td></tr>
-<tr class="separator:a363aaec779fc36cd3ebe37694e06ab05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcf4a01ff04003c3e16b79a67589696a"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TProfile2D, const <br class="typebreak"/>
-char *, const char *, int, <br class="typebreak"/>
-float, float, int, float, <br class="typebreak"/>
-float, float, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#abcf4a01ff04003c3e16b79a67589696a">dqm4hep::core::TProfile2DAllocator</a></td></tr>
-<tr class="separator:abcf4a01ff04003c3e16b79a67589696a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dcf242484b2f096b052e19259a5c213"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TScalarInt, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a6dcf242484b2f096b052e19259a5c213">dqm4hep::core::TScalarIntAllocator</a></td></tr>
-<tr class="separator:a6dcf242484b2f096b052e19259a5c213"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a686ec0cf5761f22b823a8537b5fc2c28"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TScalarFloat, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a686ec0cf5761f22b823a8537b5fc2c28">dqm4hep::core::TScalarFloatAllocator</a></td></tr>
-<tr class="separator:a686ec0cf5761f22b823a8537b5fc2c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae87a68bbfb61c64a28cacb28362e8c8d"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TScalarShort, short &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#ae87a68bbfb61c64a28cacb28362e8c8d">dqm4hep::core::TScalarShortAllocator</a></td></tr>
-<tr class="separator:ae87a68bbfb61c64a28cacb28362e8c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a069408e4e9f305bdfbefee85276671b6"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TScalarString, <br class="typebreak"/>
-std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a069408e4e9f305bdfbefee85276671b6">dqm4hep::core::TScalarStringAllocator</a></td></tr>
-<tr class="separator:a069408e4e9f305bdfbefee85276671b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9ee1185cc551ec3770c3bcb982396bd"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TGraph &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#ae9ee1185cc551ec3770c3bcb982396bd">dqm4hep::core::TGraphAllocator</a></td></tr>
-<tr class="separator:ae9ee1185cc551ec3770c3bcb982396bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab432f4df24a09c8f6cc1de2d89e12677"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TGraphErrors &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#ab432f4df24a09c8f6cc1de2d89e12677">dqm4hep::core::TGraphErrorsAllocator</a></td></tr>
-<tr class="separator:ab432f4df24a09c8f6cc1de2d89e12677"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e3226b0129b0186286e4fefe4e764d1"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TGraph2D &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a5e3226b0129b0186286e4fefe4e764d1">dqm4hep::core::TGraph2DAllocator</a></td></tr>
-<tr class="separator:a5e3226b0129b0186286e4fefe4e764d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9acc000d6846826f43980565a975a59d"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TMultiGraph &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a9acc000d6846826f43980565a975a59d">dqm4hep::core::TMultiGraphAllocator</a></td></tr>
-<tr class="separator:a9acc000d6846826f43980565a975a59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d74efbb6be99bc83f76482381895b27"><td class="memItemLeft" align="right" valign="top">typedef allocator_helper<br class="typebreak"/>
-&lt; TObject, TDynamicGraph &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a4d74efbb6be99bc83f76482381895b27">dqm4hep::core::TDynamicGraphAllocator</a></td></tr>
-<tr class="separator:a4d74efbb6be99bc83f76482381895b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 7 2018 11:25:27 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 10 2018 20:36:17 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
