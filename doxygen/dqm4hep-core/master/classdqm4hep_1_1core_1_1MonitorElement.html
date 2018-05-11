@@ -952,7 +952,7 @@ Friends</h2></td></tr>
 
 <p>References <a class="el" href="MonitorElement_8h_source.html#l00336">m_monitorObject</a>, and <a class="el" href="PtrHandler_8h_source.html#l00153">dqm4hep::core::PtrHandler&lt; T &gt;::ptr()</a>.</p>
 
-<p>Referenced by <a class="el" href="ExactRefCompareTest_8cc_source.html#l00318">dqm4hep::core::ExactRefCompareTest::doIsEqualTest()</a>, <a class="el" href="QualityTest_8cc_source.html#l00319">dqm4hep::core::QualityTest::run()</a>, and <a class="el" href="ExactRefCompareTest_8cc_source.html#l00123">dqm4hep::core::ExactRefCompareTest::userRun()</a>.</p>
+<p>Referenced by <a class="el" href="ExactRefCompareTest_8cc_source.html#l00318">dqm4hep::core::ExactRefCompareTest::doIsEqualTest()</a>, <a class="el" href="MonitorElement_8h_source.html#l00347">objectTo()</a>, <a class="el" href="QualityTest_8cc_source.html#l00319">dqm4hep::core::QualityTest::run()</a>, and <a class="el" href="ExactRefCompareTest_8cc_source.html#l00123">dqm4hep::core::ExactRefCompareTest::userRun()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                                    {</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1MonitorElement.html#aacc59dd75cd293a0b448680fe5d414f5">m_monitorObject</a> ? <a class="code" href="classdqm4hep_1_1core_1_1MonitorElement.html#aacc59dd75cd293a0b448680fe5d414f5">m_monitorObject</a>.<a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#a97755103b59ae448a1ad6e834731b955">ptr</a>() : <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
@@ -1005,11 +1005,13 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00347">347</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
 
-<p>Referenced by <a class="el" href="ExactRefCompareTest_8cc_source.html#l00230">dqm4hep::core::ExactRefCompareTest::doGraph1DTest()</a>, <a class="el" href="ExactRefCompareTest_8cc_source.html#l00272">dqm4hep::core::ExactRefCompareTest::doGraph2DTest()</a>, <a class="el" href="ExactRefCompareTest_8cc_source.html#l00169">dqm4hep::core::ExactRefCompareTest::doHistogramTest()</a>, and <a class="el" href="MeanWithinExpectedTest_8cc_source.html#l00105">dqm4hep::core::MeanWithinExpectedTest::userRun()</a>.</p>
+<p>References <a class="el" href="MonitorElement_8cc_source.html#l00182">object()</a>.</p>
+
+<p>Referenced by <a class="el" href="FitParamInRangeTest_8cc_source.html#l00343">dqm4hep::core::FitParamInRangeTest::checkElement()</a>, <a class="el" href="ExactRefCompareTest_8cc_source.html#l00230">dqm4hep::core::ExactRefCompareTest::doGraph1DTest()</a>, <a class="el" href="ExactRefCompareTest_8cc_source.html#l00272">dqm4hep::core::ExactRefCompareTest::doGraph2DTest()</a>, <a class="el" href="ExactRefCompareTest_8cc_source.html#l00169">dqm4hep::core::ExactRefCompareTest::doHistogramTest()</a>, <a class="el" href="FitParamInRangeTest_8cc_source.html#l00400">dqm4hep::core::FitParamInRangeTest::performFit()</a>, and <a class="el" href="MeanWithinExpectedTest_8cc_source.html#l00105">dqm4hep::core::MeanWithinExpectedTest::userRun()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                                       {</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;      T *objCast = (T *)this-&gt;<span class="keywordtype">object</span>(); <span class="comment">// use old C cast for ROOT objects ...</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;      <span class="keywordflow">return</span> objCast ? objCast : <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    }</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>T*<span class="keyword">&gt;</span>(<a class="code" href="classdqm4hep_1_1core_1_1MonitorElement.html#a194f84db50eb6754b374516e8f2fd379">object</a>());</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElement_html_a194f84db50eb6754b374516e8f2fd379"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElement.html#a194f84db50eb6754b374516e8f2fd379">dqm4hep::core::MonitorElement::object</a></div><div class="ttdeci">TObject * object()</div><div class="ttdoc">Get the monitor object. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElement_8cc_source.html#l00182">MonitorElement.cc:182</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1059,7 +1061,7 @@ template&lt;typename T &gt; </div>
 
 <p>References <a class="el" href="MonitorElement_8h_source.html#l00338">m_referenceObject</a>, and <a class="el" href="PtrHandler_8h_source.html#l00153">dqm4hep::core::PtrHandler&lt; T &gt;::ptr()</a>.</p>
 
-<p>Referenced by <a class="el" href="ExactRefCompareTest_8cc_source.html#l00318">dqm4hep::core::ExactRefCompareTest::doIsEqualTest()</a>, <a class="el" href="MonitorElement_8h_source.html#l00355">referenceTo()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00310">toDevice()</a>, and <a class="el" href="ExactRefCompareTest_8cc_source.html#l00123">dqm4hep::core::ExactRefCompareTest::userRun()</a>.</p>
+<p>Referenced by <a class="el" href="ExactRefCompareTest_8cc_source.html#l00318">dqm4hep::core::ExactRefCompareTest::doIsEqualTest()</a>, <a class="el" href="MonitorElement_8h_source.html#l00354">referenceTo()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00310">toDevice()</a>, and <a class="el" href="ExactRefCompareTest_8cc_source.html#l00123">dqm4hep::core::ExactRefCompareTest::userRun()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                                       {</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1MonitorElement.html#a3ea540dce3321ae3ef432d60ffc83588">m_referenceObject</a> ? <a class="code" href="classdqm4hep_1_1core_1_1MonitorElement.html#a3ea540dce3321ae3ef432d60ffc83588">m_referenceObject</a>.<a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#a97755103b59ae448a1ad6e834731b955">ptr</a>() : <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div>
@@ -1110,15 +1112,14 @@ template&lt;typename T &gt; </div>
 
 <p>Get a casted version of the reference object. </p>
 
-<p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00355">355</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
+<p>Definition at line <a class="el" href="MonitorElement_8h_source.html#l00354">354</a> of file <a class="el" href="MonitorElement_8h_source.html">MonitorElement.h</a>.</p>
 
 <p>References <a class="el" href="MonitorElement_8cc_source.html#l00194">reference()</a>.</p>
 
 <p>Referenced by <a class="el" href="ExactRefCompareTest_8cc_source.html#l00230">dqm4hep::core::ExactRefCompareTest::doGraph1DTest()</a>, <a class="el" href="ExactRefCompareTest_8cc_source.html#l00272">dqm4hep::core::ExactRefCompareTest::doGraph2DTest()</a>, and <a class="el" href="ExactRefCompareTest_8cc_source.html#l00169">dqm4hep::core::ExactRefCompareTest::doHistogramTest()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                                          {</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      T *objCast = (T *)this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1MonitorElement.html#a488c1c8ecccf1c3133a6a2a4465ca140">reference</a>(); <span class="comment">// use old C cast for ROOT objects ...</span></div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;      <span class="keywordflow">return</span> objCast ? objCast : <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                                          {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>T*<span class="keyword">&gt;</span>(<a class="code" href="classdqm4hep_1_1core_1_1MonitorElement.html#a488c1c8ecccf1c3133a6a2a4465ca140">reference</a>());</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElement_html_a488c1c8ecccf1c3133a6a2a4465ca140"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElement.html#a488c1c8ecccf1c3133a6a2a4465ca140">dqm4hep::core::MonitorElement::reference</a></div><div class="ttdeci">TObject * reference()</div><div class="ttdoc">Get the reference object. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElement_8cc_source.html#l00194">MonitorElement.cc:194</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -2031,7 +2032,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 10 2018 20:36:17 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri May 11 2018 15:17:51 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
