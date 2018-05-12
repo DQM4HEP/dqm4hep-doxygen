@@ -111,6 +111,11 @@ Additional Inherited Members</h2></td></tr>
 <br/>
 &#160;&#160;<a class="el" href="classdqm4hep_1_1online_1_1AppEvent.html#aea86dd31000ce2fa55f9d419a6f95ab9a7b8b9763072564762b250c6bbf61e024">COMMAND_HANDLING</a>, 
 <a class="el" href="classdqm4hep_1_1online_1_1AppEvent.html#aea86dd31000ce2fa55f9d419a6f95ab9a25bfd9b6fb21b691629414bf676675d0">CLIENT_EXIT</a>, 
+<a class="el" href="classdqm4hep_1_1online_1_1AppEvent.html#aea86dd31000ce2fa55f9d419a6f95ab9a2e047652e99a9cb579e6dfaa232a7c04">START_OF_RUN</a>, 
+<a class="el" href="classdqm4hep_1_1online_1_1AppEvent.html#aea86dd31000ce2fa55f9d419a6f95ab9a0b2485d755f3f8e696544644240e7fff">END_OF_RUN</a>, 
+<br/>
+&#160;&#160;<a class="el" href="classdqm4hep_1_1online_1_1AppEvent.html#aea86dd31000ce2fa55f9d419a6f95ab9a029a11c577767cd4f580a293f29b87bf">END_OF_CYCLE</a>, 
+<a class="el" href="classdqm4hep_1_1online_1_1AppEvent.html#aea86dd31000ce2fa55f9d419a6f95ab9a31712aefb9a4623b04882c4c04d3aa39">PROCESS_EVENT</a>, 
 <a class="el" href="classdqm4hep_1_1online_1_1AppEvent.html#aea86dd31000ce2fa55f9d419a6f95ab9a7cf21ea2a42b88947a337837a264a34d">USER</a> = 1024, 
 <a class="el" href="classdqm4hep_1_1online_1_1AppEvent.html#aea86dd31000ce2fa55f9d419a6f95ab9aa6228fc9bc1dd178798ecfffb2339cff">MAX_USER</a> = 65535
 <br/>
@@ -120,7 +125,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="AppEvents_8h_source.html#l00053">53</a> of file <a class="el" href="AppEvents_8h_source.html">AppEvents.h</a>.</p>
+<p>Definition at line <a class="el" href="AppEvents_8h_source.html#l00042">42</a> of file <a class="el" href="AppEvents_8h_source.html">AppEvents.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8fe94c4bcc2c6551c88265f7830760c6"></a>
 <div class="memitem">
@@ -154,18 +159,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="AppEvents_8h_source.html#l00122">122</a> of file <a class="el" href="AppEvents_8h_source.html">AppEvents.h</a>.</p>
+<p>Definition at line <a class="el" href="AppEvents_8h_source.html#l00097">97</a> of file <a class="el" href="AppEvents_8h_source.html">AppEvents.h</a>.</p>
 
-<p>References <a class="el" href="AppEvents_8h_source.html#l00060">m_buffer</a>.</p>
-<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                                                                                                       :</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1AppEvent.html#af09e2b244cdfe98e702ac477e564d7fa">AppEvent</a>(<a class="code" href="classdqm4hep_1_1online_1_1AppEvent.html#aea86dd31000ce2fa55f9d419a6f95ab9ad4f9357a416c47815e0b6ba13499b701">SERVICE_UPDATE</a>),</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1ServiceUpdateEvent.html#a8559b98a6031d0d9ac61ac2ba491f222">m_serviceName</a>(sname) {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1ServiceUpdateEvent.html#ae97a0b1162e2dfd64f77f7a5fc69a511">m_buffer</a>.setModel(bufferModel);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1ServiceUpdateEvent_html_a8559b98a6031d0d9ac61ac2ba491f222"><div class="ttname"><a href="classdqm4hep_1_1online_1_1ServiceUpdateEvent.html#a8559b98a6031d0d9ac61ac2ba491f222">dqm4hep::online::ServiceUpdateEvent::m_serviceName</a></div><div class="ttdeci">std::string m_serviceName</div><div class="ttdef"><b>Definition:</b> <a href="AppEvents_8h_source.html#l00059">AppEvents.h:59</a></div></div>
+<p>References <a class="el" href="AppEvents_8h_source.html#l00049">m_buffer</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                                                                                       :</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1AppEvent.html#af09e2b244cdfe98e702ac477e564d7fa">AppEvent</a>(<a class="code" href="classdqm4hep_1_1online_1_1AppEvent.html#aea86dd31000ce2fa55f9d419a6f95ab9ad4f9357a416c47815e0b6ba13499b701">SERVICE_UPDATE</a>),</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1ServiceUpdateEvent.html#a8559b98a6031d0d9ac61ac2ba491f222">m_serviceName</a>(sname) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1ServiceUpdateEvent.html#ae97a0b1162e2dfd64f77f7a5fc69a511">m_buffer</a>.setModel(bufferModel);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1ServiceUpdateEvent_html_a8559b98a6031d0d9ac61ac2ba491f222"><div class="ttname"><a href="classdqm4hep_1_1online_1_1ServiceUpdateEvent.html#a8559b98a6031d0d9ac61ac2ba491f222">dqm4hep::online::ServiceUpdateEvent::m_serviceName</a></div><div class="ttdeci">std::string m_serviceName</div><div class="ttdef"><b>Definition:</b> <a href="AppEvents_8h_source.html#l00048">AppEvents.h:48</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1AppEvent_html_af09e2b244cdfe98e702ac477e564d7fa"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppEvent.html#af09e2b244cdfe98e702ac477e564d7fa">dqm4hep::online::AppEvent::AppEvent</a></div><div class="ttdeci">AppEvent(int type)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="AppEvent_8cc_source.html#l00035">AppEvent.cc:35</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1AppEvent_html_aea86dd31000ce2fa55f9d419a6f95ab9ad4f9357a416c47815e0b6ba13499b701"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppEvent.html#aea86dd31000ce2fa55f9d419a6f95ab9ad4f9357a416c47815e0b6ba13499b701">dqm4hep::online::AppEvent::SERVICE_UPDATE</a></div><div class="ttdef"><b>Definition:</b> <a href="AppEvent_8h_source.html#l00044">AppEvent.h:44</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1ServiceUpdateEvent_html_ae97a0b1162e2dfd64f77f7a5fc69a511"><div class="ttname"><a href="classdqm4hep_1_1online_1_1ServiceUpdateEvent.html#ae97a0b1162e2dfd64f77f7a5fc69a511">dqm4hep::online::ServiceUpdateEvent::m_buffer</a></div><div class="ttdeci">net::Buffer m_buffer</div><div class="ttdef"><b>Definition:</b> <a href="AppEvents_8h_source.html#l00060">AppEvents.h:60</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1ServiceUpdateEvent_html_ae97a0b1162e2dfd64f77f7a5fc69a511"><div class="ttname"><a href="classdqm4hep_1_1online_1_1ServiceUpdateEvent.html#ae97a0b1162e2dfd64f77f7a5fc69a511">dqm4hep::online::ServiceUpdateEvent::m_buffer</a></div><div class="ttdeci">net::Buffer m_buffer</div><div class="ttdef"><b>Definition:</b> <a href="AppEvents_8h_source.html#l00049">AppEvents.h:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -191,13 +196,15 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="AppEvents_8h_source.html#l00136">136</a> of file <a class="el" href="AppEvents_8h_source.html">AppEvents.h</a>.</p>
+<p>Definition at line <a class="el" href="AppEvents_8h_source.html#l00111">111</a> of file <a class="el" href="AppEvents_8h_source.html">AppEvents.h</a>.</p>
 
-<p>References <a class="el" href="AppEvents_8h_source.html#l00060">m_buffer</a>.</p>
-<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                                                             {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1ServiceUpdateEvent.html#ae97a0b1162e2dfd64f77f7a5fc69a511">m_buffer</a>;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1ServiceUpdateEvent_html_ae97a0b1162e2dfd64f77f7a5fc69a511"><div class="ttname"><a href="classdqm4hep_1_1online_1_1ServiceUpdateEvent.html#ae97a0b1162e2dfd64f77f7a5fc69a511">dqm4hep::online::ServiceUpdateEvent::m_buffer</a></div><div class="ttdeci">net::Buffer m_buffer</div><div class="ttdef"><b>Definition:</b> <a href="AppEvents_8h_source.html#l00060">AppEvents.h:60</a></div></div>
+<p>References <a class="el" href="AppEvents_8h_source.html#l00049">m_buffer</a>.</p>
+
+<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00414">dqm4hep::online::ModuleApplication::processStartOfRun()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                                             {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1ServiceUpdateEvent.html#ae97a0b1162e2dfd64f77f7a5fc69a511">m_buffer</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1ServiceUpdateEvent_html_ae97a0b1162e2dfd64f77f7a5fc69a511"><div class="ttname"><a href="classdqm4hep_1_1online_1_1ServiceUpdateEvent.html#ae97a0b1162e2dfd64f77f7a5fc69a511">dqm4hep::online::ServiceUpdateEvent::m_buffer</a></div><div class="ttdeci">net::Buffer m_buffer</div><div class="ttdef"><b>Definition:</b> <a href="AppEvents_8h_source.html#l00049">AppEvents.h:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -222,15 +229,15 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="AppEvents_8h_source.html#l00130">130</a> of file <a class="el" href="AppEvents_8h_source.html">AppEvents.h</a>.</p>
+<p>Definition at line <a class="el" href="AppEvents_8h_source.html#l00105">105</a> of file <a class="el" href="AppEvents_8h_source.html">AppEvents.h</a>.</p>
 
-<p>References <a class="el" href="AppEvents_8h_source.html#l00059">m_serviceName</a>.</p>
+<p>References <a class="el" href="AppEvents_8h_source.html#l00048">m_serviceName</a>.</p>
 
-<p>Referenced by <a class="el" href="Application_8cc_source.html#l00370">dqm4hep::online::Application::NetworkHandler::postServiceContent()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                                                                  {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1ServiceUpdateEvent.html#a8559b98a6031d0d9ac61ac2ba491f222">m_serviceName</a>;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1ServiceUpdateEvent_html_a8559b98a6031d0d9ac61ac2ba491f222"><div class="ttname"><a href="classdqm4hep_1_1online_1_1ServiceUpdateEvent.html#a8559b98a6031d0d9ac61ac2ba491f222">dqm4hep::online::ServiceUpdateEvent::m_serviceName</a></div><div class="ttdeci">std::string m_serviceName</div><div class="ttdef"><b>Definition:</b> <a href="AppEvents_8h_source.html#l00059">AppEvents.h:59</a></div></div>
+<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00143">dqm4hep::online::ModuleApplication::onEvent()</a>, and <a class="el" href="Application_8cc_source.html#l00434">dqm4hep::online::Application::NetworkHandler::postServiceContent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                                                  {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1ServiceUpdateEvent.html#a8559b98a6031d0d9ac61ac2ba491f222">m_serviceName</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1ServiceUpdateEvent_html_a8559b98a6031d0d9ac61ac2ba491f222"><div class="ttname"><a href="classdqm4hep_1_1online_1_1ServiceUpdateEvent.html#a8559b98a6031d0d9ac61ac2ba491f222">dqm4hep::online::ServiceUpdateEvent::m_serviceName</a></div><div class="ttdeci">std::string m_serviceName</div><div class="ttdef"><b>Definition:</b> <a href="AppEvents_8h_source.html#l00048">AppEvents.h:48</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -253,9 +260,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="AppEvents_8h_source.html#l00060">60</a> of file <a class="el" href="AppEvents_8h_source.html">AppEvents.h</a>.</p>
+<p>Definition at line <a class="el" href="AppEvents_8h_source.html#l00049">49</a> of file <a class="el" href="AppEvents_8h_source.html">AppEvents.h</a>.</p>
 
-<p>Referenced by <a class="el" href="AppEvents_8h_source.html#l00136">buffer()</a>, and <a class="el" href="AppEvents_8h_source.html#l00122">ServiceUpdateEvent()</a>.</p>
+<p>Referenced by <a class="el" href="AppEvents_8h_source.html#l00111">buffer()</a>, and <a class="el" href="AppEvents_8h_source.html#l00097">ServiceUpdateEvent()</a>.</p>
 
 </div>
 </div>
@@ -277,9 +284,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="AppEvents_8h_source.html#l00059">59</a> of file <a class="el" href="AppEvents_8h_source.html">AppEvents.h</a>.</p>
+<p>Definition at line <a class="el" href="AppEvents_8h_source.html#l00048">48</a> of file <a class="el" href="AppEvents_8h_source.html">AppEvents.h</a>.</p>
 
-<p>Referenced by <a class="el" href="AppEvents_8h_source.html#l00130">serviceName()</a>.</p>
+<p>Referenced by <a class="el" href="AppEvents_8h_source.html#l00105">serviceName()</a>.</p>
 
 </div>
 </div>
@@ -289,7 +296,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 23 2018 23:41:21 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 12 2018 16:22:15 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

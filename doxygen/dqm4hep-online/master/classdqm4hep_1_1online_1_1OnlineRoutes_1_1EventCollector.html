@@ -72,6 +72,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a797ac8fa5b0828598ef21c1a08746795"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a797ac8fa5b0828598ef21c1a08746795">collectEvent</a> (const std::string &amp;collector)</td></tr>
 <tr class="memdesc:a797ac8fa5b0828598ef21c1a08746795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the event collector command name to collect an event.  <a href="#a797ac8fa5b0828598ef21c1a08746795">More...</a><br/></td></tr>
 <tr class="separator:a797ac8fa5b0828598ef21c1a08746795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5420fee0da115dc6a358b4ddd0999d3b"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a5420fee0da115dc6a358b4ddd0999d3b">eventUpdate</a> (const std::string &amp;collector, const std::string &amp;source)</td></tr>
+<tr class="memdesc:a5420fee0da115dc6a358b4ddd0999d3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the event collector service name to receive event updates.  <a href="#a5420fee0da115dc6a358b4ddd0999d3b">More...</a><br/></td></tr>
+<tr class="separator:a5420fee0da115dc6a358b4ddd0999d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c7fba06afec2c4b7ea473fa8096f3ee"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a2c7fba06afec2c4b7ea473fa8096f3ee">eventRequest</a> (const std::string &amp;collector)</td></tr>
+<tr class="memdesc:a2c7fba06afec2c4b7ea473fa8096f3ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the event collector request name to receive event on query.  <a href="#a2c7fba06afec2c4b7ea473fa8096f3ee">More...</a><br/></td></tr>
+<tr class="separator:a2c7fba06afec2c4b7ea473fa8096f3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -102,7 +108,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="OnlineRoutes_8cc_source.html#l00067">67</a> of file <a class="el" href="OnlineRoutes_8cc_source.html">OnlineRoutes.cc</a>.</p>
 
-<p>Referenced by <a class="el" href="EventCollector_8cc_source.html#l00043">dqm4hep::online::EventCollector::parseCmdLine()</a>, <a class="el" href="EventSource_8cc_source.html#l00203">dqm4hep::online::EventSource::registerMe()</a>, and <a class="el" href="EventSource_8cc_source.html#l00130">dqm4hep::online::EventSource::sendEvent()</a>.</p>
+<p>Referenced by <a class="el" href="EventCollector_8cc_source.html#l00050">dqm4hep::online::EventCollector::parseCmdLine()</a>, <a class="el" href="EventSource_8cc_source.html#l00205">dqm4hep::online::EventSource::registerMe()</a>, and <a class="el" href="EventSource_8cc_source.html#l00130">dqm4hep::online::EventSource::sendEvent()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                          {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;evtcol&quot;</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
@@ -143,10 +149,107 @@ Static Public Member Functions</h2></td></tr>
 
 <p>References <a class="el" href="OnlineRoutes_8cc_source.html#l00054">dqm4hep::online::OnlineRoutes::Application::serverName()</a>.</p>
 
-<p>Referenced by <a class="el" href="EventCollector_8cc_source.html#l00079">dqm4hep::online::EventCollector::onInit()</a>, and <a class="el" href="EventSource_8cc_source.html#l00130">dqm4hep::online::EventSource::sendEvent()</a>.</p>
+<p>Referenced by <a class="el" href="EventCollector_8cc_source.html#l00086">dqm4hep::online::EventCollector::onInit()</a>, and <a class="el" href="EventSource_8cc_source.html#l00130">dqm4hep::online::EventSource::sendEvent()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                                                 {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application.html#a218ca8c4cb4764f78ae04984049c023d">OnlineRoutes::Application::serverName</a>(<a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a712d6e1490b64f0127ed606350c3a623">applicationType</a>(), collector) + <span class="stringliteral">&quot;/collect&quot;</span>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector_html_a712d6e1490b64f0127ed606350c3a623"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a712d6e1490b64f0127ed606350c3a623">dqm4hep::online::OnlineRoutes::EventCollector::applicationType</a></div><div class="ttdeci">static std::string applicationType()</div><div class="ttdoc">Get the event collector application type. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00067">OnlineRoutes.cc:67</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application_html_a218ca8c4cb4764f78ae04984049c023d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application.html#a218ca8c4cb4764f78ae04984049c023d">dqm4hep::online::OnlineRoutes::Application::serverName</a></div><div class="ttdeci">static std::string serverName(const std::string &amp;type, const std::string &amp;name)</div><div class="ttdoc">Get the server name given an app type and name. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00054">OnlineRoutes.cc:54</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a2c7fba06afec2c4b7ea473fa8096f3ee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dqm4hep::online::OnlineRoutes::EventCollector::eventRequest </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>collector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the event collector request name to receive event on query. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collector</td><td>the collector name </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="OnlineRoutes_8cc_source.html#l00097">97</a> of file <a class="el" href="OnlineRoutes_8cc_source.html">OnlineRoutes.cc</a>.</p>
+
+<p>References <a class="el" href="OnlineRoutes_8cc_source.html#l00054">dqm4hep::online::OnlineRoutes::Application::serverName()</a>.</p>
+
+<p>Referenced by <a class="el" href="EventCollector_8cc_source.html#l00086">dqm4hep::online::EventCollector::onInit()</a>, and <a class="el" href="EventCollectorClient_8cc_source.html#l00052">dqm4hep::online::EventCollectorClient::queryEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                                                                 {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application.html#a218ca8c4cb4764f78ae04984049c023d">OnlineRoutes::Application::serverName</a>(<a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a712d6e1490b64f0127ed606350c3a623">applicationType</a>(), collector) + <span class="stringliteral">&quot;/lastevt&quot;</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector_html_a712d6e1490b64f0127ed606350c3a623"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a712d6e1490b64f0127ed606350c3a623">dqm4hep::online::OnlineRoutes::EventCollector::applicationType</a></div><div class="ttdeci">static std::string applicationType()</div><div class="ttdoc">Get the event collector application type. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00067">OnlineRoutes.cc:67</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application_html_a218ca8c4cb4764f78ae04984049c023d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application.html#a218ca8c4cb4764f78ae04984049c023d">dqm4hep::online::OnlineRoutes::Application::serverName</a></div><div class="ttdeci">static std::string serverName(const std::string &amp;type, const std::string &amp;name)</div><div class="ttdoc">Get the server name given an app type and name. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00054">OnlineRoutes.cc:54</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5420fee0da115dc6a358b4ddd0999d3b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string dqm4hep::online::OnlineRoutes::EventCollector::eventUpdate </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>collector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>source</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the event collector service name to receive event updates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collector</td><td>the collector name </td></tr>
+    <tr><td class="paramname">source</td><td>the source name </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="OnlineRoutes_8cc_source.html#l00091">91</a> of file <a class="el" href="OnlineRoutes_8cc_source.html">OnlineRoutes.cc</a>.</p>
+
+<p>References <a class="el" href="OnlineRoutes_8cc_source.html#l00054">dqm4hep::online::OnlineRoutes::Application::serverName()</a>.</p>
+
+<p>Referenced by <a class="el" href="EventCollector_8cc_source.html#l00156">dqm4hep::online::EventCollector::handleRegistration()</a>, <a class="el" href="EventCollectorClient_8cc_source.html#l00113">dqm4hep::online::EventCollectorClient::receivingEventUpdates()</a>, and <a class="el" href="EventCollectorClient_8cc_source.html#l00083">dqm4hep::online::EventCollectorClient::setUpdateMode()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                                                                                         {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application.html#a218ca8c4cb4764f78ae04984049c023d">OnlineRoutes::Application::serverName</a>(<a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a712d6e1490b64f0127ed606350c3a623">applicationType</a>(), collector) + <span class="stringliteral">&quot;/updates/&quot;</span> + source;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector_html_a712d6e1490b64f0127ed606350c3a623"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a712d6e1490b64f0127ed606350c3a623">dqm4hep::online::OnlineRoutes::EventCollector::applicationType</a></div><div class="ttdeci">static std::string applicationType()</div><div class="ttdoc">Get the event collector application type. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00067">OnlineRoutes.cc:67</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application_html_a218ca8c4cb4764f78ae04984049c023d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application.html#a218ca8c4cb4764f78ae04984049c023d">dqm4hep::online::OnlineRoutes::Application::serverName</a></div><div class="ttdeci">static std::string serverName(const std::string &amp;type, const std::string &amp;name)</div><div class="ttdoc">Get the server name given an app type and name. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00054">OnlineRoutes.cc:54</a></div></div>
 </div><!-- fragment -->
@@ -186,7 +289,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>References <a class="el" href="OnlineRoutes_8cc_source.html#l00054">dqm4hep::online::OnlineRoutes::Application::serverName()</a>.</p>
 
-<p>Referenced by <a class="el" href="EventCollector_8cc_source.html#l00079">dqm4hep::online::EventCollector::onInit()</a>, and <a class="el" href="EventSource_8cc_source.html#l00203">dqm4hep::online::EventSource::registerMe()</a>.</p>
+<p>Referenced by <a class="el" href="EventCollector_8cc_source.html#l00086">dqm4hep::online::EventCollector::onInit()</a>, and <a class="el" href="EventSource_8cc_source.html#l00205">dqm4hep::online::EventSource::registerMe()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                                                   {</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application.html#a218ca8c4cb4764f78ae04984049c023d">OnlineRoutes::Application::serverName</a>(<a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a712d6e1490b64f0127ed606350c3a623">applicationType</a>(), collector) + <span class="stringliteral">&quot;/register&quot;</span>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
@@ -229,7 +332,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>References <a class="el" href="OnlineRoutes_8cc_source.html#l00054">dqm4hep::online::OnlineRoutes::Application::serverName()</a>.</p>
 
-<p>Referenced by <a class="el" href="EventCollector_8cc_source.html#l00079">dqm4hep::online::EventCollector::onInit()</a>, and <a class="el" href="EventSource_8cc_source.html#l00241">dqm4hep::online::EventSource::unregisterMe()</a>.</p>
+<p>Referenced by <a class="el" href="EventCollector_8cc_source.html#l00086">dqm4hep::online::EventCollector::onInit()</a>, and <a class="el" href="EventSource_8cc_source.html#l00244">dqm4hep::online::EventSource::unregisterMe()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                                                                     {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application.html#a218ca8c4cb4764f78ae04984049c023d">OnlineRoutes::Application::serverName</a>(<a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a712d6e1490b64f0127ed606350c3a623">applicationType</a>(), collector) + <span class="stringliteral">&quot;/unregister&quot;</span>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
@@ -245,7 +348,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 23 2018 23:41:21 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 12 2018 16:22:16 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

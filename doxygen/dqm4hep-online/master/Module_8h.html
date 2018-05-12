@@ -49,20 +49,30 @@
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">Module.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;dqm4hep/DQM4HEP.h&quot;</code><br/>
+<div class="textblock"><code>#include &quot;dqm4hep/Internal.h&quot;</code><br/>
+<code>#include &quot;dqm4hep/Run.h&quot;</code><br/>
+<code>#include &quot;dqm4hep/Event.h&quot;</code><br/>
 <code>#include &quot;dqm4hep/Version.h&quot;</code><br/>
+<code>#include &quot;dqm4hep/tinyxml.h&quot;</code><br/>
 </div>
 <p><a href="Module_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Module.html">dqm4hep::core::Module</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdqm4hep_1_1core_1_1Module.html" title="Module base class. ">Module</a> base class.  <a href="classdqm4hep_1_1core_1_1Module.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1Module.html">dqm4hep::online::Module</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdqm4hep_1_1online_1_1Module.html" title="Module base class. ">Module</a> base class.  <a href="classdqm4hep_1_1online_1_1Module.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1ModuleT.html">dqm4hep::online::ModuleT&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdqm4hep_1_1online_1_1ModuleT.html" title="ModuleT template class Template parameter T is the type of item to process in the user callback funct...">ModuleT</a> template class Template parameter T is the type of item to process in the user callback function <a class="el" href="classdqm4hep_1_1online_1_1ModuleT.html#a4be6741fb91cb66a0ee19c1de3ee2e4c" title="Callback function to process an item. ">process()</a>  <a href="classdqm4hep_1_1online_1_1ModuleT.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1ModuleT_3_01void_01_4.html">dqm4hep::online::ModuleT&lt; void &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdqm4hep_1_1online_1_1ModuleT.html" title="ModuleT template class Template parameter T is the type of item to process in the user callback funct...">ModuleT</a> template class.  <a href="classdqm4hep_1_1online_1_1ModuleT_3_01void_01_4.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -70,13 +80,22 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacedqm4hep"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep.html">dqm4hep</a></td></tr>
 <tr class="memdesc:namespacedqm4hep"><td class="mdescLeft">&#160;</td><td class="mdescRight">&ndash; std headers <br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacedqm4hep_1_1core"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html">dqm4hep::core</a></td></tr>
+<tr class="memitem:namespacedqm4hep_1_1online"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1online.html">dqm4hep::online</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ad487f5f65095d80139649bcfbeed75dd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1online.html#ad487f5f65095d80139649bcfbeed75dd">dqm4hep::online::ModulePtr</a> = std::shared_ptr&lt; Module &gt;</td></tr>
+<tr class="separator:ad487f5f65095d80139649bcfbeed75dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27576ac663e55f1cc6cca05945f70edd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1online.html#a27576ac663e55f1cc6cca05945f70edd">dqm4hep::online::AnalysisModule</a> = ModuleT&lt; core::EventPtr &gt;</td></tr>
+<tr class="separator:a27576ac663e55f1cc6cca05945f70edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee495ddcffa9c5ed9173f39db520de20"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1online.html#aee495ddcffa9c5ed9173f39db520de20">dqm4hep::online::StandaloneModule</a> = ModuleT&lt; void &gt;</td></tr>
+<tr class="separator:aee495ddcffa9c5ed9173f39db520de20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 23 2018 23:41:20 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 12 2018 16:22:15 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

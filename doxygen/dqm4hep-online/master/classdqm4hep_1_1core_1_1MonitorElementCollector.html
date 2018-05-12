@@ -78,7 +78,7 @@ Inheritance diagram for dqm4hep::core::MonitorElementCollector:</div>
 Public Types</h2></td></tr>
 <tr class="memitem:a748abd1a71d2cc4503cd438c3db66986"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <br class="typebreak"/>
 <a class="el" href="classdqm4hep_1_1core_1_1ModuleMeInfo.html">ModuleMeInfo</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1MonitorElementCollector.html#a748abd1a71d2cc4503cd438c3db66986">ModuleMeInfoMap</a></td></tr>
-<tr class="memdesc:a748abd1a71d2cc4503cd438c3db66986"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classdqm4hep_1_1core_1_1Module.html" title="Module base class. ">Module</a> element storage.  <a href="#a748abd1a71d2cc4503cd438c3db66986">More...</a><br/></td></tr>
+<tr class="memdesc:a748abd1a71d2cc4503cd438c3db66986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module element storage.  <a href="#a748abd1a71d2cc4503cd438c3db66986">More...</a><br/></td></tr>
 <tr class="separator:a748abd1a71d2cc4503cd438c3db66986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae67892626da10a70de2df7f4c45e1a5c"><td class="memItemLeft" align="right" valign="top">typedef std::set<br class="typebreak"/>
 &lt; MonitorElementPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1MonitorElementCollector.html#ae67892626da10a70de2df7f4c45e1a5c">MonitorElementPtrSet</a></td></tr>
@@ -205,7 +205,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a62ebeb3bff7a6cae4d0e058d615a5aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88a9644ce92da4f336c2044ba235e220"><td class="memItemLeft" align="right" valign="top">DimService *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1MonitorElementCollector.html#a88a9644ce92da4f336c2044ba235e220">m_pAvailableMeService</a></td></tr>
 <tr class="separator:a88a9644ce92da4f336c2044ba235e220"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a315a5ddd148c5f3ab48cd4dc3974f6b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdqm4hep_1_1core_1_1StatisticsService.html">StatisticsService</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1MonitorElementCollector.html#a315a5ddd148c5f3ab48cd4dc3974f6b6">m_pStatisticsService</a></td></tr>
+<tr class="memitem:a315a5ddd148c5f3ab48cd4dc3974f6b6"><td class="memItemLeft" align="right" valign="top">StatisticsService *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1MonitorElementCollector.html#a315a5ddd148c5f3ab48cd4dc3974f6b6">m_pStatisticsService</a></td></tr>
 <tr class="separator:a315a5ddd148c5f3ab48cd4dc3974f6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0715a069b477832229cb6f0954a42a83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1MonitorElementCollector.html#a0715a069b477832229cb6f0954a42a83">m_collectorState</a></td></tr>
 <tr class="separator:a0715a069b477832229cb6f0954a42a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,7 +258,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classdqm4hep_1_1core_1_1Module.html" title="Module base class. ">Module</a> element storage. </p>
+<p>Module element storage. </p>
 
 <p>Definition at line <a class="el" href="MonitorElementCollector_8h_source.html#l00254">254</a> of file <a class="el" href="MonitorElementCollector_8h_source.html">MonitorElementCollector.h</a>.</p>
 
@@ -1200,7 +1200,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="MonitorElementCollector_8cc_source.html#l00622">622</a> of file <a class="el" href="MonitorElementCollector_8cc_source.html">MonitorElementCollector.cc</a>.</p>
 
-<p>References <a class="el" href="MonitorElementCollector_8cc_source.html#l01258">configureInBuffer()</a>, <a class="el" href="MonitorElementCollector_8cc_source.html#l00413">getCollectorName()</a>, <a class="el" href="MonitorElementCollector_8h_source.html#l00361">m_moduleMeInfoMap</a>, <a class="el" href="MonitorElementCollector_8h_source.html#l00357">m_pInBuffer</a>, <a class="el" href="MonitorElementCollector_8h_source.html#l00353">m_pStatisticsService</a>, <a class="el" href="StatisticsService_8cc_source.html#l00062">dqm4hep::core::StatisticsService::update()</a>, and <a class="el" href="MonitorElementCollector_8cc_source.html#l00548">updateClients()</a>.</p>
+<p>References <a class="el" href="MonitorElementCollector_8cc_source.html#l01258">configureInBuffer()</a>, <a class="el" href="MonitorElementCollector_8cc_source.html#l00413">getCollectorName()</a>, <a class="el" href="MonitorElementCollector_8h_source.html#l00361">m_moduleMeInfoMap</a>, <a class="el" href="MonitorElementCollector_8h_source.html#l00357">m_pInBuffer</a>, <a class="el" href="MonitorElementCollector_8h_source.html#l00353">m_pStatisticsService</a>, and <a class="el" href="MonitorElementCollector_8cc_source.html#l00548">updateClients()</a>.</p>
 
 <p>Referenced by <a class="el" href="MonitorElementCollector_8cc_source.html#l00574">commandHandler()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;    {</div>
@@ -1272,7 +1272,7 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;          }</div>
 <div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;        }</div>
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1MonitorElementCollector.html#a315a5ddd148c5f3ab48cd4dc3974f6b6">m_pStatisticsService</a>-&gt;<a class="code" href="classdqm4hep_1_1core_1_1StatisticsService.html#a964aace7e67219c88c1df5397f922f6c">update</a>(nElements);</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1MonitorElementCollector.html#a315a5ddd148c5f3ab48cd4dc3974f6b6">m_pStatisticsService</a>-&gt;update(nElements);</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;</div>
 <div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        LOG4CXX_DEBUG( dqmMainLogger , <span class="stringliteral">&quot;Received n elements : &quot;</span> &lt;&lt; nElements &lt;&lt; <span class="stringliteral">&quot; from &quot;</span> &lt;&lt; publication.size() &lt;&lt; <span class="stringliteral">&quot; modules&quot;</span> );</div>
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;        this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1MonitorElementCollector.html#a8b2783e752330df19a81023415c10b8b">updateClients</a>(clientUpdateMap);</div>
@@ -1284,7 +1284,6 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementCollector_html_a8b2783e752330df19a81023415c10b8b"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementCollector.html#a8b2783e752330df19a81023415c10b8b">dqm4hep::core::MonitorElementCollector::updateClients</a></div><div class="ttdeci">void updateClients(const ClientUpdateMap &amp;clientUpdateMap, bool forceUpdate=false)</div><div class="ttdoc">Update client side with the monitor elements. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementCollector_8cc_source.html#l00548">MonitorElementCollector.cc:548</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementCollector_html_acbffd44093daf88de255136f56314715"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementCollector.html#acbffd44093daf88de255136f56314715">dqm4hep::core::MonitorElementCollector::ClientUpdateMap</a></div><div class="ttdeci">std::map&lt; int, MonitorElementPtrSet &gt; ClientUpdateMap</div><div class="ttdoc">Map of monitor element list to update. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementCollector_8h_source.html#l00256">MonitorElementCollector.h:256</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1StatisticsService_html_a964aace7e67219c88c1df5397f922f6c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1StatisticsService.html#a964aace7e67219c88c1df5397f922f6c">dqm4hep::core::StatisticsService::update</a></div><div class="ttdeci">void update(unsigned int statistics)</div><div class="ttdoc">Update the service with the new statistics. </div><div class="ttdef"><b>Definition:</b> <a href="StatisticsService_8cc_source.html#l00062">StatisticsService.cc:62</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementCollector_html_ac0c56d1c7466c73c7a6f1c6071f5e2a5"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementCollector.html#ac0c56d1c7466c73c7a6f1c6071f5e2a5">dqm4hep::core::MonitorElementCollector::getCollectorName</a></div><div class="ttdeci">const std::string &amp; getCollectorName() const </div><div class="ttdoc">Get the collector name. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementCollector_8cc_source.html#l00413">MonitorElementCollector.cc:413</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementCollector_html_a0029b6569dc83fcd657d1db9f84d64ba"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementCollector.html#a0029b6569dc83fcd657d1db9f84d64ba">dqm4hep::core::MonitorElementCollector::configureInBuffer</a></div><div class="ttdeci">void configureInBuffer(char *pBuffer, uint32_t bufferSize)</div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementCollector_8cc_source.html#l01258">MonitorElementCollector.cc:1258</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementCollector_html_aefa0dd0dcbac15b2aa2f536ed1fea0cc"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementCollector.html#aefa0dd0dcbac15b2aa2f536ed1fea0cc">dqm4hep::core::MonitorElementCollector::m_moduleMeInfoMap</a></div><div class="ttdeci">ModuleMeInfoMap m_moduleMeInfoMap</div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementCollector_8h_source.html#l00361">MonitorElementCollector.h:361</a></div></div>
@@ -2535,7 +2534,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdqm4hep_1_1core_1_1StatisticsService.html">StatisticsService</a>* dqm4hep::core::MonitorElementCollector::m_pStatisticsService</td>
+          <td class="memname">StatisticsService* dqm4hep::core::MonitorElementCollector::m_pStatisticsService</td>
         </tr>
       </table>
   </td>
@@ -2606,7 +2605,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 23 2018 23:41:20 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 12 2018 16:22:15 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

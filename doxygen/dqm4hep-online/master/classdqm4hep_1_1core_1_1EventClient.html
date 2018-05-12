@@ -62,15 +62,6 @@
  <a href="classdqm4hep_1_1core_1_1EventClient.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="EventClient_8h_source.html">EventClient.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for dqm4hep::core::EventClient:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classdqm4hep_1_1core_1_1EventClient.png" usemap="#dqm4hep::core::EventClient_map" alt=""/>
-  <map id="dqm4hep::core::EventClient_map" name="dqm4hep::core::EventClient_map">
-<area href="classdqm4hep_1_1core_1_1DimEventClient.html" title="DimEventClient class. " alt="dqm4hep::core::DimEventClient" shape="rect" coords="0,56,185,80"/>
-</map>
- </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -346,7 +337,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="EventClient_8h_source.html#l00227">m_listeners</a>, and <a class="el" href="classdqm4hep_1_1core_1_1EventClient.html#a51aa8b85956615ef06caaaed28643f14">performServiceConnection()</a>.</p>
 
-<p>Referenced by <a class="el" href="DimEventClient_8cc_source.html#l00386">dqm4hep::core::DimEventClient::readSettings()</a>, <a class="el" href="AnalysisModuleApplication_8cc_source.html#l00593">dqm4hep::core::AnalysisModuleApplication::startServices()</a>, and <a class="el" href="AnalysisModuleApplication_8cc_source.html#l00605">dqm4hep::core::AnalysisModuleApplication::stopServices()</a>.</p>
+<p>Referenced by <a class="el" href="AnalysisModuleApplication_8cc_source.html#l00593">dqm4hep::core::AnalysisModuleApplication::startServices()</a>, and <a class="el" href="AnalysisModuleApplication_8cc_source.html#l00605">dqm4hep::core::AnalysisModuleApplication::stopServices()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    {</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      RETURN_RESULT_IF(STATUS_CODE_SUCCESS, !=, this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventClient.html#a51aa8b85956615ef06caaaed28643f14">performServiceConnection</a>());</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
@@ -379,8 +370,6 @@ Private Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="EventClient_8cc_source.html#l00216">216</a> of file <a class="el" href="EventClient_8cc_source.html">EventClient.cc</a>.</p>
 
 <p>References <a class="el" href="EventClient_8h_source.html#l00227">m_listeners</a>, and <a class="el" href="classdqm4hep_1_1core_1_1EventClient.html#a16a7676f3e0696086d44771ed691f229">performServiceDisconnection()</a>.</p>
-
-<p>Referenced by <a class="el" href="DimEventClient_8cc_source.html#l00386">dqm4hep::core::DimEventClient::readSettings()</a>, and <a class="el" href="DimEventClient_8cc_source.html#l00074">dqm4hep::core::DimEventClient::~DimEventClient()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    {</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;      RETURN_RESULT_IF(STATUS_CODE_SUCCESS, !=, this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventClient.html#a16a7676f3e0696086d44771ed691f229">performServiceDisconnection</a>());</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
@@ -413,8 +402,6 @@ Private Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="EventClient_8cc_source.html#l00071">71</a> of file <a class="el" href="EventClient_8cc_source.html">EventClient.cc</a>.</p>
 
 <p>References <a class="el" href="EventClient_8h_source.html#l00223">m_collectorName</a>.</p>
-
-<p>Referenced by <a class="el" href="DimEventClient_8cc_source.html#l00277">dqm4hep::core::DimEventClient::infoHandler()</a>, <a class="el" href="DimEventClient_8cc_source.html#l00090">dqm4hep::core::DimEventClient::performServiceConnection()</a>, <a class="el" href="DimEventClient_8cc_source.html#l00124">dqm4hep::core::DimEventClient::performServiceDisconnection()</a>, <a class="el" href="DimEventClient_8cc_source.html#l00194">dqm4hep::core::DimEventClient::queryEvent()</a>, <a class="el" href="DimEventClient_8cc_source.html#l00386">dqm4hep::core::DimEventClient::readSettings()</a>, <a class="el" href="DimEventClient_8cc_source.html#l00154">dqm4hep::core::DimEventClient::sendEvent()</a>, <a class="el" href="DimEventClient_8cc_source.html#l00181">dqm4hep::core::DimEventClient::setSubEventIdentifier()</a>, and <a class="el" href="DimEventClient_8cc_source.html#l00257">dqm4hep::core::DimEventClient::setUpdateMode()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1EventClient.html#a04fcee8dee06f52b45762f74a27bd73c">m_collectorName</a>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
@@ -440,8 +427,6 @@ Private Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="EventClient_8cc_source.html#l00089">89</a> of file <a class="el" href="EventClient_8cc_source.html">EventClient.cc</a>.</p>
 
 <p>References <a class="el" href="EventClient_8h_source.html#l00222">m_pEventStreamer</a>.</p>
-
-<p>Referenced by <a class="el" href="DimEventClient_8cc_source.html#l00353">dqm4hep::core::DimEventClient::eventReception()</a>, <a class="el" href="DimEventClient_8cc_source.html#l00194">dqm4hep::core::DimEventClient::queryEvent()</a>, and <a class="el" href="DimEventClient_8cc_source.html#l00154">dqm4hep::core::DimEventClient::sendEvent()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    {</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1EventClient.html#aeb2e77ec536de73dcf89547d5c10df24">m_pEventStreamer</a>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
@@ -475,8 +460,6 @@ Private Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="EventClient_8cc_source.html#l00112">112</a> of file <a class="el" href="EventClient_8cc_source.html">EventClient.cc</a>.</p>
 
 <p>References <a class="el" href="EventClient_8h_source.html#l00226">m_maximumQueueSize</a>.</p>
-
-<p>Referenced by <a class="el" href="DimEventClient_8cc_source.html#l00386">dqm4hep::core::DimEventClient::readSettings()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1EventClient.html#a2868ccafcf777c083548630768b0dd9e">m_maximumQueueSize</a>;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
@@ -502,8 +485,6 @@ Private Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="EventClient_8cc_source.html#l00136">136</a> of file <a class="el" href="EventClient_8cc_source.html">EventClient.cc</a>.</p>
 
 <p>References <a class="el" href="EventClient_8h_source.html#l00224">m_subEventIdentifier</a>.</p>
-
-<p>Referenced by <a class="el" href="DimEventClient_8cc_source.html#l00277">dqm4hep::core::DimEventClient::infoHandler()</a>, <a class="el" href="DimEventClient_8cc_source.html#l00194">dqm4hep::core::DimEventClient::queryEvent()</a>, and <a class="el" href="DimEventClient_8cc_source.html#l00386">dqm4hep::core::DimEventClient::readSettings()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    {</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1EventClient.html#ad78130e429335476f230de595413af87">m_subEventIdentifier</a>;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
@@ -534,8 +515,6 @@ Private Attributes</h2></td></tr>
 
 <p>Whether the update mode is set. </p>
 
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1DimEventClient.html#a22aa6a96fbecc2cebc2a17ea943604d3">dqm4hep::core::DimEventClient</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a5736ce53b8cb069baafb6222ed179fa9"></a>
@@ -560,8 +539,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Whether the client is connected to the collector (server) </p>
-
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1DimEventClient.html#ac93d46c28fa74606412ae7a4f347a267">dqm4hep::core::DimEventClient</a>.</p>
 
 <p>Referenced by <a class="el" href="EventClient_8cc_source.html#l00060">setCollectorName()</a>, and <a class="el" href="AnalysisModuleApplication_8cc_source.html#l00605">dqm4hep::core::AnalysisModuleApplication::stopServices()</a>.</p>
 
@@ -590,8 +567,6 @@ Private Attributes</h2></td></tr>
 
 <p>Workhorse of the service connection. </p>
 
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1DimEventClient.html#a7d0d69a0f1427bf417f54316e704bef1">dqm4hep::core::DimEventClient</a>.</p>
-
 <p>Referenced by <a class="el" href="EventClient_8cc_source.html#l00203">connectToService()</a>.</p>
 
 </div>
@@ -618,8 +593,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Workhorse of the service connection. </p>
-
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1DimEventClient.html#a1ef1fdda7bc0a3546f1839ed74b573c7">dqm4hep::core::DimEventClient</a>.</p>
 
 <p>Referenced by <a class="el" href="EventClient_8cc_source.html#l00216">disconnectFromService()</a>.</p>
 
@@ -654,8 +627,6 @@ Private Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="EventClient_8cc_source.html#l00180">180</a> of file <a class="el" href="EventClient_8cc_source.html">EventClient.cc</a>.</p>
 
 <p>References <a class="el" href="EventClient_8h_source.html#l00225">m_eventQueue</a>, <a class="el" href="EventClient_8h_source.html#l00227">m_listeners</a>, <a class="el" href="EventClient_8h_source.html#l00226">m_maximumQueueSize</a>, and <a class="el" href="EventClient_8h_source.html#l00228">m_mutex</a>.</p>
-
-<p>Referenced by <a class="el" href="DimEventClient_8cc_source.html#l00353">dqm4hep::core::DimEventClient::eventReception()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    {</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      <span class="keywordflow">if</span>(NULL == pEvent)</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">return</span>;</div>
@@ -716,8 +687,6 @@ Private Attributes</h2></td></tr>
 
 <p>Query an event to the collector (server) with a timeout and handle it without pushing it into the internal queue. </p>
 
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1DimEventClient.html#a1420c15b5fa97b281945f1ea531891d4">dqm4hep::core::DimEventClient</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a2995d810919d7831919413a22eb8813d"></a>
@@ -746,8 +715,6 @@ Private Attributes</h2></td></tr>
 <p>To query a single event that is directly handled by the caller, use querySingleEvent().</p>
 <p>The received event is push in an internal event queue. </p>
 
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1DimEventClient.html#a75ce41cf9793f6f9e8b93be062434c8d">dqm4hep::core::DimEventClient</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a9462eb5c2e67e28ff06a3f0275745c29"></a>
@@ -773,8 +740,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read settings from the xml handle. </p>
-
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1DimEventClient.html#a714ed098034d4eb1566c2424addddd4e">dqm4hep::core::DimEventClient</a>.</p>
 
 <p>Referenced by <a class="el" href="AnalysisModuleApplication_8cc_source.html#l00390">dqm4hep::core::AnalysisModuleApplication::configureNetwork()</a>.</p>
 
@@ -837,8 +802,6 @@ Private Attributes</h2></td></tr>
 <p>Send an event to the collector (server). </p>
 <p>Possible only if a connection has been created (<a class="el" href="classdqm4hep_1_1core_1_1EventClient.html#a88ae34e4ca62962b7684287b6114cb6d" title="Connect to the collector service (server) ">connectToService()</a>) and an event streamer set. </p>
 
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1DimEventClient.html#ae9845e95e54cbd3e3c7707d4e3307de1">dqm4hep::core::DimEventClient</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ac39b9890626ce5f65b7c81505f246390"></a>
@@ -869,8 +832,6 @@ Private Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="EventClient_8cc_source.html#l00060">60</a> of file <a class="el" href="EventClient_8cc_source.html">EventClient.cc</a>.</p>
 
 <p>References <a class="el" href="classdqm4hep_1_1core_1_1EventClient.html#a5736ce53b8cb069baafb6222ed179fa9">isConnectedToService()</a>, and <a class="el" href="EventClient_8h_source.html#l00223">m_collectorName</a>.</p>
-
-<p>Referenced by <a class="el" href="DimEventClient_8cc_source.html#l00386">dqm4hep::core::DimEventClient::readSettings()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="comment">// if connected to service, can&#39;t change collector name</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keywordflow">if</span>( this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventClient.html#a5736ce53b8cb069baafb6222ed179fa9">isConnectedToService</a>() )</div>
@@ -921,8 +882,6 @@ Private Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="EventClient_8cc_source.html#l00078">78</a> of file <a class="el" href="EventClient_8cc_source.html">EventClient.cc</a>.</p>
 
 <p>References <a class="el" href="EventClient_8h_source.html#l00221">m_eventStreamerOwner</a>, and <a class="el" href="EventClient_8h_source.html#l00222">m_pEventStreamer</a>.</p>
-
-<p>Referenced by <a class="el" href="DimEventClient_8cc_source.html#l00386">dqm4hep::core::DimEventClient::readSettings()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">if</span>( <a class="code" href="classdqm4hep_1_1core_1_1EventClient.html#aeecb3af6d4af711f792eacdc86437222">m_eventStreamerOwner</a> &amp;&amp; NULL != <a class="code" href="classdqm4hep_1_1core_1_1EventClient.html#aeb2e77ec536de73dcf89547d5c10df24">m_pEventStreamer</a> )</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keyword">delete</span> <a class="code" href="classdqm4hep_1_1core_1_1EventClient.html#aeb2e77ec536de73dcf89547d5c10df24">m_pEventStreamer</a>;</div>
@@ -962,8 +921,6 @@ Private Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="EventClient_8cc_source.html#l00096">96</a> of file <a class="el" href="EventClient_8cc_source.html">EventClient.cc</a>.</p>
 
 <p>References <a class="el" href="EventClient_8h_source.html#l00225">m_eventQueue</a>, <a class="el" href="EventClient_8h_source.html#l00226">m_maximumQueueSize</a>, and <a class="el" href="EventClient_8h_source.html#l00228">m_mutex</a>.</p>
-
-<p>Referenced by <a class="el" href="DimEventClient_8cc_source.html#l00386">dqm4hep::core::DimEventClient::readSettings()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordflow">if</span>( 0 == maxQueueSize )</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">return</span>;</div>
@@ -1007,13 +964,9 @@ Private Attributes</h2></td></tr>
 <p>Set the sub event identifier. </p>
 <p>This string is sent while querying events. The received event will be a sub event matching this identifier </p>
 
-<p>Reimplemented in <a class="el" href="classdqm4hep_1_1core_1_1DimEventClient.html#a3524b9bc49c5ecd0b937d12045ed1218">dqm4hep::core::DimEventClient</a>.</p>
-
 <p>Definition at line <a class="el" href="EventClient_8cc_source.html#l00129">129</a> of file <a class="el" href="EventClient_8cc_source.html">EventClient.cc</a>.</p>
 
 <p>References <a class="el" href="EventClient_8h_source.html#l00224">m_subEventIdentifier</a>.</p>
-
-<p>Referenced by <a class="el" href="DimEventClient_8cc_source.html#l00181">dqm4hep::core::DimEventClient::setSubEventIdentifier()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    {</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1EventClient.html#ad78130e429335476f230de595413af87">m_subEventIdentifier</a> = identifier;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
@@ -1045,8 +998,6 @@ Private Attributes</h2></td></tr>
 
 <p>Set the update mode. </p>
 <p>If the update mode is set to true, a command is sent to the server in order to update the client as soon as an event is received in the collector server. </p>
-
-<p>Implemented in <a class="el" href="classdqm4hep_1_1core_1_1DimEventClient.html#aac0d313df4ab7f9fe233a1f16622af5c">dqm4hep::core::DimEventClient</a>.</p>
 
 <p>Referenced by <a class="el" href="AnalysisModuleApplication_8cc_source.html#l00390">dqm4hep::core::AnalysisModuleApplication::configureNetwork()</a>, and <a class="el" href="AnalysisModuleApplication_8cc_source.html#l00199">dqm4hep::core::AnalysisModuleApplication::run()</a>.</p>
 
@@ -1288,7 +1239,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 23 2018 23:41:20 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 12 2018 16:22:15 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

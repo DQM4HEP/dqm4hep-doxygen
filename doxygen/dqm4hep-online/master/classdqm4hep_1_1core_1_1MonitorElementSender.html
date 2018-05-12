@@ -75,7 +75,7 @@ Inheritance diagram for dqm4hep::core::MonitorElementSender:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a037afd4c789f94db35c88d88de0db4f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a037afd4c789f94db35c88d88de0db4f7">MonitorElementSender</a> (<a class="el" href="classdqm4hep_1_1core_1_1ModuleApplication.html">ModuleApplication</a> *pApplication)</td></tr>
+<tr class="memitem:a037afd4c789f94db35c88d88de0db4f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a037afd4c789f94db35c88d88de0db4f7">MonitorElementSender</a> (ModuleApplication *pApplication)</td></tr>
 <tr class="memdesc:a037afd4c789f94db35c88d88de0db4f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a037afd4c789f94db35c88d88de0db4f7">More...</a><br/></td></tr>
 <tr class="separator:a037afd4c789f94db35c88d88de0db4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03d93f80e9137d1e21f62119393c3371"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a03d93f80e9137d1e21f62119393c3371">~MonitorElementSender</a> ()</td></tr>
@@ -116,7 +116,7 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a933020fdbfdb5c124ca964412d3e2803"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdqm4hep_1_1core_1_1ModuleApplication.html">ModuleApplication</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a933020fdbfdb5c124ca964412d3e2803">m_pApplication</a></td></tr>
+<tr class="memitem:a933020fdbfdb5c124ca964412d3e2803"><td class="memItemLeft" align="right" valign="top">ModuleApplication *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a933020fdbfdb5c124ca964412d3e2803">m_pApplication</a></td></tr>
 <tr class="memdesc:a933020fdbfdb5c124ca964412d3e2803"><td class="mdescLeft">&#160;</td><td class="mdescRight">The module application that sends elements to the collector.  <a href="#a933020fdbfdb5c124ca964412d3e2803">More...</a><br/></td></tr>
 <tr class="separator:a933020fdbfdb5c124ca964412d3e2803"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11e7accecca10dca2fb000482b81f7a7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a11e7accecca10dca2fb000482b81f7a7">m_collectorName</a></td></tr>
@@ -190,7 +190,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">dqm4hep::core::MonitorElementSender::MonitorElementSender </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classdqm4hep_1_1core_1_1ModuleApplication.html">ModuleApplication</a> *&#160;</td>
+          <td class="paramtype">ModuleApplication *&#160;</td>
           <td class="paramname"><em>pApplication</em></td><td>)</td>
           <td></td>
         </tr>
@@ -281,9 +281,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="MonitorElementSender_8cc_source.html#l00273">273</a> of file <a class="el" href="MonitorElementSender_8cc_source.html">MonitorElementSender.cc</a>.</p>
 
-<p>References <a class="el" href="ModuleApplication_8cc_source.html#l00086">dqm4hep::core::ModuleApplication::getModule()</a>, <a class="el" href="Module_8cc_source.html#l00059">dqm4hep::core::Module::getName()</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00107">m_availableMeMap</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00099">m_pApplication</a>, and <a class="el" href="MonitorElementSender_8h_source.html#l00109">m_sendAvailableMeList</a>.</p>
-
-<p>Referenced by <a class="el" href="ModuleApi_8cc_source.html#l00129">dqm4hep::core::ModuleApi::bookCharHistogram1D()</a>, <a class="el" href="ModuleApi_8cc_source.html#l00181">dqm4hep::core::ModuleApi::bookCharHistogram2D()</a>, <a class="el" href="ModuleApi_8cc_source.html#l00279">dqm4hep::core::ModuleApi::bookFloat()</a>, <a class="el" href="ModuleApi_8cc_source.html#l00267">dqm4hep::core::ModuleApi::bookInt()</a>, <a class="el" href="ModuleApi_8cc_source.html#l00117">dqm4hep::core::ModuleApi::bookIntHistogram1D()</a>, <a class="el" href="ModuleApi_8cc_source.html#l00167">dqm4hep::core::ModuleApi::bookIntHistogram2D()</a>, <a class="el" href="ModuleApi_8cc_source.html#l00224">dqm4hep::core::ModuleApi::bookIntHistogram3D()</a>, <a class="el" href="ModuleApi_8cc_source.html#l00685">dqm4hep::core::ModuleApi::bookMonitorElement()</a>, <a class="el" href="ModuleApi_8h_source.html#l00476">dqm4hep::core::ModuleApi::bookObject()</a>, <a class="el" href="ModuleApi_8cc_source.html#l00239">dqm4hep::core::ModuleApi::bookProfile1D()</a>, <a class="el" href="ModuleApi_8cc_source.html#l00252">dqm4hep::core::ModuleApi::bookProfile2D()</a>, <a class="el" href="ModuleApi_8cc_source.html#l00105">dqm4hep::core::ModuleApi::bookRealHistogram1D()</a>, <a class="el" href="ModuleApi_8cc_source.html#l00153">dqm4hep::core::ModuleApi::bookRealHistogram2D()</a>, <a class="el" href="ModuleApi_8cc_source.html#l00209">dqm4hep::core::ModuleApi::bookRealHistogram3D()</a>, <a class="el" href="ModuleApi_8cc_source.html#l00291">dqm4hep::core::ModuleApi::bookShort()</a>, <a class="el" href="ModuleApi_8cc_source.html#l00141">dqm4hep::core::ModuleApi::bookShortHistogram1D()</a>, <a class="el" href="ModuleApi_8cc_source.html#l00195">dqm4hep::core::ModuleApi::bookShortHistogram2D()</a>, and <a class="el" href="ModuleApi_8cc_source.html#l00303">dqm4hep::core::ModuleApi::bookString()</a>.</p>
+<p>References <a class="el" href="MonitorElementSender_8h_source.html#l00107">m_availableMeMap</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00099">m_pApplication</a>, and <a class="el" href="MonitorElementSender_8h_source.html#l00109">m_sendAvailableMeList</a>.</p>
 <div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    {</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      std::string fullName = ( monitorElement-&gt;getPath() + monitorElement-&gt;getName() ).getPath();</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
@@ -301,7 +299,7 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      <span class="comment">// fill info</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      ret.first-&gt;second[Key::MODULE_NAME] = <a class="code" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a933020fdbfdb5c124ca964412d3e2803">m_pApplication</a>-&gt;<a class="code" href="classdqm4hep_1_1core_1_1ModuleApplication.html#a7613e12e20daecbe96d28cd59b7d9055">getModule</a>()-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Module.html#a5cb3e6ab830fb0792700fed11d4dac79">getName</a>();</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      ret.first-&gt;second[Key::MODULE_NAME] = <a class="code" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a933020fdbfdb5c124ca964412d3e2803">m_pApplication</a>-&gt;getModule()-&gt;getName();</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      ret.first-&gt;second[Key::ME_PATH] = monitorElement-&gt;getPath().getPath();</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      ret.first-&gt;second[Key::ME_TYPE] = monitorElementTypeToString(monitorElement-&gt;getType());</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      ret.first-&gt;second[Key::ME_NAME] = monitorElement-&gt;getName();</div>
@@ -311,10 +309,8 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#acd9cca633c2b4911a928e6230aa98391">m_sendAvailableMeList</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementSender_html_acd9cca633c2b4911a928e6230aa98391"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementSender.html#acd9cca633c2b4911a928e6230aa98391">dqm4hep::core::MonitorElementSender::m_sendAvailableMeList</a></div><div class="ttdeci">bool m_sendAvailableMeList</div><div class="ttdoc">Whether the list of available me has to be re-sent to the collector. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementSender_8h_source.html#l00109">MonitorElementSender.h:109</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Module_html_a5cb3e6ab830fb0792700fed11d4dac79"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Module.html#a5cb3e6ab830fb0792700fed11d4dac79">dqm4hep::core::Module::getName</a></div><div class="ttdeci">const std::string &amp; getName() const </div><div class="ttdoc">Get the module name. </div><div class="ttdef"><b>Definition:</b> <a href="Module_8cc_source.html#l00059">Module.cc:59</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementSender_html_a90b8e46429417aba32158134c0d00fd1"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a90b8e46429417aba32158134c0d00fd1">dqm4hep::core::MonitorElementSender::m_availableMeMap</a></div><div class="ttdeci">MonitorElementInfoMap m_availableMeMap</div><div class="ttdoc">The available monitor element list. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementSender_8h_source.html#l00107">MonitorElementSender.h:107</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementSender_html_a933020fdbfdb5c124ca964412d3e2803"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a933020fdbfdb5c124ca964412d3e2803">dqm4hep::core::MonitorElementSender::m_pApplication</a></div><div class="ttdeci">ModuleApplication * m_pApplication</div><div class="ttdoc">The module application that sends elements to the collector. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementSender_8h_source.html#l00099">MonitorElementSender.h:99</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1ModuleApplication_html_a7613e12e20daecbe96d28cd59b7d9055"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ModuleApplication.html#a7613e12e20daecbe96d28cd59b7d9055">dqm4hep::core::ModuleApplication::getModule</a></div><div class="ttdeci">Module * getModule() const </div><div class="ttdoc">Get the module for this application. </div><div class="ttdef"><b>Definition:</b> <a href="ModuleApplication_8cc_source.html#l00086">ModuleApplication.cc:86</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -336,8 +332,6 @@ Friends</h2></td></tr>
 <p>Definition at line <a class="el" href="MonitorElementSender_8cc_source.html#l00174">174</a> of file <a class="el" href="MonitorElementSender_8cc_source.html">MonitorElementSender.cc</a>.</p>
 
 <p>References <a class="el" href="MonitorElementSender_8cc_source.html#l00207">isConnectedToService()</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00100">m_collectorName</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00110">m_isConnected</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00113">m_pCollectorStateInfo</a>, and <a class="el" href="MonitorElementSender_8h_source.html#l00112">m_pSubscribedListInfo</a>.</p>
-
-<p>Referenced by <a class="el" href="AnalysisModuleApplication_8cc_source.html#l00605">dqm4hep::core::AnalysisModuleApplication::stopServices()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    {</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      <span class="keywordflow">if</span>(this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a0e32cae41eb2c6968e73d1b592494be5">isConnectedToService</a>())</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
@@ -503,7 +497,7 @@ Friends</h2></td></tr>
 
 <p>References <a class="el" href="MonitorElementSender_8h_source.html#l00110">m_isConnected</a>.</p>
 
-<p>Referenced by <a class="el" href="MonitorElementSender_8cc_source.html#l00174">connectToService()</a>, <a class="el" href="MonitorElementSender_8cc_source.html#l00192">disconnectFromService()</a>, <a class="el" href="MonitorElementSender_8cc_source.html#l00067">setCollectorName()</a>, and <a class="el" href="AnalysisModuleApplication_8cc_source.html#l00605">dqm4hep::core::AnalysisModuleApplication::stopServices()</a>.</p>
+<p>Referenced by <a class="el" href="MonitorElementSender_8cc_source.html#l00174">connectToService()</a>, <a class="el" href="MonitorElementSender_8cc_source.html#l00192">disconnectFromService()</a>, and <a class="el" href="MonitorElementSender_8cc_source.html#l00067">setCollectorName()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    {</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a50ce24bff738b5d380e4ac4e22d0032e">m_isConnected</a>;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    }</div>
@@ -536,8 +530,6 @@ Friends</h2></td></tr>
 <p>Definition at line <a class="el" href="MonitorElementSender_8cc_source.html#l00303">303</a> of file <a class="el" href="MonitorElementSender_8cc_source.html">MonitorElementSender.cc</a>.</p>
 
 <p>References <a class="el" href="MonitorElementSender_8h_source.html#l00107">m_availableMeMap</a>, and <a class="el" href="MonitorElementSender_8h_source.html#l00109">m_sendAvailableMeList</a>.</p>
-
-<p>Referenced by <a class="el" href="ModuleApi_8cc_source.html#l00563">dqm4hep::core::ModuleApi::deleteMonitorElement()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    {</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      MonitorElementInfoMap::iterator findIter = <a class="code" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a90b8e46429417aba32158134c0d00fd1">m_availableMeMap</a>.find(monitorElementName);</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
@@ -578,7 +570,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="MonitorElementSender_8cc_source.html#l00319">319</a> of file <a class="el" href="MonitorElementSender_8cc_source.html">MonitorElementSender.cc</a>.</p>
 
-<p>References <a class="el" href="ModuleApplication_8cc_source.html#l00086">dqm4hep::core::ModuleApplication::getModule()</a>, <a class="el" href="Module_8cc_source.html#l00059">dqm4hep::core::Module::getName()</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00107">m_availableMeMap</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00100">m_collectorName</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00099">m_pApplication</a>, and <a class="el" href="MonitorElementSender_8h_source.html#l00102">m_pOutBuffer</a>.</p>
+<p>References <a class="el" href="MonitorElementSender_8h_source.html#l00107">m_availableMeMap</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00100">m_collectorName</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00099">m_pApplication</a>, and <a class="el" href="MonitorElementSender_8h_source.html#l00102">m_pOutBuffer</a>.</p>
 
 <p>Referenced by <a class="el" href="MonitorElementSender_8cc_source.html#l00082">sendMonitorElements()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    {</div>
@@ -596,7 +588,7 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a37ad25ad3ebfdec01b442d3ea76a55cb">m_pOutBuffer</a>-&gt;reset();</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="comment">// first write the module name</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        std::string moduleName = <a class="code" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a933020fdbfdb5c124ca964412d3e2803">m_pApplication</a>-&gt;<a class="code" href="classdqm4hep_1_1core_1_1ModuleApplication.html#a7613e12e20daecbe96d28cd59b7d9055">getModule</a>()-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Module.html#a5cb3e6ab830fb0792700fed11d4dac79">getName</a>();</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        std::string moduleName = <a class="code" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a933020fdbfdb5c124ca964412d3e2803">m_pApplication</a>-&gt;getModule()-&gt;getName();</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordflow">if</span>( ! XDR_TESTBIT( xdrstream::XDR_SUCCESS , <a class="code" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a37ad25ad3ebfdec01b442d3ea76a55cb">m_pOutBuffer</a>-&gt;write( &amp; moduleName ) ) )</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;          <span class="keywordflow">throw</span> StatusCodeException( STATUS_CODE_FAILURE );</div>
@@ -615,11 +607,9 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;      }</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementSender_html_a37ad25ad3ebfdec01b442d3ea76a55cb"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a37ad25ad3ebfdec01b442d3ea76a55cb">dqm4hep::core::MonitorElementSender::m_pOutBuffer</a></div><div class="ttdeci">xdrstream::BufferDevice * m_pOutBuffer</div><div class="ttdoc">The xdr buffer used to serialize dim info. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementSender_8h_source.html#l00102">MonitorElementSender.h:102</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Module_html_a5cb3e6ab830fb0792700fed11d4dac79"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Module.html#a5cb3e6ab830fb0792700fed11d4dac79">dqm4hep::core::Module::getName</a></div><div class="ttdeci">const std::string &amp; getName() const </div><div class="ttdoc">Get the module name. </div><div class="ttdef"><b>Definition:</b> <a href="Module_8cc_source.html#l00059">Module.cc:59</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementSender_html_a90b8e46429417aba32158134c0d00fd1"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a90b8e46429417aba32158134c0d00fd1">dqm4hep::core::MonitorElementSender::m_availableMeMap</a></div><div class="ttdeci">MonitorElementInfoMap m_availableMeMap</div><div class="ttdoc">The available monitor element list. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementSender_8h_source.html#l00107">MonitorElementSender.h:107</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementSender_html_a11e7accecca10dca2fb000482b81f7a7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a11e7accecca10dca2fb000482b81f7a7">dqm4hep::core::MonitorElementSender::m_collectorName</a></div><div class="ttdeci">std::string m_collectorName</div><div class="ttdoc">The collector name to which the monitor elements will be sent. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementSender_8h_source.html#l00100">MonitorElementSender.h:100</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementSender_html_a933020fdbfdb5c124ca964412d3e2803"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a933020fdbfdb5c124ca964412d3e2803">dqm4hep::core::MonitorElementSender::m_pApplication</a></div><div class="ttdeci">ModuleApplication * m_pApplication</div><div class="ttdoc">The module application that sends elements to the collector. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementSender_8h_source.html#l00099">MonitorElementSender.h:99</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1ModuleApplication_html_a7613e12e20daecbe96d28cd59b7d9055"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ModuleApplication.html#a7613e12e20daecbe96d28cd59b7d9055">dqm4hep::core::ModuleApplication::getModule</a></div><div class="ttdeci">Module * getModule() const </div><div class="ttdoc">Get the module for this application. </div><div class="ttdef"><b>Definition:</b> <a href="ModuleApplication_8cc_source.html#l00086">ModuleApplication.cc:86</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -640,7 +630,7 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="MonitorElementSender_8cc_source.html#l00082">82</a> of file <a class="el" href="MonitorElementSender_8cc_source.html">MonitorElementSender.cc</a>.</p>
 
-<p>References <a class="el" href="ModuleApplication_8cc_source.html#l00086">dqm4hep::core::ModuleApplication::getModule()</a>, <a class="el" href="ModuleApi_8cc_source.html#l00534">dqm4hep::core::ModuleApi::getMonitorElement()</a>, <a class="el" href="Module_8cc_source.html#l00059">dqm4hep::core::Module::getName()</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00100">m_collectorName</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00108">m_mutex</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00099">m_pApplication</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00102">m_pOutBuffer</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00109">m_sendAvailableMeList</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00106">m_subscribedMeList</a>, and <a class="el" href="MonitorElementSender_8cc_source.html#l00319">sendAvailableMonitorElementList()</a>.</p>
+<p>References <a class="el" href="MonitorElementSender_8h_source.html#l00100">m_collectorName</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00108">m_mutex</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00099">m_pApplication</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00102">m_pOutBuffer</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00109">m_sendAvailableMeList</a>, <a class="el" href="MonitorElementSender_8h_source.html#l00106">m_subscribedMeList</a>, and <a class="el" href="MonitorElementSender_8cc_source.html#l00319">sendAvailableMonitorElementList()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">if</span>(NULL == <a class="code" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a933020fdbfdb5c124ca964412d3e2803">m_pApplication</a>)</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_INITIALIZED;</div>
@@ -651,7 +641,7 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#acd9cca633c2b4911a928e6230aa98391">m_sendAvailableMeList</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      }</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      std::string moduleName = <a class="code" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a933020fdbfdb5c124ca964412d3e2803">m_pApplication</a>-&gt;<a class="code" href="classdqm4hep_1_1core_1_1ModuleApplication.html#a7613e12e20daecbe96d28cd59b7d9055">getModule</a>()-&gt;<a class="code" href="classdqm4hep_1_1core_1_1Module.html#a5cb3e6ab830fb0792700fed11d4dac79">getName</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      std::string moduleName = <a class="code" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a933020fdbfdb5c124ca964412d3e2803">m_pApplication</a>-&gt;getModule()-&gt;getName();</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="comment">// get subscribed me list copy</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      pthread_mutex_lock(&amp;<a class="code" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a61636c374f193cf62b0635eda622a29a">m_mutex</a>);</div>
@@ -703,7 +693,7 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        MonitorElementPtr monitorElement = NULL;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">if</span>(STATUS_CODE_SUCCESS !=  <a class="code" href="classdqm4hep_1_1core_1_1ModuleApi.html#abeffe474f23fa082a5cda7d8eb08fc4a">ModuleApi::getMonitorElement</a>(<a class="code" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a933020fdbfdb5c124ca964412d3e2803">m_pApplication</a>-&gt;<a class="code" href="classdqm4hep_1_1core_1_1ModuleApplication.html#a7613e12e20daecbe96d28cd59b7d9055">getModule</a>(), path, meName, monitorElement))</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">if</span>(STATUS_CODE_SUCCESS !=  ModuleApi::getMonitorElement(<a class="code" href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a933020fdbfdb5c124ca964412d3e2803">m_pApplication</a>-&gt;getModule(), path, meName, monitorElement))</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;          <span class="keywordflow">continue</span>;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        publicationIter-&gt;second.push_back(monitorElement);</div>
@@ -730,14 +720,11 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementSender_html_a37ad25ad3ebfdec01b442d3ea76a55cb"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a37ad25ad3ebfdec01b442d3ea76a55cb">dqm4hep::core::MonitorElementSender::m_pOutBuffer</a></div><div class="ttdeci">xdrstream::BufferDevice * m_pOutBuffer</div><div class="ttdoc">The xdr buffer used to serialize dim info. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementSender_8h_source.html#l00102">MonitorElementSender.h:102</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1ModuleApi_html_abeffe474f23fa082a5cda7d8eb08fc4a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ModuleApi.html#abeffe474f23fa082a5cda7d8eb08fc4a">dqm4hep::core::ModuleApi::getMonitorElement</a></div><div class="ttdeci">static StatusCode getMonitorElement(const Module *const pModule, const std::string &amp;monitorElementName, MonitorElementPtr &amp;monitorElement)</div><div class="ttdoc">Get the monitor element in the current directory (result by ptr reference) </div><div class="ttdef"><b>Definition:</b> <a href="ModuleApi_8cc_source.html#l00534">ModuleApi.cc:534</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementSender_html_acd9cca633c2b4911a928e6230aa98391"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementSender.html#acd9cca633c2b4911a928e6230aa98391">dqm4hep::core::MonitorElementSender::m_sendAvailableMeList</a></div><div class="ttdeci">bool m_sendAvailableMeList</div><div class="ttdoc">Whether the list of available me has to be re-sent to the collector. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementSender_8h_source.html#l00109">MonitorElementSender.h:109</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Module_html_a5cb3e6ab830fb0792700fed11d4dac79"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Module.html#a5cb3e6ab830fb0792700fed11d4dac79">dqm4hep::core::Module::getName</a></div><div class="ttdeci">const std::string &amp; getName() const </div><div class="ttdoc">Get the module name. </div><div class="ttdef"><b>Definition:</b> <a href="Module_8cc_source.html#l00059">Module.cc:59</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementSender_html_a62a64f9af314b0196c94a02f885591dc"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a62a64f9af314b0196c94a02f885591dc">dqm4hep::core::MonitorElementSender::sendAvailableMonitorElementList</a></div><div class="ttdeci">void sendAvailableMonitorElementList()</div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementSender_8cc_source.html#l00319">MonitorElementSender.cc:319</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementSender_html_a11e7accecca10dca2fb000482b81f7a7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a11e7accecca10dca2fb000482b81f7a7">dqm4hep::core::MonitorElementSender::m_collectorName</a></div><div class="ttdeci">std::string m_collectorName</div><div class="ttdoc">The collector name to which the monitor elements will be sent. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementSender_8h_source.html#l00100">MonitorElementSender.h:100</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementSender_html_a933020fdbfdb5c124ca964412d3e2803"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a933020fdbfdb5c124ca964412d3e2803">dqm4hep::core::MonitorElementSender::m_pApplication</a></div><div class="ttdeci">ModuleApplication * m_pApplication</div><div class="ttdoc">The module application that sends elements to the collector. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementSender_8h_source.html#l00099">MonitorElementSender.h:99</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementSender_html_a61636c374f193cf62b0635eda622a29a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a61636c374f193cf62b0635eda622a29a">dqm4hep::core::MonitorElementSender::m_mutex</a></div><div class="ttdeci">pthread_mutex_t m_mutex</div><div class="ttdoc">Mutex to lock unlock on service update. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementSender_8h_source.html#l00108">MonitorElementSender.h:108</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1ModuleApplication_html_a7613e12e20daecbe96d28cd59b7d9055"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ModuleApplication.html#a7613e12e20daecbe96d28cd59b7d9055">dqm4hep::core::ModuleApplication::getModule</a></div><div class="ttdeci">Module * getModule() const </div><div class="ttdoc">Get the module for this application. </div><div class="ttdef"><b>Definition:</b> <a href="ModuleApplication_8cc_source.html#l00086">ModuleApplication.cc:86</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementSender_html_a64bbf98e603d09502985cf352a6078e1"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementSender.html#a64bbf98e603d09502985cf352a6078e1">dqm4hep::core::MonitorElementSender::m_subscribedMeList</a></div><div class="ttdeci">StringSet m_subscribedMeList</div><div class="ttdoc">The subscribed monitor element list. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementSender_8h_source.html#l00106">MonitorElementSender.h:106</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -761,8 +748,6 @@ Friends</h2></td></tr>
 <p>Definition at line <a class="el" href="MonitorElementSender_8cc_source.html#l00067">67</a> of file <a class="el" href="MonitorElementSender_8cc_source.html">MonitorElementSender.cc</a>.</p>
 
 <p>References <a class="el" href="MonitorElementSender_8cc_source.html#l00207">isConnectedToService()</a>, and <a class="el" href="MonitorElementSender_8h_source.html#l00100">m_collectorName</a>.</p>
-
-<p>Referenced by <a class="el" href="StandaloneModuleApplication_8cc_source.html#l00091">dqm4hep::core::StandaloneModuleApplication::readSettings()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keywordflow">if</span>(collectorName.empty())</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_INVALID_PARAMETER;</div>
@@ -788,7 +773,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend class <a class="el" href="classdqm4hep_1_1core_1_1ModuleApi.html">ModuleApi</a></td>
+          <td class="memname">friend class ModuleApi</td>
         </tr>
       </table>
   </td>
@@ -915,7 +900,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdqm4hep_1_1core_1_1ModuleApplication.html">ModuleApplication</a>* dqm4hep::core::MonitorElementSender::m_pApplication</td>
+          <td class="memname">ModuleApplication* dqm4hep::core::MonitorElementSender::m_pApplication</td>
         </tr>
       </table>
   </td>
@@ -1096,7 +1081,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 23 2018 23:41:20 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 12 2018 16:22:15 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
