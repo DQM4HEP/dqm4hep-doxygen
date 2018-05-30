@@ -49,14 +49,20 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Internal.cc File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="Internal_8h_source.html">dqm4hep/Internal.h</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="Logging_8h_source.html">dqm4hep/Logging.h</a>&gt;</code><br/>
+<code>#include &lt;TSystem.h&gt;</code><br/>
+<code>#include &lt;TPRegexp.h&gt;</code><br/>
 <code>#include &lt;cstring&gt;</code><br/>
+<code>#include &lt;dirent.h&gt;</code><br/>
+<code>#include &lt;sys/resource.h&gt;</code><br/>
+<code>#include &lt;sys/time.h&gt;</code><br/>
 </div>
 <p><a href="Internal_8cc_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -66,11 +72,26 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacedqm4hep_1_1core"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html">dqm4hep::core</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a3e7a42a034c52afe4d01904e20ea2774"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a3e7a42a034c52afe4d01904e20ea2774">dqm4hep::core::cpuStats</a> (CpuStats &amp;stats, dqm_int sampleTime=1)</td></tr>
+<tr class="memdesc:a3e7a42a034c52afe4d01904e20ea2774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get some memory stats.  <a href="#a3e7a42a034c52afe4d01904e20ea2774">More...</a><br/></td></tr>
+<tr class="separator:a3e7a42a034c52afe4d01904e20ea2774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a989a35e91c85d37dc3c674255b13d6d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a989a35e91c85d37dc3c674255b13d6d9">dqm4hep::core::memStats</a> (MemoryStats &amp;stats)</td></tr>
+<tr class="memdesc:a989a35e91c85d37dc3c674255b13d6d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get some memory stats.  <a href="#a989a35e91c85d37dc3c674255b13d6d9">More...</a><br/></td></tr>
+<tr class="separator:a989a35e91c85d37dc3c674255b13d6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1748cc6392c78ca488485059fc0f2417"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a1748cc6392c78ca488485059fc0f2417">dqm4hep::core::procStats</a> (ProcessStats &amp;stats)</td></tr>
+<tr class="memdesc:a1748cc6392c78ca488485059fc0f2417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get stats from current process.  <a href="#a1748cc6392c78ca488485059fc0f2417">More...</a><br/></td></tr>
+<tr class="separator:a1748cc6392c78ca488485059fc0f2417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1fb46f917d43523204d4eff2d607a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a3a1fb46f917d43523204d4eff2d607a9">dqm4hep::core::netStats</a> (NetworkStats &amp;stats, dqm_int sampleTime=1)</td></tr>
+<tr class="memdesc:a3a1fb46f917d43523204d4eff2d607a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get some network stats.  <a href="#a3a1fb46f917d43523204d4eff2d607a9">More...</a><br/></td></tr>
+<tr class="separator:a3a1fb46f917d43523204d4eff2d607a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 25 2018 05:32:31 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 30 2018 08:37:26 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -80,9 +80,9 @@
 <code>#include &lt;sys/stat.h&gt;</code><br/>
 <code>#include &lt;sys/utsname.h&gt;</code><br/>
 <code>#include &lt;thread&gt;</code><br/>
-<code>#include &lt;sys/sysinfo.h&gt;</code><br/>
 <code>#include &lt;bits/pthreadtypes.h&gt;</code><br/>
 <code>#include &lt;stdint.h&gt;</code><br/>
+<code>#include &lt;sys/sysinfo.h&gt;</code><br/>
 <code>#include &lt;<a class="el" href="DQMCoreConfig_8h_source.html">DQMCoreConfig.h</a>&gt;</code><br/>
 </div>
 <p><a href="Internal_8h_source.html">Go to the source code of this file.</a></p>
@@ -94,8 +94,14 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Storage.html">dqm4hep::core::Storage&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdqm4hep_1_1core_1_1CpuStats.html">dqm4hep::core::CpuStats</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdqm4hep_1_1core_1_1CpuStats.html" title="CpuStats struct. ">CpuStats</a> struct.  <a href="structdqm4hep_1_1core_1_1CpuStats.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdqm4hep_1_1core_1_1MemoryStats.html">dqm4hep::core::MemoryStats</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdqm4hep_1_1core_1_1MemoryStats.html" title="MemoryStats struct All units in Mb. ">MemoryStats</a> struct All units in Mb.  <a href="structdqm4hep_1_1core_1_1MemoryStats.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdqm4hep_1_1core_1_1ProcessStats.html">dqm4hep::core::ProcessStats</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdqm4hep_1_1core_1_1ProcessStats.html" title="ProcessStats struct All memory units in Mb. ">ProcessStats</a> struct All memory units in Mb.  <a href="structdqm4hep_1_1core_1_1ProcessStats.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdqm4hep_1_1core_1_1INetworkStats.html">dqm4hep::core::INetworkStats</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdqm4hep_1_1core_1_1INetworkStats.html" title="INetworkStats struct. ">INetworkStats</a> struct.  <a href="structdqm4hep_1_1core_1_1INetworkStats.html#details">More...</a><br/></td></tr>
@@ -160,6 +166,10 @@ std::chrono::system_clock::time_point&#160;</td><td class="memItemRight" valign=
 <tr class="separator:acbeab59f33f0d5db4561f2314efda868"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a039ff0b407ffd4e52eabb7ba4cc6e476"><td class="memItemLeft" align="right" valign="top">typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a039ff0b407ffd4e52eabb7ba4cc6e476">dqm4hep::core::dqm_double</a></td></tr>
 <tr class="separator:a039ff0b407ffd4e52eabb7ba4cc6e476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90d54b953106bfd924b58c29353d088a"><td class="memItemLeft" align="right" valign="top">typedef long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a90d54b953106bfd924b58c29353d088a">dqm4hep::core::dqm_long</a></td></tr>
+<tr class="separator:a90d54b953106bfd924b58c29353d088a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad3ae353c4bd50bb3ee51d2c85519d2"><td class="memItemLeft" align="right" valign="top">typedef long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a5ad3ae353c4bd50bb3ee51d2c85519d2">dqm4hep::core::dqm_long_long</a></td></tr>
+<tr class="separator:a5ad3ae353c4bd50bb3ee51d2c85519d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f411cb584cd4956c44dfab611e3ec30"><td class="memItemLeft" align="right" valign="top">typedef bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a4f411cb584cd4956c44dfab611e3ec30">dqm4hep::core::dqm_bool</a></td></tr>
 <tr class="separator:a4f411cb584cd4956c44dfab611e3ec30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bb7e9ce60c001272e7c5696e3b531c7"><td class="memItemLeft" align="right" valign="top">typedef int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm4hep::core::dqm_int</a></td></tr>
@@ -268,12 +278,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a3dc121b5dd671f31be9dcfb7c2dd6fca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a3dc121b5dd671f31be9dcfb7c2dd6fca">dqm4hep::core::pid</a> ()</td></tr>
 <tr class="memdesc:a3dc121b5dd671f31be9dcfb7c2dd6fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current process id.  <a href="#a3dc121b5dd671f31be9dcfb7c2dd6fca">More...</a><br/></td></tr>
 <tr class="separator:a3dc121b5dd671f31be9dcfb7c2dd6fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7a42a034c52afe4d01904e20ea2774"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a3e7a42a034c52afe4d01904e20ea2774">dqm4hep::core::cpuStats</a> (CpuStats &amp;stats, dqm_int sampleTime=1)</td></tr>
+<tr class="memdesc:a3e7a42a034c52afe4d01904e20ea2774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get some memory stats.  <a href="#a3e7a42a034c52afe4d01904e20ea2774">More...</a><br/></td></tr>
+<tr class="separator:a3e7a42a034c52afe4d01904e20ea2774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a989a35e91c85d37dc3c674255b13d6d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a989a35e91c85d37dc3c674255b13d6d9">dqm4hep::core::memStats</a> (MemoryStats &amp;stats)</td></tr>
 <tr class="memdesc:a989a35e91c85d37dc3c674255b13d6d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get some memory stats.  <a href="#a989a35e91c85d37dc3c674255b13d6d9">More...</a><br/></td></tr>
 <tr class="separator:a989a35e91c85d37dc3c674255b13d6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1800cf29b183fa8f88404d19670ff88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#ad1800cf29b183fa8f88404d19670ff88">dqm4hep::core::netStats</a> (NetworkStats &amp;stats)</td></tr>
-<tr class="memdesc:ad1800cf29b183fa8f88404d19670ff88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get some network stats.  <a href="#ad1800cf29b183fa8f88404d19670ff88">More...</a><br/></td></tr>
-<tr class="separator:ad1800cf29b183fa8f88404d19670ff88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1748cc6392c78ca488485059fc0f2417"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a1748cc6392c78ca488485059fc0f2417">dqm4hep::core::procStats</a> (ProcessStats &amp;stats)</td></tr>
+<tr class="memdesc:a1748cc6392c78ca488485059fc0f2417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get stats from current process.  <a href="#a1748cc6392c78ca488485059fc0f2417">More...</a><br/></td></tr>
+<tr class="separator:a1748cc6392c78ca488485059fc0f2417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1fb46f917d43523204d4eff2d607a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a3a1fb46f917d43523204d4eff2d607a9">dqm4hep::core::netStats</a> (NetworkStats &amp;stats, dqm_int sampleTime=1)</td></tr>
+<tr class="memdesc:a3a1fb46f917d43523204d4eff2d607a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get some network stats.  <a href="#a3a1fb46f917d43523204d4eff2d607a9">More...</a><br/></td></tr>
+<tr class="separator:a3a1fb46f917d43523204d4eff2d607a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a0143a220307f4ec82f353476ef3b8286"></a>
@@ -290,7 +306,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00098">98</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00095">95</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -304,7 +320,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00094">94</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00091">91</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -318,7 +334,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00093">93</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00090">90</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -336,7 +352,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00101">101</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00098">98</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -364,7 +380,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00103">103</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00100">100</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="MonitorElement_8cc_source.html#l00348">dqm4hep::core::MonitorElement::fromDevice()</a>, <a class="el" href="MonitorElementStreamer_8h_source.html#l00166">dqm4hep::core::MonitorElementStreamer::readMonitorElements()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00310">dqm4hep::core::MonitorElement::toDevice()</a>, and <a class="el" href="MonitorElementStreamer_8h_source.html#l00143">dqm4hep::core::MonitorElementStreamer::writeMonitorElements()</a>.</p>
 
@@ -373,7 +389,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri May 25 2018 05:32:31 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 30 2018 08:37:26 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
