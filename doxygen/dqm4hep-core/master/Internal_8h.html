@@ -120,6 +120,8 @@ Macros</h2></td></tr>
 <tr class="separator:a2f940624d3bba0ea27a8631cc83c64bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac635fa9acefd4ac37590f1768d3400f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Internal_8h.html#ac635fa9acefd4ac37590f1768d3400f3">IS_INF</a>&#160;&#160;&#160;std::isinf</td></tr>
 <tr class="separator:ac635fa9acefd4ac37590f1768d3400f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf225a2b96038de3a42d61a1fa63654b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Internal_8h.html#aaf225a2b96038de3a42d61a1fa63654b">DEPRECATED</a>(func)&#160;&#160;&#160;func</td></tr>
+<tr class="separator:aaf225a2b96038de3a42d61a1fa63654b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0143a220307f4ec82f353476ef3b8286"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Internal_8h.html#a0143a220307f4ec82f353476ef3b8286">DQM4HEP_NO_EXCEPTION</a>(Code)&#160;&#160;&#160;try { Code } catch(...) {}</td></tr>
 <tr class="separator:a0143a220307f4ec82f353476ef3b8286"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ca0f8e02cce0530cde7087ab009bc16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Internal_8h.html#a7ca0f8e02cce0530cde7087ab009bc16">XDRSTREAM_SUCCESS</a>(code)&#160;&#160;&#160;if (!XDR_TESTBIT(code, xdrstream::XDR_SUCCESS)) {return dqm4hep::core::STATUS_CODE_FAILURE;}</td></tr>
@@ -292,6 +294,24 @@ Functions</h2></td></tr>
 <tr class="separator:a3a1fb46f917d43523204d4eff2d607a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="aaf225a2b96038de3a42d61a1fa63654b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEPRECATED</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">func</td><td>)</td>
+          <td>&#160;&#160;&#160;func</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00099">99</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a0143a220307f4ec82f353476ef3b8286"></a>
 <div class="memitem">
 <div class="memproto">
@@ -306,7 +326,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00095">95</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00103">103</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -352,7 +372,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00098">98</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00106">106</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -380,7 +400,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00100">100</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00108">108</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="MonitorElement_8cc_source.html#l00348">dqm4hep::core::MonitorElement::fromDevice()</a>, <a class="el" href="MonitorElementStreamer_8h_source.html#l00166">dqm4hep::core::MonitorElementStreamer::readMonitorElements()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00310">dqm4hep::core::MonitorElement::toDevice()</a>, and <a class="el" href="MonitorElementStreamer_8h_source.html#l00143">dqm4hep::core::MonitorElementStreamer::writeMonitorElements()</a>.</p>
 
@@ -389,7 +409,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 2 2018 14:00:27 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 5 2018 17:51:03 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -259,7 +259,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="MonitorElementStreamer_8h_source.html#l00166">166</a> of file <a class="el" href="MonitorElementStreamer_8h_source.html">MonitorElementStreamer.h</a>.</p>
 
-<p>References <a class="el" href="MonitorElementStreamer_8h_source.html#l00129">readMonitorElement()</a>, and <a class="el" href="Internal_8h_source.html#l00100">XDRSTREAM_SUCCESS_RESTORE</a>.</p>
+<p>References <a class="el" href="MonitorElementStreamer_8h_source.html#l00129">readMonitorElement()</a>, and <a class="el" href="Internal_8h_source.html#l00108">XDRSTREAM_SUCCESS_RESTORE</a>.</p>
 
 <p>Referenced by <a class="el" href="MonitorElementStreamer_8h_source.html#l00203">readMonitorElements()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                                                                                                                                  {</div>
@@ -278,7 +278,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementStreamer_html_a955589716c28432376a5f9b8628c23ad"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementStreamer.html#a955589716c28432376a5f9b8628c23ad">dqm4hep::core::MonitorElementStreamer::readMonitorElement</a></div><div class="ttdeci">StatusCode readMonitorElement(std::shared_ptr&lt; T &gt; &amp;monitorElement, xdrstream::IODevice *device)</div><div class="ttdoc">Read a monitor element using an xdrstream device. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementStreamer_8h_source.html#l00129">MonitorElementStreamer.h:129</a></div></div>
-<div class="ttc" id="Internal_8h_html_a155fac5143f4a07537eb95f4924a8bef"><div class="ttname"><a href="Internal_8h.html#a155fac5143f4a07537eb95f4924a8bef">XDRSTREAM_SUCCESS_RESTORE</a></div><div class="ttdeci">#define XDRSTREAM_SUCCESS_RESTORE(code, position)</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00100">Internal.h:100</a></div></div>
+<div class="ttc" id="Internal_8h_html_a155fac5143f4a07537eb95f4924a8bef"><div class="ttname"><a href="Internal_8h.html#a155fac5143f4a07537eb95f4924a8bef">XDRSTREAM_SUCCESS_RESTORE</a></div><div class="ttdeci">#define XDRSTREAM_SUCCESS_RESTORE(code, position)</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00108">Internal.h:108</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_af0b0a4c04ab15f7bb082f3b9943a6fbd"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">dqm4hep::core::StatusCode</a></div><div class="ttdeci">StatusCode</div><div class="ttdoc">StatusCode enumerator. </div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00139">StatusCodes.h:139</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -328,7 +328,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="MonitorElementStreamer_8h_source.html#l00203">203</a> of file <a class="el" href="MonitorElementStreamer_8h_source.html">MonitorElementStreamer.h</a>.</p>
 
-<p>References <a class="el" href="MonitorElementStreamer_8h_source.html#l00166">readMonitorElements()</a>, and <a class="el" href="Internal_8h_source.html#l00100">XDRSTREAM_SUCCESS_RESTORE</a>.</p>
+<p>References <a class="el" href="MonitorElementStreamer_8h_source.html#l00166">readMonitorElements()</a>, and <a class="el" href="Internal_8h_source.html#l00108">XDRSTREAM_SUCCESS_RESTORE</a>.</p>
 <div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                                                                                                                                                      {</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      <span class="keyword">auto</span> pos = device-&gt;getPosition();</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nToRead = 0;</div>
@@ -347,7 +347,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementStreamer_html_a978af744bb79b93690349e1f68844bd7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementStreamer.html#a978af744bb79b93690349e1f68844bd7">dqm4hep::core::MonitorElementStreamer::readMonitorElements</a></div><div class="ttdeci">StatusCode readMonitorElements(std::vector&lt; std::shared_ptr&lt; T &gt;&gt; &amp;elements, xdrstream::IODevice *device)</div><div class="ttdoc">Read a list of monitor elements using an xdrstream device. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementStreamer_8h_source.html#l00166">MonitorElementStreamer.h:166</a></div></div>
-<div class="ttc" id="Internal_8h_html_a155fac5143f4a07537eb95f4924a8bef"><div class="ttname"><a href="Internal_8h.html#a155fac5143f4a07537eb95f4924a8bef">XDRSTREAM_SUCCESS_RESTORE</a></div><div class="ttdeci">#define XDRSTREAM_SUCCESS_RESTORE(code, position)</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00100">Internal.h:100</a></div></div>
+<div class="ttc" id="Internal_8h_html_a155fac5143f4a07537eb95f4924a8bef"><div class="ttname"><a href="Internal_8h.html#a155fac5143f4a07537eb95f4924a8bef">XDRSTREAM_SUCCESS_RESTORE</a></div><div class="ttdeci">#define XDRSTREAM_SUCCESS_RESTORE(code, position)</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00108">Internal.h:108</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_af0b0a4c04ab15f7bb082f3b9943a6fbd"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">dqm4hep::core::StatusCode</a></div><div class="ttdeci">StatusCode</div><div class="ttdoc">StatusCode enumerator. </div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00139">StatusCodes.h:139</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -456,7 +456,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="MonitorElementStreamer_8h_source.html#l00143">143</a> of file <a class="el" href="MonitorElementStreamer_8h_source.html">MonitorElementStreamer.h</a>.</p>
 
-<p>References <a class="el" href="MonitorElementStreamer_8h_source.html#l00118">writeMonitorElement()</a>, and <a class="el" href="Internal_8h_source.html#l00100">XDRSTREAM_SUCCESS_RESTORE</a>.</p>
+<p>References <a class="el" href="MonitorElementStreamer_8h_source.html#l00118">writeMonitorElement()</a>, and <a class="el" href="Internal_8h_source.html#l00108">XDRSTREAM_SUCCESS_RESTORE</a>.</p>
 
 <p>Referenced by <a class="el" href="MonitorElementStreamer_8h_source.html#l00185">writeMonitorElements()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                                                                                                                                         {</div>
@@ -479,7 +479,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementStreamer_html_a18d5ff124fceac38c4201d5bd0396cf0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementStreamer.html#a18d5ff124fceac38c4201d5bd0396cf0">dqm4hep::core::MonitorElementStreamer::writeMonitorElement</a></div><div class="ttdeci">StatusCode writeMonitorElement(std::shared_ptr&lt; T &gt; monitorElement, xdrstream::IODevice *device)</div><div class="ttdoc">Write a monitor element using an xdrstream device. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementStreamer_8h_source.html#l00118">MonitorElementStreamer.h:118</a></div></div>
-<div class="ttc" id="Internal_8h_html_a155fac5143f4a07537eb95f4924a8bef"><div class="ttname"><a href="Internal_8h.html#a155fac5143f4a07537eb95f4924a8bef">XDRSTREAM_SUCCESS_RESTORE</a></div><div class="ttdeci">#define XDRSTREAM_SUCCESS_RESTORE(code, position)</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00100">Internal.h:100</a></div></div>
+<div class="ttc" id="Internal_8h_html_a155fac5143f4a07537eb95f4924a8bef"><div class="ttname"><a href="Internal_8h.html#a155fac5143f4a07537eb95f4924a8bef">XDRSTREAM_SUCCESS_RESTORE</a></div><div class="ttdeci">#define XDRSTREAM_SUCCESS_RESTORE(code, position)</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00108">Internal.h:108</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_af0b0a4c04ab15f7bb082f3b9943a6fbd"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">dqm4hep::core::StatusCode</a></div><div class="ttdeci">StatusCode</div><div class="ttdoc">StatusCode enumerator. </div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00139">StatusCodes.h:139</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -529,7 +529,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="MonitorElementStreamer_8h_source.html#l00185">185</a> of file <a class="el" href="MonitorElementStreamer_8h_source.html">MonitorElementStreamer.h</a>.</p>
 
-<p>References <a class="el" href="MonitorElementStreamer_8h_source.html#l00143">writeMonitorElements()</a>, and <a class="el" href="Internal_8h_source.html#l00100">XDRSTREAM_SUCCESS_RESTORE</a>.</p>
+<p>References <a class="el" href="MonitorElementStreamer_8h_source.html#l00143">writeMonitorElements()</a>, and <a class="el" href="Internal_8h_source.html#l00108">XDRSTREAM_SUCCESS_RESTORE</a>.</p>
 <div class="fragment"><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                                                                                                                                                           {</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      <span class="keyword">auto</span> pos = device-&gt;getPosition();</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nWritten = elements.size();</div>
@@ -545,7 +545,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1MonitorElementStreamer_html_ae6d3db70bb1718fdb857d29f3b85ef86"><div class="ttname"><a href="classdqm4hep_1_1core_1_1MonitorElementStreamer.html#ae6d3db70bb1718fdb857d29f3b85ef86">dqm4hep::core::MonitorElementStreamer::writeMonitorElements</a></div><div class="ttdeci">StatusCode writeMonitorElements(const std::vector&lt; std::shared_ptr&lt; T &gt;&gt; &amp;elements, xdrstream::IODevice *device)</div><div class="ttdoc">Write a list of monitor elements using an xdrstream device. </div><div class="ttdef"><b>Definition:</b> <a href="MonitorElementStreamer_8h_source.html#l00143">MonitorElementStreamer.h:143</a></div></div>
-<div class="ttc" id="Internal_8h_html_a155fac5143f4a07537eb95f4924a8bef"><div class="ttname"><a href="Internal_8h.html#a155fac5143f4a07537eb95f4924a8bef">XDRSTREAM_SUCCESS_RESTORE</a></div><div class="ttdeci">#define XDRSTREAM_SUCCESS_RESTORE(code, position)</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00100">Internal.h:100</a></div></div>
+<div class="ttc" id="Internal_8h_html_a155fac5143f4a07537eb95f4924a8bef"><div class="ttname"><a href="Internal_8h.html#a155fac5143f4a07537eb95f4924a8bef">XDRSTREAM_SUCCESS_RESTORE</a></div><div class="ttdeci">#define XDRSTREAM_SUCCESS_RESTORE(code, position)</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00108">Internal.h:108</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_af0b0a4c04ab15f7bb082f3b9943a6fbd"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#af0b0a4c04ab15f7bb082f3b9943a6fbd">dqm4hep::core::StatusCode</a></div><div class="ttdeci">StatusCode</div><div class="ttdoc">StatusCode enumerator. </div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00139">StatusCodes.h:139</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -556,7 +556,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 2 2018 14:00:28 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 5 2018 17:51:03 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
