@@ -415,7 +415,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="PluginManager_8cc_source.html#l00051">51</a> of file <a class="el" href="PluginManager_8cc_source.html">PluginManager.cc</a>.</p>
 
-<p>References <a class="el" href="Logging_8h_source.html#l00043">dqm_debug</a>, and <a class="el" href="Internal_8h_source.html#l00233">dqm4hep::core::tokenize()</a>.</p>
+<p>References <a class="el" href="Logging_8h_source.html#l00043">dqm_debug</a>, and <a class="el" href="Internal_8h_source.html#l00234">dqm4hep::core::tokenize()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                            {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="comment">// get the environment plug-in dll variable</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keywordtype">char</span> *pPluginDllEnv = getenv(<span class="stringliteral">&quot;DQM4HEP_PLUGIN_DLL&quot;</span>);</div>
@@ -432,15 +432,15 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      std::string libraryConcatenateList(pPluginDllEnv);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">StringVector</a> libraryList;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a1721013d917707ef7c8218d13984e478">dqm4hep::core::tokenize</a>(libraryConcatenateList, libraryList, <span class="stringliteral">&quot;:&quot;</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a31e067e3caf9132e125f61a69c8faf56">dqm4hep::core::tokenize</a>(libraryConcatenateList, libraryList, <span class="stringliteral">&quot;:&quot;</span>);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="comment">// load the shared libraries</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">return</span> this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1PluginManager.html#a5b10a8a00ca4a7b6ab21dc2bc2c05db1">loadLibraries</a>(libraryList);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a31e067e3caf9132e125f61a69c8faf56"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a31e067e3caf9132e125f61a69c8faf56">dqm4hep::core::tokenize</a></div><div class="ttdeci">void tokenize(const std::string &amp;inputString, std::vector&lt; T &gt; &amp;tokens, const std::string &amp;delimiter=&quot; &quot;)</div><div class="ttdoc">Tokenize string with delimiter. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00234">Internal.h:234</a></div></div>
 <div class="ttc" id="Logging_8h_html_afeed011feb4159b13c3ae4873e1d0fcf"><div class="ttname"><a href="Logging_8h.html#afeed011feb4159b13c3ae4873e1d0fcf">dqm_debug</a></div><div class="ttdeci">#define dqm_debug(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00043">Logging.h:43</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1PluginManager_html_a5b10a8a00ca4a7b6ab21dc2bc2c05db1"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PluginManager.html#a5b10a8a00ca4a7b6ab21dc2bc2c05db1">dqm4hep::core::PluginManager::loadLibraries</a></div><div class="ttdeci">StatusCode loadLibraries()</div><div class="ttdoc">Load shared libraries from the environment variable 4HEP_PLUGIN_DLL. </div><div class="ttdef"><b>Definition:</b> <a href="PluginManager_8cc_source.html#l00051">PluginManager.cc:51</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00163">Internal.h:163</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a1721013d917707ef7c8218d13984e478"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1721013d917707ef7c8218d13984e478">dqm4hep::core::tokenize</a></div><div class="ttdeci">void tokenize(const std::string &amp;inputString, StringVector &amp;tokens, const std::string &amp;delimiter=&quot; &quot;)</div><div class="ttdoc">Tokenize string with delimiter. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00233">Internal.h:233</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -772,7 +772,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 5 2018 21:04:53 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 6 2018 14:54:30 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
