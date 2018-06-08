@@ -89,7 +89,7 @@
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    </div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo.html#a10e1e7665f11e31d42351c944c4fb74d">   37</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo.html#a10e1e7665f11e31d42351c944c4fb74d">EventCollectorClient::SourceInfo::receiveEvent</a>(<span class="keyword">const</span> net::Buffer &amp;buffer) {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      core::EventPtr <span class="keyword">event</span> = <a class="code" href="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo.html#a72587b95b1cc965a67883967a3e2c9f8">m_collectorClient</a>-&gt;<a class="code" href="classdqm4hep_1_1online_1_1EventCollectorClient.html#a4fa12ce21ed6d61c852945baebf3e60c">readEvent</a>(buffer);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo.html#ae83061701bbb62e470d53a50b5119da4">m_eventUpdateSignal</a>.process(event);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo.html#ae83061701bbb62e470d53a50b5119da4">m_eventUpdateSignal</a>.emit(event);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
@@ -247,7 +247,7 @@
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 8 2018 05:51:23 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 8 2018 11:43:50 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

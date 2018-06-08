@@ -324,7 +324,7 @@
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        dqm_info( <span class="stringliteral">&quot;Exiting event loop ...&quot;</span> );</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Application.html#aa7610139861c72866142ce1018629d32">m_eventLoop</a>.<a class="code" href="classdqm4hep_1_1online_1_1AppEventLoop.html#a620473d3cf6fb65939d906b9025b5ce0">disconnectOnEvent</a>(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1online_1_1Application.html#af2e2e41977dabd637da001054363e195">noServer</a>()){</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;          <a class="code" href="classdqm4hep_1_1online_1_1Application.html#afa9fbac3def0a72fa5b63641c5cfdba7">m_server</a>-&gt;onClientExit().disconnectAll();          </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;          <a class="code" href="classdqm4hep_1_1online_1_1Application.html#afa9fbac3def0a72fa5b63641c5cfdba7">m_server</a>-&gt;onClientExit().disconnect();          </div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        }</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        this-&gt;<a class="code" href="classdqm4hep_1_1online_1_1Application.html#a29d428d6daccda66c485a9a7aab32fce">onStop</a>();</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      }</div>
@@ -547,7 +547,7 @@
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    </div>
 <div class="line"><a name="l00496"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1Application_1_1NetworkHandler.html#acf28b71fb669531397fd180f1b67e4d7">  496</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdqm4hep_1_1online_1_1Application_1_1NetworkHandler.html#acf28b71fb669531397fd180f1b67e4d7">Application::NetworkHandler::sendServiceContent</a>(<span class="keyword">const</span> net::Buffer &amp;buffer) {</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Application.html#aa7610139861c72866142ce1018629d32">m_eventLoop</a>.<a class="code" href="classdqm4hep_1_1online_1_1AppEventLoop.html#aba45457c888d8eab31537fb4e1b78fff">processFunction</a>([&amp;](){</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        m_sendContentSignal.process(buffer);</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        m_sendContentSignal.emit(buffer);</div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;      });</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    }</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    </div>
@@ -555,7 +555,7 @@
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    </div>
 <div class="line"><a name="l00504"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1Application_1_1NetworkHandler.html#a1b862b58cf9d5f75c761b8d28d729c42">  504</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdqm4hep_1_1online_1_1Application_1_1NetworkHandler.html#a1b862b58cf9d5f75c761b8d28d729c42">Application::NetworkHandler::sendRequestEvent</a>(<span class="keyword">const</span> net::Buffer &amp;request, net::Buffer &amp;response) {</div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Application.html#aa7610139861c72866142ce1018629d32">m_eventLoop</a>.<a class="code" href="classdqm4hep_1_1online_1_1AppEventLoop.html#aba45457c888d8eab31537fb4e1b78fff">processFunction</a>([&amp;](){</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        m_sendRequestSignal.process(request, response);</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        m_sendRequestSignal.emit(request, response);</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;      });</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    }</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    </div>
@@ -592,7 +592,7 @@
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;</div>
 <div class="line"><a name="l00541"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1online_1_1Application_1_1NetworkHandler.html#afdb5870abc204b8b9c94fe0e78799479">  541</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdqm4hep_1_1online_1_1Application_1_1NetworkHandler.html#afdb5870abc204b8b9c94fe0e78799479">Application::NetworkHandler::sendCommandEvent</a>(<span class="keyword">const</span> net::Buffer &amp;buffer) {</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Application.html#aa7610139861c72866142ce1018629d32">m_eventLoop</a>.<a class="code" href="classdqm4hep_1_1online_1_1AppEventLoop.html#aba45457c888d8eab31537fb4e1b78fff">processFunction</a>([&amp;](){</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        m_sendContentSignal.process(buffer);</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        m_sendContentSignal.emit(buffer);</div>
 <div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;      });</div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    }</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    </div>
@@ -691,7 +691,7 @@
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 8 2018 05:51:23 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 8 2018 11:43:50 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

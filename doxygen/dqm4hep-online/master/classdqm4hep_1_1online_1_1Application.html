@@ -1133,7 +1133,7 @@ template&lt;typename Controller &gt; </div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        dqm_info( <span class="stringliteral">&quot;Exiting event loop ...&quot;</span> );</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Application.html#aa7610139861c72866142ce1018629d32">m_eventLoop</a>.<a class="code" href="classdqm4hep_1_1online_1_1AppEventLoop.html#a620473d3cf6fb65939d906b9025b5ce0">disconnectOnEvent</a>(<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1online_1_1Application.html#af2e2e41977dabd637da001054363e195">noServer</a>()){</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;          <a class="code" href="classdqm4hep_1_1online_1_1Application.html#afa9fbac3def0a72fa5b63641c5cfdba7">m_server</a>-&gt;onClientExit().disconnectAll();          </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;          <a class="code" href="classdqm4hep_1_1online_1_1Application.html#afa9fbac3def0a72fa5b63641c5cfdba7">m_server</a>-&gt;onClientExit().disconnect();          </div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        }</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        this-&gt;<a class="code" href="classdqm4hep_1_1online_1_1Application.html#a29d428d6daccda66c485a9a7aab32fce">onStop</a>();</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      }</div>
@@ -2839,7 +2839,7 @@ template&lt;typename Operation &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 8 2018 05:51:23 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 8 2018 11:43:51 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

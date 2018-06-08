@@ -132,7 +132,7 @@
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#aa01695533be3aa8564a8373fc722e887">m_run</a> = run;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#a0d0aa16d2ba5a7067f132a47b354e9cd">m_running</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#ad53865f4c4f2575a0af0cf847b0abe77">m_sorSignal</a>.process(<a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#aa01695533be3aa8564a8373fc722e887">m_run</a>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#ad53865f4c4f2575a0af0cf847b0abe77">m_sorSignal</a>.emit(<a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#aa01695533be3aa8564a8373fc722e887">m_run</a>);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
@@ -150,7 +150,7 @@
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp;parameter : parameters)</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#aa01695533be3aa8564a8373fc722e887">m_run</a>.setParameter(parameter.first, parameter.second);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#ad53865f4c4f2575a0af0cf847b0abe77">m_sorSignal</a>.process(<a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#aa01695533be3aa8564a8373fc722e887">m_run</a>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#ad53865f4c4f2575a0af0cf847b0abe77">m_sorSignal</a>.emit(<a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#aa01695533be3aa8564a8373fc722e887">m_run</a>);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#a0d0aa16d2ba5a7067f132a47b354e9cd">m_running</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
@@ -167,7 +167,7 @@
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp;parameter : parameters)</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#aa01695533be3aa8564a8373fc722e887">m_run</a>.setParameter(parameter.first, parameter.second);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#adbadddef41d717435ffc22f335323f9f">m_eorSignal</a>.process(<a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#aa01695533be3aa8564a8373fc722e887">m_run</a>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#adbadddef41d717435ffc22f335323f9f">m_eorSignal</a>.emit(<a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#aa01695533be3aa8564a8373fc722e887">m_run</a>);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#a0d0aa16d2ba5a7067f132a47b354e9cd">m_running</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RunControl.html#aa01695533be3aa8564a8373fc722e887">m_run</a>.reset();</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
@@ -247,7 +247,7 @@
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 8 2018 05:51:23 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 8 2018 11:43:50 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

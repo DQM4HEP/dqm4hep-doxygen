@@ -99,7 +99,7 @@ Public Attributes</h2></td></tr>
 <p>Referenced by <a class="el" href="EventCollectorClient_8cc_source.html#l00083">dqm4hep::online::EventCollectorClient::setUpdateMode()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                                             {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      core::EventPtr <span class="keyword">event</span> = <a class="code" href="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo.html#a72587b95b1cc965a67883967a3e2c9f8">m_collectorClient</a>-&gt;<a class="code" href="classdqm4hep_1_1online_1_1EventCollectorClient.html#a4fa12ce21ed6d61c852945baebf3e60c">readEvent</a>(buffer);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo.html#ae83061701bbb62e470d53a50b5119da4">m_eventUpdateSignal</a>.process(event);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo.html#ae83061701bbb62e470d53a50b5119da4">m_eventUpdateSignal</a>.emit(event);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
 <div class="ttc" id="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo_html_ae83061701bbb62e470d53a50b5119da4"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo.html#ae83061701bbb62e470d53a50b5119da4">dqm4hep::online::EventCollectorClient::SourceInfo::m_eventUpdateSignal</a></div><div class="ttdeci">EventUpdateSignal m_eventUpdateSignal</div><div class="ttdoc">The signal to process on event update. </div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorClient_8h_source.html#l00112">EventCollectorClient.h:112</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1EventCollectorClient_html_a4fa12ce21ed6d61c852945baebf3e60c"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventCollectorClient.html#a4fa12ce21ed6d61c852945baebf3e60c">dqm4hep::online::EventCollectorClient::readEvent</a></div><div class="ttdeci">core::EventPtr readEvent(const net::Buffer &amp;buffer)</div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorClient_8cc_source.html#l00143">EventCollectorClient.cc:143</a></div></div>
@@ -149,7 +149,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 8 2018 05:51:23 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 8 2018 11:43:51 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
