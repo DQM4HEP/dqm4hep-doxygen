@@ -61,6 +61,7 @@
 <code>#include &lt;TPRegexp.h&gt;</code><br/>
 <code>#include &lt;cstring&gt;</code><br/>
 <code>#include &lt;dirent.h&gt;</code><br/>
+<code>#include &lt;regex&gt;</code><br/>
 <code>#include &lt;sys/resource.h&gt;</code><br/>
 <code>#include &lt;sys/time.h&gt;</code><br/>
 </div>
@@ -75,6 +76,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a4e343d4adf17ac10317453800b336d9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a4e343d4adf17ac10317453800b336d9c">dqm4hep::core::wildcardMatch</a> (const std::string &amp;testString, const std::string &amp;wildcardString, bool caseSensitive=true)</td></tr>
+<tr class="memdesc:a4e343d4adf17ac10317453800b336d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the test string matches the wildcard expression.  <a href="#a4e343d4adf17ac10317453800b336d9c">More...</a><br/></td></tr>
+<tr class="separator:a4e343d4adf17ac10317453800b336d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c17de43b3dca9bfde9d8c335c0416d"><td class="memItemLeft" align="right" valign="top">std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">dqm4hep::core::replaceAll</a> (std::string &amp;subject, const std::string &amp;search, const std::string &amp;replace)</td></tr>
+<tr class="memdesc:a57c17de43b3dca9bfde9d8c335c0416d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces all occurences in the spcified string.  <a href="#a57c17de43b3dca9bfde9d8c335c0416d">More...</a><br/></td></tr>
+<tr class="separator:a57c17de43b3dca9bfde9d8c335c0416d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e7a42a034c52afe4d01904e20ea2774"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a3e7a42a034c52afe4d01904e20ea2774">dqm4hep::core::cpuStats</a> (CpuStats &amp;stats, dqm_int sampleTime=1)</td></tr>
 <tr class="memdesc:a3e7a42a034c52afe4d01904e20ea2774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get some memory stats.  <a href="#a3e7a42a034c52afe4d01904e20ea2774">More...</a><br/></td></tr>
 <tr class="separator:a3e7a42a034c52afe4d01904e20ea2774"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,7 +98,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 8 2018 09:57:57 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 8 2018 15:40:55 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

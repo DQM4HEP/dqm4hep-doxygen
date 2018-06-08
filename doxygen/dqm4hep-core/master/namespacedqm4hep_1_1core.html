@@ -480,6 +480,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a23b517079e4394dcdae37a51aec24d66"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a23b517079e4394dcdae37a51aec24d66">tokenize</a> (const std::string &amp;inputString, <a class="el" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">StringVector</a> &amp;tokens, const std::string &amp;delimiter)</td></tr>
 <tr class="memdesc:a23b517079e4394dcdae37a51aec24d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tokenize string with delimiter.  <a href="#a23b517079e4394dcdae37a51aec24d66">More...</a><br/></td></tr>
 <tr class="separator:a23b517079e4394dcdae37a51aec24d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e343d4adf17ac10317453800b336d9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a4e343d4adf17ac10317453800b336d9c">wildcardMatch</a> (const std::string &amp;testString, const std::string &amp;wildcardString, bool caseSensitive=true)</td></tr>
+<tr class="memdesc:a4e343d4adf17ac10317453800b336d9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the test string matches the wildcard expression.  <a href="#a4e343d4adf17ac10317453800b336d9c">More...</a><br/></td></tr>
+<tr class="separator:a4e343d4adf17ac10317453800b336d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c17de43b3dca9bfde9d8c335c0416d"><td class="memItemLeft" align="right" valign="top">std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">replaceAll</a> (std::string &amp;subject, const std::string &amp;search, const std::string &amp;replace)</td></tr>
+<tr class="memdesc:a57c17de43b3dca9bfde9d8c335c0416d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces all occurences in the spcified string.  <a href="#a57c17de43b3dca9bfde9d8c335c0416d">More...</a><br/></td></tr>
+<tr class="separator:a57c17de43b3dca9bfde9d8c335c0416d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8978df0290612ca94f6fb176783cb91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedqm4hep_1_1core.html#aa8978df0290612ca94f6fb176783cb91">timeToHMS</a> (time_t t, int &amp;hours, int &amp;minutes, int &amp;seconds)</td></tr>
 <tr class="memdesc:aa8978df0290612ca94f6fb176783cb91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert time_t to hour, minutes and seconds.  <a href="#aa8978df0290612ca94f6fb176783cb91">More...</a><br/></td></tr>
 <tr class="separator:aa8978df0290612ca94f6fb176783cb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1081,7 +1087,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00530">530</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00551">551</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -1608,23 +1614,23 @@ Variables</h2></td></tr>
 
 <p>Whether the string contains a special character. </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00377">377</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00398">398</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
-<p>References <a class="el" href="Internal_8h_source.html#l00344">getSpecialCharacterList()</a>.</p>
+<p>References <a class="el" href="Internal_8h_source.html#l00365">getSpecialCharacterList()</a>.</p>
 
 <p>Referenced by <a class="el" href="Directory_8h_source.html#l00247">dqm4hep::core::Directory&lt; T &gt;::hasChild()</a>, <a class="el" href="Path_8cc_source.html#l00063">dqm4hep::core::Path::isValid()</a>, and <a class="el" href="Directory_8h_source.html#l00226">dqm4hep::core::Directory&lt; T &gt;::mkdir()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                                                                {</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">StringVector</a> specialCharacterList = <a class="code" href="namespacedqm4hep_1_1core.html#a7a3d55f0924a4e79648a68d39292590d">dqm4hep::core::getSpecialCharacterList</a>();</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> iter = specialCharacterList.begin(), endIter = specialCharacterList.end(); endIter != iter; ++iter) {</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keywordflow">if</span> (str.find(*iter) != std::string::npos)</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;      }</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;                                                                {</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">StringVector</a> specialCharacterList = <a class="code" href="namespacedqm4hep_1_1core.html#a7a3d55f0924a4e79648a68d39292590d">dqm4hep::core::getSpecialCharacterList</a>();</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> iter = specialCharacterList.begin(), endIter = specialCharacterList.end(); endIter != iter; ++iter) {</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        <span class="keywordflow">if</span> (str.find(*iter) != std::string::npos)</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      }</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    }</div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00163">Internal.h:163</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a7a3d55f0924a4e79648a68d39292590d"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a7a3d55f0924a4e79648a68d39292590d">dqm4hep::core::getSpecialCharacterList</a></div><div class="ttdeci">StringVector getSpecialCharacterList()</div><div class="ttdoc">Get the special character list that are to be avoided in some strings. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00344">Internal.h:344</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a7a3d55f0924a4e79648a68d39292590d"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a7a3d55f0924a4e79648a68d39292590d">dqm4hep::core::getSpecialCharacterList</a></div><div class="ttdeci">StringVector getSpecialCharacterList()</div><div class="ttdoc">Get the special character list that are to be avoided in some strings. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00365">Internal.h:365</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1660,18 +1666,18 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00731">731</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;                                                       {</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;<span class="preprocessor"></span>      darwinCpuStats(stats, sampleTime);</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;<span class="preprocessor">#elif defined(__linux__)</span></div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;<span class="preprocessor"></span>      linuxCpuStats(stats, sampleTime);</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;<span class="preprocessor">#elif defined(_WIN32)</span></div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="preprocessor"></span>      winCpuStats(stats, sampleTime);</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#error &quot;Unrecognized OS plateform (not windows, linux, OSX or unix) !&quot;</span></div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;<span class="preprocessor"></span>    }</div>
+<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00793">793</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;                                                       {</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;<span class="preprocessor"></span>      darwinCpuStats(stats, sampleTime);</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;<span class="preprocessor">#elif defined(__linux__)</span></div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;<span class="preprocessor"></span>      linuxCpuStats(stats, sampleTime);</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;<span class="preprocessor">#elif defined(_WIN32)</span></div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;<span class="preprocessor"></span>      winCpuStats(stats, sampleTime);</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#error &quot;Unrecognized OS plateform (not windows, linux, OSX or unix) !&quot;</span></div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;<span class="preprocessor"></span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1856,23 +1862,23 @@ Variables</h2></td></tr>
 <p>Fill host info (uname result + host name). </p>
 <p>See Key for available keys </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00392">392</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                                              {</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;      <span class="comment">// uname</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;      <span class="keyword">struct </span>utsname unameStruct;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;      uname(&amp;unameStruct);</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;      <span class="comment">// host name</span></div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;      <span class="keywordtype">char</span> host[256];</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;      gethostname(host, 256);</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;      info[<span class="stringliteral">&quot;system&quot;</span>] = unameStruct.sysname;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;      info[<span class="stringliteral">&quot;node&quot;</span>] = unameStruct.nodename;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;      info[<span class="stringliteral">&quot;release&quot;</span>] = unameStruct.release;</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      info[<span class="stringliteral">&quot;version&quot;</span>] = unameStruct.version;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;      info[<span class="stringliteral">&quot;machine&quot;</span>] = unameStruct.machine;</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;      info[<span class="stringliteral">&quot;host&quot;</span>] = host;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00413">413</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;                                              {</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;      <span class="comment">// uname</span></div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;      <span class="keyword">struct </span>utsname unameStruct;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;      uname(&amp;unameStruct);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;      <span class="comment">// host name</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;      <span class="keywordtype">char</span> host[256];</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;      gethostname(host, 256);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;      info[<span class="stringliteral">&quot;system&quot;</span>] = unameStruct.sysname;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;      info[<span class="stringliteral">&quot;node&quot;</span>] = unameStruct.nodename;</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;      info[<span class="stringliteral">&quot;release&quot;</span>] = unameStruct.release;</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;      info[<span class="stringliteral">&quot;version&quot;</span>] = unameStruct.version;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;      info[<span class="stringliteral">&quot;machine&quot;</span>] = unameStruct.machine;</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;      info[<span class="stringliteral">&quot;host&quot;</span>] = host;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1899,37 +1905,37 @@ Variables</h2></td></tr>
 
 <p>Get the special character list that are to be avoided in some strings. </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00344">344</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00365">365</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Internal_8h_source.html#l00377">containsSpecialCharacters()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                                                  {</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">StringVector</a> specialCharacterList;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;|&quot;</span>);</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;&amp;&quot;</span>);</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;;&quot;</span>);</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;&lt;&quot;</span>);</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;&gt;&quot;</span>);</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;(&quot;</span>);</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;)&quot;</span>);</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;$&quot;</span>);</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\\&quot;</span>);</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\&#39;&quot;</span>);</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\t&quot;</span>);</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;*&quot;</span>);</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;?&quot;</span>);</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;,&quot;</span>);</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;[&quot;</span>);</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;]&quot;</span>);</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;#&quot;</span>);</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;~&quot;</span>);</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;=&quot;</span>);</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;%&quot;</span>);</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;      <span class="keywordflow">return</span> specialCharacterList;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    }</div>
+<p>Referenced by <a class="el" href="Internal_8h_source.html#l00398">containsSpecialCharacters()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                                                  {</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">StringVector</a> specialCharacterList;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;|&quot;</span>);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;&amp;&quot;</span>);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;;&quot;</span>);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;&lt;&quot;</span>);</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;&gt;&quot;</span>);</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;(&quot;</span>);</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;)&quot;</span>);</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;$&quot;</span>);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\\&quot;</span>);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\&#39;&quot;</span>);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\t&quot;</span>);</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;*&quot;</span>);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;?&quot;</span>);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;,&quot;</span>);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;[&quot;</span>);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;]&quot;</span>);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;#&quot;</span>);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;~&quot;</span>);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;=&quot;</span>);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;      specialCharacterList.push_back(<span class="stringliteral">&quot;%&quot;</span>);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;      <span class="keywordflow">return</span> specialCharacterList;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    }</div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00163">Internal.h:163</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1956,18 +1962,18 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00745">745</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;                                      {</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;<span class="preprocessor"></span>      darwinMemStats(stats);</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;<span class="preprocessor">#elif defined(__linux__)</span></div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;<span class="preprocessor"></span>      linuxMemStats(stats);</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;<span class="preprocessor">#elif defined(_WIN32)</span></div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;<span class="preprocessor"></span>      winMemStats(stats);</div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#error &quot;Unrecognized OS plateform (not windows, linux, OSX or unix) !&quot;</span></div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;<span class="preprocessor"></span>    }</div>
+<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00807">807</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;                                      {</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="preprocessor"></span>      darwinMemStats(stats);</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;<span class="preprocessor">#elif defined(__linux__)</span></div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;<span class="preprocessor"></span>      linuxMemStats(stats);</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;<span class="preprocessor">#elif defined(_WIN32)</span></div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;<span class="preprocessor"></span>      winMemStats(stats);</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#error &quot;Unrecognized OS plateform (not windows, linux, OSX or unix) !&quot;</span></div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;<span class="preprocessor"></span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2003,18 +2009,18 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00773">773</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;                                                           {</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;<span class="preprocessor"></span>      darwinNetStats(stats, sampleTime);</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;<span class="preprocessor">#elif defined(__linux__)</span></div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;<span class="preprocessor"></span>      linuxNetStats(stats, sampleTime);</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;<span class="preprocessor">#elif defined(_WIN32)</span></div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;<span class="preprocessor"></span>      winNetStats(stats, sampleTime);</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#error &quot;Unrecognized OS plateform (not windows, linux, OSX or unix) !&quot;</span></div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;<span class="preprocessor"></span>    }</div>
+<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00835">835</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;                                                           {</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;<span class="preprocessor"></span>      darwinNetStats(stats, sampleTime);</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;<span class="preprocessor">#elif defined(__linux__)</span></div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;<span class="preprocessor"></span>      linuxNetStats(stats, sampleTime);</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;<span class="preprocessor">#elif defined(_WIN32)</span></div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;<span class="preprocessor"></span>      winNetStats(stats, sampleTime);</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#error &quot;Unrecognized OS plateform (not windows, linux, OSX or unix) !&quot;</span></div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;<span class="preprocessor"></span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2041,11 +2047,11 @@ Variables</h2></td></tr>
 
 <p>Get the current time (unit seconds) </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00328">328</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                           {</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">std::chrono::system_clock::now</a>();</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    }</div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a63a2326a6a01e5ed790f2c4027038cb2"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">dqm4hep::core::now</a></div><div class="ttdeci">TimePoint now()</div><div class="ttdoc">Get the current time (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00328">Internal.h:328</a></div></div>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00349">349</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                           {</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">std::chrono::system_clock::now</a>();</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    }</div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a63a2326a6a01e5ed790f2c4027038cb2"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">dqm4hep::core::now</a></div><div class="ttdeci">TimePoint now()</div><div class="ttdoc">Get the current time (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00349">Internal.h:349</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3389,14 +3395,14 @@ template&lt;typename S &gt; </div>
 
 <p>Get the current process id. </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00430">430</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;                     {</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="preprocessor">#if _WIN32</span></div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">return</span> GetCurrentProcessId();</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="preprocessor"></span>      return ::getpid();</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="preprocessor"></span>    }</div>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00451">451</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;                     {</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="preprocessor">#if _WIN32</span></div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">return</span> GetCurrentProcessId();</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="preprocessor"></span>      return ::getpid();</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="preprocessor"></span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3422,18 +3428,72 @@ template&lt;typename S &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00759">759</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;                                        {</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;<span class="preprocessor"></span>      darwinProcStats(stats);</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;<span class="preprocessor">#elif defined(__linux__)</span></div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;<span class="preprocessor"></span>      linuxProcStats(stats);</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;<span class="preprocessor">#elif defined(_WIN32)</span></div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;<span class="preprocessor"></span>      winProcStats(stats);</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#error &quot;Unrecognized OS plateform (not windows, linux, OSX or unix) !&quot;</span></div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;<span class="preprocessor"></span>    }</div>
+<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00821">821</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;                                        {</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;<span class="preprocessor"></span>      darwinProcStats(stats);</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;<span class="preprocessor">#elif defined(__linux__)</span></div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;<span class="preprocessor"></span>      linuxProcStats(stats);</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;<span class="preprocessor">#elif defined(_WIN32)</span></div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;<span class="preprocessor"></span>      winProcStats(stats);</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#error &quot;Unrecognized OS plateform (not windows, linux, OSX or unix) !&quot;</span></div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;<span class="preprocessor"></span>    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a57c17de43b3dca9bfde9d8c335c0416d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string &amp; dqm4hep::core::replaceAll </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>subject</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>search</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>replace</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replaces all occurences in the spcified string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subject</td><td>the string on which to perform replace </td></tr>
+    <tr><td class="paramname">search</td><td>the portion of the input string to search </td></tr>
+    <tr><td class="paramname">replace</td><td>the portion of string to replace with </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00099">99</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
+
+<p>Referenced by <a class="el" href="Internal_8cc_source.html#l00074">wildcardMatch()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                                                                                 {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="keywordtype">size_t</span> pos = 0;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="keywordflow">while</span> ((pos = subject.find(search, pos)) != std::string::npos) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;         subject.replace(pos, search.length(), replace);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;         pos += replace.length();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keywordflow">return</span> subject; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3509,10 +3569,10 @@ template&lt;typename S &gt; </div>
 
 <p>Sleep for the specified time duration. </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00336">336</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                                                    {</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      std::this_thread::sleep_for(duration);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00357">357</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                                                    {</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;      std::this_thread::sleep_for(duration);</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3679,17 +3739,17 @@ template&lt;&gt; </div>
 
 <p>Specialization for booleans. </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00414">414</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;                                                          {</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;      <span class="keywordflow">if</span> (s == <span class="stringliteral">&quot;on&quot;</span> || s == <span class="stringliteral">&quot;1&quot;</span> || s == <span class="stringliteral">&quot;true&quot;</span>)</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        t = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (s == <span class="stringliteral">&quot;off&quot;</span> || s == <span class="stringliteral">&quot;0&quot;</span> || s == <span class="stringliteral">&quot;false&quot;</span>)</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        t = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;      <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00435">435</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                                                          {</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;      <span class="keywordflow">if</span> (s == <span class="stringliteral">&quot;on&quot;</span> || s == <span class="stringliteral">&quot;1&quot;</span> || s == <span class="stringliteral">&quot;true&quot;</span>)</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        t = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span> (s == <span class="stringliteral">&quot;off&quot;</span> || s == <span class="stringliteral">&quot;0&quot;</span> || s == <span class="stringliteral">&quot;false&quot;</span>)</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        t = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;      <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3739,17 +3799,17 @@ template&lt;&gt; </div>
 
 <p>Convert time_t to hour, minutes and seconds. </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00284">284</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00305">305</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Internal_8h_source.html#l00313">timeToHMS()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                                                                            {</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      <span class="keyword">auto</span> pTmTime = <span class="keyword">new</span> tm();</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      localtime_r(&amp;t, pTmTime);</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      hours = pTmTime-&gt;tm_hour;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      minutes = pTmTime-&gt;tm_min;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      seconds = pTmTime-&gt;tm_sec;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      <span class="keyword">delete</span> pTmTime;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    }</div>
+<p>Referenced by <a class="el" href="Internal_8h_source.html#l00334">timeToHMS()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                                                                            {</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      <span class="keyword">auto</span> pTmTime = <span class="keyword">new</span> tm();</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      localtime_r(&amp;t, pTmTime);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      hours = pTmTime-&gt;tm_hour;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      minutes = pTmTime-&gt;tm_min;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      seconds = pTmTime-&gt;tm_sec;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      <span class="keyword">delete</span> pTmTime;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3787,20 +3847,20 @@ template&lt;&gt; </div>
 
 <p>Convert time_t to string format as "HOURSh MINUTESm SECONDSs". </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00313">313</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00334">334</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
-<p>References <a class="el" href="Internal_8h_source.html#l00284">timeToHMS()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                                                        {</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      <span class="comment">// get h m and s</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      <span class="keywordtype">int</span> hours, minutes, seconds;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#aa8978df0290612ca94f6fb176783cb91">dqm4hep::core::timeToHMS</a>(t, hours, minutes, seconds);</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      <span class="comment">// convert to str</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      std::stringstream ss;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      ss &lt;&lt; hours &lt;&lt; <span class="stringliteral">&quot;h &quot;</span> &lt;&lt; minutes &lt;&lt; <span class="stringliteral">&quot;m &quot;</span> &lt;&lt; seconds &lt;&lt; <span class="stringliteral">&quot;s&quot;</span>;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      timeStr = ss.str();</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    }</div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_aa8978df0290612ca94f6fb176783cb91"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#aa8978df0290612ca94f6fb176783cb91">dqm4hep::core::timeToHMS</a></div><div class="ttdeci">void timeToHMS(time_t t, int &amp;hours, int &amp;minutes, int &amp;seconds)</div><div class="ttdoc">Convert time_t to hour, minutes and seconds. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00284">Internal.h:284</a></div></div>
+<p>References <a class="el" href="Internal_8h_source.html#l00305">timeToHMS()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                                                        {</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;      <span class="comment">// get h m and s</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;      <span class="keywordtype">int</span> hours, minutes, seconds;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#aa8978df0290612ca94f6fb176783cb91">dqm4hep::core::timeToHMS</a>(t, hours, minutes, seconds);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      <span class="comment">// convert to str</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      std::stringstream ss;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;      ss &lt;&lt; hours &lt;&lt; <span class="stringliteral">&quot;h &quot;</span> &lt;&lt; minutes &lt;&lt; <span class="stringliteral">&quot;m &quot;</span> &lt;&lt; seconds &lt;&lt; <span class="stringliteral">&quot;s&quot;</span>;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;      timeStr = ss.str();</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    }</div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_aa8978df0290612ca94f6fb176783cb91"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#aa8978df0290612ca94f6fb176783cb91">dqm4hep::core::timeToHMS</a></div><div class="ttdeci">void timeToHMS(time_t t, int &amp;hours, int &amp;minutes, int &amp;seconds)</div><div class="ttdoc">Convert time_t to hour, minutes and seconds. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00305">Internal.h:305</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3906,7 +3966,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        pos = inputString.find_first_of(delimiter, lastPos);</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      }</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_adac1dcb06868e801e88da56132dd475e"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#adac1dcb06868e801e88da56132dd475e">dqm4hep::core::stringToType</a></div><div class="ttdeci">bool stringToType(const std::string &amp;s, bool &amp;t)</div><div class="ttdoc">Specialization for booleans. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00414">Internal.h:414</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_adac1dcb06868e801e88da56132dd475e"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#adac1dcb06868e801e88da56132dd475e">dqm4hep::core::stringToType</a></div><div class="ttdeci">bool stringToType(const std::string &amp;s, bool &amp;t)</div><div class="ttdoc">Specialization for booleans. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00435">Internal.h:435</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3990,10 +4050,10 @@ template&lt;&gt; </div>
 
 <p>Convert TimePoint to time_t. </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00297">297</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                                                       {</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      <span class="keywordflow">return</span> TimePoint::clock::to_time_t(timePoint);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00318">318</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                                                       {</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      <span class="keywordflow">return</span> TimePoint::clock::to_time_t(timePoint);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4021,12 +4081,12 @@ template&lt;&gt; </div>
 
 <p>Convert time_t to TimePoint. </p>
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00305">305</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00326">326</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 <p>Referenced by <a class="el" href="GenericEventXMLReader_8cc_source.html#l00142">dqm4hep::core::GenericEventXMLReader::readNextEvent()</a>, and <a class="el" href="GenericEventXMLReader_8cc_source.html#l00104">dqm4hep::core::GenericEventXMLReader::runInfo()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                                           {</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      <span class="keywordflow">return</span> TimePoint::clock::from_time_t(t);</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                                           {</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <span class="keywordflow">return</span> TimePoint::clock::from_time_t(t);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4098,6 +4158,75 @@ template&lt;&gt; </div>
 <div class="fragment"><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                                                      {</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;      <span class="keywordflow">return</span> t;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4e343d4adf17ac10317453800b336d9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool dqm4hep::core::wildcardMatch </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>testString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>wildcardString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>caseSensitive</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the test string matches the wildcard expression. </p>
+<p>Source: <a href="https://www.geeksforgeeks.org/wildcard-character-matching/">https://www.geeksforgeeks.org/wildcard-character-matching/</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">testString</td><td>the string to test </td></tr>
+    <tr><td class="paramname">wildcardString</td><td>the string containing wildcards </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00074">74</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
+
+<p>References <a class="el" href="Internal_8cc_source.html#l00099">replaceAll()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                                                                         {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      std::string wildcardPattern = wildcardString;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">replaceAll</a>(wildcardPattern, <span class="stringliteral">&quot;\\&quot;</span>, <span class="stringliteral">&quot;\\\\&quot;</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">replaceAll</a>(wildcardPattern, <span class="stringliteral">&quot;^&quot;</span>, <span class="stringliteral">&quot;\\^&quot;</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">replaceAll</a>(wildcardPattern, <span class="stringliteral">&quot;.&quot;</span>, <span class="stringliteral">&quot;\\.&quot;</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">replaceAll</a>(wildcardPattern, <span class="stringliteral">&quot;$&quot;</span>, <span class="stringliteral">&quot;\\$&quot;</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">replaceAll</a>(wildcardPattern, <span class="stringliteral">&quot;|&quot;</span>, <span class="stringliteral">&quot;\\|&quot;</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">replaceAll</a>(wildcardPattern, <span class="stringliteral">&quot;(&quot;</span>, <span class="stringliteral">&quot;\\(&quot;</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">replaceAll</a>(wildcardPattern, <span class="stringliteral">&quot;)&quot;</span>, <span class="stringliteral">&quot;\\)&quot;</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">replaceAll</a>(wildcardPattern, <span class="stringliteral">&quot;[&quot;</span>, <span class="stringliteral">&quot;\\[&quot;</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">replaceAll</a>(wildcardPattern, <span class="stringliteral">&quot;]&quot;</span>, <span class="stringliteral">&quot;\\]&quot;</span>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">replaceAll</a>(wildcardPattern, <span class="stringliteral">&quot;*&quot;</span>, <span class="stringliteral">&quot;\\*&quot;</span>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">replaceAll</a>(wildcardPattern, <span class="stringliteral">&quot;+&quot;</span>, <span class="stringliteral">&quot;\\+&quot;</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">replaceAll</a>(wildcardPattern, <span class="stringliteral">&quot;?&quot;</span>, <span class="stringliteral">&quot;\\?&quot;</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">replaceAll</a>(wildcardPattern, <span class="stringliteral">&quot;/&quot;</span>, <span class="stringliteral">&quot;\\/&quot;</span>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="comment">// Convert chars &#39;*?&#39; back to their regex equivalents</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">replaceAll</a>(wildcardPattern, <span class="stringliteral">&quot;\\?&quot;</span>, <span class="stringliteral">&quot;.&quot;</span>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">replaceAll</a>(wildcardPattern, <span class="stringliteral">&quot;\\*&quot;</span>, <span class="stringliteral">&quot;.*&quot;</span>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="comment">// regex !</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      std::regex pattern(wildcardPattern, caseSensitive ? std::regex::basic : std::regex::icase);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keywordflow">return</span> std::regex_match(testString, pattern);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a57c17de43b3dca9bfde9d8c335c0416d"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">dqm4hep::core::replaceAll</a></div><div class="ttdeci">std::string &amp; replaceAll(std::string &amp;subject, const std::string &amp;search, const std::string &amp;replace)</div><div class="ttdoc">Replaces all occurences in the spcified string. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00099">Internal.cc:99</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4209,7 +4338,7 @@ template&lt;&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 8 2018 09:57:57 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 8 2018 15:40:56 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
