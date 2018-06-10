@@ -119,7 +119,7 @@
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1core_1_1GenericEventStreamer.html#a8b72ccaeab8ca4ffe7fb327112a3cb0a">   82</a></span>&#160;    <a class="code" href="namespacedqm4hep_1_1core.html#a71737b5d3e542e31d80c402f3d1befa7">EventPtr</a> <a class="code" href="classdqm4hep_1_1core_1_1GenericEventStreamer.html#a8b72ccaeab8ca4ffe7fb327112a3cb0a">GenericEventStreamer::createEvent</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">return</span> std::shared_ptr&lt;Event&gt;(<span class="keyword">new</span> <a class="code" href="classdqm4hep_1_1core_1_1EventBase.html">EventBase&lt;GenericEvent&gt;</a>(<span class="keyword">new</span> <a class="code" href="classdqm4hep_1_1core_1_1GenericEvent.html">GenericEvent</a>()));</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">return</span> Event::create&lt;GenericEvent&gt;();</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
@@ -176,7 +176,6 @@
 <div class="ttc" id="classdqm4hep_1_1core_1_1GenericEvent_html_a401b39dc9417bc6e5e9dc91f49689722"><div class="ttname"><a href="classdqm4hep_1_1core_1_1GenericEvent.html#a401b39dc9417bc6e5e9dc91f49689722">dqm4hep::core::GenericEvent::m_floatValues</a></div><div class="ttdeci">FloatVectorMap m_floatValues</div><div class="ttdef"><b>Definition:</b> <a href="GenericEvent_8h_source.html#l00115">GenericEvent.h:115</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1GenericEventStreamer_html_ac2f07bb48b334c95059347eac0c1c449"><div class="ttname"><a href="classdqm4hep_1_1core_1_1GenericEventStreamer.html#ac2f07bb48b334c95059347eac0c1c449">dqm4hep::core::GenericEventStreamer::~GenericEventStreamer</a></div><div class="ttdeci">~GenericEventStreamer() override</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="GenericEventStreamer_8cc_source.html#l00076">GenericEventStreamer.cc:76</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1GenericEvent_html_a77b1789c6ac657a8aca4d2a9cc3abe18"><div class="ttname"><a href="classdqm4hep_1_1core_1_1GenericEvent.html#a77b1789c6ac657a8aca4d2a9cc3abe18">dqm4hep::core::GenericEvent::m_intValues</a></div><div class="ttdeci">IntVectorMap m_intValues</div><div class="ttdef"><b>Definition:</b> <a href="GenericEvent_8h_source.html#l00114">GenericEvent.h:114</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html">dqm4hep::core::EventBase</a></div><div class="ttdoc">EventBase interface. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00174">Event.h:174</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1GenericEventStreamer_html_a0b66ffba501504304d318221489a0472"><div class="ttname"><a href="classdqm4hep_1_1core_1_1GenericEventStreamer.html#a0b66ffba501504304d318221489a0472">dqm4hep::core::GenericEventStreamer::GenericEventStreamer</a></div><div class="ttdeci">GenericEventStreamer()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="GenericEventStreamer_8cc_source.html#l00070">GenericEventStreamer.cc:70</a></div></div>
 <div class="ttc" id="StatusCodes_8h_html"><div class="ttname"><a href="StatusCodes_8h.html">StatusCodes.h</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1GenericEvent_html_a3f4edc65475cfd8baadaea3762673a6d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1GenericEvent.html#a3f4edc65475cfd8baadaea3762673a6d">dqm4hep::core::GenericEvent::m_doubleValues</a></div><div class="ttdeci">DoubleVectorMap m_doubleValues</div><div class="ttdef"><b>Definition:</b> <a href="GenericEvent_8h_source.html#l00116">GenericEvent.h:116</a></div></div>
@@ -198,7 +197,7 @@
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 8 2018 15:40:55 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 10 2018 23:16:52 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

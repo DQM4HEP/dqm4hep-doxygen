@@ -177,7 +177,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="GenericEventStreamer_8cc_source.html#l00082">82</a> of file <a class="el" href="GenericEventStreamer_8cc_source.html">GenericEventStreamer.cc</a>.</p>
 <div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                                     {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">return</span> std::shared_ptr&lt;Event&gt;(<span class="keyword">new</span> EventBase&lt;GenericEvent&gt;(<span class="keyword">new</span> GenericEvent()));</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">return</span> Event::create&lt;GenericEvent&gt;();</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
@@ -312,7 +312,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 8 2018 15:40:57 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 10 2018 23:16:54 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -51,6 +51,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
@@ -129,6 +130,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a099045053e45bcf80f48c471b86104c9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Event.html#a099045053e45bcf80f48c471b86104c9">setEvent</a> (T *pEvent, bool owner=true)</td></tr>
 <tr class="memdesc:a099045053e45bcf80f48c471b86104c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the event.  <a href="#a099045053e45bcf80f48c471b86104c9">More...</a><br/></td></tr>
 <tr class="separator:a099045053e45bcf80f48c471b86104c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a07edd2fdcbc272ef930ff9ff90905e41"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a07edd2fdcbc272ef930ff9ff90905e41"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="namespacedqm4hep_1_1core.html#a71737b5d3e542e31d80c402f3d1befa7">EventPtr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Event.html#a07edd2fdcbc272ef930ff9ff90905e41">create</a> (Args...args)</td></tr>
+<tr class="memdesc:a07edd2fdcbc272ef930ff9ff90905e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an event pointer wrapping an event of type T.  <a href="#a07edd2fdcbc272ef930ff9ff90905e41">More...</a><br/></td></tr>
+<tr class="separator:a07edd2fdcbc272ef930ff9ff90905e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac819f2e23c3c30b1c202a3e00cd45bc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aac819f2e23c3c30b1c202a3e00cd45bc"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="namespacedqm4hep_1_1core.html#a71737b5d3e542e31d80c402f3d1befa7">EventPtr</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Event.html#aac819f2e23c3c30b1c202a3e00cd45bc">create</a> (T *event)</td></tr>
+<tr class="memdesc:aac819f2e23c3c30b1c202a3e00cd45bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an event pointer wrapping an event of type T.  <a href="#aac819f2e23c3c30b1c202a3e00cd45bc">More...</a><br/></td></tr>
+<tr class="separator:aac819f2e23c3c30b1c202a3e00cd45bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -283,9 +295,9 @@ Friends</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Event_8cc_source.html#l00036">36</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00163">m_eventNumber</a>, <a class="el" href="Event_8h_source.html#l00162">m_eventSize</a>, <a class="el" href="Event_8h_source.html#l00164">m_runNumber</a>, <a class="el" href="Event_8h_source.html#l00160">m_source</a>, <a class="el" href="Event_8h_source.html#l00161">m_timeStamp</a>, <a class="el" href="Event_8h_source.html#l00159">m_type</a>, and <a class="el" href="Event_8h_source.html#l00047">dqm4hep::core::UNKNOWN_EVENT</a>.</p>
+<p>References <a class="el" href="Event_8h_source.html#l00179">m_eventNumber</a>, <a class="el" href="Event_8h_source.html#l00178">m_eventSize</a>, <a class="el" href="Event_8h_source.html#l00180">m_runNumber</a>, <a class="el" href="Event_8h_source.html#l00176">m_source</a>, <a class="el" href="Event_8h_source.html#l00177">m_timeStamp</a>, <a class="el" href="Event_8h_source.html#l00175">m_type</a>, and <a class="el" href="Event_8h_source.html#l00047">dqm4hep::core::UNKNOWN_EVENT</a>.</p>
 
-<p>Referenced by <a class="el" href="Event_8h_source.html#l00356">dqm4hep::core::EventBase&lt; T &gt;::clear()</a>.</p>
+<p>Referenced by <a class="el" href="Event_8h_source.html#l00372">dqm4hep::core::EventBase&lt; T &gt;::clear()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                      {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">m_type</a> = <a class="code" href="namespacedqm4hep_1_1core.html#a22223e08d15c5cb3007165e0b19205c3a8605d534e908730f7e3ed8d418aece6a">UNKNOWN_EVENT</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">m_source</a> = <span class="stringliteral">&quot;unknwon&quot;</span>;</div>
@@ -294,14 +306,99 @@ Friends</h2></td></tr>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">m_eventNumber</a> = 0;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">m_runNumber</a> = 0;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a52a91490003e610a3eba1dec29e79f6d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">dqm4hep::core::Event::m_timeStamp</a></div><div class="ttdeci">TimePoint m_timeStamp</div><div class="ttdoc">The event time stamp. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00161">Event.h:161</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a4d99b8e79925b571c02d3d4376afe022"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">dqm4hep::core::Event::m_source</a></div><div class="ttdeci">std::string m_source</div><div class="ttdoc">The event source. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00160">Event.h:160</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a52a91490003e610a3eba1dec29e79f6d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">dqm4hep::core::Event::m_timeStamp</a></div><div class="ttdeci">TimePoint m_timeStamp</div><div class="ttdoc">The event time stamp. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00177">Event.h:177</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a4d99b8e79925b571c02d3d4376afe022"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">dqm4hep::core::Event::m_source</a></div><div class="ttdeci">std::string m_source</div><div class="ttdoc">The event source. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00176">Event.h:176</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_a6750db8e23540ba8271bf5f1a8551c89"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a6750db8e23540ba8271bf5f1a8551c89">dqm4hep::core::TimePoint</a></div><div class="ttdeci">std::chrono::system_clock::time_point TimePoint</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00125">Internal.h:125</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_a22223e08d15c5cb3007165e0b19205c3a8605d534e908730f7e3ed8d418aece6a"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a22223e08d15c5cb3007165e0b19205c3a8605d534e908730f7e3ed8d418aece6a">dqm4hep::core::UNKNOWN_EVENT</a></div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00047">Event.h:47</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a8e19534d84bcce86fa9bad40b4c7eb41"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">dqm4hep::core::Event::m_eventSize</a></div><div class="ttdeci">uint64_t m_eventSize</div><div class="ttdoc">The serialized event size (unit bytes) </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00162">Event.h:162</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_af5968aec2e0a660292837b4ce1400843"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">dqm4hep::core::Event::m_type</a></div><div class="ttdeci">EventType m_type</div><div class="ttdoc">The event type. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00159">Event.h:159</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a3a77f3c1ddd853987f74824d881bb3ef"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">dqm4hep::core::Event::m_eventNumber</a></div><div class="ttdeci">uint32_t m_eventNumber</div><div class="ttdoc">The event number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00163">Event.h:163</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_ab29a4af2bf6fb951c2f38490d792b64a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">dqm4hep::core::Event::m_runNumber</a></div><div class="ttdeci">uint32_t m_runNumber</div><div class="ttdoc">The run number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00164">Event.h:164</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a8e19534d84bcce86fa9bad40b4c7eb41"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">dqm4hep::core::Event::m_eventSize</a></div><div class="ttdeci">uint64_t m_eventSize</div><div class="ttdoc">The serialized event size (unit bytes) </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00178">Event.h:178</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_af5968aec2e0a660292837b4ce1400843"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">dqm4hep::core::Event::m_type</a></div><div class="ttdeci">EventType m_type</div><div class="ttdoc">The event type. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00175">Event.h:175</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a3a77f3c1ddd853987f74824d881bb3ef"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">dqm4hep::core::Event::m_eventNumber</a></div><div class="ttdeci">uint32_t m_eventNumber</div><div class="ttdoc">The event number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00179">Event.h:179</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_ab29a4af2bf6fb951c2f38490d792b64a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">dqm4hep::core::Event::m_runNumber</a></div><div class="ttdeci">uint32_t m_runNumber</div><div class="ttdoc">The run number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00180">Event.h:180</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a07edd2fdcbc272ef930ff9ff90905e41"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedqm4hep_1_1core.html#a71737b5d3e542e31d80c402f3d1befa7">EventPtr</a> dqm4hep::core::Event::create </td>
+          <td>(</td>
+          <td class="paramtype">Args...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an event pointer wrapping an event of type T. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>the arguments to pass to the T constructor (optional) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00392">392</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                                       {</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;      T *impl = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;      <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        impl = <span class="keyword">new</span> T(args...);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      }</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;      <span class="keywordflow">catch</span>(...) {</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;      }</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      <span class="keywordflow">return</span> std::shared_ptr&lt;Event&gt;(<span class="keyword">new</span> EventBase&lt;T&gt;(impl));</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aac819f2e23c3c30b1c202a3e00cd45bc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedqm4hep_1_1core.html#a71737b5d3e542e31d80c402f3d1befa7">EventPtr</a> dqm4hep::core::Event::create </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create an event pointer wrapping an event of type T. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>an already existing event to wrap </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00406">406</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                                   {</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;      <span class="keywordflow">return</span> std::shared_ptr&lt;Event&gt;(<span class="keyword">new</span> EventBase&lt;T&gt;(event));</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -330,17 +427,17 @@ template&lt;typename T &gt; </div>
 
 <p>Returns the true event implementation. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00216">216</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00232">232</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00340">dqm4hep::core::EventBase&lt; T &gt;::getEvent()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                                    {</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;      <span class="keyword">const</span> EventBase&lt;T&gt; *<span class="keyword">const</span> pEventBase(<span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>EventBase&lt;T&gt; *const<span class="keyword">&gt;</span>(<span class="keyword">this</span>));</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == pEventBase)</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      <span class="keywordflow">return</span> pEventBase-&gt;getEvent();</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    }</div>
+<p>References <a class="el" href="Event_8h_source.html#l00356">dqm4hep::core::EventBase&lt; T &gt;::getEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                                    {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      <span class="keyword">const</span> EventBase&lt;T&gt; *<span class="keyword">const</span> pEventBase(<span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span>EventBase&lt;T&gt; *const<span class="keyword">&gt;</span>(<span class="keyword">this</span>));</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == pEventBase)</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      <span class="keywordflow">return</span> pEventBase-&gt;getEvent();</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -367,13 +464,13 @@ template&lt;typename T &gt; </div>
 
 <p>Get the event number. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00296">296</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00312">312</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00163">m_eventNumber</a>.</p>
-<div class="fragment"><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                                                {</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">m_eventNumber</a>;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a3a77f3c1ddd853987f74824d881bb3ef"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">dqm4hep::core::Event::m_eventNumber</a></div><div class="ttdeci">uint32_t m_eventNumber</div><div class="ttdoc">The event number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00163">Event.h:163</a></div></div>
+<p>References <a class="el" href="Event_8h_source.html#l00179">m_eventNumber</a>.</p>
+<div class="fragment"><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                                                {</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">m_eventNumber</a>;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a3a77f3c1ddd853987f74824d881bb3ef"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">dqm4hep::core::Event::m_eventNumber</a></div><div class="ttdeci">uint32_t m_eventNumber</div><div class="ttdoc">The event number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00179">Event.h:179</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -400,13 +497,13 @@ template&lt;typename T &gt; </div>
 
 <p>Get the real event implementation size, as extracted after its deserialization (unit bytes) </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00284">284</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00300">300</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00162">m_eventSize</a>.</p>
-<div class="fragment"><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                                              {</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">m_eventSize</a>;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a8e19534d84bcce86fa9bad40b4c7eb41"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">dqm4hep::core::Event::m_eventSize</a></div><div class="ttdeci">uint64_t m_eventSize</div><div class="ttdoc">The serialized event size (unit bytes) </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00162">Event.h:162</a></div></div>
+<p>References <a class="el" href="Event_8h_source.html#l00178">m_eventSize</a>.</p>
+<div class="fragment"><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                                              {</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">m_eventSize</a>;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a8e19534d84bcce86fa9bad40b4c7eb41"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">dqm4hep::core::Event::m_eventSize</a></div><div class="ttdeci">uint64_t m_eventSize</div><div class="ttdoc">The serialized event size (unit bytes) </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00178">Event.h:178</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -433,13 +530,13 @@ template&lt;typename T &gt; </div>
 
 <p>Get the run number. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00308">308</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00324">324</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00164">m_runNumber</a>.</p>
-<div class="fragment"><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                                              {</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">m_runNumber</a>;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_ab29a4af2bf6fb951c2f38490d792b64a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">dqm4hep::core::Event::m_runNumber</a></div><div class="ttdeci">uint32_t m_runNumber</div><div class="ttdoc">The run number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00164">Event.h:164</a></div></div>
+<p>References <a class="el" href="Event_8h_source.html#l00180">m_runNumber</a>.</p>
+<div class="fragment"><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                                              {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">m_runNumber</a>;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_ab29a4af2bf6fb951c2f38490d792b64a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">dqm4hep::core::Event::m_runNumber</a></div><div class="ttdeci">uint32_t m_runNumber</div><div class="ttdoc">The run number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00180">Event.h:180</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -466,13 +563,13 @@ template&lt;typename T &gt; </div>
 
 <p>Set the event source. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00260">260</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00276">276</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00160">m_source</a>.</p>
-<div class="fragment"><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                                                   {</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">m_source</a>;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a4d99b8e79925b571c02d3d4376afe022"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">dqm4hep::core::Event::m_source</a></div><div class="ttdeci">std::string m_source</div><div class="ttdoc">The event source. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00160">Event.h:160</a></div></div>
+<p>References <a class="el" href="Event_8h_source.html#l00176">m_source</a>.</p>
+<div class="fragment"><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                                                   {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">m_source</a>;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a4d99b8e79925b571c02d3d4376afe022"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">dqm4hep::core::Event::m_source</a></div><div class="ttdeci">std::string m_source</div><div class="ttdoc">The event source. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00176">Event.h:176</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -493,11 +590,11 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="Event_8cc_source.html#l00053">53</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00165">m_streamerName</a>.</p>
+<p>References <a class="el" href="Event_8h_source.html#l00181">m_streamerName</a>.</p>
 <div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                  {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a64bb80cc7a5db1304f681a24a9995f8f">m_streamerName</a>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a64bb80cc7a5db1304f681a24a9995f8f"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a64bb80cc7a5db1304f681a24a9995f8f">dqm4hep::core::Event::m_streamerName</a></div><div class="ttdeci">std::string m_streamerName</div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00165">Event.h:165</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a64bb80cc7a5db1304f681a24a9995f8f"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a64bb80cc7a5db1304f681a24a9995f8f">dqm4hep::core::Event::m_streamerName</a></div><div class="ttdeci">std::string m_streamerName</div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00181">Event.h:181</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -524,13 +621,13 @@ template&lt;typename T &gt; </div>
 
 <p>Get the event time stamp. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00272">272</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00288">288</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00161">m_timeStamp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                                                      {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">m_timeStamp</a>;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a52a91490003e610a3eba1dec29e79f6d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">dqm4hep::core::Event::m_timeStamp</a></div><div class="ttdeci">TimePoint m_timeStamp</div><div class="ttdoc">The event time stamp. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00161">Event.h:161</a></div></div>
+<p>References <a class="el" href="Event_8h_source.html#l00177">m_timeStamp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                                                      {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">m_timeStamp</a>;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a52a91490003e610a3eba1dec29e79f6d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">dqm4hep::core::Event::m_timeStamp</a></div><div class="ttdeci">TimePoint m_timeStamp</div><div class="ttdoc">The event time stamp. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00177">Event.h:177</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -557,13 +654,13 @@ template&lt;typename T &gt; </div>
 
 <p>Get the event type. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00248">248</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00264">264</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00159">m_type</a>.</p>
-<div class="fragment"><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                                          {</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">m_type</a>;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_af5968aec2e0a660292837b4ce1400843"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">dqm4hep::core::Event::m_type</a></div><div class="ttdeci">EventType m_type</div><div class="ttdoc">The event type. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00159">Event.h:159</a></div></div>
+<p>References <a class="el" href="Event_8h_source.html#l00175">m_type</a>.</p>
+<div class="fragment"><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                                          {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">m_type</a>;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_af5968aec2e0a660292837b4ce1400843"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">dqm4hep::core::Event::m_type</a></div><div class="ttdeci">EventType m_type</div><div class="ttdoc">The event type. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00175">Event.h:175</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -617,7 +714,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="Event_8cc_source.html#l00075">75</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00163">m_eventNumber</a>, <a class="el" href="Event_8h_source.html#l00162">m_eventSize</a>, <a class="el" href="Event_8h_source.html#l00164">m_runNumber</a>, <a class="el" href="Event_8h_source.html#l00160">m_source</a>, <a class="el" href="Event_8h_source.html#l00266">setTimeStamp()</a>, and <a class="el" href="Event_8h_source.html#l00242">setType()</a>.</p>
+<p>References <a class="el" href="Event_8h_source.html#l00179">m_eventNumber</a>, <a class="el" href="Event_8h_source.html#l00178">m_eventSize</a>, <a class="el" href="Event_8h_source.html#l00180">m_runNumber</a>, <a class="el" href="Event_8h_source.html#l00176">m_source</a>, <a class="el" href="Event_8h_source.html#l00282">setTimeStamp()</a>, and <a class="el" href="Event_8h_source.html#l00258">setType()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                              {</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      uint8_t type(0);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      int64_t timeStamp(0);</div>
@@ -634,12 +731,12 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keywordflow">return</span> xdrstream::XDR_SUCCESS;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a4d99b8e79925b571c02d3d4376afe022"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">dqm4hep::core::Event::m_source</a></div><div class="ttdeci">std::string m_source</div><div class="ttdoc">The event source. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00160">Event.h:160</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a8e19534d84bcce86fa9bad40b4c7eb41"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">dqm4hep::core::Event::m_eventSize</a></div><div class="ttdeci">uint64_t m_eventSize</div><div class="ttdoc">The serialized event size (unit bytes) </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00162">Event.h:162</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a3c3fc8ea94917fcadb20c6459d942696"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a3c3fc8ea94917fcadb20c6459d942696">dqm4hep::core::Event::setType</a></div><div class="ttdeci">void setType(EventType type)</div><div class="ttdoc">Set the event type. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00242">Event.h:242</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a3a77f3c1ddd853987f74824d881bb3ef"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">dqm4hep::core::Event::m_eventNumber</a></div><div class="ttdeci">uint32_t m_eventNumber</div><div class="ttdoc">The event number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00163">Event.h:163</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a94c8ad2964e0e924f599dbb4630f48d4"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a94c8ad2964e0e924f599dbb4630f48d4">dqm4hep::core::Event::setTimeStamp</a></div><div class="ttdeci">void setTimeStamp(const TimePoint &amp;timeStamp)</div><div class="ttdoc">Set the event time stamp. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00266">Event.h:266</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_ab29a4af2bf6fb951c2f38490d792b64a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">dqm4hep::core::Event::m_runNumber</a></div><div class="ttdeci">uint32_t m_runNumber</div><div class="ttdoc">The run number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00164">Event.h:164</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a4d99b8e79925b571c02d3d4376afe022"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">dqm4hep::core::Event::m_source</a></div><div class="ttdeci">std::string m_source</div><div class="ttdoc">The event source. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00176">Event.h:176</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a8e19534d84bcce86fa9bad40b4c7eb41"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">dqm4hep::core::Event::m_eventSize</a></div><div class="ttdeci">uint64_t m_eventSize</div><div class="ttdoc">The serialized event size (unit bytes) </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00178">Event.h:178</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a3c3fc8ea94917fcadb20c6459d942696"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a3c3fc8ea94917fcadb20c6459d942696">dqm4hep::core::Event::setType</a></div><div class="ttdeci">void setType(EventType type)</div><div class="ttdoc">Set the event type. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00258">Event.h:258</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a3a77f3c1ddd853987f74824d881bb3ef"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">dqm4hep::core::Event::m_eventNumber</a></div><div class="ttdeci">uint32_t m_eventNumber</div><div class="ttdoc">The event number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00179">Event.h:179</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a94c8ad2964e0e924f599dbb4630f48d4"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a94c8ad2964e0e924f599dbb4630f48d4">dqm4hep::core::Event::setTimeStamp</a></div><div class="ttdeci">void setTimeStamp(const TimePoint &amp;timeStamp)</div><div class="ttdoc">Set the event time stamp. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00282">Event.h:282</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_ab29a4af2bf6fb951c2f38490d792b64a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">dqm4hep::core::Event::m_runNumber</a></div><div class="ttdeci">uint32_t m_runNumber</div><div class="ttdoc">The run number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00180">Event.h:180</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -680,20 +777,20 @@ template&lt;typename T &gt; </div>
 <p>Set the event. </p>
 <p>Ownership transfered to event instance if isOwner argument set to true </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00228">228</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00244">244</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00356">dqm4hep::core::EventBase&lt; T &gt;::clear()</a>, and <a class="el" href="Event_8h_source.html#l00347">dqm4hep::core::EventBase&lt; T &gt;::setEvent()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                                                     {</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;      EventBase&lt;T&gt; *<span class="keyword">const</span> pEventBase(<span class="keyword">dynamic_cast&lt;</span>EventBase&lt;T&gt; *const<span class="keyword">&gt;</span>(<span class="keyword">this</span>));</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      <span class="keywordflow">if</span> (NULL == pEventBase) {</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keywordflow">if</span> (owner) {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;          <span class="keyword">delete</span> pEvent;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        }</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      }</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      pEventBase-&gt;clear();</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      pEventBase-&gt;setEvent(pEvent, owner);</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
+<p>References <a class="el" href="Event_8h_source.html#l00372">dqm4hep::core::EventBase&lt; T &gt;::clear()</a>, and <a class="el" href="Event_8h_source.html#l00363">dqm4hep::core::EventBase&lt; T &gt;::setEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                                     {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      EventBase&lt;T&gt; *<span class="keyword">const</span> pEventBase(<span class="keyword">dynamic_cast&lt;</span>EventBase&lt;T&gt; *const<span class="keyword">&gt;</span>(<span class="keyword">this</span>));</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      <span class="keywordflow">if</span> (NULL == pEventBase) {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">if</span> (owner) {</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;          <span class="keyword">delete</span> pEvent;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      pEventBase-&gt;clear();</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      pEventBase-&gt;setEvent(pEvent, owner);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -721,13 +818,13 @@ template&lt;typename T &gt; </div>
 
 <p>Set the event number. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00290">290</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00306">306</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00163">m_eventNumber</a>.</p>
-<div class="fragment"><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                                                          {</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">m_eventNumber</a> = eventNumber;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a3a77f3c1ddd853987f74824d881bb3ef"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">dqm4hep::core::Event::m_eventNumber</a></div><div class="ttdeci">uint32_t m_eventNumber</div><div class="ttdoc">The event number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00163">Event.h:163</a></div></div>
+<p>References <a class="el" href="Event_8h_source.html#l00179">m_eventNumber</a>.</p>
+<div class="fragment"><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                                                          {</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">m_eventNumber</a> = eventNumber;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a3a77f3c1ddd853987f74824d881bb3ef"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">dqm4hep::core::Event::m_eventNumber</a></div><div class="ttdeci">uint32_t m_eventNumber</div><div class="ttdoc">The event number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00179">Event.h:179</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -755,13 +852,13 @@ template&lt;typename T &gt; </div>
 
 <p>Set the real event implementation size, as extracted after its serialization (unit bytes) </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00278">278</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00294">294</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00162">m_eventSize</a>.</p>
-<div class="fragment"><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                                                      {</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">m_eventSize</a> = eventSize;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a8e19534d84bcce86fa9bad40b4c7eb41"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">dqm4hep::core::Event::m_eventSize</a></div><div class="ttdeci">uint64_t m_eventSize</div><div class="ttdoc">The serialized event size (unit bytes) </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00162">Event.h:162</a></div></div>
+<p>References <a class="el" href="Event_8h_source.html#l00178">m_eventSize</a>.</p>
+<div class="fragment"><div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                                                      {</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">m_eventSize</a> = eventSize;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a8e19534d84bcce86fa9bad40b4c7eb41"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">dqm4hep::core::Event::m_eventSize</a></div><div class="ttdeci">uint64_t m_eventSize</div><div class="ttdoc">The serialized event size (unit bytes) </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00178">Event.h:178</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -789,13 +886,13 @@ template&lt;typename T &gt; </div>
 
 <p>Set the run number. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00302">302</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00318">318</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00164">m_runNumber</a>.</p>
-<div class="fragment"><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                                                      {</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">m_runNumber</a> = runNumber;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_ab29a4af2bf6fb951c2f38490d792b64a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">dqm4hep::core::Event::m_runNumber</a></div><div class="ttdeci">uint32_t m_runNumber</div><div class="ttdoc">The run number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00164">Event.h:164</a></div></div>
+<p>References <a class="el" href="Event_8h_source.html#l00180">m_runNumber</a>.</p>
+<div class="fragment"><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                                                      {</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">m_runNumber</a> = runNumber;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_ab29a4af2bf6fb951c2f38490d792b64a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">dqm4hep::core::Event::m_runNumber</a></div><div class="ttdeci">uint32_t m_runNumber</div><div class="ttdoc">The run number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00180">Event.h:180</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -823,13 +920,13 @@ template&lt;typename T &gt; </div>
 
 <p>Get the event source. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00254">254</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00270">270</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00160">m_source</a>.</p>
-<div class="fragment"><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                                                            {</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">m_source</a> = sourceName;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a4d99b8e79925b571c02d3d4376afe022"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">dqm4hep::core::Event::m_source</a></div><div class="ttdeci">std::string m_source</div><div class="ttdoc">The event source. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00160">Event.h:160</a></div></div>
+<p>References <a class="el" href="Event_8h_source.html#l00176">m_source</a>.</p>
+<div class="fragment"><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                                                            {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">m_source</a> = sourceName;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a4d99b8e79925b571c02d3d4376afe022"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">dqm4hep::core::Event::m_source</a></div><div class="ttdeci">std::string m_source</div><div class="ttdoc">The event source. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00176">Event.h:176</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -851,11 +948,11 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="Event_8cc_source.html#l00047">47</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00165">m_streamerName</a>.</p>
+<p>References <a class="el" href="Event_8h_source.html#l00181">m_streamerName</a>.</p>
 <div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                     {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a64bb80cc7a5db1304f681a24a9995f8f">m_streamerName</a> = name;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a64bb80cc7a5db1304f681a24a9995f8f"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a64bb80cc7a5db1304f681a24a9995f8f">dqm4hep::core::Event::m_streamerName</a></div><div class="ttdeci">std::string m_streamerName</div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00165">Event.h:165</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a64bb80cc7a5db1304f681a24a9995f8f"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a64bb80cc7a5db1304f681a24a9995f8f">dqm4hep::core::Event::m_streamerName</a></div><div class="ttdeci">std::string m_streamerName</div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00181">Event.h:181</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -883,15 +980,15 @@ template&lt;typename T &gt; </div>
 
 <p>Set the event time stamp. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00266">266</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00282">282</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00161">m_timeStamp</a>.</p>
+<p>References <a class="el" href="Event_8h_source.html#l00177">m_timeStamp</a>.</p>
 
 <p>Referenced by <a class="el" href="Event_8cc_source.html#l00075">readBase()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                                                              {</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">m_timeStamp</a> = timeStamp;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a52a91490003e610a3eba1dec29e79f6d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">dqm4hep::core::Event::m_timeStamp</a></div><div class="ttdeci">TimePoint m_timeStamp</div><div class="ttdoc">The event time stamp. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00161">Event.h:161</a></div></div>
+<div class="fragment"><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                                                              {</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">m_timeStamp</a> = timeStamp;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a52a91490003e610a3eba1dec29e79f6d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">dqm4hep::core::Event::m_timeStamp</a></div><div class="ttdeci">TimePoint m_timeStamp</div><div class="ttdoc">The event time stamp. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00177">Event.h:177</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -919,15 +1016,15 @@ template&lt;typename T &gt; </div>
 
 <p>Set the event type. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00242">242</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00258">258</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00159">m_type</a>.</p>
+<p>References <a class="el" href="Event_8h_source.html#l00175">m_type</a>.</p>
 
 <p>Referenced by <a class="el" href="Event_8cc_source.html#l00075">readBase()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                                             {</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">m_type</a> = type;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_af5968aec2e0a660292837b4ce1400843"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">dqm4hep::core::Event::m_type</a></div><div class="ttdeci">EventType m_type</div><div class="ttdoc">The event type. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00159">Event.h:159</a></div></div>
+<div class="fragment"><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                                             {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">m_type</a> = type;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_af5968aec2e0a660292837b4ce1400843"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">dqm4hep::core::Event::m_type</a></div><div class="ttdeci">EventType m_type</div><div class="ttdoc">The event type. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00175">Event.h:175</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -957,7 +1054,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="Event_8cc_source.html#l00059">59</a> of file <a class="el" href="Event_8cc_source.html">Event.cc</a>.</p>
 
-<p>References <a class="el" href="Event_8h_source.html#l00163">m_eventNumber</a>, <a class="el" href="Event_8h_source.html#l00162">m_eventSize</a>, <a class="el" href="Event_8h_source.html#l00164">m_runNumber</a>, <a class="el" href="Event_8h_source.html#l00160">m_source</a>, <a class="el" href="Event_8h_source.html#l00161">m_timeStamp</a>, and <a class="el" href="Event_8h_source.html#l00159">m_type</a>.</p>
+<p>References <a class="el" href="Event_8h_source.html#l00179">m_eventNumber</a>, <a class="el" href="Event_8h_source.html#l00178">m_eventSize</a>, <a class="el" href="Event_8h_source.html#l00180">m_runNumber</a>, <a class="el" href="Event_8h_source.html#l00176">m_source</a>, <a class="el" href="Event_8h_source.html#l00177">m_timeStamp</a>, and <a class="el" href="Event_8h_source.html#l00175">m_type</a>.</p>
 <div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                                     {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      uint8_t type(static_cast&lt;uint8_t&gt;(<a class="code" href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">m_type</a>));</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      int64_t timeStamp = std::chrono::system_clock::to_time_t(<a class="code" href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">m_timeStamp</a>);</div>
@@ -971,12 +1068,12 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">return</span> xdrstream::XDR_SUCCESS;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a52a91490003e610a3eba1dec29e79f6d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">dqm4hep::core::Event::m_timeStamp</a></div><div class="ttdeci">TimePoint m_timeStamp</div><div class="ttdoc">The event time stamp. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00161">Event.h:161</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a4d99b8e79925b571c02d3d4376afe022"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">dqm4hep::core::Event::m_source</a></div><div class="ttdeci">std::string m_source</div><div class="ttdoc">The event source. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00160">Event.h:160</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a8e19534d84bcce86fa9bad40b4c7eb41"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">dqm4hep::core::Event::m_eventSize</a></div><div class="ttdeci">uint64_t m_eventSize</div><div class="ttdoc">The serialized event size (unit bytes) </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00162">Event.h:162</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_af5968aec2e0a660292837b4ce1400843"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">dqm4hep::core::Event::m_type</a></div><div class="ttdeci">EventType m_type</div><div class="ttdoc">The event type. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00159">Event.h:159</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a3a77f3c1ddd853987f74824d881bb3ef"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">dqm4hep::core::Event::m_eventNumber</a></div><div class="ttdeci">uint32_t m_eventNumber</div><div class="ttdoc">The event number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00163">Event.h:163</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_ab29a4af2bf6fb951c2f38490d792b64a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">dqm4hep::core::Event::m_runNumber</a></div><div class="ttdeci">uint32_t m_runNumber</div><div class="ttdoc">The run number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00164">Event.h:164</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a52a91490003e610a3eba1dec29e79f6d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a52a91490003e610a3eba1dec29e79f6d">dqm4hep::core::Event::m_timeStamp</a></div><div class="ttdeci">TimePoint m_timeStamp</div><div class="ttdoc">The event time stamp. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00177">Event.h:177</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a4d99b8e79925b571c02d3d4376afe022"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a4d99b8e79925b571c02d3d4376afe022">dqm4hep::core::Event::m_source</a></div><div class="ttdeci">std::string m_source</div><div class="ttdoc">The event source. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00176">Event.h:176</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a8e19534d84bcce86fa9bad40b4c7eb41"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a8e19534d84bcce86fa9bad40b4c7eb41">dqm4hep::core::Event::m_eventSize</a></div><div class="ttdeci">uint64_t m_eventSize</div><div class="ttdoc">The serialized event size (unit bytes) </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00178">Event.h:178</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_af5968aec2e0a660292837b4ce1400843"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#af5968aec2e0a660292837b4ce1400843">dqm4hep::core::Event::m_type</a></div><div class="ttdeci">EventType m_type</div><div class="ttdoc">The event type. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00175">Event.h:175</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a3a77f3c1ddd853987f74824d881bb3ef"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a3a77f3c1ddd853987f74824d881bb3ef">dqm4hep::core::Event::m_eventNumber</a></div><div class="ttdeci">uint32_t m_eventNumber</div><div class="ttdoc">The event number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00179">Event.h:179</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_ab29a4af2bf6fb951c2f38490d792b64a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#ab29a4af2bf6fb951c2f38490d792b64a">dqm4hep::core::Event::m_runNumber</a></div><div class="ttdeci">uint32_t m_runNumber</div><div class="ttdoc">The run number. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00180">Event.h:180</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1024,9 +1121,9 @@ template&lt;typename T &gt; </div>
 
 <p>The event number. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00163">163</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00179">179</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Event_8cc_source.html#l00036">clear()</a>, <a class="el" href="Event_8h_source.html#l00296">getEventNumber()</a>, <a class="el" href="Event_8cc_source.html#l00075">readBase()</a>, <a class="el" href="Event_8h_source.html#l00290">setEventNumber()</a>, and <a class="el" href="Event_8cc_source.html#l00059">writeBase()</a>.</p>
+<p>Referenced by <a class="el" href="Event_8cc_source.html#l00036">clear()</a>, <a class="el" href="Event_8h_source.html#l00312">getEventNumber()</a>, <a class="el" href="Event_8cc_source.html#l00075">readBase()</a>, <a class="el" href="Event_8h_source.html#l00306">setEventNumber()</a>, and <a class="el" href="Event_8cc_source.html#l00059">writeBase()</a>.</p>
 
 </div>
 </div>
@@ -1050,9 +1147,9 @@ template&lt;typename T &gt; </div>
 
 <p>The serialized event size (unit bytes) </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00162">162</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00178">178</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Event_8cc_source.html#l00036">clear()</a>, <a class="el" href="Event_8h_source.html#l00284">getEventSize()</a>, <a class="el" href="Event_8cc_source.html#l00075">readBase()</a>, <a class="el" href="Event_8h_source.html#l00278">setEventSize()</a>, and <a class="el" href="Event_8cc_source.html#l00059">writeBase()</a>.</p>
+<p>Referenced by <a class="el" href="Event_8cc_source.html#l00036">clear()</a>, <a class="el" href="Event_8h_source.html#l00300">getEventSize()</a>, <a class="el" href="Event_8cc_source.html#l00075">readBase()</a>, <a class="el" href="Event_8h_source.html#l00294">setEventSize()</a>, and <a class="el" href="Event_8cc_source.html#l00059">writeBase()</a>.</p>
 
 </div>
 </div>
@@ -1076,9 +1173,9 @@ template&lt;typename T &gt; </div>
 
 <p>The run number. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00164">164</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00180">180</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Event_8cc_source.html#l00036">clear()</a>, <a class="el" href="Event_8h_source.html#l00308">getRunNumber()</a>, <a class="el" href="Event_8cc_source.html#l00075">readBase()</a>, <a class="el" href="Event_8h_source.html#l00302">setRunNumber()</a>, and <a class="el" href="Event_8cc_source.html#l00059">writeBase()</a>.</p>
+<p>Referenced by <a class="el" href="Event_8cc_source.html#l00036">clear()</a>, <a class="el" href="Event_8h_source.html#l00324">getRunNumber()</a>, <a class="el" href="Event_8cc_source.html#l00075">readBase()</a>, <a class="el" href="Event_8h_source.html#l00318">setRunNumber()</a>, and <a class="el" href="Event_8cc_source.html#l00059">writeBase()</a>.</p>
 
 </div>
 </div>
@@ -1102,9 +1199,9 @@ template&lt;typename T &gt; </div>
 
 <p>The event source. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00160">160</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00176">176</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Event_8cc_source.html#l00036">clear()</a>, <a class="el" href="Event_8h_source.html#l00260">getSource()</a>, <a class="el" href="Event_8cc_source.html#l00075">readBase()</a>, <a class="el" href="Event_8h_source.html#l00254">setSource()</a>, and <a class="el" href="Event_8cc_source.html#l00059">writeBase()</a>.</p>
+<p>Referenced by <a class="el" href="Event_8cc_source.html#l00036">clear()</a>, <a class="el" href="Event_8h_source.html#l00276">getSource()</a>, <a class="el" href="Event_8cc_source.html#l00075">readBase()</a>, <a class="el" href="Event_8h_source.html#l00270">setSource()</a>, and <a class="el" href="Event_8cc_source.html#l00059">writeBase()</a>.</p>
 
 </div>
 </div>
@@ -1126,7 +1223,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00165">165</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00181">181</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
 <p>Referenced by <a class="el" href="Event_8cc_source.html#l00053">getStreamerName()</a>, and <a class="el" href="Event_8cc_source.html#l00047">setStreamerName()</a>.</p>
 
@@ -1152,9 +1249,9 @@ template&lt;typename T &gt; </div>
 
 <p>The event time stamp. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00161">161</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00177">177</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Event_8cc_source.html#l00036">clear()</a>, <a class="el" href="Event_8h_source.html#l00272">getTimeStamp()</a>, <a class="el" href="Event_8h_source.html#l00266">setTimeStamp()</a>, and <a class="el" href="Event_8cc_source.html#l00059">writeBase()</a>.</p>
+<p>Referenced by <a class="el" href="Event_8cc_source.html#l00036">clear()</a>, <a class="el" href="Event_8h_source.html#l00288">getTimeStamp()</a>, <a class="el" href="Event_8h_source.html#l00282">setTimeStamp()</a>, and <a class="el" href="Event_8cc_source.html#l00059">writeBase()</a>.</p>
 
 </div>
 </div>
@@ -1178,9 +1275,9 @@ template&lt;typename T &gt; </div>
 
 <p>The event type. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00159">159</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00175">175</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Event_8cc_source.html#l00036">clear()</a>, <a class="el" href="Event_8h_source.html#l00248">getType()</a>, <a class="el" href="Event_8h_source.html#l00242">setType()</a>, and <a class="el" href="Event_8cc_source.html#l00059">writeBase()</a>.</p>
+<p>Referenced by <a class="el" href="Event_8cc_source.html#l00036">clear()</a>, <a class="el" href="Event_8h_source.html#l00264">getType()</a>, <a class="el" href="Event_8h_source.html#l00258">setType()</a>, and <a class="el" href="Event_8cc_source.html#l00059">writeBase()</a>.</p>
 
 </div>
 </div>
@@ -1191,7 +1288,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 8 2018 15:40:56 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 10 2018 23:16:53 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
