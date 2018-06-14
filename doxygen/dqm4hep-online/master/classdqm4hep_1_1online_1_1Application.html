@@ -725,7 +725,7 @@ template&lt;typename Controller &gt; </div>
 
 <p>References <a class="el" href="Application_8h_source.html#l00497">m_commandHandlerPtrMap</a>, <a class="el" href="Application_8h_source.html#l00509">m_eventLoop</a>, <a class="el" href="Application_8h_source.html#l00487">m_server</a>, <a class="el" href="Application_8cc_source.html#l00177">noServer()</a>, and <a class="el" href="Application_8cc_source.html#l00512">dqm4hep::online::Application::NetworkHandler::postCommandEvent()</a>.</p>
 
-<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00117">dqm4hep::online::ModuleApplication::onInit()</a>.</p>
+<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00120">dqm4hep::online::ModuleApplication::onInit()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                                                                                                    {</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1Application.html#af2e2e41977dabd637da001054363e195">noServer</a>()){</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="keywordflow">throw</span> core::StatusCodeException(core::STATUS_CODE_NOT_ALLOWED);</div>
@@ -961,7 +961,7 @@ template&lt;typename Controller &gt; </div>
 
 <p>References <a class="el" href="AppEventLoop_8cc_source.html#l00279">dqm4hep::online::AppEventLoop::addTimer()</a>, and <a class="el" href="Application_8h_source.html#l00509">m_eventLoop</a>.</p>
 
-<p>Referenced by <a class="el" href="Application_8cc_source.html#l00240">exec()</a>, <a class="el" href="EventCollector_8cc_source.html#l00086">dqm4hep::online::EventCollector::onInit()</a>, and <a class="el" href="ModuleApplication_8cc_source.html#l00117">dqm4hep::online::ModuleApplication::onInit()</a>.</p>
+<p>Referenced by <a class="el" href="Application_8cc_source.html#l00240">exec()</a>, <a class="el" href="EventCollector_8cc_source.html#l00086">dqm4hep::online::EventCollector::onInit()</a>, and <a class="el" href="ModuleApplication_8cc_source.html#l00120">dqm4hep::online::ModuleApplication::onInit()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                                       {</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;      <span class="keyword">auto</span> timer = <span class="keyword">new</span> AppTimer(<a class="code" href="classdqm4hep_1_1online_1_1Application.html#aa7610139861c72866142ce1018629d32">m_eventLoop</a>);</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Application.html#aa7610139861c72866142ce1018629d32">m_eventLoop</a>.<a class="code" href="classdqm4hep_1_1online_1_1AppEventLoop.html#af22700cfb9608aa20bb5bb5837c82c44">addTimer</a>(timer);</div>
@@ -1068,6 +1068,8 @@ template&lt;typename Controller &gt; </div>
 <p>Definition at line <a class="el" href="Application_8cc_source.html#l00151">151</a> of file <a class="el" href="Application_8cc_source.html">Application.cc</a>.</p>
 
 <p>References <a class="el" href="Application_8cc_source.html#l00298">initialized()</a>, and <a class="el" href="Application_8h_source.html#l00481">m_statsEnabled</a>.</p>
+
+<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00347">dqm4hep::online::ModuleApplication::parseSteeringFile()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                                             {</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1Application.html#a33c4d411137d8880a2a06dbc18c1942b">initialized</a>()) {</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        dqm_error( <span class="stringliteral">&quot;Application::enableStats(): Couldn&#39;t enable/disable stats, app is already initialized !&quot;</span> );</div>
@@ -1194,6 +1196,8 @@ template&lt;typename Controller &gt; </div>
 <p>Definition at line <a class="el" href="Application_8cc_source.html#l00292">292</a> of file <a class="el" href="Application_8cc_source.html">Application.cc</a>.</p>
 
 <p>References <a class="el" href="AppEventLoop_8cc_source.html#l00150">dqm4hep::online::AppEventLoop::exit()</a>, and <a class="el" href="Application_8h_source.html#l00509">m_eventLoop</a>.</p>
+
+<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00153">dqm4hep::online::ModuleApplication::onEvent()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                                         {</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Application.html#aa7610139861c72866142ce1018629d32">m_eventLoop</a>.<a class="code" href="classdqm4hep_1_1online_1_1AppEventLoop.html#a2c55eb4c2b31d2be1a4bb863173c6190">exit</a>(returnCode);</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    }</div>
@@ -1384,7 +1388,7 @@ template&lt;typename Controller &gt; </div>
 
 <p>References <a class="el" href="Application_8h_source.html#l00473">m_name</a>.</p>
 
-<p>Referenced by <a class="el" href="EventCollector_8cc_source.html#l00156">dqm4hep::online::EventCollector::handleRegistration()</a>, <a class="el" href="Application_8cc_source.html#l00183">init()</a>, <a class="el" href="ModuleApplication_8cc_source.html#l00143">dqm4hep::online::ModuleApplication::onEvent()</a>, <a class="el" href="EventCollector_8cc_source.html#l00086">dqm4hep::online::EventCollector::onInit()</a>, <a class="el" href="ModuleApplication_8cc_source.html#l00117">dqm4hep::online::ModuleApplication::onInit()</a>, and <a class="el" href="Application_8cc_source.html#l00132">sendStat()</a>.</p>
+<p>Referenced by <a class="el" href="EventCollector_8cc_source.html#l00156">dqm4hep::online::EventCollector::handleRegistration()</a>, <a class="el" href="Application_8cc_source.html#l00183">init()</a>, <a class="el" href="ModuleApplication_8cc_source.html#l00153">dqm4hep::online::ModuleApplication::onEvent()</a>, <a class="el" href="EventCollector_8cc_source.html#l00086">dqm4hep::online::EventCollector::onInit()</a>, <a class="el" href="ModuleApplication_8cc_source.html#l00120">dqm4hep::online::ModuleApplication::onInit()</a>, and <a class="el" href="Application_8cc_source.html#l00132">sendStat()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                             {</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1Application.html#a16e4af8d873bb0db00002a40ce760fbf">m_name</a>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
@@ -1665,7 +1669,7 @@ template&lt;typename Controller &gt; </div>
 
 <p>References <a class="el" href="Application_8h_source.html#l00491">m_client</a>, <a class="el" href="Application_8h_source.html#l00509">m_eventLoop</a>, <a class="el" href="Application_8h_source.html#l00493">m_serviceHandlerPtrMap</a>, <a class="el" href="Application_8cc_source.html#l00177">noServer()</a>, and <a class="el" href="Application_8cc_source.html#l00467">dqm4hep::online::Application::NetworkHandler::postServiceContent()</a>.</p>
 
-<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00117">dqm4hep::online::ModuleApplication::onInit()</a>.</p>
+<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00120">dqm4hep::online::ModuleApplication::onInit()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                                                                                                {</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1Application.html#af2e2e41977dabd637da001054363e195">noServer</a>()){</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="keywordflow">throw</span> core::StatusCodeException(core::STATUS_CODE_NOT_ALLOWED);</div>
@@ -1715,7 +1719,7 @@ template&lt;typename Controller &gt; </div>
 
 <p>References <a class="el" href="Application_8h_source.html#l00509">m_eventLoop</a>, and <a class="el" href="AppEventLoop_8cc_source.html#l00304">dqm4hep::online::AppEventLoop::removeTimer()</a>.</p>
 
-<p>Referenced by <a class="el" href="Application_8cc_source.html#l00041">~Application()</a>, <a class="el" href="EventCollector_8cc_source.html#l00043">dqm4hep::online::EventCollector::~EventCollector()</a>, and <a class="el" href="ModuleApplication_8cc_source.html#l00047">dqm4hep::online::ModuleApplication::~ModuleApplication()</a>.</p>
+<p>Referenced by <a class="el" href="Application_8cc_source.html#l00041">~Application()</a>, <a class="el" href="EventCollector_8cc_source.html#l00043">dqm4hep::online::EventCollector::~EventCollector()</a>, and <a class="el" href="ModuleApplication_8cc_source.html#l00050">dqm4hep::online::ModuleApplication::~ModuleApplication()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;                                                 {</div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Application.html#aa7610139861c72866142ce1018629d32">m_eventLoop</a>.<a class="code" href="classdqm4hep_1_1online_1_1AppEventLoop.html#ad20d7d919941c9d8a8bc684c607404e5">removeTimer</a>(timer);</div>
 <div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    }</div>
@@ -1962,7 +1966,7 @@ template&lt;typename Operation &gt; </div>
 
 <p>References <a class="el" href="Application_8h_source.html#l00491">m_client</a>.</p>
 
-<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00227">dqm4hep::online::ModuleApplication::onStart()</a>.</p>
+<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00255">dqm4hep::online::ModuleApplication::onStart()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;                                                                                                              {</div>
 <div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Application.html#a1753b3ab388e8d0765eee7ec7d0808ed">m_client</a>.sendRequest(rname, request, operation);</div>
 <div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    }</div>
@@ -2091,7 +2095,7 @@ template&lt;typename Operation &gt; </div>
 
 <p>References <a class="el" href="Application_8h_source.html#l00501">m_logger</a>, and <a class="el" href="Application_8h_source.html#l00503">m_logLevel</a>.</p>
 
-<p>Referenced by <a class="el" href="EventCollector_8cc_source.html#l00050">dqm4hep::online::EventCollector::parseCmdLine()</a>, and <a class="el" href="ModuleApplication_8cc_source.html#l00053">dqm4hep::online::ModuleApplication::parseCmdLine()</a>.</p>
+<p>Referenced by <a class="el" href="EventCollector_8cc_source.html#l00050">dqm4hep::online::EventCollector::parseCmdLine()</a>, and <a class="el" href="ModuleApplication_8cc_source.html#l00056">dqm4hep::online::ModuleApplication::parseCmdLine()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                                     {</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Application.html#a440a263a4e6b6dca8abb0ecfb866aea5">m_logLevel</a> = lvl;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> != <a class="code" href="classdqm4hep_1_1online_1_1Application.html#abb17635142438f57a50924ee98f06ffc">m_logger</a>) {</div>
@@ -2129,7 +2133,7 @@ template&lt;typename Operation &gt; </div>
 
 <p>References <a class="el" href="Application_8cc_source.html#l00298">initialized()</a>, and <a class="el" href="Application_8h_source.html#l00473">m_name</a>.</p>
 
-<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00324">dqm4hep::online::ModuleApplication::configureModule()</a>, and <a class="el" href="EventCollector_8cc_source.html#l00050">dqm4hep::online::EventCollector::parseCmdLine()</a>.</p>
+<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00397">dqm4hep::online::ModuleApplication::configureModule()</a>, and <a class="el" href="EventCollector_8cc_source.html#l00050">dqm4hep::online::EventCollector::parseCmdLine()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                      {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1Application.html#a33c4d411137d8880a2a06dbc18c1942b">initialized</a>()) {</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        dqm_error( <span class="stringliteral">&quot;Application::setName(): Couldn&#39;t set app name, app is already initialized !&quot;</span> );</div>
@@ -2248,7 +2252,7 @@ template&lt;typename Operation &gt; </div>
 
 <p>References <a class="el" href="Application_8cc_source.html#l00298">initialized()</a>, and <a class="el" href="Application_8h_source.html#l00471">m_type</a>.</p>
 
-<p>Referenced by <a class="el" href="EventCollector_8cc_source.html#l00050">dqm4hep::online::EventCollector::parseCmdLine()</a>, and <a class="el" href="ModuleApplication_8cc_source.html#l00053">dqm4hep::online::ModuleApplication::parseCmdLine()</a>.</p>
+<p>Referenced by <a class="el" href="EventCollector_8cc_source.html#l00050">dqm4hep::online::EventCollector::parseCmdLine()</a>, and <a class="el" href="ModuleApplication_8cc_source.html#l00056">dqm4hep::online::ModuleApplication::parseCmdLine()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                      {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1Application.html#a33c4d411137d8880a2a06dbc18c1942b">initialized</a>()) {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        dqm_error( <span class="stringliteral">&quot;Application::setType(): Couldn&#39;t set app type, app is already initialized !&quot;</span> );</div>
@@ -2440,7 +2444,7 @@ template&lt;typename Operation &gt; </div>
 
 <p>Definition at line <a class="el" href="Application_8h_source.html#l00509">509</a> of file <a class="el" href="Application_8h_source.html">Application.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Application_8h_source.html#l00588">createDirectCommand()</a>, <a class="el" href="Application_8cc_source.html#l00341">createQueuedCommand()</a>, <a class="el" href="Application_8h_source.html#l00568">createRequestHandler()</a>, <a class="el" href="Application_8cc_source.html#l00442">createTimer()</a>, <a class="el" href="Application_8h_source.html#l00552">directSubscribe()</a>, <a class="el" href="Application_8cc_source.html#l00240">exec()</a>, <a class="el" href="Application_8cc_source.html#l00292">exit()</a>, <a class="el" href="Application_8cc_source.html#l00512">dqm4hep::online::Application::NetworkHandler::postCommandEvent()</a>, <a class="el" href="Application_8cc_source.html#l00467">dqm4hep::online::Application::NetworkHandler::postServiceContent()</a>, <a class="el" href="ModuleApplication_8cc_source.html#l00493">dqm4hep::online::ModuleApplication::postStandaloneProcess()</a>, <a class="el" href="ModuleApplication_8cc_source.html#l00426">dqm4hep::online::ModuleApplication::processEndOfRun()</a>, <a class="el" href="Application_8cc_source.html#l00310">queuedSubscribe()</a>, <a class="el" href="ModuleApplication_8cc_source.html#l00442">dqm4hep::online::ModuleApplication::receiveEvent()</a>, <a class="el" href="Application_8cc_source.html#l00450">removeTimer()</a>, <a class="el" href="Application_8cc_source.html#l00373">sendClientExitEvent()</a>, <a class="el" href="Application_8cc_source.html#l00541">dqm4hep::online::Application::NetworkHandler::sendCommandEvent()</a>, <a class="el" href="Application_8cc_source.html#l00504">dqm4hep::online::Application::NetworkHandler::sendRequestEvent()</a>, and <a class="el" href="Application_8cc_source.html#l00496">dqm4hep::online::Application::NetworkHandler::sendServiceContent()</a>.</p>
+<p>Referenced by <a class="el" href="Application_8h_source.html#l00588">createDirectCommand()</a>, <a class="el" href="Application_8cc_source.html#l00341">createQueuedCommand()</a>, <a class="el" href="Application_8h_source.html#l00568">createRequestHandler()</a>, <a class="el" href="Application_8cc_source.html#l00442">createTimer()</a>, <a class="el" href="Application_8h_source.html#l00552">directSubscribe()</a>, <a class="el" href="Application_8cc_source.html#l00240">exec()</a>, <a class="el" href="Application_8cc_source.html#l00292">exit()</a>, <a class="el" href="Application_8cc_source.html#l00512">dqm4hep::online::Application::NetworkHandler::postCommandEvent()</a>, <a class="el" href="Application_8cc_source.html#l00467">dqm4hep::online::Application::NetworkHandler::postServiceContent()</a>, <a class="el" href="ModuleApplication_8cc_source.html#l00655">dqm4hep::online::ModuleApplication::postStandaloneProcess()</a>, <a class="el" href="ModuleApplication_8cc_source.html#l00588">dqm4hep::online::ModuleApplication::processEndOfRun()</a>, <a class="el" href="Application_8cc_source.html#l00310">queuedSubscribe()</a>, <a class="el" href="ModuleApplication_8cc_source.html#l00604">dqm4hep::online::ModuleApplication::receiveEvent()</a>, <a class="el" href="Application_8cc_source.html#l00450">removeTimer()</a>, <a class="el" href="Application_8cc_source.html#l00373">sendClientExitEvent()</a>, <a class="el" href="Application_8cc_source.html#l00541">dqm4hep::online::Application::NetworkHandler::sendCommandEvent()</a>, <a class="el" href="Application_8cc_source.html#l00504">dqm4hep::online::Application::NetworkHandler::sendRequestEvent()</a>, and <a class="el" href="Application_8cc_source.html#l00496">dqm4hep::online::Application::NetworkHandler::sendServiceContent()</a>.</p>
 
 </div>
 </div>
@@ -2839,7 +2843,7 @@ template&lt;typename Operation &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 8 2018 11:43:51 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 14 2018 13:20:00 for DQMOnline by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
