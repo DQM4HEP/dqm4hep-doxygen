@@ -135,16 +135,16 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">time helper class  <a href="classdqm4hep_1_1core_1_1time.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdqm4hep_1_1core_1_1CpuStats.html">CpuStats</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdqm4hep_1_1core_1_1CpuStats.html" title="CpuStats struct. ">CpuStats</a> struct.  <a href="structdqm4hep_1_1core_1_1CpuStats.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdqm4hep_1_1core_1_1CpuStats.html" title="CpuStats struct Store system wide cpu usage in percentage. ">CpuStats</a> struct Store system wide cpu usage in percentage.  <a href="structdqm4hep_1_1core_1_1CpuStats.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdqm4hep_1_1core_1_1MemoryStats.html">MemoryStats</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdqm4hep_1_1core_1_1MemoryStats.html" title="MemoryStats struct All units in Mb. ">MemoryStats</a> struct All units in Mb.  <a href="structdqm4hep_1_1core_1_1MemoryStats.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdqm4hep_1_1core_1_1MemoryStats.html" title="MemoryStats struct Store system wide memory usage All units in Mb. ">MemoryStats</a> struct Store system wide memory usage All units in <b>Mb</b>.  <a href="structdqm4hep_1_1core_1_1MemoryStats.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdqm4hep_1_1core_1_1ProcessStats.html">ProcessStats</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdqm4hep_1_1core_1_1ProcessStats.html" title="ProcessStats struct All memory units in Mb. ">ProcessStats</a> struct All memory units in Mb.  <a href="structdqm4hep_1_1core_1_1ProcessStats.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdqm4hep_1_1core_1_1ProcessStats.html" title="ProcessStats struct Store cpu (time/percentage) and memory usage from current process All memory unit...">ProcessStats</a> struct Store cpu (time/percentage) and memory usage from current process All memory units in <b>kb</b> !  <a href="structdqm4hep_1_1core_1_1ProcessStats.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdqm4hep_1_1core_1_1INetworkStats.html">INetworkStats</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdqm4hep_1_1core_1_1INetworkStats.html" title="INetworkStats struct. ">INetworkStats</a> struct.  <a href="structdqm4hep_1_1core_1_1INetworkStats.html#details">More...</a><br/></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdqm4hep_1_1core_1_1INetworkStats.html" title="INetworkStats struct Store system wide network stats Units in packets or kb. ">INetworkStats</a> struct Store system wide network stats Units in <b>packets</b> or <b>kb</b>.  <a href="structdqm4hep_1_1core_1_1INetworkStats.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Logger.html">Logger</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1109,7 +1109,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00682">682</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
+<p>Definition at line <a class="el" href="Internal_8h_source.html#l00688">688</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
 
 </div>
 </div>
@@ -1697,23 +1697,24 @@ Variables</h2></td></tr>
 <p>Get some memory stats. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">object</td><td>the <a class="el" href="structdqm4hep_1_1core_1_1CpuStats.html" title="CpuStats struct. ">CpuStats</a> object to receive </td></tr>
+    <tr><td class="paramname">stats</td><td>the <a class="el" href="structdqm4hep_1_1core_1_1CpuStats.html" title="CpuStats struct Store system wide cpu usage in percentage. ">CpuStats</a> object to receive </td></tr>
+    <tr><td class="paramname">sampleTime</td><td>time between two sampling to compute load, in <b>seconds</b> </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00786">786</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;                                                       {</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;<span class="preprocessor"></span>      darwinCpuStats(stats, sampleTime);</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;<span class="preprocessor">#elif defined(__linux__)</span></div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;<span class="preprocessor"></span>      linuxCpuStats(stats, sampleTime);</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;<span class="preprocessor">#elif defined(_WIN32)</span></div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;<span class="preprocessor"></span>      winCpuStats(stats, sampleTime);</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#error &quot;Unrecognized OS plateform (not windows, linux, OSX or unix) !&quot;</span></div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;<span class="preprocessor"></span>    }</div>
+<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00789">789</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;                                                       {</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;<span class="preprocessor"></span>      darwinCpuStats(stats, sampleTime);</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;<span class="preprocessor">#elif defined(__linux__)</span></div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;<span class="preprocessor"></span>      linuxCpuStats(stats, sampleTime);</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;<span class="preprocessor">#elif defined(_WIN32)</span></div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;<span class="preprocessor"></span>      winCpuStats(stats, sampleTime);</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#error &quot;Unrecognized OS plateform (not windows, linux, OSX or unix) !&quot;</span></div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;<span class="preprocessor"></span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2048,23 +2049,23 @@ Variables</h2></td></tr>
 <p>Get some memory stats. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">object</td><td>the <a class="el" href="structdqm4hep_1_1core_1_1MemoryStats.html" title="MemoryStats struct All units in Mb. ">MemoryStats</a> object to receive </td></tr>
+    <tr><td class="paramname">stats</td><td>the <a class="el" href="structdqm4hep_1_1core_1_1MemoryStats.html" title="MemoryStats struct Store system wide memory usage All units in Mb. ">MemoryStats</a> object to receive </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00800">800</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;                                      {</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;<span class="preprocessor"></span>      darwinMemStats(stats);</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;<span class="preprocessor">#elif defined(__linux__)</span></div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;<span class="preprocessor"></span>      linuxMemStats(stats);</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;<span class="preprocessor">#elif defined(_WIN32)</span></div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;<span class="preprocessor"></span>      winMemStats(stats);</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#error &quot;Unrecognized OS plateform (not windows, linux, OSX or unix) !&quot;</span></div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;<span class="preprocessor"></span>    }</div>
+<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00803">803</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;                                      {</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;<span class="preprocessor"></span>      darwinMemStats(stats);</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;<span class="preprocessor">#elif defined(__linux__)</span></div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;<span class="preprocessor"></span>      linuxMemStats(stats);</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;<span class="preprocessor">#elif defined(_WIN32)</span></div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;<span class="preprocessor"></span>      winMemStats(stats);</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#error &quot;Unrecognized OS plateform (not windows, linux, OSX or unix) !&quot;</span></div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;<span class="preprocessor"></span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2095,23 +2096,24 @@ Variables</h2></td></tr>
 <p>Get some network stats. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">object</td><td>the NetworkStats object to receive </td></tr>
+    <tr><td class="paramname">stats</td><td>the NetworkStats object to receive </td></tr>
+    <tr><td class="paramname">sampleTime</td><td>time between two sampling to compute rates, in <b>seconds</b> </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00828">828</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;                                                           {</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;<span class="preprocessor"></span>      darwinNetStats(stats, sampleTime);</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;<span class="preprocessor">#elif defined(__linux__)</span></div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;<span class="preprocessor"></span>      linuxNetStats(stats, sampleTime);</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;<span class="preprocessor">#elif defined(_WIN32)</span></div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;<span class="preprocessor"></span>      winNetStats(stats, sampleTime);</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#error &quot;Unrecognized OS plateform (not windows, linux, OSX or unix) !&quot;</span></div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;<span class="preprocessor"></span>    }</div>
+<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00831">831</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;                                                           {</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;<span class="preprocessor"></span>      darwinNetStats(stats, sampleTime);</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;<span class="preprocessor">#elif defined(__linux__)</span></div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;<span class="preprocessor"></span>      linuxNetStats(stats, sampleTime);</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;<span class="preprocessor">#elif defined(_WIN32)</span></div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;<span class="preprocessor"></span>      winNetStats(stats, sampleTime);</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#error &quot;Unrecognized OS plateform (not windows, linux, OSX or unix) !&quot;</span></div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;<span class="preprocessor"></span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -3508,23 +3510,23 @@ template&lt;typename S &gt; </div>
 <p>Get stats from current process. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">object</td><td>the <a class="el" href="structdqm4hep_1_1core_1_1ProcessStats.html" title="ProcessStats struct All memory units in Mb. ">ProcessStats</a> object to receive </td></tr>
+    <tr><td class="paramname">stats</td><td>the <a class="el" href="structdqm4hep_1_1core_1_1ProcessStats.html" title="ProcessStats struct Store cpu (time/percentage) and memory usage from current process All memory unit...">ProcessStats</a> object to receive </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00814">814</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;                                        {</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;<span class="preprocessor"></span>      darwinProcStats(stats);</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;<span class="preprocessor">#elif defined(__linux__)</span></div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;<span class="preprocessor"></span>      linuxProcStats(stats);</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;<span class="preprocessor">#elif defined(_WIN32)</span></div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;<span class="preprocessor"></span>      winProcStats(stats);</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#error &quot;Unrecognized OS plateform (not windows, linux, OSX or unix) !&quot;</span></div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;<span class="preprocessor"></span>    }</div>
+<p>Definition at line <a class="el" href="Internal_8cc_source.html#l00817">817</a> of file <a class="el" href="Internal_8cc_source.html">Internal.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;                                        {</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;<span class="preprocessor"></span>      darwinProcStats(stats);</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;<span class="preprocessor">#elif defined(__linux__)</span></div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;<span class="preprocessor"></span>      linuxProcStats(stats);</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;<span class="preprocessor">#elif defined(_WIN32)</span></div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;<span class="preprocessor"></span>      winProcStats(stats);</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#error &quot;Unrecognized OS plateform (not windows, linux, OSX or unix) !&quot;</span></div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;<span class="preprocessor"></span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -4267,7 +4269,7 @@ template&lt;&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 14 2018 10:33:10 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 19 2018 14:06:17 for DQMCore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
