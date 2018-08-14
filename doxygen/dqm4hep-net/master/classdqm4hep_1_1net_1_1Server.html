@@ -1146,14 +1146,15 @@ template&lt;typename Controller &gt; </div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      <span class="keywordtype">char</span> *pServer, *pNode;</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;      <span class="keywordflow">while</span> (browser.getNextServer(pServer, pNode)) {</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        std::string server(pServer);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        std::string <a class="code" href="namespacedqm4hep_1_1net.html#a645845fae9eb48e0fe6e251a5ae8797e">server</a>(pServer);</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordflow">if</span> (server == serverName)</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacedqm4hep_1_1net.html#a645845fae9eb48e0fe6e251a5ae8797e">server</a> == serverName)</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      }</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    }</div>
+<div class="ttc" id="namespacedqm4hep_1_1net_html_a645845fae9eb48e0fe6e251a5ae8797e"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a645845fae9eb48e0fe6e251a5ae8797e">dqm4hep::net::server</a></div><div class="ttdeci">websocketpp::server&lt; websocketpp::config::asio &gt; server</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00046">WebSocketServer.h:46</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1392,12 +1393,13 @@ template&lt;typename Controller &gt; </div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      <span class="keywordtype">char</span> *pServer, *pNode;</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      <span class="keywordflow">while</span> (browser.getNextServer(pServer, pNode)) {</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        std::string server(pServer);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        runningServers.push_back(server);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        std::string <a class="code" href="namespacedqm4hep_1_1net.html#a645845fae9eb48e0fe6e251a5ae8797e">server</a>(pServer);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        runningServers.push_back(<a class="code" href="namespacedqm4hep_1_1net.html#a645845fae9eb48e0fe6e251a5ae8797e">server</a>);</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      }</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1net_1_1Server.html#a5f0110807b633b2e011348adb21c26bb">runningServers</a>;</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    }</div>
+<div class="ttc" id="namespacedqm4hep_1_1net_html_a645845fae9eb48e0fe6e251a5ae8797e"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a645845fae9eb48e0fe6e251a5ae8797e">dqm4hep::net::server</a></div><div class="ttdeci">websocketpp::server&lt; websocketpp::config::asio &gt; server</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00046">WebSocketServer.h:46</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Server_html_a5f0110807b633b2e011348adb21c26bb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Server.html#a5f0110807b633b2e011348adb21c26bb">dqm4hep::net::Server::runningServers</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; runningServers()</div><div class="ttdoc">Get the list of running servers. </div><div class="ttdef"><b>Definition:</b> <a href="Server_8cc_source.html#l00301">Server.cc:301</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -2136,7 +2138,7 @@ template&lt;typename Controller &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 13 2018 13:22:10 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 14 2018 12:35:36 for DQMNet by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
