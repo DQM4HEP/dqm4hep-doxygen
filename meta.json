@@ -10,6 +10,11 @@
         "master"
       ]
     }, 
+    "dqm4hep": {
+      "versions": [
+        "master"
+      ]
+    }, 
     "dqm4hep-core": {
       "versions": [
         "master"
