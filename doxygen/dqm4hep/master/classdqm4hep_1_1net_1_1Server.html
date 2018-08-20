@@ -981,7 +981,7 @@ template&lt;typename Controller &gt; </div>
 
 <p>Definition at line <a class="el" href="Server_8cc_source.html#l00335">335</a> of file <a class="el" href="Server_8cc_source.html">Server.cc</a>.</p>
 
-<p>References <a class="el" href="NetBuffer_8h_source.html#l00291">dqm4hep::net::Buffer::createModel()</a>, <a class="el" href="Internal_8h_source.html#l00544">dqm4hep::core::fillHostInfo()</a>, <a class="el" href="Server_8h_source.html#l00289">m_commandHandlerMap</a>, <a class="el" href="Server_8h_source.html#l00285">m_name</a>, <a class="el" href="Server_8h_source.html#l00288">m_requestHandlerMap</a>, <a class="el" href="Server_8h_source.html#l00287">m_serviceMap</a>, and <a class="el" href="NetBuffer_8cc_source.html#l00104">dqm4hep::net::Buffer::setModel()</a>.</p>
+<p>References <a class="el" href="NetBuffer_8h_source.html#l00291">dqm4hep::net::Buffer::createModel()</a>, <a class="el" href="Internal_8h_source.html#l00538">dqm4hep::core::fillHostInfo()</a>, <a class="el" href="Server_8h_source.html#l00289">m_commandHandlerMap</a>, <a class="el" href="Server_8h_source.html#l00285">m_name</a>, <a class="el" href="Server_8h_source.html#l00288">m_requestHandlerMap</a>, <a class="el" href="Server_8h_source.html#l00287">m_serviceMap</a>, and <a class="el" href="NetBuffer_8cc_source.html#l00104">dqm4hep::net::Buffer::setModel()</a>.</p>
 
 <p>Referenced by <a class="el" href="Server_8cc_source.html#l00044">Server()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                                                                           {</div>
@@ -1015,11 +1015,11 @@ template&lt;typename Controller &gt; </div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      response.setModel(model);</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;      model-&gt;move(std::move(serializedJson));</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    }</div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a2c057cc6c31326dcc11094a917191836"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a2c057cc6c31326dcc11094a917191836">dqm4hep::core::fillHostInfo</a></div><div class="ttdeci">void fillHostInfo(StringMap &amp;info)</div><div class="ttdoc">Fill host info (uname result + host name). </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00544">Internal.h:544</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_adc020c7501c1db5825e0b12ff30f118c"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#adc020c7501c1db5825e0b12ff30f118c">dqm4hep::core::StringMap</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; StringMap</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00316">Internal.h:316</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a2c057cc6c31326dcc11094a917191836"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a2c057cc6c31326dcc11094a917191836">dqm4hep::core::fillHostInfo</a></div><div class="ttdeci">void fillHostInfo(StringMap &amp;info)</div><div class="ttdoc">Fill host info (uname result + host name). </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00538">Internal.h:538</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_adc020c7501c1db5825e0b12ff30f118c"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#adc020c7501c1db5825e0b12ff30f118c">dqm4hep::core::StringMap</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; StringMap</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00310">Internal.h:310</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Server_html_a91604ef0556ae8fdcb824223b445a2cb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Server.html#a91604ef0556ae8fdcb824223b445a2cb">dqm4hep::net::Server::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdoc">The short server name. </div><div class="ttdef"><b>Definition:</b> <a href="Server_8h_source.html#l00285">Server.h:285</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Server_html_a3f8df86068dc99d15b908bad43f579e7"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Server.html#a3f8df86068dc99d15b908bad43f579e7">dqm4hep::net::Server::m_commandHandlerMap</a></div><div class="ttdeci">CommandHandlerMap m_commandHandlerMap</div><div class="ttdoc">The map of registered command handlers. </div><div class="ttdef"><b>Definition:</b> <a href="Server_8h_source.html#l00289">Server.h:289</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00312">Internal.h:312</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00306">Internal.h:306</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Server_html_a371ec9f51053a0be2c85630e8211f386"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Server.html#a371ec9f51053a0be2c85630e8211f386">dqm4hep::net::Server::m_requestHandlerMap</a></div><div class="ttdeci">RequestHandlerMap m_requestHandlerMap</div><div class="ttdoc">The map of registered request handlers. </div><div class="ttdef"><b>Definition:</b> <a href="Server_8h_source.html#l00288">Server.h:288</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_adbf7ece0bddde655770fc3623b8e9445"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#adbf7ece0bddde655770fc3623b8e9445">dqm4hep::core::json</a></div><div class="ttdeci">nlohmann::json json</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00010">json.h:10</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Server_html_aa5f557d3f2a966877ee6e4b425cec7e0"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Server.html#aa5f557d3f2a966877ee6e4b425cec7e0">dqm4hep::net::Server::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of registered services. </div><div class="ttdef"><b>Definition:</b> <a href="Server_8h_source.html#l00287">Server.h:287</a></div></div>
@@ -1149,7 +1149,7 @@ template&lt;typename Controller &gt; </div>
 
 <p>Definition at line <a class="el" href="Server_8cc_source.html#l00318">318</a> of file <a class="el" href="Server_8cc_source.html">Server.cc</a>.</p>
 
-<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00130">dqm4hep::online::EventSource::sendEvent()</a>.</p>
+<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00128">dqm4hep::online::EventSource::sendEvent()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                                                            {</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      DimBrowser browser;</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      browser.getServers();</div>
@@ -2154,7 +2154,7 @@ template&lt;typename Controller &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 19 2018 11:02:27 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 20 2018 20:52:10 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

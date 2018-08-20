@@ -132,10 +132,6 @@ Macros</h2></td></tr>
 <tr class="separator:aaf225a2b96038de3a42d61a1fa63654b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0143a220307f4ec82f353476ef3b8286"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Internal_8h.html#a0143a220307f4ec82f353476ef3b8286">DQM4HEP_NO_EXCEPTION</a>(Code)&#160;&#160;&#160;try { Code } catch(...) {}</td></tr>
 <tr class="separator:a0143a220307f4ec82f353476ef3b8286"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ca0f8e02cce0530cde7087ab009bc16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Internal_8h.html#a7ca0f8e02cce0530cde7087ab009bc16">XDRSTREAM_SUCCESS</a>(code)&#160;&#160;&#160;if (!XDR_TESTBIT(code, xdrstream::XDR_SUCCESS)) {return dqm4hep::core::STATUS_CODE_FAILURE;}</td></tr>
-<tr class="separator:a7ca0f8e02cce0530cde7087ab009bc16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a155fac5143f4a07537eb95f4924a8bef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Internal_8h.html#a155fac5143f4a07537eb95f4924a8bef">XDRSTREAM_SUCCESS_RESTORE</a>(code, position)&#160;&#160;&#160;if (!XDR_TESTBIT(code, xdrstream::XDR_SUCCESS)) {device-&gt;seek(position); return dqm4hep::core::STATUS_CODE_FAILURE;}</td></tr>
-<tr class="separator:a155fac5143f4a07537eb95f4924a8bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -376,58 +372,10 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7ca0f8e02cce0530cde7087ab009bc16"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define XDRSTREAM_SUCCESS</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">code</td><td>)</td>
-          <td>&#160;&#160;&#160;if (!XDR_TESTBIT(code, xdrstream::XDR_SUCCESS)) {return dqm4hep::core::STATUS_CODE_FAILURE;}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00108">108</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a155fac5143f4a07537eb95f4924a8bef"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define XDRSTREAM_SUCCESS_RESTORE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">code, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">position&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;if (!XDR_TESTBIT(code, xdrstream::XDR_SUCCESS)) {device-&gt;seek(position); return dqm4hep::core::STATUS_CODE_FAILURE;}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="Internal_8h_source.html#l00110">110</a> of file <a class="el" href="Internal_8h_source.html">Internal.h</a>.</p>
-
-<p>Referenced by <a class="el" href="OnlineElement_8cc_source.html#l00262">dqm4hep::online::OnlineElement::fromDevice()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00348">dqm4hep::core::MonitorElement::fromDevice()</a>, <a class="el" href="MonitorElementStreamer_8h_source.html#l00166">dqm4hep::core::MonitorElementStreamer::readMonitorElements()</a>, <a class="el" href="OnlineElement_8cc_source.html#l00239">dqm4hep::online::OnlineElement::toDevice()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00310">dqm4hep::core::MonitorElement::toDevice()</a>, and <a class="el" href="MonitorElementStreamer_8h_source.html#l00143">dqm4hep::core::MonitorElementStreamer::writeMonitorElements()</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 19 2018 11:02:25 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 20 2018 20:52:08 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

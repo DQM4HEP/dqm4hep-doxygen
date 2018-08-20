@@ -287,7 +287,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Client_8cc_source.html#l00071">71</a> of file <a class="el" href="Client_8cc_source.html">Client.cc</a>.</p>
 
-<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00205">dqm4hep::online::EventSource::registerMe()</a>.</p>
+<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00203">dqm4hep::online::EventSource::registerMe()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                               {</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      DimClient::setExitHandler(serverName.c_str());</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
@@ -425,7 +425,7 @@ template&lt;typename Command &gt; </div>
 
 <p>References <a class="el" href="NetBuffer_8cc_source.html#l00112">dqm4hep::net::Buffer::begin()</a>, <a class="el" href="NetBuffer_8h_source.html#l00291">dqm4hep::net::Buffer::createModel()</a>, <a class="el" href="NetBuffer_8cc_source.html#l00104">dqm4hep::net::Buffer::setModel()</a>, and <a class="el" href="NetBuffer_8cc_source.html#l00124">dqm4hep::net::Buffer::size()</a>.</p>
 
-<p>Referenced by <a class="el" href="RemoteLogger_8cc_source.html#l00050">dqm4hep::online::RemoteLogger::_sink_it()</a>, <a class="el" href="Application_8h_source.html#l00537">dqm4hep::online::Application::sendCommand()</a>, <a class="el" href="EventSource_8cc_source.html#l00130">dqm4hep::online::EventSource::sendEvent()</a>, <a class="el" href="Application_8h_source.html#l00518">dqm4hep::online::Application::sendStat()</a>, and <a class="el" href="EventSource_8cc_source.html#l00244">dqm4hep::online::EventSource::unregisterMe()</a>.</p>
+<p>Referenced by <a class="el" href="RemoteLogger_8cc_source.html#l00050">dqm4hep::online::RemoteLogger::_sink_it()</a>, <a class="el" href="Application_8h_source.html#l00537">dqm4hep::online::Application::sendCommand()</a>, <a class="el" href="EventSource_8cc_source.html#l00128">dqm4hep::online::EventSource::sendEvent()</a>, <a class="el" href="Application_8h_source.html#l00518">dqm4hep::online::Application::sendStat()</a>, and <a class="el" href="EventSource_8cc_source.html#l00242">dqm4hep::online::EventSource::unregisterMe()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                                                                                                      {</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      Buffer contents;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      <span class="keyword">auto</span> model = contents.createModel&lt;Command&gt;();</div>
@@ -542,7 +542,7 @@ template&lt;typename Request &gt; </div>
 
 <p>References <a class="el" href="NetBuffer_8h_source.html#l00291">dqm4hep::net::Buffer::createModel()</a>.</p>
 
-<p>Referenced by <a class="el" href="EventCollectorClient_8cc_source.html#l00052">dqm4hep::online::EventCollectorClient::queryEvent()</a>, <a class="el" href="Client_8cc_source.html#l00051">queryServerInfo()</a>, <a class="el" href="EventSource_8cc_source.html#l00205">dqm4hep::online::EventSource::registerMe()</a>, and <a class="el" href="Application_8h_source.html#l00544">dqm4hep::online::Application::sendRequest()</a>.</p>
+<p>Referenced by <a class="el" href="EventCollectorClient_8cc_source.html#l00052">dqm4hep::online::EventCollectorClient::queryEvent()</a>, <a class="el" href="Client_8cc_source.html#l00051">queryServerInfo()</a>, <a class="el" href="EventSource_8cc_source.html#l00203">dqm4hep::online::EventSource::registerMe()</a>, and <a class="el" href="Application_8h_source.html#l00544">dqm4hep::online::Application::sendRequest()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                                                                                       {</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      DimRpcInfo rpcInfo(const_cast&lt;char *&gt;(name.c_str()), (<span class="keywordtype">void</span> *)nullptr, 0);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      Buffer contents;</div>
@@ -844,7 +844,7 @@ template&lt;typename Controller &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 19 2018 11:02:26 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 20 2018 20:52:10 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

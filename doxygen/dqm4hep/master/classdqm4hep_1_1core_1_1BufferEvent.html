@@ -112,7 +112,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classdqm4hep_1_1core_1_1BufferEvent.html" title="BufferEvent class. ">BufferEvent</a> class. </p>
 
-<p>Definition at line <a class="el" href="BufferEvent_8h_source.html#l00046">46</a> of file <a class="el" href="BufferEvent_8h_source.html">BufferEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="BufferEvent_8h_source.html#l00043">43</a> of file <a class="el" href="BufferEvent_8h_source.html">BufferEvent.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a109bf1a24e29cfe5eea4e36aaccb2f0a"></a>
 <div class="memitem">
@@ -135,7 +135,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="BufferEvent_8cc_source.html#l00043">make_shared()</a>.</p>
+<p>Referenced by <a class="el" href="BufferEvent_8cc_source.html#l00042">make_shared()</a>.</p>
 
 </div>
 </div>
@@ -154,13 +154,13 @@ Private Attributes</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p>Definition at line <a class="el" href="BufferEvent_8cc_source.html#l00037">37</a> of file <a class="el" href="BufferEvent_8cc_source.html">BufferEvent.cc</a>.</p>
+<p>Definition at line <a class="el" href="BufferEvent_8cc_source.html#l00036">36</a> of file <a class="el" href="BufferEvent_8cc_source.html">BufferEvent.cc</a>.</p>
 
-<p>References <a class="el" href="BufferEvent_8cc_source.html#l00100">clear()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                              {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a617cb212e22190003c73f21822505f94">clear</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a617cb212e22190003c73f21822505f94"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a617cb212e22190003c73f21822505f94">dqm4hep::core::BufferEvent::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear the internal event buffer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8cc_source.html#l00100">BufferEvent.cc:100</a></div></div>
+<p>References <a class="el" href="BufferEvent_8cc_source.html#l00099">clear()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                              {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a617cb212e22190003c73f21822505f94">clear</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a617cb212e22190003c73f21822505f94"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a617cb212e22190003c73f21822505f94">dqm4hep::core::BufferEvent::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear the internal event buffer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8cc_source.html#l00099">BufferEvent.cc:99</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -180,16 +180,16 @@ Private Attributes</h2></td></tr>
 
 <p>Access the event internal buffer. </p>
 
-<p>Definition at line <a class="el" href="BufferEvent_8cc_source.html#l00088">88</a> of file <a class="el" href="BufferEvent_8cc_source.html">BufferEvent.cc</a>.</p>
+<p>Definition at line <a class="el" href="BufferEvent_8cc_source.html#l00087">87</a> of file <a class="el" href="BufferEvent_8cc_source.html">BufferEvent.cc</a>.</p>
 
-<p>References <a class="el" href="BufferEvent_8h_source.html#l00053">dqm4hep::core::BufferEvent::Buffer::m_buffer</a>, and <a class="el" href="BufferEvent_8h_source.html#l00122">m_buffer</a>.</p>
+<p>References <a class="el" href="BufferEvent_8h_source.html#l00050">dqm4hep::core::BufferEvent::Buffer::m_buffer</a>, and <a class="el" href="BufferEvent_8h_source.html#l00119">m_buffer</a>.</p>
 
-<p>Referenced by <a class="el" href="BufferEventStreamer_8cc_source.html#l00071">dqm4hep::core::BufferEventStreamer::write()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                          {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">m_buffer</a>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a5d9712fb6b2a42004d8c8aac61544159"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">dqm4hep::core::BufferEvent::m_buffer</a></div><div class="ttdeci">Buffer m_buffer</div><div class="ttdoc">The internal buffer handler. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00122">BufferEvent.h:122</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_a68eb21f13f0dbb1849a4e20d0a817ef6"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">dqm4hep::core::BufferEvent::Buffer::m_buffer</a></div><div class="ttdeci">char * m_buffer</div><div class="ttdoc">The raw buffer pointer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00053">BufferEvent.h:53</a></div></div>
+<p>Referenced by <a class="el" href="BufferEventStreamer_8cc_source.html#l00073">dqm4hep::core::BufferEventStreamer::write()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                          {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">m_buffer</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a5d9712fb6b2a42004d8c8aac61544159"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">dqm4hep::core::BufferEvent::m_buffer</a></div><div class="ttdeci">Buffer m_buffer</div><div class="ttdoc">The internal buffer handler. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00119">BufferEvent.h:119</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_a68eb21f13f0dbb1849a4e20d0a817ef6"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">dqm4hep::core::BufferEvent::Buffer::m_buffer</a></div><div class="ttdeci">char * m_buffer</div><div class="ttdoc">The raw buffer pointer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00050">BufferEvent.h:50</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -208,16 +208,16 @@ Private Attributes</h2></td></tr>
 
 <p>Access the event internal buffer length. </p>
 
-<p>Definition at line <a class="el" href="BufferEvent_8cc_source.html#l00094">94</a> of file <a class="el" href="BufferEvent_8cc_source.html">BufferEvent.cc</a>.</p>
+<p>Definition at line <a class="el" href="BufferEvent_8cc_source.html#l00093">93</a> of file <a class="el" href="BufferEvent_8cc_source.html">BufferEvent.cc</a>.</p>
 
-<p>References <a class="el" href="BufferEvent_8h_source.html#l00122">m_buffer</a>, and <a class="el" href="BufferEvent_8h_source.html#l00055">dqm4hep::core::BufferEvent::Buffer::m_size</a>.</p>
+<p>References <a class="el" href="BufferEvent_8h_source.html#l00119">m_buffer</a>, and <a class="el" href="BufferEvent_8h_source.html#l00052">dqm4hep::core::BufferEvent::Buffer::m_size</a>.</p>
 
-<p>Referenced by <a class="el" href="BufferEventStreamer_8cc_source.html#l00071">dqm4hep::core::BufferEventStreamer::write()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                            {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">m_size</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a5d9712fb6b2a42004d8c8aac61544159"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">dqm4hep::core::BufferEvent::m_buffer</a></div><div class="ttdeci">Buffer m_buffer</div><div class="ttdoc">The internal buffer handler. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00122">BufferEvent.h:122</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_af0bf33605e36096a0c3c0afcd62dced9"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">dqm4hep::core::BufferEvent::Buffer::m_size</a></div><div class="ttdeci">std::size_t m_size</div><div class="ttdoc">The buffer size in memory. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00055">BufferEvent.h:55</a></div></div>
+<p>Referenced by <a class="el" href="BufferEventStreamer_8cc_source.html#l00073">dqm4hep::core::BufferEventStreamer::write()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                            {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">m_size</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a5d9712fb6b2a42004d8c8aac61544159"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">dqm4hep::core::BufferEvent::m_buffer</a></div><div class="ttdeci">Buffer m_buffer</div><div class="ttdoc">The internal buffer handler. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00119">BufferEvent.h:119</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_af0bf33605e36096a0c3c0afcd62dced9"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">dqm4hep::core::BufferEvent::Buffer::m_size</a></div><div class="ttdeci">std::size_t m_size</div><div class="ttdoc">The buffer size in memory. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00052">BufferEvent.h:52</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -236,22 +236,22 @@ Private Attributes</h2></td></tr>
 
 <p>Clear the internal event buffer. </p>
 
-<p>Definition at line <a class="el" href="BufferEvent_8cc_source.html#l00100">100</a> of file <a class="el" href="BufferEvent_8cc_source.html">BufferEvent.cc</a>.</p>
+<p>Definition at line <a class="el" href="BufferEvent_8cc_source.html#l00099">99</a> of file <a class="el" href="BufferEvent_8cc_source.html">BufferEvent.cc</a>.</p>
 
-<p>References <a class="el" href="BufferEvent_8h_source.html#l00053">dqm4hep::core::BufferEvent::Buffer::m_buffer</a>, <a class="el" href="BufferEvent_8h_source.html#l00122">m_buffer</a>, <a class="el" href="BufferEvent_8h_source.html#l00057">dqm4hep::core::BufferEvent::Buffer::m_isOwner</a>, and <a class="el" href="BufferEvent_8h_source.html#l00055">dqm4hep::core::BufferEvent::Buffer::m_size</a>.</p>
+<p>References <a class="el" href="BufferEvent_8h_source.html#l00050">dqm4hep::core::BufferEvent::Buffer::m_buffer</a>, <a class="el" href="BufferEvent_8h_source.html#l00119">m_buffer</a>, <a class="el" href="BufferEvent_8h_source.html#l00054">dqm4hep::core::BufferEvent::Buffer::m_isOwner</a>, and <a class="el" href="BufferEvent_8h_source.html#l00052">dqm4hep::core::BufferEvent::Buffer::m_size</a>.</p>
 
-<p>Referenced by <a class="el" href="BufferEvent_8cc_source.html#l00051">copyBuffer()</a>, <a class="el" href="BufferEvent_8cc_source.html#l00076">handleBuffer()</a>, <a class="el" href="BufferEvent_8cc_source.html#l00064">moveBuffer()</a>, and <a class="el" href="BufferEvent_8cc_source.html#l00037">~BufferEvent()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                            {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="keywordflow">if</span>( <span class="keyword">nullptr</span> != <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">m_buffer</a> &amp;&amp; <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a9cda33d58904d62b3f420eddcc0987c1">m_isOwner</a> ) {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keyword">delete</span> [] <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">m_buffer</a>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">m_buffer</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">m_size</a> = 0;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a5d9712fb6b2a42004d8c8aac61544159"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">dqm4hep::core::BufferEvent::m_buffer</a></div><div class="ttdeci">Buffer m_buffer</div><div class="ttdoc">The internal buffer handler. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00122">BufferEvent.h:122</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_af0bf33605e36096a0c3c0afcd62dced9"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">dqm4hep::core::BufferEvent::Buffer::m_size</a></div><div class="ttdeci">std::size_t m_size</div><div class="ttdoc">The buffer size in memory. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00055">BufferEvent.h:55</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_a9cda33d58904d62b3f420eddcc0987c1"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a9cda33d58904d62b3f420eddcc0987c1">dqm4hep::core::BufferEvent::Buffer::m_isOwner</a></div><div class="ttdeci">bool m_isOwner</div><div class="ttdoc">Whether the structure owns the buffer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00057">BufferEvent.h:57</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_a68eb21f13f0dbb1849a4e20d0a817ef6"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">dqm4hep::core::BufferEvent::Buffer::m_buffer</a></div><div class="ttdeci">char * m_buffer</div><div class="ttdoc">The raw buffer pointer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00053">BufferEvent.h:53</a></div></div>
+<p>Referenced by <a class="el" href="BufferEvent_8cc_source.html#l00050">copyBuffer()</a>, <a class="el" href="BufferEvent_8cc_source.html#l00075">handleBuffer()</a>, <a class="el" href="BufferEvent_8cc_source.html#l00063">moveBuffer()</a>, and <a class="el" href="BufferEvent_8cc_source.html#l00036">~BufferEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                            {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="keywordflow">if</span>( <span class="keyword">nullptr</span> != <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">m_buffer</a> &amp;&amp; <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a9cda33d58904d62b3f420eddcc0987c1">m_isOwner</a> ) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keyword">delete</span> [] <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">m_buffer</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">m_buffer</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">m_size</a> = 0;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a5d9712fb6b2a42004d8c8aac61544159"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">dqm4hep::core::BufferEvent::m_buffer</a></div><div class="ttdeci">Buffer m_buffer</div><div class="ttdoc">The internal buffer handler. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00119">BufferEvent.h:119</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_af0bf33605e36096a0c3c0afcd62dced9"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">dqm4hep::core::BufferEvent::Buffer::m_size</a></div><div class="ttdeci">std::size_t m_size</div><div class="ttdoc">The buffer size in memory. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00052">BufferEvent.h:52</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_a9cda33d58904d62b3f420eddcc0987c1"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a9cda33d58904d62b3f420eddcc0987c1">dqm4hep::core::BufferEvent::Buffer::m_isOwner</a></div><div class="ttdeci">bool m_isOwner</div><div class="ttdoc">Whether the structure owns the buffer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00054">BufferEvent.h:54</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_a68eb21f13f0dbb1849a4e20d0a817ef6"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">dqm4hep::core::BufferEvent::Buffer::m_buffer</a></div><div class="ttdeci">char * m_buffer</div><div class="ttdoc">The raw buffer pointer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00050">BufferEvent.h:50</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -289,24 +289,24 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="BufferEvent_8cc_source.html#l00051">51</a> of file <a class="el" href="BufferEvent_8cc_source.html">BufferEvent.cc</a>.</p>
+<p>Definition at line <a class="el" href="BufferEvent_8cc_source.html#l00050">50</a> of file <a class="el" href="BufferEvent_8cc_source.html">BufferEvent.cc</a>.</p>
 
-<p>References <a class="el" href="BufferEvent_8cc_source.html#l00100">clear()</a>, <a class="el" href="BufferEvent_8h_source.html#l00053">dqm4hep::core::BufferEvent::Buffer::m_buffer</a>, <a class="el" href="BufferEvent_8h_source.html#l00122">m_buffer</a>, <a class="el" href="BufferEvent_8h_source.html#l00057">dqm4hep::core::BufferEvent::Buffer::m_isOwner</a>, and <a class="el" href="BufferEvent_8h_source.html#l00055">dqm4hep::core::BufferEvent::Buffer::m_size</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                                   {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == b) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a617cb212e22190003c73f21822505f94">clear</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">m_size</a> = len;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">m_buffer</a> = <span class="keyword">new</span> <span class="keywordtype">char</span>[len];</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a9cda33d58904d62b3f420eddcc0987c1">m_isOwner</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      memcpy(<a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">m_buffer</a>, b, len);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a5d9712fb6b2a42004d8c8aac61544159"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">dqm4hep::core::BufferEvent::m_buffer</a></div><div class="ttdeci">Buffer m_buffer</div><div class="ttdoc">The internal buffer handler. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00122">BufferEvent.h:122</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_af0bf33605e36096a0c3c0afcd62dced9"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">dqm4hep::core::BufferEvent::Buffer::m_size</a></div><div class="ttdeci">std::size_t m_size</div><div class="ttdoc">The buffer size in memory. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00055">BufferEvent.h:55</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_a9cda33d58904d62b3f420eddcc0987c1"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a9cda33d58904d62b3f420eddcc0987c1">dqm4hep::core::BufferEvent::Buffer::m_isOwner</a></div><div class="ttdeci">bool m_isOwner</div><div class="ttdoc">Whether the structure owns the buffer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00057">BufferEvent.h:57</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a617cb212e22190003c73f21822505f94"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a617cb212e22190003c73f21822505f94">dqm4hep::core::BufferEvent::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear the internal event buffer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8cc_source.html#l00100">BufferEvent.cc:100</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_a68eb21f13f0dbb1849a4e20d0a817ef6"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">dqm4hep::core::BufferEvent::Buffer::m_buffer</a></div><div class="ttdeci">char * m_buffer</div><div class="ttdoc">The raw buffer pointer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00053">BufferEvent.h:53</a></div></div>
+<p>References <a class="el" href="BufferEvent_8cc_source.html#l00099">clear()</a>, <a class="el" href="BufferEvent_8h_source.html#l00050">dqm4hep::core::BufferEvent::Buffer::m_buffer</a>, <a class="el" href="BufferEvent_8h_source.html#l00119">m_buffer</a>, <a class="el" href="BufferEvent_8h_source.html#l00054">dqm4hep::core::BufferEvent::Buffer::m_isOwner</a>, and <a class="el" href="BufferEvent_8h_source.html#l00052">dqm4hep::core::BufferEvent::Buffer::m_size</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                                   {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == b) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a617cb212e22190003c73f21822505f94">clear</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">m_size</a> = len;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">m_buffer</a> = <span class="keyword">new</span> <span class="keywordtype">char</span>[len];</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a9cda33d58904d62b3f420eddcc0987c1">m_isOwner</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      memcpy(<a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">m_buffer</a>, b, len);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a5d9712fb6b2a42004d8c8aac61544159"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">dqm4hep::core::BufferEvent::m_buffer</a></div><div class="ttdeci">Buffer m_buffer</div><div class="ttdoc">The internal buffer handler. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00119">BufferEvent.h:119</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_af0bf33605e36096a0c3c0afcd62dced9"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">dqm4hep::core::BufferEvent::Buffer::m_size</a></div><div class="ttdeci">std::size_t m_size</div><div class="ttdoc">The buffer size in memory. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00052">BufferEvent.h:52</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_a9cda33d58904d62b3f420eddcc0987c1"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a9cda33d58904d62b3f420eddcc0987c1">dqm4hep::core::BufferEvent::Buffer::m_isOwner</a></div><div class="ttdeci">bool m_isOwner</div><div class="ttdoc">Whether the structure owns the buffer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00054">BufferEvent.h:54</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a617cb212e22190003c73f21822505f94"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a617cb212e22190003c73f21822505f94">dqm4hep::core::BufferEvent::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear the internal event buffer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8cc_source.html#l00099">BufferEvent.cc:99</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_a68eb21f13f0dbb1849a4e20d0a817ef6"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">dqm4hep::core::BufferEvent::Buffer::m_buffer</a></div><div class="ttdeci">char * m_buffer</div><div class="ttdoc">The raw buffer pointer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00050">BufferEvent.h:50</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -344,23 +344,23 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="BufferEvent_8cc_source.html#l00076">76</a> of file <a class="el" href="BufferEvent_8cc_source.html">BufferEvent.cc</a>.</p>
+<p>Definition at line <a class="el" href="BufferEvent_8cc_source.html#l00075">75</a> of file <a class="el" href="BufferEvent_8cc_source.html">BufferEvent.cc</a>.</p>
 
-<p>References <a class="el" href="BufferEvent_8cc_source.html#l00100">clear()</a>, <a class="el" href="BufferEvent_8h_source.html#l00053">dqm4hep::core::BufferEvent::Buffer::m_buffer</a>, <a class="el" href="BufferEvent_8h_source.html#l00122">m_buffer</a>, <a class="el" href="BufferEvent_8h_source.html#l00057">dqm4hep::core::BufferEvent::Buffer::m_isOwner</a>, and <a class="el" href="BufferEvent_8h_source.html#l00055">dqm4hep::core::BufferEvent::Buffer::m_size</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                                         {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == b) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a617cb212e22190003c73f21822505f94">clear</a>();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">m_size</a> = len;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">m_buffer</a> = b;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a9cda33d58904d62b3f420eddcc0987c1">m_isOwner</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a5d9712fb6b2a42004d8c8aac61544159"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">dqm4hep::core::BufferEvent::m_buffer</a></div><div class="ttdeci">Buffer m_buffer</div><div class="ttdoc">The internal buffer handler. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00122">BufferEvent.h:122</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_af0bf33605e36096a0c3c0afcd62dced9"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">dqm4hep::core::BufferEvent::Buffer::m_size</a></div><div class="ttdeci">std::size_t m_size</div><div class="ttdoc">The buffer size in memory. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00055">BufferEvent.h:55</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_a9cda33d58904d62b3f420eddcc0987c1"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a9cda33d58904d62b3f420eddcc0987c1">dqm4hep::core::BufferEvent::Buffer::m_isOwner</a></div><div class="ttdeci">bool m_isOwner</div><div class="ttdoc">Whether the structure owns the buffer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00057">BufferEvent.h:57</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a617cb212e22190003c73f21822505f94"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a617cb212e22190003c73f21822505f94">dqm4hep::core::BufferEvent::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear the internal event buffer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8cc_source.html#l00100">BufferEvent.cc:100</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_a68eb21f13f0dbb1849a4e20d0a817ef6"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">dqm4hep::core::BufferEvent::Buffer::m_buffer</a></div><div class="ttdeci">char * m_buffer</div><div class="ttdoc">The raw buffer pointer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00053">BufferEvent.h:53</a></div></div>
+<p>References <a class="el" href="BufferEvent_8cc_source.html#l00099">clear()</a>, <a class="el" href="BufferEvent_8h_source.html#l00050">dqm4hep::core::BufferEvent::Buffer::m_buffer</a>, <a class="el" href="BufferEvent_8h_source.html#l00119">m_buffer</a>, <a class="el" href="BufferEvent_8h_source.html#l00054">dqm4hep::core::BufferEvent::Buffer::m_isOwner</a>, and <a class="el" href="BufferEvent_8h_source.html#l00052">dqm4hep::core::BufferEvent::Buffer::m_size</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                         {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == b) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a617cb212e22190003c73f21822505f94">clear</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">m_size</a> = len;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">m_buffer</a> = b;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a9cda33d58904d62b3f420eddcc0987c1">m_isOwner</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a5d9712fb6b2a42004d8c8aac61544159"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">dqm4hep::core::BufferEvent::m_buffer</a></div><div class="ttdeci">Buffer m_buffer</div><div class="ttdoc">The internal buffer handler. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00119">BufferEvent.h:119</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_af0bf33605e36096a0c3c0afcd62dced9"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">dqm4hep::core::BufferEvent::Buffer::m_size</a></div><div class="ttdeci">std::size_t m_size</div><div class="ttdoc">The buffer size in memory. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00052">BufferEvent.h:52</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_a9cda33d58904d62b3f420eddcc0987c1"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a9cda33d58904d62b3f420eddcc0987c1">dqm4hep::core::BufferEvent::Buffer::m_isOwner</a></div><div class="ttdeci">bool m_isOwner</div><div class="ttdoc">Whether the structure owns the buffer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00054">BufferEvent.h:54</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a617cb212e22190003c73f21822505f94"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a617cb212e22190003c73f21822505f94">dqm4hep::core::BufferEvent::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear the internal event buffer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8cc_source.html#l00099">BufferEvent.cc:99</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_a68eb21f13f0dbb1849a4e20d0a817ef6"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">dqm4hep::core::BufferEvent::Buffer::m_buffer</a></div><div class="ttdeci">char * m_buffer</div><div class="ttdoc">The raw buffer pointer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00050">BufferEvent.h:50</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -387,14 +387,14 @@ Private Attributes</h2></td></tr>
 
 <p>Allocate a shared pointer of EventPtr. </p>
 
-<p>Definition at line <a class="el" href="BufferEvent_8cc_source.html#l00043">43</a> of file <a class="el" href="BufferEvent_8cc_source.html">BufferEvent.cc</a>.</p>
+<p>Definition at line <a class="el" href="BufferEvent_8cc_source.html#l00042">42</a> of file <a class="el" href="BufferEvent_8cc_source.html">BufferEvent.cc</a>.</p>
 
 <p>References <a class="el" href="classdqm4hep_1_1core_1_1BufferEvent.html#a109bf1a24e29cfe5eea4e36aaccb2f0a">BufferEvent()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                      {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keyword">auto</span> ptr = std::shared_ptr&lt;Event&gt;(<span class="keyword">new</span> EventBase&lt;BufferEvent&gt;(<span class="keyword">new</span> <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a109bf1a24e29cfe5eea4e36aaccb2f0a">BufferEvent</a>()));</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      ptr-&gt;setStreamerName(<span class="stringliteral">&quot;BufferEventStreamer&quot;</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordflow">return</span> ptr;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                      {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keyword">auto</span> ptr = std::shared_ptr&lt;Event&gt;(<span class="keyword">new</span> EventBase&lt;BufferEvent&gt;(<span class="keyword">new</span> <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a109bf1a24e29cfe5eea4e36aaccb2f0a">BufferEvent</a>()));</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      ptr-&gt;setStreamerName(<span class="stringliteral">&quot;BufferEventStreamer&quot;</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordflow">return</span> ptr;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a109bf1a24e29cfe5eea4e36aaccb2f0a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a109bf1a24e29cfe5eea4e36aaccb2f0a">dqm4hep::core::BufferEvent::BufferEvent</a></div><div class="ttdeci">BufferEvent()=default</div></div>
 </div><!-- fragment -->
 </div>
@@ -433,25 +433,25 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="BufferEvent_8cc_source.html#l00064">64</a> of file <a class="el" href="BufferEvent_8cc_source.html">BufferEvent.cc</a>.</p>
+<p>Definition at line <a class="el" href="BufferEvent_8cc_source.html#l00063">63</a> of file <a class="el" href="BufferEvent_8cc_source.html">BufferEvent.cc</a>.</p>
 
-<p>References <a class="el" href="BufferEvent_8cc_source.html#l00100">clear()</a>, <a class="el" href="BufferEvent_8h_source.html#l00053">dqm4hep::core::BufferEvent::Buffer::m_buffer</a>, <a class="el" href="BufferEvent_8h_source.html#l00122">m_buffer</a>, <a class="el" href="BufferEvent_8h_source.html#l00057">dqm4hep::core::BufferEvent::Buffer::m_isOwner</a>, and <a class="el" href="BufferEvent_8h_source.html#l00055">dqm4hep::core::BufferEvent::Buffer::m_size</a>.</p>
+<p>References <a class="el" href="BufferEvent_8cc_source.html#l00099">clear()</a>, <a class="el" href="BufferEvent_8h_source.html#l00050">dqm4hep::core::BufferEvent::Buffer::m_buffer</a>, <a class="el" href="BufferEvent_8h_source.html#l00119">m_buffer</a>, <a class="el" href="BufferEvent_8h_source.html#l00054">dqm4hep::core::BufferEvent::Buffer::m_isOwner</a>, and <a class="el" href="BufferEvent_8h_source.html#l00052">dqm4hep::core::BufferEvent::Buffer::m_size</a>.</p>
 
-<p>Referenced by <a class="el" href="BufferEventStreamer_8cc_source.html#l00087">dqm4hep::core::BufferEventStreamer::read()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                                       {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == b) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a617cb212e22190003c73f21822505f94">clear</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">m_size</a> = len;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">m_buffer</a> = b;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a9cda33d58904d62b3f420eddcc0987c1">m_isOwner</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a5d9712fb6b2a42004d8c8aac61544159"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">dqm4hep::core::BufferEvent::m_buffer</a></div><div class="ttdeci">Buffer m_buffer</div><div class="ttdoc">The internal buffer handler. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00122">BufferEvent.h:122</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_af0bf33605e36096a0c3c0afcd62dced9"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">dqm4hep::core::BufferEvent::Buffer::m_size</a></div><div class="ttdeci">std::size_t m_size</div><div class="ttdoc">The buffer size in memory. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00055">BufferEvent.h:55</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_a9cda33d58904d62b3f420eddcc0987c1"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a9cda33d58904d62b3f420eddcc0987c1">dqm4hep::core::BufferEvent::Buffer::m_isOwner</a></div><div class="ttdeci">bool m_isOwner</div><div class="ttdoc">Whether the structure owns the buffer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00057">BufferEvent.h:57</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a617cb212e22190003c73f21822505f94"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a617cb212e22190003c73f21822505f94">dqm4hep::core::BufferEvent::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear the internal event buffer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8cc_source.html#l00100">BufferEvent.cc:100</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_a68eb21f13f0dbb1849a4e20d0a817ef6"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">dqm4hep::core::BufferEvent::Buffer::m_buffer</a></div><div class="ttdeci">char * m_buffer</div><div class="ttdoc">The raw buffer pointer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00053">BufferEvent.h:53</a></div></div>
+<p>Referenced by <a class="el" href="BufferEventStreamer_8cc_source.html#l00084">dqm4hep::core::BufferEventStreamer::read()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                                       {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == b) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a617cb212e22190003c73f21822505f94">clear</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">m_size</a> = len;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">m_buffer</a> = b;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">m_buffer</a>.<a class="code" href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a9cda33d58904d62b3f420eddcc0987c1">m_isOwner</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a5d9712fb6b2a42004d8c8aac61544159"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a5d9712fb6b2a42004d8c8aac61544159">dqm4hep::core::BufferEvent::m_buffer</a></div><div class="ttdeci">Buffer m_buffer</div><div class="ttdoc">The internal buffer handler. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00119">BufferEvent.h:119</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_af0bf33605e36096a0c3c0afcd62dced9"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#af0bf33605e36096a0c3c0afcd62dced9">dqm4hep::core::BufferEvent::Buffer::m_size</a></div><div class="ttdeci">std::size_t m_size</div><div class="ttdoc">The buffer size in memory. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00052">BufferEvent.h:52</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_a9cda33d58904d62b3f420eddcc0987c1"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a9cda33d58904d62b3f420eddcc0987c1">dqm4hep::core::BufferEvent::Buffer::m_isOwner</a></div><div class="ttdeci">bool m_isOwner</div><div class="ttdoc">Whether the structure owns the buffer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00054">BufferEvent.h:54</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1BufferEvent_html_a617cb212e22190003c73f21822505f94"><div class="ttname"><a href="classdqm4hep_1_1core_1_1BufferEvent.html#a617cb212e22190003c73f21822505f94">dqm4hep::core::BufferEvent::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear the internal event buffer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8cc_source.html#l00099">BufferEvent.cc:99</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer_html_a68eb21f13f0dbb1849a4e20d0a817ef6"><div class="ttname"><a href="structdqm4hep_1_1core_1_1BufferEvent_1_1Buffer.html#a68eb21f13f0dbb1849a4e20d0a817ef6">dqm4hep::core::BufferEvent::Buffer::m_buffer</a></div><div class="ttdeci">char * m_buffer</div><div class="ttdoc">The raw buffer pointer. </div><div class="ttdef"><b>Definition:</b> <a href="BufferEvent_8h_source.html#l00050">BufferEvent.h:50</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -476,9 +476,9 @@ Private Attributes</h2></td></tr>
 
 <p>The internal buffer handler. </p>
 
-<p>Definition at line <a class="el" href="BufferEvent_8h_source.html#l00122">122</a> of file <a class="el" href="BufferEvent_8h_source.html">BufferEvent.h</a>.</p>
+<p>Definition at line <a class="el" href="BufferEvent_8h_source.html#l00119">119</a> of file <a class="el" href="BufferEvent_8h_source.html">BufferEvent.h</a>.</p>
 
-<p>Referenced by <a class="el" href="BufferEvent_8cc_source.html#l00088">buffer()</a>, <a class="el" href="BufferEvent_8cc_source.html#l00094">bufferSize()</a>, <a class="el" href="BufferEvent_8cc_source.html#l00100">clear()</a>, <a class="el" href="BufferEvent_8cc_source.html#l00051">copyBuffer()</a>, <a class="el" href="BufferEvent_8cc_source.html#l00076">handleBuffer()</a>, and <a class="el" href="BufferEvent_8cc_source.html#l00064">moveBuffer()</a>.</p>
+<p>Referenced by <a class="el" href="BufferEvent_8cc_source.html#l00087">buffer()</a>, <a class="el" href="BufferEvent_8cc_source.html#l00093">bufferSize()</a>, <a class="el" href="BufferEvent_8cc_source.html#l00099">clear()</a>, <a class="el" href="BufferEvent_8cc_source.html#l00050">copyBuffer()</a>, <a class="el" href="BufferEvent_8cc_source.html#l00075">handleBuffer()</a>, and <a class="el" href="BufferEvent_8cc_source.html#l00063">moveBuffer()</a>.</p>
 
 </div>
 </div>
@@ -489,7 +489,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 19 2018 11:02:25 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 20 2018 20:52:08 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -202,12 +202,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a4b5bff6455a689ffffbaf360689c02d5 inherit pro_methods_classdqm4hep_1_1core_1_1Event"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Event.html#a4b5bff6455a689ffffbaf360689c02d5">setEventSize</a> (uint64_t eventSize)</td></tr>
 <tr class="memdesc:a4b5bff6455a689ffffbaf360689c02d5 inherit pro_methods_classdqm4hep_1_1core_1_1Event"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the real event implementation size, as extracted after its serialization (unit bytes)  <a href="#a4b5bff6455a689ffffbaf360689c02d5">More...</a><br/></td></tr>
 <tr class="separator:a4b5bff6455a689ffffbaf360689c02d5 inherit pro_methods_classdqm4hep_1_1core_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cdb47f443a2a86fa3cee0a42f583a2a inherit pro_methods_classdqm4hep_1_1core_1_1Event"><td class="memItemLeft" align="right" valign="top">xdrstream::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Event.html#a4cdb47f443a2a86fa3cee0a42f583a2a">writeBase</a> (xdrstream::IODevice *pDevice) const </td></tr>
-<tr class="memdesc:a4cdb47f443a2a86fa3cee0a42f583a2a inherit pro_methods_classdqm4hep_1_1core_1_1Event"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the base event information in the xdrstream device.  <a href="#a4cdb47f443a2a86fa3cee0a42f583a2a">More...</a><br/></td></tr>
-<tr class="separator:a4cdb47f443a2a86fa3cee0a42f583a2a inherit pro_methods_classdqm4hep_1_1core_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e904e2d2e2786f60616699e3f20ebd9 inherit pro_methods_classdqm4hep_1_1core_1_1Event"><td class="memItemLeft" align="right" valign="top">xdrstream::Status&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Event.html#a5e904e2d2e2786f60616699e3f20ebd9">readBase</a> (xdrstream::IODevice *pDevice)</td></tr>
-<tr class="memdesc:a5e904e2d2e2786f60616699e3f20ebd9 inherit pro_methods_classdqm4hep_1_1core_1_1Event"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the base event information from the xdrstream device.  <a href="#a5e904e2d2e2786f60616699e3f20ebd9">More...</a><br/></td></tr>
-<tr class="separator:a5e904e2d2e2786f60616699e3f20ebd9 inherit pro_methods_classdqm4hep_1_1core_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa58e0d2c16f480cfaec8c8f608ac8aba inherit pro_methods_classdqm4hep_1_1core_1_1Event"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Event.html#aa58e0d2c16f480cfaec8c8f608ac8aba">writeBase</a> (TBuffer &amp;buffer) const </td></tr>
+<tr class="memdesc:aa58e0d2c16f480cfaec8c8f608ac8aba inherit pro_methods_classdqm4hep_1_1core_1_1Event"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the base event information in the xdrstream device.  <a href="#aa58e0d2c16f480cfaec8c8f608ac8aba">More...</a><br/></td></tr>
+<tr class="separator:aa58e0d2c16f480cfaec8c8f608ac8aba inherit pro_methods_classdqm4hep_1_1core_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a831dceb5da757c187ed10d84ce20bef2 inherit pro_methods_classdqm4hep_1_1core_1_1Event"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1core_1_1Event.html#a831dceb5da757c187ed10d84ce20bef2">readBase</a> (TBuffer &amp;buffer)</td></tr>
+<tr class="memdesc:a831dceb5da757c187ed10d84ce20bef2 inherit pro_methods_classdqm4hep_1_1core_1_1Event"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the base event information from the xdrstream device.  <a href="#a831dceb5da757c187ed10d84ce20bef2">More...</a><br/></td></tr>
+<tr class="separator:a831dceb5da757c187ed10d84ce20bef2 inherit pro_methods_classdqm4hep_1_1core_1_1Event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br/>
@@ -215,7 +215,7 @@ class dqm4hep::core::EventBase&lt; T &gt;</h3>
 
 <p><a class="el" href="classdqm4hep_1_1core_1_1EventBase.html" title="EventBase interface. ">EventBase</a> interface. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00190">190</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00189">189</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab0723b7aba2778a5e3edaef1db1cb455"></a>
 <div class="memitem">
@@ -242,11 +242,11 @@ template&lt;typename T &gt; </div>
 
 <p>Constructor. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00332">332</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                                   : </div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#aad921d3694df35fd98daac8562c0772c">Event</a>() {</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      <span class="comment">/* nop */</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00331">331</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                                   : </div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#aad921d3694df35fd98daac8562c0772c">Event</a>() {</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;      <span class="comment">/* nop */</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_aad921d3694df35fd98daac8562c0772c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#aad921d3694df35fd98daac8562c0772c">dqm4hep::core::Event::Event</a></div><div class="ttdeci">Event()=default</div></div>
 </div><!-- fragment -->
 </div>
@@ -303,14 +303,14 @@ template&lt;typename T &gt; </div>
 
 <p>Constructor with real event. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00340">340</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                                            : </div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#aad921d3694df35fd98daac8562c0772c">Event</a>(), </div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">m_pEvent</a>(pEvent) {</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      <span class="comment">/* nop */</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00339">339</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                                            : </div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#aad921d3694df35fd98daac8562c0772c">Event</a>(), </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">m_pEvent</a>(pEvent) {</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;      <span class="comment">/* nop */</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_aad921d3694df35fd98daac8562c0772c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#aad921d3694df35fd98daac8562c0772c">dqm4hep::core::Event::Event</a></div><div class="ttdeci">Event()=default</div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html_a9ee0e72ff7512df0407dd79ab2b8b4f0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">dqm4hep::core::EventBase::m_pEvent</a></div><div class="ttdeci">T * m_pEvent</div><div class="ttdoc">The real event implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00224">Event.h:224</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html_a9ee0e72ff7512df0407dd79ab2b8b4f0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">dqm4hep::core::EventBase::m_pEvent</a></div><div class="ttdeci">T * m_pEvent</div><div class="ttdoc">The real event implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00223">Event.h:223</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -339,11 +339,11 @@ template&lt;typename T &gt; </div>
 
 <p>Destructor. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00349">349</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                                    {</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#aa2716ed33b2a6e9b4dea107048b3f7d3">clear</a>();</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html_aa2716ed33b2a6e9b4dea107048b3f7d3"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html#aa2716ed33b2a6e9b4dea107048b3f7d3">dqm4hep::core::EventBase::clear</a></div><div class="ttdeci">void clear() override</div><div class="ttdoc">The implementation of this method may delete the real event implementation if needed. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00372">Event.h:372</a></div></div>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00348">348</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                                    {</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#aa2716ed33b2a6e9b4dea107048b3f7d3">clear</a>();</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html_aa2716ed33b2a6e9b4dea107048b3f7d3"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html#aa2716ed33b2a6e9b4dea107048b3f7d3">dqm4hep::core::EventBase::clear</a></div><div class="ttdeci">void clear() override</div><div class="ttdoc">The implementation of this method may delete the real event implementation if needed. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00371">Event.h:371</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -376,22 +376,22 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="classdqm4hep_1_1core_1_1Event.html#a270043fc900457fdae05ebf3f18232cb">dqm4hep::core::Event</a>.</p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00372">372</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00371">371</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>References <a class="el" href="Event_8cc_source.html#l00036">dqm4hep::core::Event::clear()</a>.</p>
+<p>References <a class="el" href="Event_8cc_source.html#l00038">dqm4hep::core::Event::clear()</a>.</p>
 
-<p>Referenced by <a class="el" href="Event_8h_source.html#l00244">dqm4hep::core::Event::setEvent()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                                    {</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a270043fc900457fdae05ebf3f18232cb">Event::clear</a>();</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> != <a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">m_pEvent</a> &amp;&amp; this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#a30d2d030c959a1bc7b83216b76dfac84">isOwner</a>())</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="keyword">delete</span> <a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">m_pEvent</a>;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">m_pEvent</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a270043fc900457fdae05ebf3f18232cb"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a270043fc900457fdae05ebf3f18232cb">dqm4hep::core::Event::clear</a></div><div class="ttdeci">virtual void clear()</div><div class="ttdoc">Clear the event. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8cc_source.html#l00036">Event.cc:36</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html_a9ee0e72ff7512df0407dd79ab2b8b4f0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">dqm4hep::core::EventBase::m_pEvent</a></div><div class="ttdeci">T * m_pEvent</div><div class="ttdoc">The real event implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00224">Event.h:224</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html_a30d2d030c959a1bc7b83216b76dfac84"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html#a30d2d030c959a1bc7b83216b76dfac84">dqm4hep::core::EventBase::isOwner</a></div><div class="ttdeci">bool isOwner() const </div><div class="ttdoc">Whether the event wrapper owns the real event implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00384">Event.h:384</a></div></div>
+<p>Referenced by <a class="el" href="Event_8h_source.html#l00243">dqm4hep::core::Event::setEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                                    {</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Event.html#a270043fc900457fdae05ebf3f18232cb">Event::clear</a>();</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> != <a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">m_pEvent</a> &amp;&amp; this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#a30d2d030c959a1bc7b83216b76dfac84">isOwner</a>())</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="keyword">delete</span> <a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">m_pEvent</a>;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">m_pEvent</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Event_html_a270043fc900457fdae05ebf3f18232cb"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Event.html#a270043fc900457fdae05ebf3f18232cb">dqm4hep::core::Event::clear</a></div><div class="ttdeci">virtual void clear()</div><div class="ttdoc">Clear the event. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8cc_source.html#l00038">Event.cc:38</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html_a9ee0e72ff7512df0407dd79ab2b8b4f0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">dqm4hep::core::EventBase::m_pEvent</a></div><div class="ttdeci">T * m_pEvent</div><div class="ttdoc">The real event implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00223">Event.h:223</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html_a30d2d030c959a1bc7b83216b76dfac84"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html#a30d2d030c959a1bc7b83216b76dfac84">dqm4hep::core::EventBase::isOwner</a></div><div class="ttdeci">bool isOwner() const </div><div class="ttdoc">Whether the event wrapper owns the real event implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00383">Event.h:383</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -420,13 +420,13 @@ template&lt;typename T &gt; </div>
 
 <p>Returns the real event implementation. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00356">356</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00355">355</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Event_8h_source.html#l00232">dqm4hep::core::Event::getEvent()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                                           {</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">m_pEvent</a>;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html_a9ee0e72ff7512df0407dd79ab2b8b4f0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">dqm4hep::core::EventBase::m_pEvent</a></div><div class="ttdeci">T * m_pEvent</div><div class="ttdoc">The real event implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00224">Event.h:224</a></div></div>
+<p>Referenced by <a class="el" href="Event_8h_source.html#l00231">dqm4hep::core::Event::getEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                                           {</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">m_pEvent</a>;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html_a9ee0e72ff7512df0407dd79ab2b8b4f0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">dqm4hep::core::EventBase::m_pEvent</a></div><div class="ttdeci">T * m_pEvent</div><div class="ttdoc">The real event implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00223">Event.h:223</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -455,11 +455,11 @@ template&lt;typename T &gt; </div>
 
 <p>Whether the event wrapper owns the real event implementation. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00384">384</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                                            {</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#ac5538b431afe40dc46345c63dca40a1b">m_isOwner</a>;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html_ac5538b431afe40dc46345c63dca40a1b"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html#ac5538b431afe40dc46345c63dca40a1b">dqm4hep::core::EventBase::m_isOwner</a></div><div class="ttdeci">bool m_isOwner</div><div class="ttdoc">Whether the event wrapper owns the real event implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00225">Event.h:225</a></div></div>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00383">383</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                                            {</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#ac5538b431afe40dc46345c63dca40a1b">m_isOwner</a>;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html_ac5538b431afe40dc46345c63dca40a1b"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html#ac5538b431afe40dc46345c63dca40a1b">dqm4hep::core::EventBase::m_isOwner</a></div><div class="ttdeci">bool m_isOwner</div><div class="ttdoc">Whether the event wrapper owns the real event implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00224">Event.h:224</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -525,17 +525,17 @@ template&lt;typename T &gt; </div>
 
 <p>Set the real event implementation. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00363">363</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00362">362</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Event_8h_source.html#l00244">dqm4hep::core::Event::setEvent()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                                                            {</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#aa2716ed33b2a6e9b4dea107048b3f7d3">clear</a>();</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">m_pEvent</a> = pEvent;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#ac5538b431afe40dc46345c63dca40a1b">m_isOwner</a> = owner;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html_aa2716ed33b2a6e9b4dea107048b3f7d3"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html#aa2716ed33b2a6e9b4dea107048b3f7d3">dqm4hep::core::EventBase::clear</a></div><div class="ttdeci">void clear() override</div><div class="ttdoc">The implementation of this method may delete the real event implementation if needed. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00372">Event.h:372</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html_a9ee0e72ff7512df0407dd79ab2b8b4f0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">dqm4hep::core::EventBase::m_pEvent</a></div><div class="ttdeci">T * m_pEvent</div><div class="ttdoc">The real event implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00224">Event.h:224</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html_ac5538b431afe40dc46345c63dca40a1b"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html#ac5538b431afe40dc46345c63dca40a1b">dqm4hep::core::EventBase::m_isOwner</a></div><div class="ttdeci">bool m_isOwner</div><div class="ttdoc">Whether the event wrapper owns the real event implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00225">Event.h:225</a></div></div>
+<p>Referenced by <a class="el" href="Event_8h_source.html#l00243">dqm4hep::core::Event::setEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                                                            {</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#aa2716ed33b2a6e9b4dea107048b3f7d3">clear</a>();</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">m_pEvent</a> = pEvent;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1EventBase.html#ac5538b431afe40dc46345c63dca40a1b">m_isOwner</a> = owner;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html_aa2716ed33b2a6e9b4dea107048b3f7d3"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html#aa2716ed33b2a6e9b4dea107048b3f7d3">dqm4hep::core::EventBase::clear</a></div><div class="ttdeci">void clear() override</div><div class="ttdoc">The implementation of this method may delete the real event implementation if needed. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00371">Event.h:371</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html_a9ee0e72ff7512df0407dd79ab2b8b4f0"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html#a9ee0e72ff7512df0407dd79ab2b8b4f0">dqm4hep::core::EventBase::m_pEvent</a></div><div class="ttdeci">T * m_pEvent</div><div class="ttdoc">The real event implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00223">Event.h:223</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventBase_html_ac5538b431afe40dc46345c63dca40a1b"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventBase.html#ac5538b431afe40dc46345c63dca40a1b">dqm4hep::core::EventBase::m_isOwner</a></div><div class="ttdeci">bool m_isOwner</div><div class="ttdoc">Whether the event wrapper owns the real event implementation. </div><div class="ttdef"><b>Definition:</b> <a href="Event_8h_source.html#l00224">Event.h:224</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -562,7 +562,7 @@ template&lt;typename T&gt; </div>
 
 <p>Whether the event wrapper owns the real event implementation. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00225">225</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00224">224</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
 </div>
 </div>
@@ -588,7 +588,7 @@ template&lt;typename T&gt; </div>
 
 <p>The real event implementation. </p>
 
-<p>Definition at line <a class="el" href="Event_8h_source.html#l00224">224</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
+<p>Definition at line <a class="el" href="Event_8h_source.html#l00223">223</a> of file <a class="el" href="Event_8h_source.html">Event.h</a>.</p>
 
 </div>
 </div>
@@ -598,7 +598,7 @@ template&lt;typename T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 19 2018 11:02:25 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 20 2018 20:52:09 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

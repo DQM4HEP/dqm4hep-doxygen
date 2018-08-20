@@ -102,9 +102,6 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:aa38eebd6abd63064deeb583b54adc1c4"><td class="memItemLeft" align="right" valign="top">typedef std::shared_ptr<br class="typebreak"/>
-&lt; xdrstream::BufferDevice &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1EventSource.html#aa38eebd6abd63064deeb583b54adc1c4">BufferDevicePtr</a></td></tr>
-<tr class="separator:aa38eebd6abd63064deeb583b54adc1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24dd92e30ac741f8aeb2466f1d86aad8"><td class="memItemLeft" align="right" valign="top">typedef std::map&lt; std::string, <br class="typebreak"/>
 <a class="el" href="structdqm4hep_1_1online_1_1EventSource_1_1CollectorInfo.html">CollectorInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1EventSource.html#a24dd92e30ac741f8aeb2466f1d86aad8">CollectorInfoMap</a></td></tr>
 <tr class="separator:a24dd92e30ac741f8aeb2466f1d86aad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,9 +141,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a35e526f1e321736f786fb3be287017b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdqm4hep_1_1net_1_1Client.html">net::Client</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1EventSource.html#a35e526f1e321736f786fb3be287017b4">m_client</a> = {}</td></tr>
 <tr class="memdesc:a35e526f1e321736f786fb3be287017b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The networking client interface.  <a href="#a35e526f1e321736f786fb3be287017b4">More...</a><br/></td></tr>
 <tr class="separator:a35e526f1e321736f786fb3be287017b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8998da547fe7fa59b6bc03fe77c44ec0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdqm4hep_1_1online_1_1EventSource.html#aa38eebd6abd63064deeb583b54adc1c4">BufferDevicePtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1EventSource.html#a8998da547fe7fa59b6bc03fe77c44ec0">m_bufferDevice</a> = {nullptr}</td></tr>
-<tr class="memdesc:a8998da547fe7fa59b6bc03fe77c44ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The serialized event raw buffer (from xdrstream)  <a href="#a8998da547fe7fa59b6bc03fe77c44ec0">More...</a><br/></td></tr>
-<tr class="separator:a8998da547fe7fa59b6bc03fe77c44ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217b3057ae0182f87346d76bd21773b0"><td class="memItemLeft" align="right" valign="top">TBufferFile&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdqm4hep_1_1online_1_1EventSource.html#a217b3057ae0182f87346d76bd21773b0">m_buffer</a> = {TBuffer::kWrite, 2*1024*1024}</td></tr>
+<tr class="memdesc:a217b3057ae0182f87346d76bd21773b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The serialized event raw buffer.  <a href="#a217b3057ae0182f87346d76bd21773b0">More...</a><br/></td></tr>
+<tr class="separator:a217b3057ae0182f87346d76bd21773b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classdqm4hep_1_1online_1_1EventSource.html" title="EventSource class. ">EventSource</a> class. </p>
@@ -161,28 +158,6 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment --> 
 <p>Definition at line <a class="el" href="EventSource_8h_source.html#l00066">66</a> of file <a class="el" href="EventSource_8h_source.html">EventSource.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a class="anchor" id="aa38eebd6abd63064deeb583b54adc1c4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::shared_ptr&lt;xdrstream::BufferDevice&gt; <a class="el" href="classdqm4hep_1_1online_1_1EventSource.html#aa38eebd6abd63064deeb583b54adc1c4">dqm4hep::online::EventSource::BufferDevicePtr</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="EventSource_8h_source.html#l00165">165</a> of file <a class="el" href="EventSource_8h_source.html">EventSource.h</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a24dd92e30ac741f8aeb2466f1d86aad8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -201,7 +176,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="EventSource_8h_source.html#l00166">166</a> of file <a class="el" href="EventSource_8h_source.html">EventSource.h</a>.</p>
+<p>Definition at line <a class="el" href="EventSource_8h_source.html#l00164">164</a> of file <a class="el" href="EventSource_8h_source.html">EventSource.h</a>.</p>
 
 </div>
 </div>
@@ -223,14 +198,14 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="EventSource_8cc_source.html#l00051">51</a> of file <a class="el" href="EventSource_8cc_source.html">EventSource.cc</a>.</p>
 
-<p>References <a class="el" href="EventSource_8h_source.html#l00171">m_collectorInfos</a>, and <a class="el" href="EventSource_8cc_source.html#l00244">unregisterMe()</a>.</p>
+<p>References <a class="el" href="EventSource_8h_source.html#l00169">m_collectorInfos</a>, and <a class="el" href="EventSource_8cc_source.html#l00242">unregisterMe()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                              {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> colIter : <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">m_collectorInfos</a>) {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        this-&gt;<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a2afa8b71476aadbd125e68f0fc3aa7fa">unregisterMe</a>(colIter.first);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab677c42a2ba64a89b25b54a1c5f95306"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">dqm4hep::online::EventSource::m_collectorInfos</a></div><div class="ttdeci">CollectorInfoMap m_collectorInfos</div><div class="ttdoc">The map of event collector infos. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00171">EventSource.h:171</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_a2afa8b71476aadbd125e68f0fc3aa7fa"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#a2afa8b71476aadbd125e68f0fc3aa7fa">dqm4hep::online::EventSource::unregisterMe</a></div><div class="ttdeci">void unregisterMe(const std::string &amp;collector)</div><div class="ttdoc">Un-register the event source from the specified collector. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8cc_source.html#l00244">EventSource.cc:244</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab677c42a2ba64a89b25b54a1c5f95306"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">dqm4hep::online::EventSource::m_collectorInfos</a></div><div class="ttdeci">CollectorInfoMap m_collectorInfos</div><div class="ttdoc">The map of event collector infos. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00169">EventSource.h:169</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_a2afa8b71476aadbd125e68f0fc3aa7fa"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#a2afa8b71476aadbd125e68f0fc3aa7fa">dqm4hep::online::EventSource::unregisterMe</a></div><div class="ttdeci">void unregisterMe(const std::string &amp;collector)</div><div class="ttdoc">Un-register the event source from the specified collector. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8cc_source.html#l00242">EventSource.cc:242</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -270,7 +245,7 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                  :</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ae3a7d1e7404b31e1d63fac960632b62e">m_sourceName</a>(name) {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ae3a7d1e7404b31e1d63fac960632b62e"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ae3a7d1e7404b31e1d63fac960632b62e">dqm4hep::online::EventSource::m_sourceName</a></div><div class="ttdeci">std::string m_sourceName</div><div class="ttdoc">The source name. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00169">EventSource.h:169</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ae3a7d1e7404b31e1d63fac960632b62e"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ae3a7d1e7404b31e1d63fac960632b62e">dqm4hep::online::EventSource::m_sourceName</a></div><div class="ttdeci">std::string m_sourceName</div><div class="ttdoc">The source name. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00167">EventSource.h:167</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -300,7 +275,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="EventSource_8cc_source.html#l00065">65</a> of file <a class="el" href="EventSource_8cc_source.html">EventSource.cc</a>.</p>
 
-<p>References <a class="el" href="EventSource_8h_source.html#l00171">m_collectorInfos</a>, <a class="el" href="EventSource_8h_source.html#l00161">dqm4hep::online::EventSource::CollectorInfo::m_registered</a>, and <a class="el" href="EventSource_8h_source.html#l00168">m_started</a>.</p>
+<p>References <a class="el" href="EventSource_8h_source.html#l00169">m_collectorInfos</a>, <a class="el" href="EventSource_8h_source.html#l00160">dqm4hep::online::EventSource::CollectorInfo::m_registered</a>, and <a class="el" href="EventSource_8h_source.html#l00166">m_started</a>.</p>
 <div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                        {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab4761b3a8abaa6219553bb7078d0fe78">m_started</a>) {</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">throw</span> core::StatusCodeException(core::STATUS_CODE_NOT_ALLOWED);</div>
@@ -316,8 +291,8 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      info.m_registered = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">m_collectorInfos</a>.insert(CollectorInfoMap::value_type(name, info));</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab4761b3a8abaa6219553bb7078d0fe78"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab4761b3a8abaa6219553bb7078d0fe78">dqm4hep::online::EventSource::m_started</a></div><div class="ttdeci">bool m_started</div><div class="ttdoc">Whether the event source was started. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00168">EventSource.h:168</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab677c42a2ba64a89b25b54a1c5f95306"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">dqm4hep::online::EventSource::m_collectorInfos</a></div><div class="ttdeci">CollectorInfoMap m_collectorInfos</div><div class="ttdoc">The map of event collector infos. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00171">EventSource.h:171</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab4761b3a8abaa6219553bb7078d0fe78"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab4761b3a8abaa6219553bb7078d0fe78">dqm4hep::online::EventSource::m_started</a></div><div class="ttdeci">bool m_started</div><div class="ttdoc">Whether the event source was started. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00166">EventSource.h:166</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab677c42a2ba64a89b25b54a1c5f95306"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">dqm4hep::online::EventSource::m_collectorInfos</a></div><div class="ttdeci">CollectorInfoMap m_collectorInfos</div><div class="ttdoc">The map of event collector infos. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00169">EventSource.h:169</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -351,31 +326,31 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="EventSource_8cc_source.html#l00186">186</a> of file <a class="el" href="EventSource_8cc_source.html">EventSource.cc</a>.</p>
+<p>Definition at line <a class="el" href="EventSource_8cc_source.html#l00184">184</a> of file <a class="el" href="EventSource_8cc_source.html">EventSource.cc</a>.</p>
 
-<p>References <a class="el" href="Internal_8h_source.html#l00544">dqm4hep::core::fillHostInfo()</a>, <a class="el" href="EventSource_8h_source.html#l00171">m_collectorInfos</a>, and <a class="el" href="EventSource_8h_source.html#l00169">m_sourceName</a>.</p>
+<p>References <a class="el" href="Internal_8h_source.html#l00538">dqm4hep::core::fillHostInfo()</a>, <a class="el" href="EventSource_8h_source.html#l00169">m_collectorInfos</a>, and <a class="el" href="EventSource_8h_source.html#l00167">m_sourceName</a>.</p>
 
-<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00130">sendEvent()</a>, and <a class="el" href="EventSource_8cc_source.html#l00083">start()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                                                  {</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <span class="comment">// host info</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#adc020c7501c1db5825e0b12ff30f118c">core::StringMap</a> hostInfo;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a2c057cc6c31326dcc11094a917191836">core::fillHostInfo</a>(hostInfo);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                  </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      <span class="comment">// collectors</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#adbf7ece0bddde655770fc3623b8e9445">core::json</a> collectorsValue;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> colIter : <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">m_collectorInfos</a>)</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        collectorsValue.push_back(colIter.first);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      </div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      info = {</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        {<span class="stringliteral">&quot;source&quot;</span>, <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ae3a7d1e7404b31e1d63fac960632b62e">m_sourceName</a>},</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        {<span class="stringliteral">&quot;host&quot;</span>, hostInfo},</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        {<span class="stringliteral">&quot;collectors&quot;</span>, collectorsValue}</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      };</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab677c42a2ba64a89b25b54a1c5f95306"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">dqm4hep::online::EventSource::m_collectorInfos</a></div><div class="ttdeci">CollectorInfoMap m_collectorInfos</div><div class="ttdoc">The map of event collector infos. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00171">EventSource.h:171</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a2c057cc6c31326dcc11094a917191836"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a2c057cc6c31326dcc11094a917191836">dqm4hep::core::fillHostInfo</a></div><div class="ttdeci">void fillHostInfo(StringMap &amp;info)</div><div class="ttdoc">Fill host info (uname result + host name). </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00544">Internal.h:544</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_adc020c7501c1db5825e0b12ff30f118c"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#adc020c7501c1db5825e0b12ff30f118c">dqm4hep::core::StringMap</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; StringMap</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00316">Internal.h:316</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ae3a7d1e7404b31e1d63fac960632b62e"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ae3a7d1e7404b31e1d63fac960632b62e">dqm4hep::online::EventSource::m_sourceName</a></div><div class="ttdeci">std::string m_sourceName</div><div class="ttdoc">The source name. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00169">EventSource.h:169</a></div></div>
+<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00128">sendEvent()</a>, and <a class="el" href="EventSource_8cc_source.html#l00083">start()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                                                  {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      <span class="comment">// host info</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#adc020c7501c1db5825e0b12ff30f118c">core::StringMap</a> hostInfo;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a2c057cc6c31326dcc11094a917191836">core::fillHostInfo</a>(hostInfo);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                  </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <span class="comment">// collectors</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#adbf7ece0bddde655770fc3623b8e9445">core::json</a> collectorsValue;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> colIter : <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">m_collectorInfos</a>)</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        collectorsValue.push_back(colIter.first);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      info = {</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        {<span class="stringliteral">&quot;source&quot;</span>, <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ae3a7d1e7404b31e1d63fac960632b62e">m_sourceName</a>},</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        {<span class="stringliteral">&quot;host&quot;</span>, hostInfo},</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        {<span class="stringliteral">&quot;collectors&quot;</span>, collectorsValue}</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      };</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab677c42a2ba64a89b25b54a1c5f95306"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">dqm4hep::online::EventSource::m_collectorInfos</a></div><div class="ttdeci">CollectorInfoMap m_collectorInfos</div><div class="ttdoc">The map of event collector infos. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00169">EventSource.h:169</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a2c057cc6c31326dcc11094a917191836"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a2c057cc6c31326dcc11094a917191836">dqm4hep::core::fillHostInfo</a></div><div class="ttdeci">void fillHostInfo(StringMap &amp;info)</div><div class="ttdoc">Fill host info (uname result + host name). </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00538">Internal.h:538</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_adc020c7501c1db5825e0b12ff30f118c"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#adc020c7501c1db5825e0b12ff30f118c">dqm4hep::core::StringMap</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; StringMap</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00310">Internal.h:310</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ae3a7d1e7404b31e1d63fac960632b62e"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ae3a7d1e7404b31e1d63fac960632b62e">dqm4hep::online::EventSource::m_sourceName</a></div><div class="ttdeci">std::string m_sourceName</div><div class="ttdoc">The source name. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00167">EventSource.h:167</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_adbf7ece0bddde655770fc3623b8e9445"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#adbf7ece0bddde655770fc3623b8e9445">dqm4hep::core::json</a></div><div class="ttdeci">nlohmann::json json</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00010">json.h:10</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -463,54 +438,54 @@ Private Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool whether the source was registered </dd></dl>
 
-<p>Definition at line <a class="el" href="EventSource_8cc_source.html#l00205">205</a> of file <a class="el" href="EventSource_8cc_source.html">EventSource.cc</a>.</p>
+<p>Definition at line <a class="el" href="EventSource_8cc_source.html#l00203">203</a> of file <a class="el" href="EventSource_8cc_source.html">EventSource.cc</a>.</p>
 
-<p>References <a class="el" href="OnlineRoutes_8cc_source.html#l00067">dqm4hep::online::OnlineRoutes::EventCollector::applicationType()</a>, <a class="el" href="NetBuffer_8cc_source.html#l00112">dqm4hep::net::Buffer::begin()</a>, <a class="el" href="NetBuffer_8h_source.html#l00291">dqm4hep::net::Buffer::createModel()</a>, <a class="el" href="Logging_8h_source.html#l00043">dqm_debug</a>, <a class="el" href="Logging_8h_source.html#l00047">dqm_info</a>, <a class="el" href="Logging_8h_source.html#l00044">dqm_warning</a>, <a class="el" href="NetBuffer_8cc_source.html#l00118">dqm4hep::net::Buffer::end()</a>, <a class="el" href="EventSource_8h_source.html#l00172">m_client</a>, <a class="el" href="Client_8cc_source.html#l00071">dqm4hep::net::Client::notifyServerOnExit()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00073">dqm4hep::online::OnlineRoutes::EventCollector::registerSource()</a>, <a class="el" href="Client_8h_source.html#l00165">dqm4hep::net::Client::sendRequest()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00054">dqm4hep::online::OnlineRoutes::Application::serverName()</a>, <a class="el" href="NetBuffer_8cc_source.html#l00104">dqm4hep::net::Buffer::setModel()</a>, and <a class="el" href="NetBuffer_8cc_source.html#l00124">dqm4hep::net::Buffer::size()</a>.</p>
+<p>References <a class="el" href="OnlineRoutes_8cc_source.html#l00067">dqm4hep::online::OnlineRoutes::EventCollector::applicationType()</a>, <a class="el" href="NetBuffer_8cc_source.html#l00112">dqm4hep::net::Buffer::begin()</a>, <a class="el" href="NetBuffer_8h_source.html#l00291">dqm4hep::net::Buffer::createModel()</a>, <a class="el" href="Logging_8h_source.html#l00043">dqm_debug</a>, <a class="el" href="Logging_8h_source.html#l00047">dqm_info</a>, <a class="el" href="Logging_8h_source.html#l00044">dqm_warning</a>, <a class="el" href="NetBuffer_8cc_source.html#l00118">dqm4hep::net::Buffer::end()</a>, <a class="el" href="EventSource_8h_source.html#l00170">m_client</a>, <a class="el" href="Client_8cc_source.html#l00071">dqm4hep::net::Client::notifyServerOnExit()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00073">dqm4hep::online::OnlineRoutes::EventCollector::registerSource()</a>, <a class="el" href="Client_8h_source.html#l00165">dqm4hep::net::Client::sendRequest()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00054">dqm4hep::online::OnlineRoutes::Application::serverName()</a>, <a class="el" href="NetBuffer_8cc_source.html#l00104">dqm4hep::net::Buffer::setModel()</a>, and <a class="el" href="NetBuffer_8cc_source.html#l00124">dqm4hep::net::Buffer::size()</a>.</p>
 
-<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00130">sendEvent()</a>, and <a class="el" href="EventSource_8cc_source.html#l00083">start()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                                                                                 {</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      std::string requestName = <a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a24117da5f444f17367ed34f7bf0f5dda">OnlineRoutes::EventCollector::registerSource</a>(collector);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      <span class="keywordtype">bool</span> returnValue(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;      net::Buffer requestBuffer;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      <span class="keyword">auto</span> model = requestBuffer.createModel&lt;std::string&gt;();</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      requestBuffer.setModel(model);</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      std::string jsonDump(info.dump());</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      model-&gt;move(std::move(jsonDump));</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      </div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;      <a class="code" href="Logging_8h.html#afeed011feb4159b13c3ae4873e1d0fcf">dqm_debug</a>( <span class="stringliteral">&quot;Sending request to collector {0} for registration, request: {1}&quot;</span>, collector , requestName);</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a35e526f1e321736f786fb3be287017b4">m_client</a>.<a class="code" href="classdqm4hep_1_1net_1_1Client.html#a292bc066bcdb40e7578396f4362d5fed">sendRequest</a>(requestName, requestBuffer, [&amp;returnValue,&amp;collector](<span class="keyword">const</span> net::Buffer &amp;buffer){</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <a class="code" href="namespacedqm4hep_1_1core.html#adbf7ece0bddde655770fc3623b8e9445">core::json</a> response({});</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        </div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keywordflow">if</span>(0 != buffer.size()) {</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;          response = core::json::parse(buffer.begin(), buffer.end());</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        }</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> registered(response.value&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;registered&quot;</span>, <span class="keyword">false</span>));</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        </div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">if</span>(not registered) {</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;          <span class="keyword">const</span> std::string message(response.value&lt;std::string&gt;(<span class="stringliteral">&quot;message&quot;</span>, <span class="stringliteral">&quot;The event collector is maybe not available or is down !&quot;</span>));</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;          <a class="code" href="Logging_8h.html#a0bfc26706a9022c017dd03af3c7c91d7">dqm_warning</a>( <span class="stringliteral">&quot;EventSource::registerMe(): Couldn&#39;t register source to collector &#39;{0}&#39;: {1}&quot;</span>, collector, message );</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;          returnValue = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        }</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;          <a class="code" href="Logging_8h.html#af06e81e068fdce66fa6920f65a774d13">dqm_info</a>( <span class="stringliteral">&quot;Event source registered to event collector &#39;{0}&#39; !&quot;</span>, collector );</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;          returnValue = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      });</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      </div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;      <span class="keywordflow">if</span>(returnValue) {</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <a class="code" href="Logging_8h.html#af06e81e068fdce66fa6920f65a774d13">dqm_info</a>( <span class="stringliteral">&quot;Will notify server on exit&quot;</span> );</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keyword">const</span> std::string serverName(<a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application.html#a218ca8c4cb4764f78ae04984049c023d">OnlineRoutes::Application::serverName</a>(<a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a712d6e1490b64f0127ed606350c3a623">OnlineRoutes::EventCollector::applicationType</a>(), collector));</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a35e526f1e321736f786fb3be287017b4">m_client</a>.<a class="code" href="classdqm4hep_1_1net_1_1Client.html#a546e7c38fbbc34d0d04b4fa5b2984086">notifyServerOnExit</a>(serverName);        </div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      }      </div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      <span class="keywordflow">return</span> returnValue;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    }</div>
+<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00128">sendEvent()</a>, and <a class="el" href="EventSource_8cc_source.html#l00083">start()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                                                                                 {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      std::string requestName = <a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a24117da5f444f17367ed34f7bf0f5dda">OnlineRoutes::EventCollector::registerSource</a>(collector);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      <span class="keywordtype">bool</span> returnValue(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      net::Buffer requestBuffer;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      <span class="keyword">auto</span> model = requestBuffer.createModel&lt;std::string&gt;();</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;      requestBuffer.setModel(model);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      std::string jsonDump(info.dump());</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      model-&gt;move(std::move(jsonDump));</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      <a class="code" href="Logging_8h.html#afeed011feb4159b13c3ae4873e1d0fcf">dqm_debug</a>( <span class="stringliteral">&quot;Sending request to collector {0} for registration, request: {1}&quot;</span>, collector , requestName);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a35e526f1e321736f786fb3be287017b4">m_client</a>.<a class="code" href="classdqm4hep_1_1net_1_1Client.html#a292bc066bcdb40e7578396f4362d5fed">sendRequest</a>(requestName, requestBuffer, [&amp;returnValue,&amp;collector](<span class="keyword">const</span> net::Buffer &amp;buffer){</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <a class="code" href="namespacedqm4hep_1_1core.html#adbf7ece0bddde655770fc3623b8e9445">core::json</a> response({});</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keywordflow">if</span>(0 != buffer.size()) {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;          response = core::json::parse(buffer.begin(), buffer.end());</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        }</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> registered(response.value&lt;<span class="keywordtype">bool</span>&gt;(<span class="stringliteral">&quot;registered&quot;</span>, <span class="keyword">false</span>));</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        </div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordflow">if</span>(not registered) {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;          <span class="keyword">const</span> std::string message(response.value&lt;std::string&gt;(<span class="stringliteral">&quot;message&quot;</span>, <span class="stringliteral">&quot;The event collector is maybe not available or is down !&quot;</span>));</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;          <a class="code" href="Logging_8h.html#a0bfc26706a9022c017dd03af3c7c91d7">dqm_warning</a>( <span class="stringliteral">&quot;EventSource::registerMe(): Couldn&#39;t register source to collector &#39;{0}&#39;: {1}&quot;</span>, collector, message );</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;          returnValue = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;          <a class="code" href="Logging_8h.html#af06e81e068fdce66fa6920f65a774d13">dqm_info</a>( <span class="stringliteral">&quot;Event source registered to event collector &#39;{0}&#39; !&quot;</span>, collector );</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;          returnValue = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      });</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;      </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <span class="keywordflow">if</span>(returnValue) {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <a class="code" href="Logging_8h.html#af06e81e068fdce66fa6920f65a774d13">dqm_info</a>( <span class="stringliteral">&quot;Will notify server on exit&quot;</span> );</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keyword">const</span> std::string serverName(<a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application.html#a218ca8c4cb4764f78ae04984049c023d">OnlineRoutes::Application::serverName</a>(<a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a712d6e1490b64f0127ed606350c3a623">OnlineRoutes::EventCollector::applicationType</a>(), collector));</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a35e526f1e321736f786fb3be287017b4">m_client</a>.<a class="code" href="classdqm4hep_1_1net_1_1Client.html#a546e7c38fbbc34d0d04b4fa5b2984086">notifyServerOnExit</a>(serverName);        </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      }      </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <span class="keywordflow">return</span> returnValue;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector_html_a712d6e1490b64f0127ed606350c3a623"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a712d6e1490b64f0127ed606350c3a623">dqm4hep::online::OnlineRoutes::EventCollector::applicationType</a></div><div class="ttdeci">static std::string applicationType()</div><div class="ttdoc">Get the event collector application type. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00067">OnlineRoutes.cc:67</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Client_html_a292bc066bcdb40e7578396f4362d5fed"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html#a292bc066bcdb40e7578396f4362d5fed">dqm4hep::net::Client::sendRequest</a></div><div class="ttdeci">void sendRequest(const std::string &amp;name, const Request &amp;request) const </div><div class="ttdoc">Send a command. </div><div class="ttdef"><b>Definition:</b> <a href="Client_8h_source.html#l00165">Client.h:165</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector_html_a24117da5f444f17367ed34f7bf0f5dda"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a24117da5f444f17367ed34f7bf0f5dda">dqm4hep::online::OnlineRoutes::EventCollector::registerSource</a></div><div class="ttdeci">static std::string registerSource(const std::string &amp;collector)</div><div class="ttdoc">Get the event collector request name to register a new event source. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00073">OnlineRoutes.cc:73</a></div></div>
 <div class="ttc" id="Logging_8h_html_af06e81e068fdce66fa6920f65a774d13"><div class="ttname"><a href="Logging_8h.html#af06e81e068fdce66fa6920f65a774d13">dqm_info</a></div><div class="ttdeci">#define dqm_info(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00047">Logging.h:47</a></div></div>
 <div class="ttc" id="Logging_8h_html_a0bfc26706a9022c017dd03af3c7c91d7"><div class="ttname"><a href="Logging_8h.html#a0bfc26706a9022c017dd03af3c7c91d7">dqm_warning</a></div><div class="ttdeci">#define dqm_warning(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00044">Logging.h:44</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Client_html_a546e7c38fbbc34d0d04b4fa5b2984086"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html#a546e7c38fbbc34d0d04b4fa5b2984086">dqm4hep::net::Client::notifyServerOnExit</a></div><div class="ttdeci">void notifyServerOnExit(const std::string &amp;serverName)</div><div class="ttdoc"> . </div><div class="ttdef"><b>Definition:</b> <a href="Client_8cc_source.html#l00071">Client.cc:71</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_a35e526f1e321736f786fb3be287017b4"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#a35e526f1e321736f786fb3be287017b4">dqm4hep::online::EventSource::m_client</a></div><div class="ttdeci">net::Client m_client</div><div class="ttdoc">The networking client interface. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00172">EventSource.h:172</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_a35e526f1e321736f786fb3be287017b4"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#a35e526f1e321736f786fb3be287017b4">dqm4hep::online::EventSource::m_client</a></div><div class="ttdeci">net::Client m_client</div><div class="ttdoc">The networking client interface. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00170">EventSource.h:170</a></div></div>
 <div class="ttc" id="Logging_8h_html_afeed011feb4159b13c3ae4873e1d0fcf"><div class="ttname"><a href="Logging_8h.html#afeed011feb4159b13c3ae4873e1d0fcf">dqm_debug</a></div><div class="ttdeci">#define dqm_debug(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00043">Logging.h:43</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application_html_a218ca8c4cb4764f78ae04984049c023d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application.html#a218ca8c4cb4764f78ae04984049c023d">dqm4hep::online::OnlineRoutes::Application::serverName</a></div><div class="ttdeci">static std::string serverName(const std::string &amp;type, const std::string &amp;name)</div><div class="ttdoc">Get the server name given an app type and name. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00054">OnlineRoutes.cc:54</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_adbf7ece0bddde655770fc3623b8e9445"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#adbf7ece0bddde655770fc3623b8e9445">dqm4hep::core::json</a></div><div class="ttdeci">nlohmann::json json</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00010">json.h:10</a></div></div>
@@ -539,22 +514,22 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="EventSource_8cc_source.html#l00108">108</a> of file <a class="el" href="EventSource_8cc_source.html">EventSource.cc</a>.</p>
+<p>Definition at line <a class="el" href="EventSource_8cc_source.html#l00106">106</a> of file <a class="el" href="EventSource_8cc_source.html">EventSource.cc</a>.</p>
 
-<p>References <a class="el" href="EventSource_8h_source.html#l00171">m_collectorInfos</a>.</p>
+<p>References <a class="el" href="EventSource_8h_source.html#l00169">m_collectorInfos</a>.</p>
 
-<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00119">sendEvent()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                                  {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">core::StringVector</a> collectors;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> iter : <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">m_collectorInfos</a>)</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        collectors.push_back(iter.first);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a31a26daf8e643b818fd86a75abce04e0">sendEvent</a>(collectors, event);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab677c42a2ba64a89b25b54a1c5f95306"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">dqm4hep::online::EventSource::m_collectorInfos</a></div><div class="ttdeci">CollectorInfoMap m_collectorInfos</div><div class="ttdoc">The map of event collector infos. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00171">EventSource.h:171</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_a31a26daf8e643b818fd86a75abce04e0"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#a31a26daf8e643b818fd86a75abce04e0">dqm4hep::online::EventSource::sendEvent</a></div><div class="ttdeci">void sendEvent(core::EventPtr event)</div><div class="ttdoc">Send a single event to all registered collectors. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8cc_source.html#l00108">EventSource.cc:108</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00312">Internal.h:312</a></div></div>
+<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00117">sendEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                                  {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">core::StringVector</a> collectors;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> iter : <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">m_collectorInfos</a>)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        collectors.push_back(iter.first);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a31a26daf8e643b818fd86a75abce04e0">sendEvent</a>(collectors, event);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab677c42a2ba64a89b25b54a1c5f95306"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">dqm4hep::online::EventSource::m_collectorInfos</a></div><div class="ttdeci">CollectorInfoMap m_collectorInfos</div><div class="ttdoc">The map of event collector infos. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00169">EventSource.h:169</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_a31a26daf8e643b818fd86a75abce04e0"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#a31a26daf8e643b818fd86a75abce04e0">dqm4hep::online::EventSource::sendEvent</a></div><div class="ttdeci">void sendEvent(core::EventPtr event)</div><div class="ttdoc">Send a single event to all registered collectors. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8cc_source.html#l00106">EventSource.cc:106</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00306">Internal.h:306</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -592,21 +567,21 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="EventSource_8cc_source.html#l00119">119</a> of file <a class="el" href="EventSource_8cc_source.html">EventSource.cc</a>.</p>
+<p>Definition at line <a class="el" href="EventSource_8cc_source.html#l00117">117</a> of file <a class="el" href="EventSource_8cc_source.html">EventSource.cc</a>.</p>
 
-<p>References <a class="el" href="Logging_8h_source.html#l00045">dqm_error</a>, <a class="el" href="EventSource_8h_source.html#l00171">m_collectorInfos</a>, and <a class="el" href="EventSource_8cc_source.html#l00108">sendEvent()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                                                              {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">m_collectorInfos</a>.end() == <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">m_collectorInfos</a>.find(collector)) {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;EventSource::sendEvent(col,evt): collector &#39;{0}&#39; not registered !&quot;</span>, collector );</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">throw</span> core::StatusCodeException(core::STATUS_CODE_NOT_FOUND);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a31a26daf8e643b818fd86a75abce04e0">sendEvent</a>(<a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">core::StringVector</a>({collector}), event);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab677c42a2ba64a89b25b54a1c5f95306"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">dqm4hep::online::EventSource::m_collectorInfos</a></div><div class="ttdeci">CollectorInfoMap m_collectorInfos</div><div class="ttdoc">The map of event collector infos. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00171">EventSource.h:171</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_a31a26daf8e643b818fd86a75abce04e0"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#a31a26daf8e643b818fd86a75abce04e0">dqm4hep::online::EventSource::sendEvent</a></div><div class="ttdeci">void sendEvent(core::EventPtr event)</div><div class="ttdoc">Send a single event to all registered collectors. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8cc_source.html#l00108">EventSource.cc:108</a></div></div>
+<p>References <a class="el" href="Logging_8h_source.html#l00045">dqm_error</a>, <a class="el" href="EventSource_8h_source.html#l00169">m_collectorInfos</a>, and <a class="el" href="EventSource_8cc_source.html#l00106">sendEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                                                              {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">m_collectorInfos</a>.end() == <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">m_collectorInfos</a>.find(collector)) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;EventSource::sendEvent(col,evt): collector &#39;{0}&#39; not registered !&quot;</span>, collector );</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">throw</span> core::StatusCodeException(core::STATUS_CODE_NOT_FOUND);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a31a26daf8e643b818fd86a75abce04e0">sendEvent</a>(<a class="code" href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">core::StringVector</a>({collector}), event);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab677c42a2ba64a89b25b54a1c5f95306"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">dqm4hep::online::EventSource::m_collectorInfos</a></div><div class="ttdeci">CollectorInfoMap m_collectorInfos</div><div class="ttdoc">The map of event collector infos. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00169">EventSource.h:169</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_a31a26daf8e643b818fd86a75abce04e0"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#a31a26daf8e643b818fd86a75abce04e0">dqm4hep::online::EventSource::sendEvent</a></div><div class="ttdeci">void sendEvent(core::EventPtr event)</div><div class="ttdoc">Send a single event to all registered collectors. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8cc_source.html#l00106">EventSource.cc:106</a></div></div>
 <div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00045">Logging.h:45</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00312">Internal.h:312</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00306">Internal.h:306</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -651,79 +626,79 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="EventSource_8cc_source.html#l00130">130</a> of file <a class="el" href="EventSource_8cc_source.html">EventSource.cc</a>.</p>
+<p>Definition at line <a class="el" href="EventSource_8cc_source.html#l00128">128</a> of file <a class="el" href="EventSource_8cc_source.html">EventSource.cc</a>.</p>
 
-<p>References <a class="el" href="OnlineRoutes_8cc_source.html#l00067">dqm4hep::online::OnlineRoutes::EventCollector::applicationType()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00085">dqm4hep::online::OnlineRoutes::EventCollector::collectEvent()</a>, <a class="el" href="NetBuffer_8h_source.html#l00291">dqm4hep::net::Buffer::createModel()</a>, <a class="el" href="Logging_8h_source.html#l00045">dqm_error</a>, <a class="el" href="Logging_8h_source.html#l00044">dqm_warning</a>, <a class="el" href="EventSource_8cc_source.html#l00186">getSourceInfo()</a>, <a class="el" href="Server_8cc_source.html#l00318">dqm4hep::net::Server::isServerRunning()</a>, <a class="el" href="EventSource_8h_source.html#l00173">m_bufferDevice</a>, <a class="el" href="EventSource_8h_source.html#l00172">m_client</a>, <a class="el" href="EventSource_8h_source.html#l00171">m_collectorInfos</a>, <a class="el" href="EventSource_8h_source.html#l00170">m_eventStreamer</a>, <a class="el" href="EventSource_8h_source.html#l00169">m_sourceName</a>, <a class="el" href="EventSource_8h_source.html#l00168">m_started</a>, <a class="el" href="EventSource_8cc_source.html#l00205">registerMe()</a>, <a class="el" href="Client_8h_source.html#l00208">dqm4hep::net::Client::sendCommand()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00054">dqm4hep::online::OnlineRoutes::Application::serverName()</a>, <a class="el" href="NetBuffer_8cc_source.html#l00104">dqm4hep::net::Buffer::setModel()</a>, <a class="el" href="StatusCodes_8h_source.html#l00065">THROW_RESULT_IF</a>, and <a class="el" href="EventStreamer_8cc_source.html#l00037">dqm4hep::core::EventStreamer::writeEvent()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                                                                                      {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab4761b3a8abaa6219553bb7078d0fe78">m_started</a>) {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">throw</span> core::StatusCodeException(core::STATUS_CODE_NOT_INITIALIZED);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == event) {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">throw</span> core::StatusCodeException(core::STATUS_CODE_INVALID_PTR);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      }</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      (void)<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a8998da547fe7fa59b6bc03fe77c44ec0">m_bufferDevice</a>-&gt;reset();</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      <a class="code" href="StatusCodes_8h.html#ab49c8013f48bd677d0e5e39cb506b8f9">THROW_RESULT_IF</a>(core::STATUS_CODE_SUCCESS, !=, <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a96da5151d6d5f9423ee8732994598cba">m_eventStreamer</a>.<a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#a410c80530be38baf5590b985749c04d7">writeEvent</a>(event, <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a8998da547fe7fa59b6bc03fe77c44ec0">m_bufferDevice</a>.get()));</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;      </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#adbf7ece0bddde655770fc3623b8e9445">core::json</a> sourceInfo;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;      net::Buffer collectBuffer;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <span class="keyword">auto</span> model = collectBuffer.createModel();</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;      collectBuffer.setModel(model);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      model-&gt;handle(<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a8998da547fe7fa59b6bc03fe77c44ec0">m_bufferDevice</a>-&gt;getBuffer(), <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a8998da547fe7fa59b6bc03fe77c44ec0">m_bufferDevice</a>-&gt;getPosition());</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      <span class="comment">// send serialized event to all collectors </span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> collector : collectors) {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keyword">auto</span> iter = <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">m_collectorInfos</a>.find(collector);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">m_collectorInfos</a>.end() == iter) {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;          <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;EventSource::sendEvent(): Collector &#39;{0}&#39; not found... Something is wrong !!!&quot;</span>, collector );</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;          <span class="keywordflow">throw</span> core::StatusCodeException(core::STATUS_CODE_NOT_FOUND);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="comment">// Is the event collector server actually running ?</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keyword">const</span> std::string serverName(<a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application.html#a218ca8c4cb4764f78ae04984049c023d">OnlineRoutes::Application::serverName</a>(<a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a712d6e1490b64f0127ed606350c3a623">OnlineRoutes::EventCollector::applicationType</a>(), iter-&gt;first));</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="classdqm4hep_1_1net_1_1Server.html#a2f58dc00ef5c48af7a9cbb9337568869">net::Server::isServerRunning</a>(serverName)) {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;          <span class="comment">// in case the server was stopped, we will need to send </span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;          <span class="comment">// back the source registration on wake up</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;          iter-&gt;second.m_registered = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;          <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        }</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="comment">// if not yet registered to the collector, do it</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">if</span>(!iter-&gt;second.m_registered) {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;          <span class="comment">// get it once</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;          <span class="keywordflow">if</span>(sourceInfo.empty()) {</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            this-&gt;<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#aa72aa0d322337e7e9cdccea5992fe560">getSourceInfo</a>(sourceInfo);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;          }            </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;          iter-&gt;second.m_registered = this-&gt;<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ae7c992768da87cfd3557b4544a3bdd76">registerMe</a>(iter-&gt;first, sourceInfo);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">if</span>(!iter-&gt;second.m_registered) {</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;          <a class="code" href="Logging_8h.html#a0bfc26706a9022c017dd03af3c7c91d7">dqm_warning</a>( <span class="stringliteral">&quot;EventSource::sendEvent(): Source &#39;{0}&#39; not registered yet to collector &#39;{1}&#39;. Skipping ...&quot;</span>, <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ae3a7d1e7404b31e1d63fac960632b62e">m_sourceName</a>, collector );</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;          <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        }</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        </div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a35e526f1e321736f786fb3be287017b4">m_client</a>.<a class="code" href="classdqm4hep_1_1net_1_1Client.html#af909a5f8ebc100e7249082b90c8eddb1">sendCommand</a>(<a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a797ac8fa5b0828598ef21c1a08746795">OnlineRoutes::EventCollector::collectEvent</a>(collector), collectBuffer);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      }  </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ae7c992768da87cfd3557b4544a3bdd76"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ae7c992768da87cfd3557b4544a3bdd76">dqm4hep::online::EventSource::registerMe</a></div><div class="ttdeci">bool registerMe(const std::string &amp;collector, const core::json &amp;info)</div><div class="ttdoc">Register the event source to the specified collector. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8cc_source.html#l00205">EventSource.cc:205</a></div></div>
+<p>References <a class="el" href="OnlineRoutes_8cc_source.html#l00067">dqm4hep::online::OnlineRoutes::EventCollector::applicationType()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00085">dqm4hep::online::OnlineRoutes::EventCollector::collectEvent()</a>, <a class="el" href="NetBuffer_8h_source.html#l00291">dqm4hep::net::Buffer::createModel()</a>, <a class="el" href="Logging_8h_source.html#l00045">dqm_error</a>, <a class="el" href="Logging_8h_source.html#l00044">dqm_warning</a>, <a class="el" href="EventSource_8cc_source.html#l00184">getSourceInfo()</a>, <a class="el" href="Server_8cc_source.html#l00318">dqm4hep::net::Server::isServerRunning()</a>, <a class="el" href="EventSource_8h_source.html#l00171">m_buffer</a>, <a class="el" href="EventSource_8h_source.html#l00170">m_client</a>, <a class="el" href="EventSource_8h_source.html#l00169">m_collectorInfos</a>, <a class="el" href="EventSource_8h_source.html#l00168">m_eventStreamer</a>, <a class="el" href="EventSource_8h_source.html#l00167">m_sourceName</a>, <a class="el" href="EventSource_8h_source.html#l00166">m_started</a>, <a class="el" href="EventSource_8cc_source.html#l00203">registerMe()</a>, <a class="el" href="Client_8h_source.html#l00208">dqm4hep::net::Client::sendCommand()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00054">dqm4hep::online::OnlineRoutes::Application::serverName()</a>, <a class="el" href="NetBuffer_8cc_source.html#l00104">dqm4hep::net::Buffer::setModel()</a>, <a class="el" href="StatusCodes_8h_source.html#l00065">THROW_RESULT_IF</a>, and <a class="el" href="EventStreamer_8cc_source.html#l00040">dqm4hep::core::EventStreamer::writeEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                                                                                      {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab4761b3a8abaa6219553bb7078d0fe78">m_started</a>) {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">throw</span> core::StatusCodeException(core::STATUS_CODE_NOT_INITIALIZED);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == event) {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">throw</span> core::StatusCodeException(core::STATUS_CODE_INVALID_PTR);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a217b3057ae0182f87346d76bd21773b0">m_buffer</a>.Reset();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      <a class="code" href="StatusCodes_8h.html#ab49c8013f48bd677d0e5e39cb506b8f9">THROW_RESULT_IF</a>(core::STATUS_CODE_SUCCESS, !=, <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a96da5151d6d5f9423ee8732994598cba">m_eventStreamer</a>.<a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#a0e2e9d3f650a8d81e213424019f7be35">writeEvent</a>(event, <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a217b3057ae0182f87346d76bd21773b0">m_buffer</a>));</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#adbf7ece0bddde655770fc3623b8e9445">core::json</a> sourceInfo;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;      net::Buffer collectBuffer;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;      <span class="keyword">auto</span> model = collectBuffer.createModel();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;      collectBuffer.setModel(model);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      model-&gt;handle(<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a217b3057ae0182f87346d76bd21773b0">m_buffer</a>.Buffer(), <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a217b3057ae0182f87346d76bd21773b0">m_buffer</a>.Length());</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;      </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      <span class="comment">// send serialized event to all collectors </span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> collector : collectors) {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keyword">auto</span> iter = <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">m_collectorInfos</a>.find(collector);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">m_collectorInfos</a>.end() == iter) {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;          <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;EventSource::sendEvent(): Collector &#39;{0}&#39; not found... Something is wrong !!!&quot;</span>, collector );</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;          <span class="keywordflow">throw</span> core::StatusCodeException(core::STATUS_CODE_NOT_FOUND);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="comment">// Is the event collector server actually running ?</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keyword">const</span> std::string serverName(<a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application.html#a218ca8c4cb4764f78ae04984049c023d">OnlineRoutes::Application::serverName</a>(<a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a712d6e1490b64f0127ed606350c3a623">OnlineRoutes::EventCollector::applicationType</a>(), iter-&gt;first));</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="classdqm4hep_1_1net_1_1Server.html#a2f58dc00ef5c48af7a9cbb9337568869">net::Server::isServerRunning</a>(serverName)) {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;          <span class="comment">// in case the server was stopped, we will need to send </span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;          <span class="comment">// back the source registration on wake up</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;          iter-&gt;second.m_registered = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;          <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="comment">// if not yet registered to the collector, do it</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">if</span>(!iter-&gt;second.m_registered) {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;          <span class="comment">// get it once</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;          <span class="keywordflow">if</span>(sourceInfo.empty()) {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            this-&gt;<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#aa72aa0d322337e7e9cdccea5992fe560">getSourceInfo</a>(sourceInfo);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;          }            </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;          iter-&gt;second.m_registered = this-&gt;<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ae7c992768da87cfd3557b4544a3bdd76">registerMe</a>(iter-&gt;first, sourceInfo);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">if</span>(!iter-&gt;second.m_registered) {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;          <a class="code" href="Logging_8h.html#a0bfc26706a9022c017dd03af3c7c91d7">dqm_warning</a>( <span class="stringliteral">&quot;EventSource::sendEvent(): Source &#39;{0}&#39; not registered yet to collector &#39;{1}&#39;. Skipping ...&quot;</span>, <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ae3a7d1e7404b31e1d63fac960632b62e">m_sourceName</a>, collector );</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;          <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a35e526f1e321736f786fb3be287017b4">m_client</a>.<a class="code" href="classdqm4hep_1_1net_1_1Client.html#af909a5f8ebc100e7249082b90c8eddb1">sendCommand</a>(<a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a797ac8fa5b0828598ef21c1a08746795">OnlineRoutes::EventCollector::collectEvent</a>(collector), collectBuffer);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      }  </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ae7c992768da87cfd3557b4544a3bdd76"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ae7c992768da87cfd3557b4544a3bdd76">dqm4hep::online::EventSource::registerMe</a></div><div class="ttdeci">bool registerMe(const std::string &amp;collector, const core::json &amp;info)</div><div class="ttdoc">Register the event source to the specified collector. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8cc_source.html#l00203">EventSource.cc:203</a></div></div>
 <div class="ttc" id="StatusCodes_8h_html_ab49c8013f48bd677d0e5e39cb506b8f9"><div class="ttname"><a href="StatusCodes_8h.html#ab49c8013f48bd677d0e5e39cb506b8f9">THROW_RESULT_IF</a></div><div class="ttdeci">#define THROW_RESULT_IF(StatusCode1, Operator, Command)</div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00065">StatusCodes.h:65</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab4761b3a8abaa6219553bb7078d0fe78"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab4761b3a8abaa6219553bb7078d0fe78">dqm4hep::online::EventSource::m_started</a></div><div class="ttdeci">bool m_started</div><div class="ttdoc">Whether the event source was started. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00168">EventSource.h:168</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab4761b3a8abaa6219553bb7078d0fe78"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab4761b3a8abaa6219553bb7078d0fe78">dqm4hep::online::EventSource::m_started</a></div><div class="ttdeci">bool m_started</div><div class="ttdoc">Whether the event source was started. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00166">EventSource.h:166</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector_html_a712d6e1490b64f0127ed606350c3a623"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a712d6e1490b64f0127ed606350c3a623">dqm4hep::online::OnlineRoutes::EventCollector::applicationType</a></div><div class="ttdeci">static std::string applicationType()</div><div class="ttdoc">Get the event collector application type. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00067">OnlineRoutes.cc:67</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab677c42a2ba64a89b25b54a1c5f95306"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">dqm4hep::online::EventSource::m_collectorInfos</a></div><div class="ttdeci">CollectorInfoMap m_collectorInfos</div><div class="ttdoc">The map of event collector infos. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00171">EventSource.h:171</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab677c42a2ba64a89b25b54a1c5f95306"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">dqm4hep::online::EventSource::m_collectorInfos</a></div><div class="ttdeci">CollectorInfoMap m_collectorInfos</div><div class="ttdoc">The map of event collector infos. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00169">EventSource.h:169</a></div></div>
 <div class="ttc" id="Logging_8h_html_a0bfc26706a9022c017dd03af3c7c91d7"><div class="ttname"><a href="Logging_8h.html#a0bfc26706a9022c017dd03af3c7c91d7">dqm_warning</a></div><div class="ttdeci">#define dqm_warning(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00044">Logging.h:44</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Client_html_af909a5f8ebc100e7249082b90c8eddb1"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html#af909a5f8ebc100e7249082b90c8eddb1">dqm4hep::net::Client::sendCommand</a></div><div class="ttdeci">void sendCommand(const std::string &amp;name, const Command &amp;command, bool blocking=false) const </div><div class="ttdoc">Send a command. </div><div class="ttdef"><b>Definition:</b> <a href="Client_8h_source.html#l00208">Client.h:208</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_a35e526f1e321736f786fb3be287017b4"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#a35e526f1e321736f786fb3be287017b4">dqm4hep::online::EventSource::m_client</a></div><div class="ttdeci">net::Client m_client</div><div class="ttdoc">The networking client interface. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00172">EventSource.h:172</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_a96da5151d6d5f9423ee8732994598cba"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#a96da5151d6d5f9423ee8732994598cba">dqm4hep::online::EventSource::m_eventStreamer</a></div><div class="ttdeci">core::EventStreamer m_eventStreamer</div><div class="ttdoc">The event streamer. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00170">EventSource.h:170</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ae3a7d1e7404b31e1d63fac960632b62e"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ae3a7d1e7404b31e1d63fac960632b62e">dqm4hep::online::EventSource::m_sourceName</a></div><div class="ttdeci">std::string m_sourceName</div><div class="ttdoc">The source name. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00169">EventSource.h:169</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_a35e526f1e321736f786fb3be287017b4"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#a35e526f1e321736f786fb3be287017b4">dqm4hep::online::EventSource::m_client</a></div><div class="ttdeci">net::Client m_client</div><div class="ttdoc">The networking client interface. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00170">EventSource.h:170</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_a96da5151d6d5f9423ee8732994598cba"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#a96da5151d6d5f9423ee8732994598cba">dqm4hep::online::EventSource::m_eventStreamer</a></div><div class="ttdeci">core::EventStreamer m_eventStreamer</div><div class="ttdoc">The event streamer. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00168">EventSource.h:168</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ae3a7d1e7404b31e1d63fac960632b62e"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ae3a7d1e7404b31e1d63fac960632b62e">dqm4hep::online::EventSource::m_sourceName</a></div><div class="ttdeci">std::string m_sourceName</div><div class="ttdoc">The source name. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00167">EventSource.h:167</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector_html_a797ac8fa5b0828598ef21c1a08746795"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a797ac8fa5b0828598ef21c1a08746795">dqm4hep::online::OnlineRoutes::EventCollector::collectEvent</a></div><div class="ttdeci">static std::string collectEvent(const std::string &amp;collector)</div><div class="ttdoc">Get the event collector command name to collect an event. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00085">OnlineRoutes.cc:85</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application_html_a218ca8c4cb4764f78ae04984049c023d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application.html#a218ca8c4cb4764f78ae04984049c023d">dqm4hep::online::OnlineRoutes::Application::serverName</a></div><div class="ttdeci">static std::string serverName(const std::string &amp;type, const std::string &amp;name)</div><div class="ttdoc">Get the server name given an app type and name. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00054">OnlineRoutes.cc:54</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventStreamer_html_a0e2e9d3f650a8d81e213424019f7be35"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventStreamer.html#a0e2e9d3f650a8d81e213424019f7be35">dqm4hep::core::EventStreamer::writeEvent</a></div><div class="ttdeci">StatusCode writeEvent(EventPtr event, TBuffer &amp;buffer)</div><div class="ttdoc">Write an event using an xdrstream device. </div><div class="ttdef"><b>Definition:</b> <a href="EventStreamer_8cc_source.html#l00040">EventStreamer.cc:40</a></div></div>
 <div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00045">Logging.h:45</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventStreamer_html_a410c80530be38baf5590b985749c04d7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventStreamer.html#a410c80530be38baf5590b985749c04d7">dqm4hep::core::EventStreamer::writeEvent</a></div><div class="ttdeci">StatusCode writeEvent(EventPtr event, xdrstream::IODevice *device)</div><div class="ttdoc">Write an event using an xdrstream device. </div><div class="ttdef"><b>Definition:</b> <a href="EventStreamer_8cc_source.html#l00037">EventStreamer.cc:37</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_aa72aa0d322337e7e9cdccea5992fe560"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#aa72aa0d322337e7e9cdccea5992fe560">dqm4hep::online::EventSource::getSourceInfo</a></div><div class="ttdeci">void getSourceInfo(core::json &amp;info)</div><div class="ttdoc">Get the source info (host info + source info) </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8cc_source.html#l00186">EventSource.cc:186</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_a217b3057ae0182f87346d76bd21773b0"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#a217b3057ae0182f87346d76bd21773b0">dqm4hep::online::EventSource::m_buffer</a></div><div class="ttdeci">TBufferFile m_buffer</div><div class="ttdoc">The serialized event raw buffer. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00171">EventSource.h:171</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_aa72aa0d322337e7e9cdccea5992fe560"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#aa72aa0d322337e7e9cdccea5992fe560">dqm4hep::online::EventSource::getSourceInfo</a></div><div class="ttdeci">void getSourceInfo(core::json &amp;info)</div><div class="ttdoc">Get the source info (host info + source info) </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8cc_source.html#l00184">EventSource.cc:184</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_adbf7ece0bddde655770fc3623b8e9445"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#adbf7ece0bddde655770fc3623b8e9445">dqm4hep::core::json</a></div><div class="ttdeci">nlohmann::json json</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00010">json.h:10</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_a8998da547fe7fa59b6bc03fe77c44ec0"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#a8998da547fe7fa59b6bc03fe77c44ec0">dqm4hep::online::EventSource::m_bufferDevice</a></div><div class="ttdeci">BufferDevicePtr m_bufferDevice</div><div class="ttdoc">The serialized event raw buffer (from xdrstream) </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00173">EventSource.h:173</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Server_html_a2f58dc00ef5c48af7a9cbb9337568869"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Server.html#a2f58dc00ef5c48af7a9cbb9337568869">dqm4hep::net::Server::isServerRunning</a></div><div class="ttdeci">static bool isServerRunning(const std::string &amp;serverName)</div><div class="ttdoc">Whether the target server is already running on the network. </div><div class="ttdef"><b>Definition:</b> <a href="Server_8cc_source.html#l00318">Server.cc:318</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -745,11 +720,11 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="EventSource_8cc_source.html#l00059">59</a> of file <a class="el" href="EventSource_8cc_source.html">EventSource.cc</a>.</p>
 
-<p>References <a class="el" href="EventSource_8h_source.html#l00169">m_sourceName</a>.</p>
+<p>References <a class="el" href="EventSource_8h_source.html#l00167">m_sourceName</a>.</p>
 <div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                   {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ae3a7d1e7404b31e1d63fac960632b62e">m_sourceName</a>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ae3a7d1e7404b31e1d63fac960632b62e"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ae3a7d1e7404b31e1d63fac960632b62e">dqm4hep::online::EventSource::m_sourceName</a></div><div class="ttdeci">std::string m_sourceName</div><div class="ttdoc">The source name. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00169">EventSource.h:169</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ae3a7d1e7404b31e1d63fac960632b62e"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ae3a7d1e7404b31e1d63fac960632b62e">dqm4hep::online::EventSource::m_sourceName</a></div><div class="ttdeci">std::string m_sourceName</div><div class="ttdoc">The source name. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00167">EventSource.h:167</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -771,7 +746,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="EventSource_8cc_source.html#l00083">83</a> of file <a class="el" href="EventSource_8cc_source.html">EventSource.cc</a>.</p>
 
-<p>References <a class="el" href="Logging_8h_source.html#l00045">dqm_error</a>, <a class="el" href="EventSource_8cc_source.html#l00186">getSourceInfo()</a>, <a class="el" href="EventSource_8h_source.html#l00173">m_bufferDevice</a>, <a class="el" href="EventSource_8h_source.html#l00171">m_collectorInfos</a>, <a class="el" href="EventSource_8h_source.html#l00169">m_sourceName</a>, <a class="el" href="EventSource_8h_source.html#l00168">m_started</a>, and <a class="el" href="EventSource_8cc_source.html#l00205">registerMe()</a>.</p>
+<p>References <a class="el" href="Logging_8h_source.html#l00045">dqm_error</a>, <a class="el" href="EventSource_8cc_source.html#l00184">getSourceInfo()</a>, <a class="el" href="EventSource_8h_source.html#l00169">m_collectorInfos</a>, <a class="el" href="EventSource_8h_source.html#l00167">m_sourceName</a>, <a class="el" href="EventSource_8h_source.html#l00166">m_started</a>, and <a class="el" href="EventSource_8cc_source.html#l00203">registerMe()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                            {</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab4761b3a8abaa6219553bb7078d0fe78">m_started</a>) {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">throw</span> core::StatusCodeException(core::STATUS_CODE_ALREADY_INITIALIZED);</div>
@@ -782,26 +757,23 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">throw</span> core::StatusCodeException(core::STATUS_CODE_NOT_INITIALIZED);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      }</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a8998da547fe7fa59b6bc03fe77c44ec0">m_bufferDevice</a> = std::make_shared&lt;xdrstream::BufferDevice&gt;(2*1024*1024);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#adbf7ece0bddde655770fc3623b8e9445">core::json</a> sourceInfo;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#aa72aa0d322337e7e9cdccea5992fe560">getSourceInfo</a>(sourceInfo);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> colIter : <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">m_collectorInfos</a>) {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">bool</span> registered = this-&gt;<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ae7c992768da87cfd3557b4544a3bdd76">registerMe</a>(colIter.first, sourceInfo);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        colIter.second.m_registered = registered;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab4761b3a8abaa6219553bb7078d0fe78">m_started</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ae7c992768da87cfd3557b4544a3bdd76"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ae7c992768da87cfd3557b4544a3bdd76">dqm4hep::online::EventSource::registerMe</a></div><div class="ttdeci">bool registerMe(const std::string &amp;collector, const core::json &amp;info)</div><div class="ttdoc">Register the event source to the specified collector. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8cc_source.html#l00205">EventSource.cc:205</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab4761b3a8abaa6219553bb7078d0fe78"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab4761b3a8abaa6219553bb7078d0fe78">dqm4hep::online::EventSource::m_started</a></div><div class="ttdeci">bool m_started</div><div class="ttdoc">Whether the event source was started. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00168">EventSource.h:168</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab677c42a2ba64a89b25b54a1c5f95306"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">dqm4hep::online::EventSource::m_collectorInfos</a></div><div class="ttdeci">CollectorInfoMap m_collectorInfos</div><div class="ttdoc">The map of event collector infos. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00171">EventSource.h:171</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ae3a7d1e7404b31e1d63fac960632b62e"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ae3a7d1e7404b31e1d63fac960632b62e">dqm4hep::online::EventSource::m_sourceName</a></div><div class="ttdeci">std::string m_sourceName</div><div class="ttdoc">The source name. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00169">EventSource.h:169</a></div></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#adbf7ece0bddde655770fc3623b8e9445">core::json</a> sourceInfo;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#aa72aa0d322337e7e9cdccea5992fe560">getSourceInfo</a>(sourceInfo);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> colIter : <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">m_collectorInfos</a>) {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">bool</span> registered = this-&gt;<a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ae7c992768da87cfd3557b4544a3bdd76">registerMe</a>(colIter.first, sourceInfo);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        colIter.second.m_registered = registered;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#ab4761b3a8abaa6219553bb7078d0fe78">m_started</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ae7c992768da87cfd3557b4544a3bdd76"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ae7c992768da87cfd3557b4544a3bdd76">dqm4hep::online::EventSource::registerMe</a></div><div class="ttdeci">bool registerMe(const std::string &amp;collector, const core::json &amp;info)</div><div class="ttdoc">Register the event source to the specified collector. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8cc_source.html#l00203">EventSource.cc:203</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab4761b3a8abaa6219553bb7078d0fe78"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab4761b3a8abaa6219553bb7078d0fe78">dqm4hep::online::EventSource::m_started</a></div><div class="ttdeci">bool m_started</div><div class="ttdoc">Whether the event source was started. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00166">EventSource.h:166</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ab677c42a2ba64a89b25b54a1c5f95306"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ab677c42a2ba64a89b25b54a1c5f95306">dqm4hep::online::EventSource::m_collectorInfos</a></div><div class="ttdeci">CollectorInfoMap m_collectorInfos</div><div class="ttdoc">The map of event collector infos. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00169">EventSource.h:169</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_ae3a7d1e7404b31e1d63fac960632b62e"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#ae3a7d1e7404b31e1d63fac960632b62e">dqm4hep::online::EventSource::m_sourceName</a></div><div class="ttdeci">std::string m_sourceName</div><div class="ttdoc">The source name. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00167">EventSource.h:167</a></div></div>
 <div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00045">Logging.h:45</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_aa72aa0d322337e7e9cdccea5992fe560"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#aa72aa0d322337e7e9cdccea5992fe560">dqm4hep::online::EventSource::getSourceInfo</a></div><div class="ttdeci">void getSourceInfo(core::json &amp;info)</div><div class="ttdoc">Get the source info (host info + source info) </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8cc_source.html#l00186">EventSource.cc:186</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_aa72aa0d322337e7e9cdccea5992fe560"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#aa72aa0d322337e7e9cdccea5992fe560">dqm4hep::online::EventSource::getSourceInfo</a></div><div class="ttdeci">void getSourceInfo(core::json &amp;info)</div><div class="ttdoc">Get the source info (host info + source info) </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8cc_source.html#l00184">EventSource.cc:184</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_adbf7ece0bddde655770fc3623b8e9445"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#adbf7ece0bddde655770fc3623b8e9445">dqm4hep::core::json</a></div><div class="ttdeci">nlohmann::json json</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00010">json.h:10</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_a8998da547fe7fa59b6bc03fe77c44ec0"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#a8998da547fe7fa59b6bc03fe77c44ec0">dqm4hep::online::EventSource::m_bufferDevice</a></div><div class="ttdeci">BufferDevicePtr m_bufferDevice</div><div class="ttdoc">The serialized event raw buffer (from xdrstream) </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00173">EventSource.h:173</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -835,23 +807,23 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="EventSource_8cc_source.html#l00244">244</a> of file <a class="el" href="EventSource_8cc_source.html">EventSource.cc</a>.</p>
+<p>Definition at line <a class="el" href="EventSource_8cc_source.html#l00242">242</a> of file <a class="el" href="EventSource_8cc_source.html">EventSource.cc</a>.</p>
 
-<p>References <a class="el" href="EventSource_8h_source.html#l00172">m_client</a>, <a class="el" href="Client_8h_source.html#l00208">dqm4hep::net::Client::sendCommand()</a>, and <a class="el" href="OnlineRoutes_8cc_source.html#l00079">dqm4hep::online::OnlineRoutes::EventCollector::unregisterSource()</a>.</p>
+<p>References <a class="el" href="EventSource_8h_source.html#l00170">m_client</a>, <a class="el" href="Client_8h_source.html#l00208">dqm4hep::net::Client::sendCommand()</a>, and <a class="el" href="OnlineRoutes_8cc_source.html#l00079">dqm4hep::online::OnlineRoutes::EventCollector::unregisterSource()</a>.</p>
 
 <p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00051">~EventSource()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                                             {</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      std::string commandName = <a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a68f3d36ba3af760d34ba281d9b94ff3f">OnlineRoutes::EventCollector::unregisterSource</a>(collector);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a35e526f1e321736f786fb3be287017b4">m_client</a>.<a class="code" href="classdqm4hep_1_1net_1_1Client.html#af909a5f8ebc100e7249082b90c8eddb1">sendCommand</a>(commandName, std::string(<span class="stringliteral">&quot;&quot;</span>));</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                                                             {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      std::string commandName = <a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a68f3d36ba3af760d34ba281d9b94ff3f">OnlineRoutes::EventCollector::unregisterSource</a>(collector);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1EventSource.html#a35e526f1e321736f786fb3be287017b4">m_client</a>.<a class="code" href="classdqm4hep_1_1net_1_1Client.html#af909a5f8ebc100e7249082b90c8eddb1">sendCommand</a>(commandName, std::string(<span class="stringliteral">&quot;&quot;</span>));</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Client_html_af909a5f8ebc100e7249082b90c8eddb1"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html#af909a5f8ebc100e7249082b90c8eddb1">dqm4hep::net::Client::sendCommand</a></div><div class="ttdeci">void sendCommand(const std::string &amp;name, const Command &amp;command, bool blocking=false) const </div><div class="ttdoc">Send a command. </div><div class="ttdef"><b>Definition:</b> <a href="Client_8h_source.html#l00208">Client.h:208</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector_html_a68f3d36ba3af760d34ba281d9b94ff3f"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1EventCollector.html#a68f3d36ba3af760d34ba281d9b94ff3f">dqm4hep::online::OnlineRoutes::EventCollector::unregisterSource</a></div><div class="ttdeci">static std::string unregisterSource(const std::string &amp;collector)</div><div class="ttdoc">Get the event collector command name to unregister a new event source. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00079">OnlineRoutes.cc:79</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_a35e526f1e321736f786fb3be287017b4"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#a35e526f1e321736f786fb3be287017b4">dqm4hep::online::EventSource::m_client</a></div><div class="ttdeci">net::Client m_client</div><div class="ttdoc">The networking client interface. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00172">EventSource.h:172</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1EventSource_html_a35e526f1e321736f786fb3be287017b4"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventSource.html#a35e526f1e321736f786fb3be287017b4">dqm4hep::online::EventSource::m_client</a></div><div class="ttdeci">net::Client m_client</div><div class="ttdoc">The networking client interface. </div><div class="ttdef"><b>Definition:</b> <a href="EventSource_8h_source.html#l00170">EventSource.h:170</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a8998da547fe7fa59b6bc03fe77c44ec0"></a>
+<a class="anchor" id="a217b3057ae0182f87346d76bd21773b0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -859,7 +831,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdqm4hep_1_1online_1_1EventSource.html#aa38eebd6abd63064deeb583b54adc1c4">BufferDevicePtr</a> dqm4hep::online::EventSource::m_bufferDevice = {nullptr}</td>
+          <td class="memname">TBufferFile dqm4hep::online::EventSource::m_buffer = {TBuffer::kWrite, 2*1024*1024}</td>
         </tr>
       </table>
   </td>
@@ -869,11 +841,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The serialized event raw buffer (from xdrstream) </p>
+<p>The serialized event raw buffer. </p>
 
-<p>Definition at line <a class="el" href="EventSource_8h_source.html#l00173">173</a> of file <a class="el" href="EventSource_8h_source.html">EventSource.h</a>.</p>
+<p>Definition at line <a class="el" href="EventSource_8h_source.html#l00171">171</a> of file <a class="el" href="EventSource_8h_source.html">EventSource.h</a>.</p>
 
-<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00130">sendEvent()</a>, and <a class="el" href="EventSource_8cc_source.html#l00083">start()</a>.</p>
+<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00128">sendEvent()</a>.</p>
 
 </div>
 </div>
@@ -897,9 +869,9 @@ Private Attributes</h2></td></tr>
 
 <p>The networking client interface. </p>
 
-<p>Definition at line <a class="el" href="EventSource_8h_source.html#l00172">172</a> of file <a class="el" href="EventSource_8h_source.html">EventSource.h</a>.</p>
+<p>Definition at line <a class="el" href="EventSource_8h_source.html#l00170">170</a> of file <a class="el" href="EventSource_8h_source.html">EventSource.h</a>.</p>
 
-<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00205">registerMe()</a>, <a class="el" href="EventSource_8cc_source.html#l00130">sendEvent()</a>, and <a class="el" href="EventSource_8cc_source.html#l00244">unregisterMe()</a>.</p>
+<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00203">registerMe()</a>, <a class="el" href="EventSource_8cc_source.html#l00128">sendEvent()</a>, and <a class="el" href="EventSource_8cc_source.html#l00242">unregisterMe()</a>.</p>
 
 </div>
 </div>
@@ -923,9 +895,9 @@ Private Attributes</h2></td></tr>
 
 <p>The map of event collector infos. </p>
 
-<p>Definition at line <a class="el" href="EventSource_8h_source.html#l00171">171</a> of file <a class="el" href="EventSource_8h_source.html">EventSource.h</a>.</p>
+<p>Definition at line <a class="el" href="EventSource_8h_source.html#l00169">169</a> of file <a class="el" href="EventSource_8h_source.html">EventSource.h</a>.</p>
 
-<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00065">addCollector()</a>, <a class="el" href="EventSource_8cc_source.html#l00186">getSourceInfo()</a>, <a class="el" href="EventSource_8cc_source.html#l00108">sendEvent()</a>, <a class="el" href="EventSource_8cc_source.html#l00083">start()</a>, and <a class="el" href="EventSource_8cc_source.html#l00051">~EventSource()</a>.</p>
+<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00065">addCollector()</a>, <a class="el" href="EventSource_8cc_source.html#l00184">getSourceInfo()</a>, <a class="el" href="EventSource_8cc_source.html#l00106">sendEvent()</a>, <a class="el" href="EventSource_8cc_source.html#l00083">start()</a>, and <a class="el" href="EventSource_8cc_source.html#l00051">~EventSource()</a>.</p>
 
 </div>
 </div>
@@ -949,9 +921,9 @@ Private Attributes</h2></td></tr>
 
 <p>The event streamer. </p>
 
-<p>Definition at line <a class="el" href="EventSource_8h_source.html#l00170">170</a> of file <a class="el" href="EventSource_8h_source.html">EventSource.h</a>.</p>
+<p>Definition at line <a class="el" href="EventSource_8h_source.html#l00168">168</a> of file <a class="el" href="EventSource_8h_source.html">EventSource.h</a>.</p>
 
-<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00130">sendEvent()</a>.</p>
+<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00128">sendEvent()</a>.</p>
 
 </div>
 </div>
@@ -975,9 +947,9 @@ Private Attributes</h2></td></tr>
 
 <p>The source name. </p>
 
-<p>Definition at line <a class="el" href="EventSource_8h_source.html#l00169">169</a> of file <a class="el" href="EventSource_8h_source.html">EventSource.h</a>.</p>
+<p>Definition at line <a class="el" href="EventSource_8h_source.html#l00167">167</a> of file <a class="el" href="EventSource_8h_source.html">EventSource.h</a>.</p>
 
-<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00186">getSourceInfo()</a>, <a class="el" href="EventSource_8cc_source.html#l00130">sendEvent()</a>, <a class="el" href="EventSource_8cc_source.html#l00059">sourceName()</a>, and <a class="el" href="EventSource_8cc_source.html#l00083">start()</a>.</p>
+<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00184">getSourceInfo()</a>, <a class="el" href="EventSource_8cc_source.html#l00128">sendEvent()</a>, <a class="el" href="EventSource_8cc_source.html#l00059">sourceName()</a>, and <a class="el" href="EventSource_8cc_source.html#l00083">start()</a>.</p>
 
 </div>
 </div>
@@ -1001,9 +973,9 @@ Private Attributes</h2></td></tr>
 
 <p>Whether the event source was started. </p>
 
-<p>Definition at line <a class="el" href="EventSource_8h_source.html#l00168">168</a> of file <a class="el" href="EventSource_8h_source.html">EventSource.h</a>.</p>
+<p>Definition at line <a class="el" href="EventSource_8h_source.html#l00166">166</a> of file <a class="el" href="EventSource_8h_source.html">EventSource.h</a>.</p>
 
-<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00065">addCollector()</a>, <a class="el" href="EventSource_8cc_source.html#l00130">sendEvent()</a>, and <a class="el" href="EventSource_8cc_source.html#l00083">start()</a>.</p>
+<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00065">addCollector()</a>, <a class="el" href="EventSource_8cc_source.html#l00128">sendEvent()</a>, and <a class="el" href="EventSource_8cc_source.html#l00083">start()</a>.</p>
 
 </div>
 </div>
@@ -1014,7 +986,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 19 2018 11:02:27 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 20 2018 20:52:10 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

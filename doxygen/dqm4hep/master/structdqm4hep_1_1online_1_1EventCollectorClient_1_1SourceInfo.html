@@ -77,7 +77,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo.html" title="SourceInfo struct. ">SourceInfo</a> struct. </p>
 
-<p>Definition at line <a class="el" href="EventCollectorClient_8h_source.html#l00111">111</a> of file <a class="el" href="EventCollectorClient_8h_source.html">EventCollectorClient.h</a>.</p>
+<p>Definition at line <a class="el" href="EventCollectorClient_8h_source.html#l00109">109</a> of file <a class="el" href="EventCollectorClient_8h_source.html">EventCollectorClient.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a10e1e7665f11e31d42351c944c4fb74d"></a>
 <div class="memitem">
@@ -95,18 +95,18 @@ Public Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="EventCollectorClient_8cc_source.html#l00037">37</a> of file <a class="el" href="EventCollectorClient_8cc_source.html">EventCollectorClient.cc</a>.</p>
 
-<p>References <a class="el" href="Signal_8h_source.html#l00400">dqm4hep::core::Signal&lt; Args &gt;::emit()</a>, <a class="el" href="EventCollectorClient_8h_source.html#l00113">m_collectorClient</a>, <a class="el" href="EventCollectorClient_8h_source.html#l00112">m_eventUpdateSignal</a>, and <a class="el" href="EventCollectorClient_8cc_source.html#l00143">dqm4hep::online::EventCollectorClient::readEvent()</a>.</p>
+<p>References <a class="el" href="Signal_8h_source.html#l00400">dqm4hep::core::Signal&lt; Args &gt;::emit()</a>, <a class="el" href="EventCollectorClient_8h_source.html#l00111">m_collectorClient</a>, <a class="el" href="EventCollectorClient_8h_source.html#l00110">m_eventUpdateSignal</a>, and <a class="el" href="EventCollectorClient_8cc_source.html#l00143">dqm4hep::online::EventCollectorClient::readEvent()</a>.</p>
 
 <p>Referenced by <a class="el" href="EventCollectorClient_8cc_source.html#l00083">dqm4hep::online::EventCollectorClient::setUpdateMode()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                                             {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#ab9609d26a565705b8805e0354461c2e8">core::EventPtr</a> <span class="keyword">event</span> = <a class="code" href="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo.html#a72587b95b1cc965a67883967a3e2c9f8">m_collectorClient</a>-&gt;<a class="code" href="classdqm4hep_1_1online_1_1EventCollectorClient.html#a4fa12ce21ed6d61c852945baebf3e60c">readEvent</a>(buffer);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo.html#ae83061701bbb62e470d53a50b5119da4">m_eventUpdateSignal</a>.<a class="code" href="classdqm4hep_1_1core_1_1Signal.html#aad0b91b4b2e0efd670b0a35ae3d40c45">emit</a>(event);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
-<div class="ttc" id="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo_html_ae83061701bbb62e470d53a50b5119da4"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo.html#ae83061701bbb62e470d53a50b5119da4">dqm4hep::online::EventCollectorClient::SourceInfo::m_eventUpdateSignal</a></div><div class="ttdeci">EventUpdateSignal m_eventUpdateSignal</div><div class="ttdoc">The signal to process on event update. </div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorClient_8h_source.html#l00112">EventCollectorClient.h:112</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo_html_ae83061701bbb62e470d53a50b5119da4"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo.html#ae83061701bbb62e470d53a50b5119da4">dqm4hep::online::EventCollectorClient::SourceInfo::m_eventUpdateSignal</a></div><div class="ttdeci">EventUpdateSignal m_eventUpdateSignal</div><div class="ttdoc">The signal to process on event update. </div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorClient_8h_source.html#l00110">EventCollectorClient.h:110</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_aad0b91b4b2e0efd670b0a35ae3d40c45"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#aad0b91b4b2e0efd670b0a35ae3d40c45">dqm4hep::core::Signal::emit</a></div><div class="ttdeci">void emit(Args...args)</div><div class="ttdoc">Emit the signal. </div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00400">Signal.h:400</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1EventCollectorClient_html_a4fa12ce21ed6d61c852945baebf3e60c"><div class="ttname"><a href="classdqm4hep_1_1online_1_1EventCollectorClient.html#a4fa12ce21ed6d61c852945baebf3e60c">dqm4hep::online::EventCollectorClient::readEvent</a></div><div class="ttdeci">core::EventPtr readEvent(const net::Buffer &amp;buffer)</div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorClient_8cc_source.html#l00143">EventCollectorClient.cc:143</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo_html_a72587b95b1cc965a67883967a3e2c9f8"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo.html#a72587b95b1cc965a67883967a3e2c9f8">dqm4hep::online::EventCollectorClient::SourceInfo::m_collectorClient</a></div><div class="ttdeci">EventCollectorClient * m_collectorClient</div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorClient_8h_source.html#l00113">EventCollectorClient.h:113</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_ab9609d26a565705b8805e0354461c2e8"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#ab9609d26a565705b8805e0354461c2e8">dqm4hep::core::EventPtr</a></div><div class="ttdeci">type&lt; Event &gt;::ptr EventPtr</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00281">Internal.h:281</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo_html_a72587b95b1cc965a67883967a3e2c9f8"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollectorClient_1_1SourceInfo.html#a72587b95b1cc965a67883967a3e2c9f8">dqm4hep::online::EventCollectorClient::SourceInfo::m_collectorClient</a></div><div class="ttdeci">EventCollectorClient * m_collectorClient</div><div class="ttdef"><b>Definition:</b> <a href="EventCollectorClient_8h_source.html#l00111">EventCollectorClient.h:111</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_ab9609d26a565705b8805e0354461c2e8"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#ab9609d26a565705b8805e0354461c2e8">dqm4hep::core::EventPtr</a></div><div class="ttdeci">type&lt; Event &gt;::ptr EventPtr</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00275">Internal.h:275</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -121,7 +121,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="EventCollectorClient_8h_source.html#l00113">113</a> of file <a class="el" href="EventCollectorClient_8h_source.html">EventCollectorClient.h</a>.</p>
+<p>Definition at line <a class="el" href="EventCollectorClient_8h_source.html#l00111">111</a> of file <a class="el" href="EventCollectorClient_8h_source.html">EventCollectorClient.h</a>.</p>
 
 <p>Referenced by <a class="el" href="EventCollectorClient_8cc_source.html#l00037">receiveEvent()</a>.</p>
 
@@ -139,7 +139,7 @@ Public Attributes</h2></td></tr>
 
 <p>The signal to process on event update. </p>
 
-<p>Definition at line <a class="el" href="EventCollectorClient_8h_source.html#l00112">112</a> of file <a class="el" href="EventCollectorClient_8h_source.html">EventCollectorClient.h</a>.</p>
+<p>Definition at line <a class="el" href="EventCollectorClient_8h_source.html#l00110">110</a> of file <a class="el" href="EventCollectorClient_8h_source.html">EventCollectorClient.h</a>.</p>
 
 <p>Referenced by <a class="el" href="EventCollectorClient_8cc_source.html#l00037">receiveEvent()</a>.</p>
 
@@ -152,7 +152,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 19 2018 11:02:27 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Aug 20 2018 20:52:10 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
