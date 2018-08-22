@@ -92,7 +92,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classdqm4hep_1_1core_1_1BufferEventStreamer.html" title="BufferEventStreamer class. ">BufferEventStreamer</a> class. </p>
 
-<p>Definition at line <a class="el" href="BufferEventStreamer_8cc_source.html#l00045">45</a> of file <a class="el" href="BufferEventStreamer_8cc_source.html">BufferEventStreamer.cc</a>.</p>
+<p>Definition at line <a class="el" href="BufferEventStreamer_8cc_source.html#l00028">28</a> of file <a class="el" href="BufferEventStreamer_8cc_source.html">BufferEventStreamer.cc</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aec553840a9eb77096989d675a29e7aae"></a>
 <div class="memitem">
@@ -167,10 +167,10 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classdqm4hep_1_1core_1_1EventStreamerPlugin.html#a4f4f320d2f5b953e99bba0ef0ff4eeba">dqm4hep::core::EventStreamerPlugin</a>.</p>
 
-<p>Definition at line <a class="el" href="BufferEventStreamer_8cc_source.html#l00067">67</a> of file <a class="el" href="BufferEventStreamer_8cc_source.html">BufferEventStreamer.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                    {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">return</span> Event::create&lt;BufferEvent&gt;();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="BufferEventStreamer_8cc_source.html#l00050">50</a> of file <a class="el" href="BufferEventStreamer_8cc_source.html">BufferEventStreamer.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                    {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keywordflow">return</span> Event::create&lt;BufferEvent&gt;();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -210,16 +210,16 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classdqm4hep_1_1core_1_1EventStreamerPlugin.html#a0e9cfc8cf4649c61eabdaf3ad5346f01">dqm4hep::core::EventStreamerPlugin</a>.</p>
 
-<p>Definition at line <a class="el" href="BufferEventStreamer_8cc_source.html#l00084">84</a> of file <a class="el" href="BufferEventStreamer_8cc_source.html">BufferEventStreamer.cc</a>.</p>
+<p>Definition at line <a class="el" href="BufferEventStreamer_8cc_source.html#l00067">67</a> of file <a class="el" href="BufferEventStreamer_8cc_source.html">BufferEventStreamer.cc</a>.</p>
 
-<p>References <a class="el" href="BufferEvent_8cc_source.html#l00063">dqm4hep::core::BufferEvent::moveBuffer()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                                                        {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      BufferEvent *bufferEvent = <span class="keyword">event</span>-&gt;getEvent&lt;BufferEvent&gt;();      </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      Char_t *rawBuffer = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      Int_t size = buffer.ReadArray(rawBuffer);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      bufferEvent-&gt;moveBuffer(rawBuffer, size);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<p>References <a class="el" href="BufferEvent_8cc_source.html#l00046">dqm4hep::core::BufferEvent::moveBuffer()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                                        {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      BufferEvent *bufferEvent = <span class="keyword">event</span>-&gt;getEvent&lt;BufferEvent&gt;();      </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      Char_t *rawBuffer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      Int_t size = buffer.ReadArray(rawBuffer);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      bufferEvent-&gt;moveBuffer(rawBuffer, size);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -259,17 +259,17 @@ Public Member Functions</h2></td></tr>
 
 <p>Implements <a class="el" href="classdqm4hep_1_1core_1_1EventStreamerPlugin.html#aeb15719b841940e25dcbcd7215605268">dqm4hep::core::EventStreamerPlugin</a>.</p>
 
-<p>Definition at line <a class="el" href="BufferEventStreamer_8cc_source.html#l00073">73</a> of file <a class="el" href="BufferEventStreamer_8cc_source.html">BufferEventStreamer.cc</a>.</p>
+<p>Definition at line <a class="el" href="BufferEventStreamer_8cc_source.html#l00056">56</a> of file <a class="el" href="BufferEventStreamer_8cc_source.html">BufferEventStreamer.cc</a>.</p>
 
-<p>References <a class="el" href="BufferEvent_8cc_source.html#l00087">dqm4hep::core::BufferEvent::buffer()</a>, and <a class="el" href="BufferEvent_8cc_source.html#l00093">dqm4hep::core::BufferEvent::bufferSize()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                                         {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keyword">const</span> BufferEvent *bufferEvent = <span class="keyword">event</span>-&gt;getEvent&lt;BufferEvent&gt;();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == bufferEvent) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_INVALID_PARAMETER;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      buffer.WriteArray(bufferEvent-&gt;buffer(), bufferEvent-&gt;bufferSize());</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<p>References <a class="el" href="BufferEvent_8cc_source.html#l00070">dqm4hep::core::BufferEvent::buffer()</a>, and <a class="el" href="BufferEvent_8cc_source.html#l00076">dqm4hep::core::BufferEvent::bufferSize()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                                         {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keyword">const</span> BufferEvent *bufferEvent = <span class="keyword">event</span>-&gt;getEvent&lt;BufferEvent&gt;();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == bufferEvent) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_INVALID_PARAMETER;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      buffer.WriteArray(bufferEvent-&gt;buffer(), bufferEvent-&gt;bufferSize());</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -279,7 +279,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 10:13:09 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 12:37:06 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

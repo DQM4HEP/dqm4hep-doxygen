@@ -164,7 +164,7 @@ Friends</h2></td></tr>
 <li>receive requests from clients </li>
 </ul>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00245">245</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00228">228</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a848c87d3aead19c2635741449375b898"></a>
 <div class="memitem">
@@ -205,12 +205,12 @@ Friends</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00114">114</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                       :</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>() {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aeb84bf9e6079f127d53d079cda26aafa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">dqm4hep::net::WsServer::m_server</a></div><div class="ttdeci">server m_server</div><div class="ttdoc">The real server implementation. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00371">WebSocketServer.h:371</a></div></div>
+<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00097">97</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                       :</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>() {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aeb84bf9e6079f127d53d079cda26aafa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">dqm4hep::net::WsServer::m_server</a></div><div class="ttdeci">server m_server</div><div class="ttdoc">The real server implementation. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00354">WebSocketServer.h:354</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -229,20 +229,20 @@ Friends</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00121">121</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00104">104</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
 
-<p>References <a class="el" href="WebSocketServer_8h_source.html#l00369">m_serviceConnections</a>, <a class="el" href="WebSocketServer_8h_source.html#l00377">m_serviceMap</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00253">stop()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                        {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#ac505a98f02d8d356a34e28ecc1979548">stop</a>();</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp;svc : <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>) {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keyword">delete</span> svc.second;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>.clear();</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      m_serviceMap.clear();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a1bcdfb305505cac756482fc8df63a4af"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">dqm4hep::net::WsServer::m_serviceConnections</a></div><div class="ttdeci">connection_map m_serviceConnections</div><div class="ttdoc">The list of service connections. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00369">WebSocketServer.h:369</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_ac505a98f02d8d356a34e28ecc1979548"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#ac505a98f02d8d356a34e28ecc1979548">dqm4hep::net::WsServer::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">Stop the server. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8cc_source.html#l00253">WebSocketServer.cc:253</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6e9baf16d1e309c4eaf078db8dfe43e9"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">dqm4hep::net::WsServer::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of all services (services, command and request handlers) </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00377">WebSocketServer.h:377</a></div></div>
+<p>References <a class="el" href="WebSocketServer_8h_source.html#l00352">m_serviceConnections</a>, <a class="el" href="WebSocketServer_8h_source.html#l00360">m_serviceMap</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00236">stop()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                        {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#ac505a98f02d8d356a34e28ecc1979548">stop</a>();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp;svc : <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keyword">delete</span> svc.second;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>.clear();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      m_serviceMap.clear();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a1bcdfb305505cac756482fc8df63a4af"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">dqm4hep::net::WsServer::m_serviceConnections</a></div><div class="ttdeci">connection_map m_serviceConnections</div><div class="ttdoc">The list of service connections. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00352">WebSocketServer.h:352</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_ac505a98f02d8d356a34e28ecc1979548"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#ac505a98f02d8d356a34e28ecc1979548">dqm4hep::net::WsServer::stop</a></div><div class="ttdeci">void stop()</div><div class="ttdoc">Stop the server. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8cc_source.html#l00236">WebSocketServer.cc:236</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6e9baf16d1e309c4eaf078db8dfe43e9"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">dqm4hep::net::WsServer::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of all services (services, command and request handlers) </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00360">WebSocketServer.h:360</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -270,23 +270,23 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00155">155</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00138">138</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
 
-<p>References <a class="el" href="Logging_8h_source.html#l00045">dqm_error</a>, <a class="el" href="WebSocketServer_8h_source.html#l00381">m_mutex</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00377">m_serviceMap</a>.</p>
-<div class="fragment"><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                                                                          {</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      <span class="keyword">auto</span> findIter = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.find(name);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <span class="keywordflow">if</span>(findIter != <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.end()) {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>(<span class="stringliteral">&quot;Couldn&#39;t create service &#39;{0}&#39; twice&quot;</span>, name);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      }</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      WsCommandHandler *service = <span class="keyword">new</span> WsCommandHandler(<span class="keyword">this</span>, name);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.insert(ServiceMap::value_type(name, service));</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      <span class="keywordflow">return</span> service;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00381">WebSocketServer.h:381</a></div></div>
-<div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00045">Logging.h:45</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6e9baf16d1e309c4eaf078db8dfe43e9"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">dqm4hep::net::WsServer::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of all services (services, command and request handlers) </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00377">WebSocketServer.h:377</a></div></div>
+<p>References <a class="el" href="Logging_8h_source.html#l00028">dqm_error</a>, <a class="el" href="WebSocketServer_8h_source.html#l00364">m_mutex</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00360">m_serviceMap</a>.</p>
+<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                                                                          {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      <span class="keyword">auto</span> findIter = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.find(name);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;      <span class="keywordflow">if</span>(findIter != <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.end()) {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>(<span class="stringliteral">&quot;Couldn&#39;t create service &#39;{0}&#39; twice&quot;</span>, name);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;      WsCommandHandler *service = <span class="keyword">new</span> WsCommandHandler(<span class="keyword">this</span>, name);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.insert(ServiceMap::value_type(name, service));</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      <span class="keywordflow">return</span> service;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00364">WebSocketServer.h:364</a></div></div>
+<div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00028">Logging.h:28</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6e9baf16d1e309c4eaf078db8dfe43e9"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">dqm4hep::net::WsServer::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of all services (services, command and request handlers) </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00360">WebSocketServer.h:360</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -313,23 +313,23 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00169">169</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00152">152</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
 
-<p>References <a class="el" href="Logging_8h_source.html#l00045">dqm_error</a>, <a class="el" href="WebSocketServer_8h_source.html#l00381">m_mutex</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00377">m_serviceMap</a>.</p>
-<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                                                                          {</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      <span class="keyword">auto</span> findIter = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.find(name);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <span class="keywordflow">if</span>(findIter != <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.end()) {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>(<span class="stringliteral">&quot;Couldn&#39;t create service &#39;{0}&#39; twice&quot;</span>, name);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      }</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      WsRequestHandler *service = <span class="keyword">new</span> WsRequestHandler(<span class="keyword">this</span>, name);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.insert(ServiceMap::value_type(name, service));</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      <span class="keywordflow">return</span> service;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00381">WebSocketServer.h:381</a></div></div>
-<div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00045">Logging.h:45</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6e9baf16d1e309c4eaf078db8dfe43e9"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">dqm4hep::net::WsServer::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of all services (services, command and request handlers) </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00377">WebSocketServer.h:377</a></div></div>
+<p>References <a class="el" href="Logging_8h_source.html#l00028">dqm_error</a>, <a class="el" href="WebSocketServer_8h_source.html#l00364">m_mutex</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00360">m_serviceMap</a>.</p>
+<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                                                                          {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      <span class="keyword">auto</span> findIter = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.find(name);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      <span class="keywordflow">if</span>(findIter != <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.end()) {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>(<span class="stringliteral">&quot;Couldn&#39;t create service &#39;{0}&#39; twice&quot;</span>, name);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      WsRequestHandler *service = <span class="keyword">new</span> WsRequestHandler(<span class="keyword">this</span>, name);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.insert(ServiceMap::value_type(name, service));</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <span class="keywordflow">return</span> service;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00364">WebSocketServer.h:364</a></div></div>
+<div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00028">Logging.h:28</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6e9baf16d1e309c4eaf078db8dfe43e9"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">dqm4hep::net::WsServer::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of all services (services, command and request handlers) </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00360">WebSocketServer.h:360</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -356,27 +356,27 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00140">140</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00123">123</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
 
-<p>References <a class="el" href="Logging_8h_source.html#l00045">dqm_error</a>, <a class="el" href="WebSocketServer_8h_source.html#l00381">m_mutex</a>, <a class="el" href="WebSocketServer_8h_source.html#l00369">m_serviceConnections</a>, <a class="el" href="WebSocketServer_8h_source.html#l00377">m_serviceMap</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00248">WsService</a>.</p>
-<div class="fragment"><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                                                            {</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;      <span class="keyword">auto</span> findIter = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.find(name);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;      <span class="keywordflow">if</span>(findIter != <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.end()) {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>(<span class="stringliteral">&quot;Couldn&#39;t create service &#39;{0}&#39; twice&quot;</span>, name);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      }</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#ac36218c79a0b904ee16ec2a5c80f6fdf">WsService</a> *service = <span class="keyword">new</span> <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#ac36218c79a0b904ee16ec2a5c80f6fdf">WsService</a>(<span class="keyword">this</span>, name);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.insert(ServiceMap::value_type(name, service));</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>[name] = <a class="code" href="namespacedqm4hep_1_1net.html#a84bd9b97ca6d886c1ccc89b80bd6395c">connection_set</a>();</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      <span class="keywordflow">return</span> service;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a1bcdfb305505cac756482fc8df63a4af"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">dqm4hep::net::WsServer::m_serviceConnections</a></div><div class="ttdeci">connection_map m_serviceConnections</div><div class="ttdoc">The list of service connections. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00369">WebSocketServer.h:369</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00381">WebSocketServer.h:381</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1net_html_a84bd9b97ca6d886c1ccc89b80bd6395c"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a84bd9b97ca6d886c1ccc89b80bd6395c">dqm4hep::net::connection_set</a></div><div class="ttdeci">std::set&lt; server::connection_ptr &gt; connection_set</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00048">WebSocketServer.h:48</a></div></div>
-<div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00045">Logging.h:45</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_ac36218c79a0b904ee16ec2a5c80f6fdf"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#ac36218c79a0b904ee16ec2a5c80f6fdf">dqm4hep::net::WsServer::WsService</a></div><div class="ttdeci">friend class WsService</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00248">WebSocketServer.h:248</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6e9baf16d1e309c4eaf078db8dfe43e9"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">dqm4hep::net::WsServer::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of all services (services, command and request handlers) </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00377">WebSocketServer.h:377</a></div></div>
+<p>References <a class="el" href="Logging_8h_source.html#l00028">dqm_error</a>, <a class="el" href="WebSocketServer_8h_source.html#l00364">m_mutex</a>, <a class="el" href="WebSocketServer_8h_source.html#l00352">m_serviceConnections</a>, <a class="el" href="WebSocketServer_8h_source.html#l00360">m_serviceMap</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00231">WsService</a>.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                                            {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      <span class="keyword">auto</span> findIter = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.find(name);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      <span class="keywordflow">if</span>(findIter != <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.end()) {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>(<span class="stringliteral">&quot;Couldn&#39;t create service &#39;{0}&#39; twice&quot;</span>, name);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#ac36218c79a0b904ee16ec2a5c80f6fdf">WsService</a> *service = <span class="keyword">new</span> <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#ac36218c79a0b904ee16ec2a5c80f6fdf">WsService</a>(<span class="keyword">this</span>, name);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.insert(ServiceMap::value_type(name, service));</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>[name] = <a class="code" href="namespacedqm4hep_1_1net.html#a84bd9b97ca6d886c1ccc89b80bd6395c">connection_set</a>();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      <span class="keywordflow">return</span> service;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a1bcdfb305505cac756482fc8df63a4af"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">dqm4hep::net::WsServer::m_serviceConnections</a></div><div class="ttdeci">connection_map m_serviceConnections</div><div class="ttdoc">The list of service connections. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00352">WebSocketServer.h:352</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00364">WebSocketServer.h:364</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1net_html_a84bd9b97ca6d886c1ccc89b80bd6395c"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a84bd9b97ca6d886c1ccc89b80bd6395c">dqm4hep::net::connection_set</a></div><div class="ttdeci">std::set&lt; server::connection_ptr &gt; connection_set</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00031">WebSocketServer.h:31</a></div></div>
+<div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00028">Logging.h:28</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_ac36218c79a0b904ee16ec2a5c80f6fdf"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#ac36218c79a0b904ee16ec2a5c80f6fdf">dqm4hep::net::WsServer::WsService</a></div><div class="ttdeci">friend class WsService</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00231">WebSocketServer.h:231</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6e9baf16d1e309c4eaf078db8dfe43e9"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">dqm4hep::net::WsServer::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of all services (services, command and request handlers) </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00360">WebSocketServer.h:360</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -402,25 +402,25 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00197">197</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00180">180</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
 
-<p>References <a class="el" href="WebSocketServer_8h_source.html#l00066">dqm4hep::net::COMMAND_TYPE</a>, <a class="el" href="WebSocketServer_8h_source.html#l00381">m_mutex</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00377">m_serviceMap</a>.</p>
+<p>References <a class="el" href="WebSocketServer_8h_source.html#l00049">dqm4hep::net::COMMAND_TYPE</a>, <a class="el" href="WebSocketServer_8h_source.html#l00364">m_mutex</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00360">m_serviceMap</a>.</p>
 
-<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00365">onCommandMessage()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                                                                        {</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      <span class="keyword">auto</span> findIter = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.find(name);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      <span class="keywordflow">if</span>(findIter == <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.end()) {</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      }</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;      <span class="keywordflow">if</span>(findIter-&gt;second-&gt;type() != <a class="code" href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9aace7a6ec397338150aabcfff1f34f482">COMMAND_TYPE</a>) {</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      }</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>WsCommandHandler*<span class="keyword">&gt;</span>(findIter-&gt;second);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00381">WebSocketServer.h:381</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1net_html_a78c4bcbf4bf74989eae05611731ea5b9aace7a6ec397338150aabcfff1f34f482"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9aace7a6ec397338150aabcfff1f34f482">dqm4hep::net::COMMAND_TYPE</a></div><div class="ttdoc">Command type: server &lt;- client. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00066">WebSocketServer.h:66</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6e9baf16d1e309c4eaf078db8dfe43e9"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">dqm4hep::net::WsServer::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of all services (services, command and request handlers) </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00377">WebSocketServer.h:377</a></div></div>
+<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00348">onCommandMessage()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                                                                        {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      <span class="keyword">auto</span> findIter = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.find(name);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      <span class="keywordflow">if</span>(findIter == <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.end()) {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      <span class="keywordflow">if</span>(findIter-&gt;second-&gt;type() != <a class="code" href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9aace7a6ec397338150aabcfff1f34f482">COMMAND_TYPE</a>) {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>WsCommandHandler*<span class="keyword">&gt;</span>(findIter-&gt;second);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00364">WebSocketServer.h:364</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1net_html_a78c4bcbf4bf74989eae05611731ea5b9aace7a6ec397338150aabcfff1f34f482"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9aace7a6ec397338150aabcfff1f34f482">dqm4hep::net::COMMAND_TYPE</a></div><div class="ttdoc">Command type: server &lt;- client. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00049">WebSocketServer.h:49</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6e9baf16d1e309c4eaf078db8dfe43e9"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">dqm4hep::net::WsServer::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of all services (services, command and request handlers) </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00360">WebSocketServer.h:360</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -446,25 +446,25 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00211">211</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00194">194</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
 
-<p>References <a class="el" href="WebSocketServer_8h_source.html#l00381">m_mutex</a>, <a class="el" href="WebSocketServer_8h_source.html#l00377">m_serviceMap</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00067">dqm4hep::net::RPC_TYPE</a>.</p>
+<p>References <a class="el" href="WebSocketServer_8h_source.html#l00364">m_mutex</a>, <a class="el" href="WebSocketServer_8h_source.html#l00360">m_serviceMap</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00050">dqm4hep::net::RPC_TYPE</a>.</p>
 
-<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00377">onRpcMessage()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                                                                        {</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      <span class="keyword">auto</span> findIter = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.find(name);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;      <span class="keywordflow">if</span>(findIter == <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.end()) {</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;      }</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;      <span class="keywordflow">if</span>(findIter-&gt;second-&gt;type() != <a class="code" href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9ace67932a24f01a92290a868cc64762bd">RPC_TYPE</a>) {</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;      }</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>WsRequestHandler*<span class="keyword">&gt;</span>(findIter-&gt;second);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00381">WebSocketServer.h:381</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1net_html_a78c4bcbf4bf74989eae05611731ea5b9ace67932a24f01a92290a868cc64762bd"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9ace67932a24f01a92290a868cc64762bd">dqm4hep::net::RPC_TYPE</a></div><div class="ttdoc">Remote procedure call type: server &lt;-&gt; client. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00067">WebSocketServer.h:67</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6e9baf16d1e309c4eaf078db8dfe43e9"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">dqm4hep::net::WsServer::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of all services (services, command and request handlers) </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00377">WebSocketServer.h:377</a></div></div>
+<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00360">onRpcMessage()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                                                                        {</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <span class="keyword">auto</span> findIter = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.find(name);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      <span class="keywordflow">if</span>(findIter == <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.end()) {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      <span class="keywordflow">if</span>(findIter-&gt;second-&gt;type() != <a class="code" href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9ace67932a24f01a92290a868cc64762bd">RPC_TYPE</a>) {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span>WsRequestHandler*<span class="keyword">&gt;</span>(findIter-&gt;second);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00364">WebSocketServer.h:364</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1net_html_a78c4bcbf4bf74989eae05611731ea5b9ace67932a24f01a92290a868cc64762bd"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9ace67932a24f01a92290a868cc64762bd">dqm4hep::net::RPC_TYPE</a></div><div class="ttdoc">Remote procedure call type: server &lt;-&gt; client. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00050">WebSocketServer.h:50</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6e9baf16d1e309c4eaf078db8dfe43e9"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">dqm4hep::net::WsServer::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of all services (services, command and request handlers) </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00360">WebSocketServer.h:360</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -491,24 +491,24 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00183">183</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00166">166</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
 
-<p>References <a class="el" href="WebSocketServer_8h_source.html#l00381">m_mutex</a>, <a class="el" href="WebSocketServer_8h_source.html#l00377">m_serviceMap</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00065">dqm4hep::net::SERVICE_TYPE</a>.</p>
-<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                                                          {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      <span class="keyword">auto</span> findIter = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.find(name);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      <span class="keywordflow">if</span>(findIter == <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.end()) {</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      }</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <span class="keywordflow">if</span>(findIter-&gt;second-&gt;type() != <a class="code" href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9af9934a594d223de505db860f2d309629">SERVICE_TYPE</a>) {</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      }</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#ac36218c79a0b904ee16ec2a5c80f6fdf">WsService</a>*<span class="keyword">&gt;</span>(findIter-&gt;second);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00381">WebSocketServer.h:381</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1net_html_a78c4bcbf4bf74989eae05611731ea5b9af9934a594d223de505db860f2d309629"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9af9934a594d223de505db860f2d309629">dqm4hep::net::SERVICE_TYPE</a></div><div class="ttdoc">Service type: server -&gt; client. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00065">WebSocketServer.h:65</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_ac36218c79a0b904ee16ec2a5c80f6fdf"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#ac36218c79a0b904ee16ec2a5c80f6fdf">dqm4hep::net::WsServer::WsService</a></div><div class="ttdeci">friend class WsService</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00248">WebSocketServer.h:248</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6e9baf16d1e309c4eaf078db8dfe43e9"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">dqm4hep::net::WsServer::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of all services (services, command and request handlers) </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00377">WebSocketServer.h:377</a></div></div>
+<p>References <a class="el" href="WebSocketServer_8h_source.html#l00364">m_mutex</a>, <a class="el" href="WebSocketServer_8h_source.html#l00360">m_serviceMap</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00048">dqm4hep::net::SERVICE_TYPE</a>.</p>
+<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                                                          {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;      <span class="keyword">auto</span> findIter = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.find(name);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <span class="keywordflow">if</span>(findIter == <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.end()) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <span class="keywordflow">if</span>(findIter-&gt;second-&gt;type() != <a class="code" href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9af9934a594d223de505db860f2d309629">SERVICE_TYPE</a>) {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#ac36218c79a0b904ee16ec2a5c80f6fdf">WsService</a>*<span class="keyword">&gt;</span>(findIter-&gt;second);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00364">WebSocketServer.h:364</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1net_html_a78c4bcbf4bf74989eae05611731ea5b9af9934a594d223de505db860f2d309629"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9af9934a594d223de505db860f2d309629">dqm4hep::net::SERVICE_TYPE</a></div><div class="ttdoc">Service type: server -&gt; client. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00048">WebSocketServer.h:48</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_ac36218c79a0b904ee16ec2a5c80f6fdf"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#ac36218c79a0b904ee16ec2a5c80f6fdf">dqm4hep::net::WsServer::WsService</a></div><div class="ttdeci">friend class WsService</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00231">WebSocketServer.h:231</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6e9baf16d1e309c4eaf078db8dfe43e9"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">dqm4hep::net::WsServer::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of all services (services, command and request handlers) </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00360">WebSocketServer.h:360</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -534,33 +534,33 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00271">271</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00254">254</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
 
-<p>References <a class="el" href="WebSocketServer_8h_source.html#l00381">m_mutex</a>, <a class="el" href="WebSocketServer_8h_source.html#l00371">m_server</a>, <a class="el" href="WebSocketServer_8h_source.html#l00369">m_serviceConnections</a>, <a class="el" href="WebSocketServer_8h_source.html#l00377">m_serviceMap</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00065">dqm4hep::net::SERVICE_TYPE</a>.</p>
+<p>References <a class="el" href="WebSocketServer_8h_source.html#l00364">m_mutex</a>, <a class="el" href="WebSocketServer_8h_source.html#l00354">m_server</a>, <a class="el" href="WebSocketServer_8h_source.html#l00352">m_serviceConnections</a>, <a class="el" href="WebSocketServer_8h_source.html#l00360">m_serviceMap</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00048">dqm4hep::net::SERVICE_TYPE</a>.</p>
 
-<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00225">start()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                                             {</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      server::connection_ptr con = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.get_con_from_hdl(hdl);</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      <span class="keyword">const</span> std::string serviceName = con-&gt;get_resource();</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      <span class="keyword">auto</span> findIter = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.find(serviceName);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.end() == findIter) {</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      }</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      <span class="comment">// remove service subscriber (if subscribed)</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      <span class="keywordflow">if</span>(findIter-&gt;second-&gt;type() == <a class="code" href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9af9934a594d223de505db860f2d309629">SERVICE_TYPE</a>) {</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="keyword">auto</span> findIter2 = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>.find(serviceName);</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keywordflow">if</span>(findIter2 == <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>.end()) {</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;          <span class="keywordflow">return</span>;            </div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        }</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        findIter2-&gt;second.erase(con);</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      }</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a1bcdfb305505cac756482fc8df63a4af"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">dqm4hep::net::WsServer::m_serviceConnections</a></div><div class="ttdeci">connection_map m_serviceConnections</div><div class="ttdoc">The list of service connections. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00369">WebSocketServer.h:369</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00381">WebSocketServer.h:381</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1net_html_a78c4bcbf4bf74989eae05611731ea5b9af9934a594d223de505db860f2d309629"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9af9934a594d223de505db860f2d309629">dqm4hep::net::SERVICE_TYPE</a></div><div class="ttdoc">Service type: server -&gt; client. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00065">WebSocketServer.h:65</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aeb84bf9e6079f127d53d079cda26aafa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">dqm4hep::net::WsServer::m_server</a></div><div class="ttdeci">server m_server</div><div class="ttdoc">The real server implementation. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00371">WebSocketServer.h:371</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6e9baf16d1e309c4eaf078db8dfe43e9"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">dqm4hep::net::WsServer::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of all services (services, command and request handlers) </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00377">WebSocketServer.h:377</a></div></div>
+<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00208">start()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                                             {</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      server::connection_ptr con = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.get_con_from_hdl(hdl);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      <span class="keyword">const</span> std::string serviceName = con-&gt;get_resource();</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      <span class="keyword">auto</span> findIter = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.find(serviceName);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.end() == findIter) {</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;      <span class="comment">// remove service subscriber (if subscribed)</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <span class="keywordflow">if</span>(findIter-&gt;second-&gt;type() == <a class="code" href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9af9934a594d223de505db860f2d309629">SERVICE_TYPE</a>) {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keyword">auto</span> findIter2 = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>.find(serviceName);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">if</span>(findIter2 == <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>.end()) {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;          <span class="keywordflow">return</span>;            </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        }</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        findIter2-&gt;second.erase(con);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a1bcdfb305505cac756482fc8df63a4af"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">dqm4hep::net::WsServer::m_serviceConnections</a></div><div class="ttdeci">connection_map m_serviceConnections</div><div class="ttdoc">The list of service connections. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00352">WebSocketServer.h:352</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00364">WebSocketServer.h:364</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1net_html_a78c4bcbf4bf74989eae05611731ea5b9af9934a594d223de505db860f2d309629"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9af9934a594d223de505db860f2d309629">dqm4hep::net::SERVICE_TYPE</a></div><div class="ttdoc">Service type: server -&gt; client. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00048">WebSocketServer.h:48</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aeb84bf9e6079f127d53d079cda26aafa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">dqm4hep::net::WsServer::m_server</a></div><div class="ttdeci">server m_server</div><div class="ttdoc">The real server implementation. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00354">WebSocketServer.h:354</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6e9baf16d1e309c4eaf078db8dfe43e9"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">dqm4hep::net::WsServer::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of all services (services, command and request handlers) </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00360">WebSocketServer.h:360</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -602,22 +602,22 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00365">365</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00348">348</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
 
-<p>References <a class="el" href="Signal_8h_source.html#l00400">dqm4hep::core::Signal&lt; Args &gt;::emit()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00197">findCommandHandler()</a>, <a class="el" href="WebSocketServer_8h_source.html#l00371">m_server</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00093">dqm4hep::net::WsCommandHandler::onCommand()</a>.</p>
+<p>References <a class="el" href="Signal_8h_source.html#l00383">dqm4hep::core::Signal&lt; Args &gt;::emit()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00180">findCommandHandler()</a>, <a class="el" href="WebSocketServer_8h_source.html#l00354">m_server</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00076">dqm4hep::net::WsCommandHandler::onCommand()</a>.</p>
 
-<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00291">onMessage()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                                                                                                     {</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      WsCommandHandler *command = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2256a00100b342dab0f571882295148b">findCommandHandler</a>(serviceName);</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == command) {</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.close(hdl, websocketpp::close::status::normal, <span class="stringliteral">&quot;Internal error: command &#39;&quot;</span> + serviceName + <span class="stringliteral">&quot;&#39; not available !&quot;</span>);</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;      }</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;      server::connection_ptr con = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.get_con_from_hdl(hdl);</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;      command-&gt;onCommand().emit(con, msg);</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2256a00100b342dab0f571882295148b"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2256a00100b342dab0f571882295148b">dqm4hep::net::WsServer::findCommandHandler</a></div><div class="ttdeci">WsCommandHandler * findCommandHandler(const std::string &amp;name)</div><div class="ttdoc">Find an existing command handler. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8cc_source.html#l00197">WebSocketServer.cc:197</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aeb84bf9e6079f127d53d079cda26aafa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">dqm4hep::net::WsServer::m_server</a></div><div class="ttdeci">server m_server</div><div class="ttdoc">The real server implementation. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00371">WebSocketServer.h:371</a></div></div>
+<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00274">onMessage()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                                                                                                     {</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;      WsCommandHandler *command = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2256a00100b342dab0f571882295148b">findCommandHandler</a>(serviceName);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == command) {</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.close(hdl, websocketpp::close::status::normal, <span class="stringliteral">&quot;Internal error: command &#39;&quot;</span> + serviceName + <span class="stringliteral">&quot;&#39; not available !&quot;</span>);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;      }</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;      server::connection_ptr con = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.get_con_from_hdl(hdl);</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;      command-&gt;onCommand().emit(con, msg);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2256a00100b342dab0f571882295148b"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2256a00100b342dab0f571882295148b">dqm4hep::net::WsServer::findCommandHandler</a></div><div class="ttdeci">WsCommandHandler * findCommandHandler(const std::string &amp;name)</div><div class="ttdoc">Find an existing command handler. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8cc_source.html#l00180">WebSocketServer.cc:180</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aeb84bf9e6079f127d53d079cda26aafa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">dqm4hep::net::WsServer::m_server</a></div><div class="ttdeci">server m_server</div><div class="ttdoc">The real server implementation. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00354">WebSocketServer.h:354</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -653,45 +653,45 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00291">291</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00274">274</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
 
-<p>References <a class="el" href="WebSocketServer_8h_source.html#l00066">dqm4hep::net::COMMAND_TYPE</a>, <a class="el" href="WebSocketServer_8h_source.html#l00381">m_mutex</a>, <a class="el" href="WebSocketServer_8h_source.html#l00371">m_server</a>, <a class="el" href="WebSocketServer_8h_source.html#l00377">m_serviceMap</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00365">onCommandMessage()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00377">onRpcMessage()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00333">onServiceMessage()</a>, <a class="el" href="WebSocketServer_8h_source.html#l00067">dqm4hep::net::RPC_TYPE</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00065">dqm4hep::net::SERVICE_TYPE</a>.</p>
+<p>References <a class="el" href="WebSocketServer_8h_source.html#l00049">dqm4hep::net::COMMAND_TYPE</a>, <a class="el" href="WebSocketServer_8h_source.html#l00364">m_mutex</a>, <a class="el" href="WebSocketServer_8h_source.html#l00354">m_server</a>, <a class="el" href="WebSocketServer_8h_source.html#l00360">m_serviceMap</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00348">onCommandMessage()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00360">onRpcMessage()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00316">onServiceMessage()</a>, <a class="el" href="WebSocketServer_8h_source.html#l00050">dqm4hep::net::RPC_TYPE</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00048">dqm4hep::net::SERVICE_TYPE</a>.</p>
 
-<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00225">start()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                                                                {</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      server::connection_ptr con = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.get_con_from_hdl(hdl);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      <span class="keyword">const</span> std::string serviceName = con-&gt;get_resource();</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      <span class="keyword">auto</span> findIter = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.find(serviceName);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      </div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      <span class="keywordflow">if</span>(findIter == <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.end()) {</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.close(hdl, websocketpp::close::status::normal, <span class="stringliteral">&quot;Service &#39;&quot;</span> + serviceName + <span class="stringliteral">&quot;&#39; not available !&quot;</span>);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      }</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      <span class="comment">// handle service subscription / unsubscription</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      <span class="keywordflow">if</span>(findIter-&gt;second-&gt;type() == <a class="code" href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9af9934a594d223de505db860f2d309629">SERVICE_TYPE</a>) {</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aca6b1288cf8fdb2e2c6d93f4e79035ec">onServiceMessage</a>(serviceName, hdl, msg);</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      }</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(findIter-&gt;second-&gt;type() == <a class="code" href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9aace7a6ec397338150aabcfff1f34f482">COMMAND_TYPE</a>) {</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#af36ebd8ea436c74aab272359558168bc">onCommandMessage</a>(serviceName, hdl, msg);</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      }</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(findIter-&gt;second-&gt;type() == <a class="code" href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9ace67932a24f01a92290a868cc64762bd">RPC_TYPE</a>) {</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a29b613da3267be0c4ae71945cfa45a81">onRpcMessage</a>(serviceName, hdl, msg);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      }</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.close(hdl, websocketpp::close::status::normal, <span class="stringliteral">&quot;Service &#39;&quot;</span> + serviceName + <span class="stringliteral">&quot;&#39; unknown type !&quot;</span>);</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      }</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a29b613da3267be0c4ae71945cfa45a81"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a29b613da3267be0c4ae71945cfa45a81">dqm4hep::net::WsServer::onRpcMessage</a></div><div class="ttdeci">void onRpcMessage(const std::string &amp;serviceName, connection_hdl hdl, message_ptr msg)</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8cc_source.html#l00377">WebSocketServer.cc:377</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_af36ebd8ea436c74aab272359558168bc"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#af36ebd8ea436c74aab272359558168bc">dqm4hep::net::WsServer::onCommandMessage</a></div><div class="ttdeci">void onCommandMessage(const std::string &amp;serviceName, connection_hdl hdl, message_ptr msg)</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8cc_source.html#l00365">WebSocketServer.cc:365</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aca6b1288cf8fdb2e2c6d93f4e79035ec"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aca6b1288cf8fdb2e2c6d93f4e79035ec">dqm4hep::net::WsServer::onServiceMessage</a></div><div class="ttdeci">void onServiceMessage(const std::string &amp;serviceName, connection_hdl hdl, message_ptr msg)</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8cc_source.html#l00333">WebSocketServer.cc:333</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00381">WebSocketServer.h:381</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1net_html_a78c4bcbf4bf74989eae05611731ea5b9af9934a594d223de505db860f2d309629"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9af9934a594d223de505db860f2d309629">dqm4hep::net::SERVICE_TYPE</a></div><div class="ttdoc">Service type: server -&gt; client. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00065">WebSocketServer.h:65</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1net_html_a78c4bcbf4bf74989eae05611731ea5b9ace67932a24f01a92290a868cc64762bd"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9ace67932a24f01a92290a868cc64762bd">dqm4hep::net::RPC_TYPE</a></div><div class="ttdoc">Remote procedure call type: server &lt;-&gt; client. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00067">WebSocketServer.h:67</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1net_html_a78c4bcbf4bf74989eae05611731ea5b9aace7a6ec397338150aabcfff1f34f482"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9aace7a6ec397338150aabcfff1f34f482">dqm4hep::net::COMMAND_TYPE</a></div><div class="ttdoc">Command type: server &lt;- client. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00066">WebSocketServer.h:66</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aeb84bf9e6079f127d53d079cda26aafa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">dqm4hep::net::WsServer::m_server</a></div><div class="ttdeci">server m_server</div><div class="ttdoc">The real server implementation. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00371">WebSocketServer.h:371</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6e9baf16d1e309c4eaf078db8dfe43e9"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">dqm4hep::net::WsServer::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of all services (services, command and request handlers) </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00377">WebSocketServer.h:377</a></div></div>
+<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00208">start()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                                                                {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      server::connection_ptr con = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.get_con_from_hdl(hdl);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      <span class="keyword">const</span> std::string serviceName = con-&gt;get_resource();</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      <span class="keyword">auto</span> findIter = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.find(serviceName);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;      <span class="keywordflow">if</span>(findIter == <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">m_serviceMap</a>.end()) {</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.close(hdl, websocketpp::close::status::normal, <span class="stringliteral">&quot;Service &#39;&quot;</span> + serviceName + <span class="stringliteral">&quot;&#39; not available !&quot;</span>);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      }</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      <span class="comment">// handle service subscription / unsubscription</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      <span class="keywordflow">if</span>(findIter-&gt;second-&gt;type() == <a class="code" href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9af9934a594d223de505db860f2d309629">SERVICE_TYPE</a>) {</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aca6b1288cf8fdb2e2c6d93f4e79035ec">onServiceMessage</a>(serviceName, hdl, msg);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      }</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(findIter-&gt;second-&gt;type() == <a class="code" href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9aace7a6ec397338150aabcfff1f34f482">COMMAND_TYPE</a>) {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#af36ebd8ea436c74aab272359558168bc">onCommandMessage</a>(serviceName, hdl, msg);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;      }</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(findIter-&gt;second-&gt;type() == <a class="code" href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9ace67932a24f01a92290a868cc64762bd">RPC_TYPE</a>) {</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a29b613da3267be0c4ae71945cfa45a81">onRpcMessage</a>(serviceName, hdl, msg);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      }</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.close(hdl, websocketpp::close::status::normal, <span class="stringliteral">&quot;Service &#39;&quot;</span> + serviceName + <span class="stringliteral">&quot;&#39; unknown type !&quot;</span>);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      }</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a29b613da3267be0c4ae71945cfa45a81"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a29b613da3267be0c4ae71945cfa45a81">dqm4hep::net::WsServer::onRpcMessage</a></div><div class="ttdeci">void onRpcMessage(const std::string &amp;serviceName, connection_hdl hdl, message_ptr msg)</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8cc_source.html#l00360">WebSocketServer.cc:360</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_af36ebd8ea436c74aab272359558168bc"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#af36ebd8ea436c74aab272359558168bc">dqm4hep::net::WsServer::onCommandMessage</a></div><div class="ttdeci">void onCommandMessage(const std::string &amp;serviceName, connection_hdl hdl, message_ptr msg)</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8cc_source.html#l00348">WebSocketServer.cc:348</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aca6b1288cf8fdb2e2c6d93f4e79035ec"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aca6b1288cf8fdb2e2c6d93f4e79035ec">dqm4hep::net::WsServer::onServiceMessage</a></div><div class="ttdeci">void onServiceMessage(const std::string &amp;serviceName, connection_hdl hdl, message_ptr msg)</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8cc_source.html#l00316">WebSocketServer.cc:316</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00364">WebSocketServer.h:364</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1net_html_a78c4bcbf4bf74989eae05611731ea5b9af9934a594d223de505db860f2d309629"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9af9934a594d223de505db860f2d309629">dqm4hep::net::SERVICE_TYPE</a></div><div class="ttdoc">Service type: server -&gt; client. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00048">WebSocketServer.h:48</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1net_html_a78c4bcbf4bf74989eae05611731ea5b9ace67932a24f01a92290a868cc64762bd"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9ace67932a24f01a92290a868cc64762bd">dqm4hep::net::RPC_TYPE</a></div><div class="ttdoc">Remote procedure call type: server &lt;-&gt; client. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00050">WebSocketServer.h:50</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1net_html_a78c4bcbf4bf74989eae05611731ea5b9aace7a6ec397338150aabcfff1f34f482"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a78c4bcbf4bf74989eae05611731ea5b9aace7a6ec397338150aabcfff1f34f482">dqm4hep::net::COMMAND_TYPE</a></div><div class="ttdoc">Command type: server &lt;- client. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00049">WebSocketServer.h:49</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aeb84bf9e6079f127d53d079cda26aafa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">dqm4hep::net::WsServer::m_server</a></div><div class="ttdeci">server m_server</div><div class="ttdoc">The real server implementation. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00354">WebSocketServer.h:354</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6e9baf16d1e309c4eaf078db8dfe43e9"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6e9baf16d1e309c4eaf078db8dfe43e9">dqm4hep::net::WsServer::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of all services (services, command and request handlers) </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00360">WebSocketServer.h:360</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -717,12 +717,12 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00265">265</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00248">248</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
 
-<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00225">start()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                                          {</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      </div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    }</div>
+<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00208">start()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                                          {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -764,25 +764,25 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00377">377</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00360">360</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
 
-<p>References <a class="el" href="Signal_8h_source.html#l00400">dqm4hep::core::Signal&lt; Args &gt;::emit()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00211">findRequestHandler()</a>, <a class="el" href="WebSocketServer_8h_source.html#l00371">m_server</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00107">dqm4hep::net::WsRequestHandler::onRequest()</a>.</p>
+<p>References <a class="el" href="Signal_8h_source.html#l00383">dqm4hep::core::Signal&lt; Args &gt;::emit()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00194">findRequestHandler()</a>, <a class="el" href="WebSocketServer_8h_source.html#l00354">m_server</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00090">dqm4hep::net::WsRequestHandler::onRequest()</a>.</p>
 
-<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00291">onMessage()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                                                                                                 {</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;      WsRequestHandler *request = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a7733b84b84e1796e5af10e9eaa67ba3c">findRequestHandler</a>(serviceName);</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == request) {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.close(hdl, websocketpp::close::status::normal, <span class="stringliteral">&quot;Internal error: request &#39;&quot;</span> + serviceName + <span class="stringliteral">&quot;&#39; not available !&quot;</span>);</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      }</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;      server::connection_ptr con = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.get_con_from_hdl(hdl);</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      <a class="code" href="namespacedqm4hep_1_1net.html#a4357bd9aea57229cd06bdf3abcd734fc">message_ptr</a> responseMsg = con-&gt;get_message(websocketpp::frame::opcode::text, 0);</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;      request-&gt;onRequest().emit(con, msg, responseMsg);</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.send(con, responseMsg);</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a7733b84b84e1796e5af10e9eaa67ba3c"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a7733b84b84e1796e5af10e9eaa67ba3c">dqm4hep::net::WsServer::findRequestHandler</a></div><div class="ttdeci">WsRequestHandler * findRequestHandler(const std::string &amp;name)</div><div class="ttdoc">Find an exisiting request handler. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8cc_source.html#l00211">WebSocketServer.cc:211</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aeb84bf9e6079f127d53d079cda26aafa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">dqm4hep::net::WsServer::m_server</a></div><div class="ttdeci">server m_server</div><div class="ttdoc">The real server implementation. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00371">WebSocketServer.h:371</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1net_html_a4357bd9aea57229cd06bdf3abcd734fc"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a4357bd9aea57229cd06bdf3abcd734fc">dqm4hep::net::message_ptr</a></div><div class="ttdeci">server::message_ptr message_ptr</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00050">WebSocketServer.h:50</a></div></div>
+<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00274">onMessage()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                                                                                                 {</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      WsRequestHandler *request = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a7733b84b84e1796e5af10e9eaa67ba3c">findRequestHandler</a>(serviceName);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == request) {</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.close(hdl, websocketpp::close::status::normal, <span class="stringliteral">&quot;Internal error: request &#39;&quot;</span> + serviceName + <span class="stringliteral">&quot;&#39; not available !&quot;</span>);</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      }</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      server::connection_ptr con = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.get_con_from_hdl(hdl);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      <a class="code" href="namespacedqm4hep_1_1net.html#a4357bd9aea57229cd06bdf3abcd734fc">message_ptr</a> responseMsg = con-&gt;get_message(websocketpp::frame::opcode::text, 0);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;      request-&gt;onRequest().emit(con, msg, responseMsg);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.send(con, responseMsg);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a7733b84b84e1796e5af10e9eaa67ba3c"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a7733b84b84e1796e5af10e9eaa67ba3c">dqm4hep::net::WsServer::findRequestHandler</a></div><div class="ttdeci">WsRequestHandler * findRequestHandler(const std::string &amp;name)</div><div class="ttdoc">Find an exisiting request handler. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8cc_source.html#l00194">WebSocketServer.cc:194</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aeb84bf9e6079f127d53d079cda26aafa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">dqm4hep::net::WsServer::m_server</a></div><div class="ttdeci">server m_server</div><div class="ttdoc">The real server implementation. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00354">WebSocketServer.h:354</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1net_html_a4357bd9aea57229cd06bdf3abcd734fc"><div class="ttname"><a href="namespacedqm4hep_1_1net.html#a4357bd9aea57229cd06bdf3abcd734fc">dqm4hep::net::message_ptr</a></div><div class="ttdeci">server::message_ptr message_ptr</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00033">WebSocketServer.h:33</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -824,42 +824,42 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00333">333</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00316">316</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
 
-<p>References <a class="el" href="WebSocketServer_8h_source.html#l00371">m_server</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00369">m_serviceConnections</a>.</p>
+<p>References <a class="el" href="WebSocketServer_8h_source.html#l00354">m_server</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00352">m_serviceConnections</a>.</p>
 
-<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00291">onMessage()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                                                                                                     {</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      server::connection_ptr con = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.get_con_from_hdl(hdl);</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;      <span class="keyword">auto</span> findIter2 = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>.find(serviceName);</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;      <span class="comment">// handle subscription/un-subscription to/from service</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      <span class="keywordflow">if</span>(msg-&gt;get_payload() == <span class="stringliteral">&quot;subscribe&quot;</span>) {</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keywordflow">if</span>(findIter2 == <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>.end()) {</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;          <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.close(hdl, websocketpp::close::status::normal, <span class="stringliteral">&quot;Internal error: service &#39;&quot;</span> + serviceName + <span class="stringliteral">&quot;&#39; not available !&quot;</span>);</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;          <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        }</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="comment">// insert new subscriber</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        findIter2-&gt;second.insert(con);</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.send(hdl, <span class="stringliteral">&quot;ok&quot;</span>, websocketpp::frame::opcode::text);</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      }</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(msg-&gt;get_payload() == <span class="stringliteral">&quot;unsubscribe&quot;</span>) {</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="keywordflow">if</span>(findIter2 == <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>.end()) {</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;          <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.close(hdl, websocketpp::close::status::normal, <span class="stringliteral">&quot;Internal error: service &#39;&quot;</span> + serviceName + <span class="stringliteral">&quot;&#39; not available !&quot;</span>);</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;          <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        }</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="comment">// remove subscriber</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        findIter2-&gt;second.erase(con);</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.send(hdl, <span class="stringliteral">&quot;ok&quot;</span>, websocketpp::frame::opcode::text);</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;      }</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;      <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.close(hdl, websocketpp::close::status::normal, <span class="stringliteral">&quot;Unknown command for service &#39;&quot;</span> + serviceName + <span class="stringliteral">&quot;&#39;, command: &quot;</span> + msg-&gt;get_payload() + <span class="stringliteral">&quot; !&quot;</span>);</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="keywordflow">return</span>;            </div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;      }</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a1bcdfb305505cac756482fc8df63a4af"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">dqm4hep::net::WsServer::m_serviceConnections</a></div><div class="ttdeci">connection_map m_serviceConnections</div><div class="ttdoc">The list of service connections. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00369">WebSocketServer.h:369</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aeb84bf9e6079f127d53d079cda26aafa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">dqm4hep::net::WsServer::m_server</a></div><div class="ttdeci">server m_server</div><div class="ttdoc">The real server implementation. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00371">WebSocketServer.h:371</a></div></div>
+<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00274">onMessage()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                                                                                                     {</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;      server::connection_ptr con = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.get_con_from_hdl(hdl);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      <span class="keyword">auto</span> findIter2 = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>.find(serviceName);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      <span class="comment">// handle subscription/un-subscription to/from service</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      <span class="keywordflow">if</span>(msg-&gt;get_payload() == <span class="stringliteral">&quot;subscribe&quot;</span>) {</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">if</span>(findIter2 == <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>.end()) {</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;          <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.close(hdl, websocketpp::close::status::normal, <span class="stringliteral">&quot;Internal error: service &#39;&quot;</span> + serviceName + <span class="stringliteral">&quot;&#39; not available !&quot;</span>);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;          <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        }</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="comment">// insert new subscriber</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        findIter2-&gt;second.insert(con);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.send(hdl, <span class="stringliteral">&quot;ok&quot;</span>, websocketpp::frame::opcode::text);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      }</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(msg-&gt;get_payload() == <span class="stringliteral">&quot;unsubscribe&quot;</span>) {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="keywordflow">if</span>(findIter2 == <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>.end()) {</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;          <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.close(hdl, websocketpp::close::status::normal, <span class="stringliteral">&quot;Internal error: service &#39;&quot;</span> + serviceName + <span class="stringliteral">&quot;&#39; not available !&quot;</span>);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;          <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        }</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <span class="comment">// remove subscriber</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        findIter2-&gt;second.erase(con);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.send(hdl, <span class="stringliteral">&quot;ok&quot;</span>, websocketpp::frame::opcode::text);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      }</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.close(hdl, websocketpp::close::status::normal, <span class="stringliteral">&quot;Unknown command for service &#39;&quot;</span> + serviceName + <span class="stringliteral">&quot;&#39;, command: &quot;</span> + msg-&gt;get_payload() + <span class="stringliteral">&quot; !&quot;</span>);</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">return</span>;            </div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      }</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a1bcdfb305505cac756482fc8df63a4af"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">dqm4hep::net::WsServer::m_serviceConnections</a></div><div class="ttdeci">connection_map m_serviceConnections</div><div class="ttdoc">The list of service connections. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00352">WebSocketServer.h:352</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aeb84bf9e6079f127d53d079cda26aafa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">dqm4hep::net::WsServer::m_server</a></div><div class="ttdeci">server m_server</div><div class="ttdoc">The real server implementation. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00354">WebSocketServer.h:354</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -931,25 +931,25 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00319">319</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00302">302</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
 
-<p>References <a class="el" href="WebSocketServer_8h_source.html#l00381">m_mutex</a>, <a class="el" href="WebSocketServer_8h_source.html#l00371">m_server</a>, <a class="el" href="WebSocketServer_8h_source.html#l00369">m_serviceConnections</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00060">dqm4hep::net::WsServiceBase::name()</a>.</p>
+<p>References <a class="el" href="WebSocketServer_8h_source.html#l00364">m_mutex</a>, <a class="el" href="WebSocketServer_8h_source.html#l00354">m_server</a>, <a class="el" href="WebSocketServer_8h_source.html#l00352">m_serviceConnections</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00043">dqm4hep::net::WsServiceBase::name()</a>.</p>
 
-<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00079">dqm4hep::net::WsService::send()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                                                                                                {</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      <span class="keyword">auto</span> findIter = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>.find(service-&gt;name());</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      <span class="keywordflow">if</span>(findIter == <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>.end()) {</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      }</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      websocketpp::frame::opcode::value opcode = containsBinary ? websocketpp::frame::opcode::binary : websocketpp::frame::opcode::text;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp;con : findIter-&gt;second) {</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.send(con, buffer, size, opcode);</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      }</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a1bcdfb305505cac756482fc8df63a4af"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">dqm4hep::net::WsServer::m_serviceConnections</a></div><div class="ttdeci">connection_map m_serviceConnections</div><div class="ttdoc">The list of service connections. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00369">WebSocketServer.h:369</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00381">WebSocketServer.h:381</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aeb84bf9e6079f127d53d079cda26aafa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">dqm4hep::net::WsServer::m_server</a></div><div class="ttdeci">server m_server</div><div class="ttdoc">The real server implementation. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00371">WebSocketServer.h:371</a></div></div>
+<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00062">dqm4hep::net::WsService::send()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                                                                                                {</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      <span class="keyword">auto</span> findIter = <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>.find(service-&gt;name());</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      <span class="keywordflow">if</span>(findIter == <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>.end()) {</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      }</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      websocketpp::frame::opcode::value opcode = containsBinary ? websocketpp::frame::opcode::binary : websocketpp::frame::opcode::text;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp;con : findIter-&gt;second) {</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.send(con, buffer, size, opcode);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      }</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a1bcdfb305505cac756482fc8df63a4af"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">dqm4hep::net::WsServer::m_serviceConnections</a></div><div class="ttdeci">connection_map m_serviceConnections</div><div class="ttdoc">The list of service connections. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00352">WebSocketServer.h:352</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00364">WebSocketServer.h:364</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aeb84bf9e6079f127d53d079cda26aafa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">dqm4hep::net::WsServer::m_server</a></div><div class="ttdeci">server m_server</div><div class="ttdoc">The real server implementation. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00354">WebSocketServer.h:354</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -975,16 +975,16 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00132">132</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00115">115</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
 
-<p>References <a class="el" href="WebSocketServer_8h_source.html#l00373">m_port</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00379">m_running</a>.</p>
-<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                                   {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a3a1d9f286ca8160d2a916b93e2c1c14e">m_running</a>.load()) {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#ab408afed219515dc90a8892158e8f438">m_port</a> = port;        </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      }</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_ab408afed219515dc90a8892158e8f438"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#ab408afed219515dc90a8892158e8f438">dqm4hep::net::WsServer::m_port</a></div><div class="ttdeci">int m_port</div><div class="ttdoc">The server port on which to listen. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00373">WebSocketServer.h:373</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a3a1d9f286ca8160d2a916b93e2c1c14e"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a3a1d9f286ca8160d2a916b93e2c1c14e">dqm4hep::net::WsServer::m_running</a></div><div class="ttdeci">std::atomic_bool m_running</div><div class="ttdoc">Whether the server is running. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00379">WebSocketServer.h:379</a></div></div>
+<p>References <a class="el" href="WebSocketServer_8h_source.html#l00356">m_port</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00362">m_running</a>.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                                   {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a3a1d9f286ca8160d2a916b93e2c1c14e">m_running</a>.load()) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#ab408afed219515dc90a8892158e8f438">m_port</a> = port;        </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_ab408afed219515dc90a8892158e8f438"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#ab408afed219515dc90a8892158e8f438">dqm4hep::net::WsServer::m_port</a></div><div class="ttdeci">int m_port</div><div class="ttdoc">The server port on which to listen. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00356">WebSocketServer.h:356</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a3a1d9f286ca8160d2a916b93e2c1c14e"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a3a1d9f286ca8160d2a916b93e2c1c14e">dqm4hep::net::WsServer::m_running</a></div><div class="ttdeci">std::atomic_bool m_running</div><div class="ttdoc">Whether the server is running. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00362">WebSocketServer.h:362</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1004,41 +1004,41 @@ Friends</h2></td></tr>
 <p>Start the server. </p>
 <p>Start listening to client connections. Note that the server is started in a separate thread. To synchronize an operation with the server to avoid data race condition, use the <a class="el" href="classdqm4hep_1_1net_1_1WsServer.html#a85d3a92d86cd2a24aae1286dc71f275a" title="Synchronize a user operation with the server thread. ">synchronize()</a> method. </p>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00225">225</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00208">208</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
 
-<p>References <a class="el" href="WebSocketServer_8h_source.html#l00373">m_port</a>, <a class="el" href="WebSocketServer_8h_source.html#l00379">m_running</a>, <a class="el" href="WebSocketServer_8h_source.html#l00371">m_server</a>, <a class="el" href="WebSocketServer_8h_source.html#l00375">m_thread</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00271">onClose()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00291">onMessage()</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00265">onOpen()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                         {</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a3a1d9f286ca8160d2a916b93e2c1c14e">m_running</a>.load()) {</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;      }   </div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;      <span class="comment">// Set logging settings</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.set_access_channels(websocketpp::log::alevel::none);</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <span class="comment">// Initialize Asio</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.init_asio();</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      <span class="comment">// Register our message handler</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.set_message_handler(std::bind(&amp;<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a4eb2659dc061cef2e04aa52bfb80b3cc">WsServer::onMessage</a>, <span class="keyword">this</span>, _1, _2));</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.set_open_handler(std::bind(&amp;<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1c16aec8aef4700f024ef60c1415789e">WsServer::onOpen</a>, <span class="keyword">this</span>, _1));</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.set_close_handler(std::bind(&amp;<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6b817665ac07db50f3f79d5894b9a896">WsServer::onClose</a>, <span class="keyword">this</span>, _1));</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <span class="comment">// Start listening</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.listen(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#ab408afed219515dc90a8892158e8f438">m_port</a>);</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      <span class="comment">// Start the server accept loop</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.start_accept();</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      <span class="comment">// Start the ASIO io_service run loop</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a74e287316b09820fea9994d29ea563a4">m_thread</a> = std::thread(&amp;server::run, std::ref(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>));</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a3a1d9f286ca8160d2a916b93e2c1c14e">m_running</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_ab408afed219515dc90a8892158e8f438"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#ab408afed219515dc90a8892158e8f438">dqm4hep::net::WsServer::m_port</a></div><div class="ttdeci">int m_port</div><div class="ttdoc">The server port on which to listen. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00373">WebSocketServer.h:373</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a4eb2659dc061cef2e04aa52bfb80b3cc"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a4eb2659dc061cef2e04aa52bfb80b3cc">dqm4hep::net::WsServer::onMessage</a></div><div class="ttdeci">void onMessage(connection_hdl hdl, message_ptr msg)</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8cc_source.html#l00291">WebSocketServer.cc:291</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a74e287316b09820fea9994d29ea563a4"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a74e287316b09820fea9994d29ea563a4">dqm4hep::net::WsServer::m_thread</a></div><div class="ttdeci">std::thread m_thread</div><div class="ttdoc">The server thread in which it runs. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00375">WebSocketServer.h:375</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a3a1d9f286ca8160d2a916b93e2c1c14e"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a3a1d9f286ca8160d2a916b93e2c1c14e">dqm4hep::net::WsServer::m_running</a></div><div class="ttdeci">std::atomic_bool m_running</div><div class="ttdoc">Whether the server is running. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00379">WebSocketServer.h:379</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aeb84bf9e6079f127d53d079cda26aafa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">dqm4hep::net::WsServer::m_server</a></div><div class="ttdeci">server m_server</div><div class="ttdoc">The real server implementation. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00371">WebSocketServer.h:371</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a1c16aec8aef4700f024ef60c1415789e"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a1c16aec8aef4700f024ef60c1415789e">dqm4hep::net::WsServer::onOpen</a></div><div class="ttdeci">void onOpen(connection_hdl hdl)</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8cc_source.html#l00265">WebSocketServer.cc:265</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6b817665ac07db50f3f79d5894b9a896"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6b817665ac07db50f3f79d5894b9a896">dqm4hep::net::WsServer::onClose</a></div><div class="ttdeci">void onClose(connection_hdl hdl)</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8cc_source.html#l00271">WebSocketServer.cc:271</a></div></div>
+<p>References <a class="el" href="WebSocketServer_8h_source.html#l00356">m_port</a>, <a class="el" href="WebSocketServer_8h_source.html#l00362">m_running</a>, <a class="el" href="WebSocketServer_8h_source.html#l00354">m_server</a>, <a class="el" href="WebSocketServer_8h_source.html#l00358">m_thread</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00254">onClose()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00274">onMessage()</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00248">onOpen()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                         {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a3a1d9f286ca8160d2a916b93e2c1c14e">m_running</a>.load()) {</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      }   </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      <span class="comment">// Set logging settings</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.set_access_channels(websocketpp::log::alevel::none);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;      <span class="comment">// Initialize Asio</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.init_asio();</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;      <span class="comment">// Register our message handler</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.set_message_handler(std::bind(&amp;<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a4eb2659dc061cef2e04aa52bfb80b3cc">WsServer::onMessage</a>, <span class="keyword">this</span>, _1, _2));</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.set_open_handler(std::bind(&amp;<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1c16aec8aef4700f024ef60c1415789e">WsServer::onOpen</a>, <span class="keyword">this</span>, _1));</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.set_close_handler(std::bind(&amp;<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a6b817665ac07db50f3f79d5894b9a896">WsServer::onClose</a>, <span class="keyword">this</span>, _1));</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;      <span class="comment">// Start listening</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.listen(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#ab408afed219515dc90a8892158e8f438">m_port</a>);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;      <span class="comment">// Start the server accept loop</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.start_accept();</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;      <span class="comment">// Start the ASIO io_service run loop</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a74e287316b09820fea9994d29ea563a4">m_thread</a> = std::thread(&amp;server::run, std::ref(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>));</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a3a1d9f286ca8160d2a916b93e2c1c14e">m_running</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_ab408afed219515dc90a8892158e8f438"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#ab408afed219515dc90a8892158e8f438">dqm4hep::net::WsServer::m_port</a></div><div class="ttdeci">int m_port</div><div class="ttdoc">The server port on which to listen. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00356">WebSocketServer.h:356</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a4eb2659dc061cef2e04aa52bfb80b3cc"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a4eb2659dc061cef2e04aa52bfb80b3cc">dqm4hep::net::WsServer::onMessage</a></div><div class="ttdeci">void onMessage(connection_hdl hdl, message_ptr msg)</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8cc_source.html#l00274">WebSocketServer.cc:274</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a74e287316b09820fea9994d29ea563a4"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a74e287316b09820fea9994d29ea563a4">dqm4hep::net::WsServer::m_thread</a></div><div class="ttdeci">std::thread m_thread</div><div class="ttdoc">The server thread in which it runs. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00358">WebSocketServer.h:358</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a3a1d9f286ca8160d2a916b93e2c1c14e"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a3a1d9f286ca8160d2a916b93e2c1c14e">dqm4hep::net::WsServer::m_running</a></div><div class="ttdeci">std::atomic_bool m_running</div><div class="ttdoc">Whether the server is running. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00362">WebSocketServer.h:362</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aeb84bf9e6079f127d53d079cda26aafa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">dqm4hep::net::WsServer::m_server</a></div><div class="ttdeci">server m_server</div><div class="ttdoc">The real server implementation. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00354">WebSocketServer.h:354</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a1c16aec8aef4700f024ef60c1415789e"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a1c16aec8aef4700f024ef60c1415789e">dqm4hep::net::WsServer::onOpen</a></div><div class="ttdeci">void onOpen(connection_hdl hdl)</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8cc_source.html#l00248">WebSocketServer.cc:248</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a6b817665ac07db50f3f79d5894b9a896"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a6b817665ac07db50f3f79d5894b9a896">dqm4hep::net::WsServer::onClose</a></div><div class="ttdeci">void onClose(connection_hdl hdl)</div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8cc_source.html#l00254">WebSocketServer.cc:254</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1058,24 +1058,24 @@ Friends</h2></td></tr>
 <p>Stop the server. </p>
 <p>The server thread is stopped and client connections closed. The list of services, command and request handlers are NOT cleared and can be re-used. The server can be re-started using the <a class="el" href="classdqm4hep_1_1net_1_1WsServer.html#a11fed2292dee55e068ab26c221c0ab08" title="Start the server. ">start()</a> method again. </p>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00253">253</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8cc_source.html#l00236">236</a> of file <a class="el" href="WebSocketServer_8cc_source.html">WebSocketServer.cc</a>.</p>
 
-<p>References <a class="el" href="WebSocketServer_8h_source.html#l00379">m_running</a>, <a class="el" href="WebSocketServer_8h_source.html#l00371">m_server</a>, <a class="el" href="WebSocketServer_8h_source.html#l00369">m_serviceConnections</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00375">m_thread</a>.</p>
+<p>References <a class="el" href="WebSocketServer_8h_source.html#l00362">m_running</a>, <a class="el" href="WebSocketServer_8h_source.html#l00354">m_server</a>, <a class="el" href="WebSocketServer_8h_source.html#l00352">m_serviceConnections</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00358">m_thread</a>.</p>
 
-<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00121">~WsServer()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                        {</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a3a1d9f286ca8160d2a916b93e2c1c14e">m_running</a>.load()) {</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="comment">// std::lock_guard&lt;std::recursive_mutex&gt; lock(m_mutex);</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.stop();</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a74e287316b09820fea9994d29ea563a4">m_thread</a>.join();</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>.clear();</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a3a1d9f286ca8160d2a916b93e2c1c14e">m_running</a> = <span class="keyword">false</span>; </div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      }</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a1bcdfb305505cac756482fc8df63a4af"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">dqm4hep::net::WsServer::m_serviceConnections</a></div><div class="ttdeci">connection_map m_serviceConnections</div><div class="ttdoc">The list of service connections. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00369">WebSocketServer.h:369</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a74e287316b09820fea9994d29ea563a4"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a74e287316b09820fea9994d29ea563a4">dqm4hep::net::WsServer::m_thread</a></div><div class="ttdeci">std::thread m_thread</div><div class="ttdoc">The server thread in which it runs. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00375">WebSocketServer.h:375</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a3a1d9f286ca8160d2a916b93e2c1c14e"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a3a1d9f286ca8160d2a916b93e2c1c14e">dqm4hep::net::WsServer::m_running</a></div><div class="ttdeci">std::atomic_bool m_running</div><div class="ttdoc">Whether the server is running. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00379">WebSocketServer.h:379</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aeb84bf9e6079f127d53d079cda26aafa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">dqm4hep::net::WsServer::m_server</a></div><div class="ttdeci">server m_server</div><div class="ttdoc">The real server implementation. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00371">WebSocketServer.h:371</a></div></div>
+<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00104">~WsServer()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                        {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a3a1d9f286ca8160d2a916b93e2c1c14e">m_running</a>.load()) {</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="comment">// std::lock_guard&lt;std::recursive_mutex&gt; lock(m_mutex);</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">m_server</a>.stop();</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a74e287316b09820fea9994d29ea563a4">m_thread</a>.join();</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">m_serviceConnections</a>.clear();</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a3a1d9f286ca8160d2a916b93e2c1c14e">m_running</a> = <span class="keyword">false</span>; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a1bcdfb305505cac756482fc8df63a4af"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a1bcdfb305505cac756482fc8df63a4af">dqm4hep::net::WsServer::m_serviceConnections</a></div><div class="ttdeci">connection_map m_serviceConnections</div><div class="ttdoc">The list of service connections. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00352">WebSocketServer.h:352</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a74e287316b09820fea9994d29ea563a4"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a74e287316b09820fea9994d29ea563a4">dqm4hep::net::WsServer::m_thread</a></div><div class="ttdeci">std::thread m_thread</div><div class="ttdoc">The server thread in which it runs. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00358">WebSocketServer.h:358</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a3a1d9f286ca8160d2a916b93e2c1c14e"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a3a1d9f286ca8160d2a916b93e2c1c14e">dqm4hep::net::WsServer::m_running</a></div><div class="ttdeci">std::atomic_bool m_running</div><div class="ttdoc">Whether the server is running. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00362">WebSocketServer.h:362</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_aeb84bf9e6079f127d53d079cda26aafa"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#aeb84bf9e6079f127d53d079cda26aafa">dqm4hep::net::WsServer::m_server</a></div><div class="ttdeci">server m_server</div><div class="ttdoc">The real server implementation. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00354">WebSocketServer.h:354</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1111,14 +1111,14 @@ template&lt;typename Operation &gt; </div>
 <div class="line">});</div>
 </div><!-- fragment --><p>The performed operation has to be fast in order to avoid long server operation blocking. </p>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00403">403</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00386">386</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
 
-<p>References <a class="el" href="WebSocketServer_8h_source.html#l00381">m_mutex</a>.</p>
-<div class="fragment"><div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                                                         {</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;      operation();</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00381">WebSocketServer.h:381</a></div></div>
+<p>References <a class="el" href="WebSocketServer_8h_source.html#l00364">m_mutex</a>.</p>
+<div class="fragment"><div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                                                         {</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;      std::lock_guard&lt;std::recursive_mutex&gt; lock(<a class="code" href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">m_mutex</a>);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;      operation();</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1WsServer_html_a2644e4b0efcf59abe6e6ce6cbfebddbb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1WsServer.html#a2644e4b0efcf59abe6e6ce6cbfebddbb">dqm4hep::net::WsServer::m_mutex</a></div><div class="ttdeci">std::recursive_mutex m_mutex</div><div class="ttdoc">The mutex to synchronize operations. </div><div class="ttdef"><b>Definition:</b> <a href="WebSocketServer_8h_source.html#l00364">WebSocketServer.h:364</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1141,9 +1141,9 @@ template&lt;typename Operation &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00248">248</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00231">231</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00140">createService()</a>.</p>
+<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00123">createService()</a>.</p>
 
 </div>
 </div>
@@ -1168,9 +1168,9 @@ template&lt;typename Operation &gt; </div>
 
 <p>The mutex to synchronize operations. </p>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00381">381</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00364">364</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00155">createCommandHandler()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00169">createRequestHandler()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00140">createService()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00197">findCommandHandler()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00211">findRequestHandler()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00183">findService()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00271">onClose()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00291">onMessage()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00319">send()</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00403">synchronize()</a>.</p>
+<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00138">createCommandHandler()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00152">createRequestHandler()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00123">createService()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00180">findCommandHandler()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00194">findRequestHandler()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00166">findService()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00254">onClose()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00274">onMessage()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00302">send()</a>, and <a class="el" href="WebSocketServer_8h_source.html#l00386">synchronize()</a>.</p>
 
 </div>
 </div>
@@ -1194,9 +1194,9 @@ template&lt;typename Operation &gt; </div>
 
 <p>The server port on which to listen. </p>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00373">373</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00356">356</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00132">setPort()</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00225">start()</a>.</p>
+<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00115">setPort()</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00208">start()</a>.</p>
 
 </div>
 </div>
@@ -1220,9 +1220,9 @@ template&lt;typename Operation &gt; </div>
 
 <p>Whether the server is running. </p>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00379">379</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00362">362</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00132">setPort()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00225">start()</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00253">stop()</a>.</p>
+<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00115">setPort()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00208">start()</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00236">stop()</a>.</p>
 
 </div>
 </div>
@@ -1246,9 +1246,9 @@ template&lt;typename Operation &gt; </div>
 
 <p>The real server implementation. </p>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00371">371</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00354">354</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00271">onClose()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00365">onCommandMessage()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00291">onMessage()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00377">onRpcMessage()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00333">onServiceMessage()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00319">send()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00225">start()</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00253">stop()</a>.</p>
+<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00254">onClose()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00348">onCommandMessage()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00274">onMessage()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00360">onRpcMessage()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00316">onServiceMessage()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00302">send()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00208">start()</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00236">stop()</a>.</p>
 
 </div>
 </div>
@@ -1272,9 +1272,9 @@ template&lt;typename Operation &gt; </div>
 
 <p>The list of service connections. </p>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00369">369</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00352">352</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00140">createService()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00271">onClose()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00333">onServiceMessage()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00319">send()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00253">stop()</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00121">~WsServer()</a>.</p>
+<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00123">createService()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00254">onClose()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00316">onServiceMessage()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00302">send()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00236">stop()</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00104">~WsServer()</a>.</p>
 
 </div>
 </div>
@@ -1298,9 +1298,9 @@ template&lt;typename Operation &gt; </div>
 
 <p>The map of all services (services, command and request handlers) </p>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00377">377</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00360">360</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00155">createCommandHandler()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00169">createRequestHandler()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00140">createService()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00197">findCommandHandler()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00211">findRequestHandler()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00183">findService()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00271">onClose()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00291">onMessage()</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00121">~WsServer()</a>.</p>
+<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00138">createCommandHandler()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00152">createRequestHandler()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00123">createService()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00180">findCommandHandler()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00194">findRequestHandler()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00166">findService()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00254">onClose()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00274">onMessage()</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00104">~WsServer()</a>.</p>
 
 </div>
 </div>
@@ -1324,9 +1324,9 @@ template&lt;typename Operation &gt; </div>
 
 <p>The server thread in which it runs. </p>
 
-<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00375">375</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
+<p>Definition at line <a class="el" href="WebSocketServer_8h_source.html#l00358">358</a> of file <a class="el" href="WebSocketServer_8h_source.html">WebSocketServer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00225">start()</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00253">stop()</a>.</p>
+<p>Referenced by <a class="el" href="WebSocketServer_8cc_source.html#l00208">start()</a>, and <a class="el" href="WebSocketServer_8cc_source.html#l00236">stop()</a>.</p>
 
 </div>
 </div>
@@ -1337,7 +1337,7 @@ template&lt;typename Operation &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 10:13:09 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 12:37:06 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

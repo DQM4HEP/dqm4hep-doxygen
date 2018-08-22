@@ -113,7 +113,7 @@ class dqm4hep::net::BufferModelT&lt; T &gt;</h3>
 
 <p><a class="el" href="classdqm4hep_1_1net_1_1BufferModelT.html" title="BufferModelT class. ">BufferModelT</a> class. </p>
 
-<p>Definition at line <a class="el" href="NetBuffer_8h_source.html#l00135">135</a> of file <a class="el" href="NetBuffer_8h_source.html">NetBuffer.h</a>.</p>
+<p>Definition at line <a class="el" href="NetBuffer_8h_source.html#l00118">118</a> of file <a class="el" href="NetBuffer_8h_source.html">NetBuffer.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a67d60d482ade7d61559e1768df6a0b2d"></a>
 <div class="memitem">
@@ -140,13 +140,13 @@ template&lt;typename T &gt; </div>
 
 <p>Constructor. </p>
 
-<p>Definition at line <a class="el" href="NetBuffer_8h_source.html#l00267">267</a> of file <a class="el" href="NetBuffer_8h_source.html">NetBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                                         {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1BufferModel.html#a888932f51fd39ef6b9ae2e5f52e353b8">m_rawBuffer</a>.<a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#afbe8d8f297564897f781d641527e3df0">adopt</a>((<span class="keyword">const</span> <span class="keywordtype">char</span> *)&amp;<a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a>, <span class="keyword">sizeof</span>(<a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a>));</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1BufferModel_html_a888932f51fd39ef6b9ae2e5f52e353b8"><div class="ttname"><a href="classdqm4hep_1_1net_1_1BufferModel.html#a888932f51fd39ef6b9ae2e5f52e353b8">dqm4hep::net::BufferModel::m_rawBuffer</a></div><div class="ttdeci">RawBuffer m_rawBuffer</div><div class="ttdoc">The raw buffer. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00125">NetBuffer.h:125</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1BufferModelT_html_af7ba861ee52df4d47045fd5963b3cf0b"><div class="ttname"><a href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">dqm4hep::net::BufferModelT::m_value</a></div><div class="ttdeci">T m_value</div><div class="ttdoc">An internal copy of the stored value. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00157">NetBuffer.h:157</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RawBuffer_html_afbe8d8f297564897f781d641527e3df0"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RawBuffer.html#afbe8d8f297564897f781d641527e3df0">dqm4hep::net::RawBuffer::adopt</a></div><div class="ttdeci">void adopt(const char *buffer, size_t size)</div><div class="ttdoc">Adopt a new buffer (does not own it !) </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8cc_source.html#l00065">NetBuffer.cc:65</a></div></div>
+<p>Definition at line <a class="el" href="NetBuffer_8h_source.html#l00250">250</a> of file <a class="el" href="NetBuffer_8h_source.html">NetBuffer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                                         {</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1BufferModel.html#a888932f51fd39ef6b9ae2e5f52e353b8">m_rawBuffer</a>.<a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#afbe8d8f297564897f781d641527e3df0">adopt</a>((<span class="keyword">const</span> <span class="keywordtype">char</span> *)&amp;<a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a>, <span class="keyword">sizeof</span>(<a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a>));</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1BufferModel_html_a888932f51fd39ef6b9ae2e5f52e353b8"><div class="ttname"><a href="classdqm4hep_1_1net_1_1BufferModel.html#a888932f51fd39ef6b9ae2e5f52e353b8">dqm4hep::net::BufferModel::m_rawBuffer</a></div><div class="ttdeci">RawBuffer m_rawBuffer</div><div class="ttdoc">The raw buffer. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00108">NetBuffer.h:108</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1BufferModelT_html_af7ba861ee52df4d47045fd5963b3cf0b"><div class="ttname"><a href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">dqm4hep::net::BufferModelT::m_value</a></div><div class="ttdeci">T m_value</div><div class="ttdoc">An internal copy of the stored value. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00140">NetBuffer.h:140</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RawBuffer_html_afbe8d8f297564897f781d641527e3df0"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RawBuffer.html#afbe8d8f297564897f781d641527e3df0">dqm4hep::net::RawBuffer::adopt</a></div><div class="ttdeci">void adopt(const char *buffer, size_t size)</div><div class="ttdoc">Adopt a new buffer (does not own it !) </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8cc_source.html#l00048">NetBuffer.cc:48</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -183,14 +183,14 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="NetBuffer_8h_source.html#l00274">274</a> of file <a class="el" href="NetBuffer_8h_source.html">NetBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                                                    {</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a> = T(value);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1BufferModel.html#a888932f51fd39ef6b9ae2e5f52e353b8">m_rawBuffer</a>.<a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#afbe8d8f297564897f781d641527e3df0">adopt</a>((<span class="keyword">const</span> <span class="keywordtype">char</span> *)&amp;<a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a>, <span class="keyword">sizeof</span>(<a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a>));</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1BufferModel_html_a888932f51fd39ef6b9ae2e5f52e353b8"><div class="ttname"><a href="classdqm4hep_1_1net_1_1BufferModel.html#a888932f51fd39ef6b9ae2e5f52e353b8">dqm4hep::net::BufferModel::m_rawBuffer</a></div><div class="ttdeci">RawBuffer m_rawBuffer</div><div class="ttdoc">The raw buffer. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00125">NetBuffer.h:125</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1BufferModelT_html_af7ba861ee52df4d47045fd5963b3cf0b"><div class="ttname"><a href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">dqm4hep::net::BufferModelT::m_value</a></div><div class="ttdeci">T m_value</div><div class="ttdoc">An internal copy of the stored value. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00157">NetBuffer.h:157</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RawBuffer_html_afbe8d8f297564897f781d641527e3df0"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RawBuffer.html#afbe8d8f297564897f781d641527e3df0">dqm4hep::net::RawBuffer::adopt</a></div><div class="ttdeci">void adopt(const char *buffer, size_t size)</div><div class="ttdoc">Adopt a new buffer (does not own it !) </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8cc_source.html#l00065">NetBuffer.cc:65</a></div></div>
+<p>Definition at line <a class="el" href="NetBuffer_8h_source.html#l00257">257</a> of file <a class="el" href="NetBuffer_8h_source.html">NetBuffer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                                                    {</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a> = T(value);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1BufferModel.html#a888932f51fd39ef6b9ae2e5f52e353b8">m_rawBuffer</a>.<a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#afbe8d8f297564897f781d641527e3df0">adopt</a>((<span class="keyword">const</span> <span class="keywordtype">char</span> *)&amp;<a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a>, <span class="keyword">sizeof</span>(<a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a>));</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1BufferModel_html_a888932f51fd39ef6b9ae2e5f52e353b8"><div class="ttname"><a href="classdqm4hep_1_1net_1_1BufferModel.html#a888932f51fd39ef6b9ae2e5f52e353b8">dqm4hep::net::BufferModel::m_rawBuffer</a></div><div class="ttdeci">RawBuffer m_rawBuffer</div><div class="ttdoc">The raw buffer. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00108">NetBuffer.h:108</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1BufferModelT_html_af7ba861ee52df4d47045fd5963b3cf0b"><div class="ttname"><a href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">dqm4hep::net::BufferModelT::m_value</a></div><div class="ttdeci">T m_value</div><div class="ttdoc">An internal copy of the stored value. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00140">NetBuffer.h:140</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RawBuffer_html_afbe8d8f297564897f781d641527e3df0"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RawBuffer.html#afbe8d8f297564897f781d641527e3df0">dqm4hep::net::RawBuffer::adopt</a></div><div class="ttdeci">void adopt(const char *buffer, size_t size)</div><div class="ttdoc">Adopt a new buffer (does not own it !) </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8cc_source.html#l00048">NetBuffer.cc:48</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -226,14 +226,14 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="NetBuffer_8h_source.html#l00282">282</a> of file <a class="el" href="NetBuffer_8h_source.html">NetBuffer.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                                               {</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a> = std::move(value);</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1BufferModel.html#a888932f51fd39ef6b9ae2e5f52e353b8">m_rawBuffer</a>.<a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#afbe8d8f297564897f781d641527e3df0">adopt</a>((<span class="keyword">const</span> <span class="keywordtype">char</span> *)&amp;<a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a>, <span class="keyword">sizeof</span>(<a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a>));</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1BufferModel_html_a888932f51fd39ef6b9ae2e5f52e353b8"><div class="ttname"><a href="classdqm4hep_1_1net_1_1BufferModel.html#a888932f51fd39ef6b9ae2e5f52e353b8">dqm4hep::net::BufferModel::m_rawBuffer</a></div><div class="ttdeci">RawBuffer m_rawBuffer</div><div class="ttdoc">The raw buffer. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00125">NetBuffer.h:125</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1BufferModelT_html_af7ba861ee52df4d47045fd5963b3cf0b"><div class="ttname"><a href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">dqm4hep::net::BufferModelT::m_value</a></div><div class="ttdeci">T m_value</div><div class="ttdoc">An internal copy of the stored value. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00157">NetBuffer.h:157</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RawBuffer_html_afbe8d8f297564897f781d641527e3df0"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RawBuffer.html#afbe8d8f297564897f781d641527e3df0">dqm4hep::net::RawBuffer::adopt</a></div><div class="ttdeci">void adopt(const char *buffer, size_t size)</div><div class="ttdoc">Adopt a new buffer (does not own it !) </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8cc_source.html#l00065">NetBuffer.cc:65</a></div></div>
+<p>Definition at line <a class="el" href="NetBuffer_8h_source.html#l00265">265</a> of file <a class="el" href="NetBuffer_8h_source.html">NetBuffer.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                                               {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a> = std::move(value);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1BufferModel.html#a888932f51fd39ef6b9ae2e5f52e353b8">m_rawBuffer</a>.<a class="code" href="classdqm4hep_1_1net_1_1RawBuffer.html#afbe8d8f297564897f781d641527e3df0">adopt</a>((<span class="keyword">const</span> <span class="keywordtype">char</span> *)&amp;<a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a>, <span class="keyword">sizeof</span>(<a class="code" href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">m_value</a>));</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1BufferModel_html_a888932f51fd39ef6b9ae2e5f52e353b8"><div class="ttname"><a href="classdqm4hep_1_1net_1_1BufferModel.html#a888932f51fd39ef6b9ae2e5f52e353b8">dqm4hep::net::BufferModel::m_rawBuffer</a></div><div class="ttdeci">RawBuffer m_rawBuffer</div><div class="ttdoc">The raw buffer. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00108">NetBuffer.h:108</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1BufferModelT_html_af7ba861ee52df4d47045fd5963b3cf0b"><div class="ttname"><a href="classdqm4hep_1_1net_1_1BufferModelT.html#af7ba861ee52df4d47045fd5963b3cf0b">dqm4hep::net::BufferModelT::m_value</a></div><div class="ttdeci">T m_value</div><div class="ttdoc">An internal copy of the stored value. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00140">NetBuffer.h:140</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RawBuffer_html_afbe8d8f297564897f781d641527e3df0"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RawBuffer.html#afbe8d8f297564897f781d641527e3df0">dqm4hep::net::RawBuffer::adopt</a></div><div class="ttdeci">void adopt(const char *buffer, size_t size)</div><div class="ttdoc">Adopt a new buffer (does not own it !) </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8cc_source.html#l00048">NetBuffer.cc:48</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -260,9 +260,9 @@ template&lt;typename T &gt; </div>
 
 <p>An internal copy of the stored value. </p>
 
-<p>Definition at line <a class="el" href="NetBuffer_8h_source.html#l00157">157</a> of file <a class="el" href="NetBuffer_8h_source.html">NetBuffer.h</a>.</p>
+<p>Definition at line <a class="el" href="NetBuffer_8h_source.html#l00140">140</a> of file <a class="el" href="NetBuffer_8h_source.html">NetBuffer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="NetBuffer_8h_source.html#l00169">dqm4hep::net::BufferModelT&lt; std::string &gt;::BufferModelT()</a>, <a class="el" href="NetBuffer_8h_source.html#l00174">dqm4hep::net::BufferModelT&lt; std::string &gt;::copy()</a>, and <a class="el" href="NetBuffer_8h_source.html#l00179">dqm4hep::net::BufferModelT&lt; std::string &gt;::move()</a>.</p>
+<p>Referenced by <a class="el" href="NetBuffer_8h_source.html#l00152">dqm4hep::net::BufferModelT&lt; std::string &gt;::BufferModelT()</a>, <a class="el" href="NetBuffer_8h_source.html#l00157">dqm4hep::net::BufferModelT&lt; std::string &gt;::copy()</a>, and <a class="el" href="NetBuffer_8h_source.html#l00162">dqm4hep::net::BufferModelT&lt; std::string &gt;::move()</a>.</p>
 
 </div>
 </div>
@@ -272,7 +272,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 10:13:09 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 12:37:06 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

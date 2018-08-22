@@ -166,7 +166,7 @@ Private Attributes</h2></td></tr>
 <p>The cycle value is the value for which the cycle should normally ends.</p>
 <p>The timeout value is the maximum time between two processEvent(evt) call When the timeout is reached, the cycle ends. The default timeout value is 10 seconds and can be changed via the method setTimeout(secs) </p>
 
-<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00080">80</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00062">62</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0298a48dbe67e4ec0b7b91946b1b8d1f"></a>
 <div class="memitem">
@@ -190,16 +190,16 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00046">46</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00029">29</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
 
-<p>References <a class="el" href="Cycle_8cc_source.html#l00149">cycleLoop()</a>, and <a class="el" href="Cycle_8h_source.html#l00201">m_thread</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                   :</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a2fb83ec106ac170e4e15b55d89315293">m_eventLoop</a>(loop) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a42d4ecf6651b32aaec583a36f155f65e">m_thread</a> = std::thread(&amp;<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a52d8908c29126e31387672939b5eef03">Cycle::cycleLoop</a>, <span class="keyword">this</span>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a52d8908c29126e31387672939b5eef03"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a52d8908c29126e31387672939b5eef03">dqm4hep::online::Cycle::cycleLoop</a></div><div class="ttdeci">void cycleLoop()</div><div class="ttdoc">The main cycle loop thread. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8cc_source.html#l00149">Cycle.cc:149</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a2fb83ec106ac170e4e15b55d89315293"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a2fb83ec106ac170e4e15b55d89315293">dqm4hep::online::Cycle::m_eventLoop</a></div><div class="ttdeci">AppEventLoop &amp; m_eventLoop</div><div class="ttdoc">The application event loop in which the cycle is running. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00189">Cycle.h:189</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a42d4ecf6651b32aaec583a36f155f65e"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a42d4ecf6651b32aaec583a36f155f65e">dqm4hep::online::Cycle::m_thread</a></div><div class="ttdeci">std::thread m_thread</div><div class="ttdoc">The thread object running the cycle function. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00201">Cycle.h:201</a></div></div>
+<p>References <a class="el" href="Cycle_8cc_source.html#l00132">cycleLoop()</a>, and <a class="el" href="Cycle_8h_source.html#l00183">m_thread</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                   :</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a2fb83ec106ac170e4e15b55d89315293">m_eventLoop</a>(loop) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a42d4ecf6651b32aaec583a36f155f65e">m_thread</a> = std::thread(&amp;<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a52d8908c29126e31387672939b5eef03">Cycle::cycleLoop</a>, <span class="keyword">this</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a52d8908c29126e31387672939b5eef03"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a52d8908c29126e31387672939b5eef03">dqm4hep::online::Cycle::cycleLoop</a></div><div class="ttdeci">void cycleLoop()</div><div class="ttdoc">The main cycle loop thread. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8cc_source.html#l00132">Cycle.cc:132</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a2fb83ec106ac170e4e15b55d89315293"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a2fb83ec106ac170e4e15b55d89315293">dqm4hep::online::Cycle::m_eventLoop</a></div><div class="ttdeci">AppEventLoop &amp; m_eventLoop</div><div class="ttdoc">The application event loop in which the cycle is running. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00171">Cycle.h:171</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a42d4ecf6651b32aaec583a36f155f65e"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a42d4ecf6651b32aaec583a36f155f65e">dqm4hep::online::Cycle::m_thread</a></div><div class="ttdeci">std::thread m_thread</div><div class="ttdoc">The thread object running the cycle function. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00183">Cycle.h:183</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -218,15 +218,15 @@ Private Attributes</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00053">53</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00036">36</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
 
-<p>References <a class="el" href="Cycle_8h_source.html#l00199">m_stopFlag</a>, and <a class="el" href="Cycle_8h_source.html#l00201">m_thread</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                  {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a4ebb0f7231bf5e8aaf03d7f8ee93ac21">m_stopFlag</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a42d4ecf6651b32aaec583a36f155f65e">m_thread</a>.join();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a4ebb0f7231bf5e8aaf03d7f8ee93ac21"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a4ebb0f7231bf5e8aaf03d7f8ee93ac21">dqm4hep::online::Cycle::m_stopFlag</a></div><div class="ttdeci">std::atomic_bool m_stopFlag</div><div class="ttdoc">An internal flag to stop the cycle thread. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00199">Cycle.h:199</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a42d4ecf6651b32aaec583a36f155f65e"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a42d4ecf6651b32aaec583a36f155f65e">dqm4hep::online::Cycle::m_thread</a></div><div class="ttdeci">std::thread m_thread</div><div class="ttdoc">The thread object running the cycle function. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00201">Cycle.h:201</a></div></div>
+<p>References <a class="el" href="Cycle_8h_source.html#l00181">m_stopFlag</a>, and <a class="el" href="Cycle_8h_source.html#l00183">m_thread</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                  {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a4ebb0f7231bf5e8aaf03d7f8ee93ac21">m_stopFlag</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a42d4ecf6651b32aaec583a36f155f65e">m_thread</a>.join();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a4ebb0f7231bf5e8aaf03d7f8ee93ac21"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a4ebb0f7231bf5e8aaf03d7f8ee93ac21">dqm4hep::online::Cycle::m_stopFlag</a></div><div class="ttdeci">std::atomic_bool m_stopFlag</div><div class="ttdoc">An internal flag to stop the cycle thread. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00181">Cycle.h:181</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a42d4ecf6651b32aaec583a36f155f65e"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a42d4ecf6651b32aaec583a36f155f65e">dqm4hep::online::Cycle::m_thread</a></div><div class="ttdeci">std::thread m_thread</div><div class="ttdoc">The thread object running the cycle function. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00183">Cycle.h:183</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -246,13 +246,13 @@ Private Attributes</h2></td></tr>
 
 <p>Get the couting limit. </p>
 
-<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00084">84</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00067">67</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
 
-<p>References <a class="el" href="Cycle_8h_source.html#l00207">m_counterLimit</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                           {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">m_counterLimit</a>.load();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a34aaee17f5b45c2972d531c6f01a2429"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">dqm4hep::online::Cycle::m_counterLimit</a></div><div class="ttdeci">std::atomic_uint m_counterLimit</div><div class="ttdoc">The user counter limit. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00207">Cycle.h:207</a></div></div>
+<p>References <a class="el" href="Cycle_8h_source.html#l00189">m_counterLimit</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                           {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">m_counterLimit</a>.load();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a34aaee17f5b45c2972d531c6f01a2429"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">dqm4hep::online::Cycle::m_counterLimit</a></div><div class="ttdeci">std::atomic_uint m_counterLimit</div><div class="ttdoc">The user counter limit. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00189">Cycle.h:189</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -279,77 +279,77 @@ Private Attributes</h2></td></tr>
 
 <p>The main cycle loop thread. </p>
 
-<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00149">149</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00132">132</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
 
-<p>References <a class="el" href="Cycle_8cc_source.html#l00205">endOfCycle()</a>, <a class="el" href="Cycle_8h_source.html#l00207">m_counterLimit</a>, <a class="el" href="Cycle_8h_source.html#l00209">m_currentCounter</a>, <a class="el" href="Cycle_8h_source.html#l00197">m_eocEmit</a>, <a class="el" href="Cycle_8h_source.html#l00061">dqm4hep::online::EOCCondition::m_forcedEnd</a>, <a class="el" href="Cycle_8h_source.html#l00195">m_forceStopFlag</a>, <a class="el" href="Cycle_8h_source.html#l00213">m_lastCounterIncrement</a>, <a class="el" href="Cycle_8h_source.html#l00205">m_period</a>, <a class="el" href="Cycle_8h_source.html#l00191">m_running</a>, <a class="el" href="Cycle_8h_source.html#l00193">m_startCycleFlag</a>, <a class="el" href="Cycle_8h_source.html#l00049">dqm4hep::online::EOCCondition::m_startTime</a>, <a class="el" href="Cycle_8h_source.html#l00199">m_stopFlag</a>, <a class="el" href="Cycle_8h_source.html#l00203">m_timeout</a>, <a class="el" href="Cycle_8h_source.html#l00059">dqm4hep::online::EOCCondition::m_timeoutReached</a>, and <a class="el" href="Internal_8cc_source.html#l00091">dqm4hep::core::now()</a>.</p>
+<p>References <a class="el" href="Cycle_8cc_source.html#l00188">endOfCycle()</a>, <a class="el" href="Cycle_8h_source.html#l00189">m_counterLimit</a>, <a class="el" href="Cycle_8h_source.html#l00191">m_currentCounter</a>, <a class="el" href="Cycle_8h_source.html#l00179">m_eocEmit</a>, <a class="el" href="Cycle_8h_source.html#l00043">dqm4hep::online::EOCCondition::m_forcedEnd</a>, <a class="el" href="Cycle_8h_source.html#l00177">m_forceStopFlag</a>, <a class="el" href="Cycle_8h_source.html#l00195">m_lastCounterIncrement</a>, <a class="el" href="Cycle_8h_source.html#l00187">m_period</a>, <a class="el" href="Cycle_8h_source.html#l00173">m_running</a>, <a class="el" href="Cycle_8h_source.html#l00175">m_startCycleFlag</a>, <a class="el" href="Cycle_8h_source.html#l00031">dqm4hep::online::EOCCondition::m_startTime</a>, <a class="el" href="Cycle_8h_source.html#l00181">m_stopFlag</a>, <a class="el" href="Cycle_8h_source.html#l00185">m_timeout</a>, <a class="el" href="Cycle_8h_source.html#l00041">dqm4hep::online::EOCCondition::m_timeoutReached</a>, and <a class="el" href="Internal_8cc_source.html#l00075">dqm4hep::core::now()</a>.</p>
 
-<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00046">Cycle()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                          {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      <span class="keywordflow">while</span>(1) {</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a4ebb0f7231bf5e8aaf03d7f8ee93ac21">m_stopFlag</a>.load()) {</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;          <span class="keywordflow">break</span>;          </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        }</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a67d2dad968959acfa5380ea50d601007">m_startCycleFlag</a>.load()) {</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;          usleep(10000);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;          <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        }</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="comment">// start of cycle here</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a88c716c80a526f89685f5331eae35f31">m_running</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ac3584bea3215ebd869ff334d47fdb2d5">m_forceStopFlag</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ac6ac1e56d1ae906fea1f456d60ee52ad">m_eocEmit</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        EOCCondition condition;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        condition.m_startTime = <a class="code" href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">core::now</a>();</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        condition.m_forcedEnd = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a77ed151f1bb1a791af3cf5cbef9914de">m_lastCounterIncrement</a> = condition.m_startTime;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aeef018da0485beadba71021d314d76ca">m_currentCounter</a> = 0;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">while</span>(1) {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;          <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a4ebb0f7231bf5e8aaf03d7f8ee93ac21">m_stopFlag</a>.load() or <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ac3584bea3215ebd869ff334d47fdb2d5">m_forceStopFlag</a>.load()) {</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            condition.m_forcedEnd = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ac6ac1e56d1ae906fea1f456d60ee52ad">m_eocEmit</a>.load()) {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;              <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a8208ce8b12f5e2b109cb7e544370c3f0">endOfCycle</a>(condition);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;              <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            }</div>
+<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00029">Cycle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                          {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      <span class="keywordflow">while</span>(1) {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a4ebb0f7231bf5e8aaf03d7f8ee93ac21">m_stopFlag</a>.load()) {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;          <span class="keywordflow">break</span>;          </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a67d2dad968959acfa5380ea50d601007">m_startCycleFlag</a>.load()) {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;          usleep(10000);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;          <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="comment">// start of cycle here</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a88c716c80a526f89685f5331eae35f31">m_running</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ac3584bea3215ebd869ff334d47fdb2d5">m_forceStopFlag</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ac6ac1e56d1ae906fea1f456d60ee52ad">m_eocEmit</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        EOCCondition condition;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        condition.m_startTime = <a class="code" href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">core::now</a>();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        condition.m_forcedEnd = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a77ed151f1bb1a791af3cf5cbef9914de">m_lastCounterIncrement</a> = condition.m_startTime;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aeef018da0485beadba71021d314d76ca">m_currentCounter</a> = 0;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">while</span>(1) {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;          <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a4ebb0f7231bf5e8aaf03d7f8ee93ac21">m_stopFlag</a>.load() or <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ac3584bea3215ebd869ff334d47fdb2d5">m_forceStopFlag</a>.load()) {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            condition.m_forcedEnd = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ac6ac1e56d1ae906fea1f456d60ee52ad">m_eocEmit</a>.load()) {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;              <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a8208ce8b12f5e2b109cb7e544370c3f0">endOfCycle</a>(condition);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;              <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;          }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;          <span class="keyword">const</span> <a class="code" href="namespacedqm4hep_1_1core.html#a64e1e1e7f3cb2f6ddac8bb106c1196d9">core::TimePoint</a> <a class="code" href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">now</a> = <a class="code" href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">core::now</a>();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">float</span> timeoutEllapsed = std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(now-<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a77ed151f1bb1a791af3cf5cbef9914de">m_lastCounterIncrement</a>).count() / 1000.f;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">bool</span> timeoutReached = (0 == <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">m_timeout</a>) ? <span class="keyword">false</span> : (timeoutEllapsed &gt;= <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">m_timeout</a>.load());</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;          <span class="comment">// check timeout first</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;          <span class="keywordflow">if</span>(timeoutReached) {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            condition.m_timeoutReached = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a8208ce8b12f5e2b109cb7e544370c3f0">endOfCycle</a>(condition);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;          }</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;          <span class="comment">// check for normal termination of cycle</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">bool</span> counterOver = (0 == <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">m_counterLimit</a>) ? <span class="keyword">false</span> : (<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aeef018da0485beadba71021d314d76ca">m_currentCounter</a> &gt;= <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">m_counterLimit</a>);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">float</span> ellapsed = std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(now-condition.m_startTime).count() / 1000.f;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">bool</span> periodReached = (0 == <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">m_period</a>) ? <span class="keyword">false</span> : (ellapsed &gt;= <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">m_period</a>.load());</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;          <span class="keywordflow">if</span>(counterOver or periodReached) {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a8208ce8b12f5e2b109cb7e544370c3f0">endOfCycle</a>(condition);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;          }</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;          <span class="keyword">const</span> <a class="code" href="namespacedqm4hep_1_1core.html#a64e1e1e7f3cb2f6ddac8bb106c1196d9">core::TimePoint</a> <a class="code" href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">now</a> = <a class="code" href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">core::now</a>();</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">float</span> timeoutEllapsed = std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(now-<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a77ed151f1bb1a791af3cf5cbef9914de">m_lastCounterIncrement</a>).count() / 1000.f;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">bool</span> timeoutReached = (0 == <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">m_timeout</a>) ? <span class="keyword">false</span> : (timeoutEllapsed &gt;= <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">m_timeout</a>.load());</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;          <span class="comment">// check timeout first</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;          <span class="keywordflow">if</span>(timeoutReached) {</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            condition.m_timeoutReached = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a8208ce8b12f5e2b109cb7e544370c3f0">endOfCycle</a>(condition);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;          }</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;          <span class="comment">// check for normal termination of cycle</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">bool</span> counterOver = (0 == <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">m_counterLimit</a>) ? <span class="keyword">false</span> : (<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aeef018da0485beadba71021d314d76ca">m_currentCounter</a> &gt;= <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">m_counterLimit</a>);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">float</span> ellapsed = std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(now-condition.m_startTime).count() / 1000.f;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;          <span class="keyword">const</span> <span class="keywordtype">bool</span> periodReached = (0 == <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">m_period</a>) ? <span class="keyword">false</span> : (ellapsed &gt;= <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">m_period</a>.load());</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;          <span class="keywordflow">if</span>(counterOver or periodReached) {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a8208ce8b12f5e2b109cb7e544370c3f0">endOfCycle</a>(condition);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;          }</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;          usleep(10000);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        }</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="comment">// reset cycle properties</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a67d2dad968959acfa5380ea50d601007">m_startCycleFlag</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ac3584bea3215ebd869ff334d47fdb2d5">m_forceStopFlag</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ac6ac1e56d1ae906fea1f456d60ee52ad">m_eocEmit</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a88c716c80a526f89685f5331eae35f31">m_running</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        usleep(10000);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      }</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a67d2dad968959acfa5380ea50d601007"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a67d2dad968959acfa5380ea50d601007">dqm4hep::online::Cycle::m_startCycleFlag</a></div><div class="ttdeci">std::atomic_bool m_startCycleFlag</div><div class="ttdoc">An internal flag to trigger a new cycle. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00193">Cycle.h:193</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a64e1e1e7f3cb2f6ddac8bb106c1196d9"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a64e1e1e7f3cb2f6ddac8bb106c1196d9">dqm4hep::core::TimePoint</a></div><div class="ttdeci">time::point TimePoint</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00270">Internal.h:270</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a4ebb0f7231bf5e8aaf03d7f8ee93ac21"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a4ebb0f7231bf5e8aaf03d7f8ee93ac21">dqm4hep::online::Cycle::m_stopFlag</a></div><div class="ttdeci">std::atomic_bool m_stopFlag</div><div class="ttdoc">An internal flag to stop the cycle thread. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00199">Cycle.h:199</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a63a2326a6a01e5ed790f2c4027038cb2"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">dqm4hep::core::now</a></div><div class="ttdeci">TimePoint now()</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00091">Internal.cc:91</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_ac3584bea3215ebd869ff334d47fdb2d5"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#ac3584bea3215ebd869ff334d47fdb2d5">dqm4hep::online::Cycle::m_forceStopFlag</a></div><div class="ttdeci">std::atomic_bool m_forceStopFlag</div><div class="ttdoc">An internal flag to trigger an end of cycle. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00195">Cycle.h:195</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a77ed151f1bb1a791af3cf5cbef9914de"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a77ed151f1bb1a791af3cf5cbef9914de">dqm4hep::online::Cycle::m_lastCounterIncrement</a></div><div class="ttdeci">core::TimePoint m_lastCounterIncrement</div><div class="ttdoc">The last time point when the increement method was called. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00213">Cycle.h:213</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a34aaee17f5b45c2972d531c6f01a2429"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">dqm4hep::online::Cycle::m_counterLimit</a></div><div class="ttdeci">std::atomic_uint m_counterLimit</div><div class="ttdoc">The user counter limit. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00207">Cycle.h:207</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_aa6af222fa9baec44ff80220b43875486"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">dqm4hep::online::Cycle::m_timeout</a></div><div class="ttdeci">std::atomic_uint m_timeout</div><div class="ttdoc">The user timeout value, default 10 (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00203">Cycle.h:203</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a88c716c80a526f89685f5331eae35f31"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a88c716c80a526f89685f5331eae35f31">dqm4hep::online::Cycle::m_running</a></div><div class="ttdeci">std::atomic_bool m_running</div><div class="ttdoc">Whether a cycle has been started. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00191">Cycle.h:191</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_ac6ac1e56d1ae906fea1f456d60ee52ad"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#ac6ac1e56d1ae906fea1f456d60ee52ad">dqm4hep::online::Cycle::m_eocEmit</a></div><div class="ttdeci">std::atomic_bool m_eocEmit</div><div class="ttdoc">Whether an event has to be posted on end of cycle. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00197">Cycle.h:197</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_aeef018da0485beadba71021d314d76ca"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#aeef018da0485beadba71021d314d76ca">dqm4hep::online::Cycle::m_currentCounter</a></div><div class="ttdeci">std::atomic_uint m_currentCounter</div><div class="ttdoc">The internal counter incremented by user. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00209">Cycle.h:209</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a8208ce8b12f5e2b109cb7e544370c3f0"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a8208ce8b12f5e2b109cb7e544370c3f0">dqm4hep::online::Cycle::endOfCycle</a></div><div class="ttdeci">void endOfCycle(EOCCondition &amp;condition)</div><div class="ttdoc">Called at end of cycle. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8cc_source.html#l00205">Cycle.cc:205</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_ae7960b9bc65b46f6708f5d8ffa8cf59d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">dqm4hep::online::Cycle::m_period</a></div><div class="ttdeci">std::atomic_uint m_period</div><div class="ttdoc">The user timer period, default 30 (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00205">Cycle.h:205</a></div></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;          usleep(10000);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="comment">// reset cycle properties</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a67d2dad968959acfa5380ea50d601007">m_startCycleFlag</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ac3584bea3215ebd869ff334d47fdb2d5">m_forceStopFlag</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ac6ac1e56d1ae906fea1f456d60ee52ad">m_eocEmit</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a88c716c80a526f89685f5331eae35f31">m_running</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        usleep(10000);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a67d2dad968959acfa5380ea50d601007"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a67d2dad968959acfa5380ea50d601007">dqm4hep::online::Cycle::m_startCycleFlag</a></div><div class="ttdeci">std::atomic_bool m_startCycleFlag</div><div class="ttdoc">An internal flag to trigger a new cycle. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00175">Cycle.h:175</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a64e1e1e7f3cb2f6ddac8bb106c1196d9"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a64e1e1e7f3cb2f6ddac8bb106c1196d9">dqm4hep::core::TimePoint</a></div><div class="ttdeci">time::point TimePoint</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00253">Internal.h:253</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a4ebb0f7231bf5e8aaf03d7f8ee93ac21"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a4ebb0f7231bf5e8aaf03d7f8ee93ac21">dqm4hep::online::Cycle::m_stopFlag</a></div><div class="ttdeci">std::atomic_bool m_stopFlag</div><div class="ttdoc">An internal flag to stop the cycle thread. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00181">Cycle.h:181</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a63a2326a6a01e5ed790f2c4027038cb2"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">dqm4hep::core::now</a></div><div class="ttdeci">TimePoint now()</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00075">Internal.cc:75</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_ac3584bea3215ebd869ff334d47fdb2d5"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#ac3584bea3215ebd869ff334d47fdb2d5">dqm4hep::online::Cycle::m_forceStopFlag</a></div><div class="ttdeci">std::atomic_bool m_forceStopFlag</div><div class="ttdoc">An internal flag to trigger an end of cycle. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00177">Cycle.h:177</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a77ed151f1bb1a791af3cf5cbef9914de"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a77ed151f1bb1a791af3cf5cbef9914de">dqm4hep::online::Cycle::m_lastCounterIncrement</a></div><div class="ttdeci">core::TimePoint m_lastCounterIncrement</div><div class="ttdoc">The last time point when the increement method was called. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00195">Cycle.h:195</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a34aaee17f5b45c2972d531c6f01a2429"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">dqm4hep::online::Cycle::m_counterLimit</a></div><div class="ttdeci">std::atomic_uint m_counterLimit</div><div class="ttdoc">The user counter limit. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00189">Cycle.h:189</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_aa6af222fa9baec44ff80220b43875486"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">dqm4hep::online::Cycle::m_timeout</a></div><div class="ttdeci">std::atomic_uint m_timeout</div><div class="ttdoc">The user timeout value, default 10 (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00185">Cycle.h:185</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a88c716c80a526f89685f5331eae35f31"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a88c716c80a526f89685f5331eae35f31">dqm4hep::online::Cycle::m_running</a></div><div class="ttdeci">std::atomic_bool m_running</div><div class="ttdoc">Whether a cycle has been started. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00173">Cycle.h:173</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_ac6ac1e56d1ae906fea1f456d60ee52ad"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#ac6ac1e56d1ae906fea1f456d60ee52ad">dqm4hep::online::Cycle::m_eocEmit</a></div><div class="ttdeci">std::atomic_bool m_eocEmit</div><div class="ttdoc">Whether an event has to be posted on end of cycle. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00179">Cycle.h:179</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_aeef018da0485beadba71021d314d76ca"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#aeef018da0485beadba71021d314d76ca">dqm4hep::online::Cycle::m_currentCounter</a></div><div class="ttdeci">std::atomic_uint m_currentCounter</div><div class="ttdoc">The internal counter incremented by user. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00191">Cycle.h:191</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a8208ce8b12f5e2b109cb7e544370c3f0"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a8208ce8b12f5e2b109cb7e544370c3f0">dqm4hep::online::Cycle::endOfCycle</a></div><div class="ttdeci">void endOfCycle(EOCCondition &amp;condition)</div><div class="ttdoc">Called at end of cycle. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8cc_source.html#l00188">Cycle.cc:188</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_ae7960b9bc65b46f6708f5d8ffa8cf59d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">dqm4hep::online::Cycle::m_period</a></div><div class="ttdeci">std::atomic_uint m_period</div><div class="ttdoc">The user timer period, default 30 (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00187">Cycle.h:187</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -384,29 +384,29 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00205">205</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00188">188</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
 
-<p>References <a class="el" href="Logging_8h_source.html#l00043">dqm_debug</a>, <a class="el" href="AppEvent_8h_source.html#l00050">dqm4hep::online::AppEvent::END_OF_CYCLE</a>, <a class="el" href="Cycle_8h_source.html#l00055">dqm4hep::online::EOCCondition::m_counter</a>, <a class="el" href="Cycle_8h_source.html#l00209">m_currentCounter</a>, <a class="el" href="Cycle_8h_source.html#l00051">dqm4hep::online::EOCCondition::m_endTime</a>, <a class="el" href="Cycle_8h_source.html#l00189">m_eventLoop</a>, <a class="el" href="Cycle_8h_source.html#l00211">m_eventPriority</a>, <a class="el" href="Cycle_8h_source.html#l00057">dqm4hep::online::EOCCondition::m_rate</a>, <a class="el" href="Cycle_8h_source.html#l00049">dqm4hep::online::EOCCondition::m_startTime</a>, <a class="el" href="Cycle_8h_source.html#l00053">dqm4hep::online::EOCCondition::m_totalTime</a>, <a class="el" href="Internal_8cc_source.html#l00091">dqm4hep::core::now()</a>, <a class="el" href="AppEventLoop_8cc_source.html#l00051">dqm4hep::online::AppEventLoop::postEvent()</a>, and <a class="el" href="AppEvent_8cc_source.html#l00054">dqm4hep::online::AppEvent::setPriority()</a>.</p>
+<p>References <a class="el" href="Logging_8h_source.html#l00026">dqm_debug</a>, <a class="el" href="AppEvent_8h_source.html#l00032">dqm4hep::online::AppEvent::END_OF_CYCLE</a>, <a class="el" href="Cycle_8h_source.html#l00037">dqm4hep::online::EOCCondition::m_counter</a>, <a class="el" href="Cycle_8h_source.html#l00191">m_currentCounter</a>, <a class="el" href="Cycle_8h_source.html#l00033">dqm4hep::online::EOCCondition::m_endTime</a>, <a class="el" href="Cycle_8h_source.html#l00171">m_eventLoop</a>, <a class="el" href="Cycle_8h_source.html#l00193">m_eventPriority</a>, <a class="el" href="Cycle_8h_source.html#l00039">dqm4hep::online::EOCCondition::m_rate</a>, <a class="el" href="Cycle_8h_source.html#l00031">dqm4hep::online::EOCCondition::m_startTime</a>, <a class="el" href="Cycle_8h_source.html#l00035">dqm4hep::online::EOCCondition::m_totalTime</a>, <a class="el" href="Internal_8cc_source.html#l00075">dqm4hep::core::now()</a>, <a class="el" href="AppEventLoop_8cc_source.html#l00034">dqm4hep::online::AppEventLoop::postEvent()</a>, and <a class="el" href="AppEvent_8cc_source.html#l00037">dqm4hep::online::AppEvent::setPriority()</a>.</p>
 
-<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00149">cycleLoop()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                                                  {</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      condition.m_endTime = <a class="code" href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">core::now</a>();</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      condition.m_counter = <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aeef018da0485beadba71021d314d76ca">m_currentCounter</a>.load();</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;      condition.m_totalTime = std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(condition.m_endTime - condition.m_startTime).count() / 1000.f;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      condition.m_rate = (condition.m_startTime == condition.m_endTime) ? 0 : (condition.m_counter / condition.m_totalTime);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      <a class="code" href="Logging_8h.html#afeed011feb4159b13c3ae4873e1d0fcf">dqm_debug</a>( <span class="stringliteral">&quot;End of cycle !&quot;</span> );</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      <span class="comment">// post event to event loop</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      <span class="keyword">auto</span> *<span class="keyword">event</span> = <span class="keyword">new</span> StoreEvent&lt;EOCCondition&gt;(<a class="code" href="classdqm4hep_1_1online_1_1AppEvent.html#aea86dd31000ce2fa55f9d419a6f95ab9a029a11c577767cd4f580a293f29b87bf">AppEvent::END_OF_CYCLE</a>, condition);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      <span class="keyword">event</span>-&gt;setPriority(<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a99667c53c09ab43f3f47bb1de0878621">m_eventPriority</a>.load());</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a2fb83ec106ac170e4e15b55d89315293">m_eventLoop</a>.<a class="code" href="classdqm4hep_1_1online_1_1AppEventLoop.html#ae2c74f9c28c38a91b8d973f05e062254">postEvent</a>(event);</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    }</div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a63a2326a6a01e5ed790f2c4027038cb2"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">dqm4hep::core::now</a></div><div class="ttdeci">TimePoint now()</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00091">Internal.cc:91</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a2fb83ec106ac170e4e15b55d89315293"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a2fb83ec106ac170e4e15b55d89315293">dqm4hep::online::Cycle::m_eventLoop</a></div><div class="ttdeci">AppEventLoop &amp; m_eventLoop</div><div class="ttdoc">The application event loop in which the cycle is running. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00189">Cycle.h:189</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a99667c53c09ab43f3f47bb1de0878621"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a99667c53c09ab43f3f47bb1de0878621">dqm4hep::online::Cycle::m_eventPriority</a></div><div class="ttdeci">std::atomic_int m_eventPriority</div><div class="ttdoc">The end of cycle event priority in the event loop. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00211">Cycle.h:211</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1AppEventLoop_html_ae2c74f9c28c38a91b8d973f05e062254"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppEventLoop.html#ae2c74f9c28c38a91b8d973f05e062254">dqm4hep::online::AppEventLoop::postEvent</a></div><div class="ttdeci">void postEvent(AppEvent *pAppEvent)</div><div class="ttdoc">Post an event in the event queue. </div><div class="ttdef"><b>Definition:</b> <a href="AppEventLoop_8cc_source.html#l00051">AppEventLoop.cc:51</a></div></div>
-<div class="ttc" id="Logging_8h_html_afeed011feb4159b13c3ae4873e1d0fcf"><div class="ttname"><a href="Logging_8h.html#afeed011feb4159b13c3ae4873e1d0fcf">dqm_debug</a></div><div class="ttdeci">#define dqm_debug(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00043">Logging.h:43</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_aeef018da0485beadba71021d314d76ca"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#aeef018da0485beadba71021d314d76ca">dqm4hep::online::Cycle::m_currentCounter</a></div><div class="ttdeci">std::atomic_uint m_currentCounter</div><div class="ttdoc">The internal counter incremented by user. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00209">Cycle.h:209</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1AppEvent_html_aea86dd31000ce2fa55f9d419a6f95ab9a029a11c577767cd4f580a293f29b87bf"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppEvent.html#aea86dd31000ce2fa55f9d419a6f95ab9a029a11c577767cd4f580a293f29b87bf">dqm4hep::online::AppEvent::END_OF_CYCLE</a></div><div class="ttdef"><b>Definition:</b> <a href="AppEvent_8h_source.html#l00050">AppEvent.h:50</a></div></div>
+<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00132">cycleLoop()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                                                  {</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      condition.m_endTime = <a class="code" href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">core::now</a>();</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      condition.m_counter = <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aeef018da0485beadba71021d314d76ca">m_currentCounter</a>.load();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      condition.m_totalTime = std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(condition.m_endTime - condition.m_startTime).count() / 1000.f;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      condition.m_rate = (condition.m_startTime == condition.m_endTime) ? 0 : (condition.m_counter / condition.m_totalTime);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      <a class="code" href="Logging_8h.html#afeed011feb4159b13c3ae4873e1d0fcf">dqm_debug</a>( <span class="stringliteral">&quot;End of cycle !&quot;</span> );</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      <span class="comment">// post event to event loop</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      <span class="keyword">auto</span> *<span class="keyword">event</span> = <span class="keyword">new</span> StoreEvent&lt;EOCCondition&gt;(<a class="code" href="classdqm4hep_1_1online_1_1AppEvent.html#aea86dd31000ce2fa55f9d419a6f95ab9a029a11c577767cd4f580a293f29b87bf">AppEvent::END_OF_CYCLE</a>, condition);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <span class="keyword">event</span>-&gt;setPriority(<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a99667c53c09ab43f3f47bb1de0878621">m_eventPriority</a>.load());</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a2fb83ec106ac170e4e15b55d89315293">m_eventLoop</a>.<a class="code" href="classdqm4hep_1_1online_1_1AppEventLoop.html#ae2c74f9c28c38a91b8d973f05e062254">postEvent</a>(event);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a63a2326a6a01e5ed790f2c4027038cb2"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">dqm4hep::core::now</a></div><div class="ttdeci">TimePoint now()</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00075">Internal.cc:75</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a2fb83ec106ac170e4e15b55d89315293"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a2fb83ec106ac170e4e15b55d89315293">dqm4hep::online::Cycle::m_eventLoop</a></div><div class="ttdeci">AppEventLoop &amp; m_eventLoop</div><div class="ttdoc">The application event loop in which the cycle is running. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00171">Cycle.h:171</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a99667c53c09ab43f3f47bb1de0878621"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a99667c53c09ab43f3f47bb1de0878621">dqm4hep::online::Cycle::m_eventPriority</a></div><div class="ttdeci">std::atomic_int m_eventPriority</div><div class="ttdoc">The end of cycle event priority in the event loop. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00193">Cycle.h:193</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1AppEventLoop_html_ae2c74f9c28c38a91b8d973f05e062254"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppEventLoop.html#ae2c74f9c28c38a91b8d973f05e062254">dqm4hep::online::AppEventLoop::postEvent</a></div><div class="ttdeci">void postEvent(AppEvent *pAppEvent)</div><div class="ttdoc">Post an event in the event queue. </div><div class="ttdef"><b>Definition:</b> <a href="AppEventLoop_8cc_source.html#l00034">AppEventLoop.cc:34</a></div></div>
+<div class="ttc" id="Logging_8h_html_afeed011feb4159b13c3ae4873e1d0fcf"><div class="ttname"><a href="Logging_8h.html#afeed011feb4159b13c3ae4873e1d0fcf">dqm_debug</a></div><div class="ttdeci">#define dqm_debug(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00026">Logging.h:26</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_aeef018da0485beadba71021d314d76ca"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#aeef018da0485beadba71021d314d76ca">dqm4hep::online::Cycle::m_currentCounter</a></div><div class="ttdeci">std::atomic_uint m_currentCounter</div><div class="ttdoc">The internal counter incremented by user. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00191">Cycle.h:191</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1AppEvent_html_aea86dd31000ce2fa55f9d419a6f95ab9a029a11c577767cd4f580a293f29b87bf"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppEvent.html#aea86dd31000ce2fa55f9d419a6f95ab9a029a11c577767cd4f580a293f29b87bf">dqm4hep::online::AppEvent::END_OF_CYCLE</a></div><div class="ttdef"><b>Definition:</b> <a href="AppEvent_8h_source.html#l00032">AppEvent.h:32</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -425,13 +425,13 @@ Private Attributes</h2></td></tr>
 
 <p>Get the EndOfCycleEvent event priority. </p>
 
-<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00104">104</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00087">87</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
 
-<p>References <a class="el" href="Cycle_8h_source.html#l00211">m_eventPriority</a>.</p>
-<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                   {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a99667c53c09ab43f3f47bb1de0878621">m_eventPriority</a>.load();</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a99667c53c09ab43f3f47bb1de0878621"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a99667c53c09ab43f3f47bb1de0878621">dqm4hep::online::Cycle::m_eventPriority</a></div><div class="ttdeci">std::atomic_int m_eventPriority</div><div class="ttdoc">The end of cycle event priority in the event loop. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00211">Cycle.h:211</a></div></div>
+<p>References <a class="el" href="Cycle_8h_source.html#l00193">m_eventPriority</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                   {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a99667c53c09ab43f3f47bb1de0878621">m_eventPriority</a>.load();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a99667c53c09ab43f3f47bb1de0878621"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a99667c53c09ab43f3f47bb1de0878621">dqm4hep::online::Cycle::m_eventPriority</a></div><div class="ttdeci">std::atomic_int m_eventPriority</div><div class="ttdoc">The end of cycle event priority in the event loop. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00193">Cycle.h:193</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -469,25 +469,25 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00129">129</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00112">112</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
 
-<p>References <a class="el" href="Cycle_8h_source.html#l00197">m_eocEmit</a>, <a class="el" href="Cycle_8h_source.html#l00195">m_forceStopFlag</a>, and <a class="el" href="Cycle_8cc_source.html#l00143">running()</a>.</p>
+<p>References <a class="el" href="Cycle_8h_source.html#l00179">m_eocEmit</a>, <a class="el" href="Cycle_8h_source.html#l00177">m_forceStopFlag</a>, and <a class="el" href="Cycle_8cc_source.html#l00126">running()</a>.</p>
 
-<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00588">dqm4hep::online::ModuleApplication::processEndOfRun()</a>, and <a class="el" href="Cycle_8cc_source.html#l00117">startCycle()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                                      {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a06b824e9f933cd4eef8596307f55bf4e">running</a>()) {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ac6ac1e56d1ae906fea1f456d60ee52ad">m_eocEmit</a> = emit;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ac3584bea3215ebd869ff334d47fdb2d5">m_forceStopFlag</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">if</span>(waitEnd) {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;          <span class="keywordflow">while</span>(<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a06b824e9f933cd4eef8596307f55bf4e">running</a>()) {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            usleep(1000);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;          }          </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      }</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a06b824e9f933cd4eef8596307f55bf4e"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a06b824e9f933cd4eef8596307f55bf4e">dqm4hep::online::Cycle::running</a></div><div class="ttdeci">bool running() const </div><div class="ttdoc">Whether the cycle is running. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8cc_source.html#l00143">Cycle.cc:143</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_ac3584bea3215ebd869ff334d47fdb2d5"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#ac3584bea3215ebd869ff334d47fdb2d5">dqm4hep::online::Cycle::m_forceStopFlag</a></div><div class="ttdeci">std::atomic_bool m_forceStopFlag</div><div class="ttdoc">An internal flag to trigger an end of cycle. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00195">Cycle.h:195</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_ac6ac1e56d1ae906fea1f456d60ee52ad"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#ac6ac1e56d1ae906fea1f456d60ee52ad">dqm4hep::online::Cycle::m_eocEmit</a></div><div class="ttdeci">std::atomic_bool m_eocEmit</div><div class="ttdoc">Whether an event has to be posted on end of cycle. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00197">Cycle.h:197</a></div></div>
+<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00571">dqm4hep::online::ModuleApplication::processEndOfRun()</a>, and <a class="el" href="Cycle_8cc_source.html#l00100">startCycle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                                                      {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a06b824e9f933cd4eef8596307f55bf4e">running</a>()) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ac6ac1e56d1ae906fea1f456d60ee52ad">m_eocEmit</a> = emit;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ac3584bea3215ebd869ff334d47fdb2d5">m_forceStopFlag</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">if</span>(waitEnd) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;          <span class="keywordflow">while</span>(<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a06b824e9f933cd4eef8596307f55bf4e">running</a>()) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            usleep(1000);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;          }          </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a06b824e9f933cd4eef8596307f55bf4e"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a06b824e9f933cd4eef8596307f55bf4e">dqm4hep::online::Cycle::running</a></div><div class="ttdeci">bool running() const </div><div class="ttdoc">Whether the cycle is running. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8cc_source.html#l00126">Cycle.cc:126</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_ac3584bea3215ebd869ff334d47fdb2d5"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#ac3584bea3215ebd869ff334d47fdb2d5">dqm4hep::online::Cycle::m_forceStopFlag</a></div><div class="ttdeci">std::atomic_bool m_forceStopFlag</div><div class="ttdoc">An internal flag to trigger an end of cycle. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00177">Cycle.h:177</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_ac6ac1e56d1ae906fea1f456d60ee52ad"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#ac6ac1e56d1ae906fea1f456d60ee52ad">dqm4hep::online::Cycle::m_eocEmit</a></div><div class="ttdeci">std::atomic_bool m_eocEmit</div><div class="ttdoc">Whether an event has to be posted on end of cycle. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00179">Cycle.h:179</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -514,18 +514,18 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00110">110</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00093">93</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
 
-<p>References <a class="el" href="Cycle_8h_source.html#l00209">m_currentCounter</a>, <a class="el" href="Cycle_8h_source.html#l00213">m_lastCounterIncrement</a>, and <a class="el" href="Internal_8cc_source.html#l00091">dqm4hep::core::now()</a>.</p>
+<p>References <a class="el" href="Cycle_8h_source.html#l00191">m_currentCounter</a>, <a class="el" href="Cycle_8h_source.html#l00195">m_lastCounterIncrement</a>, and <a class="el" href="Internal_8cc_source.html#l00075">dqm4hep::core::now()</a>.</p>
 
-<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00153">dqm4hep::online::ModuleApplication::onEvent()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                                                       {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aeef018da0485beadba71021d314d76ca">m_currentCounter</a> += increment;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a77ed151f1bb1a791af3cf5cbef9914de">m_lastCounterIncrement</a> = <a class="code" href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">core::now</a>();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a63a2326a6a01e5ed790f2c4027038cb2"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">dqm4hep::core::now</a></div><div class="ttdeci">TimePoint now()</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00091">Internal.cc:91</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a77ed151f1bb1a791af3cf5cbef9914de"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a77ed151f1bb1a791af3cf5cbef9914de">dqm4hep::online::Cycle::m_lastCounterIncrement</a></div><div class="ttdeci">core::TimePoint m_lastCounterIncrement</div><div class="ttdoc">The last time point when the increement method was called. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00213">Cycle.h:213</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_aeef018da0485beadba71021d314d76ca"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#aeef018da0485beadba71021d314d76ca">dqm4hep::online::Cycle::m_currentCounter</a></div><div class="ttdeci">std::atomic_uint m_currentCounter</div><div class="ttdoc">The internal counter incremented by user. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00209">Cycle.h:209</a></div></div>
+<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00136">dqm4hep::online::ModuleApplication::onEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                                       {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aeef018da0485beadba71021d314d76ca">m_currentCounter</a> += increment;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a77ed151f1bb1a791af3cf5cbef9914de">m_lastCounterIncrement</a> = <a class="code" href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">core::now</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a63a2326a6a01e5ed790f2c4027038cb2"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">dqm4hep::core::now</a></div><div class="ttdeci">TimePoint now()</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00075">Internal.cc:75</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a77ed151f1bb1a791af3cf5cbef9914de"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a77ed151f1bb1a791af3cf5cbef9914de">dqm4hep::online::Cycle::m_lastCounterIncrement</a></div><div class="ttdeci">core::TimePoint m_lastCounterIncrement</div><div class="ttdoc">The last time point when the increement method was called. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00195">Cycle.h:195</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_aeef018da0485beadba71021d314d76ca"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#aeef018da0485beadba71021d314d76ca">dqm4hep::online::Cycle::m_currentCounter</a></div><div class="ttdeci">std::atomic_uint m_currentCounter</div><div class="ttdoc">The internal counter incremented by user. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00191">Cycle.h:191</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -544,15 +544,15 @@ Private Attributes</h2></td></tr>
 
 <p>Whether the cycle is running. </p>
 
-<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00143">143</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00126">126</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
 
-<p>References <a class="el" href="Cycle_8h_source.html#l00191">m_running</a>.</p>
+<p>References <a class="el" href="Cycle_8h_source.html#l00173">m_running</a>.</p>
 
-<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00129">forceStopCycle()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                              {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a88c716c80a526f89685f5331eae35f31">m_running</a>.load();</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a88c716c80a526f89685f5331eae35f31"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a88c716c80a526f89685f5331eae35f31">dqm4hep::online::Cycle::m_running</a></div><div class="ttdeci">std::atomic_bool m_running</div><div class="ttdoc">Whether a cycle has been started. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00191">Cycle.h:191</a></div></div>
+<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00112">forceStopCycle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                              {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a88c716c80a526f89685f5331eae35f31">m_running</a>.load();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a88c716c80a526f89685f5331eae35f31"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a88c716c80a526f89685f5331eae35f31">dqm4hep::online::Cycle::m_running</a></div><div class="ttdeci">std::atomic_bool m_running</div><div class="ttdoc">Whether a cycle has been started. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00173">Cycle.h:173</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -578,15 +578,15 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00090">90</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00073">73</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
 
-<p>References <a class="el" href="Cycle_8h_source.html#l00207">m_counterLimit</a>.</p>
+<p>References <a class="el" href="Cycle_8h_source.html#l00189">m_counterLimit</a>.</p>
 
-<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00440">dqm4hep::online::ModuleApplication::configureCycle()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                                  {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">m_counterLimit</a> = value;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a34aaee17f5b45c2972d531c6f01a2429"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">dqm4hep::online::Cycle::m_counterLimit</a></div><div class="ttdeci">std::atomic_uint m_counterLimit</div><div class="ttdoc">The user counter limit. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00207">Cycle.h:207</a></div></div>
+<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00423">dqm4hep::online::ModuleApplication::configureCycle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                  {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">m_counterLimit</a> = value;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a34aaee17f5b45c2972d531c6f01a2429"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">dqm4hep::online::Cycle::m_counterLimit</a></div><div class="ttdeci">std::atomic_uint m_counterLimit</div><div class="ttdoc">The user counter limit. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00189">Cycle.h:189</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -612,17 +612,17 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00096">96</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00079">79</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
 
-<p>References <a class="el" href="Cycle_8h_source.html#l00211">m_eventPriority</a>.</p>
+<p>References <a class="el" href="Cycle_8h_source.html#l00193">m_eventPriority</a>.</p>
 
-<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00120">dqm4hep::online::ModuleApplication::onInit()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                             {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keywordflow">if</span>(priority &gt;= 0 and priority &lt;= 100) {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a99667c53c09ab43f3f47bb1de0878621">m_eventPriority</a> = priority;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a99667c53c09ab43f3f47bb1de0878621"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a99667c53c09ab43f3f47bb1de0878621">dqm4hep::online::Cycle::m_eventPriority</a></div><div class="ttdeci">std::atomic_int m_eventPriority</div><div class="ttdoc">The end of cycle event priority in the event loop. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00211">Cycle.h:211</a></div></div>
+<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00103">dqm4hep::online::ModuleApplication::onInit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                             {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">if</span>(priority &gt;= 0 and priority &lt;= 100) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a99667c53c09ab43f3f47bb1de0878621">m_eventPriority</a> = priority;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a99667c53c09ab43f3f47bb1de0878621"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a99667c53c09ab43f3f47bb1de0878621">dqm4hep::online::Cycle::m_eventPriority</a></div><div class="ttdeci">std::atomic_int m_eventPriority</div><div class="ttdoc">The end of cycle event priority in the event loop. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00193">Cycle.h:193</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -648,15 +648,15 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00066">66</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00049">49</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
 
-<p>References <a class="el" href="Cycle_8h_source.html#l00203">m_timeout</a>.</p>
+<p>References <a class="el" href="Cycle_8h_source.html#l00185">m_timeout</a>.</p>
 
-<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00440">dqm4hep::online::ModuleApplication::configureCycle()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                             {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">m_timeout</a> = value;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_aa6af222fa9baec44ff80220b43875486"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">dqm4hep::online::Cycle::m_timeout</a></div><div class="ttdeci">std::atomic_uint m_timeout</div><div class="ttdoc">The user timeout value, default 10 (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00203">Cycle.h:203</a></div></div>
+<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00423">dqm4hep::online::ModuleApplication::configureCycle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                             {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">m_timeout</a> = value;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_aa6af222fa9baec44ff80220b43875486"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">dqm4hep::online::Cycle::m_timeout</a></div><div class="ttdeci">std::atomic_uint m_timeout</div><div class="ttdoc">The user timeout value, default 10 (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00185">Cycle.h:185</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -682,15 +682,15 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00078">78</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00061">61</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
 
-<p>References <a class="el" href="Cycle_8h_source.html#l00205">m_period</a>.</p>
+<p>References <a class="el" href="Cycle_8h_source.html#l00187">m_period</a>.</p>
 
-<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00440">dqm4hep::online::ModuleApplication::configureCycle()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                                 {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">m_period</a> = value;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_ae7960b9bc65b46f6708f5d8ffa8cf59d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">dqm4hep::online::Cycle::m_period</a></div><div class="ttdeci">std::atomic_uint m_period</div><div class="ttdoc">The user timer period, default 30 (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00205">Cycle.h:205</a></div></div>
+<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00423">dqm4hep::online::ModuleApplication::configureCycle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                 {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">m_period</a> = value;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_ae7960b9bc65b46f6708f5d8ffa8cf59d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">dqm4hep::online::Cycle::m_period</a></div><div class="ttdeci">std::atomic_uint m_period</div><div class="ttdoc">The user timer period, default 30 (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00187">Cycle.h:187</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -717,27 +717,27 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00117">117</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00100">100</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
 
-<p>References <a class="el" href="Logging_8h_source.html#l00043">dqm_debug</a>, <a class="el" href="Logging_8h_source.html#l00045">dqm_error</a>, <a class="el" href="Cycle_8cc_source.html#l00129">forceStopCycle()</a>, <a class="el" href="Cycle_8h_source.html#l00207">m_counterLimit</a>, <a class="el" href="Cycle_8h_source.html#l00205">m_period</a>, <a class="el" href="Cycle_8h_source.html#l00193">m_startCycleFlag</a>, and <a class="el" href="Cycle_8h_source.html#l00203">m_timeout</a>.</p>
+<p>References <a class="el" href="Logging_8h_source.html#l00026">dqm_debug</a>, <a class="el" href="Logging_8h_source.html#l00028">dqm_error</a>, <a class="el" href="Cycle_8cc_source.html#l00112">forceStopCycle()</a>, <a class="el" href="Cycle_8h_source.html#l00189">m_counterLimit</a>, <a class="el" href="Cycle_8h_source.html#l00187">m_period</a>, <a class="el" href="Cycle_8h_source.html#l00175">m_startCycleFlag</a>, and <a class="el" href="Cycle_8h_source.html#l00185">m_timeout</a>.</p>
 
-<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00153">dqm4hep::online::ModuleApplication::onEvent()</a>, <a class="el" href="ModuleApplication_8cc_source.html#l00255">dqm4hep::online::ModuleApplication::onStart()</a>, and <a class="el" href="ModuleApplication_8cc_source.html#l00571">dqm4hep::online::ModuleApplication::processStartOfRun()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                    {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">m_timeout</a> &gt;= <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">m_period</a> || (0 == <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">m_counterLimit</a> &amp;&amp; 0 == <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">m_period</a>)) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>(<span class="stringliteral">&quot;Cycle::startCycle: invalid cycle settings (timeout {0}, counter limit {1}, period {2}) !&quot;</span>, <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">m_timeout</a>.load(), <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">m_counterLimit</a>.load(), <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">m_period</a>.load());</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">throw</span> core::StatusCodeException(core::STATUS_CODE_FAILURE);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a12f0f9a63d57d7e181f8ededcfa9dde7">forceStopCycle</a>(<span class="keyword">true</span>, emit);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a67d2dad968959acfa5380ea50d601007">m_startCycleFlag</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <a class="code" href="Logging_8h.html#afeed011feb4159b13c3ae4873e1d0fcf">dqm_debug</a>( <span class="stringliteral">&quot;=====&gt; Started new cycle !&quot;</span> );</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a67d2dad968959acfa5380ea50d601007"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a67d2dad968959acfa5380ea50d601007">dqm4hep::online::Cycle::m_startCycleFlag</a></div><div class="ttdeci">std::atomic_bool m_startCycleFlag</div><div class="ttdoc">An internal flag to trigger a new cycle. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00193">Cycle.h:193</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a34aaee17f5b45c2972d531c6f01a2429"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">dqm4hep::online::Cycle::m_counterLimit</a></div><div class="ttdeci">std::atomic_uint m_counterLimit</div><div class="ttdoc">The user counter limit. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00207">Cycle.h:207</a></div></div>
-<div class="ttc" id="Logging_8h_html_afeed011feb4159b13c3ae4873e1d0fcf"><div class="ttname"><a href="Logging_8h.html#afeed011feb4159b13c3ae4873e1d0fcf">dqm_debug</a></div><div class="ttdeci">#define dqm_debug(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00043">Logging.h:43</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_aa6af222fa9baec44ff80220b43875486"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">dqm4hep::online::Cycle::m_timeout</a></div><div class="ttdeci">std::atomic_uint m_timeout</div><div class="ttdoc">The user timeout value, default 10 (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00203">Cycle.h:203</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a12f0f9a63d57d7e181f8ededcfa9dde7"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a12f0f9a63d57d7e181f8ededcfa9dde7">dqm4hep::online::Cycle::forceStopCycle</a></div><div class="ttdeci">void forceStopCycle(bool waitEnd=true, bool emit=false)</div><div class="ttdoc">Stop the current cycle if running. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8cc_source.html#l00129">Cycle.cc:129</a></div></div>
-<div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00045">Logging.h:45</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_ae7960b9bc65b46f6708f5d8ffa8cf59d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">dqm4hep::online::Cycle::m_period</a></div><div class="ttdeci">std::atomic_uint m_period</div><div class="ttdoc">The user timer period, default 30 (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00205">Cycle.h:205</a></div></div>
+<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00136">dqm4hep::online::ModuleApplication::onEvent()</a>, <a class="el" href="ModuleApplication_8cc_source.html#l00238">dqm4hep::online::ModuleApplication::onStart()</a>, and <a class="el" href="ModuleApplication_8cc_source.html#l00554">dqm4hep::online::ModuleApplication::processStartOfRun()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                    {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">m_timeout</a> &gt;= <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">m_period</a> || (0 == <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">m_counterLimit</a> &amp;&amp; 0 == <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">m_period</a>)) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>(<span class="stringliteral">&quot;Cycle::startCycle: invalid cycle settings (timeout {0}, counter limit {1}, period {2}) !&quot;</span>, <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">m_timeout</a>.load(), <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">m_counterLimit</a>.load(), <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">m_period</a>.load());</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">throw</span> core::StatusCodeException(core::STATUS_CODE_FAILURE);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a12f0f9a63d57d7e181f8ededcfa9dde7">forceStopCycle</a>(<span class="keyword">true</span>, emit);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#a67d2dad968959acfa5380ea50d601007">m_startCycleFlag</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <a class="code" href="Logging_8h.html#afeed011feb4159b13c3ae4873e1d0fcf">dqm_debug</a>( <span class="stringliteral">&quot;=====&gt; Started new cycle !&quot;</span> );</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a67d2dad968959acfa5380ea50d601007"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a67d2dad968959acfa5380ea50d601007">dqm4hep::online::Cycle::m_startCycleFlag</a></div><div class="ttdeci">std::atomic_bool m_startCycleFlag</div><div class="ttdoc">An internal flag to trigger a new cycle. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00175">Cycle.h:175</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a34aaee17f5b45c2972d531c6f01a2429"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a34aaee17f5b45c2972d531c6f01a2429">dqm4hep::online::Cycle::m_counterLimit</a></div><div class="ttdeci">std::atomic_uint m_counterLimit</div><div class="ttdoc">The user counter limit. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00189">Cycle.h:189</a></div></div>
+<div class="ttc" id="Logging_8h_html_afeed011feb4159b13c3ae4873e1d0fcf"><div class="ttname"><a href="Logging_8h.html#afeed011feb4159b13c3ae4873e1d0fcf">dqm_debug</a></div><div class="ttdeci">#define dqm_debug(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00026">Logging.h:26</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_aa6af222fa9baec44ff80220b43875486"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">dqm4hep::online::Cycle::m_timeout</a></div><div class="ttdeci">std::atomic_uint m_timeout</div><div class="ttdoc">The user timeout value, default 10 (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00185">Cycle.h:185</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_a12f0f9a63d57d7e181f8ededcfa9dde7"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#a12f0f9a63d57d7e181f8ededcfa9dde7">dqm4hep::online::Cycle::forceStopCycle</a></div><div class="ttdeci">void forceStopCycle(bool waitEnd=true, bool emit=false)</div><div class="ttdoc">Stop the current cycle if running. </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8cc_source.html#l00112">Cycle.cc:112</a></div></div>
+<div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00028">Logging.h:28</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_ae7960b9bc65b46f6708f5d8ffa8cf59d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">dqm4hep::online::Cycle::m_period</a></div><div class="ttdeci">std::atomic_uint m_period</div><div class="ttdoc">The user timer period, default 30 (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00187">Cycle.h:187</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -756,13 +756,13 @@ Private Attributes</h2></td></tr>
 
 <p>Get the timeout value (unit seconds) </p>
 
-<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00060">60</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00043">43</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
 
-<p>References <a class="el" href="Cycle_8h_source.html#l00203">m_timeout</a>.</p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                      {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">m_timeout</a>.load();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_aa6af222fa9baec44ff80220b43875486"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">dqm4hep::online::Cycle::m_timeout</a></div><div class="ttdeci">std::atomic_uint m_timeout</div><div class="ttdoc">The user timeout value, default 10 (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00203">Cycle.h:203</a></div></div>
+<p>References <a class="el" href="Cycle_8h_source.html#l00185">m_timeout</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                      {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">m_timeout</a>.load();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_aa6af222fa9baec44ff80220b43875486"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#aa6af222fa9baec44ff80220b43875486">dqm4hep::online::Cycle::m_timeout</a></div><div class="ttdeci">std::atomic_uint m_timeout</div><div class="ttdoc">The user timeout value, default 10 (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00185">Cycle.h:185</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -781,13 +781,13 @@ Private Attributes</h2></td></tr>
 
 <p>Get the timer period value (unit seconds) </p>
 
-<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00072">72</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8cc_source.html#l00055">55</a> of file <a class="el" href="Cycle_8cc_source.html">Cycle.cc</a>.</p>
 
-<p>References <a class="el" href="Cycle_8h_source.html#l00205">m_period</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                          {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">m_period</a>.load();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_ae7960b9bc65b46f6708f5d8ffa8cf59d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">dqm4hep::online::Cycle::m_period</a></div><div class="ttdeci">std::atomic_uint m_period</div><div class="ttdoc">The user timer period, default 30 (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00205">Cycle.h:205</a></div></div>
+<p>References <a class="el" href="Cycle_8h_source.html#l00187">m_period</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                          {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">m_period</a>.load();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1Cycle_html_ae7960b9bc65b46f6708f5d8ffa8cf59d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1Cycle.html#ae7960b9bc65b46f6708f5d8ffa8cf59d">dqm4hep::online::Cycle::m_period</a></div><div class="ttdeci">std::atomic_uint m_period</div><div class="ttdoc">The user timer period, default 30 (unit seconds) </div><div class="ttdef"><b>Definition:</b> <a href="Cycle_8h_source.html#l00187">Cycle.h:187</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -812,9 +812,9 @@ Private Attributes</h2></td></tr>
 
 <p>The user counter limit. </p>
 
-<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00207">207</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00189">189</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00084">counterLimit()</a>, <a class="el" href="Cycle_8cc_source.html#l00149">cycleLoop()</a>, <a class="el" href="Cycle_8cc_source.html#l00090">setCounterLimit()</a>, and <a class="el" href="Cycle_8cc_source.html#l00117">startCycle()</a>.</p>
+<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00067">counterLimit()</a>, <a class="el" href="Cycle_8cc_source.html#l00132">cycleLoop()</a>, <a class="el" href="Cycle_8cc_source.html#l00073">setCounterLimit()</a>, and <a class="el" href="Cycle_8cc_source.html#l00100">startCycle()</a>.</p>
 
 </div>
 </div>
@@ -838,9 +838,9 @@ Private Attributes</h2></td></tr>
 
 <p>The internal counter incremented by user. </p>
 
-<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00209">209</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00191">191</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00149">cycleLoop()</a>, <a class="el" href="Cycle_8cc_source.html#l00205">endOfCycle()</a>, and <a class="el" href="Cycle_8cc_source.html#l00110">incrementCounter()</a>.</p>
+<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00132">cycleLoop()</a>, <a class="el" href="Cycle_8cc_source.html#l00188">endOfCycle()</a>, and <a class="el" href="Cycle_8cc_source.html#l00093">incrementCounter()</a>.</p>
 
 </div>
 </div>
@@ -864,9 +864,9 @@ Private Attributes</h2></td></tr>
 
 <p>Whether an event has to be posted on end of cycle. </p>
 
-<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00197">197</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00179">179</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00149">cycleLoop()</a>, and <a class="el" href="Cycle_8cc_source.html#l00129">forceStopCycle()</a>.</p>
+<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00132">cycleLoop()</a>, and <a class="el" href="Cycle_8cc_source.html#l00112">forceStopCycle()</a>.</p>
 
 </div>
 </div>
@@ -890,9 +890,9 @@ Private Attributes</h2></td></tr>
 
 <p>The application event loop in which the cycle is running. </p>
 
-<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00189">189</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00171">171</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00205">endOfCycle()</a>.</p>
+<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00188">endOfCycle()</a>.</p>
 
 </div>
 </div>
@@ -916,9 +916,9 @@ Private Attributes</h2></td></tr>
 
 <p>The end of cycle event priority in the event loop. </p>
 
-<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00211">211</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00193">193</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00205">endOfCycle()</a>, <a class="el" href="Cycle_8cc_source.html#l00104">eventPriority()</a>, and <a class="el" href="Cycle_8cc_source.html#l00096">setEventPriority()</a>.</p>
+<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00188">endOfCycle()</a>, <a class="el" href="Cycle_8cc_source.html#l00087">eventPriority()</a>, and <a class="el" href="Cycle_8cc_source.html#l00079">setEventPriority()</a>.</p>
 
 </div>
 </div>
@@ -942,9 +942,9 @@ Private Attributes</h2></td></tr>
 
 <p>An internal flag to trigger an end of cycle. </p>
 
-<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00195">195</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00177">177</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00149">cycleLoop()</a>, and <a class="el" href="Cycle_8cc_source.html#l00129">forceStopCycle()</a>.</p>
+<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00132">cycleLoop()</a>, and <a class="el" href="Cycle_8cc_source.html#l00112">forceStopCycle()</a>.</p>
 
 </div>
 </div>
@@ -968,9 +968,9 @@ Private Attributes</h2></td></tr>
 
 <p>The last time point when the increement method was called. </p>
 
-<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00213">213</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00195">195</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00149">cycleLoop()</a>, and <a class="el" href="Cycle_8cc_source.html#l00110">incrementCounter()</a>.</p>
+<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00132">cycleLoop()</a>, and <a class="el" href="Cycle_8cc_source.html#l00093">incrementCounter()</a>.</p>
 
 </div>
 </div>
@@ -994,9 +994,9 @@ Private Attributes</h2></td></tr>
 
 <p>The user timer period, default 30 (unit seconds) </p>
 
-<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00205">205</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00187">187</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00149">cycleLoop()</a>, <a class="el" href="Cycle_8cc_source.html#l00078">setTimerPeriod()</a>, <a class="el" href="Cycle_8cc_source.html#l00117">startCycle()</a>, and <a class="el" href="Cycle_8cc_source.html#l00072">timerPeriod()</a>.</p>
+<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00132">cycleLoop()</a>, <a class="el" href="Cycle_8cc_source.html#l00061">setTimerPeriod()</a>, <a class="el" href="Cycle_8cc_source.html#l00100">startCycle()</a>, and <a class="el" href="Cycle_8cc_source.html#l00055">timerPeriod()</a>.</p>
 
 </div>
 </div>
@@ -1020,9 +1020,9 @@ Private Attributes</h2></td></tr>
 
 <p>Whether a cycle has been started. </p>
 
-<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00191">191</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00173">173</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00149">cycleLoop()</a>, and <a class="el" href="Cycle_8cc_source.html#l00143">running()</a>.</p>
+<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00132">cycleLoop()</a>, and <a class="el" href="Cycle_8cc_source.html#l00126">running()</a>.</p>
 
 </div>
 </div>
@@ -1046,9 +1046,9 @@ Private Attributes</h2></td></tr>
 
 <p>An internal flag to trigger a new cycle. </p>
 
-<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00193">193</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00175">175</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00149">cycleLoop()</a>, and <a class="el" href="Cycle_8cc_source.html#l00117">startCycle()</a>.</p>
+<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00132">cycleLoop()</a>, and <a class="el" href="Cycle_8cc_source.html#l00100">startCycle()</a>.</p>
 
 </div>
 </div>
@@ -1072,9 +1072,9 @@ Private Attributes</h2></td></tr>
 
 <p>An internal flag to stop the cycle thread. </p>
 
-<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00199">199</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00181">181</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00149">cycleLoop()</a>, and <a class="el" href="Cycle_8cc_source.html#l00053">~Cycle()</a>.</p>
+<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00132">cycleLoop()</a>, and <a class="el" href="Cycle_8cc_source.html#l00036">~Cycle()</a>.</p>
 
 </div>
 </div>
@@ -1098,9 +1098,9 @@ Private Attributes</h2></td></tr>
 
 <p>The thread object running the cycle function. </p>
 
-<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00201">201</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00183">183</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00046">Cycle()</a>, and <a class="el" href="Cycle_8cc_source.html#l00053">~Cycle()</a>.</p>
+<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00029">Cycle()</a>, and <a class="el" href="Cycle_8cc_source.html#l00036">~Cycle()</a>.</p>
 
 </div>
 </div>
@@ -1124,9 +1124,9 @@ Private Attributes</h2></td></tr>
 
 <p>The user timeout value, default 10 (unit seconds) </p>
 
-<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00203">203</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
+<p>Definition at line <a class="el" href="Cycle_8h_source.html#l00185">185</a> of file <a class="el" href="Cycle_8h_source.html">Cycle.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00149">cycleLoop()</a>, <a class="el" href="Cycle_8cc_source.html#l00066">setTimeout()</a>, <a class="el" href="Cycle_8cc_source.html#l00117">startCycle()</a>, and <a class="el" href="Cycle_8cc_source.html#l00060">timeout()</a>.</p>
+<p>Referenced by <a class="el" href="Cycle_8cc_source.html#l00132">cycleLoop()</a>, <a class="el" href="Cycle_8cc_source.html#l00049">setTimeout()</a>, <a class="el" href="Cycle_8cc_source.html#l00100">startCycle()</a>, and <a class="el" href="Cycle_8cc_source.html#l00043">timeout()</a>.</p>
 
 </div>
 </div>
@@ -1137,7 +1137,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 10:13:10 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 12:37:07 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

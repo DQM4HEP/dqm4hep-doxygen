@@ -105,7 +105,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classdqm4hep_1_1online_1_1RemoteLogger.html" title="RemoteLogger class. ">RemoteLogger</a> class. </p>
 
-<p>Definition at line <a class="el" href="RemoteLogger_8h_source.html#l00046">46</a> of file <a class="el" href="RemoteLogger_8h_source.html">RemoteLogger.h</a>.</p>
+<p>Definition at line <a class="el" href="RemoteLogger_8h_source.html#l00028">28</a> of file <a class="el" href="RemoteLogger_8h_source.html">RemoteLogger.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a60b9f84d38dd5ad22909eec2ceb34047"></a>
 <div class="memitem">
@@ -122,15 +122,15 @@ Private Attributes</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p>Definition at line <a class="el" href="RemoteLogger_8cc_source.html#l00036">36</a> of file <a class="el" href="RemoteLogger_8cc_source.html">RemoteLogger.cc</a>.</p>
+<p>Definition at line <a class="el" href="RemoteLogger_8cc_source.html#l00019">19</a> of file <a class="el" href="RemoteLogger_8cc_source.html">RemoteLogger.cc</a>.</p>
 
-<p>References <a class="el" href="RemoteLogger_8h_source.html#l00072">m_hostname</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                               {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordtype">char</span> hname[256];</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      gethostname(hname, 256);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RemoteLogger.html#a8069c39eaa1ebf0549df184c801248e0">m_hostname</a> = hname;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1RemoteLogger_html_a8069c39eaa1ebf0549df184c801248e0"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RemoteLogger.html#a8069c39eaa1ebf0549df184c801248e0">dqm4hep::online::RemoteLogger::m_hostname</a></div><div class="ttdeci">std::string m_hostname</div><div class="ttdoc">The current host name. </div><div class="ttdef"><b>Definition:</b> <a href="RemoteLogger_8h_source.html#l00072">RemoteLogger.h:72</a></div></div>
+<p>References <a class="el" href="RemoteLogger_8h_source.html#l00054">m_hostname</a>.</p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                               {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;      <span class="keywordtype">char</span> hname[256];</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      gethostname(hname, 256);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RemoteLogger.html#a8069c39eaa1ebf0549df184c801248e0">m_hostname</a> = hname;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1RemoteLogger_html_a8069c39eaa1ebf0549df184c801248e0"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RemoteLogger.html#a8069c39eaa1ebf0549df184c801248e0">dqm4hep::online::RemoteLogger::m_hostname</a></div><div class="ttdeci">std::string m_hostname</div><div class="ttdoc">The current host name. </div><div class="ttdef"><b>Definition:</b> <a href="RemoteLogger_8h_source.html#l00054">RemoteLogger.h:54</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -165,25 +165,25 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="RemoteLogger_8cc_source.html#l00050">50</a> of file <a class="el" href="RemoteLogger_8cc_source.html">RemoteLogger.cc</a>.</p>
+<p>Definition at line <a class="el" href="RemoteLogger_8cc_source.html#l00033">33</a> of file <a class="el" href="RemoteLogger_8cc_source.html">RemoteLogger.cc</a>.</p>
 
-<p>References <a class="el" href="OnlineRoutes_8cc_source.html#l00122">dqm4hep::online::OnlineRoutes::OnlineManager::collectLog()</a>, <a class="el" href="RemoteLogger_8h_source.html#l00073">m_client</a>, <a class="el" href="RemoteLogger_8h_source.html#l00072">m_hostname</a>, <a class="el" href="RemoteLogger_8h_source.html#l00071">m_message</a>, <a class="el" href="Internal_8h_source.html#l00576">dqm4hep::core::pid()</a>, and <a class="el" href="Client_8h_source.html#l00208">dqm4hep::net::Client::sendCommand()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                               {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RemoteLogger.html#af4ae5b3675368418d11dc6c10e966eec">m_message</a> = {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {<span class="stringliteral">&quot;logger&quot;</span>,   *msg.logger_name},</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        {<span class="stringliteral">&quot;level&quot;</span>,   msg.level},</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        {<span class="stringliteral">&quot;message&quot;</span>, msg.raw.str()},</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {<span class="stringliteral">&quot;host&quot;</span>,    <a class="code" href="classdqm4hep_1_1online_1_1RemoteLogger.html#a8069c39eaa1ebf0549df184c801248e0">m_hostname</a>},</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {<span class="stringliteral">&quot;pid&quot;</span>,     <a class="code" href="namespacedqm4hep_1_1core.html#a3dc121b5dd671f31be9dcfb7c2dd6fca">dqm4hep::core::pid</a>()}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      };</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RemoteLogger.html#aa58540d34d0a3aeaa455a2b1f31ed736">m_client</a>.<a class="code" href="classdqm4hep_1_1net_1_1Client.html#af909a5f8ebc100e7249082b90c8eddb1">sendCommand</a>(<a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager.html#ae9d518a92bc7b7f437eb4f0fccc08ff4">OnlineRoutes::OnlineManager::collectLog</a>(), <a class="code" href="classdqm4hep_1_1online_1_1RemoteLogger.html#af4ae5b3675368418d11dc6c10e966eec">m_message</a>.dump());</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a3dc121b5dd671f31be9dcfb7c2dd6fca"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a3dc121b5dd671f31be9dcfb7c2dd6fca">dqm4hep::core::pid</a></div><div class="ttdeci">int pid()</div><div class="ttdoc">Get the current process id. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00576">Internal.h:576</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager_html_ae9d518a92bc7b7f437eb4f0fccc08ff4"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager.html#ae9d518a92bc7b7f437eb4f0fccc08ff4">dqm4hep::online::OnlineRoutes::OnlineManager::collectLog</a></div><div class="ttdeci">static const std::string collectLog()</div><div class="ttdoc">Get the name of the commmand to send (client) or collect (server) a log message. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00122">OnlineRoutes.cc:122</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1RemoteLogger_html_a8069c39eaa1ebf0549df184c801248e0"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RemoteLogger.html#a8069c39eaa1ebf0549df184c801248e0">dqm4hep::online::RemoteLogger::m_hostname</a></div><div class="ttdeci">std::string m_hostname</div><div class="ttdoc">The current host name. </div><div class="ttdef"><b>Definition:</b> <a href="RemoteLogger_8h_source.html#l00072">RemoteLogger.h:72</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1Client_html_af909a5f8ebc100e7249082b90c8eddb1"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html#af909a5f8ebc100e7249082b90c8eddb1">dqm4hep::net::Client::sendCommand</a></div><div class="ttdeci">void sendCommand(const std::string &amp;name, const Command &amp;command, bool blocking=false) const </div><div class="ttdoc">Send a command. </div><div class="ttdef"><b>Definition:</b> <a href="Client_8h_source.html#l00208">Client.h:208</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1RemoteLogger_html_aa58540d34d0a3aeaa455a2b1f31ed736"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RemoteLogger.html#aa58540d34d0a3aeaa455a2b1f31ed736">dqm4hep::online::RemoteLogger::m_client</a></div><div class="ttdeci">net::Client m_client</div><div class="ttdoc">The net client interface. </div><div class="ttdef"><b>Definition:</b> <a href="RemoteLogger_8h_source.html#l00073">RemoteLogger.h:73</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1RemoteLogger_html_af4ae5b3675368418d11dc6c10e966eec"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RemoteLogger.html#af4ae5b3675368418d11dc6c10e966eec">dqm4hep::online::RemoteLogger::m_message</a></div><div class="ttdeci">core::json m_message</div><div class="ttdoc">The log message to send as json. </div><div class="ttdef"><b>Definition:</b> <a href="RemoteLogger_8h_source.html#l00071">RemoteLogger.h:71</a></div></div>
+<p>References <a class="el" href="OnlineRoutes_8cc_source.html#l00104">dqm4hep::online::OnlineRoutes::OnlineManager::collectLog()</a>, <a class="el" href="RemoteLogger_8h_source.html#l00055">m_client</a>, <a class="el" href="RemoteLogger_8h_source.html#l00054">m_hostname</a>, <a class="el" href="RemoteLogger_8h_source.html#l00053">m_message</a>, <a class="el" href="Internal_8h_source.html#l00559">dqm4hep::core::pid()</a>, and <a class="el" href="Client_8h_source.html#l00191">dqm4hep::net::Client::sendCommand()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                                               {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RemoteLogger.html#af4ae5b3675368418d11dc6c10e966eec">m_message</a> = {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        {<span class="stringliteral">&quot;logger&quot;</span>,   *msg.logger_name},</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {<span class="stringliteral">&quot;level&quot;</span>,   msg.level},</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {<span class="stringliteral">&quot;message&quot;</span>, msg.raw.str()},</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {<span class="stringliteral">&quot;host&quot;</span>,    <a class="code" href="classdqm4hep_1_1online_1_1RemoteLogger.html#a8069c39eaa1ebf0549df184c801248e0">m_hostname</a>},</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        {<span class="stringliteral">&quot;pid&quot;</span>,     <a class="code" href="namespacedqm4hep_1_1core.html#a3dc121b5dd671f31be9dcfb7c2dd6fca">dqm4hep::core::pid</a>()}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      };</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1RemoteLogger.html#aa58540d34d0a3aeaa455a2b1f31ed736">m_client</a>.<a class="code" href="classdqm4hep_1_1net_1_1Client.html#af909a5f8ebc100e7249082b90c8eddb1">sendCommand</a>(<a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager.html#ae9d518a92bc7b7f437eb4f0fccc08ff4">OnlineRoutes::OnlineManager::collectLog</a>(), <a class="code" href="classdqm4hep_1_1online_1_1RemoteLogger.html#af4ae5b3675368418d11dc6c10e966eec">m_message</a>.dump());</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a3dc121b5dd671f31be9dcfb7c2dd6fca"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a3dc121b5dd671f31be9dcfb7c2dd6fca">dqm4hep::core::pid</a></div><div class="ttdeci">int pid()</div><div class="ttdoc">Get the current process id. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00559">Internal.h:559</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager_html_ae9d518a92bc7b7f437eb4f0fccc08ff4"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1OnlineManager.html#ae9d518a92bc7b7f437eb4f0fccc08ff4">dqm4hep::online::OnlineRoutes::OnlineManager::collectLog</a></div><div class="ttdeci">static const std::string collectLog()</div><div class="ttdoc">Get the name of the commmand to send (client) or collect (server) a log message. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00104">OnlineRoutes.cc:104</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1RemoteLogger_html_a8069c39eaa1ebf0549df184c801248e0"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RemoteLogger.html#a8069c39eaa1ebf0549df184c801248e0">dqm4hep::online::RemoteLogger::m_hostname</a></div><div class="ttdeci">std::string m_hostname</div><div class="ttdoc">The current host name. </div><div class="ttdef"><b>Definition:</b> <a href="RemoteLogger_8h_source.html#l00054">RemoteLogger.h:54</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1Client_html_af909a5f8ebc100e7249082b90c8eddb1"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html#af909a5f8ebc100e7249082b90c8eddb1">dqm4hep::net::Client::sendCommand</a></div><div class="ttdeci">void sendCommand(const std::string &amp;name, const Command &amp;command, bool blocking=false) const </div><div class="ttdoc">Send a command. </div><div class="ttdef"><b>Definition:</b> <a href="Client_8h_source.html#l00191">Client.h:191</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1RemoteLogger_html_aa58540d34d0a3aeaa455a2b1f31ed736"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RemoteLogger.html#aa58540d34d0a3aeaa455a2b1f31ed736">dqm4hep::online::RemoteLogger::m_client</a></div><div class="ttdeci">net::Client m_client</div><div class="ttdoc">The net client interface. </div><div class="ttdef"><b>Definition:</b> <a href="RemoteLogger_8h_source.html#l00055">RemoteLogger.h:55</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1RemoteLogger_html_af4ae5b3675368418d11dc6c10e966eec"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RemoteLogger.html#af4ae5b3675368418d11dc6c10e966eec">dqm4hep::online::RemoteLogger::m_message</a></div><div class="ttdeci">core::json m_message</div><div class="ttdoc">The log message to send as json. </div><div class="ttdef"><b>Definition:</b> <a href="RemoteLogger_8h_source.html#l00053">RemoteLogger.h:53</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -210,9 +210,9 @@ Private Attributes</h2></td></tr>
 
 <p>Flush the message. </p>
 
-<p>Definition at line <a class="el" href="RemoteLogger_8cc_source.html#l00063">63</a> of file <a class="el" href="RemoteLogger_8cc_source.html">RemoteLogger.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                             {      </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="RemoteLogger_8cc_source.html#l00046">46</a> of file <a class="el" href="RemoteLogger_8cc_source.html">RemoteLogger.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                             {      </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -239,12 +239,12 @@ Private Attributes</h2></td></tr>
 
 <p>Create a shared pointer of <a class="el" href="classdqm4hep_1_1online_1_1RemoteLogger.html" title="RemoteLogger class. ">RemoteLogger</a>. </p>
 
-<p>Definition at line <a class="el" href="RemoteLogger_8cc_source.html#l00044">44</a> of file <a class="el" href="RemoteLogger_8cc_source.html">RemoteLogger.cc</a>.</p>
+<p>Definition at line <a class="el" href="RemoteLogger_8cc_source.html#l00027">27</a> of file <a class="el" href="RemoteLogger_8cc_source.html">RemoteLogger.cc</a>.</p>
 
-<p>Referenced by <a class="el" href="Application_8cc_source.html#l00163">dqm4hep::online::Application::init()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                    {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordflow">return</span> std::make_shared&lt;RemoteLogger&gt;();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<p>Referenced by <a class="el" href="Application_8cc_source.html#l00146">dqm4hep::online::Application::init()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                                    {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <span class="keywordflow">return</span> std::make_shared&lt;RemoteLogger&gt;();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -269,9 +269,9 @@ Private Attributes</h2></td></tr>
 
 <p>The net client interface. </p>
 
-<p>Definition at line <a class="el" href="RemoteLogger_8h_source.html#l00073">73</a> of file <a class="el" href="RemoteLogger_8h_source.html">RemoteLogger.h</a>.</p>
+<p>Definition at line <a class="el" href="RemoteLogger_8h_source.html#l00055">55</a> of file <a class="el" href="RemoteLogger_8h_source.html">RemoteLogger.h</a>.</p>
 
-<p>Referenced by <a class="el" href="RemoteLogger_8cc_source.html#l00050">_sink_it()</a>.</p>
+<p>Referenced by <a class="el" href="RemoteLogger_8cc_source.html#l00033">_sink_it()</a>.</p>
 
 </div>
 </div>
@@ -295,9 +295,9 @@ Private Attributes</h2></td></tr>
 
 <p>The current host name. </p>
 
-<p>Definition at line <a class="el" href="RemoteLogger_8h_source.html#l00072">72</a> of file <a class="el" href="RemoteLogger_8h_source.html">RemoteLogger.h</a>.</p>
+<p>Definition at line <a class="el" href="RemoteLogger_8h_source.html#l00054">54</a> of file <a class="el" href="RemoteLogger_8h_source.html">RemoteLogger.h</a>.</p>
 
-<p>Referenced by <a class="el" href="RemoteLogger_8cc_source.html#l00050">_sink_it()</a>, and <a class="el" href="RemoteLogger_8cc_source.html#l00036">RemoteLogger()</a>.</p>
+<p>Referenced by <a class="el" href="RemoteLogger_8cc_source.html#l00033">_sink_it()</a>, and <a class="el" href="RemoteLogger_8cc_source.html#l00019">RemoteLogger()</a>.</p>
 
 </div>
 </div>
@@ -321,9 +321,9 @@ Private Attributes</h2></td></tr>
 
 <p>The log message to send as json. </p>
 
-<p>Definition at line <a class="el" href="RemoteLogger_8h_source.html#l00071">71</a> of file <a class="el" href="RemoteLogger_8h_source.html">RemoteLogger.h</a>.</p>
+<p>Definition at line <a class="el" href="RemoteLogger_8h_source.html#l00053">53</a> of file <a class="el" href="RemoteLogger_8h_source.html">RemoteLogger.h</a>.</p>
 
-<p>Referenced by <a class="el" href="RemoteLogger_8cc_source.html#l00050">_sink_it()</a>.</p>
+<p>Referenced by <a class="el" href="RemoteLogger_8cc_source.html#l00033">_sink_it()</a>.</p>
 
 </div>
 </div>
@@ -334,7 +334,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 10:13:10 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 12:37:07 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

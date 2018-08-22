@@ -126,7 +126,7 @@ Friends</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classdqm4hep_1_1online_1_1AppTimer.html" title="AppTimer class. ">AppTimer</a> class. </p>
 
-<p>Definition at line <a class="el" href="AppTimer_8h_source.html#l00047">47</a> of file <a class="el" href="AppTimer_8h_source.html">AppTimer.h</a>.</p>
+<p>Definition at line <a class="el" href="AppTimer_8h_source.html#l00029">29</a> of file <a class="el" href="AppTimer_8h_source.html">AppTimer.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3614ca31fc5d59ef661b5bf7661bf28a"></a>
 <div class="memitem">
@@ -144,11 +144,11 @@ Friends</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00036">36</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                         :</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#ab9bdb085d1ec6295e45435ec35430504">m_eventLoop</a>(loop) {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_ab9bdb085d1ec6295e45435ec35430504"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#ab9bdb085d1ec6295e45435ec35430504">dqm4hep::online::AppTimer::m_eventLoop</a></div><div class="ttdeci">AppEventLoop &amp; m_eventLoop</div><div class="ttdoc">The application event loop. </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00108">AppTimer.h:108</a></div></div>
+<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00018">18</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                         :</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#ab9bdb085d1ec6295e45435ec35430504">m_eventLoop</a>(loop) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_ab9bdb085d1ec6295e45435ec35430504"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#ab9bdb085d1ec6295e45435ec35430504">dqm4hep::online::AppTimer::m_eventLoop</a></div><div class="ttdeci">AppEventLoop &amp; m_eventLoop</div><div class="ttdoc">The application event loop. </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00090">AppTimer.h:90</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -167,9 +167,9 @@ Friends</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00042">42</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                        {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00024">24</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                        {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -189,13 +189,13 @@ Friends</h2></td></tr>
 
 <p>Whether the timer is active. </p>
 
-<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00090">90</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
+<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00072">72</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
 
-<p>References <a class="el" href="AppTimer_8h_source.html#l00116">m_active</a>.</p>
-<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#a5a492759f722b598e6b790b83d692e29">m_active</a>.load();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_a5a492759f722b598e6b790b83d692e29"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#a5a492759f722b598e6b790b83d692e29">dqm4hep::online::AppTimer::m_active</a></div><div class="ttdeci">std::atomic_bool m_active</div><div class="ttdoc">Whether the timer is active. </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00116">AppTimer.h:116</a></div></div>
+<p>References <a class="el" href="AppTimer_8h_source.html#l00098">m_active</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#a5a492759f722b598e6b790b83d692e29">m_active</a>.load();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_a5a492759f722b598e6b790b83d692e29"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#a5a492759f722b598e6b790b83d692e29">dqm4hep::online::AppTimer::m_active</a></div><div class="ttdeci">std::atomic_bool m_active</div><div class="ttdoc">Whether the timer is active. </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00098">AppTimer.h:98</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -214,13 +214,13 @@ Friends</h2></td></tr>
 
 <p>Get the timer interval (unit milliseconds) </p>
 
-<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00066">66</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
+<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00048">48</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
 
-<p>References <a class="el" href="AppTimer_8h_source.html#l00112">m_interval</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                          {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#ab0d0b4f7398126b3032e03504463df36">m_interval</a>.load();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_ab0d0b4f7398126b3032e03504463df36"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#ab0d0b4f7398126b3032e03504463df36">dqm4hep::online::AppTimer::m_interval</a></div><div class="ttdeci">std::atomic_uint m_interval</div><div class="ttdoc">The timer interval (unit milliseconds) </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00112">AppTimer.h:112</a></div></div>
+<p>References <a class="el" href="AppTimer_8h_source.html#l00094">m_interval</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                          {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#ab0d0b4f7398126b3032e03504463df36">m_interval</a>.load();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_ab0d0b4f7398126b3032e03504463df36"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#ab0d0b4f7398126b3032e03504463df36">dqm4hep::online::AppTimer::m_interval</a></div><div class="ttdeci">std::atomic_uint m_interval</div><div class="ttdoc">The timer interval (unit milliseconds) </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00094">AppTimer.h:94</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -239,15 +239,15 @@ Friends</h2></td></tr>
 
 <p>Get the timeout signal. </p>
 
-<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00072">72</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
+<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00054">54</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
 
-<p>References <a class="el" href="AppTimer_8h_source.html#l00114">m_signal</a>.</p>
+<p>References <a class="el" href="AppTimer_8h_source.html#l00096">m_signal</a>.</p>
 
-<p>Referenced by <a class="el" href="Application_8cc_source.html#l00220">dqm4hep::online::Application::exec()</a>, <a class="el" href="EventCollector_8cc_source.html#l00086">dqm4hep::online::EventCollector::onInit()</a>, and <a class="el" href="ModuleApplication_8cc_source.html#l00120">dqm4hep::online::ModuleApplication::onInit()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                      {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#a45f9a40b49129aff0494bf70e23133bf">m_signal</a>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_a45f9a40b49129aff0494bf70e23133bf"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#a45f9a40b49129aff0494bf70e23133bf">dqm4hep::online::AppTimer::m_signal</a></div><div class="ttdeci">core::Signal m_signal</div><div class="ttdoc">The timer timeout signal. </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00114">AppTimer.h:114</a></div></div>
+<p>Referenced by <a class="el" href="Application_8cc_source.html#l00203">dqm4hep::online::Application::exec()</a>, <a class="el" href="EventCollector_8cc_source.html#l00070">dqm4hep::online::EventCollector::onInit()</a>, and <a class="el" href="ModuleApplication_8cc_source.html#l00103">dqm4hep::online::ModuleApplication::onInit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                      {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#a45f9a40b49129aff0494bf70e23133bf">m_signal</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_a45f9a40b49129aff0494bf70e23133bf"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#a45f9a40b49129aff0494bf70e23133bf">dqm4hep::online::AppTimer::m_signal</a></div><div class="ttdeci">core::Signal m_signal</div><div class="ttdoc">The timer timeout signal. </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00096">AppTimer.h:96</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -273,18 +273,18 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00059">59</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
+<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00041">41</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
 
-<p>References <a class="el" href="AppTimer_8h_source.html#l00108">m_eventLoop</a>, <a class="el" href="AppTimer_8h_source.html#l00112">m_interval</a>, and <a class="el" href="AppEventLoop_8cc_source.html#l00265">dqm4hep::online::AppEventLoop::startTimer()</a>.</p>
+<p>References <a class="el" href="AppTimer_8h_source.html#l00090">m_eventLoop</a>, <a class="el" href="AppTimer_8h_source.html#l00094">m_interval</a>, and <a class="el" href="AppEventLoop_8cc_source.html#l00248">dqm4hep::online::AppEventLoop::startTimer()</a>.</p>
 
-<p>Referenced by <a class="el" href="Application_8cc_source.html#l00220">dqm4hep::online::Application::exec()</a>, <a class="el" href="EventCollector_8cc_source.html#l00086">dqm4hep::online::EventCollector::onInit()</a>, and <a class="el" href="ModuleApplication_8cc_source.html#l00120">dqm4hep::online::ModuleApplication::onInit()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#ab0d0b4f7398126b3032e03504463df36">m_interval</a> = msec;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#ab9bdb085d1ec6295e45435ec35430504">m_eventLoop</a>.<a class="code" href="classdqm4hep_1_1online_1_1AppEventLoop.html#ab6e3ad2dbff4d43dfaa43604ed0c65da">startTimer</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_ab0d0b4f7398126b3032e03504463df36"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#ab0d0b4f7398126b3032e03504463df36">dqm4hep::online::AppTimer::m_interval</a></div><div class="ttdeci">std::atomic_uint m_interval</div><div class="ttdoc">The timer interval (unit milliseconds) </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00112">AppTimer.h:112</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1AppEventLoop_html_ab6e3ad2dbff4d43dfaa43604ed0c65da"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppEventLoop.html#ab6e3ad2dbff4d43dfaa43604ed0c65da">dqm4hep::online::AppEventLoop::startTimer</a></div><div class="ttdeci">void startTimer(AppTimer *timer)</div><div class="ttdef"><b>Definition:</b> <a href="AppEventLoop_8cc_source.html#l00265">AppEventLoop.cc:265</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_ab9bdb085d1ec6295e45435ec35430504"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#ab9bdb085d1ec6295e45435ec35430504">dqm4hep::online::AppTimer::m_eventLoop</a></div><div class="ttdeci">AppEventLoop &amp; m_eventLoop</div><div class="ttdoc">The application event loop. </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00108">AppTimer.h:108</a></div></div>
+<p>Referenced by <a class="el" href="Application_8cc_source.html#l00203">dqm4hep::online::Application::exec()</a>, <a class="el" href="EventCollector_8cc_source.html#l00070">dqm4hep::online::EventCollector::onInit()</a>, and <a class="el" href="ModuleApplication_8cc_source.html#l00103">dqm4hep::online::ModuleApplication::onInit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                                {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#ab0d0b4f7398126b3032e03504463df36">m_interval</a> = msec;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#ab9bdb085d1ec6295e45435ec35430504">m_eventLoop</a>.<a class="code" href="classdqm4hep_1_1online_1_1AppEventLoop.html#ab6e3ad2dbff4d43dfaa43604ed0c65da">startTimer</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_ab0d0b4f7398126b3032e03504463df36"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#ab0d0b4f7398126b3032e03504463df36">dqm4hep::online::AppTimer::m_interval</a></div><div class="ttdeci">std::atomic_uint m_interval</div><div class="ttdoc">The timer interval (unit milliseconds) </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00094">AppTimer.h:94</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1AppEventLoop_html_ab6e3ad2dbff4d43dfaa43604ed0c65da"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppEventLoop.html#ab6e3ad2dbff4d43dfaa43604ed0c65da">dqm4hep::online::AppEventLoop::startTimer</a></div><div class="ttdeci">void startTimer(AppTimer *timer)</div><div class="ttdef"><b>Definition:</b> <a href="AppEventLoop_8cc_source.html#l00248">AppEventLoop.cc:248</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_ab9bdb085d1ec6295e45435ec35430504"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#ab9bdb085d1ec6295e45435ec35430504">dqm4hep::online::AppTimer::m_eventLoop</a></div><div class="ttdeci">AppEventLoop &amp; m_eventLoop</div><div class="ttdoc">The application event loop. </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00090">AppTimer.h:90</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -311,15 +311,15 @@ Friends</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00047">47</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
+<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00029">29</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
 
-<p>References <a class="el" href="AppTimer_8h_source.html#l00110">m_singleShot</a>.</p>
+<p>References <a class="el" href="AppTimer_8h_source.html#l00092">m_singleShot</a>.</p>
 
-<p>Referenced by <a class="el" href="Application_8cc_source.html#l00220">dqm4hep::online::Application::exec()</a>, <a class="el" href="EventCollector_8cc_source.html#l00086">dqm4hep::online::EventCollector::onInit()</a>, and <a class="el" href="ModuleApplication_8cc_source.html#l00120">dqm4hep::online::ModuleApplication::onInit()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                            {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#a652b22e111e2148245536e528bb483bc">m_singleShot</a> = single;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_a652b22e111e2148245536e528bb483bc"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#a652b22e111e2148245536e528bb483bc">dqm4hep::online::AppTimer::m_singleShot</a></div><div class="ttdeci">std::atomic_bool m_singleShot</div><div class="ttdoc">Whether the timer is single shot. </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00110">AppTimer.h:110</a></div></div>
+<p>Referenced by <a class="el" href="Application_8cc_source.html#l00203">dqm4hep::online::Application::exec()</a>, <a class="el" href="EventCollector_8cc_source.html#l00070">dqm4hep::online::EventCollector::onInit()</a>, and <a class="el" href="ModuleApplication_8cc_source.html#l00103">dqm4hep::online::ModuleApplication::onInit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                            {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#a652b22e111e2148245536e528bb483bc">m_singleShot</a> = single;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_a652b22e111e2148245536e528bb483bc"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#a652b22e111e2148245536e528bb483bc">dqm4hep::online::AppTimer::m_singleShot</a></div><div class="ttdeci">std::atomic_bool m_singleShot</div><div class="ttdoc">Whether the timer is single shot. </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00092">AppTimer.h:92</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -338,13 +338,13 @@ Friends</h2></td></tr>
 
 <p>Whether the timer is single shot. </p>
 
-<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00053">53</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
+<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00035">35</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
 
-<p>References <a class="el" href="AppTimer_8h_source.html#l00110">m_singleShot</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                    {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#a652b22e111e2148245536e528bb483bc">m_singleShot</a>.load();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_a652b22e111e2148245536e528bb483bc"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#a652b22e111e2148245536e528bb483bc">dqm4hep::online::AppTimer::m_singleShot</a></div><div class="ttdeci">std::atomic_bool m_singleShot</div><div class="ttdoc">Whether the timer is single shot. </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00110">AppTimer.h:110</a></div></div>
+<p>References <a class="el" href="AppTimer_8h_source.html#l00092">m_singleShot</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                    {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#a652b22e111e2148245536e528bb483bc">m_singleShot</a>.load();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_a652b22e111e2148245536e528bb483bc"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#a652b22e111e2148245536e528bb483bc">dqm4hep::online::AppTimer::m_singleShot</a></div><div class="ttdeci">std::atomic_bool m_singleShot</div><div class="ttdoc">Whether the timer is single shot. </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00092">AppTimer.h:92</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -363,16 +363,16 @@ Friends</h2></td></tr>
 
 <p>Start the timer. </p>
 
-<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00078">78</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
+<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00060">60</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
 
-<p>References <a class="el" href="AppTimer_8h_source.html#l00108">m_eventLoop</a>, and <a class="el" href="AppEventLoop_8cc_source.html#l00265">dqm4hep::online::AppEventLoop::startTimer()</a>.</p>
+<p>References <a class="el" href="AppTimer_8h_source.html#l00090">m_eventLoop</a>, and <a class="el" href="AppEventLoop_8cc_source.html#l00248">dqm4hep::online::AppEventLoop::startTimer()</a>.</p>
 
-<p>Referenced by <a class="el" href="Application_8cc_source.html#l00220">dqm4hep::online::Application::exec()</a>, <a class="el" href="ModuleApplication_8cc_source.html#l00153">dqm4hep::online::ModuleApplication::onEvent()</a>, <a class="el" href="EventCollector_8cc_source.html#l00086">dqm4hep::online::EventCollector::onInit()</a>, and <a class="el" href="ModuleApplication_8cc_source.html#l00255">dqm4hep::online::ModuleApplication::onStart()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                         {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#ab9bdb085d1ec6295e45435ec35430504">m_eventLoop</a>.<a class="code" href="classdqm4hep_1_1online_1_1AppEventLoop.html#ab6e3ad2dbff4d43dfaa43604ed0c65da">startTimer</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1AppEventLoop_html_ab6e3ad2dbff4d43dfaa43604ed0c65da"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppEventLoop.html#ab6e3ad2dbff4d43dfaa43604ed0c65da">dqm4hep::online::AppEventLoop::startTimer</a></div><div class="ttdeci">void startTimer(AppTimer *timer)</div><div class="ttdef"><b>Definition:</b> <a href="AppEventLoop_8cc_source.html#l00265">AppEventLoop.cc:265</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_ab9bdb085d1ec6295e45435ec35430504"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#ab9bdb085d1ec6295e45435ec35430504">dqm4hep::online::AppTimer::m_eventLoop</a></div><div class="ttdeci">AppEventLoop &amp; m_eventLoop</div><div class="ttdoc">The application event loop. </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00108">AppTimer.h:108</a></div></div>
+<p>Referenced by <a class="el" href="Application_8cc_source.html#l00203">dqm4hep::online::Application::exec()</a>, <a class="el" href="ModuleApplication_8cc_source.html#l00136">dqm4hep::online::ModuleApplication::onEvent()</a>, <a class="el" href="EventCollector_8cc_source.html#l00070">dqm4hep::online::EventCollector::onInit()</a>, and <a class="el" href="ModuleApplication_8cc_source.html#l00238">dqm4hep::online::ModuleApplication::onStart()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                         {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#ab9bdb085d1ec6295e45435ec35430504">m_eventLoop</a>.<a class="code" href="classdqm4hep_1_1online_1_1AppEventLoop.html#ab6e3ad2dbff4d43dfaa43604ed0c65da">startTimer</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1AppEventLoop_html_ab6e3ad2dbff4d43dfaa43604ed0c65da"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppEventLoop.html#ab6e3ad2dbff4d43dfaa43604ed0c65da">dqm4hep::online::AppEventLoop::startTimer</a></div><div class="ttdeci">void startTimer(AppTimer *timer)</div><div class="ttdef"><b>Definition:</b> <a href="AppEventLoop_8cc_source.html#l00248">AppEventLoop.cc:248</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_ab9bdb085d1ec6295e45435ec35430504"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#ab9bdb085d1ec6295e45435ec35430504">dqm4hep::online::AppTimer::m_eventLoop</a></div><div class="ttdeci">AppEventLoop &amp; m_eventLoop</div><div class="ttdoc">The application event loop. </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00090">AppTimer.h:90</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -391,16 +391,16 @@ Friends</h2></td></tr>
 
 <p>Stop the timer. </p>
 
-<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00084">84</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
+<p>Definition at line <a class="el" href="AppTimer_8cc_source.html#l00066">66</a> of file <a class="el" href="AppTimer_8cc_source.html">AppTimer.cc</a>.</p>
 
-<p>References <a class="el" href="AppTimer_8h_source.html#l00108">m_eventLoop</a>, and <a class="el" href="AppEventLoop_8cc_source.html#l00273">dqm4hep::online::AppEventLoop::stopTimer()</a>.</p>
+<p>References <a class="el" href="AppTimer_8h_source.html#l00090">m_eventLoop</a>, and <a class="el" href="AppEventLoop_8cc_source.html#l00256">dqm4hep::online::AppEventLoop::stopTimer()</a>.</p>
 
-<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00291">dqm4hep::online::ModuleApplication::onStop()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                        {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#ab9bdb085d1ec6295e45435ec35430504">m_eventLoop</a>.<a class="code" href="classdqm4hep_1_1online_1_1AppEventLoop.html#ab83766c280482d2491113ebb3ac52225">stopTimer</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1AppEventLoop_html_ab83766c280482d2491113ebb3ac52225"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppEventLoop.html#ab83766c280482d2491113ebb3ac52225">dqm4hep::online::AppEventLoop::stopTimer</a></div><div class="ttdeci">void stopTimer(AppTimer *timer)</div><div class="ttdef"><b>Definition:</b> <a href="AppEventLoop_8cc_source.html#l00273">AppEventLoop.cc:273</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_ab9bdb085d1ec6295e45435ec35430504"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#ab9bdb085d1ec6295e45435ec35430504">dqm4hep::online::AppTimer::m_eventLoop</a></div><div class="ttdeci">AppEventLoop &amp; m_eventLoop</div><div class="ttdoc">The application event loop. </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00108">AppTimer.h:108</a></div></div>
+<p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00274">dqm4hep::online::ModuleApplication::onStop()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                        {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <a class="code" href="classdqm4hep_1_1online_1_1AppTimer.html#ab9bdb085d1ec6295e45435ec35430504">m_eventLoop</a>.<a class="code" href="classdqm4hep_1_1online_1_1AppEventLoop.html#ab83766c280482d2491113ebb3ac52225">stopTimer</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1AppEventLoop_html_ab83766c280482d2491113ebb3ac52225"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppEventLoop.html#ab83766c280482d2491113ebb3ac52225">dqm4hep::online::AppEventLoop::stopTimer</a></div><div class="ttdeci">void stopTimer(AppTimer *timer)</div><div class="ttdef"><b>Definition:</b> <a href="AppEventLoop_8cc_source.html#l00256">AppEventLoop.cc:256</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1AppTimer_html_ab9bdb085d1ec6295e45435ec35430504"><div class="ttname"><a href="classdqm4hep_1_1online_1_1AppTimer.html#ab9bdb085d1ec6295e45435ec35430504">dqm4hep::online::AppTimer::m_eventLoop</a></div><div class="ttdeci">AppEventLoop &amp; m_eventLoop</div><div class="ttdoc">The application event loop. </div><div class="ttdef"><b>Definition:</b> <a href="AppTimer_8h_source.html#l00090">AppTimer.h:90</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -423,7 +423,7 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="AppTimer_8h_source.html#l00048">48</a> of file <a class="el" href="AppTimer_8h_source.html">AppTimer.h</a>.</p>
+<p>Definition at line <a class="el" href="AppTimer_8h_source.html#l00030">30</a> of file <a class="el" href="AppTimer_8h_source.html">AppTimer.h</a>.</p>
 
 </div>
 </div>
@@ -448,9 +448,9 @@ Friends</h2></td></tr>
 
 <p>Whether the timer is active. </p>
 
-<p>Definition at line <a class="el" href="AppTimer_8h_source.html#l00116">116</a> of file <a class="el" href="AppTimer_8h_source.html">AppTimer.h</a>.</p>
+<p>Definition at line <a class="el" href="AppTimer_8h_source.html#l00098">98</a> of file <a class="el" href="AppTimer_8h_source.html">AppTimer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="AppTimer_8cc_source.html#l00090">active()</a>, and <a class="el" href="AppEventLoop_8cc_source.html#l00265">dqm4hep::online::AppEventLoop::startTimer()</a>.</p>
+<p>Referenced by <a class="el" href="AppTimer_8cc_source.html#l00072">active()</a>, and <a class="el" href="AppEventLoop_8cc_source.html#l00248">dqm4hep::online::AppEventLoop::startTimer()</a>.</p>
 
 </div>
 </div>
@@ -474,9 +474,9 @@ Friends</h2></td></tr>
 
 <p>The application event loop. </p>
 
-<p>Definition at line <a class="el" href="AppTimer_8h_source.html#l00108">108</a> of file <a class="el" href="AppTimer_8h_source.html">AppTimer.h</a>.</p>
+<p>Definition at line <a class="el" href="AppTimer_8h_source.html#l00090">90</a> of file <a class="el" href="AppTimer_8h_source.html">AppTimer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="AppTimer_8cc_source.html#l00059">setInterval()</a>, <a class="el" href="AppTimer_8cc_source.html#l00078">start()</a>, and <a class="el" href="AppTimer_8cc_source.html#l00084">stop()</a>.</p>
+<p>Referenced by <a class="el" href="AppTimer_8cc_source.html#l00041">setInterval()</a>, <a class="el" href="AppTimer_8cc_source.html#l00060">start()</a>, and <a class="el" href="AppTimer_8cc_source.html#l00066">stop()</a>.</p>
 
 </div>
 </div>
@@ -500,9 +500,9 @@ Friends</h2></td></tr>
 
 <p>The timer interval (unit milliseconds) </p>
 
-<p>Definition at line <a class="el" href="AppTimer_8h_source.html#l00112">112</a> of file <a class="el" href="AppTimer_8h_source.html">AppTimer.h</a>.</p>
+<p>Definition at line <a class="el" href="AppTimer_8h_source.html#l00094">94</a> of file <a class="el" href="AppTimer_8h_source.html">AppTimer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="AppTimer_8cc_source.html#l00066">interval()</a>, and <a class="el" href="AppTimer_8cc_source.html#l00059">setInterval()</a>.</p>
+<p>Referenced by <a class="el" href="AppTimer_8cc_source.html#l00048">interval()</a>, and <a class="el" href="AppTimer_8cc_source.html#l00041">setInterval()</a>.</p>
 
 </div>
 </div>
@@ -526,9 +526,9 @@ Friends</h2></td></tr>
 
 <p>The timer timeout signal. </p>
 
-<p>Definition at line <a class="el" href="AppTimer_8h_source.html#l00114">114</a> of file <a class="el" href="AppTimer_8h_source.html">AppTimer.h</a>.</p>
+<p>Definition at line <a class="el" href="AppTimer_8h_source.html#l00096">96</a> of file <a class="el" href="AppTimer_8h_source.html">AppTimer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="AppTimer_8cc_source.html#l00072">onTimeout()</a>.</p>
+<p>Referenced by <a class="el" href="AppTimer_8cc_source.html#l00054">onTimeout()</a>.</p>
 
 </div>
 </div>
@@ -552,9 +552,9 @@ Friends</h2></td></tr>
 
 <p>Whether the timer is single shot. </p>
 
-<p>Definition at line <a class="el" href="AppTimer_8h_source.html#l00110">110</a> of file <a class="el" href="AppTimer_8h_source.html">AppTimer.h</a>.</p>
+<p>Definition at line <a class="el" href="AppTimer_8h_source.html#l00092">92</a> of file <a class="el" href="AppTimer_8h_source.html">AppTimer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="AppTimer_8cc_source.html#l00047">setSingleShot()</a>, and <a class="el" href="AppTimer_8cc_source.html#l00053">singleShot()</a>.</p>
+<p>Referenced by <a class="el" href="AppTimer_8cc_source.html#l00029">setSingleShot()</a>, and <a class="el" href="AppTimer_8cc_source.html#l00035">singleShot()</a>.</p>
 
 </div>
 </div>
@@ -578,9 +578,9 @@ Friends</h2></td></tr>
 
 <p>The time point when the timer was started. </p>
 
-<p>Definition at line <a class="el" href="AppTimer_8h_source.html#l00118">118</a> of file <a class="el" href="AppTimer_8h_source.html">AppTimer.h</a>.</p>
+<p>Definition at line <a class="el" href="AppTimer_8h_source.html#l00100">100</a> of file <a class="el" href="AppTimer_8h_source.html">AppTimer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="AppEventLoop_8cc_source.html#l00265">dqm4hep::online::AppEventLoop::startTimer()</a>.</p>
+<p>Referenced by <a class="el" href="AppEventLoop_8cc_source.html#l00248">dqm4hep::online::AppEventLoop::startTimer()</a>.</p>
 
 </div>
 </div>
@@ -591,7 +591,7 @@ Friends</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 10:13:09 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 12:37:06 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

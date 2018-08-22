@@ -70,7 +70,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="OnlineRoutes_8h_source.html#l00079">79</a> of file <a class="el" href="OnlineRoutes_8h_source.html">OnlineRoutes.h</a>.</p>
+<p>Definition at line <a class="el" href="OnlineRoutes_8h_source.html#l00061">61</a> of file <a class="el" href="OnlineRoutes_8h_source.html">OnlineRoutes.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a218ca8c4cb4764f78ae04984049c023d"></a>
 <div class="memitem">
@@ -113,12 +113,12 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="OnlineRoutes_8cc_source.html#l00054">54</a> of file <a class="el" href="OnlineRoutes_8cc_source.html">OnlineRoutes.cc</a>.</p>
+<p>Definition at line <a class="el" href="OnlineRoutes_8cc_source.html#l00036">36</a> of file <a class="el" href="OnlineRoutes_8cc_source.html">OnlineRoutes.cc</a>.</p>
 
-<p>Referenced by <a class="el" href="OnlineRoutes_8cc_source.html#l00085">dqm4hep::online::OnlineRoutes::EventCollector::collectEvent()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00097">dqm4hep::online::OnlineRoutes::EventCollector::eventRequest()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00091">dqm4hep::online::OnlineRoutes::EventCollector::eventUpdate()</a>, <a class="el" href="Application_8cc_source.html#l00163">dqm4hep::online::Application::init()</a>, <a class="el" href="EventSource_8cc_source.html#l00203">dqm4hep::online::EventSource::registerMe()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00073">dqm4hep::online::OnlineRoutes::EventCollector::registerSource()</a>, <a class="el" href="EventSource_8cc_source.html#l00128">dqm4hep::online::EventSource::sendEvent()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00141">dqm4hep::online::OnlineRoutes::ModuleApplication::subscribe()</a>, and <a class="el" href="OnlineRoutes_8cc_source.html#l00079">dqm4hep::online::OnlineRoutes::EventCollector::unregisterSource()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                                                              {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;/dqm4hep/app/&quot;</span> + type + <span class="stringliteral">&quot;/&quot;</span> + name;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<p>Referenced by <a class="el" href="OnlineRoutes_8cc_source.html#l00067">dqm4hep::online::OnlineRoutes::EventCollector::collectEvent()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00079">dqm4hep::online::OnlineRoutes::EventCollector::eventRequest()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00073">dqm4hep::online::OnlineRoutes::EventCollector::eventUpdate()</a>, <a class="el" href="Application_8cc_source.html#l00146">dqm4hep::online::Application::init()</a>, <a class="el" href="EventSource_8cc_source.html#l00186">dqm4hep::online::EventSource::registerMe()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00055">dqm4hep::online::OnlineRoutes::EventCollector::registerSource()</a>, <a class="el" href="EventSource_8cc_source.html#l00111">dqm4hep::online::EventSource::sendEvent()</a>, <a class="el" href="OnlineRoutes_8cc_source.html#l00123">dqm4hep::online::OnlineRoutes::ModuleApplication::subscribe()</a>, and <a class="el" href="OnlineRoutes_8cc_source.html#l00061">dqm4hep::online::OnlineRoutes::EventCollector::unregisterSource()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                                                              {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;/dqm4hep/app/&quot;</span> + type + <span class="stringliteral">&quot;/&quot;</span> + name;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -163,13 +163,13 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="OnlineRoutes_8cc_source.html#l00060">60</a> of file <a class="el" href="OnlineRoutes_8cc_source.html">OnlineRoutes.cc</a>.</p>
+<p>Definition at line <a class="el" href="OnlineRoutes_8cc_source.html#l00042">42</a> of file <a class="el" href="OnlineRoutes_8cc_source.html">OnlineRoutes.cc</a>.</p>
 
-<p>Referenced by <a class="el" href="Application_8cc_source.html#l00163">dqm4hep::online::Application::init()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                                                                         {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application.html#a218ca8c4cb4764f78ae04984049c023d">serverName</a>(type, name) + <span class="stringliteral">&quot;/state&quot;</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application_html_a218ca8c4cb4764f78ae04984049c023d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application.html#a218ca8c4cb4764f78ae04984049c023d">dqm4hep::online::OnlineRoutes::Application::serverName</a></div><div class="ttdeci">static std::string serverName(const std::string &amp;type, const std::string &amp;name)</div><div class="ttdoc">Get the server name given an app type and name. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00054">OnlineRoutes.cc:54</a></div></div>
+<p>Referenced by <a class="el" href="Application_8cc_source.html#l00146">dqm4hep::online::Application::init()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                                                         {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application.html#a218ca8c4cb4764f78ae04984049c023d">serverName</a>(type, name) + <span class="stringliteral">&quot;/state&quot;</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application_html_a218ca8c4cb4764f78ae04984049c023d"><div class="ttname"><a href="classdqm4hep_1_1online_1_1OnlineRoutes_1_1Application.html#a218ca8c4cb4764f78ae04984049c023d">dqm4hep::online::OnlineRoutes::Application::serverName</a></div><div class="ttdeci">static std::string serverName(const std::string &amp;type, const std::string &amp;name)</div><div class="ttdoc">Get the server name given an app type and name. </div><div class="ttdef"><b>Definition:</b> <a href="OnlineRoutes_8cc_source.html#l00036">OnlineRoutes.cc:36</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -180,7 +180,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 10:13:10 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 12:37:07 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

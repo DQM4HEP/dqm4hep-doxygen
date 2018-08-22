@@ -86,7 +86,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="EventStreamer_8h_source.html#l00043">43</a> of file <a class="el" href="EventStreamer_8h_source.html">EventStreamer.h</a>.</p>
+<p>Definition at line <a class="el" href="EventStreamer_8h_source.html#l00026">26</a> of file <a class="el" href="EventStreamer_8h_source.html">EventStreamer.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1c5d3adc2cd08330682b5eecc13fef40"></a>
 <div class="memitem">
@@ -173,46 +173,46 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="EventStreamer_8cc_source.html#l00070">70</a> of file <a class="el" href="EventStreamer_8cc_source.html">EventStreamer.cc</a>.</p>
+<p>Definition at line <a class="el" href="EventStreamer_8cc_source.html#l00053">53</a> of file <a class="el" href="EventStreamer_8cc_source.html">EventStreamer.cc</a>.</p>
 
-<p>References <a class="el" href="PluginManager_8h_source.html#l00136">dqm4hep::core::PluginManager::create()</a>, <a class="el" href="Logging_8h_source.html#l00045">dqm_error</a>, <a class="el" href="classdqm4hep_1_1core_1_1Singleton.html#a1ecf1990f4849ac5b63ac8ef3ff6522d">dqm4hep::core::Singleton&lt; PluginManager &gt;::instance()</a>, <a class="el" href="EventStreamer_8h_source.html#l00077">m_streamer</a>, <a class="el" href="EventStreamer_8h_source.html#l00076">m_streamerName</a>, and <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>.</p>
+<p>References <a class="el" href="PluginManager_8h_source.html#l00120">dqm4hep::core::PluginManager::create()</a>, <a class="el" href="Logging_8h_source.html#l00028">dqm_error</a>, <a class="el" href="classdqm4hep_1_1core_1_1Singleton.html#a1ecf1990f4849ac5b63ac8ef3ff6522d">dqm4hep::core::Singleton&lt; PluginManager &gt;::instance()</a>, <a class="el" href="EventStreamer_8h_source.html#l00060">m_streamer</a>, <a class="el" href="EventStreamer_8h_source.html#l00059">m_streamerName</a>, and <a class="el" href="StatusCodes_8h_source.html#l00022">RETURN_RESULT_IF</a>.</p>
 
-<p>Referenced by <a class="el" href="EventCollectorClient_8cc_source.html#l00143">dqm4hep::online::EventCollectorClient::readEvent()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                                        {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="comment">// consistency check</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">if</span> (not buffer.IsReading()) {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_ALLOWED;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="comment">// read streamer name</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      std::string streamerName;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      buffer.ReadStdString(&amp;streamerName);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="comment">// setup event streamer</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> or <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a> != streamerName) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> = <a class="code" href="classdqm4hep_1_1core_1_1Singleton.html#a1ecf1990f4849ac5b63ac8ef3ff6522d">PluginManager::instance</a>()-&gt;<a class="code" href="classdqm4hep_1_1core_1_1PluginManager.html#aa898d83f16b1a263e7bd604673044d3c">create</a>&lt;EventStreamerPlugin&gt;(streamerName);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a>) {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;          <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;EventStreamer::readEvent: streamer &#39;{0}&#39; not registered in plugin manager !&quot;</span>, streamerName );</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;          <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a> = streamerName;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="comment">// read user event data</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keyword">event</span> = <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a>-&gt;createEvent();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keyword">event</span>-&gt;setStreamerName(<a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a>);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      Int_t eventSize = buffer.Length();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="comment">// write base event data</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keyword">event</span>-&gt;readBase(buffer);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <a class="code" href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a>-&gt;read(event, buffer));</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      eventSize = buffer.Length() - eventSize;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keyword">event</span>-&gt;setEventSize(eventSize);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="ttc" id="StatusCodes_8h_html_a25aeabada9910a1ce63f8eb0de4d8dda"><div class="ttname"><a href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a></div><div class="ttdeci">#define RETURN_RESULT_IF(StatusCode1, Operator, Command)</div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00039">StatusCodes.h:39</a></div></div>
+<p>Referenced by <a class="el" href="EventCollectorClient_8cc_source.html#l00127">dqm4hep::online::EventCollectorClient::readEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                                        {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="comment">// consistency check</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">if</span> (not buffer.IsReading()) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_ALLOWED;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="comment">// read streamer name</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      std::string streamerName;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      buffer.ReadStdString(&amp;streamerName);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="comment">// setup event streamer</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> or <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a> != streamerName) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> = <a class="code" href="classdqm4hep_1_1core_1_1Singleton.html#a1ecf1990f4849ac5b63ac8ef3ff6522d">PluginManager::instance</a>()-&gt;<a class="code" href="classdqm4hep_1_1core_1_1PluginManager.html#aa898d83f16b1a263e7bd604673044d3c">create</a>&lt;EventStreamerPlugin&gt;(streamerName);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a>) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;          <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;EventStreamer::readEvent: streamer &#39;{0}&#39; not registered in plugin manager !&quot;</span>, streamerName );</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;          <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a> = streamerName;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="comment">// read user event data</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keyword">event</span> = <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a>-&gt;createEvent();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keyword">event</span>-&gt;setStreamerName(<a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      Int_t eventSize = buffer.Length();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="comment">// write base event data</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keyword">event</span>-&gt;readBase(buffer);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="code" href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a>-&gt;read(event, buffer));</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      eventSize = buffer.Length() - eventSize;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keyword">event</span>-&gt;setEventSize(eventSize);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="ttc" id="StatusCodes_8h_html_a25aeabada9910a1ce63f8eb0de4d8dda"><div class="ttname"><a href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a></div><div class="ttdeci">#define RETURN_RESULT_IF(StatusCode1, Operator, Command)</div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00022">StatusCodes.h:22</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Singleton_html_a1ecf1990f4849ac5b63ac8ef3ff6522d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Singleton.html#a1ecf1990f4849ac5b63ac8ef3ff6522d">dqm4hep::core::Singleton&lt; PluginManager &gt;::instance</a></div><div class="ttdeci">static PluginManager * instance()</div><div class="ttdoc">Return a unique instance of the class. </div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventStreamer_html_add34cd8a036703310045ef7e0104f464"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">dqm4hep::core::EventStreamer::m_streamer</a></div><div class="ttdeci">EventStreamerPluginPtr m_streamer</div><div class="ttdoc">The current event streamer in use. </div><div class="ttdef"><b>Definition:</b> <a href="EventStreamer_8h_source.html#l00077">EventStreamer.h:77</a></div></div>
-<div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00045">Logging.h:45</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1PluginManager_html_aa898d83f16b1a263e7bd604673044d3c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PluginManager.html#aa898d83f16b1a263e7bd604673044d3c">dqm4hep::core::PluginManager::create</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; create(const std::string &amp;pluginName) const </div><div class="ttdoc">Get the plug-in clone. </div><div class="ttdef"><b>Definition:</b> <a href="PluginManager_8h_source.html#l00136">PluginManager.h:136</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventStreamer_html_ab1e22d96f77fbf01e2c4a45a45a378bd"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">dqm4hep::core::EventStreamer::m_streamerName</a></div><div class="ttdeci">std::string m_streamerName</div><div class="ttdoc">The current event streamer name in use. </div><div class="ttdef"><b>Definition:</b> <a href="EventStreamer_8h_source.html#l00076">EventStreamer.h:76</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventStreamer_html_add34cd8a036703310045ef7e0104f464"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">dqm4hep::core::EventStreamer::m_streamer</a></div><div class="ttdeci">EventStreamerPluginPtr m_streamer</div><div class="ttdoc">The current event streamer in use. </div><div class="ttdef"><b>Definition:</b> <a href="EventStreamer_8h_source.html#l00060">EventStreamer.h:60</a></div></div>
+<div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00028">Logging.h:28</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PluginManager_html_aa898d83f16b1a263e7bd604673044d3c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PluginManager.html#aa898d83f16b1a263e7bd604673044d3c">dqm4hep::core::PluginManager::create</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; create(const std::string &amp;pluginName) const </div><div class="ttdoc">Get the plug-in clone. </div><div class="ttdef"><b>Definition:</b> <a href="PluginManager_8h_source.html#l00120">PluginManager.h:120</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventStreamer_html_ab1e22d96f77fbf01e2c4a45a45a378bd"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">dqm4hep::core::EventStreamer::m_streamerName</a></div><div class="ttdeci">std::string m_streamerName</div><div class="ttdoc">The current event streamer name in use. </div><div class="ttdef"><b>Definition:</b> <a href="EventStreamer_8h_source.html#l00059">EventStreamer.h:59</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -250,44 +250,44 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="EventStreamer_8cc_source.html#l00040">40</a> of file <a class="el" href="EventStreamer_8cc_source.html">EventStreamer.cc</a>.</p>
+<p>Definition at line <a class="el" href="EventStreamer_8cc_source.html#l00023">23</a> of file <a class="el" href="EventStreamer_8cc_source.html">EventStreamer.cc</a>.</p>
 
-<p>References <a class="el" href="PluginManager_8h_source.html#l00136">dqm4hep::core::PluginManager::create()</a>, <a class="el" href="Logging_8h_source.html#l00045">dqm_error</a>, <a class="el" href="classdqm4hep_1_1core_1_1Singleton.html#a1ecf1990f4849ac5b63ac8ef3ff6522d">dqm4hep::core::Singleton&lt; PluginManager &gt;::instance()</a>, <a class="el" href="EventStreamer_8h_source.html#l00077">m_streamer</a>, <a class="el" href="EventStreamer_8h_source.html#l00076">m_streamerName</a>, and <a class="el" href="StatusCodes_8h_source.html#l00039">RETURN_RESULT_IF</a>.</p>
+<p>References <a class="el" href="PluginManager_8h_source.html#l00120">dqm4hep::core::PluginManager::create()</a>, <a class="el" href="Logging_8h_source.html#l00028">dqm_error</a>, <a class="el" href="classdqm4hep_1_1core_1_1Singleton.html#a1ecf1990f4849ac5b63ac8ef3ff6522d">dqm4hep::core::Singleton&lt; PluginManager &gt;::instance()</a>, <a class="el" href="EventStreamer_8h_source.html#l00060">m_streamer</a>, <a class="el" href="EventStreamer_8h_source.html#l00059">m_streamerName</a>, and <a class="el" href="StatusCodes_8h_source.html#l00022">RETURN_RESULT_IF</a>.</p>
 
-<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00128">dqm4hep::online::EventSource::sendEvent()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                                                        {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="comment">// consistency check</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == event) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_INVALID_PARAMETER;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordflow">if</span>(not buffer.IsWriting()) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_ALLOWED;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="comment">// setup event streamer</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      std::string streamerName = <span class="keyword">event</span>-&gt;getStreamerName();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> or <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a> != streamerName) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> = <a class="code" href="classdqm4hep_1_1core_1_1Singleton.html#a1ecf1990f4849ac5b63ac8ef3ff6522d">PluginManager::instance</a>()-&gt;<a class="code" href="classdqm4hep_1_1core_1_1PluginManager.html#aa898d83f16b1a263e7bd604673044d3c">create</a>&lt;EventStreamerPlugin&gt;(streamerName);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a>) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;EventStreamer::writeEvent: streamer &#39;{0}&#39; not registered in plugin manager !&quot;</span>, streamerName );</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;          <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a> = streamerName;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="comment">// write streamer name</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      buffer.WriteStdString(&amp;<a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="comment">// write base event data</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keyword">event</span>-&gt;writeBase(buffer);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="comment">// write user event data</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <a class="code" href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a>-&gt;write(event, buffer));</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
-<div class="ttc" id="StatusCodes_8h_html_a25aeabada9910a1ce63f8eb0de4d8dda"><div class="ttname"><a href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a></div><div class="ttdeci">#define RETURN_RESULT_IF(StatusCode1, Operator, Command)</div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00039">StatusCodes.h:39</a></div></div>
+<p>Referenced by <a class="el" href="EventSource_8cc_source.html#l00111">dqm4hep::online::EventSource::sendEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                                                        {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <span class="comment">// consistency check</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> == event) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_INVALID_PARAMETER;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <span class="keywordflow">if</span>(not buffer.IsWriting()) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> STATUS_CODE_NOT_ALLOWED;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="comment">// setup event streamer</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      std::string streamerName = <span class="keyword">event</span>-&gt;getStreamerName();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> or <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a> != streamerName) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a> = <a class="code" href="classdqm4hep_1_1core_1_1Singleton.html#a1ecf1990f4849ac5b63ac8ef3ff6522d">PluginManager::instance</a>()-&gt;<a class="code" href="classdqm4hep_1_1core_1_1PluginManager.html#aa898d83f16b1a263e7bd604673044d3c">create</a>&lt;EventStreamerPlugin&gt;(streamerName);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">if</span>(not <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a>) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;          <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>( <span class="stringliteral">&quot;EventStreamer::writeEvent: streamer &#39;{0}&#39; not registered in plugin manager !&quot;</span>, streamerName );</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;          <span class="keywordflow">return</span> STATUS_CODE_FAILURE;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a> = streamerName;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="comment">// write streamer name</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      buffer.WriteStdString(&amp;<a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">m_streamerName</a>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <span class="comment">// write base event data</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keyword">event</span>-&gt;writeBase(buffer);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="comment">// write user event data</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <a class="code" href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a>(STATUS_CODE_SUCCESS, !=, <a class="code" href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">m_streamer</a>-&gt;write(event, buffer));</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordflow">return</span> STATUS_CODE_SUCCESS;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="ttc" id="StatusCodes_8h_html_a25aeabada9910a1ce63f8eb0de4d8dda"><div class="ttname"><a href="StatusCodes_8h.html#a25aeabada9910a1ce63f8eb0de4d8dda">RETURN_RESULT_IF</a></div><div class="ttdeci">#define RETURN_RESULT_IF(StatusCode1, Operator, Command)</div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00022">StatusCodes.h:22</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Singleton_html_a1ecf1990f4849ac5b63ac8ef3ff6522d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Singleton.html#a1ecf1990f4849ac5b63ac8ef3ff6522d">dqm4hep::core::Singleton&lt; PluginManager &gt;::instance</a></div><div class="ttdeci">static PluginManager * instance()</div><div class="ttdoc">Return a unique instance of the class. </div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventStreamer_html_add34cd8a036703310045ef7e0104f464"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">dqm4hep::core::EventStreamer::m_streamer</a></div><div class="ttdeci">EventStreamerPluginPtr m_streamer</div><div class="ttdoc">The current event streamer in use. </div><div class="ttdef"><b>Definition:</b> <a href="EventStreamer_8h_source.html#l00077">EventStreamer.h:77</a></div></div>
-<div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00045">Logging.h:45</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1PluginManager_html_aa898d83f16b1a263e7bd604673044d3c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PluginManager.html#aa898d83f16b1a263e7bd604673044d3c">dqm4hep::core::PluginManager::create</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; create(const std::string &amp;pluginName) const </div><div class="ttdoc">Get the plug-in clone. </div><div class="ttdef"><b>Definition:</b> <a href="PluginManager_8h_source.html#l00136">PluginManager.h:136</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventStreamer_html_ab1e22d96f77fbf01e2c4a45a45a378bd"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">dqm4hep::core::EventStreamer::m_streamerName</a></div><div class="ttdeci">std::string m_streamerName</div><div class="ttdoc">The current event streamer name in use. </div><div class="ttdef"><b>Definition:</b> <a href="EventStreamer_8h_source.html#l00076">EventStreamer.h:76</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventStreamer_html_add34cd8a036703310045ef7e0104f464"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventStreamer.html#add34cd8a036703310045ef7e0104f464">dqm4hep::core::EventStreamer::m_streamer</a></div><div class="ttdeci">EventStreamerPluginPtr m_streamer</div><div class="ttdoc">The current event streamer in use. </div><div class="ttdef"><b>Definition:</b> <a href="EventStreamer_8h_source.html#l00060">EventStreamer.h:60</a></div></div>
+<div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00028">Logging.h:28</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PluginManager_html_aa898d83f16b1a263e7bd604673044d3c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PluginManager.html#aa898d83f16b1a263e7bd604673044d3c">dqm4hep::core::PluginManager::create</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; create(const std::string &amp;pluginName) const </div><div class="ttdoc">Get the plug-in clone. </div><div class="ttdef"><b>Definition:</b> <a href="PluginManager_8h_source.html#l00120">PluginManager.h:120</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventStreamer_html_ab1e22d96f77fbf01e2c4a45a45a378bd"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventStreamer.html#ab1e22d96f77fbf01e2c4a45a45a378bd">dqm4hep::core::EventStreamer::m_streamerName</a></div><div class="ttdeci">std::string m_streamerName</div><div class="ttdoc">The current event streamer name in use. </div><div class="ttdef"><b>Definition:</b> <a href="EventStreamer_8h_source.html#l00059">EventStreamer.h:59</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -312,9 +312,9 @@ Private Attributes</h2></td></tr>
 
 <p>The current event streamer in use. </p>
 
-<p>Definition at line <a class="el" href="EventStreamer_8h_source.html#l00077">77</a> of file <a class="el" href="EventStreamer_8h_source.html">EventStreamer.h</a>.</p>
+<p>Definition at line <a class="el" href="EventStreamer_8h_source.html#l00060">60</a> of file <a class="el" href="EventStreamer_8h_source.html">EventStreamer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="EventStreamer_8cc_source.html#l00070">readEvent()</a>, and <a class="el" href="EventStreamer_8cc_source.html#l00040">writeEvent()</a>.</p>
+<p>Referenced by <a class="el" href="EventStreamer_8cc_source.html#l00053">readEvent()</a>, and <a class="el" href="EventStreamer_8cc_source.html#l00023">writeEvent()</a>.</p>
 
 </div>
 </div>
@@ -338,9 +338,9 @@ Private Attributes</h2></td></tr>
 
 <p>The current event streamer name in use. </p>
 
-<p>Definition at line <a class="el" href="EventStreamer_8h_source.html#l00076">76</a> of file <a class="el" href="EventStreamer_8h_source.html">EventStreamer.h</a>.</p>
+<p>Definition at line <a class="el" href="EventStreamer_8h_source.html#l00059">59</a> of file <a class="el" href="EventStreamer_8h_source.html">EventStreamer.h</a>.</p>
 
-<p>Referenced by <a class="el" href="EventStreamer_8cc_source.html#l00070">readEvent()</a>, and <a class="el" href="EventStreamer_8cc_source.html#l00040">writeEvent()</a>.</p>
+<p>Referenced by <a class="el" href="EventStreamer_8cc_source.html#l00053">readEvent()</a>, and <a class="el" href="EventStreamer_8cc_source.html#l00023">writeEvent()</a>.</p>
 
 </div>
 </div>
@@ -351,7 +351,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 10:13:08 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 12:37:05 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

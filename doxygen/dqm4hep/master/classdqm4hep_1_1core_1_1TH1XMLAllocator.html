@@ -87,7 +87,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classdqm4hep_1_1core_1_1TH1XMLAllocator.html" title="TH1XMLAllocator class for all TH1 types. ">TH1XMLAllocator</a> class for all TH1 types. </p>
 
-<p>Definition at line <a class="el" href="AllocatorHelper_8h_source.html#l00075">75</a> of file <a class="el" href="AllocatorHelper_8h_source.html">AllocatorHelper.h</a>.</p>
+<p>Definition at line <a class="el" href="AllocatorHelper_8h_source.html#l00058">58</a> of file <a class="el" href="AllocatorHelper_8h_source.html">AllocatorHelper.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a1b68945b3f48591f69bed69ca29551e1"></a>
 <div class="memitem">
@@ -121,37 +121,37 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classdqm4hep_1_1core_1_1TObjectXMLAllocator.html#a6da9cb3ff298641c49e5e50a9eaa4400">dqm4hep::core::TObjectXMLAllocator</a>.</p>
 
-<p>Definition at line <a class="el" href="AllocatorHelper_8cc_source.html#l00071">71</a> of file <a class="el" href="AllocatorHelper_8cc_source.html">AllocatorHelper.cc</a>.</p>
+<p>Definition at line <a class="el" href="AllocatorHelper_8cc_source.html#l00054">54</a> of file <a class="el" href="AllocatorHelper_8cc_source.html">AllocatorHelper.cc</a>.</p>
 
-<p>References <a class="el" href="AllocatorHelper_8cc_source.html#l00038">READ_ATTRIBUTE</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                                {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == element) {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <a class="code" href="AllocatorHelper_8cc.html#a6b397e624ee32cb8082dabcd4b31002a">READ_ATTRIBUTE</a>( std::string, type, <span class="keyword">true</span> );</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <a class="code" href="AllocatorHelper_8cc.html#a6b397e624ee32cb8082dabcd4b31002a">READ_ATTRIBUTE</a>( std::string, name, <span class="keyword">true</span> );</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="code" href="AllocatorHelper_8cc.html#a6b397e624ee32cb8082dabcd4b31002a">READ_ATTRIBUTE</a>( std::string, title, <span class="keyword">false</span> );</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <a class="code" href="AllocatorHelper_8cc.html#a6b397e624ee32cb8082dabcd4b31002a">READ_ATTRIBUTE</a>( <span class="keywordtype">int</span>, nBinsX, <span class="keyword">true</span> );</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <a class="code" href="AllocatorHelper_8cc.html#a6b397e624ee32cb8082dabcd4b31002a">READ_ATTRIBUTE</a>( <span class="keywordtype">float</span>, minX, <span class="keyword">true</span> );</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <a class="code" href="AllocatorHelper_8cc.html#a6b397e624ee32cb8082dabcd4b31002a">READ_ATTRIBUTE</a>( <span class="keywordtype">float</span>, maxX, <span class="keyword">true</span> );</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;TH1D&quot;</span>) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> TH1D(name.c_str(), title.c_str(), nBinsX, minX, maxX);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;TH1F&quot;</span>) {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> TH1F(name.c_str(), title.c_str(), nBinsX, minX, maxX);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;TH1I&quot;</span>) {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> TH1I(name.c_str(), title.c_str(), nBinsX, minX, maxX);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;TH1C&quot;</span>) {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> TH1C(name.c_str(), title.c_str(), nBinsX, minX, maxX);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;TH1S&quot;</span>) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> TH1S(name.c_str(), title.c_str(), nBinsX, minX, maxX);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
-<div class="ttc" id="AllocatorHelper_8cc_html_a6b397e624ee32cb8082dabcd4b31002a"><div class="ttname"><a href="AllocatorHelper_8cc.html#a6b397e624ee32cb8082dabcd4b31002a">READ_ATTRIBUTE</a></div><div class="ttdeci">#define READ_ATTRIBUTE(type, name, required)</div><div class="ttdef"><b>Definition:</b> <a href="AllocatorHelper_8cc_source.html#l00038">AllocatorHelper.cc:38</a></div></div>
+<p>References <a class="el" href="AllocatorHelper_8cc_source.html#l00021">READ_ATTRIBUTE</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                                {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="keywordflow">if</span>(<span class="keyword">nullptr</span> == element) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <a class="code" href="AllocatorHelper_8cc.html#a6b397e624ee32cb8082dabcd4b31002a">READ_ATTRIBUTE</a>( std::string, type, <span class="keyword">true</span> );</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <a class="code" href="AllocatorHelper_8cc.html#a6b397e624ee32cb8082dabcd4b31002a">READ_ATTRIBUTE</a>( std::string, name, <span class="keyword">true</span> );</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <a class="code" href="AllocatorHelper_8cc.html#a6b397e624ee32cb8082dabcd4b31002a">READ_ATTRIBUTE</a>( std::string, title, <span class="keyword">false</span> );</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <a class="code" href="AllocatorHelper_8cc.html#a6b397e624ee32cb8082dabcd4b31002a">READ_ATTRIBUTE</a>( <span class="keywordtype">int</span>, nBinsX, <span class="keyword">true</span> );</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <a class="code" href="AllocatorHelper_8cc.html#a6b397e624ee32cb8082dabcd4b31002a">READ_ATTRIBUTE</a>( <span class="keywordtype">float</span>, minX, <span class="keyword">true</span> );</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <a class="code" href="AllocatorHelper_8cc.html#a6b397e624ee32cb8082dabcd4b31002a">READ_ATTRIBUTE</a>( <span class="keywordtype">float</span>, maxX, <span class="keyword">true</span> );</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;TH1D&quot;</span>) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> TH1D(name.c_str(), title.c_str(), nBinsX, minX, maxX);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;TH1F&quot;</span>) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> TH1F(name.c_str(), title.c_str(), nBinsX, minX, maxX);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;TH1I&quot;</span>) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> TH1I(name.c_str(), title.c_str(), nBinsX, minX, maxX);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;TH1C&quot;</span>) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> TH1C(name.c_str(), title.c_str(), nBinsX, minX, maxX);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;TH1S&quot;</span>) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> TH1S(name.c_str(), title.c_str(), nBinsX, minX, maxX);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
+<div class="ttc" id="AllocatorHelper_8cc_html_a6b397e624ee32cb8082dabcd4b31002a"><div class="ttname"><a href="AllocatorHelper_8cc.html#a6b397e624ee32cb8082dabcd4b31002a">READ_ATTRIBUTE</a></div><div class="ttdeci">#define READ_ATTRIBUTE(type, name, required)</div><div class="ttdef"><b>Definition:</b> <a href="AllocatorHelper_8cc_source.html#l00021">AllocatorHelper.cc:21</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -162,7 +162,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 10:13:08 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 12:37:05 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

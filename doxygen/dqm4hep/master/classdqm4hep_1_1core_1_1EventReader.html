@@ -117,7 +117,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"> <span class="keywordflow">while</span>(STATUS_CODE_SUCCESS == reader-&gt;readNextEvent());</div>
 <div class="line"> </div>
 </div><!-- fragment --> 
-<p>Definition at line <a class="el" href="EventReader_8h_source.html#l00063">63</a> of file <a class="el" href="EventReader_8h_source.html">EventReader.h</a>.</p>
+<p>Definition at line <a class="el" href="EventReader_8h_source.html#l00045">45</a> of file <a class="el" href="EventReader_8h_source.html">EventReader.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4fca45ef383c1d2ffc18e1ff096bf002"></a>
 <div class="memitem">
@@ -142,10 +142,10 @@ Protected Attributes</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p>Definition at line <a class="el" href="EventReader_8cc_source.html#l00035">35</a> of file <a class="el" href="EventReader_8cc_source.html">EventReader.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                              {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="comment">/* nop */</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="EventReader_8cc_source.html#l00018">18</a> of file <a class="el" href="EventReader_8cc_source.html">EventReader.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                              {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <span class="comment">/* nop */</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -192,15 +192,15 @@ Protected Attributes</h2></td></tr>
 
 <p>Get the signal on event read. </p>
 
-<p>Definition at line <a class="el" href="EventReader_8cc_source.html#l00041">41</a> of file <a class="el" href="EventReader_8cc_source.html">EventReader.cc</a>.</p>
+<p>Definition at line <a class="el" href="EventReader_8cc_source.html#l00024">24</a> of file <a class="el" href="EventReader_8cc_source.html">EventReader.cc</a>.</p>
 
-<p>References <a class="el" href="EventReader_8h_source.html#l00110">m_onEventRead</a>.</p>
+<p>References <a class="el" href="EventReader_8h_source.html#l00092">m_onEventRead</a>.</p>
 
-<p>Referenced by <a class="el" href="GenericEventXMLReader_8cc_source.html#l00142">dqm4hep::core::GenericEventXMLReader::readNextEvent()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                                       {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1EventReader.html#a985012031396874348c04fa9aef31d42">m_onEventRead</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1EventReader_html_a985012031396874348c04fa9aef31d42"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventReader.html#a985012031396874348c04fa9aef31d42">dqm4hep::core::EventReader::m_onEventRead</a></div><div class="ttdeci">core::Signal&lt; core::EventPtr &gt; m_onEventRead</div><div class="ttdoc">The signal on event read. </div><div class="ttdef"><b>Definition:</b> <a href="EventReader_8h_source.html#l00110">EventReader.h:110</a></div></div>
+<p>Referenced by <a class="el" href="GenericEventXMLReader_8cc_source.html#l00125">dqm4hep::core::GenericEventXMLReader::readNextEvent()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                                       {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1EventReader.html#a985012031396874348c04fa9aef31d42">m_onEventRead</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1EventReader_html_a985012031396874348c04fa9aef31d42"><div class="ttname"><a href="classdqm4hep_1_1core_1_1EventReader.html#a985012031396874348c04fa9aef31d42">dqm4hep::core::EventReader::m_onEventRead</a></div><div class="ttdeci">core::Signal&lt; core::EventPtr &gt; m_onEventRead</div><div class="ttdoc">The signal on event read. </div><div class="ttdef"><b>Definition:</b> <a href="EventReader_8h_source.html#l00092">EventReader.h:92</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -355,9 +355,9 @@ Protected Attributes</h2></td></tr>
 
 <p>The signal on event read. </p>
 
-<p>Definition at line <a class="el" href="EventReader_8h_source.html#l00110">110</a> of file <a class="el" href="EventReader_8h_source.html">EventReader.h</a>.</p>
+<p>Definition at line <a class="el" href="EventReader_8h_source.html#l00092">92</a> of file <a class="el" href="EventReader_8h_source.html">EventReader.h</a>.</p>
 
-<p>Referenced by <a class="el" href="EventReader_8cc_source.html#l00041">onEventRead()</a>.</p>
+<p>Referenced by <a class="el" href="EventReader_8cc_source.html#l00024">onEventRead()</a>.</p>
 
 </div>
 </div>
@@ -368,7 +368,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 10:13:08 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 12:37:05 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

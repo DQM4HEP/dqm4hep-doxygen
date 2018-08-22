@@ -92,7 +92,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html" title="SourceInfo struct. ">SourceInfo</a> struct. </p>
 
-<p>Definition at line <a class="el" href="EventCollector_8h_source.html#l00081">81</a> of file <a class="el" href="EventCollector_8h_source.html">EventCollector.h</a>.</p>
+<p>Definition at line <a class="el" href="EventCollector_8h_source.html#l00064">64</a> of file <a class="el" href="EventCollector_8h_source.html">EventCollector.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2cb5d1cfd5a032ecadd3c9846e65560d"></a>
 <div class="memitem">
@@ -131,24 +131,24 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="EventCollector_8cc_source.html#l00319">319</a> of file <a class="el" href="EventCollector_8cc_source.html">EventCollector.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                                                                        :</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a7ef9af41f8aa94fa76d2c1083c8817bc">m_clientId</a>(std::move(info.m_clientId)),</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a3e1bcdc574b1eb410ffc27e97de7b89b">m_name</a>(std::move(info.m_name)),</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a5cd57f5133b19c83a350b7f3fa1e55c4">m_streamerName</a>(std::move(info.m_streamerName)),</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a5637df2d1bd8f913261cfb0be5a8debf">m_collectors</a>(std::move(info.m_collectors)),</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a9fe790635718888508b1d05768081b74">m_hostInfo</a>(std::move(info.m_hostInfo)),</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a141c57f17a7e000f6a94f4a1d8ac2631">m_buffer</a>(std::move(info.m_buffer)),</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#ad28350fa4c3360bf1701f803e4659b79">m_eventService</a>(info.m_eventService) {</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      info.m_eventService = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    }</div>
-<div class="ttc" id="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo_html_a5cd57f5133b19c83a350b7f3fa1e55c4"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a5cd57f5133b19c83a350b7f3fa1e55c4">dqm4hep::online::EventCollector::SourceInfo::m_streamerName</a></div><div class="ttdeci">std::string m_streamerName</div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8h_source.html#l00089">EventCollector.h:89</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo_html_ad28350fa4c3360bf1701f803e4659b79"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#ad28350fa4c3360bf1701f803e4659b79">dqm4hep::online::EventCollector::SourceInfo::m_eventService</a></div><div class="ttdeci">net::Service * m_eventService</div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8h_source.html#l00093">EventCollector.h:93</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo_html_a3e1bcdc574b1eb410ffc27e97de7b89b"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a3e1bcdc574b1eb410ffc27e97de7b89b">dqm4hep::online::EventCollector::SourceInfo::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8h_source.html#l00088">EventCollector.h:88</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo_html_a141c57f17a7e000f6a94f4a1d8ac2631"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a141c57f17a7e000f6a94f4a1d8ac2631">dqm4hep::online::EventCollector::SourceInfo::m_buffer</a></div><div class="ttdeci">net::Buffer m_buffer</div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8h_source.html#l00092">EventCollector.h:92</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo_html_a7ef9af41f8aa94fa76d2c1083c8817bc"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a7ef9af41f8aa94fa76d2c1083c8817bc">dqm4hep::online::EventCollector::SourceInfo::m_clientId</a></div><div class="ttdeci">int m_clientId</div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8h_source.html#l00087">EventCollector.h:87</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo_html_a9fe790635718888508b1d05768081b74"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a9fe790635718888508b1d05768081b74">dqm4hep::online::EventCollector::SourceInfo::m_hostInfo</a></div><div class="ttdeci">core::StringMap m_hostInfo</div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8h_source.html#l00091">EventCollector.h:91</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo_html_a5637df2d1bd8f913261cfb0be5a8debf"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a5637df2d1bd8f913261cfb0be5a8debf">dqm4hep::online::EventCollector::SourceInfo::m_collectors</a></div><div class="ttdeci">core::StringVector m_collectors</div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8h_source.html#l00090">EventCollector.h:90</a></div></div>
+<p>Definition at line <a class="el" href="EventCollector_8cc_source.html#l00303">303</a> of file <a class="el" href="EventCollector_8cc_source.html">EventCollector.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                                                                        :</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a7ef9af41f8aa94fa76d2c1083c8817bc">m_clientId</a>(std::move(info.m_clientId)),</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a3e1bcdc574b1eb410ffc27e97de7b89b">m_name</a>(std::move(info.m_name)),</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a5cd57f5133b19c83a350b7f3fa1e55c4">m_streamerName</a>(std::move(info.m_streamerName)),</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a5637df2d1bd8f913261cfb0be5a8debf">m_collectors</a>(std::move(info.m_collectors)),</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a9fe790635718888508b1d05768081b74">m_hostInfo</a>(std::move(info.m_hostInfo)),</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a141c57f17a7e000f6a94f4a1d8ac2631">m_buffer</a>(std::move(info.m_buffer)),</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      <a class="code" href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#ad28350fa4c3360bf1701f803e4659b79">m_eventService</a>(info.m_eventService) {</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      info.m_eventService = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    }</div>
+<div class="ttc" id="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo_html_a5cd57f5133b19c83a350b7f3fa1e55c4"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a5cd57f5133b19c83a350b7f3fa1e55c4">dqm4hep::online::EventCollector::SourceInfo::m_streamerName</a></div><div class="ttdeci">std::string m_streamerName</div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8h_source.html#l00072">EventCollector.h:72</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo_html_ad28350fa4c3360bf1701f803e4659b79"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#ad28350fa4c3360bf1701f803e4659b79">dqm4hep::online::EventCollector::SourceInfo::m_eventService</a></div><div class="ttdeci">net::Service * m_eventService</div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8h_source.html#l00076">EventCollector.h:76</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo_html_a3e1bcdc574b1eb410ffc27e97de7b89b"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a3e1bcdc574b1eb410ffc27e97de7b89b">dqm4hep::online::EventCollector::SourceInfo::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8h_source.html#l00071">EventCollector.h:71</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo_html_a141c57f17a7e000f6a94f4a1d8ac2631"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a141c57f17a7e000f6a94f4a1d8ac2631">dqm4hep::online::EventCollector::SourceInfo::m_buffer</a></div><div class="ttdeci">net::Buffer m_buffer</div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8h_source.html#l00075">EventCollector.h:75</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo_html_a7ef9af41f8aa94fa76d2c1083c8817bc"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a7ef9af41f8aa94fa76d2c1083c8817bc">dqm4hep::online::EventCollector::SourceInfo::m_clientId</a></div><div class="ttdeci">int m_clientId</div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8h_source.html#l00070">EventCollector.h:70</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo_html_a9fe790635718888508b1d05768081b74"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a9fe790635718888508b1d05768081b74">dqm4hep::online::EventCollector::SourceInfo::m_hostInfo</a></div><div class="ttdeci">core::StringMap m_hostInfo</div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8h_source.html#l00074">EventCollector.h:74</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo_html_a5637df2d1bd8f913261cfb0be5a8debf"><div class="ttname"><a href="structdqm4hep_1_1online_1_1EventCollector_1_1SourceInfo.html#a5637df2d1bd8f913261cfb0be5a8debf">dqm4hep::online::EventCollector::SourceInfo::m_collectors</a></div><div class="ttdeci">core::StringVector m_collectors</div><div class="ttdef"><b>Definition:</b> <a href="EventCollector_8h_source.html#l00073">EventCollector.h:73</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -212,7 +212,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="EventCollector_8h_source.html#l00092">92</a> of file <a class="el" href="EventCollector_8h_source.html">EventCollector.h</a>.</p>
+<p>Definition at line <a class="el" href="EventCollector_8h_source.html#l00075">75</a> of file <a class="el" href="EventCollector_8h_source.html">EventCollector.h</a>.</p>
 
 </div>
 </div>
@@ -226,7 +226,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="EventCollector_8h_source.html#l00087">87</a> of file <a class="el" href="EventCollector_8h_source.html">EventCollector.h</a>.</p>
+<p>Definition at line <a class="el" href="EventCollector_8h_source.html#l00070">70</a> of file <a class="el" href="EventCollector_8h_source.html">EventCollector.h</a>.</p>
 
 </div>
 </div>
@@ -240,7 +240,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="EventCollector_8h_source.html#l00090">90</a> of file <a class="el" href="EventCollector_8h_source.html">EventCollector.h</a>.</p>
+<p>Definition at line <a class="el" href="EventCollector_8h_source.html#l00073">73</a> of file <a class="el" href="EventCollector_8h_source.html">EventCollector.h</a>.</p>
 
 </div>
 </div>
@@ -254,7 +254,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="EventCollector_8h_source.html#l00093">93</a> of file <a class="el" href="EventCollector_8h_source.html">EventCollector.h</a>.</p>
+<p>Definition at line <a class="el" href="EventCollector_8h_source.html#l00076">76</a> of file <a class="el" href="EventCollector_8h_source.html">EventCollector.h</a>.</p>
 
 </div>
 </div>
@@ -268,7 +268,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="EventCollector_8h_source.html#l00091">91</a> of file <a class="el" href="EventCollector_8h_source.html">EventCollector.h</a>.</p>
+<p>Definition at line <a class="el" href="EventCollector_8h_source.html#l00074">74</a> of file <a class="el" href="EventCollector_8h_source.html">EventCollector.h</a>.</p>
 
 </div>
 </div>
@@ -282,7 +282,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="EventCollector_8h_source.html#l00088">88</a> of file <a class="el" href="EventCollector_8h_source.html">EventCollector.h</a>.</p>
+<p>Definition at line <a class="el" href="EventCollector_8h_source.html#l00071">71</a> of file <a class="el" href="EventCollector_8h_source.html">EventCollector.h</a>.</p>
 
 </div>
 </div>
@@ -296,7 +296,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="EventCollector_8h_source.html#l00089">89</a> of file <a class="el" href="EventCollector_8h_source.html">EventCollector.h</a>.</p>
+<p>Definition at line <a class="el" href="EventCollector_8h_source.html#l00072">72</a> of file <a class="el" href="EventCollector_8h_source.html">EventCollector.h</a>.</p>
 
 </div>
 </div>
@@ -307,7 +307,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 10:13:10 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 12:37:07 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

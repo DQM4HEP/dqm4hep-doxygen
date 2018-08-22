@@ -148,7 +148,7 @@ class dqm4hep::core::PtrHandler&lt; T &gt;</h3>
 
 <p><a class="el" href="classdqm4hep_1_1core_1_1PtrHandler.html" title="PtrHandler template class. ">PtrHandler</a> template class. </p>
 
-<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00041">41</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00024">24</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad7dadd200e8aedc79c0a05ddf66e9dad"></a>
 <div class="memitem">
@@ -186,12 +186,12 @@ template&lt;typename T&gt; </div>
 
 <p>Constructor. </p>
 
-<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00119">119</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                                           : <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a>(pointer), <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#a0cc3f49c6f3184ddb02cdf8500b33b38">m_owner</a>(owner) {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <span class="comment">/* nop */</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00090">PtrHandler.h:90</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_a0cc3f49c6f3184ddb02cdf8500b33b38"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#a0cc3f49c6f3184ddb02cdf8500b33b38">dqm4hep::core::PtrHandler::m_owner</a></div><div class="ttdeci">bool m_owner</div><div class="ttdoc">Whether the pointer is owned by the handler. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00091">PtrHandler.h:91</a></div></div>
+<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00102">102</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                                           : <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a>(pointer), <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#a0cc3f49c6f3184ddb02cdf8500b33b38">m_owner</a>(owner) {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="comment">/* nop */</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00073">PtrHandler.h:73</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_a0cc3f49c6f3184ddb02cdf8500b33b38"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#a0cc3f49c6f3184ddb02cdf8500b33b38">dqm4hep::core::PtrHandler::m_owner</a></div><div class="ttdeci">bool m_owner</div><div class="ttdoc">Whether the pointer is owned by the handler. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00074">PtrHandler.h:74</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -222,16 +222,16 @@ template&lt;typename T &gt; </div>
 <p>Clear the ptr. </p>
 <p>Delete if owned and set to nullptr </p>
 
-<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00144">144</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00127">127</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
 
-<p>Referenced by <a class="el" href="MonitorElement_8cc_source.html#l00282">dqm4hep::core::MonitorElement::fromJson()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00250">dqm4hep::core::MonitorElement::reset()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00232">dqm4hep::core::MonitorElement::set()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00204">dqm4hep::core::MonitorElement::setMonitorObject()</a>, and <a class="el" href="MonitorElement_8cc_source.html#l00218">dqm4hep::core::MonitorElement::setReferenceObject()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                                     {</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#a0cc3f49c6f3184ddb02cdf8500b33b38">m_owner</a> &amp;&amp; <span class="keyword">nullptr</span> != <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a>)</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keyword">delete</span> <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a>;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00090">PtrHandler.h:90</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_a0cc3f49c6f3184ddb02cdf8500b33b38"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#a0cc3f49c6f3184ddb02cdf8500b33b38">dqm4hep::core::PtrHandler::m_owner</a></div><div class="ttdeci">bool m_owner</div><div class="ttdoc">Whether the pointer is owned by the handler. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00091">PtrHandler.h:91</a></div></div>
+<p>Referenced by <a class="el" href="MonitorElement_8cc_source.html#l00265">dqm4hep::core::MonitorElement::fromJson()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00233">dqm4hep::core::MonitorElement::reset()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00215">dqm4hep::core::MonitorElement::set()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00187">dqm4hep::core::MonitorElement::setMonitorObject()</a>, and <a class="el" href="MonitorElement_8cc_source.html#l00201">dqm4hep::core::MonitorElement::setReferenceObject()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                     {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#a0cc3f49c6f3184ddb02cdf8500b33b38">m_owner</a> &amp;&amp; <span class="keyword">nullptr</span> != <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a>)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keyword">delete</span> <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00073">PtrHandler.h:73</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_a0cc3f49c6f3184ddb02cdf8500b33b38"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#a0cc3f49c6f3184ddb02cdf8500b33b38">dqm4hep::core::PtrHandler::m_owner</a></div><div class="ttdeci">bool m_owner</div><div class="ttdoc">Whether the pointer is owned by the handler. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00074">PtrHandler.h:74</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -260,11 +260,11 @@ template&lt;typename T &gt; </div>
 
 <p>Whether the handler owns the ptr. </p>
 
-<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00160">160</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                                             {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#a0cc3f49c6f3184ddb02cdf8500b33b38">m_owner</a>;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_a0cc3f49c6f3184ddb02cdf8500b33b38"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#a0cc3f49c6f3184ddb02cdf8500b33b38">dqm4hep::core::PtrHandler::m_owner</a></div><div class="ttdeci">bool m_owner</div><div class="ttdoc">Whether the pointer is owned by the handler. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00091">PtrHandler.h:91</a></div></div>
+<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00143">143</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                                             {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#a0cc3f49c6f3184ddb02cdf8500b33b38">m_owner</a>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_a0cc3f49c6f3184ddb02cdf8500b33b38"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#a0cc3f49c6f3184ddb02cdf8500b33b38">dqm4hep::core::PtrHandler::m_owner</a></div><div class="ttdeci">bool m_owner</div><div class="ttdoc">Whether the pointer is owned by the handler. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00074">PtrHandler.h:74</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -293,11 +293,11 @@ template&lt;typename T &gt; </div>
 
 <p>Boolean operator. </p>
 
-<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00195">195</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                                              {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a> != <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00090">PtrHandler.h:90</a></div></div>
+<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00178">178</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                                              {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a> != <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00073">PtrHandler.h:73</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -326,11 +326,11 @@ template&lt;typename T &gt; </div>
 
 <p>Reference operator. </p>
 
-<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00181">181</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                                                   {</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      <span class="keywordflow">return</span> *<a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a>;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00090">PtrHandler.h:90</a></div></div>
+<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00164">164</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                                                   {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <span class="keywordflow">return</span> *<a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00073">PtrHandler.h:73</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -359,11 +359,11 @@ template&lt;typename T &gt; </div>
 
 <p>Reference operator. </p>
 
-<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00188">188</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                                       {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <span class="keywordflow">return</span> *<a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a>;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00090">PtrHandler.h:90</a></div></div>
+<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00171">171</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                                       {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <span class="keywordflow">return</span> *<a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00073">PtrHandler.h:73</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -392,11 +392,11 @@ template&lt;typename T &gt; </div>
 
 <p>Pointer operator. </p>
 
-<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00167">167</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                                                    {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a>;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00090">PtrHandler.h:90</a></div></div>
+<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00150">150</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                                                    {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00073">PtrHandler.h:73</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -425,11 +425,11 @@ template&lt;typename T &gt; </div>
 
 <p>Pointer operator. </p>
 
-<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00174">174</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                                        {</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a>;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00090">PtrHandler.h:90</a></div></div>
+<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00157">157</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                                        {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00073">PtrHandler.h:73</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -458,13 +458,13 @@ template&lt;typename T &gt; </div>
 
 <p>Get the ptr. </p>
 
-<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00153">153</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00136">136</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
 
-<p>Referenced by <a class="el" href="MonitorElement_8cc_source.html#l00180">dqm4hep::core::MonitorElement::object()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00192">dqm4hep::core::MonitorElement::reference()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00241">dqm4hep::core::MonitorElement::set()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00211">dqm4hep::core::MonitorElement::setMonitorObject()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00153">dqm4hep::core::MonitorElement::setName()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00225">dqm4hep::core::MonitorElement::setReferenceObject()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00126">dqm4hep::core::MonitorElement::setTitle()</a>, and <a class="el" href="MonitorElement_8cc_source.html#l00261">dqm4hep::core::MonitorElement::toJson()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                                       {</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a>;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00090">PtrHandler.h:90</a></div></div>
+<p>Referenced by <a class="el" href="MonitorElement_8cc_source.html#l00163">dqm4hep::core::MonitorElement::object()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00175">dqm4hep::core::MonitorElement::reference()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00224">dqm4hep::core::MonitorElement::set()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00194">dqm4hep::core::MonitorElement::setMonitorObject()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00136">dqm4hep::core::MonitorElement::setName()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00208">dqm4hep::core::MonitorElement::setReferenceObject()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00109">dqm4hep::core::MonitorElement::setTitle()</a>, and <a class="el" href="MonitorElement_8cc_source.html#l00244">dqm4hep::core::MonitorElement::toJson()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                                       {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00073">PtrHandler.h:73</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -504,17 +504,17 @@ template&lt;typename T&gt; </div>
 
 <p>Set the pointer and ownership. </p>
 
-<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00135">135</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00118">118</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
 
-<p>Referenced by <a class="el" href="MonitorElement_8cc_source.html#l00282">dqm4hep::core::MonitorElement::fromJson()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00337">dqm4hep::core::MonitorElement::read()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00232">dqm4hep::core::MonitorElement::set()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00204">dqm4hep::core::MonitorElement::setMonitorObject()</a>, and <a class="el" href="MonitorElement_8cc_source.html#l00218">dqm4hep::core::MonitorElement::setReferenceObject()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                                                         {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#aad384209a3e2cbd1392cb7fec8b6ac0d">clear</a>();</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a> = pointer;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#a0cc3f49c6f3184ddb02cdf8500b33b38">m_owner</a> = owner;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_aad384209a3e2cbd1392cb7fec8b6ac0d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#aad384209a3e2cbd1392cb7fec8b6ac0d">dqm4hep::core::PtrHandler::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear the ptr. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00144">PtrHandler.h:144</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00090">PtrHandler.h:90</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_a0cc3f49c6f3184ddb02cdf8500b33b38"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#a0cc3f49c6f3184ddb02cdf8500b33b38">dqm4hep::core::PtrHandler::m_owner</a></div><div class="ttdeci">bool m_owner</div><div class="ttdoc">Whether the pointer is owned by the handler. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00091">PtrHandler.h:91</a></div></div>
+<p>Referenced by <a class="el" href="MonitorElement_8cc_source.html#l00265">dqm4hep::core::MonitorElement::fromJson()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00320">dqm4hep::core::MonitorElement::read()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00215">dqm4hep::core::MonitorElement::set()</a>, <a class="el" href="MonitorElement_8cc_source.html#l00187">dqm4hep::core::MonitorElement::setMonitorObject()</a>, and <a class="el" href="MonitorElement_8cc_source.html#l00201">dqm4hep::core::MonitorElement::setReferenceObject()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                                         {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#aad384209a3e2cbd1392cb7fec8b6ac0d">clear</a>();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a> = pointer;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#a0cc3f49c6f3184ddb02cdf8500b33b38">m_owner</a> = owner;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_aad384209a3e2cbd1392cb7fec8b6ac0d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#aad384209a3e2cbd1392cb7fec8b6ac0d">dqm4hep::core::PtrHandler::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">Clear the ptr. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00127">PtrHandler.h:127</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00073">PtrHandler.h:73</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_a0cc3f49c6f3184ddb02cdf8500b33b38"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#a0cc3f49c6f3184ddb02cdf8500b33b38">dqm4hep::core::PtrHandler::m_owner</a></div><div class="ttdeci">bool m_owner</div><div class="ttdoc">Whether the pointer is owned by the handler. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00074">PtrHandler.h:74</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -544,13 +544,13 @@ template&lt;typename T &gt; </div>
 <p>Take the pointer, setting the handle pointer to nullptr. </p>
 <p>The ownership is transfered to the caller </p>
 
-<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00126">126</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                  {</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      T *pointer = <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a>;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <span class="keywordflow">return</span> pointer;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00090">PtrHandler.h:90</a></div></div>
+<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00109">109</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                  {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      T *pointer = <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">m_ptr</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="keywordflow">return</span> pointer;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1PtrHandler_html_af8ad6474d382b3b3f74e0487ed24a0ea"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler::m_ptr</a></div><div class="ttdeci">T * m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="PtrHandler_8h_source.html#l00073">PtrHandler.h:73</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -705,10 +705,10 @@ template&lt;typename S &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00258">258</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                                                                       {</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      <span class="keywordflow">return</span> lhs != rhs.m_ptr;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00241">241</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                                                                       {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      <span class="keywordflow">return</span> lhs != rhs.m_ptr;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -748,10 +748,10 @@ template&lt;typename S &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00265">265</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                                                                       {</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      <span class="keywordflow">return</span> lhs.m_ptr != rhs;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00248">248</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                                                                       {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      <span class="keywordflow">return</span> lhs.m_ptr != rhs;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -905,10 +905,10 @@ template&lt;typename S &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00244">244</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                                                       {</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      <span class="keywordflow">return</span> lhs == rhs.m_ptr;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00227">227</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                                                                       {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;      <span class="keywordflow">return</span> lhs == rhs.m_ptr;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -948,10 +948,10 @@ template&lt;typename S &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00251">251</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                                                                       {</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      <span class="keywordflow">return</span> lhs.m_ptr == rhs;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    }</div>
+<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00234">234</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                                                                       {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      <span class="keywordflow">return</span> lhs.m_ptr == rhs;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -978,7 +978,7 @@ template&lt;typename T&gt; </div>
 
 <p>Whether the pointer is owned by the handler. </p>
 
-<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00091">91</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00074">74</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
 
 </div>
 </div>
@@ -1004,9 +1004,9 @@ template&lt;typename T&gt; </div>
 
 <p>The handled pointer. </p>
 
-<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00090">90</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="PtrHandler_8h_source.html#l00073">73</a> of file <a class="el" href="PtrHandler_8h_source.html">PtrHandler.h</a>.</p>
 
-<p>Referenced by <a class="el" href="PtrHandler_8h_source.html#l00223">dqm4hep::core::operator!=()</a>, and <a class="el" href="PtrHandler_8h_source.html#l00202">dqm4hep::core::operator==()</a>.</p>
+<p>Referenced by <a class="el" href="PtrHandler_8h_source.html#l00206">dqm4hep::core::operator!=()</a>, and <a class="el" href="PtrHandler_8h_source.html#l00185">dqm4hep::core::operator==()</a>.</p>
 
 </div>
 </div>
@@ -1016,7 +1016,7 @@ template&lt;typename T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 10:13:08 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 12:37:05 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

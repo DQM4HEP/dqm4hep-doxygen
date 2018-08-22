@@ -92,7 +92,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p><a class="el" href="classdqm4hep_1_1net_1_1RequestHandler_1_1Rpc.html" title="Rpc class. ">Rpc</a> class. </p>
 <p>The concrete dim rpc implementation </p>
 
-<p>Definition at line <a class="el" href="RequestHandler_8h_source.html#l00110">110</a> of file <a class="el" href="RequestHandler_8h_source.html">RequestHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="RequestHandler_8h_source.html#l00093">93</a> of file <a class="el" href="RequestHandler_8h_source.html">RequestHandler.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4d32938c49ec1dfeaf9d5a7b9e72af9f"></a>
 <div class="memitem">
@@ -110,11 +110,11 @@ Private Attributes</h2></td></tr>
 
 <p>Contructor. </p>
 
-<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00088">88</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
-<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        : DimRpc((<span class="keywordtype">char</span> *)pHandler-&gt;name().c_str(), <span class="stringliteral">&quot;C&quot;</span>, <span class="stringliteral">&quot;C&quot;</span>), <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler_1_1Rpc.html#a481a729689756c600688e38b70146d5a">m_pHandler</a>(pHandler) {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="comment">/* nop */</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_1_1Rpc_html_a481a729689756c600688e38b70146d5a"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler_1_1Rpc.html#a481a729689756c600688e38b70146d5a">dqm4hep::net::RequestHandler::Rpc::m_pHandler</a></div><div class="ttdeci">RequestHandler * m_pHandler</div><div class="ttdoc">The request handler owner instance. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00125">RequestHandler.h:125</a></div></div>
+<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00071">71</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        : DimRpc((<span class="keywordtype">char</span> *)pHandler-&gt;name().c_str(), <span class="stringliteral">&quot;C&quot;</span>, <span class="stringliteral">&quot;C&quot;</span>), <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler_1_1Rpc.html#a481a729689756c600688e38b70146d5a">m_pHandler</a>(pHandler) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="comment">/* nop */</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_1_1Rpc_html_a481a729689756c600688e38b70146d5a"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler_1_1Rpc.html#a481a729689756c600688e38b70146d5a">dqm4hep::net::RequestHandler::Rpc::m_pHandler</a></div><div class="ttdeci">RequestHandler * m_pHandler</div><div class="ttdoc">The request handler owner instance. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00108">RequestHandler.h:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -190,23 +190,23 @@ Private Attributes</h2></td></tr>
 
 <p>The dim rpc handler. </p>
 
-<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00095">95</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
+<p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00078">78</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
 
-<p>References <a class="el" href="NetBuffer_8cc_source.html#l00130">dqm4hep::net::Buffer::adopt()</a>, <a class="el" href="NetBuffer_8cc_source.html#l00112">dqm4hep::net::Buffer::begin()</a>, and <a class="el" href="NetBuffer_8cc_source.html#l00124">dqm4hep::net::Buffer::size()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                       {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="keywordtype">char</span> *data = (<span class="keywordtype">char</span> *)this-&gt;getData();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keywordtype">int</span> size = this-&gt;getSize();</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      Buffer request;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> != data &amp;&amp; size != 0)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        request.adopt(data, size);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      Buffer response;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler_1_1Rpc.html#a481a729689756c600688e38b70146d5a">m_pHandler</a>-&gt;<a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#ac02ac512c66fbfea282e563bfb633c8e">handleRequest</a>(request, response);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      this-&gt;setData((<span class="keywordtype">void</span> *)response.begin(), response.size());</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_1_1Rpc_html_a481a729689756c600688e38b70146d5a"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler_1_1Rpc.html#a481a729689756c600688e38b70146d5a">dqm4hep::net::RequestHandler::Rpc::m_pHandler</a></div><div class="ttdeci">RequestHandler * m_pHandler</div><div class="ttdoc">The request handler owner instance. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00125">RequestHandler.h:125</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_ac02ac512c66fbfea282e563bfb633c8e"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#ac02ac512c66fbfea282e563bfb633c8e">dqm4hep::net::RequestHandler::handleRequest</a></div><div class="ttdeci">void handleRequest(const Buffer &amp;request, Buffer &amp;response)</div><div class="ttdoc">[handleRequest description] </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8cc_source.html#l00081">RequestHandler.cc:81</a></div></div>
+<p>References <a class="el" href="NetBuffer_8cc_source.html#l00113">dqm4hep::net::Buffer::adopt()</a>, <a class="el" href="NetBuffer_8cc_source.html#l00095">dqm4hep::net::Buffer::begin()</a>, and <a class="el" href="NetBuffer_8cc_source.html#l00107">dqm4hep::net::Buffer::size()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                       {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordtype">char</span> *data = (<span class="keywordtype">char</span> *)this-&gt;getData();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordtype">int</span> size = this-&gt;getSize();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      Buffer request;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">if</span> (<span class="keyword">nullptr</span> != data &amp;&amp; size != 0)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        request.adopt(data, size);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      Buffer response;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1RequestHandler_1_1Rpc.html#a481a729689756c600688e38b70146d5a">m_pHandler</a>-&gt;<a class="code" href="classdqm4hep_1_1net_1_1RequestHandler.html#ac02ac512c66fbfea282e563bfb633c8e">handleRequest</a>(request, response);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      this-&gt;setData((<span class="keywordtype">void</span> *)response.begin(), response.size());</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_1_1Rpc_html_a481a729689756c600688e38b70146d5a"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler_1_1Rpc.html#a481a729689756c600688e38b70146d5a">dqm4hep::net::RequestHandler::Rpc::m_pHandler</a></div><div class="ttdeci">RequestHandler * m_pHandler</div><div class="ttdoc">The request handler owner instance. </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00108">RequestHandler.h:108</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1net_1_1RequestHandler_html_ac02ac512c66fbfea282e563bfb633c8e"><div class="ttname"><a href="classdqm4hep_1_1net_1_1RequestHandler.html#ac02ac512c66fbfea282e563bfb633c8e">dqm4hep::net::RequestHandler::handleRequest</a></div><div class="ttdeci">void handleRequest(const Buffer &amp;request, Buffer &amp;response)</div><div class="ttdoc">[handleRequest description] </div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8cc_source.html#l00064">RequestHandler.cc:64</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -231,7 +231,7 @@ Private Attributes</h2></td></tr>
 
 <p>The request handler owner instance. </p>
 
-<p>Definition at line <a class="el" href="RequestHandler_8h_source.html#l00125">125</a> of file <a class="el" href="RequestHandler_8h_source.html">RequestHandler.h</a>.</p>
+<p>Definition at line <a class="el" href="RequestHandler_8h_source.html#l00108">108</a> of file <a class="el" href="RequestHandler_8h_source.html">RequestHandler.h</a>.</p>
 
 </div>
 </div>
@@ -242,7 +242,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 10:13:09 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 12:37:06 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
