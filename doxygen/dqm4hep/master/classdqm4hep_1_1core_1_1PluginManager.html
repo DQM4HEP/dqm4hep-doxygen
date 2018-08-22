@@ -415,7 +415,7 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="PluginManager_8cc_source.html#l00035">35</a> of file <a class="el" href="PluginManager_8cc_source.html">PluginManager.cc</a>.</p>
 
-<p>References <a class="el" href="Logging_8h_source.html#l00026">dqm_debug</a>, and <a class="el" href="Internal_8h_source.html#l00370">dqm4hep::core::tokenize()</a>.</p>
+<p>References <a class="el" href="Logging_8h_source.html#l00026">dqm_debug</a>, and <a class="el" href="Internal_8h_source.html#l00345">dqm4hep::core::tokenize()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                            {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <span class="comment">// get the environment plug-in dll variable</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <span class="keywordtype">char</span> *pPluginDllEnv = getenv(<span class="stringliteral">&quot;DQM4hep_PLUGIN_DLL&quot;</span>);</div>
@@ -437,10 +437,10 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="comment">// load the shared libraries</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keywordflow">return</span> this-&gt;<a class="code" href="classdqm4hep_1_1core_1_1PluginManager.html#a5b10a8a00ca4a7b6ab21dc2bc2c05db1">loadLibraries</a>(libraryList);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a31e067e3caf9132e125f61a69c8faf56"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a31e067e3caf9132e125f61a69c8faf56">dqm4hep::core::tokenize</a></div><div class="ttdeci">void tokenize(const std::string &amp;inputString, std::vector&lt; T &gt; &amp;tokens, const std::string &amp;delimiter=&quot; &quot;)</div><div class="ttdoc">Tokenize string with delimiter. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00370">Internal.h:370</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a31e067e3caf9132e125f61a69c8faf56"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a31e067e3caf9132e125f61a69c8faf56">dqm4hep::core::tokenize</a></div><div class="ttdeci">void tokenize(const std::string &amp;inputString, std::vector&lt; T &gt; &amp;tokens, const std::string &amp;delimiter=&quot; &quot;)</div><div class="ttdoc">Tokenize string with delimiter. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00345">Internal.h:345</a></div></div>
 <div class="ttc" id="Logging_8h_html_afeed011feb4159b13c3ae4873e1d0fcf"><div class="ttname"><a href="Logging_8h.html#afeed011feb4159b13c3ae4873e1d0fcf">dqm_debug</a></div><div class="ttdeci">#define dqm_debug(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00026">Logging.h:26</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1PluginManager_html_a5b10a8a00ca4a7b6ab21dc2bc2c05db1"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PluginManager.html#a5b10a8a00ca4a7b6ab21dc2bc2c05db1">dqm4hep::core::PluginManager::loadLibraries</a></div><div class="ttdeci">StatusCode loadLibraries()</div><div class="ttdoc">Load shared libraries from the environment variable 4HEP_PLUGIN_DLL. </div><div class="ttdef"><b>Definition:</b> <a href="PluginManager_8cc_source.html#l00035">PluginManager.cc:35</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00289">Internal.h:289</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00264">Internal.h:264</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -558,7 +558,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      <span class="keywordflow">return</span> pluginNameList;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1PluginManager_html_a86e7bb8657d3717a8efd66563cfd6133"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PluginManager.html#a86e7bb8657d3717a8efd66563cfd6133">dqm4hep::core::PluginManager::m_pluginMap</a></div><div class="ttdeci">PluginMap m_pluginMap</div><div class="ttdoc">The map of registered plugins. </div><div class="ttdef"><b>Definition:</b> <a href="PluginManager_8h_source.html#l00112">PluginManager.h:112</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00289">Internal.h:289</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00264">Internal.h:264</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -606,7 +606,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1PluginManager_html_a86e7bb8657d3717a8efd66563cfd6133"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PluginManager.html#a86e7bb8657d3717a8efd66563cfd6133">dqm4hep::core::PluginManager::m_pluginMap</a></div><div class="ttdeci">PluginMap m_pluginMap</div><div class="ttdoc">The map of registered plugins. </div><div class="ttdef"><b>Definition:</b> <a href="PluginManager_8h_source.html#l00112">PluginManager.h:112</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1PluginManager_html_a6a6c1cc25d50ed6f67a2dc0fc546c5a3"><div class="ttname"><a href="classdqm4hep_1_1core_1_1PluginManager.html#a6a6c1cc25d50ed6f67a2dc0fc546c5a3">dqm4hep::core::PluginManager::Plugin</a></div><div class="ttdeci">friend class Plugin</div><div class="ttdef"><b>Definition:</b> <a href="PluginManager_8h_source.html#l00054">PluginManager.h:54</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00289">Internal.h:289</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00264">Internal.h:264</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -772,7 +772,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 12:37:05 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 13:31:22 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

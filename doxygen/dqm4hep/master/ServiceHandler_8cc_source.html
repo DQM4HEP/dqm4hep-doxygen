@@ -94,7 +94,7 @@
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classdqm4hep_1_1net_1_1ServiceHandler.html#ab46c6f23c724700b6af4ab05bdeb0967">   42</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classdqm4hep_1_1net_1_1ServiceHandler.html#ab46c6f23c724700b6af4ab05bdeb0967">ServiceHandler::receiveServiceUpdated</a>(<span class="keyword">const</span> <a class="code" href="classdqm4hep_1_1net_1_1Buffer.html">Buffer</a> &amp;data) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1ServiceHandler.html#a4d240ebcd13a483839d92f9b42a9809e">m_updateSignal</a>.process(data);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1ServiceHandler.html#a4d240ebcd13a483839d92f9b42a9809e">m_updateSignal</a>.<a class="code" href="classdqm4hep_1_1core_1_1Signal.html#aad0b91b4b2e0efd670b0a35ae3d40c45">emit</a>(data);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
@@ -131,6 +131,7 @@
 <div class="ttc" id="classdqm4hep_1_1net_1_1ServiceHandler_html_a72077eb49086828f39f746b082c8cdfd"><div class="ttname"><a href="classdqm4hep_1_1net_1_1ServiceHandler.html#a72077eb49086828f39f746b082c8cdfd">dqm4hep::net::ServiceHandler::client</a></div><div class="ttdeci">Client * client() const </div><div class="ttdoc">Get the client interface. </div><div class="ttdef"><b>Definition:</b> <a href="ServiceHandler_8cc_source.html#l00030">ServiceHandler.cc:30</a></div></div>
 <div class="ttc" id="Service_8h_html"><div class="ttname"><a href="Service_8h.html">Service.h</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Client_html"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Client.html">dqm4hep::net::Client</a></div><div class="ttdoc">Client class. </div><div class="ttdef"><b>Definition:</b> <a href="Client_8h_source.html#l00039">Client.h:39</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_aad0b91b4b2e0efd670b0a35ae3d40c45"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#aad0b91b4b2e0efd670b0a35ae3d40c45">dqm4hep::core::Signal::emit</a></div><div class="ttdeci">void emit(Args...args)</div><div class="ttdoc">Emit the signal. </div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00383">Signal.h:383</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1ServiceHandler_html"><div class="ttname"><a href="classdqm4hep_1_1net_1_1ServiceHandler.html">dqm4hep::net::ServiceHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="ServiceHandler_8h_source.html#l00032">ServiceHandler.h:32</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1ServiceHandler_1_1ServiceInfo_html_a28487418aa813f89bb7668fb060739ad"><div class="ttname"><a href="classdqm4hep_1_1net_1_1ServiceHandler_1_1ServiceInfo.html#a28487418aa813f89bb7668fb060739ad">dqm4hep::net::ServiceHandler::ServiceInfo::ServiceInfo</a></div><div class="ttdeci">ServiceInfo()=delete</div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html">dqm4hep::core::Signal&lt; const Buffer &amp; &gt;</a></div></div>
@@ -141,7 +142,7 @@
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 12:37:04 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 13:31:21 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

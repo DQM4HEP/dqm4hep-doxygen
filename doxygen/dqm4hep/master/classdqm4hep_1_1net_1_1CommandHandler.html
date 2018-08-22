@@ -365,11 +365,12 @@ template&lt;typename Controller &gt; </div>
 
 <p>Definition at line <a class="el" href="RequestHandler_8cc_source.html#l00147">147</a> of file <a class="el" href="RequestHandler_8cc_source.html">RequestHandler.cc</a>.</p>
 
-<p>References <a class="el" href="RequestHandler_8h_source.html#l00243">m_commandSignal</a>.</p>
+<p>References <a class="el" href="Signal_8h_source.html#l00383">dqm4hep::core::Signal&lt; Args &gt;::emit()</a>, and <a class="el" href="RequestHandler_8h_source.html#l00243">m_commandSignal</a>.</p>
 <div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                                                            {</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1CommandHandler.html#aeba03b93da92873fb3ac92e9017572c2">m_commandSignal</a>.process(command);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1CommandHandler.html#aeba03b93da92873fb3ac92e9017572c2">m_commandSignal</a>.<a class="code" href="classdqm4hep_1_1core_1_1Signal.html#aad0b91b4b2e0efd670b0a35ae3d40c45">emit</a>(command);</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1CommandHandler_html_aeba03b93da92873fb3ac92e9017572c2"><div class="ttname"><a href="classdqm4hep_1_1net_1_1CommandHandler.html#aeba03b93da92873fb3ac92e9017572c2">dqm4hep::net::CommandHandler::m_commandSignal</a></div><div class="ttdeci">CommandSignal m_commandSignal</div><div class="ttdef"><b>Definition:</b> <a href="RequestHandler_8h_source.html#l00243">RequestHandler.h:243</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_aad0b91b4b2e0efd670b0a35ae3d40c45"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#aad0b91b4b2e0efd670b0a35ae3d40c45">dqm4hep::core::Signal::emit</a></div><div class="ttdeci">void emit(Args...args)</div><div class="ttdoc">Emit the signal. </div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00383">Signal.h:383</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -749,7 +750,7 @@ template&lt;typename Controller &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 12:37:06 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 13:31:23 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

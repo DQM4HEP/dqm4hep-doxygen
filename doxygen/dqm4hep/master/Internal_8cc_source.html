@@ -119,22 +119,22 @@
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="namespacedqm4hep_1_1core.html#a745c8d1daa33a85ec54b1eb41a9de946">   68</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacedqm4hep_1_1core.html#a745c8d1daa33a85ec54b1eb41a9de946">timeToHMS</a>(std::time_t t, std::string &amp;timeStr) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      timeStr = <a class="code" href="classdqm4hep_1_1core_1_1time.html#a17002720a12e7a24a8acd0b6cf89939d">time::asString</a>(<a class="code" href="classdqm4hep_1_1core_1_1time.html#aa451f91d7636a112afba38b3d234c5f7">time::asPoint</a>(t));</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// void timeToHMS(std::time_t t, std::string &amp;timeStr) {</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//   timeStr = time::asString(time::asPoint(t));</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// }</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">   75</a></span>&#160;    <a class="code" href="namespacedqm4hep_1_1core.html#a64e1e1e7f3cb2f6ddac8bb106c1196d9">TimePoint</a> <a class="code" href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">now</a>() {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1time.html#a105a9529e7228a1567dfda4b5f083bfc">time::now</a>();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// TimePoint now() {</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">//   return time::now();</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// }</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="namespacedqm4hep_1_1core.html#a85282f7ecc713ce1a5a0f53ef0b2e1c9">   81</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacedqm4hep_1_1core.html#a85282f7ecc713ce1a5a0f53ef0b2e1c9">sleep</a>(<span class="keyword">const</span> <a class="code" href="namespacedqm4hep_1_1core.html#a0680a835d8d16c6af7ffd5ff0a33e6ef">TimeDuration</a> &amp;duration) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      std::this_thread::sleep_for(duration);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// void sleep(const TimeDuration &amp;duration) {</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">//   std::this_thread::sleep_for(duration);</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// }</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#if defined(__linux__) || defined(__APPLE__)</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"></span></div>
@@ -145,18 +145,18 @@
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="classdqm4hep_1_1core_1_1StatusCodeException.html">core::StatusCodeException</a>(STATUS_CODE_FAILURE);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="namespacedqm4hep_1_1core.html#a039ff0b407ffd4e52eabb7ba4cc6e476">dqm_double</a> prevCpuTimeUser = stats.cpuTimeUser;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="namespacedqm4hep_1_1core.html#a039ff0b407ffd4e52eabb7ba4cc6e476">dqm_double</a> prevCpuTimeSys = stats.cpuTimeSys;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordtype">double</span> prevCpuTimeUser = stats.cpuTimeUser;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">double</span> prevCpuTimeSys = stats.cpuTimeSys;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        stats.cpuTimeUser = ru.ru_utime.tv_sec + ru.ru_utime.tv_usec / 1000000.;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        stats.cpuTimeSys = ru.ru_stime.tv_sec + ru.ru_stime.tv_usec / 1000000.;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keyword">struct </span>timeval timeNow;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        gettimeofday(&amp;timeNow, NULL);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="namespacedqm4hep_1_1core.html#a039ff0b407ffd4e52eabb7ba4cc6e476">dqm_double</a> start = stats.lastPollTime.tv_sec + stats.lastPollTime.tv_usec / 1000000.;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="namespacedqm4hep_1_1core.html#a039ff0b407ffd4e52eabb7ba4cc6e476">dqm_double</a> stop = timeNow.tv_sec + timeNow.tv_usec / 1000000.;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordtype">double</span> start = stats.lastPollTime.tv_sec + stats.lastPollTime.tv_usec / 1000000.;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordtype">double</span> stop = timeNow.tv_sec + timeNow.tv_usec / 1000000.;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        stats.lastPollTime = timeNow;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">if</span> (stop &gt; start) {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;          <a class="code" href="namespacedqm4hep_1_1core.html#a039ff0b407ffd4e52eabb7ba4cc6e476">dqm_double</a> timeDif = stop - start;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;          <span class="keywordtype">double</span> timeDif = stop - start;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;          <span class="comment">// Don&#39;t compute percentage for the first call</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;          <span class="keywordflow">if</span> (0 != prevCpuTimeUser || 0 != prevCpuTimeSys) {</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            stats.cpuUser = (stats.cpuTimeUser - prevCpuTimeUser) / timeDif;</div>
@@ -177,7 +177,7 @@
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> fillNetRate(<a class="code" href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">NetworkStats</a> &amp;stats, <a class="code" href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">NetworkStats</a> &amp;tempStats, <a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a> sampleTime) {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> fillNetRate(<a class="code" href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">NetworkStats</a> &amp;stats, <a class="code" href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">NetworkStats</a> &amp;tempStats, <span class="keywordtype">int</span> sampleTime) {</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;ifcIter : tempStats) {</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keyword">auto</span> ifcIter2 = stats.find(ifcIter.first);</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
@@ -249,8 +249,8 @@
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> linuxCpuStats(CpuStats &amp;stats, <a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a> sampleTime) {</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a039ff0b407ffd4e52eabb7ba4cc6e476">dqm_double</a> avg[3] = {-1.};</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> linuxCpuStats(CpuStats &amp;stats, <span class="keywordtype">int</span> sampleTime) {</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;      <span class="keywordtype">double</span> avg[3] = {-1.};</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">#ifndef R__WINGCC</span></div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor"></span>      <span class="keywordflow">if</span> (getloadavg(avg, <span class="keyword">sizeof</span>(avg)) &lt; 0) {</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="comment">// ::Error(&quot;getLinuxCpuInfo&quot;, &quot;getloadavg failed&quot;);</span></div>
@@ -259,32 +259,32 @@
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;      } <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#endif // R__WINGCC</span></div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor"></span>      {</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        stats.load1m = (<a class="code" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a>)avg[0];</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        stats.load5m = (<a class="code" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a>)avg[1];</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        stats.load15m = (<a class="code" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a>)avg[2];</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        stats.load1m = (float)avg[0];</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        stats.load5m = (float)avg[1];</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        stats.load15m = (float)avg[2];</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      }</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a90d54b953106bfd924b58c29353d088a">dqm_long</a> cpu_ticks1[4] = {0L};</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a90d54b953106bfd924b58c29353d088a">dqm_long</a> cpu_ticks2[4] = {0L};</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <span class="keywordtype">long</span> cpu_ticks1[4] = {0L};</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      <span class="keywordtype">long</span> cpu_ticks2[4] = {0L};</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;      readLinuxCpu(cpu_ticks1);</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a85282f7ecc713ce1a5a0f53ef0b2e1c9">::sleep</a>(sampleTime);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      ::sleep(sampleTime);</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      readLinuxCpu(cpu_ticks2);</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a90d54b953106bfd924b58c29353d088a">dqm_long</a> userticks = (cpu_ticks2[0] + cpu_ticks2[3]) - (cpu_ticks1[0] + cpu_ticks1[3]);</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a90d54b953106bfd924b58c29353d088a">dqm_long</a> systicks = cpu_ticks2[1] - cpu_ticks1[1];</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a90d54b953106bfd924b58c29353d088a">dqm_long</a> idleticks = cpu_ticks2[2] - cpu_ticks1[2];</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      <span class="keywordtype">long</span> userticks = (cpu_ticks2[0] + cpu_ticks2[3]) - (cpu_ticks1[0] + cpu_ticks1[3]);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      <span class="keywordtype">long</span> systicks = cpu_ticks2[1] - cpu_ticks1[1];</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <span class="keywordtype">long</span> idleticks = cpu_ticks2[2] - cpu_ticks1[2];</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      <span class="keywordflow">if</span> (userticks &lt; 0)</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        userticks = 0;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      <span class="keywordflow">if</span> (systicks &lt; 0)</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        systicks = 0;</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      <span class="keywordflow">if</span> (idleticks &lt; 0)</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        idleticks = 0;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a90d54b953106bfd924b58c29353d088a">dqm_long</a> totalticks = userticks + systicks + idleticks;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      <span class="keywordtype">long</span> totalticks = userticks + systicks + idleticks;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      <span class="keywordflow">if</span> (totalticks) {</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        stats.user = ((<a class="code" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a>)(100 * userticks)) / ((<a class="code" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a>)totalticks);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        stats.sys = ((<a class="code" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a>)(100 * systicks)) / ((<a class="code" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a>)totalticks);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        stats.user = ((float)(100 * userticks)) / ((<span class="keywordtype">float</span>)totalticks);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        stats.sys = ((float)(100 * systicks)) / ((<span class="keywordtype">float</span>)totalticks);</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        stats.tot = stats.user + stats.sys;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        stats.idle = ((<a class="code" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a>)(100 * idleticks)) / ((<a class="code" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a>)totalticks);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        stats.idle = ((float)(100 * idleticks)) / ((<span class="keywordtype">float</span>)totalticks);</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      }</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
@@ -297,11 +297,11 @@
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>(<span class="stringliteral">&quot;[{0}] - Failed to open &#39;/proc/meminfo&#39;&quot;</span>, __FUNCTION__);</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="keywordflow">throw</span> core::StatusCodeException(STATUS_CODE_FAILURE);</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      }</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a5ad3ae353c4bd50bb3ee51d2c85519d2">dqm_long_long</a> memFree = {0LL};</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a5ad3ae353c4bd50bb3ee51d2c85519d2">dqm_long_long</a> memTotal = {0LL};</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      uint64_t memFree = {0LL};</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;      uint64_t memTotal = {0LL};</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a5ad3ae353c4bd50bb3ee51d2c85519d2">dqm_long_long</a> swap_total = {0LL};</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a5ad3ae353c4bd50bb3ee51d2c85519d2">dqm_long_long</a> swap_free = {0LL};</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      uint64_t swap_total = {0LL};</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      uint64_t swap_free = {0LL};</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      <span class="keywordflow">while</span> (s.Gets(f)) {</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="keywordflow">if</span> (s.BeginsWith(<span class="stringliteral">&quot;MemTotal&quot;</span>)) {</div>
@@ -323,11 +323,11 @@
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      }</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      fclose(f);</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      stats.vmTot = (<a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a>)(memTotal + swap_total);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      stats.vmUsed = (<a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a>)(memTotal - memFree);</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      stats.vmFree = (<a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a>)(memFree + swap_free);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      stats.rssTot = (<a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a>)(memTotal);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      stats.rssUsed = (<a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a>)(memTotal - memFree);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      stats.vmTot = (int)(memTotal + swap_total);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      stats.vmUsed = (int)(memTotal - memFree);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      stats.vmFree = (int)(memFree + swap_free);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      stats.rssTot = (int)(memTotal);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      stats.rssUsed = (int)(memTotal - memFree);</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    }</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
@@ -343,8 +343,8 @@
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      <span class="keywordflow">if</span> (f) {</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        s.Gets(f);</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        fclose(f);</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <a class="code" href="namespacedqm4hep_1_1core.html#a90d54b953106bfd924b58c29353d088a">dqm_long</a> total = {0L};</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <a class="code" href="namespacedqm4hep_1_1core.html#a90d54b953106bfd924b58c29353d088a">dqm_long</a> rss = {0L};</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordtype">long</span> total = {0L};</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordtype">long</span> rss = {0L};</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        sscanf(s.Data(), <span class="stringliteral">&quot;%ld %ld&quot;</span>, &amp;total, &amp;rss);</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        stats.vm = total * (getpagesize() / 1024);</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        stats.rss = rss * (getpagesize() / 1024);</div>
@@ -380,19 +380,19 @@
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="comment">// read received stats</span></div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="keywordflow">if</span> (fscanf(file, <span class="stringliteral">&quot;%lu %lu %lu&quot;</span>, &amp;stat.tot_rcv_kbytes, &amp;stat.tot_rcv_packets, &amp;stat.tot_rcv_errs) == EOF) {</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;          stat.tot_rcv_kbytes = (<a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a>) ((stat.tot_rcv_kbytes) &gt;&gt; 10); <span class="comment">// divide by 1024</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;          stat.tot_rcv_kbytes = (int) ((stat.tot_rcv_kbytes) &gt;&gt; 10); <span class="comment">// divide by 1024</span></div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;          fclose(file);</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;          <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        }</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <span class="comment">// skip uneeded fields</span></div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <a class="code" href="namespacedqm4hep_1_1core.html#afe495f73de4a44f7319bb301dedc6de3">dqm_stat</a> dummy;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <span class="keywordtype">long</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> dummy;</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="keywordflow">if</span> (EOF == fscanf(file, <span class="stringliteral">&quot;%lu %lu %lu %lu %lu&quot;</span>, &amp;dummy, &amp;dummy, &amp;dummy, &amp;dummy, &amp;dummy))</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;          <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <span class="comment">// read send stats</span></div>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="keywordflow">if</span> (fscanf(file, <span class="stringliteral">&quot;%lu %lu %lu&quot;</span>, &amp;stat.tot_snd_kbytes, &amp;stat.tot_snd_packets, &amp;stat.tot_snd_errs) == EOF) {</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;          stat.tot_snd_kbytes = (<a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a>) ((stat.tot_snd_kbytes) &gt;&gt; 10); <span class="comment">// divide by 1024</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;          stat.tot_snd_kbytes = (int) ((stat.tot_snd_kbytes) &gt;&gt; 10); <span class="comment">// divide by 1024</span></div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;          fclose(file);</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;          <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        }</div>
@@ -410,10 +410,10 @@
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> linuxNetStats(<a class="code" href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">NetworkStats</a> &amp;stats, <a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a> sampleTime) {</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> linuxNetStats(<a class="code" href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">NetworkStats</a> &amp;stats, <span class="keywordtype">int</span> sampleTime) {</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">NetworkStats</a> tempStats;</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;      readLinuxNet(tempStats);</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a85282f7ecc713ce1a5a0f53ef0b2e1c9">::sleep</a>(sampleTime);</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;      ::sleep(sampleTime);</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;      readLinuxNet(stats);</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;      fillNetRate(stats, tempStats, sampleTime);</div>
@@ -451,38 +451,38 @@
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> darwinCpuStats(CpuStats &amp;stats, <a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a> sampleTime) {</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a039ff0b407ffd4e52eabb7ba4cc6e476">dqm_double</a> avg[3] = {-1.};</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> darwinCpuStats(CpuStats &amp;stats, <span class="keywordtype">int</span> sampleTime) {</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;      <span class="keywordtype">double</span> avg[3] = {-1.};</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;      <span class="keywordflow">if</span> (getloadavg(avg, <span class="keyword">sizeof</span>(avg)) &lt; 0) {</div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>(<span class="stringliteral">&quot;[{0}] - Failed to getloadavg&quot;</span>, __FUNCTION__);</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        <span class="keywordflow">throw</span> core::StatusCodeException(STATUS_CODE_FAILURE);</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        stats.load1m = (<a class="code" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a>)avg[0];</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        stats.load5m = (<a class="code" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a>)avg[1];</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        stats.load15m = (<a class="code" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a>)avg[2];</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        stats.load1m = (float)avg[0];</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        stats.load5m = (float)avg[1];</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        stats.load15m = (float)avg[2];</div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;      }</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a90d54b953106bfd924b58c29353d088a">dqm_long</a> cpu_ticks1[4] = {0L};</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a90d54b953106bfd924b58c29353d088a">dqm_long</a> cpu_ticks2[4] = {0L};</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;      <span class="keywordtype">long</span> cpu_ticks1[4] = {0L};</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;      <span class="keywordtype">long</span> cpu_ticks2[4] = {0L};</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;      readDarwinCpu(cpu_ticks1);</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a85282f7ecc713ce1a5a0f53ef0b2e1c9">::sleep</a>(sampleTime);</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;      ::sleep(sampleTime);</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;      readDarwinCpu(cpu_ticks2);</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a90d54b953106bfd924b58c29353d088a">dqm_long</a> userticks = (cpu_ticks2[0] + cpu_ticks2[3]) - (cpu_ticks1[0] + cpu_ticks1[3]);</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a90d54b953106bfd924b58c29353d088a">dqm_long</a> systicks = cpu_ticks2[1] - cpu_ticks1[1];</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a90d54b953106bfd924b58c29353d088a">dqm_long</a> idleticks = cpu_ticks2[2] - cpu_ticks1[2];</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;      <span class="keywordtype">long</span> userticks = (cpu_ticks2[0] + cpu_ticks2[3]) - (cpu_ticks1[0] + cpu_ticks1[3]);</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;      <span class="keywordtype">long</span> systicks = cpu_ticks2[1] - cpu_ticks1[1];</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;      <span class="keywordtype">long</span> idleticks = cpu_ticks2[2] - cpu_ticks1[2];</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;      <span class="keywordflow">if</span> (userticks &lt; 0)</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;        userticks = 0;</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;      <span class="keywordflow">if</span> (systicks &lt; 0)</div>
 <div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        systicks = 0;</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;      <span class="keywordflow">if</span> (idleticks &lt; 0)</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;        idleticks = 0;</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a90d54b953106bfd924b58c29353d088a">dqm_long</a> totalticks = userticks + systicks + idleticks;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;      <span class="keywordtype">long</span> totalticks = userticks + systicks + idleticks;</div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;      <span class="keywordflow">if</span> (totalticks) {</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;        stats.user = ((<a class="code" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a>)(100 * userticks)) / ((<a class="code" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a>)totalticks);</div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        stats.sys = ((<a class="code" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a>)(100 * systicks)) / ((<a class="code" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a>)totalticks);</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;        stats.user = ((float)(100 * userticks)) / ((<span class="keywordtype">float</span>)totalticks);</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        stats.sys = ((float)(100 * systicks)) / ((<span class="keywordtype">float</span>)totalticks);</div>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        stats.tot = stats.user + stats.sys;</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        stats.idle = ((<a class="code" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a>)(100 * idleticks)) / ((<a class="code" href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm_float</a>)totalticks);</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        stats.idle = ((float)(100 * idleticks)) / ((<span class="keywordtype">float</span>)totalticks);</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;      }</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    }</div>
 <div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;</div>
@@ -497,21 +497,21 @@
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        <a class="code" href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a>(<span class="stringliteral">&quot;[{0}] - Failed to get host_statistics: {1}&quot;</span>, __FUNCTION__, mach_error_string(kr));</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        <span class="keywordflow">throw</span> core::StatusCodeException(STATUS_CODE_FAILURE);</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;      }</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;      <span class="keyword">static</span> <a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a> pshift = 0;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;      <span class="keyword">static</span> <span class="keywordtype">int</span> pshift = 0;</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;      <span class="keywordflow">if</span> (pshift == 0) {</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> psize = getpagesize(); psize &gt; 1; psize &gt;&gt;= 1) {</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;          pshift++;</div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        }</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;      }</div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a5ad3ae353c4bd50bb3ee51d2c85519d2">dqm_long_long</a> used = (<a class="code" href="namespacedqm4hep_1_1core.html#a5ad3ae353c4bd50bb3ee51d2c85519d2">dqm_long_long</a>)(vm_info.active_count + vm_info.inactive_count + vm_info.wire_count) &lt;&lt; pshift;</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a5ad3ae353c4bd50bb3ee51d2c85519d2">dqm_long_long</a> free = (<a class="code" href="namespacedqm4hep_1_1core.html#a5ad3ae353c4bd50bb3ee51d2c85519d2">dqm_long_long</a>)(vm_info.free_count) &lt;&lt; pshift;</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a5ad3ae353c4bd50bb3ee51d2c85519d2">dqm_long_long</a> total =</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;          (<a class="code" href="namespacedqm4hep_1_1core.html#a5ad3ae353c4bd50bb3ee51d2c85519d2">dqm_long_long</a>)(vm_info.active_count + vm_info.inactive_count + vm_info.free_count + vm_info.wire_count)</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;      <span class="keywordtype">long</span> <span class="keywordtype">long</span> used = (<span class="keywordtype">long</span> long)(vm_info.active_count + vm_info.inactive_count + vm_info.wire_count) &lt;&lt; pshift;</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;      <span class="keywordtype">long</span> <span class="keywordtype">long</span> free = (<span class="keywordtype">long</span> long)(vm_info.free_count) &lt;&lt; pshift;</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;      <span class="keywordtype">long</span> <span class="keywordtype">long</span> total =</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;          (<span class="keywordtype">long</span> long)(vm_info.active_count + vm_info.inactive_count + vm_info.free_count + vm_info.wire_count)</div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;          &lt;&lt; pshift;</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;      <span class="comment">// Swap is available at same time as mem, so grab values here.</span></div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a5ad3ae353c4bd50bb3ee51d2c85519d2">dqm_long_long</a> swap_used = vm_info.pageouts &lt;&lt; pshift;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;      <span class="keywordtype">long</span> <span class="keywordtype">long</span> swap_used = vm_info.pageouts &lt;&lt; pshift;</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;      <span class="comment">// Figure out total swap. This adds up the size of the swapfiles */</span></div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;      <span class="keyword">static</span> DIR *dirp = <span class="keyword">nullptr</span>;</div>
@@ -522,7 +522,7 @@
 <div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        <span class="comment">// return;</span></div>
 <div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;      }</div>
 <div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a5ad3ae353c4bd50bb3ee51d2c85519d2">dqm_long_long</a> swap_total = 0;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;      <span class="keywordtype">long</span> <span class="keywordtype">long</span> swap_total = 0;</div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;      <span class="keyword">struct </span>dirent *dp = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;</div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;      <span class="keywordflow">while</span> ((dp = readdir(dirp)) != 0) {</div>
@@ -538,11 +538,11 @@
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;      }</div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;      closedir(dirp);</div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;      stats.vmTot = (<a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a>)((total + swap_total) &gt;&gt; 20); <span class="comment">// divide by 1024 * 1024</span></div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;      stats.vmUsed = (<a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a>)((used + swap_used) &gt;&gt; 20);</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;      stats.vmFree = (<a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a>)((free + swap_total - swap_used) &gt;&gt; 20);</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;      stats.rssTot = (<a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a>)(total &gt;&gt; 20);</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;      stats.rssUsed = (<a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a>)(used &gt;&gt; 20);</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;      stats.vmTot = (int)((total + swap_total) &gt;&gt; 20); <span class="comment">// divide by 1024 * 1024</span></div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;      stats.vmUsed = (int)((used + swap_used) &gt;&gt; 20);</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;      stats.vmFree = (int)((free + swap_total - swap_used) &gt;&gt; 20);</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;      stats.rssTot = (int)(total &gt;&gt; 20);</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;      stats.rssUsed = (int)(used &gt;&gt; 20);</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    }</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
@@ -634,8 +634,8 @@
 <div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;          }</div>
 <div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;        }</div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;        stats.vm = (<a class="code" href="namespacedqm4hep_1_1core.html#a90d54b953106bfd924b58c29353d088a">dqm_long</a>)(rsize / 1024.);</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        stats.rss = (<a class="code" href="namespacedqm4hep_1_1core.html#a90d54b953106bfd924b58c29353d088a">dqm_long</a>)(vprvt / 1024.);</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;        stats.vm = (long)(rsize / 1024.);</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;        stats.rss = (long)(vprvt / 1024.);</div>
 <div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;      }</div>
 <div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    }</div>
 <div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;</div>
@@ -713,11 +713,11 @@
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;</div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> darwinNetStats(<a class="code" href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">NetworkStats</a> &amp;stats, <a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a> sampleTime) {</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> darwinNetStats(<a class="code" href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">NetworkStats</a> &amp;stats, <span class="keywordtype">int</span> sampleTime) {</div>
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;</div>
 <div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">NetworkStats</a> tempStats;</div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;      readDarwinNet(tempStats);</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;      <a class="code" href="namespacedqm4hep_1_1core.html#a85282f7ecc713ce1a5a0f53ef0b2e1c9">::sleep</a>(sampleTime);</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;      ::sleep(sampleTime);</div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;      readDarwinNet(stats);</div>
 <div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;</div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;      fillNetRate(stats, tempStats, sampleTime);</div>
@@ -726,7 +726,7 @@
 <div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;<span class="preprocessor">#endif // __APPLE__</span></div>
 <div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;<span class="preprocessor">#if defined(_WIN32)</span></div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="preprocessor"></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> winCpuStats(CpuStats &amp;stats, <a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a> sampleTime){</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="preprocessor"></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> winCpuStats(CpuStats &amp;stats, <span class="keywordtype">int</span> sampleTime){</div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;      <span class="comment">/* WINDOWS implementation: TBD */</span></div>
 <div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;      <a class="code" href="Logging_8h.html#a0bfc26706a9022c017dd03af3c7c91d7">dqm_warning</a>(<span class="stringliteral">&quot;[{0}] - has not been implemented!&quot;</span>, __FUNCTION__);</div>
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;      <span class="keywordflow">throw</span> core::StatusCodeException(STATUS_CODE_NOT_FOUND);</div>
@@ -750,7 +750,7 @@
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;</div>
 <div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> winNetStats(<a class="code" href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">NetworkStats</a> &amp;stats, <a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a> sampleTime) {</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> winNetStats(<a class="code" href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">NetworkStats</a> &amp;stats, <span class="keywordtype">int</span> sampleTime) {</div>
 <div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;      <span class="comment">/* WINDOWS implementation: TBD */</span></div>
 <div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;      <a class="code" href="Logging_8h.html#a0bfc26706a9022c017dd03af3c7c91d7">dqm_warning</a>(<span class="stringliteral">&quot;[{0}] - has not been implemented!&quot;</span>, __FUNCTION__);</div>
 <div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;      <span class="keywordflow">throw</span> core::StatusCodeException(STATUS_CODE_NOT_FOUND);</div>
@@ -761,7 +761,7 @@
 <div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;</div>
-<div class="line"><a name="l00772"></a><span class="lineno"><a class="line" href="namespacedqm4hep_1_1core.html#a3e7a42a034c52afe4d01904e20ea2774">  772</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacedqm4hep_1_1core.html#a3e7a42a034c52afe4d01904e20ea2774">cpuStats</a>(<a class="code" href="structdqm4hep_1_1core_1_1CpuStats.html">CpuStats</a> &amp;stats, <a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a> sampleTime) {</div>
+<div class="line"><a name="l00772"></a><span class="lineno"><a class="line" href="namespacedqm4hep_1_1core.html#aeb5de64c20fb6bef24ec35ff4f4b4300">  772</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacedqm4hep_1_1core.html#aeb5de64c20fb6bef24ec35ff4f4b4300">cpuStats</a>(<a class="code" href="structdqm4hep_1_1core_1_1CpuStats.html">CpuStats</a> &amp;stats, <span class="keywordtype">int</span> sampleTime) {</div>
 <div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;<span class="preprocessor"></span>      darwinCpuStats(stats, sampleTime);</div>
 <div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;<span class="preprocessor">#elif defined(__linux__)</span></div>
@@ -803,7 +803,7 @@
 <div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;</div>
 <div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;    <span class="comment">//-------------------------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;</div>
-<div class="line"><a name="l00814"></a><span class="lineno"><a class="line" href="namespacedqm4hep_1_1core.html#a3a1fb46f917d43523204d4eff2d607a9">  814</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacedqm4hep_1_1core.html#a3a1fb46f917d43523204d4eff2d607a9">netStats</a>(<a class="code" href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">NetworkStats</a> &amp;stats, <a class="code" href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm_int</a> sampleTime) {</div>
+<div class="line"><a name="l00814"></a><span class="lineno"><a class="line" href="namespacedqm4hep_1_1core.html#afaf76ff6f337abcca45f1c60cffd022c">  814</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespacedqm4hep_1_1core.html#afaf76ff6f337abcca45f1c60cffd022c">netStats</a>(<a class="code" href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">NetworkStats</a> &amp;stats, <span class="keywordtype">int</span> sampleTime) {</div>
 <div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;<span class="preprocessor">#if defined(__APPLE__)</span></div>
 <div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;<span class="preprocessor"></span>      darwinNetStats(stats, sampleTime);</div>
 <div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;<span class="preprocessor">#elif defined(__linux__)</span></div>
@@ -816,39 +816,25 @@
 <div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;<span class="preprocessor"></span>    }</div>
 <div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;  } <span class="comment">// namespace core</span></div>
 <div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;} <span class="comment">// namespace dqm4hep</span></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_afe495f73de4a44f7319bb301dedc6de3"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#afe495f73de4a44f7319bb301dedc6de3">dqm4hep::core::dqm_stat</a></div><div class="ttdeci">long unsigned int dqm_stat</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00282">Internal.h:282</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a64e1e1e7f3cb2f6ddac8bb106c1196d9"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a64e1e1e7f3cb2f6ddac8bb106c1196d9">dqm4hep::core::TimePoint</a></div><div class="ttdeci">time::point TimePoint</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00253">Internal.h:253</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a40520bcf4a3586a8b48ed0c438e2576d"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">dqm4hep::core::NetworkStats</a></div><div class="ttdeci">std::map&lt; std::string, INetworkStats &gt; NetworkStats</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00665">Internal.h:665</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1core_1_1CpuStats_html"><div class="ttname"><a href="structdqm4hep_1_1core_1_1CpuStats.html">dqm4hep::core::CpuStats</a></div><div class="ttdoc">CpuStats struct Store system wide cpu usage in percentage. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00573">Internal.h:573</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1time_html_a105a9529e7228a1567dfda4b5f083bfc"><div class="ttname"><a href="classdqm4hep_1_1core_1_1time.html#a105a9529e7228a1567dfda4b5f083bfc">dqm4hep::core::time::now</a></div><div class="ttdeci">static point now()</div><div class="ttdoc">Returns the current time. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00160">Internal.h:160</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a40520bcf4a3586a8b48ed0c438e2576d"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a40520bcf4a3586a8b48ed0c438e2576d">dqm4hep::core::NetworkStats</a></div><div class="ttdeci">std::map&lt; std::string, INetworkStats &gt; NetworkStats</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00593">Internal.h:593</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1core_1_1CpuStats_html"><div class="ttname"><a href="structdqm4hep_1_1core_1_1CpuStats.html">dqm4hep::core::CpuStats</a></div><div class="ttdoc">CpuStats struct Store system wide cpu usage in percentage. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00501">Internal.h:501</a></div></div>
 <div class="ttc" id="Logging_8h_html"><div class="ttname"><a href="Logging_8h.html">Logging.h</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_a989a35e91c85d37dc3c674255b13d6d9"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a989a35e91c85d37dc3c674255b13d6d9">dqm4hep::core::memStats</a></div><div class="ttdeci">void memStats(MemoryStats &amp;stats)</div><div class="ttdoc">Get some memory stats. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00786">Internal.cc:786</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1core_1_1ProcessStats_html"><div class="ttname"><a href="structdqm4hep_1_1core_1_1ProcessStats.html">dqm4hep::core::ProcessStats</a></div><div class="ttdoc">ProcessStats struct Store cpu (time/percentage) and memory usage from current process All memory unit...</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00623">Internal.h:623</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a63a2326a6a01e5ed790f2c4027038cb2"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a63a2326a6a01e5ed790f2c4027038cb2">dqm4hep::core::now</a></div><div class="ttdeci">TimePoint now()</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00075">Internal.cc:75</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1time_html_aa451f91d7636a112afba38b3d234c5f7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1time.html#aa451f91d7636a112afba38b3d234c5f7">dqm4hep::core::time::asPoint</a></div><div class="ttdeci">static point asPoint(std::time_t t)</div><div class="ttdoc">Convert time_t to time point. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00205">Internal.h:205</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1core_1_1ProcessStats_html"><div class="ttname"><a href="structdqm4hep_1_1core_1_1ProcessStats.html">dqm4hep::core::ProcessStats</a></div><div class="ttdoc">ProcessStats struct Store cpu (time/percentage) and memory usage from current process All memory unit...</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00551">Internal.h:551</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_a57c17de43b3dca9bfde9d8c335c0416d"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a57c17de43b3dca9bfde9d8c335c0416d">dqm4hep::core::replaceAll</a></div><div class="ttdeci">std::string &amp; replaceAll(std::string &amp;subject, const std::string &amp;search, const std::string &amp;replace)</div><div class="ttdoc">Replaces all occurences in the spcified string. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00057">Internal.cc:57</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_a1748cc6392c78ca488485059fc0f2417"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1748cc6392c78ca488485059fc0f2417">dqm4hep::core::procStats</a></div><div class="ttdeci">void procStats(ProcessStats &amp;stats)</div><div class="ttdoc">Get stats from current process. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00800">Internal.cc:800</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1time_html_a17002720a12e7a24a8acd0b6cf89939d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1time.html#a17002720a12e7a24a8acd0b6cf89939d">dqm4hep::core::time::asString</a></div><div class="ttdeci">static std::string asString(const point &amp;p)</div><div class="ttdoc">Convert a time pointto string. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00241">Internal.h:241</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a745c8d1daa33a85ec54b1eb41a9de946"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a745c8d1daa33a85ec54b1eb41a9de946">dqm4hep::core::timeToHMS</a></div><div class="ttdeci">void timeToHMS(std::time_t t, std::string &amp;timeStr)</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00068">Internal.cc:68</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a0680a835d8d16c6af7ffd5ff0a33e6ef"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a0680a835d8d16c6af7ffd5ff0a33e6ef">dqm4hep::core::TimeDuration</a></div><div class="ttdeci">time::duration TimeDuration</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00254">Internal.h:254</a></div></div>
 <div class="ttc" id="Logging_8h_html_a0bfc26706a9022c017dd03af3c7c91d7"><div class="ttname"><a href="Logging_8h.html#a0bfc26706a9022c017dd03af3c7c91d7">dqm_warning</a></div><div class="ttdeci">#define dqm_warning(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00027">Logging.h:27</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a5ad3ae353c4bd50bb3ee51d2c85519d2"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a5ad3ae353c4bd50bb3ee51d2c85519d2">dqm4hep::core::dqm_long_long</a></div><div class="ttdeci">long long dqm_long_long</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00278">Internal.h:278</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a3a1fb46f917d43523204d4eff2d607a9"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a3a1fb46f917d43523204d4eff2d607a9">dqm4hep::core::netStats</a></div><div class="ttdeci">void netStats(NetworkStats &amp;stats, dqm_int sampleTime=1)</div><div class="ttdoc">Get some network stats. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00814">Internal.cc:814</a></div></div>
 <div class="ttc" id="Internal_8h_html"><div class="ttname"><a href="Internal_8h.html">Internal.h</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a3bb7e9ce60c001272e7c5696e3b531c7"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a3bb7e9ce60c001272e7c5696e3b531c7">dqm4hep::core::dqm_int</a></div><div class="ttdeci">int64_t dqm_int</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00280">Internal.h:280</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a3e7a42a034c52afe4d01904e20ea2774"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a3e7a42a034c52afe4d01904e20ea2774">dqm4hep::core::cpuStats</a></div><div class="ttdeci">void cpuStats(CpuStats &amp;stats, dqm_int sampleTime=1)</div><div class="ttdoc">Get some memory stats. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00772">Internal.cc:772</a></div></div>
-<div class="ttc" id="structdqm4hep_1_1core_1_1MemoryStats_html"><div class="ttname"><a href="structdqm4hep_1_1core_1_1MemoryStats.html">dqm4hep::core::MemoryStats</a></div><div class="ttdoc">MemoryStats struct Store system wide memory usage All units in Mb. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00599">Internal.h:599</a></div></div>
+<div class="ttc" id="structdqm4hep_1_1core_1_1MemoryStats_html"><div class="ttname"><a href="structdqm4hep_1_1core_1_1MemoryStats.html">dqm4hep::core::MemoryStats</a></div><div class="ttdoc">MemoryStats struct Store system wide memory usage All units in Mb. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00527">Internal.h:527</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_aeb5de64c20fb6bef24ec35ff4f4b4300"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#aeb5de64c20fb6bef24ec35ff4f4b4300">dqm4hep::core::cpuStats</a></div><div class="ttdeci">void cpuStats(CpuStats &amp;stats, int sampleTime=1)</div><div class="ttdoc">Get some memory stats. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00772">Internal.cc:772</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_a4e343d4adf17ac10317453800b336d9c"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a4e343d4adf17ac10317453800b336d9c">dqm4hep::core::wildcardMatch</a></div><div class="ttdeci">bool wildcardMatch(const std::string &amp;testString, const std::string &amp;wildcardString, bool caseSensitive=true)</div><div class="ttdoc">Whether the test string matches the wildcard expression. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00031">Internal.cc:31</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a039ff0b407ffd4e52eabb7ba4cc6e476"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a039ff0b407ffd4e52eabb7ba4cc6e476">dqm4hep::core::dqm_double</a></div><div class="ttdeci">double dqm_double</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00276">Internal.h:276</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a90d54b953106bfd924b58c29353d088a"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a90d54b953106bfd924b58c29353d088a">dqm4hep::core::dqm_long</a></div><div class="ttdeci">long dqm_long</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00277">Internal.h:277</a></div></div>
 <div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00028">Logging.h:28</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_acbeab59f33f0d5db4561f2314efda868"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#acbeab59f33f0d5db4561f2314efda868">dqm4hep::core::dqm_float</a></div><div class="ttdeci">float dqm_float</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00275">Internal.h:275</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_afaf76ff6f337abcca45f1c60cffd022c"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#afaf76ff6f337abcca45f1c60cffd022c">dqm4hep::core::netStats</a></div><div class="ttdeci">void netStats(NetworkStats &amp;stats, int sampleTime=1)</div><div class="ttdoc">Get some network stats. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00814">Internal.cc:814</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1StatusCodeException_html"><div class="ttname"><a href="classdqm4hep_1_1core_1_1StatusCodeException.html">dqm4hep::core::StatusCodeException</a></div><div class="ttdoc">StatusCodeException class. </div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00133">StatusCodes.h:133</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a85282f7ecc713ce1a5a0f53ef0b2e1c9"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a85282f7ecc713ce1a5a0f53ef0b2e1c9">dqm4hep::core::sleep</a></div><div class="ttdeci">void sleep(const TimeDuration &amp;duration)</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00081">Internal.cc:81</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 12:37:04 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 13:31:21 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

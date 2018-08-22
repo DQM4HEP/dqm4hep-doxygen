@@ -638,7 +638,7 @@ template&lt;typename... Args&gt; </div>
 
 <p>Definition at line <a class="el" href="Signal_8h_source.html#l00383">383</a> of file <a class="el" href="Signal_8h_source.html">Signal.h</a>.</p>
 
-<p>Referenced by <a class="el" href="RunControl_8cc_source.html#l00091">dqm4hep::online::RunControl::endCurrentRun()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00348">dqm4hep::net::WsServer::onCommandMessage()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00360">dqm4hep::net::WsServer::onRpcMessage()</a>, <a class="el" href="GenericEventXMLReader_8cc_source.html#l00125">dqm4hep::core::GenericEventXMLReader::readNextEvent()</a>, <a class="el" href="EventCollectorClient_8cc_source.html#l00021">dqm4hep::online::EventCollectorClient::SourceInfo::receiveEvent()</a>, and <a class="el" href="RunControl_8cc_source.html#l00057">dqm4hep::online::RunControl::startNewRun()</a>.</p>
+<p>Referenced by <a class="el" href="Server_8cc_source.html#l00439">dqm4hep::net::Server::clientExitHandler()</a>, <a class="el" href="RunControl_8cc_source.html#l00091">dqm4hep::online::RunControl::endCurrentRun()</a>, <a class="el" href="RequestHandler_8cc_source.html#l00147">dqm4hep::net::CommandHandler::handleCommand()</a>, <a class="el" href="RequestHandler_8cc_source.html#l00064">dqm4hep::net::RequestHandler::handleRequest()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00348">dqm4hep::net::WsServer::onCommandMessage()</a>, <a class="el" href="WebSocketServer_8cc_source.html#l00360">dqm4hep::net::WsServer::onRpcMessage()</a>, <a class="el" href="GenericEventXMLReader_8cc_source.html#l00125">dqm4hep::core::GenericEventXMLReader::readNextEvent()</a>, <a class="el" href="EventCollectorClient_8cc_source.html#l00021">dqm4hep::online::EventCollectorClient::SourceInfo::receiveEvent()</a>, <a class="el" href="ServiceHandler_8cc_source.html#l00042">dqm4hep::net::ServiceHandler::receiveServiceUpdated()</a>, and <a class="el" href="RunControl_8cc_source.html#l00057">dqm4hep::online::RunControl::startNewRun()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                                                  {</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      <span class="keywordflow">for</span> (<span class="keyword">auto</span> iter = <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#a89335fcc4d5094aa8c6448bb0db7aee3">m_callbacks</a>.begin(), endIter = <a class="code" href="classdqm4hep_1_1core_1_1Signal.html#a89335fcc4d5094aa8c6448bb0db7aee3">m_callbacks</a>.end(); endIter != iter; ++iter) {</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        (*iter)-&gt;emit(args...);</div>
@@ -909,7 +909,7 @@ template&lt;typename... Args&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 12:37:06 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 13:31:23 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

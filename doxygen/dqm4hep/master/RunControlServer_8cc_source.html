@@ -146,7 +146,7 @@
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        m_interface-&gt;run();</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">while</span>( ! m_stopFlag )</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;          <a class="code" href="namespacedqm4hep_1_1core.html#a85282f7ecc713ce1a5a0f53ef0b2e1c9">dqm4hep::core::sleep</a>(<a class="code" href="namespacedqm4hep_1_1core.html#a0680a835d8d16c6af7ffd5ff0a33e6ef">dqm4hep::core::TimeDuration</a>(1));</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;          <a class="code" href="classdqm4hep_1_1core_1_1time.html#a7eeba3eb8e43ec49ed05b459576c079a">core::time::msleep</a>(1000);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      m_server-&gt;stop();</div>
@@ -198,14 +198,14 @@
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  }</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;}</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1time_html_a7eeba3eb8e43ec49ed05b459576c079a"><div class="ttname"><a href="classdqm4hep_1_1core_1_1time.html#a7eeba3eb8e43ec49ed05b459576c079a">dqm4hep::core::time::msleep</a></div><div class="ttdeci">static void msleep(unsigned int msec)</div><div class="ttdoc">Sleep for n milliseconds. </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00187">Internal.h:187</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Buffer_html_a86b00f469de07018ef0d0a6d28f24757"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Buffer.html#a86b00f469de07018ef0d0a6d28f24757">dqm4hep::net::Buffer::setModel</a></div><div class="ttdeci">void setModel(std::shared_ptr&lt; BufferModel &gt; model)</div><div class="ttdoc">Set the new model to handle the buffer. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8cc_source.html#l00087">NetBuffer.cc:87</a></div></div>
 <div class="ttc" id="Logging_8h_html"><div class="ttname"><a href="Logging_8h.html">Logging.h</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Singleton_html_a1ecf1990f4849ac5b63ac8ef3ff6522d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Singleton.html#a1ecf1990f4849ac5b63ac8ef3ff6522d">dqm4hep::core::Singleton&lt; PluginManager &gt;::instance</a></div><div class="ttdeci">static PluginManager * instance()</div><div class="ttdoc">Return a unique instance of the class. </div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a0680a835d8d16c6af7ffd5ff0a33e6ef"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a0680a835d8d16c6af7ffd5ff0a33e6ef">dqm4hep::core::TimeDuration</a></div><div class="ttdeci">time::duration TimeDuration</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00254">Internal.h:254</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Buffer_html_a3e6a019eddf910e5e306d0cef3059f91"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Buffer.html#a3e6a019eddf910e5e306d0cef3059f91">dqm4hep::net::Buffer::createModel</a></div><div class="ttdeci">std::shared_ptr&lt; BufferModelT&lt; T &gt; &gt; createModel() const </div><div class="ttdoc">Factory method to create a new model. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00274">NetBuffer.h:274</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Buffer_html"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Buffer.html">dqm4hep::net::Buffer</a></div><div class="ttdoc">Buffer class. </div><div class="ttdef"><b>Definition:</b> <a href="NetBuffer_8h_source.html#l00179">NetBuffer.h:179</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControlInterface_html"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControlInterface.html">dqm4hep::online::RunControlInterface</a></div><div class="ttdoc">RunControlInterface class. </div><div class="ttdef"><b>Definition:</b> <a href="RunControlInterface_8h_source.html#l00034">RunControlInterface.h:34</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_adc020c7501c1db5825e0b12ff30f118c"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#adc020c7501c1db5825e0b12ff30f118c">dqm4hep::core::StringMap</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; StringMap</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00293">Internal.h:293</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_adc020c7501c1db5825e0b12ff30f118c"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#adc020c7501c1db5825e0b12ff30f118c">dqm4hep::core::StringMap</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; StringMap</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00268">Internal.h:268</a></div></div>
 <div class="ttc" id="OnlineRoutes_8h_html"><div class="ttname"><a href="OnlineRoutes_8h.html">OnlineRoutes.h</a></div></div>
 <div class="ttc" id="PluginManager_8h_html"><div class="ttname"><a href="PluginManager_8h.html">PluginManager.h</a></div></div>
 <div class="ttc" id="Logging_8h_html_a491803e6943ef6dac7a84b79dd9eaea7"><div class="ttname"><a href="Logging_8h.html#a491803e6943ef6dac7a84b79dd9eaea7">dqm_error</a></div><div class="ttdeci">#define dqm_error(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00028">Logging.h:28</a></div></div>
@@ -217,11 +217,10 @@
 <div class="ttc" id="classdqm4hep_1_1core_1_1StatusCodeException_html"><div class="ttname"><a href="classdqm4hep_1_1core_1_1StatusCodeException.html">dqm4hep::core::StatusCodeException</a></div><div class="ttdoc">StatusCodeException class. </div><div class="ttdef"><b>Definition:</b> <a href="StatusCodes_8h_source.html#l00133">StatusCodes.h:133</a></div></div>
 <div class="ttc" id="RunControlInterface_8h_html"><div class="ttname"><a href="RunControlInterface_8h.html">RunControlInterface.h</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1online_1_1RunControl_html"><div class="ttname"><a href="classdqm4hep_1_1online_1_1RunControl.html">dqm4hep::online::RunControl</a></div><div class="ttdoc">RunControl class. </div><div class="ttdef"><b>Definition:</b> <a href="RunControl_8h_source.html#l00051">RunControl.h:51</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a85282f7ecc713ce1a5a0f53ef0b2e1c9"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a85282f7ecc713ce1a5a0f53ef0b2e1c9">dqm4hep::core::sleep</a></div><div class="ttdeci">void sleep(const TimeDuration &amp;duration)</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8cc_source.html#l00081">Internal.cc:81</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 12:37:04 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 13:31:21 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

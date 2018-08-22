@@ -495,13 +495,14 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Server_8cc_source.html#l00439">439</a> of file <a class="el" href="Server_8cc_source.html">Server.cc</a>.</p>
 
-<p>References <a class="el" href="Server_8h_source.html#l00274">m_clientExitSignal</a>.</p>
+<p>References <a class="el" href="Signal_8h_source.html#l00383">dqm4hep::core::Signal&lt; Args &gt;::emit()</a>, and <a class="el" href="Server_8h_source.html#l00274">m_clientExitSignal</a>.</p>
 <div class="fragment"><div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;                                   {</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;      <span class="keywordtype">int</span> clientID(DimServer::getClientId());</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;Client &quot;</span> &lt;&lt; clientID &lt;&lt; <span class="stringliteral">&quot; exits&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1Server.html#a55f547e71cad7f97b937770c0ec7d32e">m_clientExitSignal</a>.process(clientID);</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;      <a class="code" href="classdqm4hep_1_1net_1_1Server.html#a55f547e71cad7f97b937770c0ec7d32e">m_clientExitSignal</a>.<a class="code" href="classdqm4hep_1_1core_1_1Signal.html#aad0b91b4b2e0efd670b0a35ae3d40c45">emit</a>(clientID);</div>
 <div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    }</div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Server_html_a55f547e71cad7f97b937770c0ec7d32e"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Server.html#a55f547e71cad7f97b937770c0ec7d32e">dqm4hep::net::Server::m_clientExitSignal</a></div><div class="ttdeci">core::Signal&lt; int &gt; m_clientExitSignal</div><div class="ttdoc">The signal emitted whenever a client exits. </div><div class="ttdef"><b>Definition:</b> <a href="Server_8h_source.html#l00274">Server.h:274</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Signal_html_aad0b91b4b2e0efd670b0a35ae3d40c45"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Signal.html#aad0b91b4b2e0efd670b0a35ae3d40c45">dqm4hep::core::Signal::emit</a></div><div class="ttdeci">void emit(Args...args)</div><div class="ttdoc">Emit the signal. </div><div class="ttdef"><b>Definition:</b> <a href="Signal_8h_source.html#l00383">Signal.h:383</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -981,7 +982,7 @@ template&lt;typename Controller &gt; </div>
 
 <p>Definition at line <a class="el" href="Server_8cc_source.html#l00318">318</a> of file <a class="el" href="Server_8cc_source.html">Server.cc</a>.</p>
 
-<p>References <a class="el" href="NetBuffer_8h_source.html#l00274">dqm4hep::net::Buffer::createModel()</a>, <a class="el" href="Internal_8h_source.html#l00521">dqm4hep::core::fillHostInfo()</a>, <a class="el" href="Server_8h_source.html#l00272">m_commandHandlerMap</a>, <a class="el" href="Server_8h_source.html#l00268">m_name</a>, <a class="el" href="Server_8h_source.html#l00271">m_requestHandlerMap</a>, <a class="el" href="Server_8h_source.html#l00270">m_serviceMap</a>, and <a class="el" href="NetBuffer_8cc_source.html#l00087">dqm4hep::net::Buffer::setModel()</a>.</p>
+<p>References <a class="el" href="NetBuffer_8h_source.html#l00274">dqm4hep::net::Buffer::createModel()</a>, <a class="el" href="Internal_8h_source.html#l00449">dqm4hep::core::fillHostInfo()</a>, <a class="el" href="Server_8h_source.html#l00272">m_commandHandlerMap</a>, <a class="el" href="Server_8h_source.html#l00268">m_name</a>, <a class="el" href="Server_8h_source.html#l00271">m_requestHandlerMap</a>, <a class="el" href="Server_8h_source.html#l00270">m_serviceMap</a>, and <a class="el" href="NetBuffer_8cc_source.html#l00087">dqm4hep::net::Buffer::setModel()</a>.</p>
 
 <p>Referenced by <a class="el" href="Server_8cc_source.html#l00027">Server()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                                                                           {</div>
@@ -1015,11 +1016,11 @@ template&lt;typename Controller &gt; </div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;      response.setModel(model);</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;      model-&gt;move(std::move(serializedJson));</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    }</div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a2c057cc6c31326dcc11094a917191836"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a2c057cc6c31326dcc11094a917191836">dqm4hep::core::fillHostInfo</a></div><div class="ttdeci">void fillHostInfo(StringMap &amp;info)</div><div class="ttdoc">Fill host info (uname result + host name). </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00521">Internal.h:521</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_adc020c7501c1db5825e0b12ff30f118c"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#adc020c7501c1db5825e0b12ff30f118c">dqm4hep::core::StringMap</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; StringMap</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00293">Internal.h:293</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a2c057cc6c31326dcc11094a917191836"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a2c057cc6c31326dcc11094a917191836">dqm4hep::core::fillHostInfo</a></div><div class="ttdeci">void fillHostInfo(StringMap &amp;info)</div><div class="ttdoc">Fill host info (uname result + host name). </div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00449">Internal.h:449</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_adc020c7501c1db5825e0b12ff30f118c"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#adc020c7501c1db5825e0b12ff30f118c">dqm4hep::core::StringMap</a></div><div class="ttdeci">std::map&lt; std::string, std::string &gt; StringMap</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00268">Internal.h:268</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Server_html_a91604ef0556ae8fdcb824223b445a2cb"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Server.html#a91604ef0556ae8fdcb824223b445a2cb">dqm4hep::net::Server::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdoc">The short server name. </div><div class="ttdef"><b>Definition:</b> <a href="Server_8h_source.html#l00268">Server.h:268</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Server_html_a3f8df86068dc99d15b908bad43f579e7"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Server.html#a3f8df86068dc99d15b908bad43f579e7">dqm4hep::net::Server::m_commandHandlerMap</a></div><div class="ttdeci">CommandHandlerMap m_commandHandlerMap</div><div class="ttdoc">The map of registered command handlers. </div><div class="ttdef"><b>Definition:</b> <a href="Server_8h_source.html#l00272">Server.h:272</a></div></div>
-<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00289">Internal.h:289</a></div></div>
+<div class="ttc" id="namespacedqm4hep_1_1core_html_a1ad5f93cca8ca24236779b1a0798fb63"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a1ad5f93cca8ca24236779b1a0798fb63">dqm4hep::core::StringVector</a></div><div class="ttdeci">std::vector&lt; std::string &gt; StringVector</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00264">Internal.h:264</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Server_html_a371ec9f51053a0be2c85630e8211f386"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Server.html#a371ec9f51053a0be2c85630e8211f386">dqm4hep::net::Server::m_requestHandlerMap</a></div><div class="ttdeci">RequestHandlerMap m_requestHandlerMap</div><div class="ttdoc">The map of registered request handlers. </div><div class="ttdef"><b>Definition:</b> <a href="Server_8h_source.html#l00271">Server.h:271</a></div></div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_adbf7ece0bddde655770fc3623b8e9445"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#adbf7ece0bddde655770fc3623b8e9445">dqm4hep::core::json</a></div><div class="ttdeci">nlohmann::json json</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00020">json.h:20</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1net_1_1Server_html_aa5f557d3f2a966877ee6e4b425cec7e0"><div class="ttname"><a href="classdqm4hep_1_1net_1_1Server.html#aa5f557d3f2a966877ee6e4b425cec7e0">dqm4hep::net::Server::m_serviceMap</a></div><div class="ttdeci">ServiceMap m_serviceMap</div><div class="ttdoc">The map of registered services. </div><div class="ttdef"><b>Definition:</b> <a href="Server_8h_source.html#l00270">Server.h:270</a></div></div>
@@ -2154,7 +2155,7 @@ template&lt;typename Controller &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 22 2018 12:37:06 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 22 2018 13:31:23 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
