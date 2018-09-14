@@ -145,6 +145,9 @@
 <li>m_callbacks
 : <a class="el" href="classdqm4hep_1_1core_1_1Signal.html#a89335fcc4d5094aa8c6448bb0db7aee3">dqm4hep::core::Signal&lt; Args &gt;</a>
 </li>
+<li>m_class
+: <a class="el" href="classdqm4hep_1_1core_1_1ROOTHandle.html#aeaf48987c7af6063db7db27c9a6411d5">dqm4hep::core::ROOTHandle</a>
+</li>
 <li>m_client
 : <a class="el" href="classdqm4hep_1_1online_1_1Application.html#a1753b3ab388e8d0765eee7ec7d0808ed">dqm4hep::online::Application</a>
 , <a class="el" href="classdqm4hep_1_1online_1_1EventCollectorClient.html#a672d089a7ac7a8a8d181d4f4cdeb273c">dqm4hep::online::EventCollectorClient</a>
@@ -388,6 +391,9 @@
 <li>m_inputArchiveName
 : <a class="el" href="classdqm4hep_1_1online_1_1ModuleApplication.html#ac96f02af42232d0d5714fad1df7f8639">dqm4hep::online::ModuleApplication</a>
 </li>
+<li>m_instance
+: <a class="el" href="classdqm4hep_1_1core_1_1PluginManager.html#a5a1ef790a0c6ca977448e2dccbd5210b">dqm4hep::core::PluginManager</a>
+</li>
 <li>m_interface
 : <a class="el" href="classdqm4hep_1_1online_1_1RunControlServer.html#aac8916b7b26a61fe5eef322c26ade999">dqm4hep::online::RunControlServer</a>
 </li>
@@ -518,6 +524,7 @@
 </li>
 <li>m_name
 : <a class="el" href="classdqm4hep_1_1core_1_1Directory.html#af960fce8e53bfb17516a9b54b2d40976">dqm4hep::core::Directory&lt; T &gt;</a>
+, <a class="el" href="classdqm4hep_1_1core_1_1Plugin.html#a350c40a97144de5bb4d1094ca264ed19">dqm4hep::core::Plugin</a>
 , <a class="el" href="classdqm4hep_1_1core_1_1QualityTest.html#a5fe8117a696ff1530a28349186763c10">dqm4hep::core::QualityTest</a>
 , <a class="el" href="classdqm4hep_1_1net_1_1CommandHandler.html#aa35e72c554210351f5fd1f3673598315">dqm4hep::net::CommandHandler</a>
 , <a class="el" href="classdqm4hep_1_1net_1_1RequestHandler.html#a2b4d8ec7507b96ade8c82203dfbf70fa">dqm4hep::net::RequestHandler</a>
@@ -542,6 +549,10 @@
 </li>
 <li>m_nCollectedEvents60
 : <a class="el" href="classdqm4hep_1_1online_1_1EventCollector.html#a6587d1150f035b76987083295a195bf9">dqm4hep::online::EventCollector</a>
+</li>
+<li>m_newFunction
+: <a class="el" href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">dqm4hep::core::Handle</a>
+, <a class="el" href="classdqm4hep_1_1core_1_1Plugin.html#a3639b01186227f6806d00450defe0283">dqm4hep::core::Plugin</a>
 </li>
 <li>m_noServer
 : <a class="el" href="classdqm4hep_1_1online_1_1Application.html#aa9d9002beacb20a8fdf7b2f9dd81aa89">dqm4hep::online::Application</a>
@@ -617,14 +628,8 @@
 , <a class="el" href="classdqm4hep_1_1net_1_1RequestHandler_1_1Rpc.html#a481a729689756c600688e38b70146d5a">dqm4hep::net::RequestHandler::Rpc</a>
 , <a class="el" href="classdqm4hep_1_1net_1_1ServiceHandler_1_1ServiceInfo.html#a880b0f42d1e51c1b6a4f535d07b3ee0e">dqm4hep::net::ServiceHandler::ServiceInfo</a>
 </li>
-<li>m_pInstance
-: <a class="el" href="classdqm4hep_1_1core_1_1Singleton.html#a3ec8a59518a3664f6ac90b2dd12609c6">dqm4hep::core::Singleton&lt; T &gt;</a>
-</li>
 <li>m_pluginMap
 : <a class="el" href="classdqm4hep_1_1core_1_1PluginManager.html#a86e7bb8657d3717a8efd66563cfd6133">dqm4hep::core::PluginManager</a>
-</li>
-<li>m_pluginName
-: <a class="el" href="classdqm4hep_1_1core_1_1Plugin.html#a573c7e7e3d0123eb87df80637f762d15">dqm4hep::core::Plugin</a>
 </li>
 <li>m_pMySQL
 : <a class="el" href="classdqm4hep_1_1core_1_1DBInterface.html#a4e585d6381bc79ddc26c08e8a1967163">dqm4hep::core::DBInterface</a>
@@ -674,7 +679,8 @@
 : <a class="el" href="classdqm4hep_1_1online_1_1RunControlServer.html#a685b7dc71bdbd66b8c8e55ad054ae46f">dqm4hep::online::RunControlServer</a>
 </li>
 <li>m_ptr
-: <a class="el" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler&lt; T &gt;</a>
+: <a class="el" href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">dqm4hep::core::Handle</a>
+, <a class="el" href="classdqm4hep_1_1core_1_1PtrHandler.html#af8ad6474d382b3b3f74e0487ed24a0ea">dqm4hep::core::PtrHandler&lt; T &gt;</a>
 </li>
 <li>m_publish
 : <a class="el" href="classdqm4hep_1_1online_1_1OnlineElement.html#a21504c5434a07e348415fa908527e919">dqm4hep::online::OnlineElement</a>
@@ -687,9 +693,6 @@
 </li>
 <li>m_qualityTestDescription
 : <a class="el" href="classdqm4hep_1_1core_1_1QualityTestReport.html#aeb960c44a1314f78461ac7d74c16fedb">dqm4hep::core::QualityTestReport</a>
-</li>
-<li>m_qualityTestFactoryMap
-: <a class="el" href="classdqm4hep_1_1core_1_1MonitorElementManager.html#a91a10eee963651b9153ab62023fd73a3">dqm4hep::core::MonitorElementManager</a>
 </li>
 <li>m_qualityTestMap
 : <a class="el" href="classdqm4hep_1_1core_1_1MonitorElementManager.html#a39396255bb0f17c61148630193e851ad">dqm4hep::core::MonitorElementManager</a>
@@ -985,6 +988,10 @@
 , <a class="el" href="classdqm4hep_1_1online_1_1AppEvent.html#aab32a28ea46921ec21fb5ea29e7cafe7">dqm4hep::online::AppEvent</a>
 , <a class="el" href="classdqm4hep_1_1online_1_1Application.html#a4a3461e3ece345dccdb0bf369287f0ef">dqm4hep::online::Application</a>
 </li>
+<li>m_typeInfo
+: <a class="el" href="classdqm4hep_1_1core_1_1Handle.html#a87282e8c89b742559b07f7743e7b62d9">dqm4hep::core::Handle</a>
+, <a class="el" href="classdqm4hep_1_1core_1_1Plugin.html#a2816135a476a13c754047249945a505c">dqm4hep::core::Plugin</a>
+</li>
 <li>m_updateSignal
 : <a class="el" href="classdqm4hep_1_1net_1_1ServiceHandler.html#a4d240ebcd13a483839d92f9b42a9809e">dqm4hep::net::ServiceHandler</a>
 </li>
@@ -1029,9 +1036,9 @@
 </li>
 <li>make_shared()
 : <a class="el" href="classdqm4hep_1_1core_1_1BufferEvent.html#ae91cbdeb0e1457e98687b0467ddc7356">dqm4hep::core::BufferEvent</a>
-, <a class="el" href="classdqm4hep_1_1core_1_1Directory.html#aab01a4505a7ad92b429017d481184a5e">dqm4hep::core::Directory&lt; T &gt;</a>
+, <a class="el" href="classdqm4hep_1_1core_1_1Directory.html#ad0e852a75a3d06576c0361b63923d120">dqm4hep::core::Directory&lt; T &gt;</a>
 , <a class="el" href="classdqm4hep_1_1core_1_1GenericEvent.html#a593f3be227f433fba991a05c502230bb">dqm4hep::core::GenericEvent</a>
-, <a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html#a5cf2206da3935d1de37829b9a65da4ec">dqm4hep::core::MonitorElement</a>
+, <a class="el" href="classdqm4hep_1_1core_1_1MonitorElement.html#abd6579287482637ea7b0247580c876c2">dqm4hep::core::MonitorElement</a>
 , <a class="el" href="classdqm4hep_1_1online_1_1EventSource.html#a25d04e35b85cd033310cd1e407e27427">dqm4hep::online::EventSource</a>
 , <a class="el" href="classdqm4hep_1_1online_1_1OnlineElement.html#a0517c72fb9c06cf2566fd7f5c04fde0b">dqm4hep::online::OnlineElement</a>
 , <a class="el" href="classdqm4hep_1_1online_1_1RemoteLogger.html#a0ba9a0750acaf761785e38b8cb08a3e8">dqm4hep::online::RemoteLogger</a>
@@ -1061,7 +1068,7 @@
 : <a class="el" href="classdqm4hep_1_1net_1_1Buffer.html#a238729b857bda25abcba470186ca93dd">dqm4hep::net::Buffer</a>
 </li>
 <li>Module()
-: <a class="el" href="classdqm4hep_1_1online_1_1Module.html#a7f61d0ea5847aadc30477e5f495a9340">dqm4hep::online::Module</a>
+: <a class="el" href="classdqm4hep_1_1online_1_1Module.html#ab662469a0acbaef4b07ed121416eca9b">dqm4hep::online::Module</a>
 </li>
 <li>module()
 : <a class="el" href="classdqm4hep_1_1online_1_1ModuleApplication.html#a4bbfdf04c94b4bfee7498362dfa7656a">dqm4hep::online::ModuleApplication</a>
@@ -1071,12 +1078,14 @@
 , <a class="el" href="classdqm4hep_1_1online_1_1ModuleApplication.html#a124817e2b842c768dd37fa3dd9494012">dqm4hep::online::ModuleApplication</a>
 , <a class="el" href="classdqm4hep_1_1online_1_1OnlineElement.html#a124817e2b842c768dd37fa3dd9494012">dqm4hep::online::OnlineElement</a>
 </li>
+<li>ModuleApplication
+: <a class="el" href="classdqm4hep_1_1online_1_1Module.html#a1ca64f8ddb3ccaffd8d216519e73dcd3">dqm4hep::online::Module</a>
+</li>
 <li>moduleApplication()
 : <a class="el" href="classdqm4hep_1_1online_1_1Module.html#aba28a1dbaa7e2386a4d25f84d67910b8">dqm4hep::online::Module</a>
 </li>
-<li>ModuleApplication
-: <a class="el" href="classdqm4hep_1_1online_1_1Module.html#a1ca64f8ddb3ccaffd8d216519e73dcd3">dqm4hep::online::Module</a>
-, <a class="el" href="classdqm4hep_1_1online_1_1ModuleApplication.html#addc92ee8c1b8dde4de57cfa44401a526">dqm4hep::online::ModuleApplication</a>
+<li>ModuleApplication()
+: <a class="el" href="classdqm4hep_1_1online_1_1ModuleApplication.html#a2fb52892f7a2ea9de67a773b3f5ebabb">dqm4hep::online::ModuleApplication</a>
 , <a class="el" href="classdqm4hep_1_1online_1_1OnlineElement.html#a1ca64f8ddb3ccaffd8d216519e73dcd3">dqm4hep::online::OnlineElement</a>
 </li>
 <li>moduleAs()
@@ -1087,8 +1096,8 @@
 , <a class="el" href="classdqm4hep_1_1online_1_1OnlineElement.html#ae07a62f6cbf26253f11fe1af5ada9681">dqm4hep::online::OnlineElement</a>
 </li>
 <li>ModuleT()
-: <a class="el" href="classdqm4hep_1_1online_1_1ModuleT.html#a4501153f4c9ffebeb00ba3b6b25c7600">dqm4hep::online::ModuleT&lt; T &gt;</a>
-, <a class="el" href="classdqm4hep_1_1online_1_1ModuleT_3_01void_01_4.html#a8ce342709934e072d734f203abb271f5">dqm4hep::online::ModuleT&lt; void &gt;</a>
+: <a class="el" href="classdqm4hep_1_1online_1_1ModuleT.html#a60c222a12b70cbb02d897de2a39f8b69">dqm4hep::online::ModuleT&lt; T &gt;</a>
+, <a class="el" href="classdqm4hep_1_1online_1_1ModuleT_3_01void_01_4.html#a70cb732e4c47d35ee592902045a26af7">dqm4hep::online::ModuleT&lt; void &gt;</a>
 </li>
 <li>moduleType()
 : <a class="el" href="classdqm4hep_1_1online_1_1ModuleApplication.html#a4a884af0f4ac3497a6f8c00ffc9b9f5c">dqm4hep::online::ModuleApplication</a>
@@ -1132,7 +1141,7 @@
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 11 2018 23:21:06 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 14 2018 09:30:11 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
