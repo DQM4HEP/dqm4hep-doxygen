@@ -127,7 +127,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classdqm4hep_1_1core_1_1Handle.html" title="Handle class Non-template class handling a template pointer in a type-safe manner. ">Handle</a> class Non-template class handling a template pointer in a type-safe manner. </p>
 
-<p>Definition at line <a class="el" href="Handle_8h_source.html#l00031">31</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
+<p>Definition at line <a class="el" href="Handle_8h_source.html#l00032">32</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac86a434fb26890cbc803a712f54e1c12"></a>
 <div class="memitem">
@@ -150,7 +150,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="Handle_8h_source.html#l00146">Handle()</a>.</p>
+<p>Referenced by <a class="el" href="Handle_8h_source.html#l00147">Handle()</a>.</p>
 
 </div>
 </div>
@@ -257,21 +257,21 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Handle_8h_source.html#l00146">146</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
+<p>Definition at line <a class="el" href="Handle_8h_source.html#l00147">147</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
 
-<p>References <a class="el" href="classdqm4hep_1_1core_1_1Handle.html#ac86a434fb26890cbc803a712f54e1c12">Handle()</a>, and <a class="el" href="Handle_8h_source.html#l00092">m_newFunction</a>.</p>
-<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                                : </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">m_ptr</a>(<a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ab161fa16b8d38614b02641740e4c717c">ptr</a>),</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#a87282e8c89b742559b07f7743e7b62d9">m_typeInfo</a>(<span class="keyword">typeid</span>(T)) {</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">m_newFunction</a> = []() {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ac86a434fb26890cbc803a712f54e1c12">Handle</a>(<span class="keyword">new</span> T());</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      };</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_aa0b06aa264da0c19953f44fed73bd0f7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">dqm4hep::core::Handle::m_newFunction</a></div><div class="ttdeci">std::function&lt; Handle(void)&gt; m_newFunction</div><div class="ttdoc">A custom allocator function based on the underlying type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00092">Handle.h:92</a></div></div>
+<p>References <a class="el" href="classdqm4hep_1_1core_1_1Handle.html#ac86a434fb26890cbc803a712f54e1c12">Handle()</a>, and <a class="el" href="Handle_8h_source.html#l00093">m_newFunction</a>.</p>
+<div class="fragment"><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                                : </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">m_ptr</a>(<a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ab161fa16b8d38614b02641740e4c717c">ptr</a>),</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#a87282e8c89b742559b07f7743e7b62d9">m_typeInfo</a>(<span class="keyword">typeid</span>(T)) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">m_newFunction</a> = []() {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ac86a434fb26890cbc803a712f54e1c12">Handle</a>(<span class="keyword">new</span> T());</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      };</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_aa0b06aa264da0c19953f44fed73bd0f7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">dqm4hep::core::Handle::m_newFunction</a></div><div class="ttdeci">std::function&lt; Handle(void)&gt; m_newFunction</div><div class="ttdoc">A custom allocator function based on the underlying type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00093">Handle.h:93</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ac86a434fb26890cbc803a712f54e1c12"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ac86a434fb26890cbc803a712f54e1c12">dqm4hep::core::Handle::Handle</a></div><div class="ttdeci">Handle()=delete</div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ad071d3323b6565bc71a72e4dc1c2d6fc"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">dqm4hep::core::Handle::m_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; void &gt; m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00088">Handle.h:88</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_a87282e8c89b742559b07f7743e7b62d9"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#a87282e8c89b742559b07f7743e7b62d9">dqm4hep::core::Handle::m_typeInfo</a></div><div class="ttdeci">std::type_index m_typeInfo</div><div class="ttdoc">The type information of the handled type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00090">Handle.h:90</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ab161fa16b8d38614b02641740e4c717c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ab161fa16b8d38614b02641740e4c717c">dqm4hep::core::Handle::ptr</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; ptr() const </div><div class="ttdoc">Retrieve the handled pointer as a specific type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00168">Handle.h:168</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ad071d3323b6565bc71a72e4dc1c2d6fc"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">dqm4hep::core::Handle::m_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; void &gt; m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00089">Handle.h:89</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_a87282e8c89b742559b07f7743e7b62d9"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#a87282e8c89b742559b07f7743e7b62d9">dqm4hep::core::Handle::m_typeInfo</a></div><div class="ttdeci">std::type_index m_typeInfo</div><div class="ttdoc">The type information of the handled type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00091">Handle.h:91</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ab161fa16b8d38614b02641740e4c717c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ab161fa16b8d38614b02641740e4c717c">dqm4hep::core::Handle::ptr</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; ptr() const </div><div class="ttdoc">Retrieve the handled pointer as a specific type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00169">Handle.h:169</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -307,21 +307,21 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Handle_8h_source.html#l00157">157</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
+<p>Definition at line <a class="el" href="Handle_8h_source.html#l00158">158</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
 
-<p>References <a class="el" href="classdqm4hep_1_1core_1_1Handle.html#ac86a434fb26890cbc803a712f54e1c12">Handle()</a>, and <a class="el" href="Handle_8h_source.html#l00092">m_newFunction</a>.</p>
-<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                                              :</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">m_ptr</a>(<a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ab161fa16b8d38614b02641740e4c717c">ptr</a>),</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#a87282e8c89b742559b07f7743e7b62d9">m_typeInfo</a>(<span class="keyword">typeid</span>(T)) {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">m_newFunction</a> = []() {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ac86a434fb26890cbc803a712f54e1c12">Handle</a>(<span class="keyword">new</span> T());</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      };</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_aa0b06aa264da0c19953f44fed73bd0f7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">dqm4hep::core::Handle::m_newFunction</a></div><div class="ttdeci">std::function&lt; Handle(void)&gt; m_newFunction</div><div class="ttdoc">A custom allocator function based on the underlying type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00092">Handle.h:92</a></div></div>
+<p>References <a class="el" href="classdqm4hep_1_1core_1_1Handle.html#ac86a434fb26890cbc803a712f54e1c12">Handle()</a>, and <a class="el" href="Handle_8h_source.html#l00093">m_newFunction</a>.</p>
+<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                                              :</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">m_ptr</a>(<a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ab161fa16b8d38614b02641740e4c717c">ptr</a>),</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#a87282e8c89b742559b07f7743e7b62d9">m_typeInfo</a>(<span class="keyword">typeid</span>(T)) {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">m_newFunction</a> = []() {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ac86a434fb26890cbc803a712f54e1c12">Handle</a>(<span class="keyword">new</span> T());</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      };</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_aa0b06aa264da0c19953f44fed73bd0f7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">dqm4hep::core::Handle::m_newFunction</a></div><div class="ttdeci">std::function&lt; Handle(void)&gt; m_newFunction</div><div class="ttdoc">A custom allocator function based on the underlying type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00093">Handle.h:93</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ac86a434fb26890cbc803a712f54e1c12"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ac86a434fb26890cbc803a712f54e1c12">dqm4hep::core::Handle::Handle</a></div><div class="ttdeci">Handle()=delete</div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ad071d3323b6565bc71a72e4dc1c2d6fc"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">dqm4hep::core::Handle::m_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; void &gt; m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00088">Handle.h:88</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_a87282e8c89b742559b07f7743e7b62d9"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#a87282e8c89b742559b07f7743e7b62d9">dqm4hep::core::Handle::m_typeInfo</a></div><div class="ttdeci">std::type_index m_typeInfo</div><div class="ttdoc">The type information of the handled type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00090">Handle.h:90</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ab161fa16b8d38614b02641740e4c717c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ab161fa16b8d38614b02641740e4c717c">dqm4hep::core::Handle::ptr</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; ptr() const </div><div class="ttdoc">Retrieve the handled pointer as a specific type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00168">Handle.h:168</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ad071d3323b6565bc71a72e4dc1c2d6fc"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">dqm4hep::core::Handle::m_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; void &gt; m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00089">Handle.h:89</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_a87282e8c89b742559b07f7743e7b62d9"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#a87282e8c89b742559b07f7743e7b62d9">dqm4hep::core::Handle::m_typeInfo</a></div><div class="ttdeci">std::type_index m_typeInfo</div><div class="ttdoc">The type information of the handled type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00091">Handle.h:91</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ab161fa16b8d38614b02641740e4c717c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ab161fa16b8d38614b02641740e4c717c">dqm4hep::core::Handle::ptr</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; ptr() const </div><div class="ttdoc">Retrieve the handled pointer as a specific type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00169">Handle.h:169</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -343,11 +343,11 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="Handle_8cc_source.html#l00042">42</a> of file <a class="el" href="Handle_8cc_source.html">Handle.cc</a>.</p>
 
-<p>References <a class="el" href="Handle_8h_source.html#l00092">m_newFunction</a>.</p>
+<p>References <a class="el" href="Handle_8h_source.html#l00093">m_newFunction</a>.</p>
 <div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">m_newFunction</a>();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_aa0b06aa264da0c19953f44fed73bd0f7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">dqm4hep::core::Handle::m_newFunction</a></div><div class="ttdeci">std::function&lt; Handle(void)&gt; m_newFunction</div><div class="ttdoc">A custom allocator function based on the underlying type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00092">Handle.h:92</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_aa0b06aa264da0c19953f44fed73bd0f7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">dqm4hep::core::Handle::m_newFunction</a></div><div class="ttdeci">std::function&lt; Handle(void)&gt; m_newFunction</div><div class="ttdoc">A custom allocator function based on the underlying type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00093">Handle.h:93</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -425,13 +425,13 @@ template&lt;typename T &gt; </div>
 
 <p>Retrieve the handled pointer as a specific type. </p>
 
-<p>Definition at line <a class="el" href="Handle_8h_source.html#l00168">168</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
+<p>Definition at line <a class="el" href="Handle_8h_source.html#l00169">169</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
 
-<p>References <a class="el" href="Handle_8h_source.html#l00088">m_ptr</a>.</p>
-<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                              {</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      <span class="keywordflow">return</span> std::static_pointer_cast&lt;T&gt;(<a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">m_ptr</a>);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ad071d3323b6565bc71a72e4dc1c2d6fc"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">dqm4hep::core::Handle::m_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; void &gt; m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00088">Handle.h:88</a></div></div>
+<p>References <a class="el" href="Handle_8h_source.html#l00089">m_ptr</a>.</p>
+<div class="fragment"><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                                              {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      <span class="keywordflow">return</span> std::static_pointer_cast&lt;T&gt;(<a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">m_ptr</a>);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ad071d3323b6565bc71a72e4dc1c2d6fc"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">dqm4hep::core::Handle::m_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; void &gt; m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00089">Handle.h:89</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -452,13 +452,13 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="Handle_8cc_source.html#l00018">18</a> of file <a class="el" href="Handle_8cc_source.html">Handle.cc</a>.</p>
 
-<p>References <a class="el" href="Handle_8h_source.html#l00088">m_ptr</a>.</p>
+<p>References <a class="el" href="Handle_8h_source.html#l00089">m_ptr</a>.</p>
 
 <p>Referenced by <a class="el" href="Handle_8cc_source.html#l00036">isValid()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                      {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">m_ptr</a>.get();</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ad071d3323b6565bc71a72e4dc1c2d6fc"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">dqm4hep::core::Handle::m_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; void &gt; m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00088">Handle.h:88</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ad071d3323b6565bc71a72e4dc1c2d6fc"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">dqm4hep::core::Handle::m_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; void &gt; m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00089">Handle.h:89</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -479,11 +479,11 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="Handle_8cc_source.html#l00024">24</a> of file <a class="el" href="Handle_8cc_source.html">Handle.cc</a>.</p>
 
-<p>References <a class="el" href="Handle_8h_source.html#l00088">m_ptr</a>.</p>
+<p>References <a class="el" href="Handle_8h_source.html#l00089">m_ptr</a>.</p>
 <div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                  {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">m_ptr</a>.get();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ad071d3323b6565bc71a72e4dc1c2d6fc"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">dqm4hep::core::Handle::m_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; void &gt; m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00088">Handle.h:88</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ad071d3323b6565bc71a72e4dc1c2d6fc"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ad071d3323b6565bc71a72e4dc1c2d6fc">dqm4hep::core::Handle::m_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; void &gt; m_ptr</div><div class="ttdoc">The handled pointer. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00089">Handle.h:89</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -504,11 +504,11 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="Handle_8cc_source.html#l00030">30</a> of file <a class="el" href="Handle_8cc_source.html">Handle.cc</a>.</p>
 
-<p>References <a class="el" href="Handle_8h_source.html#l00090">m_typeInfo</a>.</p>
+<p>References <a class="el" href="Handle_8h_source.html#l00091">m_typeInfo</a>.</p>
 <div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                                {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#a87282e8c89b742559b07f7743e7b62d9">m_typeInfo</a>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_a87282e8c89b742559b07f7743e7b62d9"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#a87282e8c89b742559b07f7743e7b62d9">dqm4hep::core::Handle::m_typeInfo</a></div><div class="ttdeci">std::type_index m_typeInfo</div><div class="ttdoc">The type information of the handled type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00090">Handle.h:90</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_a87282e8c89b742559b07f7743e7b62d9"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#a87282e8c89b742559b07f7743e7b62d9">dqm4hep::core::Handle::m_typeInfo</a></div><div class="ttdeci">std::type_index m_typeInfo</div><div class="ttdoc">The type information of the handled type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00091">Handle.h:91</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -533,9 +533,9 @@ template&lt;typename T &gt; </div>
 
 <p>A custom allocator function based on the underlying type. </p>
 
-<p>Definition at line <a class="el" href="Handle_8h_source.html#l00092">92</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
+<p>Definition at line <a class="el" href="Handle_8h_source.html#l00093">93</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Handle_8cc_source.html#l00042">create()</a>, <a class="el" href="Handle_8h_source.html#l00146">Handle()</a>, and <a class="el" href="Handle_8h_source.html#l00176">dqm4hep::core::ROOTHandle::ROOTHandle()</a>.</p>
+<p>Referenced by <a class="el" href="Handle_8cc_source.html#l00042">create()</a>, <a class="el" href="Handle_8h_source.html#l00147">Handle()</a>, and <a class="el" href="Handle_8h_source.html#l00177">dqm4hep::core::ROOTHandle::ROOTHandle()</a>.</p>
 
 </div>
 </div>
@@ -559,9 +559,9 @@ template&lt;typename T &gt; </div>
 
 <p>The handled pointer. </p>
 
-<p>Definition at line <a class="el" href="Handle_8h_source.html#l00088">88</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
+<p>Definition at line <a class="el" href="Handle_8h_source.html#l00089">89</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Handle_8h_source.html#l00168">ptr()</a>, and <a class="el" href="Handle_8cc_source.html#l00018">raw()</a>.</p>
+<p>Referenced by <a class="el" href="Handle_8h_source.html#l00169">ptr()</a>, and <a class="el" href="Handle_8cc_source.html#l00018">raw()</a>.</p>
 
 </div>
 </div>
@@ -585,7 +585,7 @@ template&lt;typename T &gt; </div>
 
 <p>The type information of the handled type. </p>
 
-<p>Definition at line <a class="el" href="Handle_8h_source.html#l00090">90</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
+<p>Definition at line <a class="el" href="Handle_8h_source.html#l00091">91</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
 
 <p>Referenced by <a class="el" href="Handle_8cc_source.html#l00030">typeInfo()</a>.</p>
 
@@ -598,7 +598,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 27 2018 23:26:52 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 3 2018 08:53:03 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

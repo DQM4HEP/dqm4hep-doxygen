@@ -160,7 +160,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p><a class="el" href="classdqm4hep_1_1core_1_1ROOTHandle.html" title="ROOTHandle class Special handle for ROOT objects. ">ROOTHandle</a> class Special handle for ROOT objects. </p>
 <p>ROOT I/O API requires to know the type or at least the TClass of the object to read or write </p>
 
-<p>Definition at line <a class="el" href="Handle_8h_source.html#l00103">103</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
+<p>Definition at line <a class="el" href="Handle_8h_source.html#l00104">104</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a8b648a126653c0d5cd2bbd73e694cf5d"></a>
 <div class="memitem">
@@ -183,7 +183,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="Handle_8h_source.html#l00176">ROOTHandle()</a>.</p>
+<p>Referenced by <a class="el" href="Handle_8h_source.html#l00177">ROOTHandle()</a>.</p>
 
 </div>
 </div>
@@ -290,21 +290,21 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Handle_8h_source.html#l00176">176</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
+<p>Definition at line <a class="el" href="Handle_8h_source.html#l00177">177</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
 
-<p>References <a class="el" href="Handle_8h_source.html#l00092">dqm4hep::core::Handle::m_newFunction</a>, and <a class="el" href="classdqm4hep_1_1core_1_1ROOTHandle.html#a8b648a126653c0d5cd2bbd73e694cf5d">ROOTHandle()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                        :</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ac86a434fb26890cbc803a712f54e1c12">Handle</a>(<a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ab161fa16b8d38614b02641740e4c717c">ptr</a>),</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1ROOTHandle.html#aeaf48987c7af6063db7db27c9a6411d5">m_class</a>(TClass::GetClass(<span class="keyword">typeid</span>(T))) {</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">m_newFunction</a> = []() {</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1ROOTHandle.html#a8b648a126653c0d5cd2bbd73e694cf5d">ROOTHandle</a>(<span class="keyword">new</span> T());</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      };</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_aa0b06aa264da0c19953f44fed73bd0f7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">dqm4hep::core::Handle::m_newFunction</a></div><div class="ttdeci">std::function&lt; Handle(void)&gt; m_newFunction</div><div class="ttdoc">A custom allocator function based on the underlying type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00092">Handle.h:92</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1ROOTHandle_html_aeaf48987c7af6063db7db27c9a6411d5"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ROOTHandle.html#aeaf48987c7af6063db7db27c9a6411d5">dqm4hep::core::ROOTHandle::m_class</a></div><div class="ttdeci">TClass * m_class</div><div class="ttdoc">The ROOT object class. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00139">Handle.h:139</a></div></div>
+<p>References <a class="el" href="Handle_8h_source.html#l00093">dqm4hep::core::Handle::m_newFunction</a>, and <a class="el" href="classdqm4hep_1_1core_1_1ROOTHandle.html#a8b648a126653c0d5cd2bbd73e694cf5d">ROOTHandle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                        :</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ac86a434fb26890cbc803a712f54e1c12">Handle</a>(<a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ab161fa16b8d38614b02641740e4c717c">ptr</a>),</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1ROOTHandle.html#aeaf48987c7af6063db7db27c9a6411d5">m_class</a>(TClass::GetClass(<span class="keyword">typeid</span>(T))) {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">m_newFunction</a> = []() {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1ROOTHandle.html#a8b648a126653c0d5cd2bbd73e694cf5d">ROOTHandle</a>(<span class="keyword">new</span> T());</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      };</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_aa0b06aa264da0c19953f44fed73bd0f7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">dqm4hep::core::Handle::m_newFunction</a></div><div class="ttdeci">std::function&lt; Handle(void)&gt; m_newFunction</div><div class="ttdoc">A custom allocator function based on the underlying type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00093">Handle.h:93</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1ROOTHandle_html_aeaf48987c7af6063db7db27c9a6411d5"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ROOTHandle.html#aeaf48987c7af6063db7db27c9a6411d5">dqm4hep::core::ROOTHandle::m_class</a></div><div class="ttdeci">TClass * m_class</div><div class="ttdoc">The ROOT object class. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00140">Handle.h:140</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ac86a434fb26890cbc803a712f54e1c12"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ac86a434fb26890cbc803a712f54e1c12">dqm4hep::core::Handle::Handle</a></div><div class="ttdeci">Handle()=delete</div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1ROOTHandle_html_a8b648a126653c0d5cd2bbd73e694cf5d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ROOTHandle.html#a8b648a126653c0d5cd2bbd73e694cf5d">dqm4hep::core::ROOTHandle::ROOTHandle</a></div><div class="ttdeci">ROOTHandle()=delete</div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ab161fa16b8d38614b02641740e4c717c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ab161fa16b8d38614b02641740e4c717c">dqm4hep::core::Handle::ptr</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; ptr() const </div><div class="ttdoc">Retrieve the handled pointer as a specific type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00168">Handle.h:168</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ab161fa16b8d38614b02641740e4c717c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ab161fa16b8d38614b02641740e4c717c">dqm4hep::core::Handle::ptr</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; ptr() const </div><div class="ttdoc">Retrieve the handled pointer as a specific type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00169">Handle.h:169</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -340,21 +340,21 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Handle_8h_source.html#l00187">187</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
+<p>Definition at line <a class="el" href="Handle_8h_source.html#l00188">188</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
 
-<p>References <a class="el" href="Handle_8h_source.html#l00092">dqm4hep::core::Handle::m_newFunction</a>, and <a class="el" href="classdqm4hep_1_1core_1_1ROOTHandle.html#a8b648a126653c0d5cd2bbd73e694cf5d">ROOTHandle()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                                                      :</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ac86a434fb26890cbc803a712f54e1c12">Handle</a>(<a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ab161fa16b8d38614b02641740e4c717c">ptr</a>),</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1ROOTHandle.html#aeaf48987c7af6063db7db27c9a6411d5">m_class</a>(TClass::GetClass(<span class="keyword">typeid</span>(T))) {</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">m_newFunction</a> = []() {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1ROOTHandle.html#a8b648a126653c0d5cd2bbd73e694cf5d">ROOTHandle</a>(<span class="keyword">new</span> T());</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      };</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_aa0b06aa264da0c19953f44fed73bd0f7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">dqm4hep::core::Handle::m_newFunction</a></div><div class="ttdeci">std::function&lt; Handle(void)&gt; m_newFunction</div><div class="ttdoc">A custom allocator function based on the underlying type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00092">Handle.h:92</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1ROOTHandle_html_aeaf48987c7af6063db7db27c9a6411d5"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ROOTHandle.html#aeaf48987c7af6063db7db27c9a6411d5">dqm4hep::core::ROOTHandle::m_class</a></div><div class="ttdeci">TClass * m_class</div><div class="ttdoc">The ROOT object class. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00139">Handle.h:139</a></div></div>
+<p>References <a class="el" href="Handle_8h_source.html#l00093">dqm4hep::core::Handle::m_newFunction</a>, and <a class="el" href="classdqm4hep_1_1core_1_1ROOTHandle.html#a8b648a126653c0d5cd2bbd73e694cf5d">ROOTHandle()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                                                      :</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ac86a434fb26890cbc803a712f54e1c12">Handle</a>(<a class="code" href="classdqm4hep_1_1core_1_1Handle.html#ab161fa16b8d38614b02641740e4c717c">ptr</a>),</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1ROOTHandle.html#aeaf48987c7af6063db7db27c9a6411d5">m_class</a>(TClass::GetClass(<span class="keyword">typeid</span>(T))) {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">m_newFunction</a> = []() {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1ROOTHandle.html#a8b648a126653c0d5cd2bbd73e694cf5d">ROOTHandle</a>(<span class="keyword">new</span> T());</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      };</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_aa0b06aa264da0c19953f44fed73bd0f7"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#aa0b06aa264da0c19953f44fed73bd0f7">dqm4hep::core::Handle::m_newFunction</a></div><div class="ttdeci">std::function&lt; Handle(void)&gt; m_newFunction</div><div class="ttdoc">A custom allocator function based on the underlying type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00093">Handle.h:93</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1ROOTHandle_html_aeaf48987c7af6063db7db27c9a6411d5"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ROOTHandle.html#aeaf48987c7af6063db7db27c9a6411d5">dqm4hep::core::ROOTHandle::m_class</a></div><div class="ttdeci">TClass * m_class</div><div class="ttdoc">The ROOT object class. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00140">Handle.h:140</a></div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ac86a434fb26890cbc803a712f54e1c12"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ac86a434fb26890cbc803a712f54e1c12">dqm4hep::core::Handle::Handle</a></div><div class="ttdeci">Handle()=delete</div></div>
 <div class="ttc" id="classdqm4hep_1_1core_1_1ROOTHandle_html_a8b648a126653c0d5cd2bbd73e694cf5d"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ROOTHandle.html#a8b648a126653c0d5cd2bbd73e694cf5d">dqm4hep::core::ROOTHandle::ROOTHandle</a></div><div class="ttdeci">ROOTHandle()=delete</div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ab161fa16b8d38614b02641740e4c717c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ab161fa16b8d38614b02641740e4c717c">dqm4hep::core::Handle::ptr</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; ptr() const </div><div class="ttdoc">Retrieve the handled pointer as a specific type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00168">Handle.h:168</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1Handle_html_ab161fa16b8d38614b02641740e4c717c"><div class="ttname"><a href="classdqm4hep_1_1core_1_1Handle.html#ab161fa16b8d38614b02641740e4c717c">dqm4hep::core::Handle::ptr</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; ptr() const </div><div class="ttdoc">Retrieve the handled pointer as a specific type. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00169">Handle.h:169</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -393,11 +393,11 @@ template&lt;typename T &gt; </div>
 
 <p>Definition at line <a class="el" href="Handle_8cc_source.html#l00049">49</a> of file <a class="el" href="Handle_8cc_source.html">Handle.cc</a>.</p>
 
-<p>References <a class="el" href="Handle_8h_source.html#l00139">m_class</a>.</p>
+<p>References <a class="el" href="Handle_8h_source.html#l00140">m_class</a>.</p>
 <div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                       {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1ROOTHandle.html#aeaf48987c7af6063db7db27c9a6411d5">m_class</a>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1ROOTHandle_html_aeaf48987c7af6063db7db27c9a6411d5"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ROOTHandle.html#aeaf48987c7af6063db7db27c9a6411d5">dqm4hep::core::ROOTHandle::m_class</a></div><div class="ttdeci">TClass * m_class</div><div class="ttdoc">The ROOT object class. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00139">Handle.h:139</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1ROOTHandle_html_aeaf48987c7af6063db7db27c9a6411d5"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ROOTHandle.html#aeaf48987c7af6063db7db27c9a6411d5">dqm4hep::core::ROOTHandle::m_class</a></div><div class="ttdeci">TClass * m_class</div><div class="ttdoc">The ROOT object class. </div><div class="ttdef"><b>Definition:</b> <a href="Handle_8h_source.html#l00140">Handle.h:140</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -446,7 +446,7 @@ template&lt;typename T &gt; </div>
 
 <p>The ROOT object class. </p>
 
-<p>Definition at line <a class="el" href="Handle_8h_source.html#l00139">139</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
+<p>Definition at line <a class="el" href="Handle_8h_source.html#l00140">140</a> of file <a class="el" href="Handle_8h_source.html">Handle.h</a>.</p>
 
 <p>Referenced by <a class="el" href="Handle_8cc_source.html#l00049">getClass()</a>.</p>
 
@@ -459,7 +459,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 27 2018 23:26:52 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 3 2018 08:53:03 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

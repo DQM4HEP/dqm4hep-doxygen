@@ -89,7 +89,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p><a class="el" href="classdqm4hep_1_1core_1_1ArchiverSelector.html" title="ArchiverSelector class Helper class to select monitor elements while archiving It is a combinaison of...">ArchiverSelector</a> class Helper class to select monitor elements while archiving It is a combinaison of selector functions. </p>
 <p>Returns true if at least one function returns true, otherwise false. </p>
 
-<p>Definition at line <a class="el" href="Archiver_8h_source.html#l00167">167</a> of file <a class="el" href="Archiver_8h_source.html">Archiver.h</a>.</p>
+<p>Definition at line <a class="el" href="Archiver_8h_source.html#l00170">170</a> of file <a class="el" href="Archiver_8h_source.html">Archiver.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aff615c19e2e83165346d8c96e34c90e3"></a>
 <div class="memitem">
@@ -108,7 +108,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Archiver_8cc_source.html#l00217">217</a> of file <a class="el" href="Archiver_8cc_source.html">Archiver.cc</a>.</p>
 
-<p>References <a class="el" href="Logging_8h_source.html#l00026">dqm_debug</a>, <a class="el" href="Archiver_8h_source.html#l00188">m_function</a>, and <a class="el" href="Archiver_8h_source.html#l00190">m_selectorFunctions</a>.</p>
+<p>References <a class="el" href="Logging_8h_source.html#l00026">dqm_debug</a>, <a class="el" href="Archiver_8h_source.html#l00191">m_function</a>, and <a class="el" href="Archiver_8h_source.html#l00193">m_selectorFunctions</a>.</p>
 <div class="fragment"><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                                       {</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1ArchiverSelector.html#a89ae1e7e3be63be4c846b655c679cd40">m_function</a> = [<span class="keyword">this</span>](<a class="code" href="namespacedqm4hep_1_1core.html#a6f9281264aed9704a591590d411abb0c">MonitorElementPtr</a> element)-&gt;<span class="keywordtype">bool</span>{</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classdqm4hep_1_1core_1_1ArchiverSelector.html#af9e75265bdcf284e0af1e12a8bb5ad86">m_selectorFunctions</a>.empty()) {</div>
@@ -125,9 +125,9 @@ Private Attributes</h2></td></tr>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      };</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    }</div>
 <div class="ttc" id="namespacedqm4hep_1_1core_html_a6f9281264aed9704a591590d411abb0c"><div class="ttname"><a href="namespacedqm4hep_1_1core.html#a6f9281264aed9704a591590d411abb0c">dqm4hep::core::MonitorElementPtr</a></div><div class="ttdeci">type&lt; MonitorElement &gt;::ptr MonitorElementPtr</div><div class="ttdef"><b>Definition:</b> <a href="Internal_8h_source.html#l00271">Internal.h:271</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1ArchiverSelector_html_a89ae1e7e3be63be4c846b655c679cd40"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ArchiverSelector.html#a89ae1e7e3be63be4c846b655c679cd40">dqm4hep::core::ArchiverSelector::m_function</a></div><div class="ttdeci">Archiver::SelectorFunction m_function</div><div class="ttdoc">The global selector function. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00188">Archiver.h:188</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1ArchiverSelector_html_a89ae1e7e3be63be4c846b655c679cd40"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ArchiverSelector.html#a89ae1e7e3be63be4c846b655c679cd40">dqm4hep::core::ArchiverSelector::m_function</a></div><div class="ttdeci">Archiver::SelectorFunction m_function</div><div class="ttdoc">The global selector function. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00191">Archiver.h:191</a></div></div>
 <div class="ttc" id="Logging_8h_html_afeed011feb4159b13c3ae4873e1d0fcf"><div class="ttname"><a href="Logging_8h.html#afeed011feb4159b13c3ae4873e1d0fcf">dqm_debug</a></div><div class="ttdeci">#define dqm_debug(...)</div><div class="ttdef"><b>Definition:</b> <a href="Logging_8h_source.html#l00026">Logging.h:26</a></div></div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1ArchiverSelector_html_af9e75265bdcf284e0af1e12a8bb5ad86"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ArchiverSelector.html#af9e75265bdcf284e0af1e12a8bb5ad86">dqm4hep::core::ArchiverSelector::m_selectorFunctions</a></div><div class="ttdeci">std::vector&lt; Archiver::SelectorFunction &gt; m_selectorFunctions</div><div class="ttdoc">The list of selector functions. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00190">Archiver.h:190</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1ArchiverSelector_html_af9e75265bdcf284e0af1e12a8bb5ad86"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ArchiverSelector.html#af9e75265bdcf284e0af1e12a8bb5ad86">dqm4hep::core::ArchiverSelector::m_selectorFunctions</a></div><div class="ttdeci">std::vector&lt; Archiver::SelectorFunction &gt; m_selectorFunctions</div><div class="ttdoc">The list of selector functions. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00193">Archiver.h:193</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -156,13 +156,13 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Archiver_8cc_source.html#l00235">235</a> of file <a class="el" href="Archiver_8cc_source.html">Archiver.cc</a>.</p>
 
-<p>References <a class="el" href="Archiver_8h_source.html#l00190">m_selectorFunctions</a>.</p>
+<p>References <a class="el" href="Archiver_8h_source.html#l00193">m_selectorFunctions</a>.</p>
 
 <p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00497">dqm4hep::online::ModuleApplication::configureArchiver()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                                                                        {</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      <a class="code" href="classdqm4hep_1_1core_1_1ArchiverSelector.html#af9e75265bdcf284e0af1e12a8bb5ad86">m_selectorFunctions</a>.push_back(selector);</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1ArchiverSelector_html_af9e75265bdcf284e0af1e12a8bb5ad86"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ArchiverSelector.html#af9e75265bdcf284e0af1e12a8bb5ad86">dqm4hep::core::ArchiverSelector::m_selectorFunctions</a></div><div class="ttdeci">std::vector&lt; Archiver::SelectorFunction &gt; m_selectorFunctions</div><div class="ttdoc">The list of selector functions. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00190">Archiver.h:190</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1ArchiverSelector_html_af9e75265bdcf284e0af1e12a8bb5ad86"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ArchiverSelector.html#af9e75265bdcf284e0af1e12a8bb5ad86">dqm4hep::core::ArchiverSelector::m_selectorFunctions</a></div><div class="ttdeci">std::vector&lt; Archiver::SelectorFunction &gt; m_selectorFunctions</div><div class="ttdoc">The list of selector functions. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00193">Archiver.h:193</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -183,13 +183,13 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Archiver_8cc_source.html#l00241">241</a> of file <a class="el" href="Archiver_8cc_source.html">Archiver.cc</a>.</p>
 
-<p>References <a class="el" href="Archiver_8h_source.html#l00188">m_function</a>.</p>
+<p>References <a class="el" href="Archiver_8h_source.html#l00191">m_function</a>.</p>
 
 <p>Referenced by <a class="el" href="ModuleApplication_8cc_source.html#l00497">dqm4hep::online::ModuleApplication::configureArchiver()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                                                                     {</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classdqm4hep_1_1core_1_1ArchiverSelector.html#a89ae1e7e3be63be4c846b655c679cd40">m_function</a>;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div>
-<div class="ttc" id="classdqm4hep_1_1core_1_1ArchiverSelector_html_a89ae1e7e3be63be4c846b655c679cd40"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ArchiverSelector.html#a89ae1e7e3be63be4c846b655c679cd40">dqm4hep::core::ArchiverSelector::m_function</a></div><div class="ttdeci">Archiver::SelectorFunction m_function</div><div class="ttdoc">The global selector function. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00188">Archiver.h:188</a></div></div>
+<div class="ttc" id="classdqm4hep_1_1core_1_1ArchiverSelector_html_a89ae1e7e3be63be4c846b655c679cd40"><div class="ttname"><a href="classdqm4hep_1_1core_1_1ArchiverSelector.html#a89ae1e7e3be63be4c846b655c679cd40">dqm4hep::core::ArchiverSelector::m_function</a></div><div class="ttdeci">Archiver::SelectorFunction m_function</div><div class="ttdoc">The global selector function. </div><div class="ttdef"><b>Definition:</b> <a href="Archiver_8h_source.html#l00191">Archiver.h:191</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -214,7 +214,7 @@ Private Attributes</h2></td></tr>
 
 <p>The global selector function. </p>
 
-<p>Definition at line <a class="el" href="Archiver_8h_source.html#l00188">188</a> of file <a class="el" href="Archiver_8h_source.html">Archiver.h</a>.</p>
+<p>Definition at line <a class="el" href="Archiver_8h_source.html#l00191">191</a> of file <a class="el" href="Archiver_8h_source.html">Archiver.h</a>.</p>
 
 <p>Referenced by <a class="el" href="Archiver_8cc_source.html#l00217">ArchiverSelector()</a>, and <a class="el" href="Archiver_8cc_source.html#l00241">function()</a>.</p>
 
@@ -240,7 +240,7 @@ Private Attributes</h2></td></tr>
 
 <p>The list of selector functions. </p>
 
-<p>Definition at line <a class="el" href="Archiver_8h_source.html#l00190">190</a> of file <a class="el" href="Archiver_8h_source.html">Archiver.h</a>.</p>
+<p>Definition at line <a class="el" href="Archiver_8h_source.html#l00193">193</a> of file <a class="el" href="Archiver_8h_source.html">Archiver.h</a>.</p>
 
 <p>Referenced by <a class="el" href="Archiver_8cc_source.html#l00235">addSelector()</a>, and <a class="el" href="Archiver_8cc_source.html#l00217">ArchiverSelector()</a>.</p>
 
@@ -253,7 +253,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 27 2018 23:26:52 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 3 2018 08:53:03 for DQM4hep by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
